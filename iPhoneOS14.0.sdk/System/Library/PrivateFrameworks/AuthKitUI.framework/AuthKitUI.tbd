@@ -1,0 +1,75 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           BF9F6413-8AF6-36B9-B922-AFEA5636C389
+  - target:          armv7s-ios
+    value:           2A9A79E2-974B-3FD7-9CB1-037EA55C6987
+  - target:          arm64-ios
+    value:           2D8B369A-66B1-3CD3-BAC3-AB2940F2DA70
+  - target:          arm64e-ios
+    value:           AD6353E2-FB43-3D8E-9FAA-695053AEEEF9
+install-name:    '/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AKAppleIDButtonDefaultCornerRadius, _AKColorSpaceStandardRGB, 
+                       _AKContentAlignmentCentered, _AKContentAlignmentMake, _AKCreateAppleIDButtonImage, 
+                       _AKCreateAppleIDButtonImageWithCornerRadius, _AKDrawAppleIDButton, 
+                       _AKDrawAppleIDButtonWithCornerRadius, _AKFloatRoundToPixelWithScale, 
+                       _AKIconDefaultDimension, _AKIconDefaultSize, _AKPWRequestViewCellIdentifier, 
+                       _AKPointRoundToPixelWithScale, _AKPushEditOptionShouldClearKey, 
+                       _AKRectRoundToPixelWithScale, _AKSecondFactorCodeEntryContentViewControllerDidEnterCodeNotification, 
+                       _AKServerPresentationActionModal, _AKServerPresentationActionPush, 
+                       _AKSizeAlignedInRectWithScale, _AKSizeRoundToPixelWithScale, 
+                       _AKSizeScaleAspectFit, _AuthKitUIVersionNumber, _AuthKitUIVersionString, 
+                       _HeaderLeadingTrailingAnchor, __AKUIMainBundle, __CreateAttributedStringWithFontSize, 
+                       __DrawBorder, __DrawLogoPDFIntoContext, __MaximumFontSizeForStringInRect, 
+                       _kAKCAAppID, _kAKCAAuthorizationRequestSuccess, _kAKCAClientID, 
+                       _kAKCAClientTypeApp, _kAKCAClientTypeApple, _kAKCAClientTypeAppleWeb, 
+                       _kAKCAClientTypeTV, _kAKCAClientTypeWeb, _kAKCADidCancel, 
+                       _kAKCADuration, _kAKCAErrorCode, _kAKCAErrorDomain, _kAKCAEventPiggyback, 
+                       _kAKCAEventSatori, _kAKCAEventTiburonAuthorizationUI, _kAKCAEventTiburonPasswordUI, 
+                       _kAKCAEventTiburonRequest, _kAKCAEventTiburonResult, _kAKCAFirstTimeAuth, 
+                       _kAKCAIncludesAuthorizationRequest, _kAKCAIncludesPasswordRequest, 
+                       _kAKCAIsUpgradeFromPassword, _kAKCAModifiedName, _kAKCAOriginClientType, 
+                       _kAKCAPasswordRequestSuccess, _kAKCAPiggybackResult, _kAKCAPiggybackResultAcceptingDone, 
+                       _kAKCAPiggybackResultCircleTimeout, _kAKCAPiggybackResultRequestingCancelled, 
+                       _kAKCAPiggybackResultRequestingEscapedThroughHatch, _kAKCAPiggybackResultUnknown, 
+                       _kAKCARedactedString, _kAKCARequestID, _kAKCASatoriAvailableLate, 
+                       _kAKCASatoriPerformVerificationDuration, _kAKCASatoriPerformedVerification, 
+                       _kAKCASatoriSuccess, _kAKCASatoriVerificationDuration, _kAKCASatoriVerificationResults, 
+                       _kAKCATeamID, _kAKCAUnderlyingErrorCode, _kAKCAUnderlyingErrorDomain, 
+                       _kAKCAUseAnonymous, _kAKCAUseAppleID ]
+    objc-classes:    [ AKAppleIDAuthenticationInAppContext, AKAppleIDAuthenticationInAppExtensionContext, 
+                       AKAppleIDAuthenticationPurpleBuddyContext, AKAppleIDAuthenticationUISurrogateContext, 
+                       AKAppleIDAuthenticationWatchBuddyContext, AKAppleIDObjectModelFieldExtractor, 
+                       AKAppleIDServerUIContextController, AKAppleIDServerUIDataHarvester, 
+                       AKAuthHandlerUIImpl, AKAuthorizationAppleIDButton, AKAuthorizationBiometricImage, 
+                       AKAuthorizationBulletPointSubPane, AKAuthorizationButton, 
+                       AKAuthorizationContainerViewController, AKAuthorizationContainerViewControllerAnimator, 
+                       AKAuthorizationContaineriPadViewController, AKAuthorizationContaineriPhoneViewController, 
+                       AKAuthorizationContinueButton, AKAuthorizationEmailEditPaneViewController, 
+                       AKAuthorizationFirstTimePaneViewController, AKAuthorizationInputPaneViewController, 
+                       AKAuthorizationLoginChoiceCell, AKAuthorizationNameFormatter, 
+                       AKAuthorizationNavigationController, AKAuthorizationPaneContext, 
+                       AKAuthorizationPaneViewController, AKAuthorizationPasswordAuthenticationViewController, 
+                       AKAuthorizationPasswordRequestViewCell, AKAuthorizationScopeChoices, 
+                       AKAuthorizationScopeDetailTableViewCell, AKAuthorizationScopeEditTableViewCell, 
+                       AKAuthorizationSubPane, AKAuthorizationSubPaneConfirmButton, 
+                       AKAuthorizationSubPaneImage, AKAuthorizationSubPaneInfoLabel, 
+                       AKAuthorizationSubPanePrivacyLink, AKAuthorizationTwoLineTableViewCell, 
+                       AKAuthorizationViewController, AKBaseSignInViewController, 
+                       AKBasicLoginActions, AKBasicLoginAlertController, AKBasicLoginContentViewController, 
+                       AKBasicLoginContentViewControllerContainerView, AKBasicLoginOptionsViewController, 
+                       AKBasicLoginSecondFactorActions, AKBasicLoginTableViewCell, 
+                       AKBasicLoginViewController, AKCAPiggybackReporter, AKCAReporter, 
+                       AKCASatoriReporter, AKCATiburonAuthorizationUIReporter, AKCATiburonInputUIReporter, 
+                       AKCATiburonPasswordUIReporter, AKCATiburonRequestAttemptReporter, 
+                       AKCATiburonRequestReporter, AKCodeEntryView, AKCurvePoint, 
+                       AKIDPHandler, AKIDPProvidedSignInViewController, AKIcon, AKInAppAuthenticationRemoteUIDelegate, 
+                       AKInAppAuthenticationRemoteUIProvider, AKInlineSignInViewController, 
+                       AKModalSignInViewController, AKRoundedButton, AKRoundedPath, 
+                       AKSecondFactorCodeEntryContentViewController, AKSizing, AKTapToSignInViewController, 
+                       AKTextField, AKTextualLinkButton, AKURLRequestApprover, _AKInsetTextField ]
+...

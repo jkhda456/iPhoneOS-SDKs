@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6C5B3E1E-EC70-3CD2-9EC2-5A0C50AC79D6
+  - target:          arm64e-ios
+    value:           38284D77-7C7D-3F7F-8336-DF2452F7E77D
+install-name:    '/System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ MCInstallProfileViewController, MCItemSummaryCell, MCProfileSummaryCell, 
+                       MCProfileTitlePageViewController, MCProfileTitlePageViewModel, 
+                       MCProfileViewController, MCSectionBasedTableViewController, 
+                       MCUIBundleController, MCUIDataManager, MCUIDismissalAwareNavigationController, 
+                       MCUINavigationViewController, MCUIProfile, MCUITableViewController, 
+                       MCUIUserEnrollmentAccountSpecifierProvider, MCUIViewController ]
+...

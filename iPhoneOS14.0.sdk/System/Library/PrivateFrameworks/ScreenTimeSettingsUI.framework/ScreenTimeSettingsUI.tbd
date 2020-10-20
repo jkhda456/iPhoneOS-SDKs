@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0BB19DDE-1137-312F-BDAA-14AA46086556
+  - target:          arm64e-ios
+    value:           F2857608-51D5-3EE9-8AEF-B08980AAD8B7
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI'
+current-version: 481
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ FamilyCircleUI, ScreenTimeAgent, ScreenTimeNotificationContentExtension, 
+                       ScreenTimeSettings, ScreenTimeUnlock, ScreenTimeWidget, ScreenTimeWidgetExtension, 
+                       Setup, SetupTests, screentimetool ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STSharedServicesScreenTimeSpecifierId ]
+    objc-classes:    [ STAllowance, STAlwaysAllowList, STCandyBarView, STChildSetupController, 
+                       STDeviceBedtime, STDeviceUnlockStateListener, STFamilyCircleSpecifierProvider, 
+                       STHorizontallySegmentedView, STKeyValuePair, STRestrictionsPINController, 
+                       STRootViewModelCoordinator, STScreenTimeSettingsUIBundle, 
+                       STSegmentItem, STSetupAssistantViewController, STUILog, STUIUser, 
+                       STUnlockForContentView, STUsageDetailsViewModelCoordinator, 
+                       STUsageGraphViewController, STUsageItem, STUsageReport, STUsageSummaryTitleView, 
+                       STWeeklyReportAppUsageView, STWeeklyReportViewController ]
+...

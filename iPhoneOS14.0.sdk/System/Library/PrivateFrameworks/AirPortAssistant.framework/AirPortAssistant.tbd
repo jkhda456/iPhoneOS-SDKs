@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           20AA540A-D986-3122-B494-E00184DF5AB4
+  - target:          armv7s-ios
+    value:           D75EBD22-1E23-3B78-8D8E-30D02A066BEB
+  - target:          arm64-ios
+    value:           10CA1F53-465E-3C86-A0DB-C105B591F1D1
+  - target:          arm64e-ios
+    value:           635C8537-2025-3CE4-BB3E-C88B8182988B
+install-name:    '/System/Library/PrivateFrameworks/AirPortAssistant.framework/AirPortAssistant'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kAirPortAssistantBrowseRecordKey, _kAirPortAssistantCurrentWiFiAssociationKey, 
+                       _kAirPortAssistantCurrentWiFiScanKey, _kAirPortAssistantDeviceMACAddressKey, 
+                       _kAirPortAssistantScanRecordKey, _kAirPortAssistantWACDeviceFriendlyNameKey, 
+                       _kAirPortAssistantWACDeviceMACAddressKey, _kAirPortAssistantWACDeviceManufacturerNameKey, 
+                       _kAirPortAssistantWACDeviceModelNameKey, _kAirPortAssistantWACDeviceSSIDKey, 
+                       _kAirPortAssistantWACDeviceSupportsAirPlayKey, _kAirPortAssistantWACDeviceSupportsSpruce, 
+                       _kAirPortAssistantWACShouldHideFindAppUIKey ]
+    objc-classes:    [ AirPortAssistantController, AirPortAssistantUINavigationController ]
+...

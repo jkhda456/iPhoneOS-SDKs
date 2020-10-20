@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           94701469-D806-383E-8E28-592BC7E0034C
+  - target:          armv7s-ios
+    value:           DA027BB8-0D9D-3C4C-AA84-3FB1E9CF2097
+  - target:          arm64-ios
+    value:           E0C0D12E-0016-31EB-B453-9605FCCE08DF
+  - target:          arm64e-ios
+    value:           7D783B96-13C3-3D84-B99A-CDE00AA63EAE
+install-name:    '/System/Library/PrivateFrameworks/EditScript.framework/EditScript'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EditScriptVersionNumber, _EditScriptVersionString, _TestEditScript, 
+                       _TestEditScriptDataArray, _TestEditScriptIndexed, _TestEditScriptRanged, 
+                       _TestEditScriptSmallestSingleEditRanged, _TestSmallestEditThinkLikeAHuman, 
+                       _main ]
+    objc-classes:    [ ESAtomIndexed, ESAtomRanged, ESEditScript, ESEditScriptDataArray, 
+                       ESEditScriptIndexed, ESEditScriptRanged, ESIntArray2D ]
+    objc-ivars:      [ ESEditScript._currentOperation, ESEditScript._distanceMatrix, 
+                       ESEditScript._itemAData, ESEditScript._itemBData, ESEditScript._orderAtomsAscending, 
+                       ESEditScriptIndexed._currentScriptAtom, ESEditScriptRanged._currentScriptAtom, 
+                       ESEditScriptRanged._options, ESIntArray2D._arrayData, ESIntArray2D._iSize, 
+                       ESIntArray2D._jSize ]
+...

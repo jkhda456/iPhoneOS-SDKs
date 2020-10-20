@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BF76F9CA-EC79-3ED9-A454-AB129AA84470
+  - target:          arm64e-ios
+    value:           66874A0D-1A86-352F-A978-0F0D1FE8F8A5
+install-name:    '/System/Library/PrivateFrameworks/SoundBoardServices.framework/SoundBoardServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SBSUserDefaultsArrayKey, _SBSUserDefaultsInfoKey, _SBSUserDefaultsModKey, 
+                       _SBSUserDefaultsValueKey, _SoundBoardServicesVersionNumber, 
+                       _SoundBoardServicesVersionString, _kClientBundleIdentifier, 
+                       _kHPCDRestartCannedDemo, _kIdentifySolo, _kIdentifyWithLight, 
+                       _kIdentifyWithSound, _kSBSAppleCareSetAppleCareIsEnabledKey, 
+                       _kSBSCannedDemoServiceSiriUtteranceFileToBePlayed, _kSBSDebugInfoGetAllDebugInfo, 
+                       _kSBSDebugInfoGetFeatureFlags, _kSBSDebugInfoGetTuningInfo, 
+                       _kSBSDebugInfoGetUserDefaults, _kSBSDebugInfoInjectSWUpdateToHome, 
+                       _kSBSDebugInfoPlayTone, _kSBSDebugInfoResetAllUserDefaults, 
+                       _kSBSDebugInfoResetUserDefault, _kSBSDebugInfoSendButtonCommand, 
+                       _kSBSDebugInfoSendLEDCommand, _kSBSDebugInfoSetBootSpinner, 
+                       _kSBSDebugInfoSetFeatureFlags, _kSBSDebugInfoSetLEDContents, 
+                       _kSBSDebugInfoSetTuningInfoOnBox, _kSBSDebugInfoSetUserDefaults, 
+                       _kSBSDebugInfoStopTone, _kSBSDebugInfoTriggerWiFiCoreCapture, 
+                       _kSBSSettingsHomeKitDeviceAttributeChanged, _kSBSSettingsHomeKitSettingForKeyPathChanged, 
+                       _kSBSStereoLeaderRoleSetDeviceAsStereoLeader, _kSBSSysdiagnoseSysdiagnoseHasStarted, 
+                       _kSBSSystemIdentify, _kSBSSystemObliterate, _kSBSSystemReboot, 
+                       _kSBSSystemRequestDeferredReboot, _kSBSSystemRequestFetchAlarmsAndTimers ]
+    objc-classes:    [ SBSAppleCareInterface, SBSCannedDemoInterface, SBSClient, 
+                       SBSDebugInterface, SBSDefaultInfo, SBSFeatureFlag, SBSHomePodControlsInterface, 
+                       SBSRemoteDeviceReceiver, SBSRemoteDeviceSender, SBSServer, 
+                       SBSSettingsInterface, SBSStereoLeaderInterface, SBSSysdiagnoseInterface, 
+                       SBSSystemInterface, SBSUtils ]
+...

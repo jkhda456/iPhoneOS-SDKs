@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           0BC7265F-857C-334D-94E3-715E6246F33A
+  - target:          armv7s-ios
+    value:           20EFDB9C-DE78-3BF0-A463-F52E8C4E013B
+  - target:          arm64-ios
+    value:           0BC60780-2FF0-3DB1-B1AA-27655F3D6DD5
+  - target:          arm64e-ios
+    value:           85B34A62-F24F-30CB-B242-042AD7B43A34
+install-name:    '/System/Library/PrivateFrameworks/DAEASOAuthFramework.framework/DAEASOAuthFramework'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _JWTClockSkew ]
+    objc-classes:    [ DAEASOAuthClient, DAEASOAuthFlowController, DAEASOAuthIdentity, 
+                       DAEASOAuthJWTValidator, DAEASOAuthMigrationRequest, DAEASOAuthPKCEChallenge, 
+                       DAEASOAuthRequest, DAEASOAuthTokenRefreshResponse, DAEASOAuthTokenRequest, 
+                       DAEASOAuthTokenResponse, DAEASOAuthWebViewController, DAEASOpenIDMetadataRequest, 
+                       DAEASOpenIDMetadataResponse, DAExchangeOAuthFlowController, 
+                       DAOAuthSafariViewController ]
+...

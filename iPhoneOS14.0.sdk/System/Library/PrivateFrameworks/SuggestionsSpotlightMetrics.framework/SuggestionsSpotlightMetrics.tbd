@@ -1,0 +1,87 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           ECCA6C6E-B9C5-33CC-980B-2CCC9856E0BA
+  - target:          armv7s-ios
+    value:           A92F3C28-EBF4-3448-8242-42502591EA01
+  - target:          arm64-ios
+    value:           1C749E5D-CD13-3AC2-BC0C-50A8CB94D6F4
+  - target:          arm64e-ios
+    value:           9E238D2A-95D2-30AA-B623-8D7B9D5D7B2B
+install-name:    '/System/Library/PrivateFrameworks/SuggestionsSpotlightMetrics.framework/SuggestionsSpotlightMetrics'
+current-version: 1115
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _SGMBannerDisplayAppMail, _SGMBannerDisplayAppMessages, _SGMBannerDisplayAppOther, 
+                       _SGMBannerExtractionTypeOther, _SGMBannerExtractionTypePhrase, 
+                       _SGMBannerExtractionTypeSig, _SGMBannerExtractionTypeSigPhrase, 
+                       _SGMContactDetailExtractionOutcomeExtracted, _SGMContactDetailExtractionOutcomeIgnored, 
+                       _SGMContactDetailExtractionOutcomeIgnoredPattern, _SGMContactDetailExtractionOutcomeIgnoredQuotedRegion, 
+                       _SGMContactDetailExtractionOutcomeIgnoredSuspectedBulkMail, 
+                       _SGMContactDetailTypeAddress, _SGMContactDetailTypeEmail, 
+                       _SGMContactDetailTypeOther, _SGMContactDetailTypePhone, _SGMContactDetailUsedAppCalendar, 
+                       _SGMContactDetailUsedAppMail, _SGMContactDetailUsedAppMessages, 
+                       _SGMContactDetailUsedAppOther, _SGMContactDetailUsedAppPhone, 
+                       _SGMDetailExtractionTypeInteraction, _SGMDetailExtractionTypeOther, 
+                       _SGMDetailExtractionTypePhrase, _SGMDetailExtractionTypeSig, 
+                       _SGMDetailExtractionTypeSigPhrase, _SGMDocumentTypeEmail, 
+                       _SGMDocumentTypeMessage, _SGMEventCategoryBus, _SGMEventCategoryCar, 
+                       _SGMEventCategoryFlight, _SGMEventCategoryFood, _SGMEventCategoryHotel, 
+                       _SGMEventCategoryMovie, _SGMEventCategoryOther, _SGMEventCategorySocial, 
+                       _SGMEventCategoryTicket, _SGMEventCategoryTrain, _SGMEventDateAdjAddTime1h, 
+                       _SGMEventDateAdjAddTime2h, _SGMEventDateAdjAddTime2hPlus, 
+                       _SGMEventDateAdjChangedDay, _SGMEventDateAdjChangedDayAndTime, 
+                       _SGMEventDateAdjConfirmed, _SGMEventDateAdjNA, _SGMEventDateAdjSubTime1h, 
+                       _SGMEventDateAdjSubTime2h, _SGMEventDateAdjSubTime2hPlus, 
+                       _SGMEventDurationAdj1To2Hours, _SGMEventDurationAdj30To60Min, 
+                       _SGMEventDurationAdjConfirmed, _SGMEventDurationAdjLessThan30Min, 
+                       _SGMEventDurationAdjMoreThan2Hours, _SGMEventDurationAdjNA, 
+                       _SGMEventExtractionTypeICal, _SGMEventExtractionTypeTemplate, 
+                       _SGMEventICSSourceTypeGoogle, _SGMEventICSSourceTypeICloud, 
+                       _SGMEventICSSourceTypeOffice, _SGMEventICSSourceTypeOther, 
+                       _SGMEventICSSourceTypeYahoo, _SGMEventStateCancel, _SGMEventStateNew, 
+                       _SGMEventStateUpdate, _SGMEventStringAdjConfirmed, _SGMEventStringAdjNA, 
+                       _SGMEventStringAdjPrefixAdded, _SGMEventStringAdjReplaced, 
+                       _SGMEventStringAdjSuffixAdded, _SGMInteractionIgnoredReasonNilBundleId, 
+                       _SGMInteractionIgnoredReasonNilInterIdent, _SGMNLEventExtractionEvent, 
+                       _SGMNLEventExtractionNone, _SGMNLEventExtractionType, _SGMNLEventLinkInteractionResultCancel, 
+                       _SGMNLEventLinkInteractionResultConfirm, _SGMNLEventLinkInteractionResultDismiss, 
+                       _SGMNLEventLinkInteractionResultOther, _SGMSINameClassificationMaybeName, 
+                       _SGMSINameClassificationName, _SGMSINameClassificationNotName, 
+                       _SGMSIPatternTypeSelfId, _SGMSIPatternTypeSelfIdRequest, _SGMTypeSafeBoolFalse, 
+                       _SGMTypeSafeBoolTrue ]
+    objc-classes:    [ SGMAutocompleteUserSelectedContact, SGMBadInteractionIgnored, 
+                       SGMContactConfirmed, SGMContactCreated, SGMContactDetailConfirmed, 
+                       SGMContactDetailExtraction, SGMContactDetailRejected, SGMContactDetailUsed, 
+                       SGMContactInBanner, SGMContactOpportunityInSpotlight, SGMContactRejected, 
+                       SGMContactResultInSpotlight, SGMContactResultSelectedInSpotlight, 
+                       SGMDDLinkClicked, SGMDDLinkShown, SGMEventBannerConfirmed, 
+                       SGMEventBannerRejected, SGMEventICSOpportunity, SGMEventInBanner, 
+                       SGMEventOpportunityInSpotlight, SGMEventResultInSpotlight, 
+                       SGMEventResultSelectedInSpotlight, SGMMaybeInformationShown, 
+                       SGMNLEventBannerConfirmed, SGMNLEventBannerRejected, SGMNLEventInBanner, 
+                       SGMNoResultSelectedInSpotlight, SGMOtherResultSelectedInSpotlight, 
+                       SGMSearchResultsIncludedPureSuggestion, SGMSearchResultsUserSelectedContact, 
+                       SGMSelfIdPatternMatched, SGMSqliteErrors, SGMSuggestedContactDetailShown, 
+                       SGMSuggestedContactDetailUsed, SGMUnknownContactInformationShown, 
+                       SGSMutableSearchState ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SGSM2ContactOpportunityInSpotlightReadFrom, _SGSM2ContactResultInSpotlightReadFrom, 
+                       _SGSM2ContactResultSelectedInSpotlightReadFrom, _SGSM2EventOpportunityInSpotlightReadFrom, 
+                       _SGSM2EventResultInSpotlightReadFrom, _SGSM2EventResultSelectedInSpotlightReadFrom, 
+                       _SGSM2NoResultSelectedInSpotlightReadFrom, _SGSM2OtherResultSelectedInSpotlightReadFrom, 
+                       _SuggestionsSpotlightMetricsVersionNumber, _SuggestionsSpotlightMetricsVersionString ]
+    objc-classes:    [ SGSM2ContactOpportunityInSpotlight, SGSM2ContactResultInSpotlight, 
+                       SGSM2ContactResultSelectedInSpotlight, SGSM2EventOpportunityInSpotlight, 
+                       SGSM2EventResultInSpotlight, SGSM2EventResultSelectedInSpotlight, 
+                       SGSM2NoResultSelectedInSpotlight, SGSM2OtherResultSelectedInSpotlight, 
+                       SGSMFeedbackListener, SGSMMutableSearchState ]
+    objc-ivars:      [ SGSM2ContactOpportunityInSpotlight._key, SGSM2ContactResultInSpotlight._has, 
+                       SGSM2ContactResultInSpotlight._key, SGSM2ContactResultInSpotlight._visible, 
+                       SGSM2ContactResultSelectedInSpotlight._key, SGSM2EventOpportunityInSpotlight._key, 
+                       SGSM2EventResultInSpotlight._has, SGSM2EventResultInSpotlight._key, 
+                       SGSM2EventResultInSpotlight._visible, SGSM2EventResultSelectedInSpotlight._key, 
+                       SGSM2NoResultSelectedInSpotlight._key, SGSM2OtherResultSelectedInSpotlight._key ]
+...

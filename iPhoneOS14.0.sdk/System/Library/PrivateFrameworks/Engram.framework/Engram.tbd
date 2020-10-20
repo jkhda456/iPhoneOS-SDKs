@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           166B4486-F1B7-32FC-BD1C-F18A3D8F316A
+  - target:          arm64e-ios
+    value:           01329B9B-6B84-3B99-85B3-8E04E5185F09
+install-name:    '/System/Library/PrivateFrameworks/Engram.framework/Engram'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ENCypherErrorDomain, _ENGroupContextErrorDomain, _ENGroupContextErrorItemKey, 
+                       _ENGroupIDErrorDomain ]
+    objc-classes:    [ ENAccountIdentity, ENAsyncReducer, ENAsyncReducerState, ENCypher, 
+                       ENCypher_AES128, ENGroup, ENGroupContext, ENGroupContextCoreDataCache, 
+                       ENGroupContextInMemoryCache, ENGroupContextNotifyingObserver, 
+                       ENGroupID, ENKeyClassRegister, ENLog, ENPair, ENParticipant, 
+                       ENParticipantDevice, ENStableGroupID, _ENGroupInfo ]
+    objc-ivars:      [ ENGroupContextCoreDataCache._container, ENGroupContextCoreDataCache._queue, 
+                       ENParticipant._accountPublicKey, ENParticipant._aliases, ENParticipant._devices, 
+                       ENParticipantDevice._cypher, ENParticipantDevice._devicePublicKey, 
+                       ENParticipantDevice._identifier ]
+...

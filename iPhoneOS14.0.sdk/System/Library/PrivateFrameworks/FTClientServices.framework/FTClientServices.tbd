@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D8BD502C-31C4-37A7-AAB0-D47DDDCA6AD6
+  - target:          armv7s-ios
+    value:           B3960A64-4BB9-3607-922D-1F4B25D8EE77
+  - target:          arm64-ios
+    value:           CA550F99-B278-32FA-A215-56DEB2E7A364
+  - target:          arm64e-ios
+    value:           D2669E22-57DF-3AF4-A7C2-B01061E6FA22
+install-name:    '/System/Library/PrivateFrameworks/FTClientServices.framework/FTClientServices'
+current-version: 800
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _FTCLogPrefix ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FTCServiceAvailabilityAvailabilityKey, _FTCServiceAvailabilityDidChangeNotification, 
+                       _FTCServiceAvailabilityServiceTypeKey, _FTCServiceNameCalling, 
+                       _FTCServiceNameFaceTime, _FTCServiceNameForServiceType, _FTCServiceNameMadrid, 
+                       _FTCServiceNameiMessage, _FTCServiceTypeForServiceName ]
+    objc-classes:    [ FTCServiceAvailabilityCenter ]
+...

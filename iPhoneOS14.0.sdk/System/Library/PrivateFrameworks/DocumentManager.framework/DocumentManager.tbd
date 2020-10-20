@@ -1,0 +1,101 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7C3051C9-77CD-374D-B31B-43B733D94E4E
+  - target:          arm64e-ios
+    value:           A60DC017-7321-3D5A-81A8-B91F66655293
+install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
+current-version: 200
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DOCAdaptSizeToRect, _DOCAlertItemIsNotReadable, _DOCAlertUserTheNetworkIsNotReachable, 
+                       _DOCAlertUserTrashedFileCanNotBeOpened, _DOCCenterSizeInRect, 
+                       _DOCDefaultSaveLocationDidChangeNotification, _DOCDeviceHasHomeButton, 
+                       _DOCDocumentSourceIdentifierActivities, _DOCDocumentSourceIdentifierDefaultLocation, 
+                       _DOCDocumentSourceIdentifierDefaultSaveLocation, _DOCDocumentSourceIdentifierEmptyLocation, 
+                       _DOCDocumentSourceIdentifierFavoriteFolders, _DOCDocumentSourceIdentifierLocalAutomatic, 
+                       _DOCDocumentSourceIdentifierPlaceholderLocation, _DOCDocumentSourceIdentifierRecentDocumentsLocation, 
+                       _DOCDocumentSourceIdentifierRecentsControllerLocation, _DOCDocumentSourceIdentifierSearch, 
+                       _DOCDocumentSourceIdentifierSharedItems, _DOCDocumentSourceIdentifierTaggedItems, 
+                       _DOCDocumentSourceIdentifierTrashedItems, _DOCErrorDomain, 
+                       _DOCErrorNoLocationAvailableError, _DOCExtensionIcon, _DOCFrameworkBundle, 
+                       _DOCIsInternalBuild, _DOCIsNetworkReachable, _DOCMinimumScreenPortraitWidth, 
+                       _DOCPresentAlertForError, _DOCPresentAlertForErrorWithForceHandler, 
+                       _DOCSaveToFilesActivityType, _DOCScreenSizePad, _DOCScreenSizePad10_5, 
+                       _DOCScreenSizePad12_9, _DOCScreenSizePad9_7, _DOCScreenSizePhone, 
+                       _DOCScreenSizePlusPhone, _DOCScreenSizeSEPhone, _DOCSizeIsFullScreenSize, 
+                       _DOCTestUserDefaultsKeyBrowseTabSelected, _DOCTestUserDefaultsKeyProviderForPPT, 
+                       _DOCTestUserDefaultsKeySelectedDisplayMode, _DOCUserDefaultsCachedDisplayNamesBySourceIdentifier, 
+                       _DOCUserDefaultsKeyActivityDelay, _DOCUserDefaultsKeyCopyLinkUIEnabled, 
+                       _DOCUserDefaultsKeyForceRemovableFPSupport, _DOCUserDefaultsKeyIsListMode, 
+                       _DOCUserDefaultsKeyMetadataLevelOfDetail, _DOCUserDefaultsKeyMostRecentEffectiveRootLocation, 
+                       _DOCUserDefaultsKeyMostRecentlyVisitedLocation, _DOCUserDefaultsKeyRecentsHomeScreenWidgetCache, 
+                       _DOCUserDefaultsKeyRecentsHomeScreenWidgetCacheLastUpdatedAt, 
+                       _DOCUserDefaultsKeyReportAllFileProviderErrors, _DOCUserDefaultsKeySortingMode, 
+                       _DOCUserDefaultsLastNumberOfRecentsDocuments, _DOCUserDefaultsLastNumberOfSharedDocuments, 
+                       _DOCUserDefaultsMostRecentSceneState, _DOCUserDefaultsSceneState, 
+                       _DOCUserDefaultsSortingModeReversedKey, _DOCUserDefaultsSortingModeSortTypeKey, 
+                       _DOCUserPickedNewDefaultSaveLocationNotification, _DocumentManagerVersionNumber, 
+                       _DocumentManagerVersionString, _UIDocumentBrowserActionAvailabilityPreviewPanel, 
+                       _UIDocumentBrowserActionAvailabilityPreviewPanelActivitySheet, 
+                       _UIDocumentBrowserActionAvailabilityPreviewQuickActions, _UIDocumentBrowserActionAvailabilityToolbar, 
+                       _UIDocumentBrowserActionIdentifierArchive, _UIDocumentBrowserActionIdentifierCopy, 
+                       _UIDocumentBrowserActionIdentifierCopySharedLink, _UIDocumentBrowserActionIdentifierCreatePDF, 
+                       _UIDocumentBrowserActionIdentifierDelete, _UIDocumentBrowserActionIdentifierDownload, 
+                       _UIDocumentBrowserActionIdentifierDuplicate, _UIDocumentBrowserActionIdentifierEvict, 
+                       _UIDocumentBrowserActionIdentifierFavorite, _UIDocumentBrowserActionIdentifierInfo, 
+                       _UIDocumentBrowserActionIdentifierMarkup, _UIDocumentBrowserActionIdentifierMixedDelete, 
+                       _UIDocumentBrowserActionIdentifierMove, _UIDocumentBrowserActionIdentifierMultipleSelection, 
+                       _UIDocumentBrowserActionIdentifierNewFolderFromSelection, 
+                       _UIDocumentBrowserActionIdentifierQuickLook, _UIDocumentBrowserActionIdentifierRename, 
+                       _UIDocumentBrowserActionIdentifierReveal, _UIDocumentBrowserActionIdentifierRotateClockwise, 
+                       _UIDocumentBrowserActionIdentifierRotateCounterclockwise, 
+                       _UIDocumentBrowserActionIdentifierShare, _UIDocumentBrowserActionIdentifierTags, 
+                       _UIDocumentBrowserActionIdentifierTrash, _UIDocumentBrowserActionIdentifierTrim, 
+                       _UIDocumentBrowserActionIdentifierUnarchive, _UIDocumentBrowserActionIdentifierUnfavorite, 
+                       _UIDocumentBrowserActionIdentifierUntrash, _UIDocumentBrowserDownloadsFolderPlaceholderPath, 
+                       _UIDocumentBrowserErrorDomain, _UIDocumentBrowserKeyCommandIdentifierConnectToServer, 
+                       _UIDocumentBrowserKeyCommandIdentifierCopy, _UIDocumentBrowserKeyCommandIdentifierCreateDocument, 
+                       _UIDocumentBrowserKeyCommandIdentifierCreateFolder, _UIDocumentBrowserKeyCommandIdentifierDelete, 
+                       _UIDocumentBrowserKeyCommandIdentifierDeleteNow, _UIDocumentBrowserKeyCommandIdentifierDeselectAll, 
+                       _UIDocumentBrowserKeyCommandIdentifierDuplicate, _UIDocumentBrowserKeyCommandIdentifierEject, 
+                       _UIDocumentBrowserKeyCommandIdentifierEscape, _UIDocumentBrowserKeyCommandIdentifierFavorite, 
+                       _UIDocumentBrowserKeyCommandIdentifierGetInfo, _UIDocumentBrowserKeyCommandIdentifierGoToEnclosingFolder, 
+                       _UIDocumentBrowserKeyCommandIdentifierMoveHere, _UIDocumentBrowserKeyCommandIdentifierOpen, 
+                       _UIDocumentBrowserKeyCommandIdentifierPaste, _UIDocumentBrowserKeyCommandIdentifierPreview, 
+                       _UIDocumentBrowserKeyCommandIdentifierRename, _UIDocumentBrowserKeyCommandIdentifierRevealDesktop, 
+                       _UIDocumentBrowserKeyCommandIdentifierRevealDocuments, _UIDocumentBrowserKeyCommandIdentifierRevealDownloads, 
+                       _UIDocumentBrowserKeyCommandIdentifierRevealICloudDrive, _UIDocumentBrowserKeyCommandIdentifierRevealItem, 
+                       _UIDocumentBrowserKeyCommandIdentifierSearch, _UIDocumentBrowserKeyCommandIdentifierSelectAll, 
+                       _UIDocumentBrowserKeyCommandIdentifierShowBrowse, _UIDocumentBrowserKeyCommandIdentifierShowRecents, 
+                       _UIDocumentBrowserKeyCommandIdentifierShowViewOptions, _UIDocumentBrowserKeyCommandIdentifierSortByDate, 
+                       _UIDocumentBrowserKeyCommandIdentifierSortByKind, _UIDocumentBrowserKeyCommandIdentifierSortByName, 
+                       _UIDocumentBrowserKeyCommandIdentifierSortBySize, _UIDocumentBrowserKeyCommandIdentifierSortByTags, 
+                       _UIDocumentBrowserKeyCommandIdentifierViewAsColumn, _UIDocumentBrowserKeyCommandIdentifierViewAsIcons, 
+                       _UIDocumentBrowserKeyCommandIdentifierViewAsList, _UIDocumentBrowserKeyCommandWasPerformedNotification, 
+                       __DOCKeyCommandRegistryUserInfoKeyCommandIdentifierKey, __DOCKeyCommandRegistryUserInfoModifierFlagsKey, 
+                       __DOCKeyInputSpace, __DOCMainScreenClass, __DOCMainScreenSize, 
+                       __UIActivityTypeCloudSharing ]
+    objc-classes:    [ DOCActivity, DOCAppearance, DOCConcreteLocation, DOCDestructiveActivity, 
+                       DOCDocBrowserVC_UIActivityViewController, DOCDocumentSource, 
+                       DOCErrorStore, DOCExportModeViewController, DOCExtensionInterface, 
+                       DOCFrecencyBasedEvent, DOCHotFolderEvent, DOCItem, DOCKeyCommandRegistry, 
+                       DOCKeyboardFocusManager, DOCPromisedItem, DOCRemoteBarButton, 
+                       DOCRemoteBarButtonTrackingView, DOCRemoteContext, DOCRemoteUIBarButtonItem, 
+                       DOCRemoteViewController, DOCSearchingDocumentSource, DOCSmartFolderDatabase, 
+                       DOCSmartFolderHit, DOCSourceSearchingContext, DOCSymbolicLocationURLWrapper, 
+                       DOCTargetSelectionBrowserViewController, DOCTransitionUtils, 
+                       DOCUserInterfaceStateStore, DOCViewServiceErrorView, DOCViewServiceErrorViewController, 
+                       DOCWeakProxy, UIDocumentBrowserAction, UIDocumentBrowserActionDescriptor, 
+                       UIDocumentBrowserTransitionController, UIDocumentBrowserViewController ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DOCDocumentSourceIdentifierICloud, _DOCDocumentSourceIdentifierICloudLegacy, 
+                       _DOCDocumentSourceIdentifierLocal, _DOCDocumentSourceIdentifierRecentDocuments ]
+...

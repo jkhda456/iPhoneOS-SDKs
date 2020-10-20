@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7E8943D8-6988-31CD-A87C-72FC8A818FCE
+  - target:          arm64e-ios
+    value:           CB24FF86-738D-31A0-B584-05FD77EA66CA
+install-name:    '/System/Library/PrivateFrameworks/BarcodeSupport.framework/BarcodeSupport'
+current-version: 100
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BCSActionErrorDomain, _BCSBarcodeNotificationPayloadActionsKey, 
+                       _BCSBarcodeNotificationPayloadContactKey, _BCSBarcodeNotificationPayloadContentIsPreviewableKey, 
+                       _BCSBarcodeNotificationPayloadExtraPreviewText, _BCSBarcodeNotificationPayloadICSStringKey, 
+                       _BCSBarcodeNotificationPayloadKey, _BCSBarcodeNotificationPayloadPreviewFooterSubtitleKey, 
+                       _BCSBarcodeNotificationPayloadPreviewFooterTitleKey, _BCSBarcodeNotificationPayloadScannerResultKey, 
+                       _BCSBarcodeNotificationPayloadURLKey, _BCSErrorDomain, __BCSLocalizedString, 
+                       __bcs_CGImagePNGRepresentation, __bcs_applyTreatmentToIcon, 
+                       __bcs_notificationIconBaseURL, __bcs_pointToRectDistance ]
+    objc-classes:    [ BCSAVParsingSession, BCSAWDLogger, BCSActionPickerItem, BCSAnalyticsLogger, 
+                       BCSConfigurationManager, BCSDataDetectionActionPickerItem, 
+                       BCSNFCCodeParser, BCSNFCReaderConnection, BCSNotification, 
+                       BCSNotificationManager, BCSNotificationServiceConnection, 
+                       BCSNotificationServiceDelegate, BCSParser, BCSQRCodeParser ]
+...

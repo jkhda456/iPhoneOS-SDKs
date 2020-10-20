@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           93B1A618-F608-3A1A-A2AB-05298E2DB029
+  - target:          arm64e-ios
+    value:           71FE9A0A-1B1F-329C-BB25-C1C52747E435
+install-name:    '/System/Library/PrivateFrameworks/StudyLog.framework/StudyLog'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SLGCreateError, _SLGCreateLoggingIsDisabledError, _SLGCreateSessionEndMetadata, 
+                       _SLGCreateSessionStartMetadata, _SLGLogDefaultsDomain, _SLGLogDefaultsEnabledKey, 
+                       _SLGLogErrorDomain, _SLGLogIsEnabled, _SLGLogServiceName, 
+                       _StudyLogVersionNumber, _StudyLogVersionString, _slg_general_log ]
+    objc-classes:    [ SLGActivatableLogger, SLGDomainWhitelist, SLGLog, SLGLogXPCClient, 
+                       SLGNotificationActivatedLogger, SLGNotificationActivatedLoggerRegistration, 
+                       SLGTimedLogger ]
+...

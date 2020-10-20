@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           978CFA79-7A54-3FCC-B5C3-EE3D441AC514
+  - target:          armv7s-ios
+    value:           B1CAEA07-8803-33AD-8F1B-4C4F6C3B9201
+  - target:          arm64-ios
+    value:           D5EA71EA-585E-3344-B847-87BE2453F626
+  - target:          arm64e-ios
+    value:           D6852AF0-A868-3C07-8139-FD2A9D8E4218
+install-name:    '/System/Library/PrivateFrameworks/NetAppsUtilitiesUI.framework/NetAppsUtilitiesUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NAUIIsCJKCharacter, _NAUIStringDescriptionOfConstrainedItem, 
+                       _NAUIStringFromLayoutAttribute, _NAUIStringFromLayoutRelation, 
+                       _NAUITextAlignmentReverseNatural ]
+    objc-classes:    [ NAUIUIViewControllerNoticationObserver, NAUIUsageStatistics, 
+                       _NAUIAmbigousLayoutView, _NAUIAutoUpdatingFontObserver, _NAUINamedViewConstraints ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NACGFloatByLinearlyInterpolatingFloats, _NACGFloatCeilForScale, 
+                       _NACGFloatEpsilon, _NACGFloatEqualToFloat, _NACGFloatGreaterThanFloat, 
+                       _NACGFloatGreaterThanOrEqualToFloat, _NACGFloatIsOne, _NACGFloatIsZero, 
+                       _NACGFloatLessThanFloat, _NACGFloatLessThanOrEqualToFloat, 
+                       _NACGFloatPowerOf2Ceil, _NADegreesToRadians, _NARadiansFromCGAffineTransform, 
+                       _NARadiansToDegrees, _NARectUnit, _NARectWithCGSize, _NAStringFromCGPoint, 
+                       _NAStringFromCGRect, _NAStringFromCGSize, _NAUICurrentContentSizeCategoryIsLargerThanOrEqualToCategory, 
+                       _NAUIEnumerateContentSizeCategoriesInIncreasingOrder, _NAUILayoutMetricsForUIEdgeInsetsNamed, 
+                       _NAUILayoutSizeNoDimension, _NAUIShortDescriptionFromUIContentSizeCategory, 
+                       _NSStringFromUIInterfaceOrientation, _NSStringFromUIInterfaceOrientationMask, 
+                       _NetAppsUtilitiesUIVersionNumber, _NetAppsUtilitiesUIVersionString ]
+    objc-classes:    [ NAUIContentSizeLayoutConstraint, NAUIDeviceUtilities, NAUILayoutConstraintSet, 
+                       NAUITextStyleDescriptor, NAUIWeakRef ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           94D3D066-9B1F-383A-BA5E-6E454A0CD58B
+  - target:          armv7s-ios
+    value:           1DF03BFB-4531-33AB-B7CC-325B03DD4F39
+  - target:          arm64-ios
+    value:           581CFC2D-7558-3472-B8D1-A8CE5A1EC571
+  - target:          arm64e-ios
+    value:           23F88492-0197-3C1C-8079-EBD10361CC21
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Libraries/libCGInterfaces.dylib'
+current-version: 540
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _Init_CGInterfaces ]
+...

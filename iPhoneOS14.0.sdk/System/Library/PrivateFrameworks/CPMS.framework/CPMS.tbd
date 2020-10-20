@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E39E55F4-BD8B-3EB8-A2C6-7BAA319925B5
+  - target:          arm64e-ios
+    value:           D16AF7CB-B1CE-3143-AB7A-8F1ED8F8F31A
+install-name:    '/System/Library/PrivateFrameworks/CPMS.framework/CPMS'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CPMSErrorDomain, _CPMSVersionNumber, _CPMSVersionString, 
+                       _budgetDictionaryForClient, _buildDetailedThermalBudgetDetailsDescription, 
+                       _buildDetailedThermalBudgetItemDescription, _clientDecoderRing, 
+                       _clientDecoderRingItem, _clientDecoderRingItemForName, _copyApplePPMArrayProperty, 
+                       _getAndPrintClientState, _getApplePPMFloatProperty, _getClientPowerConsumptionWithCallback, 
+                       _getPowerForTimescale, _kCPMSPowerTimeScale100ms, _kCPMSPowerTimeScale1s, 
+                       _kCPMSPowerTimeScaleInstantaneous, _kCPMSPowerTimeScaleThermal, 
+                       _laneInputDisplayName, _openIOConnectionToPPM, _operationModeNames, 
+                       _outputForEffort, _printBudget, _printBudgetArray, _printBudgetItem, 
+                       _printCPMSBatteryPmaxState, _printCPMSControlState, _printCPMSControlStateSnapshotDict, 
+                       _printCPMSControlStateSnapshotDictCSV, _printClientState, 
+                       _printClientStateCSV, _printDecisionTreeCurve, _printGenericStructElement, 
+                       _sendPowerBudgetToCPMSClient, _setApplePPMArrayProperty, _setApplePPMFloatProperty, 
+                       _setClientDemandScaleFactor, _setDetailedThermalBudgetsToKext, 
+                       _setOverrideClientPowerBudget, _suppressAssert, _timescaleDisplayName, 
+                       _timescaleIntDisplayName ]
+    objc-classes:    [ CPMSAgent, CPMSClientDescription, CPMSStateReader ]
+...

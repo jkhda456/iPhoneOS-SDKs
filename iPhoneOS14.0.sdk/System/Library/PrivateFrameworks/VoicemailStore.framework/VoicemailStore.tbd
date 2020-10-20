@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1742086F-8B1C-3DEE-A605-DCBBABDB7B2C
+  - target:          armv7s-ios
+    value:           1DFAA076-5216-3343-931B-D539EB49452A
+  - target:          arm64-ios
+    value:           A870E204-F106-3991-BE3B-4F5B07CCF70C
+  - target:          arm64e-ios
+    value:           A7F32392-7479-3AAD-AA73-BE3A0F1D87DF
+install-name:    '/System/Library/PrivateFrameworks/VoicemailStore.framework/VoicemailStore'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _VMStoreAddRecord, _VMStoreChangedExternally, _VMStoreChangedExternallyNotification, 
+                       _VMStoreCleanBackingFiles, _VMStoreCopyGreetingPath, _VMStoreCopyKeyedTokens, 
+                       _VMStoreCopyMailboxUsage, _VMStoreCopyOfAllRecordsWithFlags, 
+                       _VMStoreCopyOfAllRecordsWithFlagsInRemoteUIDRange, _VMStoreCopyOfAllRemoteUIDsAndIdentifiers, 
+                       _VMStoreCopyOfAllRemoteUIDsWithTrashState, _VMStoreCopyOfAllUnreadRecordsSinceRowID, 
+                       _VMStoreCopyRecordWithIdentifier, _VMStoreCopyRecordWithRemoteUID, 
+                       _VMStoreCopyToken, _VMStoreCopyTokenForKey, _VMStoreCountOfRecordsWithFlags, 
+                       _VMStoreDestroy, _VMStoreGetRecordWithRemoteUID, _VMStoreGetRowIDOfLastInsert, 
+                       _VMStoreGetTimestampForTokenWithKey, _VMStoreGetUIDValidity, 
+                       _VMStoreInitialize, _VMStoreInitializeLocked, _VMStoreInvalidateCaches, 
+                       _VMStoreRecordChangedFlagsFromServerKey, _VMStoreRecordChangedFlagsKey, 
+                       _VMStoreRecordCopyCallbackNumber, _VMStoreRecordCopyDataPath, 
+                       _VMStoreRecordCopySender, _VMStoreRecordCopyToken, _VMStoreRecordCopyTranscriptionPath, 
+                       _VMStoreRecordFlagsChangedNotification, _VMStoreRecordFlagsDidChangeNotification, 
+                       _VMStoreRecordFlagsWillChangeNotification, _VMStoreRecordGetCallbackNumber, 
+                       _VMStoreRecordGetDate, _VMStoreRecordGetDuration, _VMStoreRecordGetExpirationDate, 
+                       _VMStoreRecordGetFlags, _VMStoreRecordGetIdentifier, _VMStoreRecordGetRemoteUID, 
+                       _VMStoreRecordGetSender, _VMStoreRecordGetToken, _VMStoreRecordGetTrashedDate, 
+                       _VMStoreRecordNewFlagsKey, _VMStoreRecordOldFlagsKey, _VMStoreRecordRelease, 
+                       _VMStoreRecordSetData, _VMStoreRecordSetDuration, _VMStoreRecordSetExpirationDate, 
+                       _VMStoreRecordSetFlag, _VMStoreRecordSetFlags, _VMStoreRecordSetFlagsFromServer, 
+                       _VMStoreRecordSetRemoteUID, _VMStoreRecordSetToken, _VMStoreRecordSetTrashed, 
+                       _VMStoreRemoveAllRecords, _VMStoreRemoveRecord, _VMStoreRemovedAllRecordsNotification, 
+                       _VMStoreRemovedRecordsNotification, _VMStoreSave, _VMStoreServiceIsSubscribed, 
+                       _VMStoreSetMailboxUsage, _VMStoreSetSaveHandler, _VMStoreSetTimestampForTokenWithKey, 
+                       _VMStoreSetToken, _VMStoreSetTokenForKey, _VMStoreSetUIDValidity, 
+                       __CFStringGetOrCreateCString, __VMCreateDirectoriesToPath, 
+                       __VMStoreCopyToken, __VMStoreCopyTokenForKey, __VMStoreGetMobileGID, 
+                       __VMStoreGetMobileUID, __VMStoreGetMobileUserDirectory, __VMStoreRemoveAllRecords, 
+                       __VMStoreSetToken, __VMStoreSetTokenForKey, __VMStoreUtilitiesInitialize, 
+                       _vm_default_log, _vm_imap_log, _vm_ui_log, _vm_vmd_log, _vm_vmstore_log, 
+                       _vm_vmtool_log ]
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __Z18__dont_do_anythingv ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8ACE8AF9-3A2C-3ACD-9D39-5209B8FA8E6D
+  - target:          arm64e-ios
+    value:           5AC399B4-450B-32C3-B689-7E7366088BD0
+install-name:    '/System/Library/PrivateFrameworks/HardwareSupport.framework/HardwareSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HSDomain, _HSErrorDomain, _HSLogHandle, _HSRequestConcreteImplementation, 
+                       _HardwareSupportVersionNumber, _HardwareSupportVersionString, 
+                       ___HSDescribeFigDeviceStatus ]
+    objc-classes:    [ HSCMBaseObject, HSFigCaptureDevice, HSFigCaptureStream, HSFigCaptureSyncStreamsGroup, 
+                       HSHIDManager, HSIORChannelDescription, HSIORSample, HSIOReport, 
+                       HSIOReportSnapshot, HSISPCapturePlugIn ]
+...

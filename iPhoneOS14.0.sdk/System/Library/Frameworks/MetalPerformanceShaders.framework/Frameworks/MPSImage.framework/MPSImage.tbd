@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A744A1DC-0803-351D-962C-706046FE56A6
+  - target:          arm64e-ios
+    value:           80A3847A-A14B-3F64-AAB5-2965835329C8
+install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage'
+current-version: 124.0.27
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ MPSNeuralNetwork, MetalPerformanceShaders ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MPSSubTileEncode ]
+    objc-classes:    [ MPSBinaryImageKernel, MPSImageAdd, MPSImageAreaMax, MPSImageAreaMin, 
+                       MPSImageArithmetic, MPSImageBilinearScale, MPSImageBox, MPSImageBox3D, 
+                       MPSImageCanny, MPSImageConversion, MPSImageConvolution, MPSImageCopyToMatrix, 
+                       MPSImageDilate, MPSImageDivide, MPSImageEDLines, MPSImageErode, 
+                       MPSImageEuclideanDistanceTransform, MPSImageFindKeypoints, 
+                       MPSImageGaussianBlur, MPSImageGaussianPyramid, MPSImageGuidedFilter, 
+                       MPSImageHistogram, MPSImageHistogramEqualization, MPSImageHistogramSpecification, 
+                       MPSImageIntegral, MPSImageIntegralOfSquares, MPSImageLanczosScale, 
+                       MPSImageLaplacian, MPSImageLaplacianPyramid, MPSImageLaplacianPyramidAdd, 
+                       MPSImageLaplacianPyramidSubtract, MPSImageMedian, MPSImageMultiply, 
+                       MPSImageNormalizedHistogram, MPSImageReduceColumnMax, MPSImageReduceColumnMean, 
+                       MPSImageReduceColumnMin, MPSImageReduceColumnSum, MPSImageReduceRowMax, 
+                       MPSImageReduceRowMean, MPSImageReduceRowMin, MPSImageReduceRowSum, 
+                       MPSImageScreenTelemetry, MPSImageSobel, MPSImageSpatioTemporalGuidedFilter, 
+                       MPSImageSpatioTemporalGuidedFilterDescriptor, MPSImageStatisticsMean, 
+                       MPSImageStatisticsMeanAndVariance, MPSImageStatisticsMinAndMax, 
+                       MPSImageSubtract, MPSImageTent, MPSImageThresholdBinary, MPSImageThresholdBinaryInverse, 
+                       MPSImageThresholdToZero, MPSImageThresholdToZeroInverse, MPSImageThresholdTruncate, 
+                       MPSImageTranspose, MPSMatrixCopyToImage, MPSUnaryImageKernel ]
+    objc-ivars:      [ MPSBinaryImageKernel._encode, MPSBinaryImageKernel._encodeData, 
+                       MPSUnaryImageKernel._encode, MPSUnaryImageKernel._encodeData, 
+                       MPSUnaryImageKernel._getPreferredTileSize ]
+...

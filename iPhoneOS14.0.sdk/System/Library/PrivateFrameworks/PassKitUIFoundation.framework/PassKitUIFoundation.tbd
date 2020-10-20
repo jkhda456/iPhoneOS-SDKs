@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B5765241-EA82-3444-B688-FB153BFCD130
+  - target:          armv7s-ios
+    value:           E978A4BD-A2EF-36CD-8E8A-72583E117A2A
+  - target:          arm64-ios
+    value:           C38B50FB-729F-3788-A2CF-BD2D927ABB35
+  - target:          arm64e-ios
+    value:           2908EE8B-A1C2-3F82-9003-540288A71001
+install-name:    '/System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ PKCheckGlyphLayer ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PKGlyphViewSize, _PKMatrixForRotationAroundXAxis, _PKMatrixForRotationAroundYAxis, 
+                       _PKMatrixForScale, _PKMatrixIdentity ]
+    objc-classes:    [ PK3DCardView, PKAuthenticator, PKAuthenticatorEvaluationContext, 
+                       PKAuthenticatorEvaluationRequest, PKAuthenticatorEvaluationResponse, 
+                       PKAuthenticatorSharedRootContext, PKCategoryVisualizationCardView, 
+                       PKDisplayLinkTargetProxy, PKFingerprintGlyphView, PKGlyphView, 
+                       PKMetalRenderLoop, PKMotionManager, PKPassFaceViewCategoryVisualizationRendererState, 
+                       PKPassFaceViewRendererState, PKPaymentRemoteInstrumentThumbnailView, 
+                       PKPeerPayment3DCharacter, PKPeerPayment3DScene, PKPeerPayment3DStore, 
+                       PKPeerPayment3DTextView, PKPhoneGlyphLayer, PKRenderLoop, 
+                       PKUISpringAnimationFactory ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           109F7A29-C855-39F6-BED7-A265F57A20C8
+  - target:          arm64e-ios
+    value:           634B0412-1620-3F7C-8065-62FA017AD991
+install-name:    '/System/Library/PrivateFrameworks/LockoutUI.framework/LockoutUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LOErrorDomain, _LOErrorResponsePinErrorKey, _LOErrorResponseUserInfoKey, 
+                       _LOLockoutUIVersionNumber, _LOLockoutUIVersionString ]
+    objc-classes:    [ LOViewController ]
+...

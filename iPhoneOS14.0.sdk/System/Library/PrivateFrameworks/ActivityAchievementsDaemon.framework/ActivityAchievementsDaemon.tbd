@@ -1,0 +1,72 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1003284A-4702-30A5-A5EE-7939E151A31F
+  - target:          arm64e-ios
+    value:           17E63A03-0050-3AAA-81EA-2462665BD88B
+install-name:    '/System/Library/PrivateFrameworks/ActivityAchievementsDaemon.framework/ActivityAchievementsDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ACHAllTemplateDatabaseKeys, _ACHAvailableTemplatesForCountryCodeInTemplates, 
+                       _ACHAvailableTemplatesForDateComponentsAndCountryCodeInTemplates, 
+                       _ACHCanonicalUnitForGoalType, _ACHCompanionHistoricalEvaluationPolicy, 
+                       _ACHDataStoreSyncEntityDidReceiveValuesNotification, _ACHDatabaseContextWithAccessibilityAssertion, 
+                       _ACHEarnedInstanceAllKeys, _ACHEarnedInstanceCreatedDateKey, 
+                       _ACHEarnedInstanceCreatorDeviceKey, _ACHEarnedInstanceEarnedDateKey, 
+                       _ACHEarnedInstancePredicateForAllEarnedInstances, _ACHEarnedInstancePredicateForKey, 
+                       _ACHEarnedInstancePredicateForSyncAnchor, _ACHEarnedInstancePredicateForSyncProvenance, 
+                       _ACHEarnedInstancePredicateUsingKey, _ACHEarnedInstanceSyncProvenanceKey, 
+                       _ACHEarnedInstanceTemplateUniqueNameKey, _ACHEarnedInstanceValueKey, 
+                       _ACHEarnedInstanceValueUnitKey, _ACHExperienceTypeForDateWithProfile, 
+                       _ACHGizmoHistoricalEvaluationPolicy, _ACHGoalCompletionTrigger, 
+                       _ACHGoalDisplayName, _ACHHistoricalEvaluationEndDateForPolicy, 
+                       _ACHHistoricalEvaluationStartDateForPolicy, _ACHMonthlyChallengeTemplateFromCacheValue, 
+                       _ACHRequestProfileExtension, _ACHRequestProfileExtensionWithError, 
+                       _ACHTemplateAlertDatesKey, _ACHTemplateAlertabilityPredicateKey, 
+                       _ACHTemplateAvailabilityEndDateKey, _ACHTemplateAvailabilityPredicateKey, 
+                       _ACHTemplateAvailabilityStartDateKey, _ACHTemplateAvailableCountryCodesKey, 
+                       _ACHTemplateAvailableSuffixesKey, _ACHTemplateCanonicalUnitKey, 
+                       _ACHTemplateCreatedDateKey, _ACHTemplateCreatorDeviceKey, 
+                       _ACHTemplateDisplayOrderKey, _ACHTemplateDisplaysEarnedInstanceCountKey, 
+                       _ACHTemplateDuplicateRemovalCalendarUnitKey, _ACHTemplateDuplicateRemovalStrategyKey, 
+                       _ACHTemplateEarnDateStrategyKey, _ACHTemplateEarnLimitKey, 
+                       _ACHTemplateGoalExpressionKey, _ACHTemplateGraceGoalExpressionKey, 
+                       _ACHTemplateGracePredicateKey, _ACHTemplateGraceProgressExpressionKey, 
+                       _ACHTemplateGraceValueExpressionKey, _ACHTemplateGraceVisibilityPredicateKey, 
+                       _ACHTemplateMinimumEngineVersionKey, _ACHTemplatePredicateKey, 
+                       _ACHTemplateProgressExpressionKey, _ACHTemplateSourceNameKey, 
+                       _ACHTemplateSyncProvenanceKey, _ACHTemplateTriggersKey, _ACHTemplateUniqueNameKey, 
+                       _ACHTemplateValueExpressionKey, _ACHTemplateVersionKey, _ACHTemplateVisibilityEndDateKey, 
+                       _ACHTemplateVisibilityPredicateKey, _ACHTemplateVisibilityStartDateKey, 
+                       _ACHTinkerHistoricalEvaluationPolicy, _ActivityAchievementsDaemonVersionNumber, 
+                       _ActivityAchievementsDaemonVersionString ]
+    objc-classes:    [ ACHAWDSubmissionManager, ACHAchievementProgressEngine, ACHAchievementStore, 
+                       ACHActivityAwardingDataProvider, ACHActivityAwardingDateCache, 
+                       ACHActivityAwardingEnvironment, ACHActivityAwardingSource, 
+                       ACHActivitySummaryUtility, ACHActivityTriggerGenerator, ACHBackCompatLegacyAchievementKeyValueSyncEntity, 
+                       ACHBackCompatLegacyAchievementSyncEntity, ACHBackCompatMonthlyChallengeListener, 
+                       ACHBackCompatRemoteAchievementAvailabilityKeyWriter, ACHBuiltinTemplateSource, 
+                       ACHCompanionAwardingScheduler, ACHDataStore, ACHDataStoreActivityProperties, 
+                       ACHDataStoreSyncEntity, ACHDatabaseAssertion, ACHEarnedInstanceAwardingEngine, 
+                       ACHEarnedInstanceAwardingSourceRecord, ACHEarnedInstanceCleanupUtility, 
+                       ACHEarnedInstanceDuplicateUtility, ACHEarnedInstanceEntity, 
+                       ACHEarnedInstanceEntityEncoder, ACHEarnedInstanceEntityWrapper, 
+                       ACHEarnedInstanceJournalEntry, ACHEarnedInstanceStore, ACHGizmoAwardingScheduler, 
+                       ACHMobileAssetProvider, ACHMonthlyChallengeAwardingSource, 
+                       ACHMonthlyChallengeDataSource, ACHMonthlyChallengeEvaluationEnvironment, 
+                       ACHMonthlyChallengeTemplateDataProvider, ACHMonthlyChallengeTemplateSource, 
+                       ACHPerfectMonthTemplateSource, ACHQueryServer, ACHRemoteTemplateAvailabilityKeyProvider, 
+                       ACHRemoteTemplateAvailabilityListener, ACHRemoteTemplateSource, 
+                       ACHServer, ACHSyncingMonthlyChallengeTemplateCache, ACHTemplateAssetRegistry, 
+                       ACHTemplateEntity, ACHTemplateEntityEncoder, ACHTemplateEntityWrapper, 
+                       ACHTemplateJournalEntry, ACHTemplateSourceScheduler, ACHTemplateStore, 
+                       ACHTinkerAwardingScheduler, ACHWorkoutAwardingSource, ACHWorkoutEvaluationEnvironment, 
+                       ACHWorkoutEvaluationWorkoutProperties, ACHWorkoutProgressEvaluationEnvironment, 
+                       ACHWorkoutUtility ]
+...

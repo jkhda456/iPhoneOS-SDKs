@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D56704E2-CC6C-3642-85BC-411FAC5D4E3A
+  - target:          arm64e-ios
+    value:           3254442D-9481-3F78-9F80-F505B81F3974
+install-name:    '/System/Library/PrivateFrameworks/NewDeviceOutreach.framework/NewDeviceOutreach'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NewDeviceOutreachVersionNumber, _NewDeviceOutreachVersionString, 
+                       __NDOLogSystem, _kAppAvailabilityType, _kAppAvailablityText, 
+                       _kAppBundleID, _kAppIconURL, _kAppLinkURL, _kAppTitle, _kAppVendorName ]
+    objc-classes:    [ NDOManager, NDOServerVersionUtilities, NDOWarranty ]
+...

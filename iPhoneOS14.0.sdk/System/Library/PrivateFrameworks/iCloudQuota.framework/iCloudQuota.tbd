@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D4727190-C22C-3078-BC1D-09E7128D0AB6
+  - target:          armv7s-ios
+    value:           58601E7A-C776-363E-80E4-2A6AAC087660
+  - target:          arm64-ios
+    value:           24C57E71-2599-35CC-ACDE-93D3E04B28F9
+  - target:          arm64e-ios
+    value:           0FAF66A4-146D-337D-A7A0-3E682BE3FB40
+install-name:    '/System/Library/PrivateFrameworks/iCloudQuota.framework/iCloudQuota'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ _ICQServiceSpecification ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ICQActionParameterOpenURLKey, _ICQActionParameterServerLinkIdentifierKey, 
+                       _ICQActionParameterURLKey, _ICQActionParameterURLQueryParametersKey, 
+                       _ICQCreateError, _ICQCreateErrorWithMessage, _ICQCurrentOfferChangedNotification, 
+                       _ICQErrorDomain, _ICQLogDebugDataTaskComplete, _ICQLogDictKeys, 
+                       _ICQLogOfferDetailsForServerDictionary, _ICQOpenURL, _ICQUpdateOfferKeyIsZeroAction, 
+                       __ICQActionForServerActionString, __ICQActionForString, __ICQActionParametersForServerActionParameters, 
+                       __ICQAlertSpecificationForServerDict, __ICQAppendServerMessageFormatAndLinks, 
+                       __ICQArrayForKey, __ICQBindingsKeyForServerMessageParameterKey, 
+                       __ICQBooleanForServerObjectDefault, __ICQBundleIDForKnownContainerID, 
+                       __ICQContainerIDForKnownBundleID, __ICQDictionaryForKey, __ICQDictionaryForOneOfKeys, 
+                       __ICQGetLogSystem, __ICQIsBuddyOfferDictionary, __ICQIsDefaultOfferDictionary, 
+                       __ICQLevelForString, __ICQLinkButtonForServerMessage, __ICQLinkForServerMessageParameter, 
+                       __ICQLinkForServerMessageParameterWithOptions, __ICQLinkForServerValues, 
+                       __ICQLinkVisibleKeyForServerMessageParameter, __ICQLinksForServerMessageParameters, 
+                       __ICQLinksForServerMessageParametersWithOptions, __ICQMessageForServerHeader, 
+                       __ICQMessageWithFormat, __ICQOfferTypeForServerString, __ICQOfferTypeForString, 
+                       __ICQOpenCloudBackupInSettings, __ICQOpenFamilySetupInSettings, 
+                       __ICQOpenManageStorageInSettings, __ICQOpenPrimaryPaymentInSettings, 
+                       __ICQOpenPurchaseFlowInSettings, __ICQServerDictToOfferTypeAndLevel, 
+                       __ICQServerHeaderGetFormatAndLinks, __ICQStringForAction, 
+                       __ICQStringForKey, __ICQStringForLevel, __ICQStringForOfferType, 
+                       __ICQStringForOneOfKeys, __ICQUpgradeCompletePageIdentifier, 
+                       __ICQUpgradeFailureNetworkPageIdentifier, __ICQUpgradeFailurePageIdentifier, 
+                       __ICQUpgradeOfferPageIdentifier, __ICQUpgradeSuccessWiFiPageIdentifier, 
+                       _iCloudQuotaVersionNumber, _iCloudQuotaVersionString, _kNonBreakingSpaceCharacter, 
+                       _kSpaceCharacter ]
+    objc-classes:    [ ICQLink, ICQOffer, ICQOfferManager, ICQRemoteContext, ICQRemotePresentationManager, 
+                       _ICQAlertSpecification, _ICQBannerSpecification, _ICQButtonSpecification, 
+                       _ICQDetailFollowupSpecification, _ICQDeviceInfo, _ICQFlowSpecification, 
+                       _ICQFollowupSpecification, _ICQHelperFunctions, _ICQPageSpecification, 
+                       _ICQPhotosInfo, _ICQUpgradeCompletePageSpecification, _ICQUpgradeFlowSpecification, 
+                       _ICQUpgradeOfferPageSpecification, _ICQXMLSpecification ]
+...

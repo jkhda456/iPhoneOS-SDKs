@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C7A26F1F-ED13-3352-B792-E02A7D6189A0
+  - target:          arm64e-ios
+    value:           703C40FF-2EEE-3A2B-95C9-19F64F2BC8B9
+install-name:    '/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices'
+current-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BSBoardServicesVersionNumber, _BSBoardServicesVersionString, 
+                       _BSLogXPCConnection, _BSServiceConnectionEndpointInstanceKey, 
+                       _BSServiceConnectionEndpointServiceKey, _BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain, 
+                       _BSServiceConnectionEndpointTargetDescriptionForMachName, 
+                       _BSServiceConnectionErrorCreate, _BSServiceConnectionErrorDomain, 
+                       _BSServiceEndpointGrantNamespace, _BSServiceLog, _BSXPCServiceConnectionExecuteCallOut, 
+                       _NSStringFromBSServiceConnectionErrorCode ]
+    objc-classes:    [ BSMutableServiceInterface, BSService, BSServiceConnection, 
+                       BSServiceConnectionEndpoint, BSServiceConnectionEndpointInjector, 
+                       BSServiceConnectionEndpointMonitor, BSServiceConnectionListener, 
+                       BSServiceDomain, BSServiceDomainSpecification, BSServiceInterface, 
+                       BSServiceManager, BSServiceQuality, BSServiceSpecification, 
+                       BSServicesConfiguration, BSXPCServiceConnection, BSXPCServiceConnectionChildContext, 
+                       BSXPCServiceConnectionContext, BSXPCServiceConnectionEventHandler, 
+                       BSXPCServiceConnectionListener, BSXPCServiceConnectionMessage, 
+                       BSXPCServiceConnectionMessageReply, BSXPCServiceConnectionNullContext, 
+                       BSXPCServiceConnectionPeer, BSXPCServiceConnectionProxy, BSXPCServiceConnectionRootClientEndpointContext, 
+                       BSXPCServiceConnectionRootClientServiceContext, BSXPCServiceConnectionRootContext, 
+                       BSXPCServiceConnectionRootServerContext, _BSServiceConnectionConfiguration, 
+                       _BSServiceDispatchingQueueImpl, _BSServiceOutgoingEndpoint ]
+    objc-ivars:      [ BSServiceInterface._client, BSServiceInterface._clientWaitsForActivation, 
+                       BSServiceInterface._identifier, BSServiceInterface._server, 
+                       BSXPCServiceConnectionMessage._sendFlag, BSXPCServiceConnectionMessage._targetQueue ]
+...

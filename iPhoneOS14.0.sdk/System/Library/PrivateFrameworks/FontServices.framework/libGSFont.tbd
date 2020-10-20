@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           23ADA823-ABF4-34BD-A35B-475E1B402F79
+  - target:          arm64e-ios
+    value:           4750D311-5676-33AE-A079-F6F4F6755024
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libGSFont.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GSFontChangeNotificationHandler, _GSFontConsumeSandboxExtension, 
+                       _GSFontCopyFamilyNames, _GSFontCopyFontFilePath, _GSFontCopyFontNamesForFamilyName, 
+                       _GSFontCopyFontNamesForFontFamilyName, _GSFontCopyFonts, _GSFontCopyLocallyActivatedFontFilePaths, 
+                       _GSFontCopyNormalizedAdditionalFontName, _GSFontCopyPersistentPostscriptURL, 
+                       _GSFontCopyProfileFontsCacheInfoFileURL, _GSFontCopyUserFontsCacheInfoFileURL, 
+                       _GSFontCopyUserFontsDirectoryURL, _GSFontCreateWithName, _GSFontDoneForFontPicker, 
+                       _GSFontEnableOrDisablePersistentURLs2, _GSFontGetCacheDictionary, 
+                       _GSFontGetCurrentGeneration, _GSFontInitialize, _GSFontInitialize2, 
+                       _GSFontNotificationAddedKey, _GSFontNotificationFontKindKey, 
+                       _GSFontNotificationURLsKey, _GSFontProcessRegistrationInfoForFontPickerClient, 
+                       _GSFontProcessRegistrationInfoForFontProvider, _GSFontProfileFontShouldBeHidden, 
+                       _GSFontPurgeFontCache, _GSFontRegisterCGFont, _GSFontRegisterPersistentURLs, 
+                       _GSFontRegisterPersistentURLsWithEnableStatus2, _GSFontRegisterURL, 
+                       _GSFontRequestUserFonts, _GSFontSetupForFontPicker, _GSFontSetupForUserInstalledFonts, 
+                       _GSFontStartAccessingFontAssets, _GSFontUnregisterCGFont, 
+                       _GSFontUnregisterPersistentURLs, _GSFontUnregisterURL, _GSFontUnregisterUserFontsURLs, 
+                       _GSFontUserFontsAvailable, _GSFontVersionNumber, _GSFontVersionString, 
+                       _IsPathConfigurationProfileFontFile, _IsPathFontAssetFontFile, 
+                       _IsPathRegisteredFontAssetFontFile, _IsPathUserInstalledFontFile, 
+                       _RegisteredFontAssetFileDirectoryPath, _RegisteredFontAssetFileDirectoryURL, 
+                       _UserInstalledFontFileDirectoryPath, _UserInstalledFontFileDirectoryURL, 
+                       ___GSFontEnableOrDisablePersistentURLs2, ___GSFontRegisterPersistentURLsWithEnableStatus2, 
+                       ___GSFontUnregisterPersistentURLs2, _kFontAssetPathPrefix ]
+...

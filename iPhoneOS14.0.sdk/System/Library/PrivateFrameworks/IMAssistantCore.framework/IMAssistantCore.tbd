@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F9B01DE3-C141-390C-915C-BA23221A8550
+  - target:          arm64e-ios
+    value:           88C6685F-5797-3A19-930D-B7F8047BAE74
+install-name:    '/System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IMAssistantChatIdentifierFromConversationIdentifier, _IMAssistantContinuityChatsKey, 
+                       _IMAssistantContinuityHandlesKey, _IMAssistantCoreInstantMessageServiceBusinessChat, 
+                       _IMAssistantMessageHandlerErrorDomain, __IMAssistantCoreGeneralSignpostLogHandle, 
+                       __IMAssistantCoreSearchForMessageSignpostLogHandle, __IMAssistantCoreSendMessageSignpostLogHandle ]
+    objc-classes:    [ IMAssistantAudioPlayer, IMAssistantChatParticipant, IMAssistantHandleFromContact, 
+                       IMAssistantINMessageConverter, IMAssistantIntentHandler, IMAssistantMessageAttributeOptions, 
+                       IMAssistantMessageHandler, IMAssistantMessageHandlerDefaultDataSource, 
+                       IMAssistantMessagePlayAudioHandler, IMAssistantMessagePlayMessageSoundHandler, 
+                       IMAssistantMessageQueryHandler, IMAssistantMessageReadAttributeSanitizer, 
+                       IMAssistantMessageSearchChatParticipant, IMAssistantMessageSearchHandler, 
+                       IMAssistantMessageSendHandler, IMAssistantMessageSetAttributeHandler, 
+                       IMAssistantRelevantChatMatchingRecipients ]
+...

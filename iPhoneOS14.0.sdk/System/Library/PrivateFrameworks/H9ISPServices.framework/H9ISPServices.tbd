@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           855DA9A9-EF99-3ECE-A17F-2A4F1C422F78
+  - target:          armv7s-ios
+    value:           E86D3FE5-1516-3878-89F1-06AD9CA2936C
+  - target:          arm64-ios
+    value:           7549B08E-1B17-3ED9-A5A9-7379386DE3A8
+  - target:          arm64e-ios
+    value:           F1CB4C1A-E4BE-3B58-B1DA-A6D3ABD9A238
+install-name:    '/System/Library/PrivateFrameworks/H9ISPServices.framework/H9ISPServices'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    weak-symbols:    [ __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
+                       __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN5H9ISP38H9ISPCreateFrameMetaDataAsCFDictionaryEPK19sCIspMetaDataShared ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __Z13GetNamedValueP9__CFArrayi, __Z16AppendNamedValueP9__CFArrayPK14__CFDictionary, 
+                       __Z16ClearNamedValuesP9__CFArray, __Z16CountNamedValuesP9__CFArray, 
+                       __Z16CreateNamedValuePKcS0_P9__CFArray, __Z17CreateNamedValuesv, 
+                       __Z17ReleaseNamedValuePK14__CFDictionary, __Z18ReleaseNamedValuesP9__CFArray, 
+                       __Z4ListPK14__CFDictionary, __Z4NamePK14__CFDictionary, __Z5ValuePK14__CFDictionary, 
+                       __ZN10NamedValue3SetEPKcS1_P9__CFArray, __ZN10NamedValueC1EPKcS1_P9__CFArray, 
+                       __ZN10NamedValueC1Ev, __ZN10NamedValueC2EPKcS1_P9__CFArray, 
+                       __ZN10NamedValueC2Ev, __ZN10NamedValueD1Ev, __ZN10NamedValueD2Ev, 
+                       __ZN11NamedValues9push_backERK10NamedValue, __ZN11NamedValuesC1Ev, 
+                       __ZN11NamedValuesC2Ev, __ZN11NamedValuesD1Ev, __ZN11NamedValuesD2Ev, 
+                       __ZN5H9ISP22CreateFormatedMetadataERK19sCIspMetaDataShared, 
+                       __ZN5H9ISP22H9ISPThreadReadySyncer15signalAndUnlockEv, __ZN5H9ISP22H9ISPThreadReadySyncer4lockEv, 
+                       __ZN5H9ISP22H9ISPThreadReadySyncer4waitEv, __ZN5H9ISP22H9ISPThreadReadySyncerC1Ev, 
+                       __ZN5H9ISP22H9ISPThreadReadySyncerC2Ev, __ZN5H9ISP22H9ISPThreadReadySyncerD1Ev, 
+                       __ZN5H9ISP22H9ISPThreadReadySyncerD2Ev, __ZN5H9ISP32H9ISPAppendNamedValuesToCFStringEP10__CFStringiPK9__CFArrayb, 
+                       __ZN5H9ISP34H9ISPCreateFrameMetaDataAsCFStringEPK19sCIspMetaDataSharedb, 
+                       __ZN5H9ISP35H9ISPCreateEXIFDictFromMetadataDictEPK14__CFDictionaryjj, 
+                       __ZNK10NamedValue4ListEv, __ZNK10NamedValue4NameEv, __ZNK10NamedValue5ValueEv, 
+                       __ZNK11NamedValues4sizeEv, __ZNK11NamedValues5clearEv ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D1D4993A-B59B-339D-9D1D-D2B56EEC6DD3
+  - target:          arm64e-ios
+    value:           5034C668-EB19-3982-BD09-F04E82E8D2B7
+install-name:    '/System/Library/PrivateFrameworks/HearingCore.framework/HearingCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXHAMessageKeyIdentifier, _AXHAMessageKeyPayload, _AXHANULL, 
+                       _AXHearingAidServerName, _HAEngineeringLog, _HAInitializeLogging, 
+                       _HALoggingQueue, _HCApplicationGetMainBundleIdentifier, _HCDeviceGetType, 
+                       _HCHeardBundleName, _HCHeardProcessName, _HCMessageDeviceNameKey, 
+                       _HCPerformSafeBlock, _HCPreferencesBundleName, _HCProcessGetName, 
+                       _HearingCoreVersionNumber, _HearingCoreVersionString, _PAEngineeringLog, 
+                       _PAInitializeLogging, _PALoggingQueue ]
+    objc-classes:    [ HCDatabaseManager, HCServer, HCSettings, HCSettingsListenerHelper, 
+                       HCUtilities, HCXPCClient, HCXPCMessage ]
+...

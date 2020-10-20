@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E2351EDF-B45D-3A74-A6A1-7770E3EC7D77
+  - target:          arm64e-ios
+    value:           3B7DD892-95B7-3320-9606-88E6CBAFB7F8
+install-name:    '/System/Library/PrivateFrameworks/NPTKit.framework/NPTKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BASE_URL, _GET_URL, _GET_URL_FORMAT_STRING, _NPTKitVersionNumber, 
+                       _NPTKitVersionString, _PING_URL, _POST_URL, _POST_URL_EXTENSION, 
+                       _TEMP_FILE_NAME, _UNIQUE_QUERY_PARAM, _USER_AGENT_FORMAT_STRING, 
+                       _dataBearerTechnologyToString, _indicatorToString, _wirelessAccessTechnologyToString ]
+    objc-classes:    [ NPTCellularCollector, NPTDownload, NPTFileSizeConverter, NPTLogger, 
+                       NPTMetadataCollector, NPTMetricResult, NPTPerformanceTest, 
+                       NPTPerformanceTestConfiguration, NPTPing, NPTPingResult, NPTResults, 
+                       NPTSpeedMetric, NPTTaskMetrics, NPTUpload, Ping, SimplePing ]
+...

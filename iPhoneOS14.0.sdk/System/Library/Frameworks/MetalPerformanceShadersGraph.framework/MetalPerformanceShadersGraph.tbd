@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1AFA5602-3AE9-3B44-903B-83C2F6F12398
+  - target:          arm64e-ios
+    value:           A636606B-8C0F-328E-B743-7B17BACAEC9F
+install-name:    '/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ MPSGraph, MPSGraphAdamOptimizer, MPSGraphConvolution2DOpDescriptor, 
+                       MPSGraphDepthwiseConvolution2DOpDescriptor, MPSGraphDevice, 
+                       MPSGraphExecutable, MPSGraphExecutionDescriptor, MPSGraphOperation, 
+                       MPSGraphOptimizer, MPSGraphPooling2DOpDescriptor, MPSGraphShapedType, 
+                       MPSGraphStochasticGradientDescentOptimizer, MPSGraphTensor, 
+                       MPSGraphTensorData, MPSGraphVariableInitializer, MPSGraphVariableOp ]
+...

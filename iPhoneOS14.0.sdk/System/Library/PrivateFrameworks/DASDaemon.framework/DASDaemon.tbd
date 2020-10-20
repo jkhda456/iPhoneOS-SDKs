@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D97E280C-F280-3F9F-AB43-958AB599165B
+  - target:          arm64e-ios
+    value:           084B266D-0C4E-3654-A12D-8BC066EF160B
+install-name:    '/System/Library/PrivateFrameworks/DASDaemon.framework/DASDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DASDaemonVersionNumber, _DASDaemonVersionString ]
+    objc-classes:    [ _DASLogCondition, _DASLogConditionHistory, _DASLogEntry, _DASLogExtractor, 
+                       _DASLogValueInterval ]
+...

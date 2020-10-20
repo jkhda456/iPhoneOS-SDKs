@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3353174B-8380-32B1-995E-B8A88B1CE4C0
+  - target:          armv7s-ios
+    value:           41070DDA-C299-36FF-AB91-7D303D0F3F50
+  - target:          arm64-ios
+    value:           EFF4F6EB-4B4F-3B54-BB9F-561962F5493A
+  - target:          arm64e-ios
+    value:           72CA3AD0-C130-37C7-BF2C-06CA28071223
+install-name:    '/System/Library/PrivateFrameworks/MMCSServices.framework/MMCSServices'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _failReasonStringForMMCSError, _parseMMCSError ]
+    objc-classes:    [ MMCSController, MMCSGetFile, MMCSPutFile, MMCSRequestorContext, 
+                       MMCSSimpleFile ]
+...

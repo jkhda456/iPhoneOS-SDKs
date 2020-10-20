@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           16C8F2A9-1F66-309B-962D-5E08C9A8B7FC
+  - target:          armv7s-ios
+    value:           77E568B9-0E73-3958-AFB5-28D9D55772E3
+  - target:          arm64-ios
+    value:           E54FEF5A-55C3-3795-A1A0-4D0E1BA51B33
+  - target:          arm64e-ios
+    value:           D3C8BFD4-0DCA-3A9E-B8C3-41200D152E21
+install-name:    '/System/Library/PrivateFrameworks/AccountNotification.framework/AccountNotification'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ANAccountNotificationClientEntitlement, _ANAccountNotificationManagerEntitlement, 
+                       _ANDaemonMachServiceName, _AccountNotificationVersionNumber, 
+                       _AccountNotificationVersionString, __ANLogSystem ]
+    objc-classes:    [ ANAccountNotification, ANAccountNotifier, ANClientCallbackInterface, 
+                       ANDaemonInterface, ANManagedAccountNotification, ANManagedNotificationAction, 
+                       ANNotificationAction, ANSectionSubtypeDescriptor ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1D90F9DD-094C-3A2D-93D2-319723D6AF2D
+  - target:          arm64e-ios
+    value:           51527DF8-1A3D-32D7-B967-3C53351EB6D9
+install-name:    '/System/Library/PrivateFrameworks/IntentsUICardKitProviderSupport.framework/IntentsUICardKitProviderSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INUICKPInterfaceSectionsFromCard, _INUICKPProviderIdentifier, 
+                       _IntentsUICardKitProviderSupportVersionNumber, _IntentsUICardKitProviderSupportVersionString, 
+                       __INUICKPInteractionMatchingCardSectionInCard, __INUICKPIntrinsicInteractiveBehaviorForCardSection ]
+    objc-classes:    [ INUICKPCardInterfaceSection, INUICKPCardSectionViewProvider, 
+                       INUICKPEntryPoint, INUICKPExtensionCardSectionViewController, 
+                       INUICKPInterfaceSectionConverter, INUICKPSynchronousRemoteView, 
+                       INUICKPSynchronousRemoteViewController, INUICKPSynchronousRemoteViewControllerAllocator ]
+...

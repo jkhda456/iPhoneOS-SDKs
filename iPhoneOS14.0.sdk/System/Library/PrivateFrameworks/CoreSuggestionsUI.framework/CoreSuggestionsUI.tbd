@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EE25E3F7-C362-3363-92A4-3EC96D05A1AD
+  - target:          armv7s-ios
+    value:           6BF47FF2-8873-36BB-9C41-58037789C397
+  - target:          arm64-ios
+    value:           5372EDAB-C96D-3FA8-BDF2-F4D560A538B5
+  - target:          arm64e-ios
+    value:           46E4DE12-0397-34CC-9E06-9D22643F848B
+install-name:    '/System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI'
+current-version: 1115
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _LogCategorySGSuggestionsService, _SameDayDates ]
+    objc-classes:    [ SGUIAddAllTableViewCell, SGUIBannerStringGenerator, SGUIBannerView, 
+                       SGUIContactSuggestionTableViewCell, SGUIEventSuggestionTableViewCell, 
+                       SGUIEventsAndContactsTableViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreSuggestionsUIVersionNumber, _CoreSuggestionsUIVersionString, 
+                       _SGUIAccessibilityIdentifierActionButton, _SGUIAccessibilityIdentifierCloseButton, 
+                       _SGUIAccessibilityIdentifierSubtitleLabel, _SGUIAccessibilityIdentifierTitleLabel ]
+    objc-classes:    [ SGBanner, SGContactSuggestion, SGContactSuggestionBase, SGEventSuggestion, 
+                       SGEventSuggestionBase, SGFoundInSuggestionPresenter, SGList, 
+                       SGReminderSuggestion, SGReminderSuggestionBase, SGSuggestionAction, 
+                       SGSuggestionPresenter, SGSuggestionSection, SGSuggestionStore, 
+                       SGSuggestionTableViewCell, SGSuggestionTableViewController, 
+                       SGTappableTextView, SGUIDateFormatting, SGUIIconSupport ]
+    objc-ivars:      [ SGContactSuggestionBase._realtimeContact, SGEventSuggestionBase._eventKitEvent, 
+                       SGEventSuggestionBase._realtimeEvent, SGReminderSuggestionBase._notes, 
+                       SGReminderSuggestionBase._reminder ]
+...

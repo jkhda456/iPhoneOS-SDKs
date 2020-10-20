@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           120A6FD7-ED58-30E8-9A0A-4AE8E6D8A019
+  - target:          arm64e-ios
+    value:           FA528A2C-E475-3D54-8669-D270385F4983
+install-name:    '/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomNetworkUsage.framework/SymptomNetworkUsage'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _attributionReasonImpliesBundleName, _attributionReasonImpliesProcessName, 
+                       _kNWSelectClosed, _kNWSelectDescription, _kNWSelectDestinationDirectlyReachable, 
+                       _kNWSelectEffectiveUser, _kNWSelectFirstInstance, _kNWSelectFlowEvents, 
+                       _kNWSelectFlowUsesChannels, _kNWSelectFlowUsesSockets, _kNWSelectHasCellTraffic, 
+                       _kNWSelectHasCellTrafficDelta, _kNWSelectHasMinimumAge, _kNWSelectHasTraffic, 
+                       _kNWSelectHasTrafficDelta, _kNWSelectHasWiFiTraffic, _kNWSelectHasWiFiTrafficDelta, 
+                       _kNWSelectHasWiredTraffic, _kNWSelectHasWiredTrafficDelta, 
+                       _kNWSelectInterfaceAWDL, _kNWSelectInterfaceCellular, _kNWSelectInterfaceCellularViaFallback, 
+                       _kNWSelectInterfaceCompanionLink, _kNWSelectInterfaceExpensive, 
+                       _kNWSelectInterfaceFlowswitchValueError, _kNWSelectInterfaceIndex, 
+                       _kNWSelectInterfaceLoopback, _kNWSelectInterfaceRouteValueError, 
+                       _kNWSelectInterfaceUnknown, _kNWSelectInterfaceWiFi, _kNWSelectInterfaceWired, 
+                       _kNWSelectQUIC, _kNWSelectSelf, _kNWSelectTCP, _kNWSelectUDP, 
+                       _kNWUsageLookupEUUIDCoalitionID, _kNWUsageLookupEUUIDCoreServices, 
+                       _kNWUsageLookupEUUIDCoreServicesDynamic, _kNWUsageLookupEUUIDNEHelper, 
+                       _kNWUsageLookupEUUIDProcessName, _kNWUsageLookupEUUIDStatic, 
+                       _kNWUsageLookupUUIDCoalitionID, _kNWUsageLookupUUIDCoreServices, 
+                       _kNWUsageLookupUUIDCoreServicesDynamic, _kNWUsageLookupUUIDNEHelper, 
+                       _kNWUsageLookupUUIDProcessName, _kNWUsageLookupUUIDStatic, 
+                       _kNWUsageOptimizeCPU, _kNWUsageOptimizeLatency, _kNWUsageParameterAcceptCell, 
+                       _kNWUsageParameterHandlesRNF, _kNWUsageParameterMappingAppStateMonitoring, 
+                       _kNWUsageParameterMappingAvoidCoalitions, _kNWUsageParameterMappingDebugMode, 
+                       _kNWUsageParameterMappingFlavorSymptoms, _kNWUsageParameterMappingLSDynamic, 
+                       _kNWUsageParameterMappingLSDynamicCacheMaxSize, _kNWUsageParameterMappingLSDynamicCacheMissRetainTime, 
+                       _kNWUsageParameterMappingLSDynamicCachePruneSize, _kNWUsageParameterMappingUseCoalitions, 
+                       _kNWUsageParameterMappingUseNEHelper, _kNWUsageParameterMappingUseNEHelperForSet, 
+                       _kNWUsageParameterMappingUseProcessPrefixForSet, _kNWUsageParameterNoZeroLength, 
+                       _kNWUsageParameterTargetOpimization, _kNWUsageParameterTargetSelector, 
+                       _kNWUsageParameterThresholds, _kNWUsageParameterTraceFD ]
+    objc-classes:    [ NWUsageManager, NWUsageMonitor, NWUsageProtocolSnapshot, NWUsageQUICSnapshot, 
+                       NWUsageTCPSnapshot, NWUsageTargetSelector, NWUsageUDPSnapshot ]
+...

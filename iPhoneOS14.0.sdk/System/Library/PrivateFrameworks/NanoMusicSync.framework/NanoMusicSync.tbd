@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A4605EBF-2988-385A-82DC-691D22710DA4
+  - target:          armv7s-ios
+    value:           60BD624E-8BF0-37D1-A912-7EB321D12C3F
+  - target:          arm64-ios
+    value:           0827E400-C93E-3523-A144-0FC020D89C07
+  - target:          arm64e-ios
+    value:           6E84CA92-A82E-304C-BCCD-C798A1B92A8E
+install-name:    '/System/Library/PrivateFrameworks/NanoMusicSync.framework/NanoMusicSync'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ NMSAutofillManager ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NMSActiveAccountDidChangeNotification, _NMSFeedURLKey, _NMSMediaPinningAudiobooksContentsInvalidatedNotification, 
+                       _NMSMediaPinningManagerAudiobooksIdentifiersDidChangeNotification, 
+                       _NMSMediaPinningManagerDownloadInfoDidInvalidateNotification, 
+                       _NMSMediaPinningManagerMusicIdentifiersDidChangeNotification, 
+                       _NMSMediaPinningManagerPodcastsIdentifiersDidChangeNotification, 
+                       _NMSMediaPinningMusicContentsInvalidatedNotification, _NMSMediaPinningPodcastsContentsInvalidatedNotification, 
+                       _NMSMediaSyncInfoDidUpdateNotification, _NMSMusicRecommendationArtworkDidUpdateNotification, 
+                       _NMSMusicRecommendationsDidUpdateNotification, _NMSNotificationUserInfoKeyIsInProcessNotification, 
+                       _NMSPinningStatusIsPinned, _NMSPinningStatusIsRecentMusicPinned, 
+                       _NMSPodcastSizeCacheDidUpdateNotification, _NMSRecommendationHeavyRotationIdentifier, 
+                       _NMSRecommendationRecentMusicIdentifier, _NMSStoreIDKey, _NMSSubscriptionStatusDidChangeNotification, 
+                       _NMSSubscriptionSupportDidChangeNotification, _NMSSyncManagerSyncStateDidChangeNotification, 
+                       _NMSyncDefaultsAudiobooksPinningSelectionsDidChangeNotification, 
+                       _NMSyncDefaultsAudiobooksRecommendationsDidChangeNotification, 
+                       _NMSyncDefaultsMusicPinningSelectionsDidChangeNotification, 
+                       _NMSyncDefaultsPodcastsPinningSelectionsDidChangeNotification, 
+                       _NMSyncDefaultsPodcastsSizeInfoDidChangeNotification, _NMSyncDefaultsPodcastsSubscriptionMetadataDidChangeNotification, 
+                       _NMSyncDefaultsRecommendationLibraryContentsDidChangeNotification, 
+                       _NMSyncDefaultsRecommendationSelectionsDidChangeNotification, 
+                       _NMSyncDefaultsRecommendationStoreContentsDidChangeNotification, 
+                       _NMSyncDefaultsSyncInfoDidChangeNotification, _NMSyncDefaultsSyncInfoRequestDateDidChangeNotification, 
+                       _NMSyncDefaultsSyncSettingsDidChangeNotification, _NMSyncDefaultsSyncStateDidChangeNotification, 
+                       _NMSyncPreferencesDidChangeLocallyNotification, _NMSyncPreferencesDidChangeRemotelyNotification ]
+    objc-classes:    [ NMSAlternatingMediaItemGroupIterator, NMSAppActivityStatus, 
+                       NMSEpisodeSizeInfo, NMSGreenTeaStreamingDefaults, NMSMediaContainerQuotaData, 
+                       NMSMediaDownloadInfo, NMSMediaItemDownloadInfo, NMSMediaItemGroup, 
+                       NMSMediaItemGroupIterator, NMSMediaPinningManager, NMSMediaQuotaManager, 
+                       NMSMediaSettingsSynchronizer, NMSMediaSyncInfo, NMSMediaSyncInfoUpdater, 
+                       NMSModelRecommendationsLibraryRequest, NMSMusicRecommendation, 
+                       NMSMusicRecommendationManager, NMSMutableMediaSyncInfo, NMSMutablePodcastSizeCache, 
+                       NMSPartialMediaItemDownloadInfo, NMSPodcastIdentifierSet, 
+                       NMSPodcastSizeCache, NMSPodcastSizeEstimation, NMSPodcastSizeInfo, 
+                       NMSRecommendationArtworkDataSource, NMSSequentialMediaItemGroupIterator, 
+                       NMSStoreModelLookupRequest, NMSSubscriptionManager, NMSSyncManager, 
+                       NMSSyncProgressInfo, NMSSyncStatesDict, NMSyncDefaults ]
+...

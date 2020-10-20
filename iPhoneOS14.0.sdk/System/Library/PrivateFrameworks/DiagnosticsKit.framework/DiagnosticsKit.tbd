@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           30DCF03D-6827-384C-BE72-6FF80B10F394
+  - target:          armv7s-ios
+    value:           22D12005-C06F-30BE-B6FA-2694CEEEFFD6
+  - target:          arm64-ios
+    value:           08B14DFC-9E7E-37EC-A62B-60001BD45FB9
+  - target:          arm64e-ios
+    value:           E5A719AE-A815-3F90-BE25-9105AD9402D0
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticsKit.framework/DiagnosticsKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ DKHost, DKMutableResult, DKResult ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CACHE_DIRECTORY, _DKErrorDomain, _DKErrorLocalizedDescriptionForCode, 
+                       _DKTemporaryDirectoryURL, _DiagnosticsKitLogHandleForCategory, 
+                       _DiagnosticsKitVersionNumber, _DiagnosticsKitVersionString, 
+                       _HELPER_APP_BUNDLE_ID, _HELPER_APP_PATH, _HOME_DIRECTORY, 
+                       _TEMP_DIRECRORY, _XPC_BUNDLE_DIRECTORY, _XPC_BUNDLE_ID, _kDKBundleIdentifierKey, 
+                       _kDKComponentAttributesKey, _kDKComponentIdentityKey, _kDKDefaultBundleIdentifier, 
+                       _kDKDiagnosticAttributeFreeSpaceRequiredKey, _kDKDiagnosticAttributeIdentifierKey, 
+                       _kDKDiagnosticAttributeNameKey, _kDKDiagnosticAttributeRequiresUnlockKey, 
+                       _kDKDiagnosticParametersKey, _kDKDiagnosticParametersParametersKey, 
+                       _kDKDiagnosticParametersPredicatesKey, _kDKDiagnosticParametersSpecificationsKey, 
+                       _kDKDiagnosticPredicatesKey, _kDKDiagnosticSpecificationsKey, 
+                       _kDKDiagnosticsRestrictedService, _kDKDiagnosticsRestrictedUIService, 
+                       _kDKDiagnosticsService, _kDKDiagnosticsUIService, _kDKReportComponentsKey, 
+                       _kDKReporterAttributeManifestKey, _kDKReporterAttributeManifestResourcesKey, 
+                       _kDKReporterAttributeManifestVersionKey, _kDKReporterAttributeNameKey, 
+                       _kDKReportersService ]
+    objc-classes:    [ DKAnalytics, DKCanonicalVersion, DKComponent, DKComponentIdentity, 
+                       DKComponentPredicate, DKDiagnosticAttributes, DKDiagnosticContext, 
+                       DKDiagnosticContextMock, DKDiagnosticController, DKDiagnosticControllerMock, 
+                       DKDiagnosticHostContext, DKDiagnosticManager, DKDiagnosticParameters, 
+                       DKDiagnosticRegistry, DKDiagnosticResult, DKDiagnosticService, 
+                       DKDiagnosticServiceRequest, DKDiagnosticViewController, DKDiagnosticViewControllerMock, 
+                       DKDiagnosticXPCManager, DKEnterSandbox, DKExtensionAdapter, 
+                       DKExtensionDiscovery, DKExtensionRequest, DKMutableDiagnosticResult, 
+                       DKReport, DKReportHostContext, DKReportManager, DKReportPlanner, 
+                       DKReporterAttributes, DKReporterContext, DKReporterController, 
+                       DKReporterRegistry, DKReportingConcurrentRequest, DKReportingConcurrentRequestGroup, 
+                       DKRequestContext, DKUtilities, DiagnosticsKit_Subsystem ]
+...

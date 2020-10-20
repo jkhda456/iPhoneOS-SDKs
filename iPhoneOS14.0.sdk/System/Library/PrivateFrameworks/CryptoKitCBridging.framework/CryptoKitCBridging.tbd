@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           838CBC7E-A81F-3DF0-8890-A567B9A99E36
+  - target:          arm64e-ios
+    value:           757119E9-E432-3405-B5EC-1078BFA782CF
+install-name:    '/System/Library/PrivateFrameworks/CryptoKitCBridging.framework/CryptoKitCBridging'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CryptoKitCBridgingVersionNumber, _CryptoKitCBridgingVersionString, 
+                       _SPAKE2Alishaz0Size, _SPAKE2CtxSize, _SSPBSecretShareReadFrom, 
+                       _ccss_generator_state_size_of, _ccss_shamir_parameters_init_bridge, 
+                       _ccss_share_bag_size_of, _ccss_share_size_of, _cczp_clear, 
+                       _cczp_init_with_prime, _cczp_size_of, _coordinateSizeForCurve, 
+                       _getCMACContextSize, _getDigestSizeForDigestInfo, _getGCMCtxSize, 
+                       _getHMACContextSizeForDigestInfo, _getccec_full_ctx_size, 
+                       _getccec_pub_ctx_size, _keyIsCompactRepresentable ]
+    objc-classes:    [ CKSSShare, SEPUtils, SSPBSecretShare ]
+    objc-ivars:      [ CKSSShare._field, CKSSShare._share, CKSSShare._share_size, 
+                       SSPBSecretShare._associatedData, SSPBSecretShare._ciphertext, 
+                       SSPBSecretShare._has, SSPBSecretShare._iv, SSPBSecretShare._shareX, 
+                       SSPBSecretShare._shareY, SSPBSecretShare._tag, SSPBSecretShare._threshold, 
+                       SSPBSecretShare._version ]
+...

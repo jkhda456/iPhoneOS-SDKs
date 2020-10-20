@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C9906A4A-C061-39BF-98E6-25C2DAF79158
+  - target:          armv7s-ios
+    value:           E58EE81D-BCE4-3C84-A685-B8AAA6ECE3F5
+  - target:          arm64-ios
+    value:           F034FA39-E6A7-3E9C-96C9-8A9F8756BF95
+  - target:          arm64e-ios
+    value:           7375C6FE-45BF-3E67-910F-CA535D947854
+install-name:    '/System/Library/PrivateFrameworks/DuetRecommendation.framework/DuetRecommendation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DuetRecommendationVersionNumber, _DuetRecommendationVersionString ]
+    objc-classes:    [ _DRInMemoryTopicInterestModel, _DRPaths, _DRTopicActionEntry, 
+                       _DRTopicEnumerationQuery, _DRTopicInterestModel, _DRTopicInterestSummary, 
+                       _DRTopicStatisticsQuery ]
+...

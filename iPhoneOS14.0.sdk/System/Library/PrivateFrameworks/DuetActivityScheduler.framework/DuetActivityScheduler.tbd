@@ -1,0 +1,66 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           460460C4-A656-36CA-AE85-E52567E4AC47
+  - target:          armv7s-ios
+    value:           03030D04-DB75-3454-99B6-43C80A015E46
+  - target:          arm64-ios
+    value:           2F304715-B5AB-3309-8F1F-E60F5F253EE5
+  - target:          arm64e-ios
+    value:           CEAC7AF2-7F09-3F40-9120-BB745BD7FE42
+install-name:    '/System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DuetActivitySchedulerVersionNumber, _DuetActivitySchedulerVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __DASActivityDurationInterminable, __DASActivityDurationLong, 
+                       __DASActivityDurationModerate, __DASActivityDurationShort, 
+                       __DASActivityDurationVeryLong, __DASActivityDurationVeryShort, 
+                       __DASActivitySchedulerErrorDomain, __DASActivityTransferSizeGigantic, 
+                       __DASActivityTransferSizeLarge, __DASActivityTransferSizeModerate, 
+                       __DASActivityTransferSizeSmall, __DASActivityTransferSizeVeryLarge, 
+                       __DASActivityTransferSizeVerySmall, __DASActivityTransferSizeZero, 
+                       __DASBudgetDictionaryKey, __DASCTSBeforeApplicationLaunchKey, 
+                       __DASCTSBypassBatteryAgingProtectionKey, __DASCTSBypassPeakPowerPressureKey, 
+                       __DASCTSClientDataBudgetKey, __DASCTSMagneticInterferenceSensitivityKey, 
+                       __DASCTSMailFetchKey, __DASCTSMinBatteryLevelKey, __DASCTSMotionStateKey, 
+                       __DASCTSUserRequestedBackupActivityKey, __DASDaemonServiceName, 
+                       __DASDefaultGroupName, __DASDefaultNetworkGroupName, __DASExtensionLaunchReasonMLCompute, 
+                       __DASLaunchOptionsNSURLSession, __DASLaunchOptionsSignificantLocationChange, 
+                       __DASLaunchReasonApplicationSnapshot, __DASLaunchReasonBackgroundFetch, 
+                       __DASLaunchReasonBackgroundNewsstand, __DASLaunchReasonBackgroundProcessing, 
+                       __DASLaunchReasonBackgroundRefresh, __DASLaunchReasonBackgroundRemoteNotification, 
+                       __DASLaunchReasonHealthKit, __DASLaunchReasonNSURLSessionAuthorizationRequired, 
+                       __DASLaunchReasonNSURLSessionComplete, __DASLaunchReasonSignificantLocationChange, 
+                       __DASLaunchReasonWatchConnectivityPendingData, __DASMotionStateAny, 
+                       __DASMotionStateAutomotive, __DASMotionStateAutomotiveMoving, 
+                       __DASMotionStateAutomotiveStationary, __DASMotionStateCycling, 
+                       __DASMotionStateRunning, __DASMotionStateStationary, __DASMotionStateWalking, 
+                       __DASNonRateLimitedLaunchKey, __DASRemoteNotificationPayloadKey, 
+                       __DASRequiresSignificantUserInactivityKey, __DASSchedulingPriorityBackground, 
+                       __DASSchedulingPriorityDefault, __DASSchedulingPriorityMaintenance, 
+                       __DASSchedulingPriorityUserInitiated, __DASSchedulingPriorityUserInitiatedOvercommit, 
+                       __DASSchedulingPriorityUtility, __DASUpdateActivityDownloadedOnCellKey, 
+                       __DASUpdateActivityDownloadedOnWifiKey, __DASUpdateActivityErrorKey, 
+                       __DASUpdateActivityPercentCompletedKey, __DASUpdateActivityUploadedOnCellKey, 
+                       __DASUpdateActivityUploadedOnWifiKey, __DASUpdateActivityXPCActivityClientStringKey, 
+                       __DASUpdateActivityXPCActivityNameKey, __DASWidgetTodayViewHomeScreenPageID, 
+                       __DASWidgetTodayViewLockScreenPageID, __DASWidgetTodayViewPageID, 
+                       _kDASBudgetKeyBundleIDs, _kDASBudgetKeyDeviceWake, _kDASBudgetKeyEffectiveDate, 
+                       _kDASBudgetKeyPIDs, _kDASBudgetKeyProcessNames, _kDASSystemContextKeyBypassDataBudget, 
+                       _kDASSystemContextKeyBypassEnergyBudget, _kDASSystemContextKeyNetworkTask, 
+                       _kDASSystemContextKeyPushTask, _kDASWidgetMetadataDASInitiated, 
+                       _kDASWidgetMetadataExtensionBundle, _kDASWidgetMetadataInStack, 
+                       _kDASWidgetMetadataPageID, _kDASWidgetMetadataRefreshReason, 
+                       _kDASWidgetOverrideKeyPath, _kDASWidgetRefreshMaximumBudgetDailyKey, 
+                       _kDASWidgetRefreshMaximumBudgetForIndividualDailyKey, _kDASWidgetRefreshMaximumBudgetForSystemDailyKey, 
+                       _kDASWidgetRefreshStreamName, _kDASWidgetViewMetadataTimeUntilContentExpiration, 
+                       _kDASWidgetViewStreamName, _kNWEndpointKey, _kNWParametersKey ]
+    objc-classes:    [ _DASActivity, _DASActivityGroup, _DASExtension, _DASExtensionRemoteContext, 
+                       _DASFileProtection, _DASPairedSystemContext, _DASPriorityQueue, 
+                       _DASScheduler, _DASStrings, _DASSubmissionRateLimiter, _DASSystemContext, 
+                       _DASWidgetBudget, _DASWidgetBudgetParameters, _DASWidgetInfo, 
+                       _DASWidgetRefresh, _DASWidgetRefreshScheduler, _DASWidgetView ]
+...

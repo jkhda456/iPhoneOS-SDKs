@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           107D9662-069D-3F72-9DF1-8AC21A0D2A87
+  - target:          armv7s-ios
+    value:           33EF4156-6770-3E00-9A5C-1C5B612CE4A9
+  - target:          arm64-ios
+    value:           17CF3CB2-3E16-38D0-B692-7C78B208B5EC
+  - target:          arm64e-ios
+    value:           7D9D5EB6-0EE7-3E3C-AC38-3F33EB9679ED
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _EndpointDetectorInterface_registerAUForOSXDevelopment, _PListReaderInterface_GetSerializedFloat32DataFromDict, 
+                       _PListReaderInterface_GetSerializedFloat32DataFromDict_II, 
+                       _PListReaderInterface_GetValueFromDict, _PListReaderInterface_ReadPListFromFile, 
+                       _VAD3ConfigurationInterface_DecodeFull, _VAD3ConfigurationInterface_DecodeState, 
+                       _VAD3ConfigurationInterface_DecodeStateTm, _VAD3ConfigurationInterface_DecodeStateTm_II, 
+                       _VAD3ConfigurationInterface_DecodeTiming, _VAD3ConfigurationInterface_EncodeFull, 
+                       _VAD3ConfigurationInterface_EncodeState, _VAD3ConfigurationInterface_EncodeStateTm, 
+                       _VAD3ConfigurationInterface_EncodeStateTm_II, _VAD3ConfigurationInterface_EncodeTiming, 
+                       _VAD3ConfigurationInterface_GetCategoryDimensions, _VAD3ConfigurationInterface_GetCategoryName, 
+                       _VAD3ConfigurationInterface_GetCategoryValueName, _VAD3ConfigurationInterface_GetFullCategoryDimension, 
+                       _VAD3ConfigurationInterface_GetFullInterleavedDimension, _VAD3ConfigurationInterface_GetFullTimingDimension, 
+                       _VAD3ConfigurationInterface_GetInterleavedCategoryAndTimingDimensions, 
+                       _VAD3ConfigurationInterface_GetNumCategories, _VAD3ConfigurationInterface_GetNumCategoryValues, 
+                       _VAD3ConfigurationInterface_GetTimingDimensions, _VAD3ConfigurationInterface_GetTimingModelOrder, 
+                       _VAD3ConfigurationInterface_IsInitialized ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ABHelperCreateDescriptionFromASBD, _ABHelperCreateDescriptionFromAudioUnit, 
+                       _ABHelperCreateDescriptionFromDSPGraph, _ABHelperCreateDescriptionFromDSPGraphBox, 
+                       _ABHelperIsABTestModeOn, _ABHelperWriteJSONFileFromDescription, 
+                       _DNNVAD_CreateInstance, _DNNVAD_DestroyInstance, _DNNVAD_GetSpeechProbabilityHardValue, 
+                       _DNNVAD_GetSpeechProbabilitySoftValue, _DNNVAD_Initialize, 
+                       _DNNVAD_IsInitialized, _DNNVAD_Process, _DNNVAD_Uninitialize, 
+                       _GetAudioDSPManager, _RegisterAudioUnits_Analyzer, _RegisterAudioUnits_Internal, 
+                       _RegisterAudioUnits_InternalUnsearchable, _RegisterPublicAudioUnits, 
+                       _gVoiceProcessorSPI ]
+...

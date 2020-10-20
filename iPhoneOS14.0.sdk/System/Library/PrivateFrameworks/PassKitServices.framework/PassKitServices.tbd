@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9FB04579-A520-3349-A044-1C4C81D3DC9D
+  - target:          arm64e-ios
+    value:           47046AAB-12DE-304B-A456-378C7890FD38
+install-name:    '/System/Library/PrivateFrameworks/PassKitServices.framework/PassKitServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ PKServicePaymentTransactionImageGenerator ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EB48D327-F97B-36C7-BDC0-2BEF833D917E
+  - target:          arm64e-ios
+    value:           F269C7FD-E2DE-31A5-AB7F-8A5EB629C72C
+install-name:    '/System/Library/PrivateFrameworks/ActionKitUI.framework/ActionKitUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s11ActionKitUI013WFShazamMediaA4ViewC5frameACSo6CGRectV_tcfC', 
+                       '_$s11ActionKitUI013WFShazamMediaA4ViewC5frameACSo6CGRectV_tcfc', 
+                       '_$s11ActionKitUI013WFShazamMediaA4ViewCACycfC', '_$s11ActionKitUI013WFShazamMediaA4ViewCACycfc', 
+                       '_$s11ActionKitUI013WFShazamMediaA4ViewCMa', '_$s11ActionKitUI013WFShazamMediaA4ViewCMn', 
+                       '_$s11ActionKitUI013WFShazamMediaA4ViewCMo', '_$s11ActionKitUI013WFShazamMediaA4ViewCN', 
+                       '_$s11ActionKitUI013WFShazamMediaA4ViewCfD' ]
+    objc-classes:    [ WFAccountLoginViewController, WFContentAttributionSetDebuggerViewController, 
+                       _TtC11ActionKitUI23WFShazamMediaActionView ]
+...

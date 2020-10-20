@@ -1,0 +1,138 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4B32E6CB-6485-3FCA-A179-B2053E9C63F0
+  - target:          armv7s-ios
+    value:           325FB89D-8A0A-3563-BD30-46F3316BC19B
+  - target:          arm64-ios
+    value:           8ACA6618-AD60-3F22-BEC1-9ED0A695CAA9
+  - target:          arm64e-ios
+    value:           C3AD2FB0-FD4D-33DB-9942-F7505122A112
+install-name:    '/System/Library/PrivateFrameworks/UserNotificationsUIKit.framework/UserNotificationsUIKit'
+allowable-clients:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    clients:         [ CarPlay, CoverSheet, CoverSheetTests, Crescent, SpringBoard, 
+                       SpringBoardCore, SpringBoardCore-Tests, SpringBoardFramework-Tests, 
+                       UNUIKitTestsHostApp, UserNotificationsUIKitTests ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NCDateLabelNeedsUpdateNotification, _NCNotificationSectionSettingsKeyShowsMessagePreview, 
+                       _NCViewAnimationOptionsForAnimationCurve, _is_estimateFullAnimatedImageMemoryCost, 
+                       _kNCNotificationListClearButtonGlyphAlphaAnimationDelaysStateClear, 
+                       _kNCNotificationListClearButtonGlyphAlphaAnimationDelaysStateX, 
+                       _kNCNotificationListClearButtonGlyphTransformAnimationDelaysStateClear, 
+                       _kNCNotificationListClearButtonGlyphTransformAnimationDelaysStateX ]
+    objc-classes:    [ NCAnimatableBlurringView, NCAnimatedImage, NCAnimatedImageView, 
+                       NCAttachmentViewController, NCAudioAccessoryHostingView, NCAudioAttachmentViewController, 
+                       NCAudioPlayerController, NCAudioPlayerControlsView, NCAudioPlayerControlsViewController, 
+                       NCAudioPlayerTimelineSlider, NCBannerPresentationAnimator, 
+                       NCBannerPresentationController, NCBannerPresentationTransitionDelegate, 
+                       NCBulletinAttachmentFactory, NCDefaultDateLabel, NCFrameCache, 
+                       NCImageAttachmentViewController, NCLegacyAdditionalContentAccessoryView, 
+                       NCLegacyNotificationActionsView, NCLegacyNotificationActionsViewController, 
+                       NCLegacyNotificationContentContainerViewController, NCLegacyNotificationContentView, 
+                       NCLegacyNotificationRequestCustomContentProvider, NCLegacyNotificationShortLookView, 
+                       NCLegacyNotificationShortLookViewController, NCLegacyNotificationTextInputViewController, 
+                       NCLongLookPresentationController, NCLongLookTransitionDelegate, 
+                       NCLookHeaderContentView, NCLookHeaderViewDateLabelFactory, 
+                       NCLookViewFontProvider, NCNotificationChronologicalList, NCNotificationClearAllView, 
+                       NCNotificationDateLabelFactory, NCNotificationExtensionLoader, 
+                       NCNotificationHiddenRequestsList, NCNotificationListCellAudioMessagePlayButton, 
+                       NCNotificationListCellScrollView, NCNotificationListClearButton, 
+                       NCNotificationListCollectionView, NCNotificationListCollectionViewFlowLayout, 
+                       NCNotificationListContainerViewController, NCNotificationListSection, 
+                       NCNotificationListTouchEater, NCNotificationListViewController, 
+                       NCNotificationNoContentView, NCNotificationPriorityList, NCNotificationPriorityListViewController, 
+                       NCNotificationRequestPhoneCoalescingContentProvider, NCNotificationSectionListViewController, 
+                       NCPreviewInteractionGestureRecognizer, NCRelativeDateLabel, 
+                       NCRelativeDateTimer, NCShortLookView, NCTransitionManager, 
+                       NCVideoAttachmentViewController, _NCAnimatedImageViewForwardingProxy, 
+                       _NCNotificationShortLookScrollView, _NCNotificationViewControllerView, 
+                       _NCShortLookSnapshotView, _NCTransitionAnimationStateManagingViewController ]
+    objc-ivars:      [ NCDefaultDateLabel._allDay, NCDefaultDateLabel._effectiveAllDay, 
+                       NCDefaultDateLabel._effectiveAllDayEndDate, NCDefaultDateLabel._effectiveAllDayLastValidDate, 
+                       NCDefaultDateLabel._effectiveAllDayStartDate, NCDefaultDateLabel._isCoalescingUpdates, 
+                       NCDefaultDateLabel._isTimestamp, NCDefaultDateLabel._needsUpdateFromCoalesce, 
+                       NCDefaultDateLabel._timeZoneRelativeEndDate, NCDefaultDateLabel._timeZoneRelativeStartDate, 
+                       NCDefaultDateLabel._updateTimer, NCNotificationDateLabelFactory._recycledLabelsByStyle, 
+                       NCRelativeDateLabel._comparedToNow, NCRelativeDateLabel._relativeDateTimer, 
+                       NCRelativeDateLabel._resolution, NCRelativeDateLabel._value, 
+                       NCRelativeDateTimer._currResolution, NCRelativeDateTimer._currValue, 
+                       NCRelativeDateTimer._date, NCRelativeDateTimer._delegate, 
+                       NCRelativeDateTimer._gregorian, NCRelativeDateTimer._timer, 
+                       NCShortLookView._customContentView, NCShortLookView._headerContainerView, 
+                       NCShortLookView._headerContentView, NCShortLookView._headerOverlayView, 
+                       NCShortLookView._mainContainerView, NCShortLookView._mainOverlayView, 
+                       NCShortLookView._materialSettings, NCShortLookView._shadowView, 
+                       _NCShortLookSnapshotView._clippingView, _NCShortLookSnapshotView._shadowView, 
+                       _NCTransitionAnimationStateManagingViewController._ncTransitionAnimationState ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NCBulletinDestinationBanner, _NCBulletinDestinationCar, _NCBulletinDestinationCoverSheet, 
+                       _NCBulletinDestinationLockScreen, _NCBulletinDestinationNotificationCenter, 
+                       _NCCarPlayBannerRevocationReasonBackGesture, _NCCarPlayBannerRevocationReasonTouchPadSwipeGesture, 
+                       _NCCarPlayBannerRevocationReasonWheelEvent, _NCEventTrackerFeatureIdentifier, 
+                       _NCFrictionForCriticallyDampedSpringWithTension, _NCGetEventTrackerQueue, 
+                       _NCIconImageForApplicationIdentifier, _NCIsSDKVersionSameOrAfterSDKVersion, 
+                       _NCLiftScaleForEdgeDimension, _NCMainScreenReferenceBounds, 
+                       _NCNotificationDestinationIdentifier, _NCNotificationSectionSettingsKeyContentPreviewSetting, 
+                       _NCNotificationSectionSettingsKeyCriticalAlertsEnabled, _NCNotificationSectionSettingsKeyGroupingSetting, 
+                       _NCNotificationSectionSettingsKeyNotificationsEnabled, _NCNotificationSectionSettingsKeyShowsInLockScreen, 
+                       _NCNotificationSectionSettingsKeyShowsInNotificationCenter, 
+                       _NCNotificationSectionSettingsKeySubSectionPriority, _NCRectApplyInsets, 
+                       _NCRectConfinedToRect, _NCRectWithSize, _NCRoundToScale, _NCSDKVersionForExtensionWithIdentifier, 
+                       _NCSizeApplyInsets, _NCStringForAppearState, _NCStringFromLongLookPresentationTrigger, 
+                       _NCStringFromLookStyle, _NCTimeIntervalBinForTimeInterval, 
+                       _NCUserNotificationDragPrivateTypeIdentifier, _NCUserNotificationsUIKitFrameworkBundle, 
+                       _UNNotificationExtensionCategoryKey, _UNNotificationExtensionCustomSectionIdentifierKey, 
+                       _UNNotificationExtensionDefaultContentHiddenKey, _UNNotificationExtensionInitialContentSizeRatioKey, 
+                       _UNNotificationExtensionLegacyEntitlementKey, _UNNotificationExtensionOverridesDefaultTitleKey, 
+                       _UNNotificationExtensionPointName, _UNNotificationExtensionUserInteractionEnabledKey, 
+                       _UserNotificationsUIKitVersionNumber, _UserNotificationsUIKitVersionString, 
+                       __NCDeviceDesiresHapticTouch, __NCEqualLegibilitySettings, 
+                       __NCForceTouchEnabled, __NCMainScreenScale, __NCSizeCategoryIsAX, 
+                       _kNCMediaPlayPauseButtonImageSizeLimit, _kNCMediaPlayPauseButtonVideoImageRatio, 
+                       _kNCNotificationListCellActionButtonGroupName ]
+    objc-classes:    [ NCAnimationCoordinator, NCAuxiliaryOptionsButton, NCAuxiliaryOptionsView, 
+                       NCBlockTouchesView, NCBulletinActionRunner, NCBulletinNotificationSource, 
+                       NCCarPlayBannerContentView, NCCarPlayBannerPresentableViewController, 
+                       NCCarPlayBannerSource, NCClickInteractionPortalView, NCClickInteractionPresentedControl, 
+                       NCClickInteractionPresentedView, NCClickInteractionPresenter, 
+                       NCEventTrackerNotificationMetadata, NCKeyLineView, NCLongLookDefaultPresentationController, 
+                       NCLongLookTransitioningDelegate, NCMaterialButton, NCMediaPlayPauseButton, 
+                       NCNotificationBannerAuthority, NCNotificationContentContainerViewController, 
+                       NCNotificationContentView, NCNotificationEventTracker, NCNotificationExtensionCache, 
+                       NCNotificationExtensionContainerViewController, NCNotificationExtensionHostViewController, 
+                       NCNotificationExtensionsManager, NCNotificationGrabberView, 
+                       NCNotificationGroupList, NCNotificationListCache, NCNotificationListCell, 
+                       NCNotificationListCellActionButton, NCNotificationListCellActionButtonsView, 
+                       NCNotificationListCoalescingControlsCell, NCNotificationListCoalescingControlsView, 
+                       NCNotificationListCoalescingHeaderCell, NCNotificationListHeaderTitleView, 
+                       NCNotificationListLegibilityLabelCache, NCNotificationListRevealCoordinator, 
+                       NCNotificationListSectionHeaderView, NCNotificationListSectionRevealHintView, 
+                       NCNotificationListStalenessEventTracker, NCNotificationListTouchEaterManager, 
+                       NCNotificationListView, NCNotificationLongLookView, NCNotificationLongLookViewController, 
+                       NCNotificationManagementAlertController, NCNotificationManagementBlueButton, 
+                       NCNotificationManagementContentProvider, NCNotificationManagementDemotionAlertController, 
+                       NCNotificationManagementLongLookContentProvider, NCNotificationManagementPromotingSuggestionContentProvider, 
+                       NCNotificationManagementPromotionAlertController, NCNotificationManagementQuietingSuggestionContentProvider, 
+                       NCNotificationManagementSuggestionContentProvider, NCNotificationManagementSuggestionManager, 
+                       NCNotificationManagementView, NCNotificationManagementViewController, 
+                       NCNotificationManagementViewPresenter, NCNotificationMasterList, 
+                       NCNotificationPresentableViewController, NCNotificationRequestCoalescingContentProvider, 
+                       NCNotificationRequestContentProvider, NCNotificationRequestCustomContentProvider, 
+                       NCNotificationRequestHiddenPreviewContentProvider, NCNotificationShortLookView, 
+                       NCNotificationShortLookViewController, NCNotificationStructuredListCaptureOnlyMaterialViewController, 
+                       NCNotificationStructuredListUtilities, NCNotificationStructuredListViewController, 
+                       NCNotificationStructuredSectionList, NCNotificationSummaryBuilder, 
+                       NCNotificationTextInputView, NCNotificationViewController, 
+                       NCNotificationViewControllerView, NCRevealAdditionalContentOnPresentationTransitionAnimator, 
+                       NCRevealAdditionalContentOnPresentationTransitioningDelegate, 
+                       NCSecondaryClickGestureRecognizer, NCSnoozeAlarmNotificationStaticContentProvider, 
+                       NCToggleControl, NCToggleControlPair, NCTouchEaterGestureRecognizer, 
+                       NCUIMappedImageCache, NCUserNotificationsUIKitDefaults, _NCActionButtonDescription, 
+                       _NCNotificationBannerRequestContextDefiningViewController ]
+    objc-ivars:      [ NCAuxiliaryOptionsButton._backgroundView, NCNotificationViewController._lookView, 
+                       _NCActionButtonDescription._selectorString ]
+...

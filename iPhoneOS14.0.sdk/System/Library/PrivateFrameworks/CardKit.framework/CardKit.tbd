@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           337D3521-EF8E-37A8-86EB-205EBD68E8D3
+  - target:          arm64e-ios
+    value:           66B2CC11-B7DC-32F4-8739-1204F87EF77D
+install-name:    '/System/Library/PrivateFrameworks/CardKit.framework/CardKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRKIsLargeDevice, _CRKIsRTL, _CardKitVersionNumber, _CardKitVersionString, 
+                       __CRKIsRTLWithApp, __CRKSystemRootDirectory ]
+    objc-classes:    [ CRKCardPresentation, CRKCardPresentationConfiguration, CRKCardSectionViewConfiguration, 
+                       CRKCardSectionViewController, CRKCardViewController, CRKComposedStackView, 
+                       CRKComposedView, CRKContainerCardSectionView, CRKIdentifiedProviderRegistry, 
+                       CRKKeyline, CRKOverlayButton, _CRKBuiltInProvider, _CRKBundleIdentifiedCardSectionViewProvider, 
+                       _CRKBundleManager, _CRKCardSectionViewControllerFactory, _CRKCardSectionViewControllerRegistry, 
+                       _CRKCardSectionViewLoader, _CRKCardViewControllerTransitionAnimator, 
+                       _CRKCardViewControllerTransitionCoordinator, _CRKDebugOverlayView, 
+                       _CRKHitTestPassThroughView, _CRKImageLoader, _CRKProviderBundle, 
+                       _CRKProviderBundleManager, _CRKSectionShuffleTransitionAnimator, 
+                       _CRKSendMessageCardFactory ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D6DDAE7C-B15F-3C2C-8E76-4F5F4A862908
+  - target:          armv7s-ios
+    value:           8C336FC8-4C69-331C-B61A-2DEE8F541991
+  - target:          arm64-ios
+    value:           903919FF-37E3-3B19-92B3-0140B56925C7
+  - target:          arm64e-ios
+    value:           6AAE150E-EC0F-35B8-997D-E8215E4FAF26
+install-name:    '/System/Library/PrivateFrameworks/EmojiKit.framework/EmojiKit'
+current-version: 23
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ EMKLayoutManager, EMKTextView ]
+...

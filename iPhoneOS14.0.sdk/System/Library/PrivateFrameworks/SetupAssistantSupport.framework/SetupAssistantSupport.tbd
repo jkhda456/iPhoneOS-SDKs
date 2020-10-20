@@ -1,0 +1,58 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1E22CC34-0D04-3C43-B63B-FF994D7367B2
+  - target:          arm64e-ios
+    value:           1A1005CB-A286-3572-A26D-543C2C0AF041
+install-name:    '/System/Library/PrivateFrameworks/SetupAssistantSupport.framework/SetupAssistantSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SASProximityActionTypeKey, _SASProximityDeviceToDeviceCurrentVersion, 
+                       _SASProximityErrorDomain, _SASProximityPayloadTypeKey, _SASProximityVersionKey, 
+                       _SASProximityVersionValue, _SetupAssistantSupportVersionNumber, 
+                       _SetupAssistantSupportVersionString, _kSASProximityAnisetteRequestKey, 
+                       _kSASProximityAnisetteResponseAnisetteKey, _kSASProximityAnisetteResponseSuccessKey, 
+                       _kSASProximityBackupCompletionDateKey, _kSASProximityBackupErrorCodeKey, 
+                       _kSASProximityBackupErrorDomainKey, _kSASProximityBackupFinishedKey, 
+                       _kSASProximityBackupPercentCompleteKey, _kSASProximityBackupShouldStartKey, 
+                       _kSASProximityBackupTimeRemainingKey, _kSASProximityCompanionAuthRequestAccountKey, 
+                       _kSASProximityCompanionAuthRequestDeviceKey, _kSASProximityHandshakeHasPasscodeSetKey, 
+                       _kSASProximityHandshakeKey, _kSASProximityHandshakePlatformMac, 
+                       _kSASProximityHandshakePlatformTypeKey, _kSASProximityHandshakePlatformiOS, 
+                       _kSASProximityHandshakeSimplePasscodeTypeKey, _kSASProximityHandshakeUnlockTypeKey, 
+                       _kSASProximityInformationAcessibilitySettingsKey, _kSASProximityInformationAppAnalyticsKey, 
+                       _kSASProximityInformationAppleIDKey, _kSASProximityInformationAutoTimeZoneKey, 
+                       _kSASProximityInformationBackupEnabledKey, _kSASProximityInformationBackupMetadataKey, 
+                       _kSASProximityInformationBackupUUIDKey, _kSASProximityInformationClassKey, 
+                       _kSASProximityInformationConnectedToWiFiKey, _kSASProximityInformationDateOfLastBackupKey, 
+                       _kSASProximityInformationDeviceAnalyticsKey, _kSASProximityInformationDeviceNameKey, 
+                       _kSASProximityInformationDeviceTermsIdentifierKey, _kSASProximityInformationDeviceToDeviceMigrationVersionKey, 
+                       _kSASProximityInformationFindMyDeviceKey, _kSASProximityInformationHasHomeButtonKey, 
+                       _kSASProximityInformationKey, _kSASProximityInformationKeyboardsKey, 
+                       _kSASProximityInformationLocalePreferencesKey, _kSASProximityInformationLocationServicesDataKey, 
+                       _kSASProximityInformationLocationServicesKey, _kSASProximityInformationModelKey, 
+                       _kSASProximityInformationNameKey, _kSASProximityInformationNetworkPasswordsKey, 
+                       _kSASProximityInformationNetworksKey, _kSASProximityInformationPreventSoftwareUpdateDeviceMigration, 
+                       _kSASProximityInformationProductVersionKey, _kSASProximityInformationRestoringKey, 
+                       _kSASProximityInformationSameAccountKey, _kSASProximityInformationSiriKey, 
+                       _kSASProximityInformationSiriVoiceProfileAvailabilityMetdataKey, 
+                       _kSASProximityInformationStorageAvailableKey, _kSASProximityInformationStorageCapacityKey, 
+                       _kSASProximityInformationSupportsDeviceToDeviceMigrationKey, 
+                       _kSASProximityInformationTimeZoneKey, _kSASProximityInformationTransferableTelephonyPlanKey, 
+                       _kSASProximityMigrationPrepartionDeviceNameKey, _kSASProximityPasscodeValidationActionPasscodeKey, 
+                       _kSASProximityPasscodeValidationActionSuccessKey, _kSASProximitySessionDataKey ]
+    objc-classes:    [ SASLogging, SASProximityAction, SASProximityAnisetteDataProvider, 
+                       SASProximityAnisetteRequestAction, SASProximityBackupAction, 
+                       SASProximityCompanionAuthRequestAction, SASProximityFinishedAction, 
+                       SASProximityHandshake, SASProximityHandshakeAction, SASProximityInformation, 
+                       SASProximityInformationAction, SASProximityMigrationStartAction, 
+                       SASProximityMigrationTransferPreparationAction, SASProximityPasscodeValidationAction, 
+                       SASProximityReadyAction, SASProximitySession, SASProximitySessionSharingTransport, 
+                       SASProximitySessionTransport, SASSystemInformation ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           953498F0-E21E-3624-AE3F-27E571F9BC05
+  - target:          arm64e-ios
+    value:           38F7B511-B84A-3B2E-A10D-D64C87F0B95A
+install-name:    '/System/Library/PrivateFrameworks/SiriKitInvocation.framework/SiriKitInvocation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RunVoiceShortcutDirectInvocationIdentifier, _SKIMessagesGatekeeperAppBundleIdKey, 
+                       _SKIMessagesInvocationIdentifierGatekeeperFlow, _SKIPlaybackControlsStopMediaIdentifier, 
+                       _SiriKitInvocationVersionNumber, _SiriKitInvocationVersionString ]
+    objc-classes:    [ SKIDirectInvocation, SKIDirectInvocationContext, SKIDirectInvocationPayload, 
+                       SKIMediaControlsInvocation, SKIMessagesGatekeeperPayload, 
+                       SKIMessagesInvocation, SKIPhoneInvocation, SKIVoiceShortcutsInvocation ]
+...

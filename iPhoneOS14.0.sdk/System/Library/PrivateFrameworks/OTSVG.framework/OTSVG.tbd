@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           29902CC4-EB17-3272-8B22-D4340051A2E6
+  - target:          arm64e-ios
+    value:           26399CB0-7C71-3C46-8C22-75F6855F72EF
+install-name:    '/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OTSVGDocumentCreate, _OTSVGDocumentCreateWithData, _OTSVGDocumentEnumerateIDs, 
+                       _OTSVGDocumentGetIntrinsicRect, _OTSVGDocumentRelease, _OTSVGGlyphRecordingCreate, 
+                       _OTSVGGlyphRecordingCreateFromDocument, _OTSVGGlyphRecordingCreateFromID, 
+                       _OTSVGGlyphRecordingGetBoundingRect, _OTSVGGlyphRecordingPlayback, 
+                       _OTSVGGlyphRecordingPlaybackRecordingsAtPositions, _OTSVGGlyphRecordingRelease, 
+                       _OTSVGTableCreateFromData, _OTSVGTableGetDocumentIndexForGlyph, 
+                       _OTSVGTableRelease ]
+...

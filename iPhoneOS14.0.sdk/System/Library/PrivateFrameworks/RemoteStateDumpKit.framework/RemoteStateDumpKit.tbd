@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           90445F1C-8254-3A53-B233-EF4F3C07509E
+  - target:          arm64e-ios
+    value:           49220212-E6DD-332E-B3F0-26B36EE2C818
+install-name:    '/System/Library/PrivateFrameworks/RemoteStateDumpKit.framework/RemoteStateDumpKit'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ RemoteStateDumpKitTests, SpringBoard, SpringBoardCore, Tuner, 
+                       prototyped ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RemoteStateDumpKitVersionNumber, _RemoteStateDumpKitVersionString ]
+    objc-classes:    [ RSPeerToPeerClientController, RSPeerToPeerConnectionController, 
+                       RSPeerToPeerServerController, RSStateInfo ]
+...

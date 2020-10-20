@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           62F4C1C8-AA14-3D53-A966-1D91A6A28855
+  - target:          armv7s-ios
+    value:           BAE04142-88F9-3DCE-961B-168F99685AC3
+  - target:          arm64-ios
+    value:           3A6D5D26-4141-364F-9299-7A3384BC86BB
+  - target:          arm64e-ios
+    value:           14244F29-4959-3A74-B557-9357D2FD19B0
+install-name:    '/System/Library/PrivateFrameworks/InternalPreferences.framework/InternalPreferences'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ ___cancelLogging, ___finishedLogging, ___logFileContents ]
+    objc-classes:    [ DeadlockMakerController, HangTracerController, LiveTraceController ]
+    objc-ivars:      [ DeadlockMakerController._connection, DeadlockMakerController._enabled, 
+                       DeadlockMakerController._priority, DeadlockMakerController._priorityLabel, 
+                       DeadlockMakerController._prioritySlider, DeadlockMakerController._runDuration, 
+                       DeadlockMakerController._runDurationLabel, DeadlockMakerController._runDurationSlider, 
+                       DeadlockMakerController._runDurationText, DeadlockMakerController._startNowButton, 
+                       DeadlockMakerController._textSpec, HangTracerController._enabled, 
+                       HangTracerController._launchDuration, HangTracerController._launchDurationLabel, 
+                       HangTracerController._launchDurationSlider, HangTracerController._launchDurationText, 
+                       HangTracerController._logLevel, HangTracerController._logLevelLabel, 
+                       HangTracerController._logLevelSlider, HangTracerController._logLevelText, 
+                       HangTracerController._runloopDuration, HangTracerController._runloopDurationLabel, 
+                       HangTracerController._runloopDurationSlider, HangTracerController._textSpec, 
+                       LiveTraceController._enabledTracer, LiveTraceController._enabledTrigger ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ClearLogFileContents, _IPLogForCategory, _IPPurgeKeyboardCache ]
+    objc-classes:    [ BandwidthTestController, CPUActivityPane, GeneralLocationController, 
+                       LocationDefaults, LocationInternalListController, LoggingDetailController, 
+                       LoggingPane, PropertyListPane ]
+    objc-ivars:      [ BandwidthTestController._downloadTestFile, BandwidthTestController._resultsSpecifier, 
+                       BandwidthTestController._statusSpecifier, BandwidthTestController._testName, 
+                       CPUActivityPane._buf1, CPUActivityPane._buf2, CPUActivityPane._readBuffer, 
+                       CPUActivityPane._textView, CPUActivityPane._worker, CPUActivityPane._writeBuffer, 
+                       LoggingPane._dontScroll, LoggingPane._fileError, LoggingPane._lock, 
+                       LoggingPane._mailComposeController, LoggingPane._output, LoggingPane._rootController, 
+                       LoggingPane._sendingEmailCount, LoggingPane._textView, LoggingPane._threadRunning, 
+                       LoggingPane._timeout, LoggingPane._timer ]
+...

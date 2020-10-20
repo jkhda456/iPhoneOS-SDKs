@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           25E884F0-FB32-3F69-8D51-9309C665138A
+  - target:          armv7s-ios
+    value:           E2915F92-8278-37A5-ABAE-C82511719966
+  - target:          arm64-ios
+    value:           B03B6AAA-9A88-351A-8D9D-74498A139963
+  - target:          arm64e-ios
+    value:           0EABF81D-F93E-3C4A-B8B6-700EA19A8EF0
+install-name:    '/System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _RTCReportingNewHierarchyTokenFromParentToken, _RTCReportingSendMsg, 
+                       _RTCReportingSetLogMsgBlock, _RTCReportingSetServer, _RTCReportingSetServerInfo, 
+                       _RTCReportingSetUserInfoDict, _asl, _aslMsg, _kRTCReportingDefaultsDomain, 
+                       _kRTCReportingDefaultsKeyUUIDOverrideDNU, _kRTCReportingDefaultsKeyUUIDRespectDNU, 
+                       _validateMessageWithCategory, _validateMessageWithDictionary, 
+                       _validateSessionInfo ]
+    objc-classes:    [ RTCReportingLogging ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RTCReportingCloseEphemeralSessionWithSessionId, _RTCReportingCreateEphemeralSessionWithSessionInfo, 
+                       _RTCReportingCreateHierarchyTokenFromParentToken, _RTCReportingFetchStatesWithUserInfo, 
+                       _RTCReportingFlushMessages, _RTCReportingFlushMessagesWithCompletion, 
+                       _RTCReportingInitWithSessionInfo, _RTCReportingInitWithSessionInfoDict, 
+                       _RTCReportingSendMessageWithDictionary, _RTCReportingSendMessageWithError, 
+                       _RTCReportingSendOneMessageWithDictionary, _RTCReportingSetMessageBlock, 
+                       _RTCReportingStartConfiguration, _RTCReportingUpdateSharedDataForKey, 
+                       _RTCReportingUpdateSharedDataWithDictionary, _RTCReportingUploadLogWithArray, 
+                       _kRTCReportingBackendAWD, _kRTCReportingBackendDashboard, 
+                       _kRTCReportingBackendHTTPPost, _kRTCReportingBackendHTTPPost2, 
+                       _kRTCReportingBackendHTTPPost3, _kRTCReportingBackendPowerlog, 
+                       _kRTCReportingBackendQRS, _kRTCReportingBackendUploadServer, 
+                       _kRTCReportingErrorDomain, _kRTCReportingHierarchyTokenLevel, 
+                       _kRTCReportingHierarchyTokenTokenID, _kRTCReportingLogDataData, 
+                       _kRTCReportingLogDataEndTime, _kRTCReportingLogDataStartTime, 
+                       _kRTCReportingMessageParametersCategory, _kRTCReportingMessageParametersFlag, 
+                       _kRTCReportingMessageParametersPayload, _kRTCReportingMessageParametersType, 
+                       _kRTCReportingSessionInfoBatchEvent, _kRTCReportingSessionInfoClientBundleID, 
+                       _kRTCReportingSessionInfoClientType, _kRTCReportingSessionInfoClientVersion, 
+                       _kRTCReportingSessionInfoContainsRealtimeEvents, _kRTCReportingSessionInfoEnableFlag, 
+                       _kRTCReportingSessionInfoEphemeralSessionID, _kRTCReportingSessionInfoHierarchyToken, 
+                       _kRTCReportingSessionInfoRequireUserInfo, _kRTCReportingSessionInfoSessionID, 
+                       _kRTCReportingUserInfoClientName, _kRTCReportingUserInfoServiceName ]
+    objc-classes:    [ RTCReporting, RTCReportingAggregationObject, RTCReportingDeallocNotifier, 
+                       RTCSecureHierarchyToken, UpdateAndReportServices ]
+    objc-ivars:      [ RTCReportingAggregationObject._aggregationBlock, RTCReportingDeallocNotifier._delegate, 
+                       RTCSecureHierarchyToken._level, RTCSecureHierarchyToken._token, 
+                       UpdateAndReportServices._block, UpdateAndReportServices._report, 
+                       UpdateAndReportServices._update ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           45C7A72F-13C0-38CE-A50F-0E84637E1C04
+  - target:          arm64e-ios
+    value:           A76E99EB-7A5A-3D5C-9899-1FAC3CC8207A
+install-name:    '/System/Library/PrivateFrameworks/SidecarUI.framework/SidecarUI'
+current-version: 227
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SidecarServiceViewController ]
+...

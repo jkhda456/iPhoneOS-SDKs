@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FF2A5992-D5E3-348B-ABBA-059B1B4C9CCA
+  - target:          arm64e-ios
+    value:           A9FA10A4-074B-30D3-9D80-CA81CFE6DF37
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticRequestService.framework/DiagnosticRequestService'
+current-version: 4
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DRRequestStateStringForState, _DRSContextDictionaryForData, 
+                       _DRSDBFilePath, _DRSDampeningOutcomeStringForOutcome, _DRSPersistentContainer, 
+                       _DRSRequestDSDecisionStringForDecision, _DRSRequestExpectedLogStateForState, 
+                       _DRSRequestOutcomeForState, _DRSRequestStateForDampeningOutcome, 
+                       _DRSRequestStateIsErrorOrRejected, _DRSRequestStateIsTerminal, 
+                       _DRSSystemProfilePlatformStringForPlatform, _DRSSystemProfileVariantStringForParameters, 
+                       _kDRSDMAcceptAll, _kDRSDMDefaultSignatureAcceptanceRate, _kDRSDMDefaultSignatureCap, 
+                       _kDRSDMDefaultSignatureHysteresis, _kDRSDMDefaultTailspinHysteresis, 
+                       _kDRSDMDefaultTotalCap, _kDRSDMHangTracerFirstPartyLongHangIssueCategory, 
+                       _kDRSDMHangTracerFirstPartyMicroHangIssueCategory, _kDRSDMHangTracerFirstPartyNormalHangIssueCategory, 
+                       _kDRSDMHangTracerTeamID, _kDRSDMHangTracerThirdPartyLongHangIssueCategory, 
+                       _kDRSDMHangTracerThirdPartyNormalHangIssueCategory, _kDRSDMNandTeamID, 
+                       _kDRSDMNoCap, _kDRSDMNoHysteresis, _kDRSDMSentryMacOsAppLaunchIssueCategory, 
+                       _kDRSDMSentryTeamID, _kDRSRequestInFlightPurgeableUrgency, 
+                       _kDRSRequestNoFetchLimit, _kDRSRequestResourceTailspin, _kDRSRequestTerminalPurgeableUrgency ]
+    objc-classes:    [ DRSCloudKitHelper, DRSDampeningConfiguration, DRSDampeningEnforcementSettings, 
+                       DRSDampeningManager, DRSDecisionServerRequestReply, DRSEnableDataGatheringQuery, 
+                       DRSRequest, DRSService, DRSSubmitLogRequest, DRSSystemProfile, 
+                       DRSTailspinRequest, DRSTeamDampeningConfiguration ]
+...

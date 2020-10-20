@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0FF8245D-5926-3BE0-BAF9-0449DFCEA7DE
+  - target:          arm64e-ios
+    value:           A4688640-6691-3E77-9584-18946A71F056
+install-name:    '/System/Library/PrivateFrameworks/ShortcutUIKit.framework/ShortcutUIKit'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ ControlCenterUIKit, SpringBoard, SpringBoardCore, SpringBoardUI ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ShortcutUIKitBundle, _ShortcutUIKitVersionNumber, _ShortcutUIKitVersionString ]
+    objc-classes:    [ SCUIAssetProvider ]
+...

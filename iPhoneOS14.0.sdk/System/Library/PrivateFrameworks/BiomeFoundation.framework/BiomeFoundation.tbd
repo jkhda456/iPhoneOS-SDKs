@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D1F577C3-E48B-31E3-AF24-795EB59B9B6C
+  - target:          arm64e-ios
+    value:           33C51AD7-9B5E-393E-805B-7C4CC02E03AC
+install-name:    '/System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BMAbsoluteTimeFromCFAbsoluteTime, _BMAbsoluteTimeFromContinuousTime, 
+                       _BMAbsoluteTimeGetCurrent, _BMAbsoluteTimeGetOffsets, _BMAbsoluteTimeInitWithSyntheticStart, 
+                       _BMAbsoluteTimeSetSyntheticStartFromRemoteTime, _BMAbsoluteTimeToCFAbsoluteTime, 
+                       _BMArbitraryTimestampToCFAbsoluteTime, _BiomeFoundationVersionNumber, 
+                       _BiomeFoundationVersionString, ___biome_log_create, ___biome_log_create_for_category ]
+    objc-classes:    [ BMCoreAnalyticsEvents ]
+...

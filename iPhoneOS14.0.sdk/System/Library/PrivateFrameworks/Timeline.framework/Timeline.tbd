@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           32C5B7EC-A255-380C-AA66-A64C49032126
+  - target:          arm64e-ios
+    value:           331D42D7-0865-3AD5-A594-03FFEF0418A4
+install-name:    '/System/Library/PrivateFrameworks/Timeline.framework/Timeline'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TLLoggingObjectForDomain, _TimelineVersionNumber, _TimelineVersionString ]
+    objc-classes:    [ TLOperation, TLPreviewTimelineError, TLPreviewTimelineSelectableRegion, 
+                       TLTimeline, TLTimelineBlobEntry, TLTimelineEntryNode, TLTimelineEntryNodeRecycleBin, 
+                       TLTimelineExtendOperation, TLTimelineNode, TLTimelineOperation, 
+                       TLTimelineSegment, TLTimelineSessionOperation, TLTimelineSetupOperation, 
+                       TLTimelineUtilities, TLTimelineWindow ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           93B9DCB9-97DE-3BDC-8096-319E6B92D007
+  - target:          armv7s-ios
+    value:           1C490D09-C192-3F99-B859-D8714E43572D
+  - target:          arm64-ios
+    value:           34C0AE2F-895F-3811-8633-A0A533293C5A
+  - target:          arm64e-ios
+    value:           7944B7E8-35CA-3B48-8603-2BE1137050AD
+install-name:    '/System/Library/PrivateFrameworks/MarkupUI.framework/MarkupUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MUAnimationIconImage, _MUAnimationMaskRect, _MUAnimationSourceRect, 
+                       _MUAnimationTargetRect, _MUDisplayAsFullScreen, _MUEncryptPrivateMetadata, 
+                       _MUFileDisplayName ]
+    objc-classes:    [ MUCGPDFAnnotationAdaptor, MUCGPDFNukeAndPaveWriter, MUContentViewController, 
+                       MUImageContentViewController, MUImageDownsamplingUtilities, 
+                       MUPDFContentViewController, MURemoteViewController, MarkupViewController ]
+...

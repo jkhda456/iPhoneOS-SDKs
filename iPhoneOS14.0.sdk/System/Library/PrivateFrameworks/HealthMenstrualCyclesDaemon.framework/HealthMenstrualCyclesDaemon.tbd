@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           08AC11BD-271F-3264-AB22-167B25AAD0E9
+  - target:          arm64e-ios
+    value:           BA9AA1C1-BC38-3FF5-B7A5-568FCDEF2E7F
+install-name:    '/System/Library/PrivateFrameworks/HealthMenstrualCyclesDaemon.framework/HealthMenstrualCyclesDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HDMCKeyValueDomain ]
+    objc-classes:    [ HDMCAnalysisManager, HDMCAnalysisQueryServer, HDMCDaySummaryBuilder, 
+                       HDMCDaySummaryEnumerator, HDMCDaySummaryObserverQueryServer, 
+                       HDMCDaySummaryQueryServer, HDMCNotification, HDMCNotificationManager, 
+                       HDMCPluginServer, HDMCProfileExtension, HDMCSymptomHistoryBuilder ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           41BCA045-E9A7-3AAE-A6D4-C11C6E4E1A99
+  - target:          armv7s-ios
+    value:           1CA5D356-D4AA-338C-B7BE-68CB2640C582
+  - target:          arm64-ios
+    value:           00025B65-125E-373E-8E5D-77B44E44F5D6
+  - target:          arm64e-ios
+    value:           9824A9E2-C101-384B-9730-7D821210CAEE
+install-name:    '/System/Library/PrivateFrameworks/PersonaUI.framework/PersonaUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CGSizeFromPRLikenessCacheSize, _NSStringFromPRLikenessCacheSize, 
+                       _PRImageCreateCircularImageInRect, _PRImageCreateWithImageInRect, 
+                       _PRImageForceDecompress, _PRLikenessCacheSizeClosestToSize, 
+                       _PRLikenessCacheSizeGetCost, _PRLikenessSnapshotOptionCircular, 
+                       _PRLikenessSnapshotOptionForceDecode, _PRRectGetMaxLength, 
+                       _PRRectGetMinLength, _PRRectScale, _PRSizeScale, _PersonaUIVersionNumber, 
+                       _PersonaUIVersionString, __InvalidPRLikenessCacheSize ]
+    objc-classes:    [ PRImageView, PRLikenessCache, PRLikenessCacheContext, PRLikenessView, 
+                       PRLocalization, PRMonogram, PRMonogramColor, PRMonogramView, 
+                       _PRMonogramFontSpec ]
+...

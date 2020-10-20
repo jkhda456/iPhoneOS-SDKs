@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D635E35C-F4AE-31B9-963F-628BF0EC956D
+  - target:          arm64e-ios
+    value:           381CDD5B-0BDD-3E73-9A00-3EBC60C8D7E3
+install-name:    '/System/Library/PrivateFrameworks/TestFlightCore.framework/TestFlightCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ TFBetaAppLaunchScreenProvider, TFBetaApplicationProxy, TFBetaLaunchHandle, 
+                       TFBetaLaunchHandleConfiguration, TFFeedbackHandle, TFFeedbackHandleConfiguration, 
+                       TFFeedbackSession, TFLocale ]
+...

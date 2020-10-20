@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B5663D15-AAA0-3713-8560-C8116885E175
+  - target:          armv7s-ios
+    value:           B6B498A7-ACC0-356C-992E-CA16CA48CDEA
+  - target:          arm64-ios
+    value:           86CB1335-B42C-3B99-9124-EA922BB8CA5A
+  - target:          arm64e-ios
+    value:           985013A2-2956-3E7F-8A7D-E2165365865A
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DELoggingInit ]
+    objc-classes:    [ DEManagedDefaults ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DEExtensionTrackerEarliestExpirationDateKey, _DEExtensionTrackerExpirationDateKey, 
+                       _DEExtensionTrackerSessionsKey, _DEExtensionTrackerUserDefaultsKey, 
+                       _DEExtensionTrackerXPCActivityDateKey, _DEExtensionTrackerXPCActivityKey, 
+                       _DEUtilsValidateConnection, _DEUtilsValidateDestination, _DiagnosticExtensionsVersionNumber, 
+                       _DiagnosticExtensionsVersionString, _pgrep, _signal_USR2 ]
+    objc-classes:    [ DEArchive, DEArchiveReader, DEArchiver, DEAttachmentGroup, 
+                       DEAttachmentItem, DEAttachmentItemSandboxExtensionHandle, 
+                       DEExtension, DEExtensionContext, DEExtensionHostContext, DEExtensionManager, 
+                       DEExtensionProvider, DEExtensionTracker, DELogMover, DELogging, 
+                       DEUtils, DiagnosticExtensions_Subsystem ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           642592C9-287E-334A-AF3D-F9D956399A5C
+  - target:          arm64e-ios
+    value:           84509705-7FAB-327C-BFAC-53FAE552F70B
+install-name:    '/System/Library/PrivateFrameworks/AXElementInteraction.framework/AXElementInteraction'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXAXElementInteractionVersionNumber, _AXAXElementInteractionVersionString ]
+    objc-classes:    [ AXElementInteractionManager ]
+...

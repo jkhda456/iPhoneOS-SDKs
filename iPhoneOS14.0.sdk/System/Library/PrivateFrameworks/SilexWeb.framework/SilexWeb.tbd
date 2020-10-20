@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1EACA608-8C92-307E-9F98-75469564376B
+  - target:          arm64e-ios
+    value:           BEE68880-CB3D-30AA-9DC6-2C7F3FDE49CA
+install-name:    '/System/Library/PrivateFrameworks/SilexWeb.framework/SilexWeb'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SWDefaultLog, _SWErrorCodeKey, _SWErrorDomain, _SWErrorKey, 
+                       _SWErrorMessageName, _SWHeightKey, _SWInteractionKey, _SWInteractionTypeKey, 
+                       _SWInteractionURLKey, _SWLoadingMessageName, _SWLogMessageKey, 
+                       _SWLogMessageName, _SWLogSubsystemIdentifier, _SWPresentableMessageName, 
+                       _SWSetupLogging, _SWUpdateMessageName, _SilexWebVersionNumber, 
+                       _SilexWebVersionString ]
+    objc-classes:    [ SWConfiguration, SWConfigurationManager, SWConfigurationScript, 
+                       SWConfigurationSerializer, SWContainerViewController, SWContentRuleManager, 
+                       SWCoreAssembly, SWCrashRetryThrottler, SWDatastore, SWDatastoreFactory, 
+                       SWDatastoreManager, SWDatastoreSetupScript, SWDatastoreSetupTask, 
+                       SWDatastoreSynchronizationManager, SWDatastoreUpdateScript, 
+                       SWDeveloperSettings, SWDocumentStateManager, SWErrorManager, 
+                       SWFactoryAssembly, SWFrameworkAssembly, SWInteraction, SWInteractionFactory, 
+                       SWInteractionProvider, SWLoader, SWLoadingPolicyProvider, 
+                       SWLocation, SWLogMessageHandler, SWLogger, SWManagerAssembly, 
+                       SWMediaSettings, SWMessage, SWMessageHandlerManager, SWMessageSecurityOrigin, 
+                       SWMutableConfiguration, SWNavigationManager, SWNavigationObserver, 
+                       SWNavigationPreview, SWPresentationManager, SWPresentationStateScript, 
+                       SWProcessConfiguration, SWProcessTerminationManager, SWProviderAssembly, 
+                       SWRefreshScript, SWScaleManager, SWScriptsManager, SWScriptsSetupTask, 
+                       SWScrollSettings, SWSession, SWSessionManager, SWSessionScript, 
+                       SWSetupAssembly, SWSetupManager, SWSetupScript, SWSnapshotManager, 
+                       SWSwiftFrameWorkAssembly, SWTimeoutManager, SWURLInteraction, 
+                       SWURLSchemeHandlerManager, SWURLSchemeTask, SWViewController, 
+                       SWViewControllerAssembly, SWWeakMessageHandler, SWWebViewConfigurationFactory, 
+                       SWWebViewFactory ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1E923137-DDF7-39C9-911F-97C4D6F5E50B
+  - target:          arm64e-ios
+    value:           2595B9DC-1EF1-3F3B-A703-CD59C2BC2DBE
+install-name:    '/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BPSDemandNone, _BPSDemandUnlimited, _BiomePubSubVersionNumber, 
+                       _BiomePubSubVersionString ]
+    objc-classes:    [ BPSAggregations, BPSAggregator, BPSCollect, BPSCombineLatest, 
+                       BPSCompletion, BPSDrivableSink, BPSEmpty, BPSFilter, BPSFilterProducer, 
+                       BPSFlatMap, BPSFuture, BPSFutureResult, BPSLast, BPSMap, BPSMerge, 
+                       BPSMergeMany, BPSOrderedMerge, BPSPartialCompletion, BPSPassThroughSubject, 
+                       BPSPublisher, BPSReduce, BPSReduceProducer, BPSRemoveDuplicates, 
+                       BPSScan, BPSSequence, BPSSink, BPSSubscriberList, BPSSubscription, 
+                       BPSSubscriptionStatus, BPSTuple, BPSZip, BPSZipMany, _BPSAbstractCombineLatest, 
+                       _BPSAbstractCombineLatestSide, _BPSAbstractOrderedMerge, _BPSAbstractOrderedMergeSide, 
+                       _BPSAbstractZip, _BPSAbstractZipSide, _BPSCollectInner, _BPSCombineLatest2Inner, 
+                       _BPSFilterInner, _BPSFlatMapOuter, _BPSFlatMapSide, _BPSInnerConduit, 
+                       _BPSInnerFutureConduit, _BPSMapInner, _BPSMerged, _BPSMergedSide, 
+                       _BPSOrderedMergeManyInner, _BPSReduceInner, _BPSRemoveDuplicatesInner, 
+                       _BPSScanInner, _BPSSequenceInner, _BPSZip2Inner, _BPSZipManyInner, 
+                       _CMLastInnser ]
+    objc-ivars:      [ _BPSAbstractCombineLatest._downstreamLock, _BPSAbstractCombineLatest._lock, 
+                       _BPSAbstractOrderedMerge._downstreamLock, _BPSAbstractOrderedMerge._lock, 
+                       _BPSAbstractZip._downstreamLock, _BPSAbstractZip._lock, _BPSFlatMapOuter._downstreamLock, 
+                       _BPSFlatMapOuter._lock, _BPSFlatMapOuter._outerLock, _BPSInnerConduit._lock, 
+                       _BPSInnerFutureConduit._downstreamLock, _BPSInnerFutureConduit._lock, 
+                       _BPSMerged._downstreamLock, _BPSMerged._lock, _BPSSequenceInner._lock ]
+...

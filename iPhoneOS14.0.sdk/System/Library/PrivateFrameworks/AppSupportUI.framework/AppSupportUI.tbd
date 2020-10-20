@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EA8C53F6-5912-33A5-B432-82EAFB319C30
+  - target:          armv7s-ios
+    value:           2B0B5E0B-342C-3F61-B781-032DA9FB2106
+  - target:          arm64-ios
+    value:           6D086ACE-75AD-3B89-9554-CFB0AAAF6B73
+  - target:          arm64e-ios
+    value:           153FE826-84B6-3862-B4EA-9A3A87A9228D
+install-name:    '/System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultInsets, 
+                       _NUIContainerViewDefaultSize ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NUIContainerViewDirectionalInsetsUseDefault, _NUIContainerViewDirectionalInsetsUseSystem, 
+                       _NUIContainerViewInsetsUseDefault, _NUIContainerViewInsetsUseSystem, 
+                       _NUIContainerViewLengthIsDefault, _NUIContainerViewLengthIsSystem, 
+                       _NUIContainerViewLengthMakeSystem, _NUIContainerViewLengthNoBaseline, 
+                       _NUIContainerViewLengthUseDefault, _NUIContainerViewLengthUseSystem, 
+                       _NUIContainerViewSizeUnbounded, _NUIContainerViewSizeUseDefault, 
+                       _NUILayoutPriorityUseDefault, __NUIArrangementInvalidRect, 
+                       __NUIArrangementInvalidSize ]
+    objc-classes:    [ NUIBoxArrangement, NUICollectionViewContainerCell, NUIContainerBoxView, 
+                       NUIContainerFlowView, NUIContainerGridView, NUIContainerStackView, 
+                       NUIContainerView, NUIContentScrollView, NUIGridArrangement, 
+                       NUISizeCache, NUITableViewContainerCell, NUIWidgetGridView, 
+                       NUIWidgetGridViewCell, NUIWidgetGridViewEmptyCell ]
+...

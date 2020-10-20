@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3FC8E0C9-E2A7-3277-AE84-ABC59FEB5C7B
+  - target:          armv7s-ios
+    value:           4EF51778-BFEE-36C2-818A-E3467F5D00CA
+  - target:          arm64-ios
+    value:           33A79B49-D65F-3614-B3CB-C328807E2626
+  - target:          arm64e-ios
+    value:           707ED92B-FA2E-3DF5-B843-15982294A272
+install-name:    '/System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager'
+current-version: 0
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CTCellularPlanLaunchOptionsUseBootstrapRoamingInternetBypassKey, 
+                       _CTCellularPlanSubscriptionDidUpdateNotification ]
+    objc-classes:    [ CTCellularPlanLogger, CTCellularPlanSubCacheValidator ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CTCarrierInfoDidChangeNotification, _CTCellularPlanCarrierItemXpcWhitelistSet, 
+                       _CTCellularPlanConnectionPropertiesKey, _CTCellularPlanDanglingListDidChangeNotification, 
+                       _CTCellularPlanErrorDomain, _CTCellularPlanInfoDidChangeNotification, 
+                       _CTCellularPlanItemIdentifierHomePlan, _CTCellularPlanItemIdentifierHomePlanWithRoaming, 
+                       _CTCellularPlanLaunchOptionLiveIDKey, _CTCellularPlanLaunchOptionsAppNameKey, 
+                       _CTCellularPlanLaunchOptionsCarrierPostData, _CTCellularPlanLaunchOptionsCsnKey, 
+                       _CTCellularPlanLaunchOptionsFlowTypeIsLegacyKey, _CTCellularPlanLaunchOptionsFlowTypeIsRemotePlanKey, 
+                       _CTCellularPlanLaunchOptionsFlowTypeIsSequoiaKey, _CTCellularPlanLaunchOptionsFlowTypeIsSimSetupKey, 
+                       _CTCellularPlanLaunchOptionsIccidKey, _CTCellularPlanLaunchOptionsParametersKey, 
+                       _CTCellularPlanLaunchOptionsResponseTypeIsBuddyMLKey, _CTCellularPlanLaunchOptionsURLKey, 
+                       _CTCellularPlanLocalInfoDidChangeNotification, _CTCellularPlanLocalInfoError, 
+                       _CTCellularPlanPendingTransferDidChangeNotification, _CTCellularPlanPendingTransferStatusAsString, 
+                       _CTCellularPlanProxyKey, _CTCellularPlanRemoteProvisioningDidBecomeAvailable, 
+                       _CTCellularPlanRequestUrlsKey, _CTCellularPlanSocketIdentifier, 
+                       _CTCellularPlanSocketTimeoutKey, _CTCellularPlanSubscriptionKey, 
+                       _CTCellularPlanUseCarrierPostDataAsBodyKey, _CTCellularPlanXpcWhitelistSet, 
+                       _kCTDaemonReadyNotification, _kCellularPlanDaemonService ]
+    objc-classes:    [ CTCellularPlan, CTCellularPlanArrayValidator, CTCellularPlanBoolValidator, 
+                       CTCellularPlanCarrierItem, CTCellularPlanDataValidator, CTCellularPlanDateParser, 
+                       CTCellularPlanDictionaryValidator, CTCellularPlanError, CTCellularPlanItem, 
+                       CTCellularPlanJsonResponseParser, CTCellularPlanManager, CTCellularPlanNumberValidator, 
+                       CTCellularPlanPendingTransfer, CTCellularPlanProfile, CTCellularPlanRequest, 
+                       CTCellularPlanStringValidator, CTCellularPlanSubscription, 
+                       CTCellularPlanSubscriptionDataUsage, CTCellularPlanSubscriptionParser, 
+                       CTDanglingPlanItem, CTUserLabel ]
+...

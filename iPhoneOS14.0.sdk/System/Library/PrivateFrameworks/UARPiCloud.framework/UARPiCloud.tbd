@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8E07922C-88DB-384E-B261-EDB3843AAA2C
+  - target:          arm64e-ios
+    value:           17ECA3BE-EA0D-36B4-BEC6-2CA93BAF00DE
+install-name:    '/System/Library/PrivateFrameworks/UARPiCloud.framework/UARPiCloud'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UARPiCloudVersionNumber, _UARPiCloudVersionString, _getEntryForKey, 
+                       _saveEntryForKey ]
+    objc-classes:    [ UARPiCloudAccessory, UARPiCloudAccessoryRecord, UARPiCloudContainer, 
+                       UARPiCloudManager, UARPiCloudZone ]
+...

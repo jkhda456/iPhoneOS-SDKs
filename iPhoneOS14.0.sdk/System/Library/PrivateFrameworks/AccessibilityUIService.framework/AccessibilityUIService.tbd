@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9CE01E78-E029-3B2D-91FD-44B56046661D
+  - target:          arm64e-ios
+    value:           65D05245-05D1-3E61-B6C0-211439F331EB
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUIService.framework/AccessibilityUIService'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXUIAlertDefaultDelayBetweenSubsequentAlerts, _AXUIAlertDisplayTimeDefaultForAlerts, 
+                       _AXUIAlertDisplayTimeDefaultForBanners, _AXUIAlertDisplayTimeForever, 
+                       _AXUIAlertSizeMetricFillingContainer, _AXUIAlertSizeMetricFitting, 
+                       _AXUIServerModifiedWindowInterfaceStyle, _AXUISetMainBundleFakesSystemExtension ]
+    objc-classes:    [ AXStaticFrameView, AXStyleProviderUIAlert, AXUIActiveWindow, 
+                       AXUIAlert, AXUIAlertContext, AXUIAlertStyleProvider, AXUIClientMessenger, 
+                       AXUIDisplayManager, AXUIEventManager, AXUINSBundleOverride, 
+                       AXUINubbitContext, AXUIPassiveWindow, AXUIRootViewController, 
+                       AXUIServiceContext, AXUIServiceEntitlementChecker, AXUIServiceManager, 
+                       AXUIUIScreenOverride, AXUIWindow, _AXUIActiveRootWindow, _AXUIPassiveRootWindow, 
+                       _AXUIRootWindow, __AXUINSBundleOverride_super, __AXUIUIScreenOverride_super ]
+...

@@ -1,0 +1,51 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5AE190FF-14FD-3AF0-81A8-43CD35BC72CB
+  - target:          arm64e-ios
+    value:           476F7DE5-3610-3BC6-ABB8-F54EAEE4C64D
+install-name:    '/System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking'
+current-version: 145
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ ContextStoreAgent, DeviceManagementTests, PowerlogHelperdOperators, 
+                       PowerlogLiteOperators, RemoteManagementTests, SafariShared, 
+                       ScreenTime, ScreenTimeAgent, ScreenTimeSettingsUI, ScreenTimeTests, 
+                       ScreenTimeUI, ScreenTimeWebExtension, UsageTrackingAgent, 
+                       dmd, remotemanagementd, usagetool ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _USBundleIdentifierQuickLookUIServiceEmbedded, _USBundleIdentifierQuickLookUIServiceMacOS, 
+                       _USBundleIdentifierSafariEmbedded, _USBundleIdentifierSafariViewService, 
+                       _USDuetClientNameUsageTracking, _USErrorDomain, _USMachServiceNameUsageTracking, 
+                       _USMachServiceNameUsageTrackingPrivate, _USNotificationReceivedValue, 
+                       _USUsageTrackingVersionNumber, _USUsageTrackingVersionString, 
+                       _USVideoMetadataKeyAudioElementWithUserGesture, _USVideoMetadataKeyCanShowControlsManager, 
+                       _USVideoMetadataKeyCanShowNowPlayingControls, _USVideoMetadataKeyHasEverNotifiedAboutPlaying, 
+                       _USVideoMetadataKeyHasHadUserInteractionAndQuirksContainsShouldAutoplayForArbitraryUserGesture, 
+                       _USVideoMetadataKeyIsAudio, _USVideoMetadataKeyIsAudioAndRequiresUserGestureForAudioRateChange, 
+                       _USVideoMetadataKeyIsElementRectMostlyInMainFrame, _USVideoMetadataKeyIsFullscreen, 
+                       _USVideoMetadataKeyIsInActiveDocument, _USVideoMetadataKeyIsLargeEnoughForMainContent, 
+                       _USVideoMetadataKeyIsMediaDocumentAndNotOwnerElement, _USVideoMetadataKeyIsMediaDocumentInMainFrame, 
+                       _USVideoMetadataKeyIsMuted, _USVideoMetadataKeyIsSuspended, 
+                       _USVideoMetadataKeyIsVideo, _USVideoMetadataKeyIsVideoAndRequiresUserGestureForVideoDueToLowPowerMode, 
+                       _USVideoMetadataKeyIsVideoAndRequiresUserGestureForVideoRateChange, 
+                       _USVideoMetadataKeyNoAudio, _USVideoMetadataKeyNoUserGestureRequired, 
+                       _USVideoMetadataKeyNoVideo, _USVideoMetadataKeyOutsideOfFullscreen, 
+                       _USVideoMetadataKeyPageExplicitlyAllowsElementToAutoplayInline, 
+                       _USVideoMetadataKeyPageMediaPlaybackSuspended, _USVideoMetadataKeyPlaybackPermitted, 
+                       _USVideoMetadataKeyRenderer, _USVideoMetadataKeyRequiresFullscreenForVideoPlaybackAndFullscreenNotPermitted, 
+                       _USVideoMetadataKeyRequiresPlaybackAndIsNotPlaying, _USVideoMetadataKeyUserHasPlayedAudioBefore, 
+                       _usageContextContainsPlayingQuickLookVideo ]
+    objc-classes:    [ USApplicationUsageReport, USBudget, USCategoryUsageReport, 
+                       USDomainNormalization, USTrackingAgentConnection, USTrackingAgentPrivateConnection, 
+                       USTrustIdentifier, USUsageMonitor, USUsageQuerying, USUsageReport, 
+                       USUsageReporter, USUsageTrackingBundle, USUsageTrust, USVideoUsage, 
+                       USWebHistory, USWebUsageReport, USWebpageUsage, USXPCRemoteObjectProxy ]
+...

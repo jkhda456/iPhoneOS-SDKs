@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           83AE2DD7-C767-3353-852B-B3E4F0A7ABC0
+  - target:          arm64e-ios
+    value:           D5BF7CDE-8528-3056-9271-5FC4F129EAE5
+install-name:    '/System/Library/PrivateFrameworks/NanoPhotosCore.framework/NanoPhotosCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NPTOLibraryAssetCollectionAssetUUIDsKey, _NPTOLibraryAssetCollectionKeyAssetUUIDsKey, 
+                       _NPTOLibraryAssetCollectionSubtitleKey, _NPTOLibraryAssetCollectionTitleKey, 
+                       _NPTOPreferencesSyncedAlbumIdentifierKey, _NPTOPreferencesSyncedAlbumIdentifierNone, 
+                       _NPTOPreferencesSyncedPhotosLimitKey, _NPTOPreferencesWatchFaceAlbumFetchCountsKey, 
+                       _NPTOPreferencesWatchFaceAlwaysUpdatingAlbumsKey, _nanophotos_log_NanoPhotosCore, 
+                       _nanophotos_log_NanoPhotosUI, _nanophotos_log_bridge, _nanophotos_log_sync, 
+                       _nanophotos_log_sync_oversize ]
+    objc-classes:    [ NPTOCollectionTargetLibrary, NPTODarwinNotificationObserver, 
+                       NPTOLibraryInfo, NPTONotificationCenter, NPTOPreferencesAccessor ]
+...

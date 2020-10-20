@@ -1,0 +1,59 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8B4B6FA4-BC2F-3524-9CD6-8FD6AF9039BD
+  - target:          arm64e-ios
+    value:           26A501C5-183C-3E90-9837-E639610DAD12
+install-name:    '/System/Library/PrivateFrameworks/ScreenshotServices.framework/ScreenshotServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SSAlertServiceViewControllerClassName, _SSApplyDebuggingCustomizationsToViewIfAppropriate, 
+                       _SSAspectRatioFromSize, _SSCGImageBackedImageFromImage, _SSCGImageFromSSImageSurface, 
+                       _SSCropHandleInsideTouchableDimension, _SSCropHandleOutsideTouchableDimension, 
+                       _SSEdgeInsetsEqualToEdgeInsets, _SSFloatEqualToFloat, _SSFloorPoint, 
+                       _SSFloorRect, _SSFloorSize, _SSInsetsOfRectInRect, _SSLargestSizeWithinSizeWithAspectRatio, 
+                       _SSMinimumTouchableDimension, _SSPointEqualToPoint, _SSRectEdgeIsHorizontal, 
+                       _SSRectEdgeIsVertical, _SSRectEqualToRect, _SSRectSubtractingRect, 
+                       _SSRectWithOriginAndSize, _SSRemoteViewControllerDebuggingIsEnabled, 
+                       _SSRoundRectToScale, _SSRoundSizeToScale, _SSScreenshotsDisplayModeDidChangeToFullscreenNotificationName, 
+                       _SSScreenshotsDisplayModeDidChangeToPictureInPictureNotificationName, 
+                       _SSScreenshotsDisplayModeWillChangeToFullscreenNotificationName, 
+                       _SSScreenshotsDisplayModeWillChangeToPictureInPictureNotificationName, 
+                       _SSServiceBundleIdentifier, _SSServiceViewControllerClassName, 
+                       _SSSizeEqualToSize, _SSSubRectForRectWithUnitRect, _SSUIRunPPTEntitlement, 
+                       _SSUIServiceIdentifier, _SSUIShowScreenshotUIEntitlement, 
+                       _SSizeToFitSizeInAspectRatioOfSize, _ScreenshotServicesServiceBundleIdentifier, 
+                       _ScreenshotServicesVersionNumber, _ScreenshotServicesVersionString, 
+                       __SSEnableContinuousScreenCaptureForBugFiling, __SSEnableVellumExport, 
+                       __SSIsRemoteViewControllerDebuggingEnabled, __SSIsScreenshotManagerDebuggingEnabled, 
+                       __SSIsViewSnapshotDebuggingEnabled, __SSShouldHomeButtonDismiss, 
+                       __SSShouldIgnoreAbilityCheck, __SSSignpostLog, __SSUserDefaults, 
+                       __SSUserDefaultsBooleanForKeyWithNODefault, __SSUserDefaultsCGFloatForKeyWith0Default ]
+    objc-classes:    [ SSActiveInterfaceOrientationObserver, SSApplicationScreenshotSupplementalDataCapturer, 
+                       SSBlurView, SSBlurringFlashView, SSChromeHelper, SSChromePlaceholderView, 
+                       SSChromePlaceholderViewController, SSDittoHostViewController, 
+                       SSDittoRemoteConnection, SSDocumentUpdateAction, SSEnvironmentDescription, 
+                       SSEnvironmentDescriptionAppleInternalOptions, SSEnvironmentElement, 
+                       SSEnvironmentElementDocumentUpdate, SSEnvironmentElementMetadata, 
+                       SSEnvironmentElementMetadataUpdate, SSFlashView, SSHarvestedApplicationDocument, 
+                       SSHarvestedApplicationMetadata, SSImageIdentifierAction, SSImageIdentifierUpdate, 
+                       SSImageSurface, SSMainScreenSnapshotter, SSMaterial, SSMetadataUpdateAction, 
+                       SSOtherScreenSnapshotter, SSPreheatAction, SSReduceTransparencyFlashView, 
+                       SSRemoteAlertHandleProvider, SSScreenCaptureAbilityCheck, 
+                       SSScreenCapturer, SSScreenCapturerPresentationOptions, SSScreenCapturerScreenshotOptions, 
+                       SSScreenCapturerScreenshotOptionsCollection, SSScreenSnapshot, 
+                       SSScreenSnapshotter, SSScreenshotAction, SSScreenshotAssetManager, 
+                       SSScreenshotAssetManagerPhotoLibraryBackend, SSScreenshotAssetManagerRegistrationOptions, 
+                       SSScreenshotMetadataHarvester, SSScreenshotsWindow, SSScreenshotsWindowRootViewController, 
+                       SSSnapshotter, SSTestingCoordinator, SSUIRunPPTServiceRequest, 
+                       SSUIService, SSUIServiceClient, SSUIServiceOptions, SSUIServiceRequest, 
+                       SSUIServiceServer, SSUIShowScreenshotServiceRequest, SSUIShowScreenshotUIWithImageServiceRequest, 
+                       SSVellumOpacityControl, SSXPCEncodableRectWrapper, _SSSFlashSuperColorView, 
+                       _SSScreenCaptureResults ]
+...

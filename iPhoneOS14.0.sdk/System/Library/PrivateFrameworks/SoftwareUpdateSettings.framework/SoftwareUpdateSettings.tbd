@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9D3770EA-384E-37AC-992E-6F8BD386C03C
+  - target:          arm64e-ios
+    value:           80E0AE24-1EB8-32F7-8354-7DAFCBD64542
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework/SoftwareUpdateSettings'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __SUSLoggingFacility ]
+    objc-classes:    [ SUSSoftwareUpdateAnimatedIcon, SUSSoftwareUpdateLicenseViewController, 
+                       SUSSoftwareUpdateReleaseNotesDetail, SUSSoftwareUpdateTableView, 
+                       SUSSoftwareUpdateTermsManager, SUSSoftwareUpdateTitleCell ]
+    objc-ivars:      [ SUSSoftwareUpdateReleaseNotesDetail._releaseNotes ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F5B5EBCF-0FC6-3F72-AE5E-A8E3476A6ED5
+  - target:          armv7s-ios
+    value:           0751C520-9510-3D62-B58C-E0FF1F672716
+  - target:          arm64-ios
+    value:           2B00CD68-8646-303F-94AF-608E002AB8D0
+  - target:          arm64e-ios
+    value:           B42FDB43-5681-36B9-A808-543638247DD5
+install-name:    '/System/Library/PrivateFrameworks/DrawingKit.framework/DrawingKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CGPointIsUnrepresentable, _CGRectIsUnrepresentable, _DKDistanceBetweenPoints, 
+                       _DKDrawingIsValid, _DKInkViewTouchesBeganNotification, _DKInkViewTouchesEndedLocationInViewUserInfoKey, 
+                       _DKInkViewTouchesEndedNotification, _DKIsDarkMode, _DKRenderPointWidthForPoint, 
+                       _HW_CGRectFromIntegralData, _HW_CGSizeFromIntegralData, _HW_DataFromIntegralCGRect, 
+                       _HW_DataFromIntegralCGSize, _HW_FloatFromUInt16, _HW_MillisFromNSTimeInterval, 
+                       _HW_NSTimeIntervalFromMillis, _HW_UInt16FromFloat, _MaxForceValue, 
+                       _MaxVelocityValue, _NSStringFromVectorFloat4 ]
+    objc-classes:    [ DKDrawing, DKDrawingStroke, DKDrawingStrokePoint, DKInkThumbnailRenderer, 
+                       DKInkView, HWEncoding, HWHandwritingItem ]
+...

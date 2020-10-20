@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A4CFF8FF-9AFB-3C9B-91A5-9C85DD066E78
+  - target:          arm64e-ios
+    value:           0D9B7FC1-040C-368B-A9C4-54C14002AF8D
+install-name:    '/System/Library/PrivateFrameworks/apfs_boot_mount.framework/apfs_boot_mount'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _abm_get_isc_device_node, _abm_get_isc_device_path, _abm_get_recovery_device_node, 
+                       _abm_get_recovery_device_path ]
+...

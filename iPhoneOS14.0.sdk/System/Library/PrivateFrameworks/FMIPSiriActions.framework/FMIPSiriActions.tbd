@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           55D9AAF3-D13F-3129-BF82-6C36C6972225
+  - target:          arm64e-ios
+    value:           0C000616-3F19-39FA-8E1A-A609E562090D
+install-name:    '/System/Library/PrivateFrameworks/FMIPSiriActions.framework/FMIPSiriActions'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LogCategory_Unspecified ]
+    objc-classes:    [ FMIPLocateIntent, FMIPLocateIntentResponse, FMIPPlaySoundIntent, 
+                       FMIPPlaySoundIntentResponse ]
+...

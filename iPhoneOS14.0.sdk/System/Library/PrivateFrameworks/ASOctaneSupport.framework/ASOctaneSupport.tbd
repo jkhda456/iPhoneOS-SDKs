@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3AA5D675-016B-348E-9C05-AF20D4084E51
+  - target:          arm64e-ios
+    value:           46442F6B-EA01-3ED3-9D57-36BBE57C533E
+install-name:    '/System/Library/PrivateFrameworks/ASOctaneSupport.framework/ASOctaneSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ASOctaneSupportVersionNumber, _ASOctaneSupportVersionString ]
+    objc-classes:    [ ASOctaneServer ]
+...

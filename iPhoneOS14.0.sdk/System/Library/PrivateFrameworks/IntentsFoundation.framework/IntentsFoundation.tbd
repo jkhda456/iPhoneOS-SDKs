@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4C2AE6A6-6CEE-3BDE-9768-689DA2AD076E
+  - target:          armv7s-ios
+    value:           E215B01B-BA91-3818-A05F-A4E6BC573001
+  - target:          arm64-ios
+    value:           801454C3-444C-3D04-840C-E557E6AEC172
+  - target:          arm64e-ios
+    value:           8CE47736-09AB-3FED-B58E-54A2269D1C64
+install-name:    '/System/Library/PrivateFrameworks/IntentsFoundation.framework/IntentsFoundation'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ INFObject ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IFMergeDictionaries, _IntentsFoundationVersionNumber, _IntentsFoundationVersionString ]
+    objc-classes:    [ IFObjectHasher, INFGrammarCollection, INFPartOfSpeech, INFSentence, 
+                       INFSentenceToken ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           16FF9364-9C26-3280-8217-B7F0036162D9
+  - target:          armv7s-ios
+    value:           34D25312-4D32-3EF5-AA17-18178780ABD0
+  - target:          arm64-ios
+    value:           C5E7519C-D58C-3455-AFCF-B6B94C0194AF
+  - target:          arm64e-ios
+    value:           B03D0686-3D70-36AA-B42C-BFFA06192029
+install-name:    '/System/Library/PrivateFrameworks/Pegasus.framework/Pegasus'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PGActivateApplicationWithProcessIdentifier, _PGBundle, _PGBundleIdentifierForProcessIdentifier, 
+                       _PGIsPictureInPictureSupported, _PGLocalizedString, _PGLocalizedStringFromTable, 
+                       _PGLogCommon, _PGMachServiceName, _PGPictureInPictureExportedInterface, 
+                       _PGPictureInPictureRemoteObjectInterface, _PGSizeIsEmpty, 
+                       _PGSizeIsInvalid, _PGSizeIsValid, _PGSizeIsZero, _PGWaitForNotificationWithTimeout, 
+                       _PG_dispatch_async_with_timeout, __PGLogMethodProem ]
+    objc-classes:    [ PGBackdropView, PGChevronView, PGHostedWindow, PGHostedWindowHostingHandle, 
+                       PGLayerHostView, PGLoadingIndicatorView, PGPictureInPictureControlsViewController, 
+                       PGPictureInPictureRemoteObject, PGPlaybackProgress, PGPlaybackProgressIndicator, 
+                       PGSetterThrottler, PGStashedView, PGTimer, _PGBundle, _PGPictureInPictureConnectionExportedObject, 
+                       _PGPlaybackProgressIndicatorRangesView, __PGButton, __PGView ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PGPegasusErrorDomain, _PGPictureInPictureProxyPictureInPictureActiveChangedNotification, 
+                       _PGPictureInPictureViewControllerPrefersIdleTimerDisabledDidChangeNotification ]
+    objc-classes:    [ PGCommand, PGControlsViewModel, PGControlsViewModelValues, 
+                       PGInterruptionAssistant, PGPictureInPictureApplication, PGPictureInPictureController, 
+                       PGPictureInPictureProxy, PGPictureInPictureViewController, 
+                       PGPlaybackState, PGPlaybackStatePrerollAttributes ]
+...

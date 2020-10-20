@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           36B87A8D-B262-31E2-A39C-21894359C3AC
+  - target:          arm64e-ios
+    value:           AA8D4A35-099A-3BAB-AD99-16E451A80570
+install-name:    '/System/Library/PrivateFrameworks/AppStoreFoundation.framework/AppStoreFoundation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ASFIAPItem, ASFReceipt ]
+...

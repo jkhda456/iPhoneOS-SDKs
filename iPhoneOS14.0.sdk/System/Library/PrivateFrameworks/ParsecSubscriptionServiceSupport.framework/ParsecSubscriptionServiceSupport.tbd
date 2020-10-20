@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           854304E5-9C74-3DEC-B9F0-22A283678182
+  - target:          armv7s-ios
+    value:           A400F5DA-4FF3-3103-B346-6098620EF290
+  - target:          arm64-ios
+    value:           E16DF162-0766-3B8E-BF28-83673B9B377E
+  - target:          arm64e-ios
+    value:           632A5C22-C077-38D4-A3FB-79038D90C79A
+install-name:    '/System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/ParsecSubscriptionServiceSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ParsecSubscriptionServiceSupportVersionNumber, _ParsecSubscriptionServiceSupportVersionString ]
+    objc-classes:    [ PSSSSubscriptionManager, PSSSSubscriptionManagerInternal ]
+...

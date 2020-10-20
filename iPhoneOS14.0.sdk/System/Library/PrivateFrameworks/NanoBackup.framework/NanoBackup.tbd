@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F5762857-A0FE-35BD-8409-D3A430817D2B
+  - target:          armv7s-ios
+    value:           3D3752EB-14B3-3A5E-A585-3B2DC82D1A93
+  - target:          arm64-ios
+    value:           C80B4767-F9A5-3DDA-BB2F-2DC531B0A89E
+  - target:          arm64e-ios
+    value:           E27A1787-1EE9-3A6B-9E63-AA655FA99AA2
+install-name:    '/System/Library/PrivateFrameworks/NanoBackup.framework/NanoBackup'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NBBackupDirectoryPath, _NBLoggingDaemonObjectInit, _NBLoggingFrameworkObjectInit, 
+                       _NanoBackupDomain, _iCloudBackupsEnabled, _nb_daemon_log, 
+                       _nb_framework_log ]
+    objc-classes:    [ NBBackup, NBExclusionListManager, NBManager ]
+...

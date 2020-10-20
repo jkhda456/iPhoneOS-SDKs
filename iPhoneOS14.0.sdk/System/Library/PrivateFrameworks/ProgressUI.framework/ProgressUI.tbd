@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C7E96467-1142-34FD-90A4-5DF8C6F875E3
+  - target:          armv7s-ios
+    value:           CE20D9AE-78D4-3675-879A-8F05CB3A055D
+  - target:          arm64-ios
+    value:           D34D89FC-DB61-3565-8558-8C37E65B0F78
+  - target:          arm64e-ios
+    value:           F09A451E-0B4A-32E3-B847-C1BC61374E17
+install-name:    '/System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __IOSurfacePropertyDictionaryForRect, _kPUIDefaultContextLevel ]
+    objc-classes:    [ PUIFramebufferSizeChangeNotifier, PUIProgressWindow ]
+...

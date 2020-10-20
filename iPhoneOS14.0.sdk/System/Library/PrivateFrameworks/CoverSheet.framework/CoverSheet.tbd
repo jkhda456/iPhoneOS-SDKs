@@ -1,0 +1,85 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           ED80D367-5847-3956-AE07-C646F41A362F
+  - target:          arm64e-ios
+    value:           8A299C29-A2AF-3258-B3C9-A17879466209
+install-name:    '/System/Library/PrivateFrameworks/CoverSheet.framework/CoverSheet'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CSAdjustTargetContentOffset, _CSBoundsHeight, _CSBoundsWidth, 
+                       _CSChargePercentageLabelForBattery, _CSCoverSheetEventIsVolumeOrHeadsetButtonType, 
+                       _CSCoverSheetScreenOffReason, _CSCoverSheetTransitionContextMake, 
+                       _CSDNDBedtimeControllerIdentifier, _CSDateBaselineToListY, 
+                       _CSDefaultPresentationTransitionDuration, _CSDefaultRegionUpdateTransitionDuration, 
+                       _CSEventIsButtonType, _CSEventIsStateless, _CSEventShouldBeLogged, 
+                       _CSGetLegibilitySettingsForBackgroundStyle, _CSMainPageListInsetXLandscapePhone, 
+                       _CSPageViewControllerRoleCamera, _CSPageViewControllerRoleToday, 
+                       _CSPowerChangeObserverIdentifier, _CSQuickActionButtonDiameter, 
+                       _CSQuickActionButtonInsetX, _CSQuickActionButtonInsetY, _CSRemoteContentModalViewControllerErrorDomain, 
+                       _CSRemoteContentSessionErrorDomain, _CSTimeLabelLandscapeBaselineY, 
+                       _CSTimeLabelPortraitBaselineY, _CSUpdateDateViewComponent, 
+                       _CSUpdateStatusBarBackgroundComponent, _CoverSheetVersionNumber, 
+                       _CoverSheetVersionString, _CubicAnimationControlPoints5ByScalingWithFactor, 
+                       _NSStringFromCSTeachableMomentCallToActionLabelState, _NSStringFromCoverSheetActionType, 
+                       _NSStringFromCoverSheetCapability, _NSStringFromCoverSheetComponentType, 
+                       _NSStringFromCoverSheetEventType, _NSStringFromCoverSheetNotificationBehavior, 
+                       _NSStringFromCoverSheetProximityDetectionMode, _NSStringFromCoverSheetRegionRole, 
+                       _NSStringFromCoverSheetScrollingStrategy, _NSStringFromCoverSheetTransitionContext, 
+                       _NSStringFromCoverSheetTransitionType, _SBGreenTeaTestModeLockText, 
+                       _SBInternalInstallAlternativeLegalContact, _SBInternalInstallLegalContact, 
+                       _SBInternalInstallLegalDeclaration, _SBInternalInstallLegalInstructions, 
+                       _SBLockScreenLogoutButtonGlyphImageName, _SBSecurityResearchDeviceLegalDeclaration ]
+    objc-classes:    [ CSAction, CSAdjunctItemView, CSAdjunctListItem, CSAdjunctListModel, 
+                       CSAdjunctListView, CSAppearance, CSBatteryChargingInfo, CSBatteryChargingView, 
+                       CSBatteryFillView, CSBehavior, CSBounceSettings, CSChargingViewController, 
+                       CSClippingLine, CSCombinedListViewController, CSComponent, 
+                       CSContentActionInterpreter, CSContentCutoutBoundsCalculator, 
+                       CSCoverSheetDismissGestureSettings, CSCoverSheetFlyInSettings, 
+                       CSCoverSheetTransitionSettings, CSCoverSheetTransitionsSettings, 
+                       CSCoverSheetView, CSCoverSheetViewBase, CSCoverSheetViewController, 
+                       CSCoverSheetViewControllerBase, CSDNDBedtimeController, CSDNDBedtimeGreetingViewController, 
+                       CSDashBoardNotificationVersusPagingScrollSettings, CSDashBoardQuickActionsButtonSettings, 
+                       CSDashBoardRemoteContentSettings, CSDashBoardScrollModifierSettings, 
+                       CSDeviceBlockViewController, CSDismissableModalViewController, 
+                       CSEmbeddedContentActionManager, CSEnhancedModalButton, CSEvent, 
+                       CSFaceOcclusionMonitor, CSFixedFooterView, CSFixedFooterViewController, 
+                       CSFullscreenNotificationView, CSFullscreenNotificationViewController, 
+                       CSHomeAffordanceView, CSHomeAffordanceViewController, CSHomeButtonShowPasscodeRecognizer, 
+                       CSHomeButtonSuppressAfterUnlockRecognizer, CSHorizontalScrollFailureRecognizer, 
+                       CSHorizontalScrollFailureRecognizerSettings, CSInterstitialTransitionSource, 
+                       CSLayoutStrategy, CSLockScreenBiometricFailureSettings, CSLockScreenDomain, 
+                       CSLockScreenMesaSettings, CSLockScreenPasscodeSettings, CSLockScreenPearlSettings, 
+                       CSLockScreenSettings, CSLockScreenTestPluginSettings, CSLogoutButtonViewController, 
+                       CSMainPageContentViewController, CSMainPageView, CSMediaControlsView, 
+                       CSMediaControlsViewController, CSModalButton, CSModalPresentationViewController, 
+                       CSModalView, CSModalViewControllerBase, CSModalVisualEffect, 
+                       CSNotificationAdjunctListViewController, CSNotificationClearingTrigger, 
+                       CSNotificationDispatcher, CSNowPlayingController, CSPaddingHeaderViewController, 
+                       CSPageControl, CSPageViewBase, CSPageViewController, CSPasscodeBackgroundView, 
+                       CSPasscodeViewController, CSPoseidonViewController, CSPowerChangeObserver, 
+                       CSPreciseDateProvider, CSPresentation, CSPresentationViewController, 
+                       CSProudLockViewController, CSQuickActionsButton, CSQuickActionsView, 
+                       CSQuickActionsViewController, CSRegion, CSRegionsDebugView, 
+                       CSRemoteContentHostViewController, CSRemoteContentModalView, 
+                       CSRemoteContentModalViewController, CSRemoteContentSession, 
+                       CSRemoteContentSessionManager, CSResetRestoreViewController, 
+                       CSScrollGestureController, CSScrollModifier, CSScrollView, 
+                       CSShakableView, CSSimpleLockScreenActionProvider, CSSlidingPresentationViewController, 
+                       CSStatusTextView, CSStatusTextViewController, CSTeachableMomentsContainerView, 
+                       CSTeachableMomentsContainerViewController, CSTemperatureWarningViewController, 
+                       CSTestingSupportNotificationGenerator, CSTestingSupportWidgetProvider, 
+                       CSTimerView, CSTimerViewController, CSTodayContentView, CSTodayContentViewController, 
+                       CSTodayPageView, CSTodayPageViewController, CSTodayViewController, 
+                       CSUserPictureView, CSUserPictureViewController, CSUserPresenceMonitor, 
+                       CSVibrancyUtility, CSVibrantWallpaperButton, SBHorizontalScrollFailureTriangleView, 
+                       _CSDoubleBatteryChargingView, _CSPaddingView, _CSScreenEdgePanGestureRecognizer, 
+                       _CSSingleBatteryChargingView ]
+    objc-ivars:      [ CSAdjunctListItem._actions ]
+...

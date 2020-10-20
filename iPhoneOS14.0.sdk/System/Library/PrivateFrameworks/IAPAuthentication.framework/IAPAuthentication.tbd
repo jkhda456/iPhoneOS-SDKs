@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A6FC34A2-5457-3FFE-8E20-3F58B875EFFB
+  - target:          armv7s-ios
+    value:           78A9FB91-7D6F-36AB-BF8F-112EDA7E8743
+  - target:          arm64-ios
+    value:           280C3906-A082-32AA-8989-A11EB71DDCDF
+  - target:          arm64e-ios
+    value:           46E1A73A-36B4-35BE-B20E-C93C7EEE9456
+install-name:    '/System/Library/PrivateFrameworks/IAPAuthentication.framework/IAPAuthentication'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AllocCapsFromAuthCert, _CanChargeHighVoltage, _CanChargeInductive, 
+                       _CanUseAccPwrLoV, _CanUseAccPwrUHPM, _EraseSigningContext, 
+                       _FinalizeSigningContext, _GetCertClass, _GetRandomDigest, 
+                       _GetSecCertRef, _IapAuthCertSerial, _IapAuthCertVerifyAuthVersion, 
+                       _IapAuthChallengeRespond, _IapAuthChallengeRespondSync, _IapAuthChallengeVerify, 
+                       _IapAuthGetAppCert, _IapAuthGetAppCertP7, _IapAuthGetAppCertP7Sync, 
+                       _IapAuthGetCertClassAuthV2, _IapAuthRandomNumber, _IapAuthVerifyCertSerialNumber, 
+                       _InitSigningContext, _IsAppleAccessory, _IsAppleHWModule, 
+                       _IsAppleMFiAccessory, _MFiVerifyCertificateSerialNumber, _UpdateSigningContext, 
+                       _VerifyCertAuthority, _VerifyCertAuthorityDictionary, _VerifyCertSerialNumber, 
+                       _VerifyNonceSigned, _kAuthCertBufferKey, _kAuthNonceBufferKey, 
+                       _kAuthResponseBufferKey, _kAuthVersionKey ]
+...

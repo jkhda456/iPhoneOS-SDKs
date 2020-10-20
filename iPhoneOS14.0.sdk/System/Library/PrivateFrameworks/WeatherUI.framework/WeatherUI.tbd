@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DC65F357-EE0B-302C-B1AA-96B9C32ACD55
+  - target:          armv7s-ios
+    value:           7B0C6C34-9C55-3A14-BE4F-031BE5F35C3F
+  - target:          arm64-ios
+    value:           FEFFC5E1-DC89-338D-82BE-08AB075B4949
+  - target:          arm64e-ios
+    value:           A2F67769-2FA0-3B2D-A991-F4D5A01233ED
+install-name:    '/System/Library/PrivateFrameworks/WeatherUI.framework/WeatherUI'
+current-version: 1667
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _WeatherUIVersionNumber, _WeatherUIVersionString, _blizzardDay, 
+                       _blowingSnowDay, _clearDay, _clearNight, _cloudyDay, _cloudyNight, 
+                       _crossfadeDuration, _drizzleDay, _drizzleNight, _dustDay, 
+                       _dustNight, _flurriesDay, _flurriesNight, _fogDay, _fogNight, 
+                       _frigidDay, _hailDay, _hazeDay, _hazeNight, _heavyRainDay, 
+                       _hotDay, _hurricaneDay, _hurricaneNight, _inclementDay, _inclementNight, 
+                       _mostlyClearNight, _mostlyCloudyDay, _mostlyCloudyNight, _partlyCloudyDay, 
+                       _partlyCloudyNight, _rainDay, _rainSleetDay, _rainSnowDay, 
+                       _scatteredShowersDay, _scatteredSnowDay, _scatteredThunderstormDay, 
+                       _showerDay, _sleetDay, _smokeDay, _smokeNight, _snowDay, _stormDay, 
+                       _stormNight, _sunnyDay, _sunset, _thunderstormsNight, _timeStep, 
+                       _tornadoDay, _tornadoNight, _tropicalStormDay, _windyDay, 
+                       _winteryMixDayMini ]
+    objc-classes:    [ WUIDynamicWeatherBackgroundInteractiveTransaction, WUIGradientLayer ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AlternativeFontColorAlpha, _ClearGraphicQuality, _CreateWeatherLabel, 
+                       _DayOfYear, _DegreesFromRadians, _GraphicQuality, _HairlineThickness, 
+                       _HourAngle, _RadiansFromDegrees, _RoundToPixel, _SunHeight, 
+                       _WAGrayColor, _WAPrecipitationColor, _WAShadowColor, _WATealColor, 
+                       _WATextColor, _WAWeatherMathResetForTimeChange, _WatchSystemTealColor, 
+                       _WeatherUIFrameworkBundle ]
+    objc-classes:    [ WUIAsynchronousAssetLoader, WUIDynamicWeatherBackground, WUIWeatherCondition, 
+                       WUIWeatherConditionBackgroundView, WUIWidgetBackgroundView ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           971CEAE6-A3AC-3352-9B7C-582DAE1BD407
+  - target:          armv7s-ios
+    value:           780A025A-E73E-366F-B5B4-9052BC217781
+  - target:          arm64-ios
+    value:           29948EDE-D735-3C06-B11D-27455AAC949A
+  - target:          arm64e-ios
+    value:           F84DDE24-13F5-3EC3-B394-4ADDC043F10C
+install-name:    '/System/Library/PrivateFrameworks/HSAAuthentication.framework/HSAAuthentication'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HSAAuthenticationProcessIncomingMessage, _HSAAuthenticationRegisterIncomingAuthenticationTokenBlockWithIdentifier, 
+                       _HSAAuthenticationUnregisterIncomingAuthenticationTokenBlockWithIdentifier ]
+    objc-classes:    [ HSAAuthenticationServer ]
+...

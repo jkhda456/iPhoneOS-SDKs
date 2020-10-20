@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           61283798-DCE5-3758-ABB6-445355A12599
+  - target:          armv7s-ios
+    value:           D53CA1AA-7559-3E1C-915B-E9A8B551F8C0
+  - target:          arm64-ios
+    value:           E3BDC384-F462-3A67-A10B-1B02FB857846
+  - target:          arm64e-ios
+    value:           4BC464D5-78A2-3E70-94A6-0ABE628941C1
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DADaemonSupport.framework/DADaemonSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DADAgentsStartedNotification, _DADAgentsStoppedNotification, 
+                       _DADRequestClientStatusDumpNotification, _DARefreshIntervalAutomatic, 
+                       _DARefreshIntervalManual, _DARefreshIntervalSystemDefault, 
+                       ___RootDomainConnect, __devicePowerChanged, _gDADHighAvailabilityQueue, 
+                       _gDADOperationQueue, _handleSignal ]
+    objc-classes:    [ DAAgent, DACPNetworkObserverReachability, DAChangeHistoryClerk, 
+                       DACoreDAVAgent, DADAccessManager, DADAgentManager, DADClient, 
+                       DADClientAccountTimers, DADClientAttachmentDownloadDelegate, 
+                       DADClientCalendarAvailabilityResponseDelegate, DADClientCalendarDirectorySearchResponseDelegate, 
+                       DADClientContactsSearchDelegate, DADClientDelegate, DADClientGrantedDelegatesListResponseDelegate, 
+                       DADClientOfficeHoursRequestDelegate, DADClientSettingsDelegate, 
+                       DADClientShareResponseDelegate, DADClientSubscribedCalendarDownloadDelegate, 
+                       DADClientUpdateGrantedDelegatePermissionResponseDelegate, 
+                       DADMain, DADStatusReportAggregator, DADaemonPowerAssertionManager, 
+                       DAFolderSyncRequest, DAReachability, DARefreshManager, DARefreshWrapper, 
+                       DATokenRegistrationRequest, _DAChangeHistoryABLegacyClerk, 
+                       _DAChangeHistoryContactsClerk ]
+    objc-ivars:      [ DADStatusReportAggregator._completionBlock, DADStatusReportAggregator._finished, 
+                       DADStatusReportAggregator._numOutstandingReports, DADStatusReportAggregator._persistentUUIDToStatusReport ]
+...

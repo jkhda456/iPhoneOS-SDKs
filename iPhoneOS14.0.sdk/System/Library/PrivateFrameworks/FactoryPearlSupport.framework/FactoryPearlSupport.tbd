@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B6BFC031-7E35-3B76-A309-18F99AE7846C
+  - target:          arm64e-ios
+    value:           7CAF4A44-B4C5-3D13-BBE0-9C1402AA6638
+install-name:    '/System/Library/PrivateFrameworks/FactoryPearlSupport.framework/FactoryPearlSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN14ProjectorToken11writeToFileEPKc, __ZN14ProjectorToken12readFromFileEPKc, 
+                       __ZN14ProjectorToken5printEv, __ZN14ProjectorTokenC1EPKcllibS1_, 
+                       __ZN14ProjectorTokenC1Ev, __ZN14ProjectorTokenC2EPKcllibS1_, 
+                       __ZN14ProjectorTokenC2Ev, __ZN20MobileProjectorToken3useE20ProjectorTokenTarget, 
+                       __ZN20MobileProjectorToken5printE20ProjectorTokenTarget, __ZN20MobileProjectorToken6createEjibPKc20ProjectorTokenTarget, 
+                       __ZN20MobileProjectorToken6removeE20ProjectorTokenTarget, 
+                       __ZN20MobileProjectorToken7VERSIONE ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FPSPearlCertificateActivationsMax, _FPSPearlCertificateActivationsMin, 
+                       _FPSPearlCertificateTimeoutMax, _FPSPearlCertificateTimeoutMin, 
+                       _FactoryPearlSupportLogHandle, _FactoryPearlSupportVersionNumber, 
+                       _FactoryPearlSupportVersionString, _OSDPearlTokenTypeJasper, 
+                       _OSDPearlTokenTypePearl, _SCRAMBLING_OFFSET ]
+    objc-classes:    [ FPSPearlCertificate ]
+...

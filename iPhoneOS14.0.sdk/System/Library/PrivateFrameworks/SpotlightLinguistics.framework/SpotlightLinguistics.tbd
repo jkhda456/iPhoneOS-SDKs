@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E6103222-19E9-3CE3-8282-C69C6E639BBD
+  - target:          arm64e-ios
+    value:           23BB2F7B-E895-36A5-9AFA-3EEF16E4EDB0
+install-name:    '/System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SILanguageModelCopyLocale, _SILanguageModelCopyLocaleInString, 
+                       _SILanguageModelCreateWithOptions, _SILanguageModelEnumerateKeyPhrases, 
+                       _SILanguageModelEnumerateKeyPhrasesInString, _SILanguageModelGetDefaultModel, 
+                       _SILanguageModelGetKeyPhraseAtIndex, _SILanguageModelGetPhraseScore, 
+                       _SILanguageModelIsContentToken, _SILanguageModelIsContentTokenInString, 
+                       _SILanguageModelIsValidPhraseToken, _SILanguageModelPreheat, 
+                       _SILanguageModelPurge, _SILanguageModelRelease, _SILanguageModelReserve, 
+                       _SILanguageModelRetain, _SILanguageModelUnreserve, _kSILanguageModelOptionBundleIdentifier, 
+                       _kSILanguageModelOptionCacheResults, _kSILanguageModelOptionDisableLanguageModel, 
+                       _kSILanguageModelOptionDisableLexicon, _kSILanguageModelOptionEnableAdaptation, 
+                       _kSILanguageModelOptionFilterByAllowlist, _kSILanguageModelOptionFilterByBlocklist, 
+                       _kSILanguageModelOptionFilterByLexicon, _kSILanguageModelOptionNormalizeText, 
+                       _kSILanguageModelOptionPreferredLanguages, _kSILanguageModelOptionReducedResources, 
+                       _kSILanguageModelOptionThresholdKeyphrases ]
+...

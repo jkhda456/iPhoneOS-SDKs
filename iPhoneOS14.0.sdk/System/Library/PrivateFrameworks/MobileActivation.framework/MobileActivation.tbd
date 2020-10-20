@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8B67C63D-7624-39FB-88CA-492E2F489027
+  - target:          armv7s-ios
+    value:           5452D748-D9F7-361E-BF47-F6873FA92DEB
+  - target:          arm64-ios
+    value:           D748B4CF-6B85-35F9-B06F-5FC6BFA5CF1D
+  - target:          arm64e-ios
+    value:           B048EF1C-8FB6-3E32-8C5D-9BB426227BF2
+install-name:    '/System/Library/PrivateFrameworks/MobileActivation.framework/MobileActivation'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MAECopyActivationRecord, _MAECopyRegulatoryImages, _MAECopyRegulatoryImagesWithError, 
+                       _MAECreateActivationInfoWithError, _MAECreateReCertInfo, _MAECreateReCertInfoWithError, 
+                       _MAECreateReCertRequest, _MAECreateReCertRequestWithError, 
+                       _MAECreateRecertStorebagRequest, _MAEGetReCertURLFromStorebag, 
+                       _MAEGetReCertURLFromStorebagWithError, _MAEHandleRecertInfo, 
+                       _MAEHandleRecertInfoWithError, _MAETryReCert, _MAETryReCertWithError, 
+                       _createXMLRequest, _talkToServerWithError ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MAEActivateDeviceWithError, _MAECopyActivationRecordWithError, 
+                       _MAECopyPCRTToken, _MAECopyUCRTToken, _MAECreateActivationInfo, 
+                       _MAECreateActivationRequest, _MAECreateActivationRequestWithError, 
+                       _MAECreateSessionRequestWithError, _MAECreateStorebagRequest, 
+                       _MAEDeactivateDevice, _MAEDeactivateDeviceWithError, _MAEGetActivationBuild, 
+                       _MAEGetActivationState, _MAEGetActivationStateWithError, _MAEGetActivationURLFromStorebag, 
+                       _MAEGetActivationURLFromStorebagWithError, _MAEGetBrickState, 
+                       _MAEHandleActivationInfo, _MAEInFieldCollected, _MAEIssueClientCertificate, 
+                       _MAERecertifyDevice, _MAERecertifyDeviceWithError, _MAETryActivate, 
+                       _MAEUCRTAvailable, _MAEUpdateBasebandTicketWithError, _MAGetActivationState, 
+                       _MARequestReactivation, _MAUCRTActivationLocked, _MAUnbrickDevice, 
+                       _MobileActivationErrorDomain, _MobileActivationFunctionNameErrorKey, 
+                       _MobileActivationSourceFileLineErrorKey, _createMobileActivationError, 
+                       _kMAActivationStateActivated, _kMAActivationStateFactoryActivated, 
+                       _kMAActivationStateUnactivated, _kMANotificationCollectionPerformed, 
+                       _kMANotificationIdentityChanged, _kMANotificationUCRTOOBPerformed, 
+                       _kMAOptionsActivationLockInfo, _kMAOptionsActivationResponseHeaders, 
+                       _kMAOptionsAllowInvalidNetworkCertificates, _kMAOptionsBasebandWaitCount, 
+                       _kMAOptionsFactoryActivationRequest, _kNotificationActivationStateChanged, 
+                       _kNotificationBrickStateChanged, _mobileactivationErrorHasDomainAndErrorCode ]
+...

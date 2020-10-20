@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3A2FB887-5667-35A4-8776-70C20EE15EA9
+  - target:          armv7s-ios
+    value:           59B16140-E7D4-3AB6-814C-D246E0ED6193
+  - target:          arm64-ios
+    value:           D386AB83-0C84-3FD8-8FC7-55AC15317170
+  - target:          arm64e-ios
+    value:           A64FF7C6-8872-36F5-A416-B4624F08850C
+install-name:    '/System/Library/PrivateFrameworks/iAdDeveloper.framework/iAdDeveloper'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ __ADFSEventsCallback, _kADCreativeTypeAudio, _kADCreativeTypeDouble, 
+                       _kADCreativeTypeFlexible, _kADCreativeTypeFullscreen, _kADCreativeTypeLarge, 
+                       _kADCreativeTypeMediumRectangle, _kADCreativeTypeNative, _kADCreativeTypePreroll, 
+                       _kADCreativeTypeSeminative, _kADCreativeTypeStandard, _kADCreativeTypeVideo ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ADAdServerManifestManager, ADAdServerManifestRecord, ADEmbeddedAdServer, 
+                       HTSHTTPMessage, HTSHTTPMessageRequest, HTSHTTPMessageResponse, 
+                       HTSHTTPServer, HTSHTTPServerConnection ]
+...

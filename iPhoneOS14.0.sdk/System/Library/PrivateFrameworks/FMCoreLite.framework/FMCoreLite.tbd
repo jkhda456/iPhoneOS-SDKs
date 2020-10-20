@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7E647C87-E605-3694-B323-A81F0FC9185E
+  - target:          armv7s-ios
+    value:           84C21A64-ED37-3403-B929-874E013D5D7B
+  - target:          arm64-ios
+    value:           D8EA95D3-975F-30C5-BFDB-C48B78FADC09
+  - target:          arm64e-ios
+    value:           1E6863E0-8040-300B-8054-D6300F9A3611
+install-name:    '/System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FMAlertCategoryNone, _FMEmptyResult, _FMErrorDomain, _FMFutureCallbackStack, 
+                       __FMBlockDescriptor, __FMDictionaryOfMetrics, __FMFutureDidPerformCallback, 
+                       __FMFutureWillPerformCallback, __FMPopScopedDescriptor, __FMPushScopedDescriptor, 
+                       __FMScopedDescriptor, _kFMDataArchiverErrorDomain, _kFMSynchronizerTimeoutNever ]
+    objc-classes:    [ FMAlert, FMCancelationToken, FMConcurrentMutableArray, FMConcurrentMutableDictionary, 
+                       FMDataArchiver, FMFuture, FMInternalFileContainer, FMPair, 
+                       FMPreferencesUtil, FMPromise, FMQueue, FMReadWriteLock, FMScheduler, 
+                       FMSharedFileContainer, FMSynchronizer, FMValueThrottler, FMXPCServiceDescription, 
+                       FMXPCSession, FMXPCTimer, _FMLazyFuture ]
+...

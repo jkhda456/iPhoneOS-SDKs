@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EB2E2653-7497-3C91-AE06-DB90C531DEE8
+  - target:          arm64e-ios
+    value:           E066D835-D79E-3163-A9C0-805F70A4631E
+install-name:    '/System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit'
+current-version: 17.3
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EXExtensionIsPredicateSafeToExecuteWithObject, _EXExtensionIsSafeKeyPathForObject, 
+                       _EXExtensionMain, _EXGetExtensionClass, _EXGetExtensionContextInternalClass, 
+                       _EXGetExtensionContextVendorClass ]
+    objc-classes:    [ EXSwiftUI_Subsystem ]
+...

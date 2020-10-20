@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C307E366-0E71-3FE3-8EE5-2E9949BBBE32
+  - target:          arm64e-ios
+    value:           B204B350-89FB-3BDF-8EAE-52D400B6825B
+install-name:    '/System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness'
+current-version: 84
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __AWAttentionServiceEventFilterFactory ]
+    objc-classes:    [ AWAttentionAwarenessClient, AWAttentionAwarenessConfiguration, 
+                       AWAttentionEvent, AWAttentionLostEvent, AWFaceDetectAttentionEvent, 
+                       AWRemoteAttentionEvent ]
+...

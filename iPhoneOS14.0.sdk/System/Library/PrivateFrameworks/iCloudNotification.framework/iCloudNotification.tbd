@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           BED05549-DD15-3A26-A9DA-BB9E1310F798
+  - target:          armv7s-ios
+    value:           A4BBCED3-AD4E-3EB1-A1C3-94C6A590DCCE
+  - target:          arm64-ios
+    value:           E8690EB8-5478-32D9-94FB-39D8FF97BC1B
+  - target:          arm64e-ios
+    value:           E00F18D8-3225-3FB5-B1DF-B428CFC7FE87
+install-name:    '/System/Library/PrivateFrameworks/iCloudNotification.framework/iCloudNotification'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INCreateError, _INCreateErrorWithKeychainError, _INCreateErrorWithMessage, 
+                       _INDaemonBundleIdentifierKey, _INDaemonMachServiceName, _INErrorDomain, 
+                       _INFamilyDidChangeNotification, _INFileLoggingEnabledKey, 
+                       _INNextFreshmintRefreshDateKey, _INNextHeartbeatDateKey, _INSyslogOutputLevelKey, 
+                       __INLogSystem ]
+    objc-classes:    [ INDaemonConnection, INDaemonInterface, INDiagnosticReport, 
+                       INManagedDefaults ]
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6A6810BE-AA44-30B6-B446-A6F00E797ED4
+  - target:          armv7s-ios
+    value:           2ACB67E3-0B32-36D2-AF3B-DBF818244BA6
+  - target:          arm64-ios
+    value:           DACC5FC1-8E31-34F4-A461-65131B6FC927
+  - target:          arm64e-ios
+    value:           0DBB35D9-ACCC-372C-B709-87663D57D909
+install-name:    '/System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CDPEnrollmentCancelled, _CDPEnrollmentCompleted, _CDPEnrollmentDismissUI, 
+                       _CDPEnrollmentInProgress, _CDPKeychainSyncSecurityCodePeerApprovalResult, 
+                       _CDPKeychainSyncSecurityCodeResetKeychainResult, _CoreCDPUIVersionNumber, 
+                       _CoreCDPUIVersionString ]
+    objc-classes:    [ CDPDevicePickerViewController, CDPEscapeOption, CDPExtensionContext, 
+                       CDPLocalSecretEntryPane, CDPPaneHeaderView, CDPPassphraseEntryPane, 
+                       CDPPassphraseEntryViewController, CDPRecoveryKeyCreateHeaderView, 
+                       CDPRecoveryKeyEntryViewController, CDPRecoveryKeyEntryViewModel, 
+                       CDPRemoteSecretEntryPane, CDPRemoteSecretEntryViewController, 
+                       CDPRemoteUILocalSecretEntryViewController, CDPRemoteValidationEscapeOffer, 
+                       CDPServiceViewController, CDPSingleICSCEntryPane, CDPSingleICSCEntryViewController, 
+                       CDPTableViewController, CDPUIAccountRecoveryController, CDPUIBaseController, 
+                       CDPUIController, CDPUIDeviceToDeviceEncryptionCancelCreateViewModel, 
+                       CDPUIDeviceToDeviceEncryptionCreatePasscodeViewModel, CDPUIDeviceToDeviceEncryptionFlowContext, 
+                       CDPUIDeviceToDeviceEncryptionHelper, CDPUIDeviceToDeviceEncryptionIneligibilityAlertViewModel, 
+                       CDPUIDeviceToDeviceEncryptionMessagingViewModel, CDPUIDeviceToDeviceEncryptionPasscodeController, 
+                       CDPUIDeviceToDeviceEncryptionUIProviderImp, CDPUIDeviceToDeviceEncryptionUpgradeMessageViewModel, 
+                       CDPWaitingApprovalViewController, _CDPExtensionHostContext, 
+                       _CDPHostViewController ]
+    objc-ivars:      [ CDPPassphraseEntryPane._containerView, CDPPassphraseEntryPane._headerView, 
+                       CDPPassphraseEntryPane._keyboardOffset, CDPUIBaseController._presentingViewController, 
+                       CDPUIController._devicePicker, CDPUIController._devices, CDPUIController._navController, 
+                       CDPUIController._remoteSecretValidator ]
+...

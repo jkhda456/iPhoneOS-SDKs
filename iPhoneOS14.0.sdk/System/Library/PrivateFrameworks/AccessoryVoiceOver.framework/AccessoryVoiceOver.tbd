@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4E8DD1BE-8CA2-3E24-B086-79543F0915C3
+  - target:          arm64e-ios
+    value:           148D6E03-2EBC-34F2-A750-2BA2523071AA
+install-name:    '/System/Library/PrivateFrameworks/AccessoryVoiceOver.framework/AccessoryVoiceOver'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ACCVoiceOverActionParameterPointXKey, _ACCVoiceOverActionParameterPointYKey, 
+                       _ACCVoiceOverActionParameterScaleKey, _ACCVoiceOverActionParameterTextKey, 
+                       _ACCVoiceOverActionParameterTouchTypeKey, _ACCVoiceOverCursorInformationUpdateContextKey, 
+                       _ACCVoiceOverCursorInformationUpdateFrameBottomXKey, _ACCVoiceOverCursorInformationUpdateFrameBottomYKey, 
+                       _ACCVoiceOverCursorInformationUpdateFrameKey, _ACCVoiceOverCursorInformationUpdateFrameTopXKey, 
+                       _ACCVoiceOverCursorInformationUpdateFrameTopYKey, _ACCVoiceOverCursorInformationUpdateHintKey, 
+                       _ACCVoiceOverCursorInformationUpdateLabelKey, _ACCVoiceOverCursorInformationUpdateTraitsKey, 
+                       _ACCVoiceOverCursorInformationUpdateValueKey, _ACCVoiceOverInformationUpdateContextKey, 
+                       _ACCVoiceOverInformationUpdateEnabledKey, _ACCVoiceOverInformationUpdateSpeakingRateKey, 
+                       _ACCVoiceOverInformationUpdateSpeakingVolumeKey, _AccessoryVoiceOverVersionNumber, 
+                       _AccessoryVoiceOverVersionString ]
+    objc-classes:    [ ACCVoiceOverAccessory, ACCVoiceOverProvider ]
+...

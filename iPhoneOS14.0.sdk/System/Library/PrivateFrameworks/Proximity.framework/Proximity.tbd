@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B9E726DC-77EB-3182-A219-2F67007006ED
+  - target:          arm64e-ios
+    value:           14056EF2-AB45-38C2-A205-7B69D340254F
+install-name:    '/System/Library/PrivateFrameworks/Proximity.framework/Proximity'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PRCollectLogs, _PRDebugConfigArgAccessoryState, _PRDebugConfigArgDebugLevel, 
+                       _PRDebugConfigArgIsoCountry, _PRDebugConfigArgMcc, _PRDebugConfigArgNAccessSlotsMax, 
+                       _PRDebugConfigArgNAccessSlotsMin, _PRDebugConfigArgRFChannel, 
+                       _PRDebugConfigArgRangingIntervalMax, _PRDebugConfigArgRangingIntervalMin, 
+                       _PRDebugConfigArgRxAntennaMask2, _PRDebugConfigArgRxMiniSlotSize, 
+                       _PRDebugConfigArgRxSyncSearchAntennaMask2, _PRDebugConfigArgSOIRSSIThreshold2, 
+                       _PRDebugConfigArgSolutionVariant, _PRDebugConfigArgTxAntennaMask2, 
+                       _PRDebugConfigArgTxMiniSlotSize, _PRDebugConfigMultiSessionDevIndex, 
+                       _PRErrorDomain, _PRErrorWithCodeAndUserInfo, _PRGetChipInfo, 
+                       _PRGetChipPowerState, _PRGetPowerStatsWithTimeout, _PRGetPreflightInfo, 
+                       _PRP2PArgsDualRangingMode, _PRP2PArgsIsTestTool, _PRP2PArgsListeningWindowSizeUsec, 
+                       _PRP2PArgsRangingInterval, _PRP2PArgsRangingRole, _PRP2PArgsRoseDebugFlags, 
+                       _PRP2PArgsRxAntennaMask, _PRP2PArgsRxPacketType, _PRP2PArgsRxPreamble, 
+                       _PRP2PArgsRxSyncSearchAntennaMask, _PRP2PArgsStartTimeOffsetUsec, 
+                       _PRP2PArgsTxAntennaMask, _PRP2PArgsTxPacketType, _PRP2PArgsTxPreamble, 
+                       _PRPingRadio, _PRProcessIdentifierKey, _PRProcessNameKey, 
+                       _PRRangingServiceStateCauseToString, _PRRangingServiceStateToString, 
+                       _PRRequestPowerChange, _PRRoseHasFailedUpdate, _PRSendHelloWithTimeout, 
+                       _PRSetAccessoryState, _PRSetIsoCountry, _PRSetMcc, _PRSetRoseGlobalConfigParams ]
+    objc-classes:    [ PRAngleMeasurement, PRBeacon, PRBeaconDescriptor, PRBeaconListener, 
+                       PRBeaconRangingSession, PRChipInfo, PRCollaborationData, PRCompanionRangingSession, 
+                       PRContactWhitelist, PRDeviceScore, PRGenericRangingSession, 
+                       PRGetPowerStatsResponse, PRHelloResponse, PRLiveProtobufStream, 
+                       PRPeer, PRProximityEstimator, PRRangeMeasurement, PRRangingClientExportedObject, 
+                       PRRangingDevice, PRRangingSession, PRRelativePosition, PRRemoteDevice, 
+                       PRRoseSolution, PRSessionStartNotification, PRSharingSession, 
+                       PRTrustedContact ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7AF31D2A-3BFE-3889-984F-D2123249D11F
+  - target:          arm64e-ios
+    value:           54CD47D7-0DF6-3BFA-9B18-EE642BC0137E
+install-name:    '/System/Library/PrivateFrameworks/PointerUIServices.framework/PointerUIServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PSContentOverlayIntensityForLuminanceAndUsage, _PSContentOverlayVibrantColorMatrixForLuminance, 
+                       _PSIntensityForLuminanceAndUsage, _PSLogAutohide, _PSLogCommon, 
+                       _PSLogMaterial, _PSLoggingSubsystem, _PSPointerAutohideReasonToString, 
+                       _PSPointerClientControllerErrorDomain, _PSPointerClientInteractionStateToString, 
+                       _PSPointerVibrantColorMatrixForLuminance, _PointerUIServicesVersionNumber, 
+                       _PointerUIServicesVersionString ]
+    objc-classes:    [ PSMatchMoveSource, PSMutablePointerHoverRegion, PSPointerClientController, 
+                       PSPointerClientDefaultLaunchingServiceSpecification, PSPointerClientDefaultServiceSpecification, 
+                       PSPointerHoverRegion, PSPointerPortalSourceCollection, PSPointerSettings, 
+                       PSPointerSettingsDomain, PSPointerShape, PSPortalSource ]
+    objc-ivars:      [ PSPointerHoverRegion._contentBounds, PSPointerHoverRegion._contentHoverInverseScale, 
+                       PSPointerHoverRegion._contentMatchMoveSource, PSPointerHoverRegion._contentSlipValue, 
+                       PSPointerHoverRegion._coordinateSpaceSourceContextID, PSPointerHoverRegion._coordinateSpaceSourceLayerRenderID, 
+                       PSPointerHoverRegion._hitTestBounds, PSPointerHoverRegion._overlayEffectStyle, 
+                       PSPointerHoverRegion._pointerPortalSourceCollection, PSPointerHoverRegion._pointerRecenteringAxes, 
+                       PSPointerHoverRegion._pointerShape, PSPointerHoverRegion._pointerSlipValue, 
+                       PSPointerHoverRegion._pointerVisualIntensity, PSPointerHoverRegion._preferredPointerMaterialLuminance, 
+                       PSPointerHoverRegion._shouldPointerSuppressMirroring, PSPointerHoverRegion._shouldPointerUnderlayContent ]
+...

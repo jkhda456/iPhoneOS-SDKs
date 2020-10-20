@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9A409734-0256-3759-8FE1-20771102BED8
+  - target:          arm64e-ios
+    value:           D2431FEA-B621-35CF-B21E-1633982200C9
+install-name:    '/System/Library/PrivateFrameworks/HAENotifications.framework/HAENotifications'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GeoLocationDidChange, _GetDeviceSpecificDefaults, _HAENAccessoryInfoErrorDomain, 
+                       _HAENErrorCodeFailedToCreateHKSample, _HAENErrorCodeInvalidEventType, 
+                       _HAENErrorCodeLiveExposureBelowLimit, _HAENErrorCodeNilHAENCenterDelegate, 
+                       _HAENErrorCodeNilXPCListener, _HAENErrorDomain, _HAENHeadphoneAudioLimitSettingURL, 
+                       _HAENHealthEducationURL, _HAENHealthPrivacyURL, _HAENLocalizationUtilityGetBundle, 
+                       _HAENMetadataIdentifierAudioCategory, _HAENMetadataIdentifierAudioMode, 
+                       _HAENMetadataIdentifierDeviceIdentifier, _HAENMetadataIdentifierDeviceName, 
+                       _HAENMetadataIdentifierHeadsetSensitivity, _HAENMetadataIdentifierRouteSubType, 
+                       _HAENMetadataIdentifierRouteType, _HAENMetadataIdentifierVolumeGain, 
+                       _HAENMetadataIdentifierWeeklyDosage, _HAENMetadataIdentifierWeeklyExposureDuration, 
+                       _HAENMetadataIdentifierWeeklyIncludesPrunableData, _HAENotificationsFrameworkVersionNumber, 
+                       _HAENotificationsFrameworkVersionString, _HAENotificationsLog, 
+                       _HAENotificationsVersionNumber, _HAENotificationsVersionString, 
+                       _ReleaseHAENRouteInfo, _SetDeviceSpecificDefaultsFor, _SyncDeviceSpecificDomain, 
+                       _kDefaultsKeyHAENFeatureMandatory, _kDefaultsKeyHAENGeoLocationFinalized, 
+                       _kDefaultsKeyHAENGeoLocationSource, _kHAENKeyEventAudioExposureLevel, 
+                       _kHAENKeyEventDateInterval, _kHAENKeyEventMetadata, _kHAENKeyEventType, 
+                       _kHAENKeyEventUUID, _kHAENMandatoryPlistFilePath, _kHAENVolumeReductionUnitDelta, 
+                       _kISOCountryCode_SOUTH_KOREA, _kRegionalPlistKey, _kWiredHeadsetName, 
+                       _settingsChanged ]
+    objc-classes:    [ HAENAccessoryInfo, HAENDefaults, HAENGeoLocation, HAENHealthKitStore, 
+                       HAENLocationGatingHelper, HAENSystemSoundPlayer, HAENTPSDiscoverabilitySignal, 
+                       HAENUnknownDeviceManager, HAENVolumeControl, HAENotificationCenter, 
+                       HAENotificationCenterClient, HAENotificationCenterManager, 
+                       HAENotificationCenterServer, HAENotificationEvent, NotificationCenter ]
+...

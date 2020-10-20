@@ -1,0 +1,49 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1A8EA81B-6267-3ABA-9B9C-3A7B51DC7361
+  - target:          arm64e-ios
+    value:           A99D9716-00B9-3C9A-9530-75504836BB1A
+install-name:    '/System/Library/PrivateFrameworks/ActionPredictionHeuristicsInternal.framework/ActionPredictionHeuristicsInternal'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXDNDStateChanged, _ATXHeuristicDataSourcesInterface, _ATXHeuristicIsLearnable, 
+                       _ATXLocalPasteboardDidChangeNotification, _ATXPassLibraryChanged, 
+                       _ActionPredictionHeuristicsInternalVersionNumber, _ActionPredictionHeuristicsInternalVersionString ]
+    objc-classes:    [ ATXAlarmsDataSource, ATXAppLaunchCountDataSource, ATXBatteryDataSource, 
+                       ATXBestAppDataSource, ATXBestContactHandleForServiceDataSource, 
+                       ATXBestContactHandleGuardedData, ATXBestTimeToInteractWithContactDataSource, 
+                       ATXBirthdaysDataSource, ATXCalendarEventsDataSource, ATXCallHistoryDataSource, 
+                       ATXClipboardContents, ATXContactsDataSource, ATXCurrentLocationDataSource, 
+                       ATXDoNotDisturbDataSource, ATXDuetInteractionDataSource, ATXEventTravelTimeDataSource, 
+                       ATXEventTravelTimeDataSourceInternal, ATXExtraordinaryEventsDataSource, 
+                       ATXFavoriteContactDataSource, ATXFlightStatusDataSource, ATXHeuristicActionMaker, 
+                       ATXHeuristicActionMakerForAction, ATXHeuristicActionMakersAndExpirers, 
+                       ATXHeuristicAirportCity, ATXHeuristicCacheExpirationEntry, 
+                       ATXHeuristicCacheExpirer, ATXHeuristicCacheNotificationExpirer, 
+                       ATXHeuristicCacheTimeExpirer, ATXHeuristicCreateCalendarEventActionMaker, 
+                       ATXHeuristicDataSourcesServer, ATXHeuristicDevice, ATXHeuristicObjectHandle, 
+                       ATXHeuristicRequestRideForEventActionMaker, ATXHeuristicResultCache, 
+                       ATXHeuristicResultCacheEntry, ATXHeuristicViewCalendarEventActionMaker, 
+                       ATXHolidaysDataSource, ATXInformationHeuristicRefreshContextChangeTrigger, 
+                       ATXInformationHeuristicRefreshNotitifcationTrigger, ATXInformationHeuristicRefreshTimeTrigger, 
+                       ATXInformationHeuristicRefreshTrigger, ATXInformationHeuristicResult, 
+                       ATXNLEventsDataSource, ATXPeopleSuggesterDataSource, ATXProtectedRouteHypothesizerCache, 
+                       ATXRecentWorkoutDataSource, ATXRemindersDataSource, ATXRouteCacheKey, 
+                       ATXSetAlarmTimeOfDayDataSource, ATXTimeSinceUserWakeupDataSource, 
+                       ATXUnreadMessagesDataSource, ATXUserAppPreferenceDataSource, 
+                       ATXVIPsDataSource, ATXWalletDataSource, ATXWidgetMetadataDataSource, 
+                       _ATXRecentWorkoutDataSourceInternal ]
+    objc-ivars:      [ ATXBestContactHandleGuardedData.contactIdentifier, ATXHeuristicActionMaker._subtitle, 
+                       ATXHeuristicActionMaker._title, ATXHeuristicResultCacheEntry._actions, 
+                       ATXHeuristicResultCacheEntry._cache, ATXHeuristicResultCacheEntry._expirers, 
+                       ATXHeuristicResultCacheEntry._heuristicName, ATXProtectedRouteHypothesizerCache.cachedGeoRouteHypothesizers, 
+                       ATXRouteCacheKey.destinationLocation, ATXRouteCacheKey.localOnlyAfterFirstUpdate, 
+                       ATXRouteCacheKey.transportType ]
+...

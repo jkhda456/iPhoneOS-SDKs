@@ -1,0 +1,71 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2501A679-A42B-3F20-A065-ECC8A9E87672
+  - target:          armv7s-ios
+    value:           1CC35808-1D0C-3205-8917-3FF02276791D
+  - target:          arm64-ios
+    value:           FD0EA99E-F1BE-3AB1-90CA-0DF6D7198B82
+  - target:          arm64e-ios
+    value:           404015B4-0632-372B-B2B1-BAC719ACF39F
+install-name:    '/System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine'
+current-version: 738.0.2
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _RTLogFacilityAction, _RTLogFacilityApplicationPrediction, 
+                       _RTLogFacilityAsset, _RTLogFacilityAuthorization, _RTLogFacilityBattery, 
+                       _RTLogFacilityBluetooth, _RTLogFacilityCallHistory, _RTLogFacilityClient, 
+                       _RTLogFacilityConnection, _RTLogFacilityContacts, _RTLogFacilityCoreRecents, 
+                       _RTLogFacilityDataProtection, _RTLogFacilityDataProvider, 
+                       _RTLogFacilityDatabase, _RTLogFacilityDefaults, _RTLogFacilityDeviceLocationPredictor, 
+                       _RTLogFacilityEvent, _RTLogFacilityEventModel, _RTLogFacilityFeatureExtractor, 
+                       _RTLogFacilityFramework, _RTLogFacilityGeneral, _RTLogFacilityHint, 
+                       _RTLogFacilityKeychain, _RTLogFacilityLifeCycle, _RTLogFacilityLocation, 
+                       _RTLogFacilityLocationAwareness, _RTLogFacilityLocationStore, 
+                       _RTLogFacilityLocationTagging, _RTLogFacilityMapsSupport, 
+                       _RTLogFacilityMediaRemote, _RTLogFacilityMetric, _RTLogFacilityMigration, 
+                       _RTLogFacilityMotionActivity, _RTLogFacilityNavigation, _RTLogFacilityPurge, 
+                       _RTLogFacilityReachability, _RTLogFacilityRoom, _RTLogFacilityRoomPrediction, 
+                       _RTLogFacilityScenarioTrigger, _RTLogFacilitySettings, _RTLogFacilityStark, 
+                       _RTLogFacilityStateModel, _RTLogFacilitySync, _RTLogFacilityTrafficConditions, 
+                       _RTLogFacilityVehicleLocation, _RTLogFacilityVisit, _RTLogFacilityWallet, 
+                       _RTLogFacilityWiFi ]
+    objc-classes:    [ RTAction, RTActionCondition, RTApplication, RTLogger, RTMicroLocation, 
+                       RTPredicateValidator, RTPredictedApplication, RTPredictedRoom, 
+                       RTReceipt, RTReceiptEventKit, RTScenarioTriggerArrivedEarly, 
+                       RTScenarioTriggerAtFamiliarLocation, RTScenarioTriggerConnectedToCar, 
+                       RTScenarioTriggerDisconnectedFromCar, RTScenarioTriggerFirstTimeAtLocation, 
+                       RTScenarioTriggerFirstTimeInCity, RTScenarioTriggerFirstTimeInNeighborhood, 
+                       RTScenarioTriggerHeadedToHome, RTScenarioTriggerHeadedToWork, 
+                       RTScenarioTriggerLastTimeAtLocation, RTScenarioTriggerStayedLate, 
+                       RTSourceAudio, RTSourceBluetooth, RTSourceCoreLocationPredictedApplication, 
+                       RTSourceLocationVisit ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RTConflictingItemIdentifierKey, _RTDetailedErrorsKey, _RTErrorDomain, 
+                       _RTLocationsOfInterestDidChangeNotification, _RTMachServiceEvent, 
+                       _RTMachServiceInternal, _RTMachServiceRegistration, _RTVisitConfidenceHigh, 
+                       _RTVisitConfidenceLow, __RTMultiErrorCreate, __RTSafeArray, 
+                       _kRTSignalGeneratorOptionsKeyAltitude, _kRTSignalGeneratorOptionsKeyEntry, 
+                       _kRTSignalGeneratorOptionsKeyExit, _kRTSignalGeneratorOptionsKeyHorizontalUncertainty, 
+                       _kRTSignalGeneratorOptionsKeyLatitude, _kRTSignalGeneratorOptionsKeyLocation, 
+                       _kRTSignalGeneratorOptionsKeyLocations, _kRTSignalGeneratorOptionsKeyLongitude, 
+                       _kRTSignalGeneratorOptionsKeyVerticalUncertainty, _kRTSignalGeneratorOptionsKeyWeeklyVisits, 
+                       _personalizedLabelsMask ]
+    objc-classes:    [ RTAddress, RTAddressSubPremise, RTEnumerationOptions, RTFetchFingerprintsOptions, 
+                       RTFingerprint, RTHint, RTInferredMapItem, RTLocation, RTLocationOfInterest, 
+                       RTLocationOfInterestEnumerationOptions, RTLocationOfInterestTransition, 
+                       RTLocationOfInterestVisit, RTMapItem, RTMapItemExtendedAttributes, 
+                       RTMapServiceOptions, RTMotionActivity, RTPair, RTPlaceInference, 
+                       RTPlaceInferenceOptions, RTPredictedDate, RTPredictedLocationOfInterest, 
+                       RTRoutineManager, RTScenarioTrigger, RTScenarioTriggerSettled, 
+                       RTScenarioTriggerUnsettled, RTSignalGeneratorOptions, RTSource, 
+                       RTSourceCoreRoutine, RTSourceCoreRoutineLearnedLocation, RTSourceCoreRoutineVehicleEvent, 
+                       RTSourceEventKit, RTSourceMapsSupport, RTSourceMapsSupportFavoritePlace, 
+                       RTSourceMapsSupportHistoryEntry, RTSourceMapsSupportHistoryEntryPlaceDisplay, 
+                       RTSourceMapsSupportHistoryEntryRoute, RTStoredHintEnumerationOptions, 
+                       RTStoredLocationEnumerationContext, RTStoredLocationEnumerationOptions, 
+                       RTStoredVisitFetchOptions, RTTokenBucket, RTVehicleEvent, 
+                       RTVisit, RTWiFiAccessPoint ]
+...

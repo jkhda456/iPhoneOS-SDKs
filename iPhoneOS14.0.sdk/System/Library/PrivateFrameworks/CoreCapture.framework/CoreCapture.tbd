@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D67FE8C2-2317-30D5-B5D0-BBEA10DE9D99
+  - target:          armv7s-ios
+    value:           FEFD5073-3CB1-3ED3-87AD-F70F50B0377F
+  - target:          arm64-ios
+    value:           C5B167EE-0323-3148-BE10-C44A70B5FC1E
+  - target:          arm64e-ios
+    value:           74187801-4E0D-3A67-9B9E-81101775DAAF
+install-name:    '/System/Library/PrivateFrameworks/CoreCapture.framework/CoreCapture'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CCPipe_capture, _CCPipe_create, _CCPipe_getClientRef, _CCPipe_getPipeInfo, 
+                       _CCPipe_getTypeID, _CCPipe_logw, _CCPipe_willDropMessage, 
+                       _CCStream_clearConsoleLogFlag, _CCStream_clearLogFlag, _CCStream_create, 
+                       _CCStream_getConsoleFlags, _CCStream_getConsoleLevel, _CCStream_getFlags, 
+                       _CCStream_getLevel, _CCStream_getTypeID, _CCStream_log, _CCStream_logAlert, 
+                       _CCStream_logAlertIf, _CCStream_logCrit, _CCStream_logCritIf, 
+                       _CCStream_logDebug, _CCStream_logDebugIf, _CCStream_logEmergency, 
+                       _CCStream_logEmergencyIf, _CCStream_logIf, _CCStream_logInfo, 
+                       _CCStream_logInfoIf, _CCStream_logNotice, _CCStream_logNoticeIf, 
+                       _CCStream_logSpam, _CCStream_logSpamIf, _CCStream_logWarn, 
+                       _CCStream_logWarnIf, _CCStream_setConsoleFlags, _CCStream_setConsoleLevel, 
+                       _CCStream_setConsoleLogFlag, _CCStream_setFlags, _CCStream_setLevel, 
+                       _CCStream_setLogFlag, _CC_create, _CC_getConnectRef, _CC_getTypeID, 
+                       ___incrementUInt8Ptr ]
+...

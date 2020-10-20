@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DF9C97C9-61D5-320F-BD4B-F3904AA32D8A
+  - target:          armv7s-ios
+    value:           16F85BD4-B233-33F5-9D8A-3A692A13BDE4
+  - target:          arm64-ios
+    value:           790ABEC5-3D6B-30C3-8BE4-5C9D8A390B60
+  - target:          arm64e-ios
+    value:           7A7EC146-22CB-3DD4-8C06-5B6A45482827
+install-name:    '/System/Library/PrivateFrameworks/Haptics.framework/Haptics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HAButtonHapticParameterAudioPreSilenceKey, _HAButtonHapticParameterHapticPreSilenceKey, 
+                       _HAButtonHapticParameterPostSilenceKey, _HAButtonHapticsLoaderServiceIsAvailableNotification, 
+                       _HapticsVersionNumber, _HapticsVersionString ]
+    objc-classes:    [ HAButtonHapticsLoader ]
+...

@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           24D278BE-C331-3AD9-99EC-114A8EB46095
+  - target:          armv7s-ios
+    value:           544DCFF0-D74E-33C1-9315-D002035A63F9
+  - target:          arm64-ios
+    value:           8A14F2EA-A741-33F5-8680-B8B5BB8BF135
+  - target:          arm64e-ios
+    value:           F2046FAE-624E-3205-B58B-99966BF502BF
+install-name:    '/System/Library/PrivateFrameworks/SiriTasks.framework/SiriTasks'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STStringFromGenericIntentResponseCode, _STWorkoutErrorDomain ]
+    objc-classes:    [ STAlarmAction, STAlarmModification, STAlarmShowAlarmAndPerformActionRequest, 
+                       STCreateAlarmAction, STDeleteAlarmAction, STEmailMessage, 
+                       STGenericIntent, STGenericIntentDateRange, STGenericIntentGroup, 
+                       STGenericIntentHelper, STGenericIntentLocation, STGenericIntentPerson, 
+                       STGenericIntentRequest, STGenericIntentResponse, STGenericIntentTopic, 
+                       STMapItem, STMapViewport, STMapViewportVertex, STMediaChannel, 
+                       STPromptManeuverRequest, STReminderListObject, STSendDraftMessageRequest, 
+                       STSendEmailRequest, STShowActivityRequest, STShowAlarmAction, 
+                       STShowChannelRequest, STShowDailyWeatherForecastRequest, STShowDraftMessageRequest, 
+                       STShowDraftMessageUsageResult, STShowHourlyWeatherForecastRequest, 
+                       STShowMapPointRequest, STShowMapsSearchResultsRequest, STShowMessageRequest, 
+                       STShowStockOverviewRequest, STShowWeatherConditionsRequest, 
+                       STShowWeatherCurrentConditionsRequest, STShowWeatherForecastRequest, 
+                       STStartNavigationRequest, STStartWorkoutRequest, STStopNavigationRequest, 
+                       STStopwatchShowAndPerformStopwatchAction, STSurfPaymentAction, 
+                       STTemperature, STTimerShowTimerAndPerformAction, STUpdateAlarmAction, 
+                       STUpdateWatchListRequest, STWatchFace, STWeatherAttributes, 
+                       STWeatherCurrentConditions, STWeatherHourlyForecast, STWeatherUnits, 
+                       STWorkoutSetStateRequest ]
+...

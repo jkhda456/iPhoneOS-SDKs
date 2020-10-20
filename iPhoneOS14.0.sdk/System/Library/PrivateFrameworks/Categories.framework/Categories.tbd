@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           516867C7-7363-31E1-B280-994F631B443B
+  - target:          arm64e-ios
+    value:           28AC707A-F4EB-3483-B47C-9BBA42C5484A
+install-name:    '/System/Library/PrivateFrameworks/Categories.framework/Categories'
+current-version: 5.25
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CTCategoriesDidChangeNotification, _CTCategoriesVersionIdentifierKey, 
+                       _CTCategoriesVersionNumber, _CTCategoriesVersionString, _CTCategoryIdentifierCreativity, 
+                       _CTCategoryIdentifierEducation, _CTCategoryIdentifierEntertainment, 
+                       _CTCategoryIdentifierGames, _CTCategoryIdentifierHealthAndFitness, 
+                       _CTCategoryIdentifierLifestyle, _CTCategoryIdentifierOther, 
+                       _CTCategoryIdentifierOtherUnknown, _CTCategoryIdentifierProductivity, 
+                       _CTCategoryIdentifierReadingAndReference, _CTCategoryIdentifierShoppingAndFood, 
+                       _CTCategoryIdentifierSocialNetworking, _CTCategoryIdentifierSystem, 
+                       _CTCategoryIdentifierSystemBlockable, _CTCategoryIdentifierSystemHidden, 
+                       _CTCategoryIdentifierSystemUnblockable, _CTCategoryIdentifierTravel, 
+                       _CTCategoryIdentifierUtilities, _CTErrorDomain, _CTErrorKeyHTTPResponse, 
+                       _CTErrorKeyHTTPResponseData, _CTOSPlatformAll, _CTOSPlatformCurrent, 
+                       _CTOSPlatformiOS, _CTOSPlatformmacOS, _CTOSPlatformtvOS, _CTOSPlatformwatchOS ]
+    objc-classes:    [ CTCategories, CTCategory, CTError, CTLogging, CTUtilities ]
+...

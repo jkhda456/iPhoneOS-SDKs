@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4707A974-2BBC-3ACB-98E4-68CEE0AF5C0F
+  - target:          arm64e-ios
+    value:           DC19A688-567E-3017-8F32-F7F6DCC39525
+install-name:    '/System/Library/PrivateFrameworks/ClassKitUI.framework/ClassKitUI'
+current-version: 146.0.70
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CLSNotificationBanner, CLSNotificationBannerDisplayManager ]
+...

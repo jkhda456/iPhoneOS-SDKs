@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           30899B48-4C61-3DE9-9784-86A2424529E8
+  - target:          arm64e-ios
+    value:           4AD45FF5-923C-3F9C-9069-4BDFE4859809
+install-name:    '/System/Library/PrivateFrameworks/BluetoothAudio.framework/BluetoothAudio'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BluetoothAudioVersionNumber, _BluetoothAudioVersionString, 
+                       _BluetoothEndpointCollectionCopyAsCFArray, _BluetoothEndpointCollectionCreate, 
+                       _BluetoothEndpointCollectionDelete, _BluetoothEndpointCollectionGetCount, 
+                       _BluetoothEndpointCollectionMarkAllEndpointsAsUnseen, _BluetoothEndpointCollectionMarkAllEndpointsForRemoval, 
+                       _BluetoothEndpointCollectionMarkEndpointForRemoval, _BluetoothEndpointCollectionRemoveUnseenEndpoints, 
+                       _BluetoothEndpointCollectionUpdateEndpoint, _BluetoothEndpointCreateWithDescription, 
+                       _BluetoothEndpointManagerCreate, _BluetoothEndpointManagerHandleRemove, 
+                       _BluetoothEndpointManagerHandleRemoveAllEvent, _BluetoothEndpointManagerHandleUpdateEvent, 
+                       _BluetoothEndpointManagerLogComponent, _BluetoothEndpointManagerMarkAsUnseen, 
+                       _BluetoothEndpointStreamAudioCreate, _BluetoothEndpointUpdateWithDescription, 
+                       _BluetoothEndpoint_Disassociate, _kBluetoothEndpointDescriptionProperty_BatteryLevels, 
+                       _kBluetoothEndpointDescriptionProperty_Connected, _kBluetoothEndpointDescriptionProperty_DeviceID, 
+                       _kBluetoothEndpointDescriptionProperty_Features, _kBluetoothEndpointDescriptionProperty_ModelID, 
+                       _kBluetoothEndpointDescriptionProperty_Name, _kBluetoothEndpointDescriptionProperty_Nearby, 
+                       _kBluetoothEndpointDescriptionProperty_Shareable, _kBluetoothEndpointDescriptionProperty_Started, 
+                       _kBluetoothEndpointDescriptionProperty_SupportedFormats, _staticManager ]
+    objc-classes:    [ BluetoothBridge ]
+...

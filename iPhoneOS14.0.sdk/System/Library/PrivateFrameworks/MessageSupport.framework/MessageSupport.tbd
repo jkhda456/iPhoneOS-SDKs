@@ -1,0 +1,60 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8BBB59D5-356C-39F8-A4B6-D9FB6A0B2531
+  - target:          armv7s-ios
+    value:           B101C2FA-99E2-36BD-B289-1B8798860CE7
+  - target:          arm64-ios
+    value:           99C6C078-C09F-34F1-B664-C71E8D0ABE0D
+  - target:          arm64e-ios
+    value:           BEBCC55A-9C8C-3616-8301-2212C021F492
+install-name:    '/System/Library/PrivateFrameworks/MessageSupport.framework/MessageSupport'
+current-version: 3654.0.3
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MFCarrierPreferenceDomain, _MFDeviceSupportsPerseus, _MFIsInternalDevice, 
+                       _MFIsSeedBuild, _MFMailAccountsExtendedPropertiesDomain, _MFMailActivityContinuationBrowseMailboxFocusedMessageIDKey, 
+                       _MFMailActivityContinuationBrowseMailboxRemoteMailboxURLKey, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeAllInboxes, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeKey, 
+                       _MFMailActivityContinuationBrowseMailboxSpecialMailboxTypeVIP, 
+                       _MFMailActivityContinuationCommonTypeIdentifierBundle, _MFMailActivityContinuationComposeMessageDataKey, 
+                       _MFMailActivityContinuationComposePartialMessageIDKey, _MFMailActivityContinuationDebugComposeDataPath, 
+                       _MFMailActivityContinuationDebugSimulateFailureBoolKey, _MFMailActivityContinuationDisplayMessageFocalNodePathKey, 
+                       _MFMailActivityContinuationDisplayMessageURLKey, _MFMailActivityContinuationTypeBrowseMailbox, 
+                       _MFMailActivityContinuationTypeComposeSansStreams, _MFMailActivityContinuationTypeComposeWithStreams, 
+                       _MFMailActivityContinuationTypeDisplayMessage, _MFMailActivityContinuationTypeKey, 
+                       _MFMobileMailTemporaryDirectoryPath, _MFStackshotWriteWithReason, 
+                       _MFStackshotWriteWithReasonIncludingStack, _MessageSupportVersionNumber, 
+                       _MessageSupportVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MFAccountsLog, _MFAutoFetchLog, _MFBlockRemoteContentUserDefaultsKey, 
+                       _MFComposeLog, _MFCompositionServiceDomain, _MFDeviceSupportsForceTouch, 
+                       _MFDeviceSupportsHighRefreshRate, _MFDeviceSupportsNanoCompanion, 
+                       _MFExchangeLog, _MFImageScaleSelectionUserDefaultsKey, _MFIsMobileMail, 
+                       _MFLogGeneral, _MFLogNetwork, _MFMailActivityHandoffBrowseMailboxKeyFocusedMessageID, 
+                       _MFMailActivityHandoffBrowseMailboxKeyRemoteMailboxURL, _MFMailActivityHandoffBrowseMailboxKeySpecialMailboxType, 
+                       _MFMailActivityHandoffBrowseMailboxSpecialMailboxTypeAllInboxes, 
+                       _MFMailActivityHandoffBrowseMailboxSpecialMailboxTypeVIP, 
+                       _MFMailActivityHandoffCommonTypeIdentifierBundle, _MFMailActivityHandoffComposeKeyAutosaveID, 
+                       _MFMailActivityHandoffComposeKeyMessageData, _MFMailActivityHandoffComposeKeyPartialMessageID, 
+                       _MFMailActivityHandoffComposeKeySubject, _MFMailActivityHandoffDebugKeyComposeDataPath, 
+                       _MFMailActivityHandoffDebugKeySimulateFailureBool, _MFMailActivityHandoffDisplayMessageKeyRestorationState, 
+                       _MFMailActivityHandoffDisplayMessageKeyURL, _MFMailActivityHandoffSearchKeyEncodedAtoms, 
+                       _MFMailActivityHandoffSearchKeyScope, _MFMailActivityHandoffSendMailKeyBccRecipients, 
+                       _MFMailActivityHandoffSendMailKeyCcRecipients, _MFMailActivityHandoffSendMailKeyMessageBody, 
+                       _MFMailActivityHandoffSendMailKeySenderAddress, _MFMailActivityHandoffSendMailKeySubject, 
+                       _MFMailActivityHandoffSendMailKeyToRecipients, _MFMailActivityHandoffSendMailKeyUserTypedContent, 
+                       _MFMailActivityHandoffTypeBrowseMailbox, _MFMailActivityHandoffTypeComposeSansStreams, 
+                       _MFMailActivityHandoffTypeComposeWithStreams, _MFMailActivityHandoffTypeDisplayMessage, 
+                       _MFMailActivityHandoffTypeDisplayMessageAttachment, _MFMailActivityHandoffTypeKey, 
+                       _MFMailActivityHandoffTypeSearch, _MFMailActivityHandoffTypeSendMail, 
+                       _MFMessageLoadingSignpostLog, _MFMessagePreferencesDomain, 
+                       _MFMobileMailContainerPath, _MFMobileMailPreferenceDomain, 
+                       _MFPersistenceLog, _MFPowerLog, _MFReconciliationLog, _MFReconciliationSignpostLog, 
+                       _kMFLoggingDefaultsChangedDomain, _kMFMailAccountsChangedNotification, 
+                       _kMFMobileMailBundleIdentifier, _kMFNumberOfActiveAccountsChangedNotification, 
+                       _kMFProfileListChangedDomain, _mf_defaultsKeyForFeature, _mf_isFeatureEnabled ]
+...

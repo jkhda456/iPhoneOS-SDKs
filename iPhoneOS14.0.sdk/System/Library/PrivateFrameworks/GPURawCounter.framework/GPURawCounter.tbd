@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           39001CAC-3E3C-373F-A892-BA6EF9BE5C10
+  - target:          arm64e-ios
+    value:           608DD2F0-51D2-326E-804B-B507A05C211F
+install-name:    '/System/Library/PrivateFrameworks/GPURawCounter.framework/GPURawCounter'
+current-version: 12.25
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CTRCopyAllCounterSourceGroup, _CTRReleaseAllCounterSourceGroup, 
+                       _GPURawCounterVersionNumber, _GPURawCounterVersionString, 
+                       _GRCCopyAllCounterSourceGroup, _GRCReleaseAllCounterSourceGroup ]
+    objc-classes:    [ GPURawCounterSelect, GPURawCounterSourceTriggerSelect, _GPURawCounter, 
+                       _GPURawCounterSource, _GPURawCounterSourceGroup, _GPURawCounterSourceTrigger ]
+    objc-ivars:      [ _GPURawCounter._counterValueType, _GPURawCounter._description, 
+                       _GPURawCounter._name, _GPURawCounterSource._name, _GPURawCounterSource._options, 
+                       _GPURawCounterSource._sourceGroup, _GPURawCounterSourceGroup._acceleratorPort, 
+                       _GPURawCounterSourceGroup._name, _GPURawCounterSourceGroup._options, 
+                       _GPURawCounterSourceGroup._samplingPeriodInMicroseconds, _GPURawCounterSourceGroup._samplingTriggers, 
+                       _GPURawCounterSourceGroup._sourceList, _GPURawCounterSourceTrigger._description, 
+                       _GPURawCounterSourceTrigger._name, _GPURawCounterSourceTrigger._options ]
+...

@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           88A95F02-0DC9-341B-AEA8-49365AE32EC9
+  - target:          arm64e-ios
+    value:           AED06B3E-A37A-3D9E-942D-5D6D87508374
+install-name:    '/System/Library/PrivateFrameworks/MailWebProcessSupport.framework/MailWebProcessSupport'
+current-version: 3654.0.3
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kBodyFieldSource, _kBodyFieldSourceLength, _kConstantsSource, 
+                       _kConstantsSourceLength, _kDocumentExtrasSource, _kDocumentExtrasSourceLength, 
+                       _kElementExtrasSource, _kElementExtrasSourceLength, _kHTMLDocumentExtrasSource, 
+                       _kHTMLDocumentExtrasSourceLength, _kHTMLElementExtrasSource, 
+                       _kHTMLElementExtrasSourceLength, _kNodeExtrasSource, _kNodeExtrasSourceLength, 
+                       _kRangeExtrasSource, _kRangeExtrasSourceLength ]
+    objc-classes:    [ MSComposeBundlePageController ]
+...

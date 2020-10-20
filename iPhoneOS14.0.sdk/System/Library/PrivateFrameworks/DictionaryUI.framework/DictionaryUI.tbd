@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           0A273E07-17A4-3D9B-BC7B-341E940B99B5
+  - target:          armv7s-ios
+    value:           FFEFC651-D8E3-3D30-BC96-74AEC19C6E88
+  - target:          arm64-ios
+    value:           8DD3E592-ECB0-3B7E-8436-2FB3AF212937
+  - target:          arm64e-ios
+    value:           3923D5B5-0B58-304B-BCD3-CE3B6C076884
+install-name:    '/System/Library/PrivateFrameworks/DictionaryUI.framework/DictionaryUI'
+current-version: 33
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DUDefinitionElementKeyHeadword, _DUDefinitionElementKeyPartOfSpeech, 
+                       _DUDefinitionElementKeyPronunciation, _DUDefinitionElementKeyRecordID, 
+                       _DUDefinitionElementKeySenses, _DUDefinitionElementKeySyllabifiedHeadword, 
+                       _DictionaryUIVersionNumber, _DictionaryUIVersionString ]
+    objc-classes:    [ DUDefinitionDictionary, DUDefinitionValue, DUDictionaryManager, 
+                       DUEntryViewController ]
+...

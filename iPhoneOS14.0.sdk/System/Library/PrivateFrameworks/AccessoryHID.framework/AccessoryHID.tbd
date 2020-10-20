@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C809FDF9-BDA2-3DAB-AC36-E6AE959E4746
+  - target:          arm64e-ios
+    value:           827556A5-B57C-3DBD-8D13-2C68F8B27086
+install-name:    '/System/Library/PrivateFrameworks/AccessoryHID.framework/AccessoryHID'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AccessoryHIDVersionNumber, _AccessoryHIDVersionString, _kCFAccessoryHID_ComponentEnabled, 
+                       _kCFAccessoryHID_ComponentID, _kCFAccessoryHID_HIDComponentIDKey, 
+                       _kCFAccessoryHID_HIDComponentTypeKey, _kCFAccessoryHID_HIDFunctionTypeKey, 
+                       _kCFAccessoryHID_Report, _kCFAccessoryHID_ReportID, _kCFAccessoryHID_ReportType ]
+    objc-classes:    [ AccessoryHIDClient ]
+...

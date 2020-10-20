@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2F549E9E-96C0-3F05-9DC7-A0A28688AE0E
+  - target:          arm64e-ios
+    value:           5215821A-FCF0-3645-A752-29A9B094788F
+install-name:    '/System/Library/PrivateFrameworks/TVUIKit.framework/TVUIKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ _TVCarouselView, _TVContentRating, _TVContentRatingBadgeManager, 
+                       _TVContentRatingSystemUtilities, _TVContentRatingTextBadgeView ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8D7ECF33-65E4-3E49-9586-765506EBD73F
+  - target:          arm64e-ios
+    value:           EABDB4AC-3915-3A5B-88D2-94AD9A1B5258
+install-name:    '/System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ GVEdge, GVGraph, GVInternalRenderer, GVLayout, GVNode ]
+    objc-ivars:      [ GVNode.h, GVNode.inNodes, GVNode.inPriority, GVNode.index, 
+                       GVNode.next, GVNode.outNodes, GVNode.outPriority, GVNode.prev, 
+                       GVNode.rank, GVNode.w, GVNode.x, GVNode.y ]
+...

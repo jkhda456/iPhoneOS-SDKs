@@ -1,0 +1,69 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           15A37944-2F84-3270-9474-C3DA5A7A40FB
+  - target:          armv7s-ios
+    value:           BAD1FCB2-CCF3-3252-966E-844E36737A23
+  - target:          arm64-ios
+    value:           8F8CCEEF-9994-3C5E-A633-556E701C72FB
+  - target:          arm64e-ios
+    value:           2E48F388-D99B-3681-A2DC-C8730025CE65
+install-name:    '/System/Library/PrivateFrameworks/CoreRecognition.framework/CoreRecognition'
+current-version: 157
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRAdaptiveThresholdImage, _CRCameraReaderErrorDomain, _CRCodeRedeemerErrorDomain, 
+                       _CRCodeRedeemerInfoCodeKey, _CRCodeRedeemerInfoErrorKey, _CRCodeRedeemerInfoStatsKey, 
+                       _CRInsightsCardImageCutBufferKey, _CRInsightsCardImageCutEmbossedBufferKey, 
+                       _CRInsightsCardImageFixedCutLandscape, _CRInsightsCardImageFreeformLandscape, 
+                       _CRInsightsCardImageFreeformLandscapeInverted, _CRInsightsCardImageFreeformPortrait, 
+                       _CRInsightsCardPointsKey, _CRInsightsCardholderNameKey, _CRInsightsCodeKey, 
+                       _CRInsightsContextImageOrientation, _CRInsightsContextImageOrientationLandscape, 
+                       _CRInsightsContextImageOrientationLandscapeInverted, _CRInsightsContextImageOrientationPortrait, 
+                       _CRInsightsContextImageOrientationPortraitInverted, _CRInsightsContextImagePath, 
+                       _CRInsightsContextImagePathFixedCut, _CRInsightsContextImagePathFreeform, 
+                       _CRInsightsContextRecognitionTextFeature, _CRInsightsContextRecognitionTextFeatureGroup, 
+                       _CRInsightsDateResultsKey, _CRInsightsEmbossedRegionsExpirationDate, 
+                       _CRInsightsEmbossedRegionsName, _CRInsightsEmbossedRegionsNumber, 
+                       _CRInsightsEmbossedResultsFixedCutLandscape, _CRInsightsEmbossedResultsFreeformLandscape, 
+                       _CRInsightsEmbossedResultsFreeformLandscapeInverted, _CRInsightsEndToEndTimeKey, 
+                       _CRInsightsExpirationKey, _CRInsightsNameResultsKey, _CRInsightsNumberResultsKey, 
+                       _CRInsightsPerFrameTimeKey, _CRInsightsRecognitionResultForExpDateEmbossed, 
+                       _CRInsightsRecognitionResultForNameEmbossed, _CRInsightsRecognitionResultForNumberEmbossed, 
+                       _CRInsightsRecognitionResultsForRegion, _CRInsightsReferenceExpirationKey, 
+                       _CRInsightsTextDetectorRegionsFixedCutLandscape, _CRInsightsTextDetectorRegionsFreeformLandscape, 
+                       _CRInsightsTextDetectorRegionsFreeformLandscapeInverted, _CRInsightsTextDetectorRegionsFreeformPortrait, 
+                       _CRInsightsTextDetectorResultsFixedCutLandscape, _CRInsightsTextDetectorResultsFreeformLandscape, 
+                       _CRInsightsTextDetectorResultsFreeformLandscapeInverted, _CRInsightsTextDetectorResultsFreeformPortrait, 
+                       _CRInsightsTextFeatureRecognitionTime, _CRInsightsTotalRecognitionTimeCountKey, 
+                       _CRInsightsTotalRecognitionTimeKey, _CROutputTypeCameraText, 
+                       _CROutputTypeCreditCardCardholderName, _CROutputTypeCreditCardExpirationDate, 
+                       _CROutputTypeCreditCardNumber, _CROutputTypeHomeKitCode, _CROutputTypeIDCardBack, 
+                       _CROutputTypeIDCardFront, _CROutputTypeQRCode, _CoreRecognitionVersionNumber, 
+                       _CoreRecognitionVersionString, __findCodeRectInImage, __findCodeRectInImageWithModel, 
+                       __recognizeCodeImages, __segmentCodeImages, _allocatePixel8Buffer, 
+                       _calculateImageBlur, _ccArea1Rect, _ccArea1RectScaleIndependent, 
+                       _ccArea2Rect, _ccArea2RectScaleIndependent, _ccCardRect, _ccMMRectToUnitRect, 
+                       _ccMMRectToUnitRectIsPortait, _ccUnitRectToMMRect, _ccUnitRectToMMRectIsPortrait, 
+                       _cr_dispatch_async, _createCGImageFromFile, _createPlanar420PixelBufferFromImageFile, 
+                       _createPlanar420PixelBufferFromJPEGFile, _decodeCreditCardExpirationActivations, 
+                       _decodeCreditCardNumberActivations, _decodeCreditCardholderActivations, 
+                       _isLeastBlurryFrame, _kCRMLModelArrayResultKey, _kCROverrideCaptureSessionManager, 
+                       _kCROverrideRegionsFixedCutLandscape, _kCROverrideRegionsFreeformLandscape, 
+                       _kCROverrideRegionsFreeformLandscapeInverted, _kCROverrideRegionsFreeformPortrait, 
+                       _kCROverrideShouldRunEmbossedPath, _kCROverrideShouldRunFixedCutPath, 
+                       _kCROverrideShouldRunFreeformInvertedPath, _kCROverrideShouldRunFreeformPath, 
+                       _kCROverrideShouldRunLandscapeFlatPrintedPath, _kCROverrideShouldRunOffline, 
+                       _kCROverrideShouldRunPortraitFlatPrintedPath, _rotateBuffer180 ]
+    objc-classes:    [ CRCameraReader, CRCameraReaderOutput, CRCameraReaderOutputCameraText, 
+                       CRCameraReaderOutputExpirationDate, CRCameraReaderOutputIDCard, 
+                       CRCodeRedeemerController, CRInsights, CRInsightsCodeSection, 
+                       CRInsightsContext, CRMLCCModel, CRMLEmbossedCardholderModel, 
+                       CRMLEmbossedExpirationModel, CRMLEmbossedNumberModel, CRMLFlatModel ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _checkCardCode, _writeBuffer, _writeCGImageToPNG ]
+    objc-classes:    [ CRImage, CRTextFeature, CRTextFeatureMultiRegion ]
+...

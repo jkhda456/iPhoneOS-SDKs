@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7D5E6326-2C93-3DC3-804E-36DEF3666701
+  - target:          armv7s-ios
+    value:           A894C0AF-85D2-3731-97C0-9F3F01D486EC
+  - target:          arm64-ios
+    value:           2A101444-5A23-31FA-B6A0-445E3985A643
+  - target:          arm64e-ios
+    value:           707B6BBA-04C4-3109-B55C-B87307554853
+install-name:    '/System/Library/PrivateFrameworks/NanoLeash.framework/NanoLeash'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NFMFindGizmoIdentifier, _NFMFindLocalDeviceEntitlementName, 
+                       _NFMFindLocalDeviceServerName, _NFMHotterColderIdentifier, 
+                       _NFMLeashIdentifier, _NFMLeashManagerLeashWarningCloseValue, 
+                       _NFMLeashManagerLeashWarningFarValue, _NFMLeashManagerLeashWarningImmediateValue, 
+                       _NFMLeashManagerLeashWarningInsaneDistanceValue, _NFMPEPLog, 
+                       _NFMProtoDidPlaySoundAndFlashLEDResponseReadFrom, _NFMProtoDidPlaySoundResponseReadFrom, 
+                       _NFMProtoPlaySoundAndFlashLEDRequestReadFrom, _NFMProtoPlaySoundRequestReadFrom, 
+                       _NFMProtoSend, _NFMUnlockIdentifier, _count, _nfm_log ]
+    objc-classes:    [ NFMIDSMessageInstance, NFMIDSServiceDelegate, NFMLeashManager, 
+                       NFMProtoDidPlaySoundAndFlashLEDResponse, NFMProtoDidPlaySoundResponse, 
+                       NFMProtoPlaySoundAndFlashLEDRequest, NFMProtoPlaySoundRequest, 
+                       NFMWhereIsMyCompanionConnection, NFMWiFiManager ]
+    objc-ivars:      [ NFMLeashManager._proximityChangeHandler ]
+...

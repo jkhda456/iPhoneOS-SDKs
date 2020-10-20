@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4EC1995D-DBD9-36C5-906C-328504C8B92A
+  - target:          armv7s-ios
+    value:           281D9B40-4B02-33F1-970F-EAE1F237AD39
+  - target:          arm64-ios
+    value:           A7526B44-3847-3DBA-9CEA-82959DE74137
+  - target:          arm64e-ios
+    value:           A550E308-B590-37F2-AAF7-B68F772AA4D8
+install-name:    '/System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DESAggregatorLogEvaluation, _DESAggregatorLogRecording, _DESAmendedRecordInfo, 
+                       _DESApplyAsynchronousEnumerator, _DESApplyAsynchronousEnumeratorWithCompletion, 
+                       _DESBfloat16TransportReadFrom, _DESBinary32TransportReadFrom, 
+                       _DESBinary64TransportReadFrom, _DESDataTransportReadFrom, 
+                       _DESDiagnosticsSubmissionAllowed, _DESEncryptedDataReadFrom, 
+                       _DESGetDeviceClass, _DESGetDeviceID, _DESGetDeviceLocale, 
+                       _DESGetDeviceType, _DESGetOSVersion, _DESIsInternalInstall, 
+                       _DESPFLNoisableReadFrom, _DESPathHasFileVault, _DESRandomGaussianInt32, 
+                       _DESRecipeResponseLocalOnlyPrefix, _DESRecipeResponseURLPartHost, 
+                       _DESRecipeResponseURLPartPath, _DESRecipeResponseURLPartQueryItemKeyAttachmentPrefix, 
+                       _DESRecipeResponseURLPartQueryItemKeyBaseURL, _DESRecipeResponseURLPartQueryItemKeyCoreDuetEvents, 
+                       _DESRecipeResponseURLPartQueryItemKeyDeadline, _DESRecipeResponseURLPartQueryItemKeyDeferralDate, 
+                       _DESRecipeResponseURLPartQueryItemKeyLocaleIdentifier, _DESRecipeResponseURLPartQueryItemKeyRecipeId, 
+                       _DESRecipeResponseURLPartQueryItemKeyRecipePath, _DESRecipeResponseURLPartQueryItemKeyRecipeType, 
+                       _DESRecipeResponseURLPartScheme, _DESServiceAvailable, _DESServiceGetXPCInterface, 
+                       _DESShouldAlwaysParticipate, _DESSubmissionLogDirectoryURL, 
+                       _DESSubmissionLogFileURLs, _DESSubmissionLogGarbageCollect, 
+                       _DESSubmissionLogSetHandler, _DESTemporaryDownloadDirectoryURL, 
+                       _DESWriteSubmissionLog, _DESWriteSubmissionLogData, _DistributedEvaluationVersionNumber, 
+                       _DistributedEvaluationVersionString, __DESIsHorseman, _kDESDistributedEvaluationErrorDomain ]
+    objc-classes:    [ DESBfloat16Transport, DESBinary32Transport, DESBinary64Transport, 
+                       DESBundleRegistry, DESDataTransport, DESDeviceIdentifierStore, 
+                       DESEncryptedData, DESEvaluationSession, DESExceptionCatchingEvaluator, 
+                       DESJSONPredicate, DESPFLEncryptableBuffer, DESPFLEncryptor, 
+                       DESPFLNoisable, DESRecipe, DESRecipeEvaluationSession, DESRecordSet, 
+                       DESRecordStore, DESServiceConnection, DESSignatureKey ]
+    objc-ivars:      [ DESEncryptedData._algorithm, DESEncryptedData._data, DESEncryptedData._encryptedKey, 
+                       DESEncryptedData._has, DESEncryptedData._version ]
+...

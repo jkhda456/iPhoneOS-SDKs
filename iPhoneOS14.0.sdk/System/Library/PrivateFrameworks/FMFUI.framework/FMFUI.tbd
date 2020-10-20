@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F9BFF5A6-7CAE-3A67-80F2-14A41EFEB6C9
+  - target:          armv7s-ios
+    value:           6CF09005-87A5-3D11-93F7-D32A401685CC
+  - target:          arm64-ios
+    value:           9A540C17-BB20-394B-A322-D9F69439174A
+  - target:          arm64e-ios
+    value:           49AEE1A3-7579-3BFB-906A-2AF48A014A63
+install-name:    '/System/Library/PrivateFrameworks/FMFUI.framework/FMFUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ FMFActiveDeviceSelectionViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ActiveDeviceLinkDetailsKey, _ActiveDeviceLinkNameKey, _PSFollowerDetailsTitleTextColorKey ]
+    objc-classes:    [ ActiveDeviceLinkCell, FMFLocationSharingViewController, FMFMapViewController, 
+                       FMFSpecifierProvider, FollowerDetailsLinkCell ]
+...

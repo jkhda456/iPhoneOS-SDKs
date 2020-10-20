@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1EAC90CA-BA6D-3D6B-8D7B-6F7B5552BA4D
+  - target:          armv7s-ios
+    value:           A4AA1675-56EA-3512-B087-604B9A0721F2
+  - target:          arm64-ios
+    value:           639C695D-D944-3DDD-82B9-6A2FFADFB307
+  - target:          arm64e-ios
+    value:           104E02ED-9552-3FD7-AC7F-4D9F3CC876BC
+install-name:    '/System/Library/PrivateFrameworks/PowerlogControl.framework/PowerlogControl'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PowerlogControlDefaultsChanged, _PowerlogControlEnablePowerLog, 
+                       _PowerlogControlEnablePowerLogOld, _PowerlogControlModeKey, 
+                       _PowerlogControlModeKeyOld, _PowerlogControlReadMode, _PowerlogControlSwitchMode, 
+                       _allowModeTransition, _containerPath, _validValue ]
+...

@@ -1,0 +1,73 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C86C918A-45F8-3F34-AD2A-E92337236D3D
+  - target:          armv7s-ios
+    value:           356F3D74-0282-3C77-A5FF-6414AEFEA2D1
+  - target:          arm64-ios
+    value:           D3F78765-BB31-37BA-ACF8-009E96D8B371
+  - target:          arm64e-ios
+    value:           14499686-D8CC-3065-8C4A-BD74F0D6B520
+install-name:    '/System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PTGetRingerVolume, _PTIconHeight, _PTIconImageHeight, _PTIconImageWidth, 
+                       _PTIconLabelHeight, _PTIconLabelOrigin, _PTIconWidth, _PTImageNamed, 
+                       _PTPreferencesBoolForKey, _PTPrototypeDirectory, _PTPrototypeImagesDirectory, 
+                       _PTRingerIsSilent, _PTSConcreteStringForIndex, _PTSHUDDidHideNotification, 
+                       _PTSHUDDidShowNotification, _PTSHUDSaveSettingsGroupReasonAdd, 
+                       _PTSHUDSaveSettingsGroupReasonMove, _PTSHUDSaveSettingsGroupReasonRemove, 
+                       _PTSHUDSaveSettingsGroupReasonSave, _PTSHUDSaveSettingsGroupReasonSilentSave, 
+                       _PTSHUDWillHideNotification, _PTSHUDWillShowNotification, 
+                       _PTScreenBounds, _PTScreenScale, _PTSetRingerSilentChangedHandler, 
+                       _PTSetRingerVolume, _PTSetRingerVolumeChangedHandler, _PTTTLIsCurrent, 
+                       _PTTTLIsExpired, _PTTTLMake, __UIViewBreadthFirstViewSort, 
+                       _pt_time_elapsed, _pt_time_elapsed_capture, _pt_time_elapsed_msg, 
+                       _pt_time_mark ]
+    objc-classes:    [ PT2DGraphAxisStyle, PT2DGraphDatum, PT2DGraphDotView, PT2DGraphView, 
+                       PTIcon, PTIconSettings, PTLegibleTextAssistant, PTLegibleTextAssistantSettings, 
+                       PTLegibleTextAssistantSettingsForDarkText, PTLegibleTextAssistantSettingsForLightText, 
+                       PTSAddGroupSettingsRowAction, PTSButton, PTSButtonCell, PTSButtonRowTableViewCell, 
+                       PTSChoiceCell, PTSChoiceRowTableViewCell, PTSChoiceViewController, 
+                       PTSDrillDownRowAction, PTSDrillDownRowTableViewCell, PTSDuplicateRowsActivity, 
+                       PTSEditFloatRowTableViewCell, PTSEditRowTableViewCell, PTSEditStringRowTableViewCell, 
+                       PTSGraphView, PTSHUD, PTSHUDRow, PTSImageLoader, PTSImagePickerViewController, 
+                       PTSImagePreviewCell, PTSImagePreviewRow, PTSImagePreviewRowTableViewCell, 
+                       PTSImageSettings, PTSInfoLabel, PTSLoadingCell, PTSModuleController, 
+                       PTSPicker, PTSPresentViewControllerRowAction, PTSPushImagePickerRowAction, 
+                       PTSPushViewControllerRowAction, PTSRowTableViewCell, PTSSavedModeTableHUDRow, 
+                       PTSSavedModeTableView, PTSSavedModeTableViewController, PTSSlider, 
+                       PTSSliderRowTableViewCell, PTSStaticBOOLRow, PTSStaticBOOLRowTableViewCell, 
+                       PTSStaticRow, PTSStaticRowTableViewCell, PTSSwitch, PTSSwitchRowTableViewCell, 
+                       PTSToggleButton, PTSettingsController, PTSlider, PTSliderIncrementButton, 
+                       PTSwitch, PTVolumeChangeNotifier, PTXLiveView, PTXMotionWindow, 
+                       PTXParallaxController, PTXParallaxEngineSettings, PTXParallaxImageView, 
+                       PTXParallaxReferenceFrame, PTXParallaxSettings, PTXParallaxView, 
+                       _PTSAppearanceCondition ]
+    objc-ivars:      [ PTVolumeChangeNotifier.ringerSilentChangedHandlers, PTVolumeChangeNotifier.ringerVolumeChangedHandlers ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PTClassIsPlistable, _PTDomainClientInterface, _PTDomainIdentifierKey, 
+                       _PTDomainMachService, _PTDomainServerActiveTestRecipeChangedNotification, 
+                       _PTDomainServerDomainsChangedNotification, _PTDomainServerInterface, 
+                       _PTDomainServerSettingsProxyDefinitionChangedNotification, 
+                       _PTDomainServerTestRecipesChangedNotification, _PTDomainSettingsProxyDefinitionKey, 
+                       _PTEqualFloats, _PTInstallIsAppleInternal, _PTLogObjectForTopic, 
+                       _PTObjectIsRecursivelyPlistable, _PTPlistableClasses, _PTPrototypingEnumerateHardwareEventsWithBlock, 
+                       _PTPrototypingEventAvailable, _PTPrototypingEventName, _PTPrototypingEventShortName, 
+                       _PTPrototypingEventsDescription, _PTPrototypingIsActiveDarwinNotification, 
+                       _PTRowActionClassIsWhitelistedForRemoteEditing, _PTRowClassIsWhitelistedForRemoteEditing, 
+                       _PTTransactionBegin, _PTTransactionEnd, _PTValidateArray, 
+                       _PTValidateDictionary, _PTValidateSet ]
+    objc-classes:    [ PTButtonRow, PTChoiceRow, PTDefaults, PTDomain, PTDomainInfo, 
+                       PTDomainServer, PTDoubleTestRecipe, PTDrillDownRow, PTEditFloatRow, 
+                       PTEditStringRow, PTModule, PTOutlet, PTPointSettings, PTProxySettings, 
+                       PTProxySettingsDefinition, PTRestoreDefaultSettingsRowAction, 
+                       PTRow, PTRowAction, PTSButtonRow, PTSChoiceRow, PTSDrillDownRow, 
+                       PTSEditFloatRow, PTSEditStringRow, PTSModule, PTSRestoreDefaultSettingsRowAction, 
+                       PTSRow, PTSRowAction, PTSSection, PTSSliderRow, PTSSwitchRow, 
+                       PTSection, PTSettings, PTSettingsClassStructure, PTSingleTestRecipe, 
+                       PTSizeSettings, PTSliderRow, PTSwitchRow, PTTestRecipe, PTTestRecipeInfo, 
+                       PTToggleTestRecipe ]
+...

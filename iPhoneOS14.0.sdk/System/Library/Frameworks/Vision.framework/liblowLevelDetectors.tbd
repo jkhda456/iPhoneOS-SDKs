@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8742970D-8BC8-3401-8479-683EAB6D19CA
+  - target:          arm64e-ios
+    value:           A6BBA7D1-2959-31C6-AAA0-E7FF06B3A9C4
+install-name:    '/System/Library/Frameworks/Vision.framework/liblowLevelDetectors.dylib'
+current-version: 4.0.51
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CCRectLowLevel, _createPerMeshForFFTSIZE, _horizonDetectionFFT, 
+                       _horizonDetectionFFTAngles, _initializePerMesh ]
+...

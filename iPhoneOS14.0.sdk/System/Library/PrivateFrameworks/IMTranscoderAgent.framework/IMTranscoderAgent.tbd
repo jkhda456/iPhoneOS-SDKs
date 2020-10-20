@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DA6DA275-FF8C-3F8E-A5D5-F74BE202992C
+  - target:          armv7s-ios
+    value:           5C40E04C-F556-37D1-8B23-F03B8007DD4E
+  - target:          arm64-ios
+    value:           6F68FAC9-E1C7-3188-BBEF-27691D0E7567
+  - target:          arm64e-ios
+    value:           849123B8-7247-3FA1-A638-7D2BDCC82093
+install-name:    '/System/Library/PrivateFrameworks/IMTranscoderAgent.framework/IMTranscoderAgent'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IMTranscodeErrorDomain, __IMTranscoderLinkFile ]
+    objc-classes:    [ IMEmbeddedHardwareJPEGTranscoder, IMFallbackTranscoder, IMFallbackTranscoder_AudioMessage, 
+                       IMTranscoder, IMTranscoderImageSizeEstimator, IMTranscoderTelemetry, 
+                       IMTranscoder_AV, IMTranscoder_Image, IMTranscodingAgentController ]
+    objc-ivars:      [ IMEmbeddedHardwareJPEGTranscoder._canHardwareScaleImage, IMEmbeddedHardwareJPEGTranscoder._imageData, 
+                       IMEmbeddedHardwareJPEGTranscoder._imageProperties, IMEmbeddedHardwareJPEGTranscoder._ioSurfaceRef, 
+                       IMTranscodingAgentController._fallbackTranscoders, IMTranscodingAgentController._previewGenerationQueue, 
+                       IMTranscodingAgentController._queue, IMTranscodingAgentController._textValidationQueue, 
+                       IMTranscodingAgentController._transcoders ]
+...

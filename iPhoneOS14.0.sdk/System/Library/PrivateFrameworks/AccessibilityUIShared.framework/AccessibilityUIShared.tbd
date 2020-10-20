@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7E78B56D-54C8-3023-8BBE-CC16CDA15D7A
+  - target:          arm64e-ios
+    value:           CA3605D3-0356-39DD-A962-30388828F7B7
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUIShared.framework/AccessibilityUIShared'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXUIErrorDomainCommunication, _AXUIErrorDomainProtocol, _AXUIErrorDomainServiceEntitlementMismatch, 
+                       _AXUIErrorDomainServiceInitialization, _AXUIErrorDomainServiceMessageHandling, 
+                       _AXUIErrorDomainValidation, __AXUIMessageReplyKeyClientRegistrationWithServerDidSucceed, 
+                       __AXUIMessageReplyKeyDidSucceed, __AXUIMessageReplyKeyErrorDescription, 
+                       __AXUIMessageReplyKeyErrorDomain, __AXUIServiceDescription, 
+                       __AXUIServiceMessageKeyClientIdentifier, __AXUIServiceMessageKeyInitializationMessage, 
+                       __AXUIServiceMessageKeyMessageIdentifier, __AXUIServiceMessageKeyMessageWasEmpty, 
+                       __AXUIServiceMessageKeyServiceBundleName, __AXUIServiceName ]
+    objc-classes:    [ AXUIMessageContext, AXUIMessageReplyHandler, AXUIMessageSender ]
+...

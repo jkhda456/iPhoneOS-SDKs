@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2E62A312-26A1-3CDB-838D-6F1F58FF261B
+  - target:          armv7s-ios
+    value:           6E6B3F0E-D95C-3B1A-AB6B-AD27B156FAE3
+  - target:          arm64-ios
+    value:           1469F705-EB1F-3E7E-A15B-681DB115E002
+  - target:          arm64e-ios
+    value:           8E38AF5A-C7BC-3582-B563-F43D3FD441A2
+install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/MechanismBase.framework/MechanismBase'
+current-version: 827.0.6
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MechanismBaseVersionNumber, _MechanismBaseVersionString ]
+    objc-classes:    [ MechanismUI ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ACMContextRecord, MechanismACM, MechanismBase, MechanismContext, 
+                       MechanismKofN, MechanismKofNReorganizer, RemoteUIManager, 
+                       RemoteUIParams ]
+...

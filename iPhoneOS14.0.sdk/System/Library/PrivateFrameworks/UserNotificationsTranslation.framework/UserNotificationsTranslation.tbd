@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           878EC9F0-B78C-3F84-81A3-298FB9EF6B5C
+  - target:          arm64e-ios
+    value:           0B2C9B31-A468-332E-945A-D8FE065CD819
+install-name:    '/System/Library/PrivateFrameworks/UserNotificationsTranslation.framework/UserNotificationsTranslation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UserNotificationsTranslationVersionNumber, _UserNotificationsTranslationVersionString ]
+...

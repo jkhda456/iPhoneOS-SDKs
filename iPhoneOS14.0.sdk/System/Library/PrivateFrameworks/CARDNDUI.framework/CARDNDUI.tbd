@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0570625F-BB7D-3A44-9588-BF31522F1407
+  - target:          arm64e-ios
+    value:           91559222-F202-3AFF-9893-860854646E66
+install-name:    '/System/Library/PrivateFrameworks/CARDNDUI.framework/CARDNDUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CARDNDUIVersionNumber, _CARDNDUIVersionString ]
+    objc-classes:    [ CARDNDLearnMoreViewController, _CARLearnMoreViewController ]
+...

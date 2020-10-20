@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EC1F58D4-9FDC-3135-923D-05F14CCB28F2
+  - target:          arm64e-ios
+    value:           F729516A-A506-32D0-A244-8806E79CCFFD
+install-name:    '/System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TLKContentSizeCategoryDidChangeNotification, _TLKDefaultDimension, 
+                       _TLKDefaultSize, _TLKMinimumHorizontalSpacingBetweenImageAndText, 
+                       _TLKMinimumHorizontalSpacingBetweenSmallImageAndText, _TLKMinimumHorizontalSpacingBetweenText, 
+                       _TLKMinimumVerticalSpacingBetweenTextBaselineAndImage, _TLKStandardBaselineSpacingBetweenText, 
+                       _TemplateKitVersionNumber, _TemplateKitVersionString ]
+    objc-classes:    [ TLKActivityIndicatorView, TLKAppearance, TLKAuxilliaryTextView, 
+                       TLKButton, TLKButtonView, TLKDescriptionView, TLKDetailsSection, 
+                       TLKDetailsView, TLKEmbossedLabel, TLKEnlargedTitleView, TLKFontUtilities, 
+                       TLKFormattedText, TLKFormattedTextItem, TLKGridLayoutManager, 
+                       TLKGridRowView, TLKHeaderView, TLKIcon, TLKImage, TLKImageAttachment, 
+                       TLKImageView, TLKImagesView, TLKInlineImage, TLKInlineRoundedText, 
+                       TLKKeyValueTuple, TLKKeyValueView, TLKLabel, TLKLayoutUtilities, 
+                       TLKMediaInfoView, TLKMultilineText, TLKObject, TLKPassThroughScrollView, 
+                       TLKProminenceView, TLKRichText, TLKRoundedCornerLabel, TLKSectionHeaderView, 
+                       TLKSelectableGridTuple, TLKSelectableGridView, TLKSimpleRowView, 
+                       TLKSplitHeaderView, TLKStackView, TLKStars, TLKStoreButton, 
+                       TLKTableColumnAlignment, TLKTableHeaderRow, TLKTableRow, TLKTableViewScrollTester, 
+                       TLKTextAreaView, TLKTextButton, TLKTextView, TLKTitleContainerView, 
+                       TLKUtilities, TLKView ]
+...

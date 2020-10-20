@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           ED164E83-8BA5-33B5-B1A5-809717537966
+  - target:          arm64e-ios
+    value:           6D5D3677-484F-361B-B323-5D6F6D032361
+install-name:    '/System/Library/PrivateFrameworks/SiriTape.framework/SiriTape'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GCDAsyncSocketErrorDomain, _GCDAsyncSocketException, _GCDAsyncSocketManuallyEvaluateTrust, 
+                       _GCDAsyncSocketQueueName, _GCDAsyncSocketSSLCipherSuites, 
+                       _GCDAsyncSocketSSLPeerID, _GCDAsyncSocketSSLProtocolVersionMax, 
+                       _GCDAsyncSocketSSLProtocolVersionMin, _GCDAsyncSocketSSLSessionOptionFalseStart, 
+                       _GCDAsyncSocketSSLSessionOptionSendOneByteRecord, _GCDAsyncSocketThreadName, 
+                       _GCDAsyncSocketUseCFStreamForTLS, _STClearInternalLogFiles, 
+                       _STCreateDispatchDataFromNSData, _STLogDirectory, _STLogInitIfNeeded, 
+                       _STPrintLine, _STSiriLogContextProxyServer, _SiriProxyConnectionErrorDomain, 
+                       _SiriTapeVersionNumber, _SiriTapeVersionString, _kAPLogContextProxyServer, 
+                       _kAssistantProxyServerHostname, _kAssistantProxyServerLabel ]
+    objc-classes:    [ GCDAsyncReadPacket, GCDAsyncSocket, GCDAsyncSocketPreBuffer, 
+                       GCDAsyncSpecialPacket, GCDAsyncWritePacket, STAceRecorder, 
+                       STAnalyticsObserver, STCFUpdateScripts, STClientConnection, 
+                       STMetrics, STMockSessionDJ, STProxy, STProxyConnection, STProxySocketDelegate, 
+                       STServerConnection, STTool ]
+    objc-ivars:      [ GCDAsyncReadPacket.buffer, GCDAsyncReadPacket.bufferOwner, 
+                       GCDAsyncReadPacket.bytesDone, GCDAsyncReadPacket.maxLength, 
+                       GCDAsyncReadPacket.originalBufferLength, GCDAsyncReadPacket.readLength, 
+                       GCDAsyncReadPacket.startOffset, GCDAsyncReadPacket.tag, GCDAsyncReadPacket.term, 
+                       GCDAsyncReadPacket.timeout, GCDAsyncSocketPreBuffer.preBuffer, 
+                       GCDAsyncSocketPreBuffer.preBufferSize, GCDAsyncSocketPreBuffer.readPointer, 
+                       GCDAsyncSocketPreBuffer.writePointer, GCDAsyncSpecialPacket.tlsSettings, 
+                       GCDAsyncWritePacket.buffer, GCDAsyncWritePacket.bytesDone, 
+                       GCDAsyncWritePacket.tag, GCDAsyncWritePacket.timeout, STProxyConnection._bufferedInputData, 
+                       STProxyConnection._handler, STProxyConnection._isCanceled, 
+                       STProxyConnection._isFinished, STProxyConnection._isOpened, 
+                       STProxyConnection._queue, STProxyConnection._socket ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B9731F38-F25A-3E07-97CA-A9C421E49045
+  - target:          arm64e-ios
+    value:           99621B8D-E028-3EC5-B84A-053BB0396910
+install-name:    '/System/Library/PrivateFrameworks/iMessageApps.framework/iMessageApps'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ IMAAppPresenter, IMADockViewController, IMADropTarget, IMASticker ]
+...

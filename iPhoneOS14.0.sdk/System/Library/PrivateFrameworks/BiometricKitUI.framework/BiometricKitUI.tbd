@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           43FE4904-9746-3D03-B5F0-677600328A1C
+  - target:          arm64e-ios
+    value:           D9D61E88-34FC-35E0-8FDF-35455E2EEC49
+install-name:    '/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ARROW_LAYER_SIZE, _ARROW_LAYER_STROKE_SIZE, _BKUIBioStreamEnrollmentContainerBuddy, 
+                       _BKUIBioStreamEnrollmentContainerSettings, _BKUIBioStreamEnrollmentSuccessDomain, 
+                       _BKUIBioStreamEnrollmentSuccessSubTypeMesa, _BKUIBioStreamEnrollmentSuccessSubTypePearl, 
+                       _BKUIPearlEnrollErrorDomain, _OBKButtonSizeForPads, _PSBioKitErrorWrapperDomain, 
+                       _RAW_ORIENTATION_LOCK_TOKEN_NAME, _RAW_ORIENTATION_TOKEN_NAME, 
+                       __BKUILoggingFacility, __UIRotationRadiansForDeviceOrientation, 
+                       __arrowContainerCenter, __degreesToRadians, __deviceOrientationToString, 
+                       __initalInterfaceOrientationFor, __landscapeRightRadiansForOrientations, 
+                       __layoutNavigationBarCopy, __notificationRegistrationDebugErrorString, 
+                       __radiansForOrientations, __setStatusbarBackButtonForCurrentOrientation, 
+                       _biometric_kit_ui_log, _kAccessibilityOptionsAfterNudgesDelay, 
+                       _kFadeDuration, _kFadeInDelay, _kFadeOutDelay, _kMinimumSubstateDisplayDuration, 
+                       _kMinimumSubstateDuration, _kPearlMaxNudgesPerMode, _kRotationDelay, 
+                       _kRotationDuration, _kUpsideDownRotationDuration, _kalphaOffset, 
+                       _kdampingOffset, _kinitialDamping, _kinitialResponse, _kinstancePerAxisCount, 
+                       _kresponseOffset ]
+    objc-classes:    [ BKUIAlertView, BKUIAnimationView, BKUIBundleEnrollViewController, 
+                       BKUIBundleSettings, BKUICurvesView, BKUIDevice, BKUIFingerPrintEnrollTutorialViewController, 
+                       BKUIFingerPrintEnrollmentPhaseViewController, BKUIFingerPrintPosedVideoPlayerView, 
+                       BKUIFingerprintEnrollViewController, BKUIIndicatorViewController, 
+                       BKUIIndicatorWindow, BKUIOrientationStateHandler, BKUIPearlAudioSession, 
+                       BKUIPearlCoachingController, BKUIPearlCoachingDeviceView, 
+                       BKUIPearlCrossHairsManager, BKUIPearlCrossHairsRenderingView, 
+                       BKUIPearlCrossHairsView, BKUIPearlEnrollController, BKUIPearlEnrollControllerPreloadedState, 
+                       BKUIPearlEnrollManager, BKUIPearlEnrollView, BKUIPearlEnrollViewController, 
+                       BKUIPearlInstructionView, BKUIPearlMovieLoopView, BKUIPearlPillContainerView, 
+                       BKUIPearlPillView, BKUIPearlPositioningGuideView, BKUIPearlSpringInstance, 
+                       BKUIPearlVideoCaptureSession, BKUIRotationArrowAnimationLayer, 
+                       BKUIStyle, BKUITypeSafeCopier, BKUIUtils, BioStreamsEventHelper, 
+                       BiometricKitUI, BiometricKitUIEnrollViewController ]
+...

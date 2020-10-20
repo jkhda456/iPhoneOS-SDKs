@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4B6F1D80-A336-32D2-9A68-7D1E74899D13
+  - target:          arm64e-ios
+    value:           0797E3F2-A083-3FE8-A62F-28B8F3D0D640
+install-name:    '/System/Library/PrivateFrameworks/AppSSO.framework/AppSSO'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SOAuthorizationOperationConfigurationRemoved, _SOAuthorizationOptionInitiatingAction, 
+                       _SOAuthorizationOptionInitiatorOrigin, _SOAuthorizationOptionRemovedProfileExtensionBundleIdentifier, 
+                       _SOAuthorizationOptionUserActionInitiated, _SODebugConfigurationKeyAssociatedDomainsValidated, 
+                       _SODebugConfigurationKeyConfig, _SODebugConfigurationKeyPlugins, 
+                       _SODebugConfigurationKeyRealms, _SODebugConfigurationKeyRequestQueue, 
+                       _SODebugConfigurationKeyServerConfigVersion, _SODebugConfigurationKeySignatureValidated, 
+                       _SOErrorDomain, _SOErrorSubcodeKey, _SONotificationExtensionsChanged, 
+                       _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorization, SOAuthorizationCredential, SOAuthorizationHints, 
+                       SOAuthorizationParameters, SOAuthorizationRequest, SOAuthorizationRequestParameters, 
+                       SOConfigurationHost, SOConfigurationManager, SODebugHints, 
+                       SOExtension, SOExtensionManager, SOPreferences, SORequestQueue, 
+                       SORequestQueueItem ]
+...

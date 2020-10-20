@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0398DB29-B63F-3FD7-B23A-67A8F0C7AB07
+  - target:          arm64e-ios
+    value:           EBDE07BE-F8DD-360F-98E8-EB6D967A9535
+install-name:    '/System/Library/PrivateFrameworks/CTCarrierSpace.framework/CTCarrierSpace'
+current-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CTCarrierSpaceConvertDataUnits, _CTCarrierSpaceDataUnitsAsString, 
+                       _CTCarrierSpaceDeviceTypeAsString, _CTCarrierSpaceErrorDomain, 
+                       _CTCarrierSpacePlanCategoryAsString, _CTCarrierSpacePlanPurchaseStatusAsString, 
+                       _CTCarrierSpacePlanStatusAsString, _CTCarrierSpaceRegistrationStatusAsString, 
+                       _kCTCarrierSpaceConnectionAccountIdentifier, _kCTCarrierSpaceTestConfigBillingCycleEndDateKey, 
+                       _kCTCarrierSpaceTestConfigDataCapacityKey, _kCTCarrierSpaceTestConfigDataUnitsKey, 
+                       _kCTCarrierSpaceTestConfigDataUsedKey, _kCTCarrierSpaceTestConfigJSONKey, 
+                       _kCarrierSpaceXpcServiceName ]
+    objc-classes:    [ CTCarrierSpaceAppsInfo, CTCarrierSpaceAuthInfo, CTCarrierSpaceAuthenticationContext, 
+                       CTCarrierSpaceCapabilities, CTCarrierSpaceClient, CTCarrierSpaceClientDelegateProxy, 
+                       CTCarrierSpaceDataPlanMetrics, CTCarrierSpaceDataPlanMetricsError, 
+                       CTCarrierSpaceDataPlanMetricsItem, CTCarrierSpaceError, CTCarrierSpaceInfo, 
+                       CTCarrierSpacePlanGroupInfo, CTCarrierSpacePlanGroupOptionInfo, 
+                       CTCarrierSpacePlansInfo, CTCarrierSpaceUsageAccountMetrics, 
+                       CTCarrierSpaceUsageInfo, CTCarrierSpaceUsagePlanItemData, 
+                       CTCarrierSpaceUsagePlanItemMessages, CTCarrierSpaceUsagePlanItemVoice, 
+                       CTCarrierSpaceUsagePlanMetrics, CTCarrierSpaceUserConsentFlowInfo ]
+...

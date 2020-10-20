@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8E6ABCDC-80E2-34FF-A9D2-C10B5CAC5C13
+  - target:          arm64e-ios
+    value:           E9AB22BF-396C-3D98-B2DC-61F40E98D9B2
+install-name:    '/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CARNextPreviousButtonSize, _CARPlayPauseButtonSize, _CPUIAddGlyph, 
+                       _CPUIAudiobooksBundleIdentifier, _CPUIBackGlyph, _CPUIChevronRightGlyph, 
+                       _CPUIDescriptionForUserInterfaceStyle, _CPUIEllipsisGlyph, 
+                       _CPUIFilteredString, _CPUIFormattedNumberString, _CPUIFormattedPlaybackRateString, 
+                       _CPUIForwardGlyph, _CPUIFrameworkBundle, _CPUIHighlightedImageForTransportButton, 
+                       _CPUIImageCancelGlyph, _CPUIImageDownIndicatorGlyph, _CPUIImageForTransportButton, 
+                       _CPUIImageMaximizeGlyph, _CPUIImageMinimizeGlyph, _CPUIImageNamedWithTraitCollection, 
+                       _CPUIImagePanGlyph, _CPUIImageRecenterGlyph, _CPUIImageRowMaxImageDimension, 
+                       _CPUIImageRowTitleIndex, _CPUIImageStarRatingEmpty, _CPUIImageStarRatingFull, 
+                       _CPUIImageStarRatingHalf, _CPUIImageUpIndicatorGlyph, _CPUIImageZoomInGlyph, 
+                       _CPUIImageZoomOutGlyph, _CPUILocalizedExplicitImageForTraitCollection, 
+                       _CPUILocalizedExplicitLabelString, _CPUILocalizedStringForKey, 
+                       _CPUIMessageComposeGlyph, _CPUINewsBundleIdentifier, _CPUINowPlayingButtonStateNamePlaying, 
+                       _CPUINowPlayingButtonStateNameStopped, _CPUINowPlayingLayoutForSafeAreaFrameScaleArtwork, 
+                       _CPUINowPlayingLayoutTrailingArtworkMinAspectRatio, _CPUINowPlayingMaximumNoArtworkSize, 
+                       _CPUINowPlayingMinimumVerticalPadding, _CPUIPauseGlyph, _CPUIPlayModeButtonSize, 
+                       _CPUIPlayModeControlViewHeight, _CPUIPlaybackProgressCompleteGlyphWithSize, 
+                       _CPUIPodcastsBundleIdentifier, _CPUIProgressViewHeight, _CPUIRectByApplyingUserInterfaceLayoutDirectionInRect, 
+                       _CPUIRepeatGlyph, _CPUIRepeatOneGlyph, _CPUIScrollBarAlignmentHorizontalPadding, 
+                       _CPUIShuffleGlyph, _CPUITableCellExplicitLabel, _CPUITimeDurationForSeconds, 
+                       _CPUITraitCollectionSupportsFocus, _CarPlayUIGeneralLogging, 
+                       _CarPlayUIVersionNumber, _CarPlayUIVersionString, _UIEdgeInsetsFromRectWithRect, 
+                       __CPUIGlyphFactoryWithTraitCollection, __nonCapturedPressType, 
+                       _kCPUIBannerTransitionAnimationStyleKey ]
+    objc-classes:    [ CPUIBannerTransitionAnimator, CPUIBannerTransitionFadeAnimator, 
+                       CPUIBannerTransitioningDelegate, CPUIBannerViewButton, CPUIHighlightButton, 
+                       CPUIImageRowCell, CPUIImageRowCellConfiguration, CPUILabelButton, 
+                       CPUIMediaButton, CPUIMessageCell, CPUIMessageCellConfiguration, 
+                       CPUINowPlayingButton, CPUINowPlayingButtonView, CPUINowPlayingButtonWrapperView, 
+                       CPUINowPlayingLayoutStacked, CPUINowPlayingLayoutTrailingArtwork, 
+                       CPUINowPlayingManager, CPUINowPlayingSnapshot, CPUINowPlayingView, 
+                       CPUINowPlayingViewController, CPUIPassthroughView, CPUIPlayModeButton, 
+                       CPUIPlayModeControlView, CPUIPlaybackProgressView, CPUIProgressBarView, 
+                       CPUIProgressView, CPUIRepeatButton, CPUIRoundedLabelButton, 
+                       CPUIShadowImageView, CPUISongDetailsView, CPUITableCell, CPUITableCellAccessory, 
+                       CPUITableCellConfiguration, CPUIThrottle, CPUITitleView, CPUITransportControlView, 
+                       _CPUIBaseTableCell, _CPUINowPlayingLayout ]
+...

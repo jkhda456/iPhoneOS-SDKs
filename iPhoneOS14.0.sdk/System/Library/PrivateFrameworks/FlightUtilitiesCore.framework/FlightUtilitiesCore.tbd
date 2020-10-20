@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           093C905E-A970-3596-AA4E-15CFC4FB179E
+  - target:          arm64e-ios
+    value:           233C2B80-819A-3A7D-B6C5-9832C115AC5C
+install-name:    '/System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore'
+current-version: 140
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FUFactoryProvider_Default, _FUFactoryProvider_Parsec ]
+    objc-classes:    [ FUAirline, FUAirport, FUFlight, FUFlightFactory, FUFlightLeg, 
+                       FUFlightStep, FUStepTime, FUUtils ]
+    objc-ivars:      [ FUFlightStep._delayFromSchedule ]
+...

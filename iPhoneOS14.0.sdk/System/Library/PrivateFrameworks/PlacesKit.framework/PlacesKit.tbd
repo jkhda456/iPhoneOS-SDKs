@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           744E42CA-7C33-3D83-BB83-7952C972405A
+  - target:          armv7s-ios
+    value:           5A6CCAD8-D0A9-30A3-A431-1ABB76DBAB38
+  - target:          arm64-ios
+    value:           796A2D69-AAE9-39F8-9CD4-0A0F2A8BED02
+  - target:          arm64e-ios
+    value:           D2E3917B-C129-3990-9B7E-4890BD369A1C
+install-name:    '/System/Library/PrivateFrameworks/PlacesKit.framework/PlacesKit'
+current-version: 302.0.220
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ PXPlacesMapDefaultLayoutDiffer, PXPlacesMapDefaultUpdatePlan ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PKPlacesCoarseLocationMediaInfoKey, _PXMapStoreDefaultCapacityPerNode, 
+                       _PXMapStoreMinimumRectWidth, _PXMapStoreStoreItemsInLeafNodesOnly, 
+                       _PXQuadTreeNodeCanBeSubdivided, _PXQuadTreeNodeExtendCapacity, 
+                       _PXQuadTreeNodeFindItemsInRect, _PXQuadTreeNodeFree, _PXQuadTreeNodeHasCapacity, 
+                       _PXQuadTreeNodeInsertItem, _PXQuadTreeNodeMake, _PXQuadTreeNodeMoveItemsToChildNodes, 
+                       _PXQuadTreeNodeOptimize, _PXQuadTreeNodeRemoveItem, _PXQuadTreeNodeRunCollector, 
+                       _PXQuadTreeNodeSubdivide, _PlacesKitVersionNumber, _PlacesKitVersionString, 
+                       _assetCountChangedTimerDelay, _cornerRadius, _kPKExtendedTraitCollectionChangedNotification, 
+                       _kPKExtendedTraitCollectionKey, _kPXPlacesAlbumImageCachedFilenameDark, 
+                       _kPXPlacesAlbumImageCachedFilenameLight, _kPXPlacesPhotoAssetsStoreImportBatchSize, 
+                       _mapPointComparator, _minCountLabelHeight, _minCountLabelWidth, 
+                       _pk_dispatch_on_main_queue, _stringForCoordinate, _stringForDiffEntryType ]
+    objc-classes:    [ PKExtendedTraitCollection, PXPlacesGeotaggableSortDescriptor, 
+                       PXPlacesImageCache, PXPlacesMapController, PXPlacesMapFetchResultController, 
+                       PXPlacesMapGeometricClusterLayout, PXPlacesMapInPlaceLayoutDiffer, 
+                       PXPlacesMapInPlaceUpdatePlan, PXPlacesMapLayout, PXPlacesMapLayoutChange, 
+                       PXPlacesMapLayoutDiffer, PXPlacesMapLayoutItemImpl, PXPlacesMapLayoutResultImpl, 
+                       PXPlacesMapPassthroughSelectionHandler, PXPlacesMapPinRenderer, 
+                       PXPlacesMapPipeline, PXPlacesMapPipelineExecutionContext, 
+                       PXPlacesMapPipelineFactory, PXPlacesMapPointAnnotation, PXPlacesMapThumbnailAnnotationView, 
+                       PXPlacesMapThumbnailClusterLayout, PXPlacesMapThumbnailRenderer, 
+                       PXPlacesMapUpdatePlanResultImpl, PXPlacesMapView, PXPlacesMapViewPort, 
+                       PXPlacesPhotoAssetsStore, PXPlacesPinAnnotationView, PXPlacesPopoverImageFactory, 
+                       PXPlacesSnapshotFactory, PXPlacesSnapshotOptions, PXPlacesStore, 
+                       PXPlacesTestDataGenerator, PXPlacesTestDataPoint, _PXMapStoreChange, 
+                       _PXPlacesImageCacheKey, __PKObject ]
+...

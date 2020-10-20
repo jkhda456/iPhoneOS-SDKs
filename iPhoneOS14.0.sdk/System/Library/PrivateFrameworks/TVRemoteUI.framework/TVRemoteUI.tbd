@@ -1,0 +1,54 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C04F5FC2-6B1D-3C46-A7ED-32FDCAF7B231
+  - target:          arm64e-ios
+    value:           D317592A-4DDB-308B-B103-4C8CCA7B9B00
+install-name:    '/System/Library/PrivateFrameworks/TVRemoteUI.framework/TVRemoteUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TVRViewServiceDeviceIdentifierTypeNone, _TVRViewServiceDidAppearNotificationName, 
+                       _TVRViewServiceDidDisappearNotificationName, _TVRViewServiceWillAppearNotificationName, 
+                       _TVRViewServiceWillDisappearNotificationName, _TVRemoteUIVersionNumber, 
+                       _TVRemoteUIVersionString, __TVRAlertViewPreferredWidth, __TVRUIGeneralLog, 
+                       __TVRUIInstrumentationLog, __TVRUINetworkObserverLog, __TVRUIViewServiceLog ]
+    objc-classes:    [ LaunchApplicationIntent, LaunchApplicationIntentResponse, 
+                       LaunchRemoteIntent, LaunchRemoteIntentResponse, LaunchScreenSaverIntent, 
+                       LaunchScreenSaverIntentResponse, LaunchTVAppIntent, LaunchTVAppIntentResponse, 
+                       PauseContentIntent, PauseContentIntentResponse, ReduceLoudSoundsIntent, 
+                       ReduceLoudSoundsIntentResponse, SkipContentIntent, SkipContentIntentResponse, 
+                       SkipContentSkipDurationResolutionResult, SleepAppleTVIntent, 
+                       SleepAppleTVIntentResponse, SwitchUserAccountIntent, SwitchUserAccountIntentResponse, 
+                       TVRApplication, TVRApplicationResolutionResult, TVRCaptionsToggleResolutionResult, 
+                       TVRDevice, TVRDeviceResolutionResult, TVRMatchPointTouchProcessor, 
+                       TVRMediaCommandResolutionResult, TVRSkipCommandResolutionResult, 
+                       TVRStandardTouchProcessor, TVRSystemAppearanceToggleResolutionResult, 
+                       TVRTouchProcessor, TVRTouchpadView, TVRUIAlertAnimationController, 
+                       TVRUIAlertFadeAnimationController, TVRUIButton, TVRUIButtonEvent, 
+                       TVRUICaptionsButton, TVRUIControlPanelViewController, TVRUICoreDevice, 
+                       TVRUICoreDeviceQuery, TVRUIDarkStyleProvider, TVRUIDevice, 
+                       TVRUIDevicePickerViewController, TVRUIDeviceQuery, TVRUIIntentManager, 
+                       TVRUIMediaControlsViewController, TVRUIRemoteViewController, 
+                       TVRUIStandardTouchProcessor, TVRUITouchEvent, TVRUITouchpadViewController, 
+                       TVRUIUnpairedDevices, TVRUserAccount, TVRUserAccountResolutionResult, 
+                       TVRViewServiceConfigContext, TVRViewServiceManager, ToggleCaptionsIntent, 
+                       ToggleCaptionsIntentResponse, ToggleSystemAppearanceIntent, 
+                       ToggleSystemAppearanceIntentResponse, WakeAppleTVIntent, WakeAppleTVIntentResponse, 
+                       _TVRAlertController, _TVRAlertView, _TVRButtonHaptic, _TVRCTouchInfo, 
+                       _TVRDropDownTableViewFooterView, _TVREventHaptic, _TVRKeyboardHaptic, 
+                       _TVRKeyboardView, _TVRLayoutInfo, _TVRMAlertButton, _TVRMAlertControllerTransitioning, 
+                       _TVRMatchPointArtworkView, _TVRMaterialView, _TVRMessageView, 
+                       _TVRPasscodeField, _TVRPresentationController, _TVRSiriHaptic, 
+                       _TVRTapToRadarManager, _TVRTextField, _TVRTransitioningDelegate, 
+                       _TVRUIButtonPanelView, _TVRUICubicSpringAnimator, _TVRUICubicSpringTimingParameters, 
+                       _TVRUIDeviceListCell, _TVRUIDevicePickerView, _TVRUIDirectionalControlView, 
+                       _TVRUIFeatures, _TVRUINetworkObserver, _TVRUITouch, _TVRUITouchpadView, 
+                       _TVRemoteAlertVisualStyleProviding, _TVRemoteAlertVisualStyle_Pad, 
+                       _TVRemoteAlertVisualStyle_Phone ]
+...

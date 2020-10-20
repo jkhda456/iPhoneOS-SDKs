@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AEB747C4-DFDF-32EB-A09B-DD5D97EC491B
+  - target:          arm64e-ios
+    value:           BDDCCCA4-89B7-30F0-B4DD-8B193898A527
+install-name:    '/System/Library/PrivateFrameworks/PencilPairingUI.framework/PencilPairingUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PKIsAnimatingKeyPath, _PKPencilEducationControllerContentDidChangeNotification, 
+                       _PNPChargingStatusConfigureAutoDismiss, _PNPChargingStatusConfigureAutoDismissWithTime, 
+                       _PNPPlatterDismissPlatterContainerView, _PNPPlatterPresentPlatterContainerView, 
+                       _PNPWizardPaneCornerRadius, _PNPWizardScratchpadOpacitySliderAnimationParameters, 
+                       _PencilPairingUIBundle, _PencilPairingUIVersionNumber, _PencilPairingUIVersionString, 
+                       __PKLocalizedDrawingBundleForLanguage, __PKLocalizedStringForLanguageInBundle, 
+                       __PNPPlatterContainerViewMoveToPresented ]
+    objc-classes:    [ PNPAirplaneModeView, PNPAirplaneModeViewController, PNPChargingStatusView, 
+                       PNPChargingStatusViewController, PNPConnectButton, PNPDeviceState, 
+                       PNPDoubleTapViewController, PNPEducationPanelController, PNPFeatureListController, 
+                       PNPGradientView, PNPHardwareView, PNPLockScreenViewController, 
+                       PNPPairingView, PNPPairingViewController, PNPPairingViewControllerView, 
+                       PNPPencilHorizontalPresentationContainerView, PNPPencilView, 
+                       PNPPlatterAnimator, PNPPlatterContainerView, PNPPlatterPresentationController, 
+                       PNPPlatterShadowView, PNPPlatterTransitioningDelegate, PNPQuickSwapEventSource, 
+                       PNPStackedPillView, PNPSyntheticDoubleTapEvent, PNPSyntheticPencilEvent, 
+                       PNPSyntheticPencilInteractionEventSource, PNPSyntheticWaitEvent, 
+                       PNPWelcomeController, PNPWhatsNewController, PNPWizardInkWeightControl, 
+                       PNPWizardScratchpadCanvasView, PNPWizardScratchpadInkView, 
+                       PNPWizardScratchpadToast, PNPWizardScratchpadView, PNPWizardViewController, 
+                       PencilEducationElementData, PencilEducationElementTextField, 
+                       PencilEducationElementViewController, PencilEducationViewController, 
+                       PencilSettingsStatisticsManager, _PNPPencilMovieView ]
+...

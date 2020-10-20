@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EA3729D5-E79D-3AE6-858C-419BF9F4DB6A
+  - target:          armv7s-ios
+    value:           426FBD07-6DEC-3C55-89A0-B82A59AD127F
+  - target:          arm64-ios
+    value:           AF92C787-25B4-3E67-9259-2CA4BB2F68CF
+  - target:          arm64e-ios
+    value:           6F11BEAE-DDDC-3C60-AA27-5473D5DCDA2D
+install-name:    '/System/Library/PrivateFrameworks/FamilyNotification.framework/FamilyNotification'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __FALogSystem ]
+    objc-classes:    [ FAFamilyNotification, FAFamilyNotifier ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F94BC725-A38E-3B90-A3E7-A9E1E07177F2
+  - target:          armv7s-ios
+    value:           B5483279-6270-38E6-9F7D-71BB70C424B2
+  - target:          arm64-ios
+    value:           9F39AC1F-A38F-3850-AB22-D9B85134A8A3
+  - target:          arm64e-ios
+    value:           C64969FB-3776-3D26-B955-9AA39C988EEE
+install-name:    '/System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _BFFCountryScanCompletedNotification ]
+    objc-classes:    [ BFFLocaleDataSource, BFFLocationController, BFFPreferencesController ]
+    objc-ivars:      [ BFFLocationController._aliasDict, BFFLocationController._guessedCountries, 
+                       BFFLocationController._guessedCountryFromTelephony, BFFLocationController._validCountries, 
+                       BFFLocationController.fWifiDevice, BFFLocationController.fWifiManager ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BFFFlowSkipIdentifierAppleID, _BFFFlowSkipIdentifierApplePay, 
+                       _BFFFlowSkipIdentifierPasscode, _BFFFlowSkipIdentifierSiri, 
+                       _BFFFlowSkipIdentifierTouchID, _BFFIsiPad, _BFFIsiPhone, _BFFPointImageOfColor, 
+                       _BFFRoundRectToPixel, _BFFRoundToPixel, _SetupIsInternalInstall, 
+                       __BFFCGFloatByDeviceHeight, __BFFHeaderTextStyle, __BFFHeightByDeviceSize, 
+                       __BFFWidthByDeviceSize, _isDeviceXL, _lf_post ]
+    objc-classes:    [ BFFBarButtonSpinnerView, BFFCapabilities, BFFComplexPasscodeInputView, 
+                       BFFContinueButton, BFFFaceIDViewController, BFFFinishSetupViewController, 
+                       BFFFlow, BFFFlowSkipController, BFFFlowStarter, BFFLinkLabelFooterView, 
+                       BFFMigrationTimeRemainingController, BFFNavBarSpinnerManager, 
+                       BFFNavigationController, BFFPaneHeaderView, BFFPaneHeaderView_RemoteUI, 
+                       BFFPasscodeCreationManager, BFFPasscodeInputView, BFFPasscodeView, 
+                       BFFPasscodeViewController, BFFProgressView, BFFSimplePasscodeInputView, 
+                       BFFSpinnerController, BFFSplashController, BFFStyle, BFFTimeRemainingController, 
+                       BFFTitleView, BFFWindow ]
+    objc-ivars:      [ BFFBarButtonSpinnerView._spinner ]
+...

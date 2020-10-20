@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E850BD37-0C89-3BD2-9C90-611CB64FDA5F
+  - target:          arm64e-ios
+    value:           F8BC7C35-F786-362C-8CA3-31503EFB3ACA
+install-name:    '/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HKHRHeartHealthBundle, _HKHeartRateLocalizedString, _HKHeartRatePluginIdentifier, 
+                       __HKHeartRateSettingsLocalizationTable, __HKHeartSettingsBradycardiaThresholdHeartRateDefault, 
+                       __HKHeartSettingsBradycardiaThresholdNumberOfMinutes, __HKHeartSettingsTachycardiaThresholdHeartRateDefault, 
+                       __HKHeartSettingsTachycardiaThresholdNumberOfMinutes ]
+    objc-classes:    [ _HKHeartSettingsUtilities ]
+...

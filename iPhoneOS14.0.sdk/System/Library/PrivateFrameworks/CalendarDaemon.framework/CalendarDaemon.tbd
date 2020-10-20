@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F80463FF-2ED6-33FA-B432-7B84B4C06120
+  - target:          armv7s-ios
+    value:           18B6558A-A6A3-3EA4-9BC6-DBE25CC328FD
+  - target:          arm64-ios
+    value:           31871F62-E60A-3208-B5B1-19CAC39E1C39
+  - target:          arm64e-ios
+    value:           9835803A-B644-372F-B610-BC41F501CAFB
+install-name:    '/System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CADEntityGetObjectID, _CalEntityCopyDictionaryOfProperties ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CADAccountActionDescription, _CADAccountManagementFromSource, 
+                       _CADAccountManagementFromTarget, _CADCopyEntity, _CADDatabaseStorageUsageAttachmentsKey, 
+                       _CADDatabaseStorageUsageEventsKey, _CADDeleteEntity, _CADEKPersistentEventDefaultPropertiesToLoad, 
+                       _CADEKPersistentEventMinimumDefaultPropertiesToLoad, _CADEntityCopyObjectID, 
+                       _CADEntityCopyObjectIDUnlocked, _CADEntityExistsAndIsAccessible, 
+                       _CADEntityIsInManagedStore, _CADEntityIsInRestrictedStore, 
+                       _CADExitStatusCode_Normal, _CADExitStatusCode_UnexpectedCompletionOfMainFunction, 
+                       _CADLogHandle, _CADLogInitIfNeeded, _CADMCLogHandle, _CADNotificationLogHandle, 
+                       _CADRegisterStatsCollectionCallback, _CADSourceFromAccountManagement, 
+                       _CADStatsCollectSignificantEvents, _CADTTLLocationAuthorizationStatusChangedNotification, 
+                       _CADTargetFromAccountManagement, _CalEntityCopyProperty, _CalEntityCopyPropertyValues, 
+                       _CalEntitySetProperty, _GetSharedXPCInterfaceForCADClientInterface, 
+                       _GetSharedXPCInterfaceForCADInterface, __CADDaemonStartedNotification ]
+    objc-classes:    [ CADBlacklistedDelegateAccountAccessHandler, CADCalendarItemsWithExternalIdentifierPredicate, 
+                       CADChangeTrackingClientId, CADCompoundFilter, CADContactEventsPredicate, 
+                       CADDatabaseInitializationOptions, CADDefaultPermissionValidator, 
+                       CADEntityWrapper, CADEventCreatedFromSuggestionPredicate, 
+                       CADEventEntityWrapper, CADEventPredicate, CADEventTimeWindowPredicate, 
+                       CADEventsForAssistantSearchPredicate, CADFilter, CADGroupedAccountAccessHandler, 
+                       CADIdleChangeTrackingCleanupInfo, CADMCAccountAccessHandler, 
+                       CADMutableCalStoreInfo, CADNaturalLanguageSuggestedEventsSearchPredicate, 
+                       CADNotifiableEventsPredicate, CADNotificationCenterVisibleEventsPredicate, 
+                       CADPredicate, CADPropertyFilter, CADPropertySearchPredicate, 
+                       CADRespondedEventsPredicate, CADRouteHypothesis, CADServer, 
+                       CADSyntheticRouteHypothesizerCache, CADTravelEventsPredicate, 
+                       CADUnacknowledgedEventsPredicate, CADUnalertedEventsPredicate, 
+                       CADUpNextEventsPredicate, CADUpcomingEventsPredicate, CADXPCProxyHelper, 
+                       ClientConnection, EKAlarmOccurrence, EKMasterEventsPredicate, 
+                       EKPredicate, EKReminderPredicate, EKScheduledReminderPredicate ]
+    objc-ivars:      [ EKPredicate._timeZone, EKPredicate._uuid ]
+...

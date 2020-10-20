@@ -1,0 +1,49 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           5FB2EC92-C314-3C62-B5EF-4C2978BB3EB0
+  - target:          armv7s-ios
+    value:           43EA4B03-9FE4-31A1-9724-213D37B2A7D2
+  - target:          arm64-ios
+    value:           E025A6FF-DE9D-36F2-B1A5-5B031E07981D
+  - target:          arm64e-ios
+    value:           3A3FE25B-37CD-3138-8F3D-3A3B1C03C7ED
+install-name:    '/System/Library/PrivateFrameworks/AppLaunchStats.framework/AppLaunchStats'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _KeepAppsUpToDateEnabledChangedNotification, _cmpAscendingHistElementCount, 
+                       _cmpAscendingHistElementKey, _cmpDescendingHistElementProbability, 
+                       _kAPLSStateAppsAliveInLSTDict, _kAPLSStateDailyAppForecastSlots, 
+                       _kAPLSStateDailyDataBGBudgetSlots, _kAPLSStateDailyDataBudgetSlots, 
+                       _kAPLSStateDailyDataNDISCSlots, _kAPLSStateDailyPowerFetchBudgetSlots, 
+                       _kAPLSStateDailyPowerNDISCSlots, _kAPLSStateDailyPowerPushBudgetSlots, 
+                       _kAPLSStateFireDates, _kAPLSStateHasTransitionedToCoreDuet, 
+                       _kAPLSStates, _kAppLaunchStatsAppWorkSpaceState, _kAppLaunchStatsDelayLaunchList, 
+                       _kAppLaunchStatsDelayLaunchState, _kAppLaunchStatsDelayLaunchTimeInterval, 
+                       _kAppLaunchStatsSBMonitorBlacklisted, _kAppLaunchStatsSBMonitorState, 
+                       _kAppLaunchStatsSaveState, _kAppLaunchStatsStatisticsApps, 
+                       _kAppLaunchStatsStatisticsState, _kAppLaunchStatsUninstallApps, 
+                       _kDuetCarrierBundleChangedNotification, _kDuetDefaultsMultiTaskingDomainPlist, 
+                       _kDuetDefaultsPlist, _kDuetFetch, _kDuetLowPriorityRSRequest, 
+                       _kDuetNewsStand, _kDuetNotifiyUpdateWhiteList, _kDuetRemoteNotification, 
+                       _kDuetSaveAndRestoreRevision, _kDuetSaveAndRestoreState, _kDuetSaveAndRestoreTStamp, 
+                       _kDuetSaveAndRestoreVersion, _kDuetSettingsBlacklist, _kDuetTriggerDispatchQueue, 
+                       _kDuetUIFakeFgDTransitionForBkGFetch, _kDuetUIKitDomain, _kDuetWhiteList, 
+                       _kMGQueryIsDeviceTypePhone, _kMGQueryhas, _kMTDiagnosticDate, 
+                       _kNotifyLowPriorityPushRetry, _kNotifyLowPriorityRSReqClientToServer, 
+                       _kNotifyMainAPLSWithLowPriorityPushList, _kSiriViewServiceBundle, 
+                       _sharedAppLaunchStats ]
+    objc-classes:    [ APLSBinnedGlanceHistory, AppEntry, AppLaunchStatsAppWorkSpace, 
+                       AppLaunchStatsComputation, AppLaunchStatsDelayLaunch, AppLaunchStatsDiag, 
+                       AppLaunchStatsLaunchObject, AppLaunchStatsLaunchQueue, AppLaunchStatsLogFormater, 
+                       AppLaunchStatsREventHandler, AppLaunchStatsRetryTracker, AppLaunchStatsSBMonitor, 
+                       AppLaunchStatsSBSettings, AppLaunchStatsSaveAndRestore, AppLaunchStatsScheduler, 
+                       AppLaunchStatsState, AppLaunchStatsStateHandler, AppLaunchStatsStateHandlerQueue, 
+                       AppLaunchStatsStatistics, AppLaunchStatsWhiteListManager, 
+                       HistogramElement, RankElement, ReservationStationObject ]
+    objc-ivars:      [ RankElement.score, RankElement.timeIndex ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AppLaunchStats ]
+...

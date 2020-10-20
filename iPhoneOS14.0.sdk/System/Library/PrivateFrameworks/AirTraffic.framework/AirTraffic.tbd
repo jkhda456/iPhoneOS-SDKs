@@ -1,0 +1,104 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           164F5D10-C723-3D5E-8177-B979BA09C820
+  - target:          armv7s-ios
+    value:           317F51B7-9A61-30E4-8535-091BA23B6DFE
+  - target:          arm64-ios
+    value:           697EEF9D-D74B-31F5-A0C4-81B766569F34
+  - target:          arm64e-ios
+    value:           296E694A-5D4A-3F7D-A211-ED4CD85F5B0D
+install-name:    '/System/Library/PrivateFrameworks/AirTraffic.framework/AirTraffic'
+current-version: 116
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _ATInitializeLogCategories, _ATLogCategoryDeprecated, _ATLogCategoryDeprecated_Oversize, 
+                       _ATLogCategoryDeviceSync, _ATLogCategoryFramework, _ATLogCategoryFramework_Oversize, 
+                       _ATLogCategoryMigrator, _ATLogCategoryRestore, _ATLogCategorySettings, 
+                       _ATLogCategoryStoreDownloads, _ATLogCategoryStoreDownloads_Oversize, 
+                       _ATLogCategorySyncBundle, _ATLogCategorySyncBundle_Oversize, 
+                       _ATLogCategoryWakeUp, _ATLogCategoryXPC, _ATLogCategoryiTunesSync, 
+                       _ATLogCategoryiTunesSync_Oversize ]
+    objc-classes:    [ _AirTrafficOSLog ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATCrashReportInternalLogs, _ATDataMigrationCompleteNotification, 
+                       _ATDataRestoreCompleteNotification, _ATDataUsageBundleIdentifier, 
+                       _ATDriveCommandCopyItems, _ATDriveCommandCreateDirectory, 
+                       _ATDriveCommandDirectoryContents, _ATDriveCommandDownloadFile, 
+                       _ATDriveCommandFreeSpace, _ATDriveCommandMoveItems, _ATDriveCommandParamsCount, 
+                       _ATDriveCommandParamsOptions, _ATDriveCommandParamsPaths, 
+                       _ATDriveCommandParamsPercentage, _ATDriveCommandParamsResults, 
+                       _ATDriveCommandParamsSize, _ATDriveCommandProgress, _ATDriveCommandRemoveItems, 
+                       _ATDriveCommandUploadFile, _ATDriveCommandUsage, _ATDriveDataClass, 
+                       _ATDumpDebugInformationNotification, _ATGetDiskUsageForPath, 
+                       _ATGetLibrarianDocumentUsage, _ATGetLogCategoryAssetUtils, 
+                       _ATGetLogCategoryDefault, _ATGetLogCategoryDeprecated, _ATGetLogCategoryDeprecatedOversize, 
+                       _ATGetLogCategoryDeviceSync, _ATGetLogCategoryDeviceSyncOversize, 
+                       _ATGetLogCategoryFramework, _ATGetLogCategoryFrameworkOversize, 
+                       _ATGetLogCategoryMigrator, _ATGetLogCategoryRestore, _ATGetLogCategorySettings, 
+                       _ATGetLogCategoryStoreDownloads, _ATGetLogCategoryStoreDownloadsOversize, 
+                       _ATGetLogCategorySyncBundle, _ATGetLogCategorySyncBundleOversize, 
+                       _ATGetLogCategoryWakeUp, _ATGetLogCategoryXPC, _ATGetLogCategoryiTunesSync, 
+                       _ATGetLogCategoryiTunesSyncOversize, _ATGetPhysicalSizeForLogicalSize, 
+                       _ATGetUsageForPath, _ATInitiateDownloadSessionsNotification, 
+                       _ATInstallCoordinationAppObserverServiceName, _ATIsRecoverableError, 
+                       _ATLogLevel, _ATLogV, _ATMachDownloadObserverServiceName, 
+                       _ATMachKeepLocalRequestHandlerServiceName, _ATMachObserverServiceName, 
+                       _ATMachServiceName, _ATMachSessionServiceName, _ATOutputLevel, 
+                       _ATPPTTestsInProgress, _ATReportEventAddDoubleToScalarKey, 
+                       _ATReportEventAddIntToScalarKey, _ATReportEventAddValueToScalarKey, 
+                       _ATReportEventIncrementingScalarKey, _ATSessionTypeDeviceSync, 
+                       _ATSessionTypeDownload, _ATSessionTypeRestore, _ATSessionTypeiTunesSync, 
+                       _ATSessionsDidChangeNotification, _ATSetLogLevel, _ATSetLogOutputLevel, 
+                       _ATShouldLog, _ATStartupCompleteNotification, _ATStringWithArray, 
+                       __ATLog, _alloc_path, _count_directory, _count_thing, _kATLogFacilityController, 
+                       _kATLogFacilityDataMigrator, _kATLogFacilityFramework, _kATLogFacilityHost, 
+                       _kATLogFacilitySettings, _kATLogFacilityWaker, _kATReportingAssetAttemptEventKey, 
+                       _kATReportingAssetAttemptKey, _kATReportingAssetCancelledEventKey, 
+                       _kATReportingAssetCancelledKey, _kATReportingAssetFailureEventKey, 
+                       _kATReportingAssetFailureKey, _kATReportingAssetStoreDownloadAttemptEventKey, 
+                       _kATReportingAssetStoreDownloadAttemptKey, _kATReportingAssetStoreDownloadAuthFailureEventKey, 
+                       _kATReportingAssetStoreDownloadAuthFailureKey, _kATReportingAssetStoreDownloadCancelledEventKey, 
+                       _kATReportingAssetStoreDownloadCancelledKey, _kATReportingAssetStoreDownloadConnectivityFailureEventKey, 
+                       _kATReportingAssetStoreDownloadConnectivityFailureKey, _kATReportingAssetStoreDownloadDurationEventKey, 
+                       _kATReportingAssetStoreDownloadDurationKey, _kATReportingAssetStoreDownloadFailureEventKey, 
+                       _kATReportingAssetStoreDownloadFailureKey, _kATReportingAssetStoreDownloadSuccessEventKey, 
+                       _kATReportingAssetStoreDownloadSuccessKey, _kATReportingAssetSuccessEventKey, 
+                       _kATReportingAssetSuccessKey, _kATReportingDeviceSyncAssetTotalCount, 
+                       _kATReportingDeviceSyncAssetTotalEventCount, _kATReportingDeviceSyncAssetTotalEventSize, 
+                       _kATReportingDeviceSyncAssetTotalSize, _kATReportingDeviceSyncAttemptsEventKey, 
+                       _kATReportingDeviceSyncAttemptsKey, _kATReportingDeviceSyncFailuresEventKey, 
+                       _kATReportingDeviceSyncFailuresKey, _kATReportingDeviceSyncInitTimeEventKey, 
+                       _kATReportingDeviceSyncInitTimeKey, _kATReportingDeviceSyncInitialSyncDelayEventKey, 
+                       _kATReportingDeviceSyncInitialSyncDelayKey, _kATReportingDeviceSyncLargeAssetEventRate, 
+                       _kATReportingDeviceSyncLargeAssetRate, _kATReportingDeviceSyncLargeReconcileEventRate, 
+                       _kATReportingDeviceSyncLargeReconcileRate, _kATReportingDeviceSyncSmallAssetEventRate, 
+                       _kATReportingDeviceSyncSmallAssetRate, _kATReportingDeviceSyncSmallReconcileEventRate, 
+                       _kATReportingDeviceSyncSmallReconcileRate, _kATReportingDeviceSyncSuccessEventKey, 
+                       _kATReportingDeviceSyncSuccessKey, _kATReportingIDSWakeupAttempsEventKey, 
+                       _kATReportingIDSWakeupAttempsKey, _kATReportingIDSWakeupDeliveryTimeEventKey, 
+                       _kATReportingIDSWakeupDeliveryTimeKey, _kATReportingIDSWakeupFailuresEventKey, 
+                       _kATReportingIDSWakeupFailuresKey, _kATReportingIDSWakeupTimeoutsEventKey, 
+                       _kATReportingIDSWakeupTimeoutsKey, _kATReportingITunesSyncAttemptsEventKey, 
+                       _kATReportingITunesSyncAttemptsKey, _kATReportingITunesSyncFailuresEventKey, 
+                       _kATReportingITunesSyncFailuresKey, _kATReportingITunesSyncInterruptionsKey, 
+                       _kATReportingITunesSyncSuccessEventKey, _kATReportingITunesSyncSuccessKey, 
+                       _safe_free ]
+    objc-classes:    [ ATAccountInfo, ATAirlock, ATAsset, ATCodableStream, ATConnection, 
+                       ATFileBuffer, ATFileBufferedPipe, ATLegacyMessage, ATMessage, 
+                       ATMessageLink, ATMessageLinkProxy, ATMutableAccountInfo, ATRemoteFileManager, 
+                       ATRequest, ATResponse, ATRollableLog, ATService, ATServiceProxy, 
+                       ATSession, ATSessionTask, ATStatus, ATStatusObserver, ATStoreInfo, 
+                       ATXPCConnection, ATXPCMessage, ATXPCServer ]
+    objc-ivars:      [ ATAccountInfo._DSID, ATAccountInfo._altDSID, ATAccountInfo._appleID, 
+                       ATLegacyMessage._dataClass, ATLegacyMessage._messageId, ATLegacyMessage._messageType, 
+                       ATLegacyMessage._name, ATLegacyMessage._params, ATLegacyMessage._payload, 
+                       ATLegacyMessage._result, ATLegacyMessage._session, ATLegacyMessage._sig, 
+                       ATLegacyMessage._timestamp, ATRollableLog._baseFilename, ATRollableLog._directory, 
+                       ATRollableLog._fdWatcher, ATRollableLog._fh, ATRollableLog._generationalFilenameFormat, 
+                       ATRollableLog._lastStatDate, ATRollableLog._logQueue, ATRollableLog._logRequestQueue, 
+                       ATStoreInfo._assetDictionary, ATStoreInfo._downloadDictionary, 
+                       ATStoreInfo._storeMediaResponseItem ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           05EDBBBF-46C4-3F16-BE2D-BEA91311124E
+  - target:          arm64e-ios
+    value:           01F2A378-1C5F-34A2-A2AB-0F180A229FBF
+install-name:    '/System/Library/PrivateFrameworks/AGXCompilerConnection-S2A8.framework/AGXCompilerConnection-S2A8'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __Z21CompilerFSCacheCreateRP15CompilerFSCache, __Z22CompilerFSCacheDestroyRP15CompilerFSCache, 
+                       __Z24CompilerConnectionCreatej, __Z25CompilerConnectionDestroyRP18CompilerConnection, 
+                       __Z33CompilerFSCacheGetShaderCacheKeysPK15CompilerFSCache ]
+...

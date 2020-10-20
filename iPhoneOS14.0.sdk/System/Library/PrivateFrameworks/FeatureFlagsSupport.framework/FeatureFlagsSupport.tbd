@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E1D9DAAC-7AB2-3BDF-A836-AC445704EA89
+  - target:          arm64e-ios
+    value:           5494FFF6-7C04-35A0-9D6A-DD38315EA46B
+install-name:    '/System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport'
+current-version: 28.0.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ FFConfiguration, FFFeatureAttribute, FFFeatureState ]
+...

@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F45BEFA5-2296-3279-853B-59E167F9CEAA
+  - target:          arm64e-ios
+    value:           75E7A990-7CA9-372E-BF25-24D71BBC8804
+install-name:    '/System/Library/PrivateFrameworks/MobileTimerUI.framework/MobileTimerUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AnalogClockDidChangeNighttimeNotification, _AnalogClockDidCrossMidnightNotification, 
+                       _AnalogClockDidCrossNoonNotification, _MTUIAlarmDetailLabelIdentifier, 
+                       _MTUIAlarmEnabledSwitchIdentifier, _MTUIAlarmRootViewIdentifier, 
+                       _MTUIAlarmTableViewHeaderHeight, _MTUIAlarmTableViewHeaderLabelBottomMargin, 
+                       _MTUIAlarmTableViewInsetEdit, _MTUIAlarmTableViewInsetRegular, 
+                       _MTUIAlarmTimeLabelIdentifier, _MTUIBitmapClockHandPartMaintainsOrientationKey, 
+                       _MTUIBitmapClockHandPartNameKey, _MTUIBitmapClockHandPartOffsetKey, 
+                       _MTUIDeleteButtonImage, _MTUIFloorToPixel, _MTUIIsLargeText, 
+                       _MTUIIsPadIdiom, _MTUIIsPhoneIdiom, _MTUIIsVeryShortPhoneSize, 
+                       _MTUIIsVeryWidePhoneSize, _MTUILocationCoordinate2DMake, _MTUIMainScreenScale, 
+                       _MTUIRoundToPixel, _MTUISelectionTableViewCellIdentifier, 
+                       _MTUIShouldUseLargePadLayout, _MTUIShouldUseLargePadLayoutForSize, 
+                       _MTUIStandardizeAngle, _ShadowBlurPadding, _createBarGradient, 
+                       _kMTUIBaseTableViewCellIdentifier ]
+    objc-classes:    [ MTUIAlarmView, MTUIAnalogClockView, MTUIBaseTableViewCell, 
+                       MTUIBedtimeGraphColumnData, MTUIBedtimeGraphData, MTUIBedtimeGraphView, 
+                       MTUIBedtimeTimeInBedView, MTUIBitmapHandView, MTUIChevronTableViewCell, 
+                       MTUICollectionCellAnalogClockView, MTUIDateLabel, MTUIDigitalClockLabel, 
+                       MTUIGlyphTimeView, MTUIRenderedHandViewFactory, MTUISelectionTableViewController, 
+                       MTUISelectionViewData, MTUIShadowInfo, MTUISleepMetadata, 
+                       MTUISwitchTableViewCell, MTUITimeView, MTUITimerCountdownView, 
+                       MTUITonePickerStyleProvider, MTUIUtility, MTUIWorldClockCellView ]
+    objc-ivars:      [ MTUIAnalogClockView._calendar, MTUIAnalogClockView._dayHands, 
+                       MTUIAnalogClockView._faceDayImage, MTUIAnalogClockView._faceNightImage, 
+                       MTUIAnalogClockView._faceView, MTUIAnalogClockView._flutterIndex, 
+                       MTUIAnalogClockView._isRenderStateStale, MTUIAnalogClockView._middleDotDay, 
+                       MTUIAnalogClockView._middleDotNight, MTUIAnalogClockView._middleRedDot, 
+                       MTUIAnalogClockView._minuteHourAnimationTriggered, MTUIAnalogClockView._nightHands, 
+                       MTUIAnalogClockView._nighttime, MTUIAnalogClockView._runMode, 
+                       MTUIAnalogClockView._seconds, MTUIAnalogClockView._time, MTUIBitmapHandView._partViews, 
+                       MTUIBitmapHandView._partViewsMaintainingOrientation, MTUIDigitalClockLabel._baseDate, 
+                       MTUIDigitalClockLabel._calendar, MTUIDigitalClockLabel._hour, 
+                       MTUIDigitalClockLabel._minute, MTUIRenderedHandViewFactory._allowCaching, 
+                       MTUIRenderedHandViewFactory._angleCache, MTUIRenderedHandViewFactory._imagePath, 
+                       MTUIRenderedHandViewFactory._offset, MTUIRenderedHandViewFactory._page, 
+                       MTUIRenderedHandViewFactory._registeredClientsCount, MTUIRenderedHandViewFactory._resourcesBundle, 
+                       MTUIRenderedHandViewFactory._scale, MTUIRenderedHandViewFactory._viewSize ]
+...

@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           203735FE-3067-3549-859D-8D2FA44A3C2B
+  - target:          armv7s-ios
+    value:           C1D0B9FE-637B-35DD-823E-29A9B93EA602
+  - target:          arm64-ios
+    value:           11763BD3-0862-3442-8CE0-A55E4E4D7133
+  - target:          arm64e-ios
+    value:           CDFC4BD5-4FB6-32E9-BF9A-DDE47C1DF109
+install-name:    '/System/Library/PrivateFrameworks/MobileObliteration.framework/MobileObliteration'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _Mobile_Obliterate, _Mobile_Obliterate_IsSupported, _kDisplayProgressBarKey, 
+                       _kMobileObliterationError, _kMobileObliterationInternalError, 
+                       _kMobileObliterationSuccess, _kObliterateDataPartition, _kObliterateEACS, 
+                       _kObliterationDelayAfterReplyKey, _kObliterationExclusionPathsKey, 
+                       _kObliterationIgnoreMissingPathKey, _kObliterationManagedDeviceWipeKey, 
+                       _kObliterationMessageKey, _kObliterationTypeKey, _kObliterationTypeMarkStart, 
+                       _kObliterationTypeWipeAndBrick, _kObliterationVolumePathKey, 
+                       _kSkipDataObliteration ]
+...

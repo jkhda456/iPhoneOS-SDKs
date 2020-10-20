@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           575D3F8C-AFDC-3596-9687-B6EFF5B0FE65
+  - target:          arm64e-ios
+    value:           0F37F8E0-D20F-3761-B790-B1904D9B15A9
+install-name:    '/System/Library/PrivateFrameworks/PubSub.framework/PubSub'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ PSBroker, PSEvent, PSEventBlockInvocation, PSEventSelectorInvocation, 
+                       PSRemoteTopicConfiguration, PSSubscription, PSSubscriptionConditional, 
+                       PSTopic ]
+...

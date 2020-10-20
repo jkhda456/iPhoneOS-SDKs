@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2223A30A-A563-391F-80BA-275FCFD3630E
+  - target:          armv7s-ios
+    value:           6FD8CC50-D9D7-3676-8730-98156F94C5DC
+  - target:          arm64-ios
+    value:           6C7CAE89-E1EA-3C9B-AFDC-55096EC3692E
+  - target:          arm64e-ios
+    value:           1B43B0FD-E268-3BEB-8E73-D4E9B773EDB6
+install-name:    '/System/Library/PrivateFrameworks/SoundAutoConfig.framework/SoundAutoConfig'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SoundAutoConfigVersionNumber, _SoundAutoConfigVersionString ]
+    objc-classes:    [ SACDSPController, SACInfo, SACInfoListener, SACSYSController ]
+...

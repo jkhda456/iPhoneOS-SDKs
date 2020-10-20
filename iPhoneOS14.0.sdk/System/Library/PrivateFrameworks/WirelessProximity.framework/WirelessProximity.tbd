@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B6AEF3AE-6E9C-3495-BBE2-8910D5771F2D
+  - target:          armv7s-ios
+    value:           BCA03A91-CA8B-3203-9F49-A3A5353A619C
+  - target:          arm64-ios
+    value:           D37FB062-08F2-39ED-83AC-0F1CC2506A97
+  - target:          arm64e-ios
+    value:           2F6EBC14-5EC6-3382-8CF7-24DCDBAFE833
+install-name:    '/System/Library/PrivateFrameworks/WirelessProximity.framework/WirelessProximity'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MaxAirplayPayload, _MaxCompanyPayload, _WPTransferMaxDataLength, 
+                       _kActiveScanning, _kAdvertisingData, _kAdvertisingRate, _kAllowDuplicates, 
+                       _kAttributePermissions, _kBlobValue, _kCharacteristicProperties, 
+                       _kConnectableAdvert, _kData, _kFoundDevices, _kMaskValue, 
+                       _kNearbyScanMode, _kPeerTrackingData, _kPeers, _kPriorityValue, 
+                       _kRemoveServices, _kScanWhenLocked, _kScanningOptions, _kUUID, 
+                       _kWPScanCache, _kWriteType, _kZonesToTrack, _kZonesValue ]
+    objc-classes:    [ WPStateTracker, WirelessProximity ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WPAirPlaySoloAdvertisingMode, _WPAirPlaySoloKeyDeviceAddress, 
+                       _WPAirPlaySoloKeyDeviceTime, _WPBeaconAdvInterval, _WPBeaconTX, 
+                       _WPBeaconType, _WPBeaconTypeATVSetup, _WPBeaconTypeAirPlayTargetPresence, 
+                       _WPBeaconTypeAirPlayTargetPresencePayload, _WPBeaconTypeCompany, 
+                       _WPBeaconTypeCompanyConfig, _WPBeaconTypeCompanyMajor, _WPBeaconTypeCompanyMinor, 
+                       _WPBeaconTypeCompanyUUID, _WPErrorDomain, _WPHeySiriAdvertisingData, 
+                       _WPHeySiriKeyDeviceAddress, _WPHeySiriKeyDeviceTime, _WPHeySiriKeyDeviceUUID, 
+                       _WPHeySiriKeyManufacturerData, _WPHomeKitScanBlobData, _WPHomeKitScanDutyCycle, 
+                       _WPHomeKitScanMaskData, _WPHomeKitScanOptionRange, _WPHomeKitTypes, 
+                       _WPLogInitOnce, _WPLoggingInit, _WPMagicSwitchAdvertiseTypeInterval, 
+                       _WPMagicSwitchAdvertisingData, _WPMagicSwitchScanBlobData, 
+                       _WPMagicSwitchScanDutyCycle, _WPMagicSwitchScanMaskData, _WPMagicSwitchScanPeers, 
+                       _WPNearbyKeyConnectLatencyCritical, _WPNearbyKeyDeviceAddress, 
+                       _WPNearbyKeyDeviceTime, _WPNearbyKeyManufacturerData, _WPNearbyKeyPaired, 
+                       _WPNearbyKeyRSSI, _WPNearbyLEPipeCapable, _WPObjectDiscoveryKeyAddress, 
+                       _WPObjectDiscoveryKeyData, _WPObjectDiscoveryKeyOptional, 
+                       _WPObjectDiscoveryKeyRSSI, _WPObjectDiscoveryKeyStatus, _WPObjectDiscoveryKeyTime, 
+                       _WPPairingKeyAdvertisingChannel, _WPPairingKeyDeviceTime, 
+                       _WPPairingKeyName, _WPPairingKeyPaired, _WPPairingKeyRSSI, 
+                       _WPPuckType, _WPPuckTypeAirPlaySoloAdvertisingChannel, _WPPuckTypeAirPlaySoloAdvertisingData, 
+                       _WPPuckTypeAirPlaySoloRSSI, _WPPuckTypeAirPlaySoloSourcePresence, 
+                       _WPPuckTypeAirPlaySoloTargetPresence, _WPZoneTrackerKeyMajor, 
+                       _WPZoneTrackerKeyMinor, _WPZoneTrackerKeyZone, _WiProxLog, 
+                       _WiproxBTPairingLaunchNotification, _kSPAdvertisementData, 
+                       _kSPDeviceAddress, _kSPOptional, _kSPScanDate, _kSPStatus, 
+                       _kSPrssi ]
+    objc-classes:    [ WPAWDL, WPAdvertising, WPAdvertisingRequest, WPAirPlaySolo, 
+                       WPCharacteristic, WPClient, WPContinuity, WPDObjectDiscoveryData, 
+                       WPDataTransfer, WPDeviceScanner, WPHeySiri, WPHomeKit, WPMagicSwitch, 
+                       WPNearby, WPObjectDiscovery, WPPairing, WPPeerTrackingRequest, 
+                       WPRanging, WPScanRequest, WPTest, WPTransfer, WPZoneTracker, 
+                       WPZoneTrackingRequest ]
+...

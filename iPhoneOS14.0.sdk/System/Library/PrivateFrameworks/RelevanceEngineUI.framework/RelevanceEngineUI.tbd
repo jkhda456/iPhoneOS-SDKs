@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DF5740E5-8649-38B4-A092-25295BDA790D
+  - target:          arm64e-ios
+    value:           87905244-7567-30FB-B87A-C876C8860D31
+install-name:    '/System/Library/PrivateFrameworks/RelevanceEngineUI.framework/RelevanceEngineUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MaxPercentage, _REApplicationTintColor, _REDecodeImage, _REEncodeImage, 
+                       _REEncodedImageCapInsetsKey, _REEncodedImageDataKey, _REEncodedImageOrientationKey, 
+                       _REEncodedImageResizingModeKey, _REEncodedImageScaleKey, _REEncodedImageSupressHairlineKey, 
+                       _REEncodedImageTemplateKey, _REImageNamedFromBundle, _RELegibilityColorForContentColor, 
+                       _REMetadataBundleIdentifierKey, _RESuggestedBodyImageSizeForStyle, 
+                       _RESuggestedHeaderImageSizeForStyle, _REUIActionsAlertProviderClientInterface, 
+                       _REUIActionsAlertProviderMachService, _REUIActionsAlertProviderServerInterface, 
+                       _REUIGraphicCircularTemplateForAppWithIdentifier, _REUILocalizedString, 
+                       _REUINowPlayingPlaceholderAlbumArtwork, _REUISampleRelevanceProviderForPosition, 
+                       _REUISampleRelevanceProviderForSamplePosition, _REUISampleRelevanceProviderForSamplePositionWithPercentage, 
+                       _REUIScaledFullColorImageProviderWithImage, _REUIScaledFullColorImageViewImageMetadataKey, 
+                       _REUITrainingContextActionInteraction, _REUITrainingContextAppActionInteraction, 
+                       _REUITrainingContextDwellInteraction, _REUITrainingContextTapInteraction, 
+                       _RelevanceEngineUIVersionNumber, _RelevanceEngineUIVersionString ]
+    objc-classes:    [ REImageImage, REUIDonatedElementDemoProperties, REUIDonatedElementProperties, 
+                       REUIElementDonatedActionAction, REUIElementIntentAction, REUIRelevanceEngineController, 
+                       REUIRelevanceEngineControllerUpdateOperation, REUIScaledFullColorImageView, 
+                       REUITrainingContext, REUIUpNextDataSource, REUpNextAccessoryView, 
+                       REUpNextBaseCell, REUpNextCollectionView, REUpNextCollectionViewFlowLayout, 
+                       REUpNextCollectionViewFlowLayoutAttributes, REUpNextCollectionViewSingleItemFlowLayout, 
+                       REUpNextHeaderView, REUpNextImageView, REUpNextLargeTextCell, 
+                       REUpNextLargeWithDetailTextCell, REUpNextMultilineCell, REUpNextThumbnailCell, 
+                       TableCell, _REUIBundlePlaceholder, _REUIControllerTrainingContext ]
+...

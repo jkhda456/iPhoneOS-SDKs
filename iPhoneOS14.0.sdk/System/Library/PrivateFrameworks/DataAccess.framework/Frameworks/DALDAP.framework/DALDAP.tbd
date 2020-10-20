@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8CBAED7C-BEEE-344C-8DA8-E6226C1AED65
+  - target:          armv7s-ios
+    value:           FB37BBD8-94F8-35C2-9ACF-57ADE02B01E8
+  - target:          arm64-ios
+    value:           B43D129A-337E-357D-B1DC-480897500A43
+  - target:          arm64e-ios
+    value:           6A8ECD39-858F-3F0B-92F7-F0C8583ED85D
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DALDAP.framework/DALDAP'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kLDAPScopeBase, _kLDAPScopeOneLevel, _kLDAPScopeSubtree, 
+                       _kLDAPSearchContextScopeKey, _kLDAPSearchContextSearchBaseKey, 
+                       _kLDAPSearchContextSearchDescriptionKey ]
+    objc-classes:    [ LDAPAccount, LDAPGetDefaultSearchBaseTask, LDAPLocalDBHelper, 
+                       LDAPSearchSettings, LDAPSearchTask, LDAPTask ]
+...

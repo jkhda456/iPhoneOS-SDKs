@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3B735D51-6CEC-376A-9CD0-0C06B1D2ABD8
+  - target:          arm64e-ios
+    value:           AA434DC1-77C6-31DD-B7BD-A0BDC2D56DAE
+install-name:    '/System/Library/PrivateFrameworks/AXAssetLoader.framework/AXAssetLoader'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXAssetBundle, _AXAssetLoaderVersionNumber, _AXAssetLoaderVersionString, 
+                       _AXAssetLocalizedString, _AXAssetMakeErrorForDownloadResult, 
+                       _AXAssetMakeErrorForPurgeResult, _AXAssetMakeErrorForQueryResult, 
+                       _AXAssetMakeError_, __AXAssetMakeError, __AXCreateAXAssetsServiceInterface, 
+                       _kAXCharacterFaceDefaultsDomain, _kAXImageCaptionModelAssetMaximumCompatibilityVersion, 
+                       _kAXImageCaptionModelAssetMinimumCompatibilityVersion, _kAXImageCaptionModelAssetType, 
+                       _kAXUltronModelAssetType ]
+    objc-classes:    [ AXAsset, AXAssetAssertionStore, AXAssetController, AXAssetPolicy, 
+                       AXAssetUpdateMonitor, AXAssetsService, AXCharacterVoiceAssetPolicy, 
+                       AXElementVisionModelAssetPolicy, AXImageCaptionModel, AXImageCaptionModelAssetAssertion, 
+                       AXImageCaptionModelAssetPolicy, AXPhoenixAssetPolicy, AXUltronModelAssetPolicy ]
+...

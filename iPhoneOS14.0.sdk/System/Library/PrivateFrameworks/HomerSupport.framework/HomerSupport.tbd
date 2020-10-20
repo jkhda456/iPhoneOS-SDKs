@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           FBCF2D18-7155-3A48-B270-BB1D45BE0877
+  - target:          armv7s-ios
+    value:           484989AF-AFDD-33FF-AFD1-A7BA2AFC8282
+  - target:          arm64-ios
+    value:           D627B198-440E-3440-BAA9-8B1FF3F76249
+  - target:          arm64e-ios
+    value:           4639CDA6-F77E-3929-A669-CF98B22A056E
+install-name:    '/System/Library/PrivateFrameworks/HomerSupport.framework/HomerSupport'
+current-version: 18
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HomerSupportVersionNumber, _HomerSupportVersionString, _kBufferSize, 
+                       _kHomerDevicePrimaryUsage, _kHomerDevicePrimaryUsagePage ]
+    objc-classes:    [ HomerDevice ]
+...

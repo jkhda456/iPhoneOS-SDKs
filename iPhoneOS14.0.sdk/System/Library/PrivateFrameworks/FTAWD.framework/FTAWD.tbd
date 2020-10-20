@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C8694448-49EB-3916-AC8C-E771822A5004
+  - target:          armv7s-ios
+    value:           8F060570-F806-3982-91BD-F83796C46AA2
+  - target:          arm64-ios
+    value:           CB695906-B83D-3990-84BE-8DBD6AE8B389
+  - target:          arm64e-ios
+    value:           0260EB5E-663B-3290-9124-240F18A96046
+install-name:    '/System/Library/PrivateFrameworks/FTAWD.framework/FTAWD'
+current-version: 800
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _FTAWDLogIMessageReversePushQueryPerformed ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FTAWDLogCallAcceptReceived, _FTAWDLogCallAcceptSent, _FTAWDLogCallCancelSent, 
+                       _FTAWDLogCallConnected, _FTAWDLogCallDeclineSent, _FTAWDLogCallEnded, 
+                       _FTAWDLogCallEndedViceroy, _FTAWDLogCallFailed, _FTAWDLogCallInterruptionBegan, 
+                       _FTAWDLogCallInterruptionEnded, _FTAWDLogCallInvitationReceived, 
+                       _FTAWDLogCallInvitationSent, _FTAWDLogCallRelayInitiateReceived, 
+                       _FTAWDLogCallRelayInitiateSent, _FTAWDLogCallRelayUpdateSent, 
+                       _FTAWDLogCallRelayUpdatedReceived, _FTAWDLogCallStarted, _FTAWDLogIMessageAttachmentDownload, 
+                       _FTAWDLogIMessageAttachmentDownloadNew, _FTAWDLogIMessageAttachmentUpload, 
+                       _FTAWDLogIMessageAttachmentUploadNew, _FTAWDLogIMessageCloudKitSyncFailed, 
+                       _FTAWDLogIMessageCloudKitValidatePurgeableAttachment, _FTAWDLogIMessageDeduplicated, 
+                       _FTAWDLogIMessageDelivered, _FTAWDLogIMessageDowngrade, _FTAWDLogIMessageHealthCheckPerformed, 
+                       _FTAWDLogIMessageQueryFinished, _FTAWDLogIMessageReceived, 
+                       _FTAWDLogIMessageSent, _FTAWDLogIMessageSentWithConnectionType, 
+                       _FTAWDLogRegistrationAuthenticate, _FTAWDLogRegistrationGetDependentRegistrations, 
+                       _FTAWDLogRegistrationGetHandles, _FTAWDLogRegistrationPhoneNumberReceivedSMS, 
+                       _FTAWDLogRegistrationPhoneNumberValidationFinished, _FTAWDLogRegistrationProfileAuthenticate, 
+                       _FTAWDLogRegistrationProfileLinkHandles, _FTAWDLogRegistrationProfileUnLinkHandles, 
+                       _FTAWDLogRegistrationProfileValidateHandle, _FTAWDLogRegistrationProfileValidateInvitationContext, 
+                       _FTAWDLogRegistrationRegister, _FTAWDLogRegistrationRenewCredentialsCompleted, 
+                       _FTAWDLogSMSReceived, _FTAWDLogSMSSent, _FTAWDSetSubmissionDate ]
+...

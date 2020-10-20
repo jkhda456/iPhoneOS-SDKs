@@ -1,0 +1,60 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D50B84E8-B19A-32D7-8CAE-D4438DA253A2
+  - target:          armv7s-ios
+    value:           C845BD39-A0EF-3AC6-95FA-C24F5B9D7002
+  - target:          arm64-ios
+    value:           BBF2B7A9-29DD-3001-BDAC-84E820DDD672
+  - target:          arm64e-ios
+    value:           10004E9D-E523-3DFD-B39F-62CAECA5D173
+install-name:    '/System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting'
+current-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CHDescriptionForCorrectionResultType, _CHPKCopyAsTextUsedKey, 
+                       _CHPKDataDetectorUsedKey, _CHPKInsertSpaceUsedKey, _CHPKSmartSelectionUsedKey, 
+                       _CHPKSmartShapesUsedKey, _CHPKStrokesDrawnKey, _CHRecognitionOptionDrawingAnchorPoint, 
+                       _CHRecognitionOptionFrameContext, _CHRecognitionOptionPrecedingSpaceBehavior, 
+                       _CHRecognitionOptionShouldPreserveCaseVariantCandidates, _CHRecognitionOptionShouldRefineCandidates, 
+                       _CHRecognitionOptionTextAfter, _CHRecognitionOptionTextBefore ]
+    objc-classes:    [ CHBottomUpStrokeGroupingStrategy, CHBoxcarFilterPointFIFO, 
+                       CHContextualTextResult, CHContextualTextResults, CHDataDetectorQuery, 
+                       CHDataDetectorQueryItem, CHDrawing, CHEncodedStrokeIdentifier, 
+                       CHFastStrokeGroupingStrategy, CHIndexableContentQuery, CHLanguageUtilities, 
+                       CHMutableTextInputTargetContentInfo, CHMutableTokenizedTextResultColumn, 
+                       CHNonTextCandidateStroke, CHPointFIFO, CHPointStrokeFIFO, 
+                       CHQuadCurvePointFIFO, CHQuery, CHRecognitionInsight, CHRecognitionInsightRequest, 
+                       CHRecognitionResult, CHRecognitionSession, CHRecognitionSessionIndexableContent, 
+                       CHRecognitionSessionResult, CHRecognizer, CHRecognizerOptions, 
+                       CHRemoteRecognizer, CHSearchQuery, CHSearchQueryItem, CHStrokeClassificationModel, 
+                       CHStrokeClassificationResult, CHStrokeClassifier, CHStrokeClutterFilter, 
+                       CHStrokeGroup, CHStrokeGroupQuery, CHStrokeGroupQueryItem, 
+                       CHStrokeGroupRecognitionResult, CHStrokeGroupTextCorrectionResult, 
+                       CHStrokeGroupingManager, CHStrokeGroupingResult, CHStrokeGroupingStrategy, 
+                       CHStrokeUtilities, CHTextCorrectionResult, CHTextInputProtoSettings, 
+                       CHTextInputQuery, CHTextInputQueryItem, CHTextInputTarget, 
+                       CHTextInputTargetContentInfo, CHTitleQuery, CHTokenizedStrokeResult, 
+                       CHTokenizedTextResult, CHTokenizedTextResultColumn, CHTokenizedTextResultToken, 
+                       CHTopDownStrokeGroupingStrategy, CHTranscriptionQuery, CHVisualizationManager ]
+    objc-ivars:      [ CHNonTextCandidateStroke._support, CHNonTextCandidateStroke._supportByStrokeIdentifier, 
+                       CHTextInputTargetContentInfo._activePreviewRange, CHTextInputTargetContentInfo._autoCapitalizationMode, 
+                       CHTextInputTargetContentInfo._characterRectsInReferenceSubstring, 
+                       CHTextInputTargetContentInfo._containsCommittedStrokes, CHTextInputTargetContentInfo._contentType, 
+                       CHTextInputTargetContentInfo._isCursorStrong, CHTextInputTargetContentInfo._isSingleLine, 
+                       CHTextInputTargetContentInfo._lastCharacterLevelPosition, 
+                       CHTextInputTargetContentInfo._protectedCharacterIndexes, CHTextInputTargetContentInfo._referenceSubstring, 
+                       CHTextInputTargetContentInfo._referenceSubstringRange, CHTextInputTargetContentInfo._selectedTextRange, 
+                       CHTextInputTargetContentInfo._strokeCoveredTextRange, CHTextInputTargetContentInfo._supportsAutoLineBreaks, 
+                       CHTextInputTargetContentInfo._textContentLength, CHTextInputTargetContentInfo._textInputTarget, 
+                       CHTokenizedTextResult._changeableCount, CHTokenizedTextResult._precedingLineBreaks, 
+                       CHTokenizedTextResult._recognizerGenerationIdentifier, CHTokenizedTextResult._tokenColumns, 
+                       CHTokenizedTextResult._transcriptionPathScores, CHTokenizedTextResult._transcriptionPaths, 
+                       CHTokenizedTextResultColumn._tokenRows, CHTokenizedTextResultToken._alignmentScore, 
+                       CHTokenizedTextResultToken._combinedScore, CHTokenizedTextResultToken._properties, 
+                       CHTokenizedTextResultToken._recognitionScore, CHTokenizedTextResultToken._string, 
+                       CHTokenizedTextResultToken._strokeIndexes, CHTokenizedTextResultToken._substrokeCount, 
+                       CHTokenizedTextResultToken._wordID ]
+...

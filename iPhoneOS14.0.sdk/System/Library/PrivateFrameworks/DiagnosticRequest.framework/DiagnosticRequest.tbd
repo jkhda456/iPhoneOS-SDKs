@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           015760AF-3E29-3925-A346-0B6A9C4211FA
+  - target:          arm64e-ios
+    value:           D40DFFF8-88CA-33C0-8060-A020D77C38A9
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest'
+current-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DRShouldEnableLogGathering, _DRShouldGatherLog, _DRSubmitLog, 
+                       _DRTailspinRequest, __DPCEnableLogGatheringQueryMessage, __DPCInjectEnableLogGatheringQueryResult, 
+                       __DPCSubmitLogRequestMessage, __DPCTailspinRequestMessage, 
+                       __DPCTriggerRequestClean, __DPClientXPCSendMessage, __DPClientXPCSendMessageWithReplySync, 
+                       __DRCResetDampeningConfigurationToDefault, __DRCSetDampeningConfigurationDefaults, 
+                       __DRCSetDampeningIsEnabled, __DRCTriggerCloudKitWork, __DRRequestPassesTailspinHysteresis, 
+                       _kDRRequestClientError, _kDRRequestOversizedContextDictErrorString, 
+                       _kMinimumTailspinLeewaySeconds ]
+...

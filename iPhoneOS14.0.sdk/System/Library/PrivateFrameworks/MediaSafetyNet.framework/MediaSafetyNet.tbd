@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A9E7A7D8-0DAD-359F-9CCF-F776C2A33A90
+  - target:          arm64e-ios
+    value:           C4E86766-7256-3DE0-B75C-7936782FC44E
+install-name:    '/System/Library/PrivateFrameworks/MediaSafetyNet.framework/MediaSafetyNet'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSNLog, _MSNMonitorBeginException, _MSNMonitorEndException, 
+                       _MSNMonitorSetCameraNonStandardCameraClient, _MSNMonitorSetCameraState, 
+                       _MSNMonitorSetLastCameraClient, _MSNMonitorSetLastMicrophoneClient, 
+                       _MSNMonitorSetMicrophoneState, _MSNMonitorSetXCTestExceptionState, 
+                       _MSNMonitorStart, _MSNMonitorStartingCamera, _MSNMonitorStartingMicrophone, 
+                       _MSNMonitorStoppingCamera, _MSNMonitorStoppingMicrophone, 
+                       _MediaSafetyNetActive, _MediaSafetyNetIsLocalMonitor, _MediaSafetyNetVersionNumber, 
+                       _MediaSafetyNetVersionString, _g_cameraClient, _g_cameraExceptionState, 
+                       _g_cameraState, _g_keyboardState, _g_microphoneClient, _g_microphoneState, 
+                       _g_pillState, _g_production, _g_uiState ]
+...

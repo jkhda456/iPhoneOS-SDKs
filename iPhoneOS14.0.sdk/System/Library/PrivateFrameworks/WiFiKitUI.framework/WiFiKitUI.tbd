@@ -1,0 +1,72 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8CDE6F70-8D6B-31E5-BF1D-1434A071A07F
+  - target:          arm64e-ios
+    value:           415CC400-1A6E-3BE7-8BF5-286054F8CE35
+install-name:    '/System/Library/PrivateFrameworks/WiFiKitUI.framework/WiFiKitUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSLogForWFLogLevel, _WFAllIdentities, _WFBase64Encode, _WFCapabilityIsChinaDevice, 
+                       _WFCompareSecurityModeExt, _WFConvertEthernetNetworkAddressToString, 
+                       _WFCopyProcessIdentifier, _WFCreateSecTrustFromCertificateChain, 
+                       _WFCurrentDeviceCapability, _WFCurrentLogLevel, _WFDescriptionFromIdentity, 
+                       _WFDetermineNetworkCipherTypeObsolete, _WFGetCarNameFromCarPlayNetworkUUID, 
+                       _WFHasWAPICapability, _WFIsGreenTeaDevice, _WFIsSecurityModeMatch, 
+                       _WFIsValidIPv4Address, _WFIsValidIPv6Address, _WFIsWAPINotAvailable, 
+                       _WFLogForCategory, _WFManagedConfigurationUIClassFromString, 
+                       _WFOpenSettingsURLWithType, _WFSSIDIsValid, _WFScaleRSSI, 
+                       _WFScanRecordAlphaSortCompartor, _WFScanRecordArchiveToEnterprisePath, 
+                       _WFScanRecordDefaultSortCompartor, _WFSecurityModeExtIsWPAEnterprise, 
+                       _WFSecurityModeExtIsWPAPersonal, _WFSecurityModeFromScanDictionary, 
+                       _WFSecurityModeIsEnterprise, _WFSecurityModeIsEquivalentEAPEncryption, 
+                       _WFSecurityModeIsEquivalentWPA, _WFSecurityModeIsWPAEnterprise, 
+                       _WFSecurityModeIsWPAPersonal, _WFSecurityModeRequiresPasswordOnly, 
+                       _WFSecurityTypeRequiresPassword, _WFSecurityTypeRequiresUsername, 
+                       _WFSetExtraLoggingEnabled, _WFSettingsURLPathForType, _WFSignalBarsFromScaledRSSI, 
+                       _WFStringFromDeviceCapability, _WFStringFromWFSecurityMode, 
+                       _WFStringFromWFSecurityModeExt, _WFUserNameFromEnterpriseProfile, 
+                       _WFValidPasswordForSecurityMode, _WFWAPICertificateBlobString, 
+                       _WFWAPIIdentityListCreate, _WFWAPIRootCertificateListCreate, 
+                       _WFWiFiSecurityModeFromOtherSecurityMode, _WFWiFiTitleString, 
+                       _WiFiKitUIVersionNumber, _WiFiKitUIVersionString, __WFNetworkUsesSecurityCiphers, 
+                       __WFOpenSettingsPathWithPathType, _kWFAutoJoinCellIdentifier, 
+                       _kWFAutoLoginCellIdentifier, _kWFCredentialsURLPath, _kWFDNSCellIdentifier, 
+                       _kWFDNSChangesKey, _kWFEnterpriseNetworkArchivePath, _kWFForgetCellIdentifier, 
+                       _kWFIPv4ChangesKey, _kWFIPv6ChangesKey, _kWFImageBlueCheckmark, 
+                       _kWFImageCellularBars0, _kWFImageCellularBars1, _kWFImageCellularBars2, 
+                       _kWFImageCellularBars3, _kWFImageCellularBars4, _kWFImageLock, 
+                       _kWFImagePersonalHotspot, _kWFImageWiFiBars0, _kWFImageWiFiBars1, 
+                       _kWFImageWiFiBars2, _kWFImageWiFiBars3, _kWFImageWiFiBarsError, 
+                       _kWFJoinCellIdentifier, _kWFJoinEnterprisePath, _kWFKnownNetworkCellIdentifier, 
+                       _kWFKnownNetworkDetailScoreCellIdentifier, _kWFKnownNetworkDetailsCellIdentifier, 
+                       _kWFKnownNetworkDetailsGeoTagMapPinIdentifier, _kWFManageCellIdentifier, 
+                       _kWFNetworkPriorityChangesKeys, _kWFPriorityCellIdentifier, 
+                       _kWFProxyChangesKey, _kWFRandomMACInfoCellIdentifier, _kWFRandomMACSwitchCellIdentifier, 
+                       _kWFRecommendationCellIdentifier, _kWFSaveDataModeCellIdentifier, 
+                       _kWFSegmentedCellIdentifier, _kWFTextFieldCellIdentifier, 
+                       _kWFTrustEnterpriseURLPath ]
+    objc-classes:    [ WFAdditionalSetupTableViewCell, WFAirportViewController, WFAssociationStateView, 
+                       WFBuddyNetworkListCell, WFBuddyViewController, WFCarPlayAlertController, 
+                       WFChooseNetworkHeaderViewController, WFDNSConfigViewController, 
+                       WFDiagnosticsContext, WFDiagnosticsTableViewController, WFDiagnosticsViewController, 
+                       WFErrorAlertController, WFHealthIssue, WFHotspotAlertController, 
+                       WFHotspotCell, WFHotspotDetails, WFHotspotDetailsView, WFHyperlinkFooterView, 
+                       WFIPConfigViewController, WFIPViewController, WFImageCache, 
+                       WFInsetTableViewController, WFInsetViewController, WFKnownNetworkDetailsViewController, 
+                       WFKnownNetworkGeoTagViewController, WFKnownNetworkScoreViewController, 
+                       WFKnownNetworksStyle1TableViewCell, WFKnownNetworksViewController, 
+                       WFNetworkListCell, WFNetworkSettingsCellFactory, WFNetworkSettingsConfig, 
+                       WFNetworkSettingsViewController, WFOtherNetworkViewController, 
+                       WFPickerViewController, WFPrivacyIssue, WFPromptAlertController, 
+                       WFProxyConfigViewController, WFRecommendationCell, WFRemoteWebSheetViewController, 
+                       WFRemoteWebSheetViewControllerErrorContext, WFSegmentedCell, 
+                       WFTextFieldCell, WFTrustCertificateViewController, WFValueListViewController, 
+                       WFWebSheetViewController ]
+...

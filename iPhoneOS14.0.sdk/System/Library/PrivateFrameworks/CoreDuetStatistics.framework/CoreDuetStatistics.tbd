@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7C124BE3-C2B4-3613-88E2-24BCADB25479
+  - target:          armv7s-ios
+    value:           00171C50-485E-3620-8D05-F54D9ED68D2A
+  - target:          arm64-ios
+    value:           DFA9A781-4E44-39D5-A164-DEA18E24A149
+  - target:          arm64e-ios
+    value:           B7C10D02-58FC-3A76-B409-FC167FEE5930
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetStatistics.framework/CoreDuetStatistics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CDSBasisObject, CDSEngine ]
+...

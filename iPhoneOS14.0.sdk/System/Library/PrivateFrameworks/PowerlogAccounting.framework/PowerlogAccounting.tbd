@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DE1D3860-6F93-357D-84A3-6B92D1BCC3B8
+  - target:          armv7s-ios
+    value:           150EC60A-DF7D-35A0-98F7-DA144C58B4DF
+  - target:          arm64-ios
+    value:           C8941085-0045-3232-81DC-1F16DC6F9392
+  - target:          arm64e-ios
+    value:           1928313E-80BB-3037-B672-894E10A483F3
+install-name:    '/System/Library/PrivateFrameworks/PowerlogAccounting.framework/PowerlogAccounting'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kPLAccountingRangeMinIntersectionOverlap ]
+    objc-classes:    [ PLAccountingCorrectionDependency, PLAccountingCorrectionManager, 
+                       PLAccountingCorrectionOwner, PLAccountingDependency, PLAccountingDistributionDependency, 
+                       PLAccountingDistributionEventBackwardEntry, PLAccountingDistributionEventEntry, 
+                       PLAccountingDistributionEventForwardEntry, PLAccountingDistributionEventIntervalEntry, 
+                       PLAccountingDistributionEventPointEntry, PLAccountingDistributionManager, 
+                       PLAccountingDistributionOwner, PLAccountingDistributionRuleEntry, 
+                       PLAccountingDistributionRuleManager, PLAccountingEnergyEstimateEventEntry, 
+                       PLAccountingEnergyEventEntry, PLAccountingEngine, PLAccountingEventEntry, 
+                       PLAccountingNodeEntry, PLAccountingNodeManager, PLAccountingOwner, 
+                       PLAccountingOwnerDependencyManager, PLAccountingPowerEventBackwardEntry, 
+                       PLAccountingPowerEventEntry, PLAccountingPowerEventForwardEntry, 
+                       PLAccountingPowerEventIntervalEntry, PLAccountingQualificationDependency, 
+                       PLAccountingQualificationEventBackwardEntry, PLAccountingQualificationEventEntry, 
+                       PLAccountingQualificationEventForwardEntry, PLAccountingQualificationEventIntervalEntry, 
+                       PLAccountingQualificationEventPointEntry, PLAccountingQualificationManager, 
+                       PLAccountingQualificationOwner, PLAccountingQualificationRuleEntry, 
+                       PLAccountingQualificationRuleManager, PLAccountingRange, PLAccountingRuleEntry, 
+                       PLAccountingRuleManager ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FEA8A560-1EA2-3F29-AD47-C26A52859B58
+  - target:          arm64e-ios
+    value:           F70E9F14-DE2B-37E3-AA5B-3336F09F1864
+install-name:    '/System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD'
+current-version: 1564.6
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SharingHUDVersionNumber, _SharingHUDVersionString ]
+...

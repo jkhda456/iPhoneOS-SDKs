@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           5C71C3B2-C2C4-36D4-BD38-6CC3AAF2E8E8
+  - target:          armv7s-ios
+    value:           C77161BF-8453-3844-ADF8-D70FA118A0A0
+  - target:          arm64-ios
+    value:           45C0E0BA-3EBE-3099-95E8-87B3A55EF04E
+  - target:          arm64e-ios
+    value:           101A8B72-E1A9-3D32-909C-B429D50FB6DA
+install-name:    '/System/Library/PrivateFrameworks/IOAccessoryManager.framework/IOAccessoryManager'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DRY_TRANSITION_CAPACITANCE_THRESHOLD_NF, _IOAccessoryManagerVersionNumber, 
+                       _IOAccessoryManagerVersionString, _IOAccessoryRequestResetLifetimeDuration, 
+                       _IOAccessoryResetLifetimeDuration, _IOAccessoryStartVoltageEventMonitor, 
+                       _IOAccessoryVoltageEventMonitorMode, _WET_TRANSITION_CAPACITANCE_THRESHOLD_NF, 
+                       _absoluteToNanoseconds, _compare, _enableVoltageEventMonitorModeAggD, 
+                       _enableVoltageEventMonitorModeAppleCareLogging, _enableVoltageEventMonitorModeConsole, 
+                       _gAccyHealthDictionary, _gAppleCareLogArray, _gAssetContext, 
+                       _gBatteryStatusNotificationContext, _gDigitalIDCountWetDict, 
+                       _gDigitalIDTimeWetDict, _gDockState, _gEnableTapToRadarPopup, 
+                       _gEnableTimeToDryPopup, _gGiveUserRadarOption, _gHalogenMeasurements, 
+                       _gIOAMLogFilepath, _gIOAMLogLock, _gIOiter, _gIOnotify, _gIsInternalBuild, 
+                       _gLdcmBehaviorPlist, _gLdcmParams, _gLiquidNotificationContext, 
+                       _gPrevLog, _gUserLdcmParams, _kAccyHealthDictionaryMaxCount, 
+                       _kAggDKnownDigitalID, _kAggDUnknownDigitalID, _kIOAMLDCMBehaviorDryThresholdDictionarykey, 
+                       _kIOAMLDCMBehaviorPlistBehaviorBitmaskKey, _kIOAMLDCMBehaviorPlistConsecutiveDetectedInterval, 
+                       _kIOAMLDCMBehaviorPlistConsecutiveDetectedThresh, _kIOAMLDCMBehaviorPlistConsecutiveNotDetectedInterval, 
+                       _kIOAMLDCMBehaviorPlistConsecutiveNotDetectedThresh, _kIOAMLDCMBehaviorPlistDeviceGen1SubKey, 
+                       _kIOAMLDCMBehaviorPlistFdpBitmaskKey, _kIOAMLDCMBehaviorPlistLegacySubKey, 
+                       _kIOAMLDCMBehaviorPlistVersionKey, _kIOAMLDCMBehaviorThresholdDefaultKey, 
+                       _kIOAMLDCMBehaviorWetThresholdDictionaryKey, _kLdcmMaxEventHistoryCount, 
+                       _kMaximumErrorAssetQueryExtraSec, _kMaximumRegularAssetQueryExtraSec, 
+                       _kMinimumErrorAssetQueryIntervalSec, _kMinimumRegularAssetQueryIntervalSec, 
+                       _kSupportedLdcmBehaviorPlistVersion, _stats ]
+    objc-classes:    [ HalogenLdcmCalc, HalogenMeasurement, HalogenWrapper, IOAccessoryLdcmHealthClass, 
+                       IOAccessoryUserLdcmParamClass ]
+...

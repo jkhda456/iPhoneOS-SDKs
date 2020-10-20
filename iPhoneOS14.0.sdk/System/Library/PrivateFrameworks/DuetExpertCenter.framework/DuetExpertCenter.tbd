@@ -1,0 +1,116 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           04195F10-9C9C-3C8C-8E56-B21AB0DA218E
+  - target:          armv7s-ios
+    value:           B573A3F7-049F-3355-9115-AF9D75AD51B7
+  - target:          arm64-ios
+    value:           4E353707-4D78-32F9-842B-181757D5863F
+  - target:          arm64e-ios
+    value:           B7A4EC6A-5B39-319B-ABCF-261DCE6EA349
+install-name:    '/System/Library/PrivateFrameworks/DuetExpertCenter.framework/DuetExpertCenter'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DECMusicContainerCodingKeybundleId, _DECMusicContainerCodingKeypauseTime, 
+                       _DECMusicContainerCodingKeyplayTime, _DECMusicContainerCodingKeytrackIdentifier, 
+                       _DECMusicStateProcessorUserDefaultinCar, _DECMusicStateProcessorUserDefaultlastPlayed, 
+                       _DECMusicStateProcessorUserDefaultlastPlayedInCar, _DECNowPlayingConsumerAggregateDictionaryAbandonedKey, 
+                       _DECNowPlayingConsumerAggregateDictionaryEngagedKey, _DECNowPlayingConsumerAggregateDictionaryPredictedItemsKey, 
+                       _DECNowPlayingConsumerAggregateDictionaryShownKey, __DECItemMetadataDateCreatedKey, 
+                       __DECItemMetadataItemLifetimeKey, __DECItemMetadataOriginatingAppWhitelistedKey, 
+                       __DECItemMetadataPredictionAgeKey, __DECItemMetadataSourceKey, 
+                       __DECItemMetadataTargetAppWhitelistedKey, __DECItemMetadataTriggerTypeKey, 
+                       __DECLastWidgetEngagementTimestampKey, __DECNowPlayingRecommendationEnded, 
+                       __DECNowPlayingRecommendationStarted, __DECPredictionReasonBluetoothDeviceName, 
+                       __DECPredictionReasonLocationTransportType, __DECPredictionReasonLocationTransportTypeAutomobile, 
+                       __DECPredictionReasonLocationTransportTypeRide, __DECPredictionReasonLocationTransportTypeTransit, 
+                       __DECSchedulerQPLoggingIdentifier, __DECSqliteDatabaseErrorDomain, 
+                       __DECSqliteDatabaseErrorKeyCode, __DECSqliteDatabaseErrorKeyQuery, 
+                       __DECSqliteDatabaseErrorKeyReason, __DECSqliteDatabaseKeepGoing, 
+                       __DECSqliteDatabaseStop, __DECUpdatePredictionNotificationCategory, 
+                       __DECUpdatePredictionNotificationConsumer, __DECUpdatePredictionNotificationName, 
+                       __DECUpdatePredictionNotificationUpdateTimeInterval, __DEC_dispatch_queue_create_arp, 
+                       __kDECFeedbackMetadataConsumerSubType, __kDECFeedbackMetadataItemsShownCount, 
+                       __kDECFeedbackMetadataQueryString, _kDECCriteriaAttributeUISemanticTagEmailAddress, 
+                       _kDECCriteriaAttributeUISemanticTagPhoneNumber, _kDECCriteriaAttributeUISemanticTagURL, 
+                       _kDECCriteriaContextAppBundleIdentifierKey, _kDECCriteriaContextRecipientsKey, 
+                       _kDECCriteriaEventSubtypeBusy, _kDECCriteriaEventSubtypeFree, 
+                       _kDECCriteriaFieldAddress, _kDECCriteriaFieldAddressCity, 
+                       _kDECCriteriaFieldAddressPostalCode, _kDECCriteriaFieldAddressState, 
+                       _kDECCriteriaFieldAddressStreet, _kDECCriteriaFieldAttendees, 
+                       _kDECCriteriaFieldBirthday, _kDECCriteriaFieldCompany, _kDECCriteriaFieldEmail, 
+                       _kDECCriteriaFieldEnd, _kDECCriteriaFieldGivenName, _kDECCriteriaFieldLocation, 
+                       _kDECCriteriaFieldPhone, _kDECCriteriaFieldSocialIdentifier, 
+                       _kDECCriteriaFieldSocialProfileURL, _kDECCriteriaFieldSocialUsername, 
+                       _kDECCriteriaFieldStart, _kDECCriteriaFieldSurname, _kDECCriteriaFieldTitle, 
+                       _kDECCriteriaFieldsOfInterestKey, _kDECCriteriaLabelOfInterestKey, 
+                       _kDECCriteriaLocationAddressSubtypeFuture, _kDECCriteriaLocationSubtypeCurrent, 
+                       _kDECCriteriaLocationSubtypeFuture, _kDECCriteriaLocationUISemanticTagCity, 
+                       _kDECCriteriaLocationUISemanticTagCityAndState, _kDECCriteriaLocationUISemanticTagCountry, 
+                       _kDECCriteriaLocationUISemanticTagFullAdress, _kDECCriteriaLocationUISemanticTagLocation, 
+                       _kDECCriteriaLocationUISemanticTagOrganization, _kDECCriteriaLocationUISemanticTagPostalCode, 
+                       _kDECCriteriaLocationUISemanticTagStateOrProvince, _kDECCriteriaLocationUISemanticTagStreetName, 
+                       _kDECCriteriaLocationUISemanticTagSubLocality, _kDECCriteriaPeopleOfInterestKey, 
+                       _kDECCriteriaPeopleSubtypeOthers, _kDECCriteriaPeopleSubtypeSelf, 
+                       _kDECCriteriaPeopleUISemanticTagFullName, _kDECCriteriaPeopleUISemanticTagGivenName, 
+                       _kDECCriteriaPeopleUISemanticTagPrefix, _kDECCriteriaPeopleUISemanticTagSuffix, 
+                       _kDECCriteriaPeopleUISemanticTagSurname, _kDECCriteriaResultLocaleIdentifierKey, 
+                       _kDECCriteriaSocialProfileServiceFacebook, _kDECCriteriaSocialProfileServiceFlickr, 
+                       _kDECCriteriaSocialProfileServiceGameCenter, _kDECCriteriaSocialProfileServiceLinkedIn, 
+                       _kDECCriteriaSocialProfileServiceMySpace, _kDECCriteriaSocialProfileServiceSinaWeibo, 
+                       _kDECCriteriaSocialProfileServiceTencentWeibo, _kDECCriteriaSocialProfileServiceTwitter, 
+                       _kDECCriteriaSocialProfileServiceYelp, _kDECCriteriaSubtypeKey, 
+                       _kDECCriteriaTimeFriday, _kDECCriteriaTimeLast, _kDECCriteriaTimeMonday, 
+                       _kDECCriteriaTimeNext, _kDECCriteriaTimeOfInterestKey, _kDECCriteriaTimeSaturday, 
+                       _kDECCriteriaTimeSunday, _kDECCriteriaTimeThursday, _kDECCriteriaTimeTomorrow, 
+                       _kDECCriteriaTimeTuesday, _kDECCriteriaTimeWednesday, _kDECCriteriaTypeEvent, 
+                       _kDECCriteriaTypeKey, _kDECCriteriaTypeLocation, _kDECCriteriaTypeNames, 
+                       _kDECCriteriaTypePeople, _kDECCriteriaTypeUnknown, _kDECCriteriaUISemanticTagKey, 
+                       _kDECNowPlayingConsumerExpirationTimeIntervalDefault, _kDECNowPlayingConsumerMinimumDurationForConversionTimeIntervalDefault, 
+                       _kDECNowPlayingConsumerScreenLockNotification, _onLockStateChange, 
+                       _onNowPlayingChange, _qmarksSeparatedByCommas, _sqlite3_bind_nscoding, 
+                       _sqlite3_bind_nsdata, _sqlite3_bind_nsstring, _sqlite3_column_nsdata, 
+                       _sqlite3_column_nssecurecoding, _sqlite3_column_nsstring ]
+    objc-classes:    [ _DECAppPredictionFeedback, _DECAppPredictionFeedbackItem, 
+                       _DECAppPreferenceFeedback, _DECAppWidgetFeedback, _DECAsset, 
+                       _DECCachedConsumer, _DECConcurrentLIFOQueue, _DECDailyQPLoggingScheduler, 
+                       _DECEventItem, _DECFilterManager, _DECInternalConsumer, _DECInternalConsumerManager, 
+                       _DECLocationItem, _DECMusicContainer, _DECMusicStateProcessor, 
+                       _DECNameItem, _DECNowPlayingConsumer, _DECNowPlayingFeedbackProvider, 
+                       _DECOperationForWithDbLock, _DECPersonPropertyItem, _DECPredictionStore, 
+                       _DECPredictionStoreQueuedResult, _DECPredictionStoreReader, 
+                       _DECPreparedStatement, _DECQueryItem, _DECRecentShareableItem, 
+                       _DECSearchFeedbackListener, _DECSearchResult, _DECSpotlightItem, 
+                       _DECSpotlightReceiver, _DECSqliteDatabase, _DECUserAction, 
+                       _DECZkwSpotlightFeedback ]
+    objc-ivars:      [ _DECSqliteDatabase._currentExclusivity, _DECSqliteDatabase._db, 
+                       _DECSqliteDatabase._filename, _DECSqliteDatabase._isClosed, 
+                       _DECSqliteDatabase._operationQueue, _DECSqliteDatabase._queryCache, 
+                       _DECSqliteDatabase._queue, _DECSqliteDatabase._threadInQueue, 
+                       _DECSqliteDatabase._transactionDepth, _DECSqliteDatabase._transactionRolledback, 
+                       _DECSqliteDatabase._workQueue ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DuetExpertCenterVersionNumber, _DuetExpertCenterVersionString, 
+                       __DECAggregateDictionaryKey, __DECConsumerInterface, __DECDaemonDidLaunchNotificationKey, 
+                       __DECExpertInterface, __DECItemExpertScores, __DECMachServiceName, 
+                       __DECPredictionReasonDeviceName, __DECPredictionReasonLocationOfInterestType, 
+                       __DECSchedulerTrainingIdentifier, __DECServerErrorDomain, 
+                       __DECServerErrorExpertIdentifierKey, __DECServerInterface, 
+                       __DECServerTimedOutCode, __DECWeakLinkClass, __DECWeakLinkProtocol, 
+                       __DECWeakLinkStringConstant, __DECWeakLinkSymbol, __kDECFeedbackMetadataLaunchSource, 
+                       _kDECUpdatePredictionsNotificationDefaultCacheTimeout ]
+    objc-classes:    [ _DECABHelper, _DECAggregateKeys, _DECAggregateLogger, _DECAppItem, 
+                       _DECAssets2, _DECBackupHelper, _DECConsumer, _DECContextHelper, 
+                       _DECDaemon, _DECDailyTrainingScheduler, _DECDataProtectionMonitor, 
+                       _DECDeviceInfo, _DECDeviceState, _DECDuetHelper, _DECExpert, 
+                       _DECExpertManager, _DECFeedback, _DECFeedbackBuilder, _DECFeedbackLoggerManager, 
+                       _DECFeedbackProvider, _DECFilter, _DECItem, _DECLaunchInfo, 
+                       _DECLocationAppItem, _DECPaths, _DECPersonItem, _DECPrediction, 
+                       _DECPredictionCache, _DECPredictionCacheResult, _DECPredictionExpiry, 
+                       _DECPredictionItem, _DECPredictionSet, _DECRankBuilder, _DECResult, 
+                       _DECRules, _DECScheduler, _DECServer, _DECServerResponder, 
+                       _DECTypes, _DECUpdatePredictionsNotification, _DECXPCObjectFactory, 
+                       _DKExpertConsumerCategory, _DKExpertFeedbackMetadataKey ]
+...

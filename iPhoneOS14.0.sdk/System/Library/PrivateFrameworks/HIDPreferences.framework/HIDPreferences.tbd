@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           59D2105D-C78A-30FE-AA9A-0A5167137C76
+  - target:          arm64e-ios
+    value:           CEC1ACF2-19B9-381A-9728-7E9605CF15A3
+install-name:    '/System/Library/PrivateFrameworks/HIDPreferences.framework/HIDPreferences'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HIDPreferencesCopy, _HIDPreferencesCopyDomain, _HIDPreferencesCopyMultiple, 
+                       _HIDPreferencesSet, _HIDPreferencesSetDomain, _HIDPreferencesSetMultiple, 
+                       _HIDPreferencesSynchronize, _HIDPreferencesVersionNumber, 
+                       _HIDPreferencesVersionString ]
+    objc-classes:    [ HIDPreferences, HIDPreferencesHelperClient, HIDPreferencesHelperListener ]
+...

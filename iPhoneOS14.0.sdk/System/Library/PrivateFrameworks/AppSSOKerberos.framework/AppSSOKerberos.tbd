@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           116E70E3-7BF3-3373-ADA8-53289AEB2328
+  - target:          arm64e-ios
+    value:           83486FC6-347D-391C-AC37-D2870ABC79A5
+install-name:    '/System/Library/PrivateFrameworks/AppSSOKerberos.framework/AppSSOKerberos'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kSOKerberosAttributeValueNoSiteCode, _kSOKerberosNotificationADPasswordChanged, 
+                       _kSOKerberosNotificationConfigRemoved, _kSOKerberosNotificationConnectionCompleted, 
+                       _kSOKerberosNotificationGotNewCredential, _kSOKerberosNotificationInternalNetworkAvailable, 
+                       _kSOKerberosNotificationInternalNetworkNotAvailable, _kSOKerberosNotificationLocalPasswordSynced, 
+                       _kSOKerberosNotificationPasswordChangedWithPasswordSync, _kSOKerberosNotificationUserSignedOut, 
+                       _kSOKerberosOperationAttributeDelayUserSetupCleared, _kSOKerberosOperationAttributeForce, 
+                       _kSOKerberosOperationAttributeGSSCredUUID, _kSOKerberosOperationAttributeHomeDirectory, 
+                       _kSOKerberosOperationAttributeHostName, _kSOKerberosOperationAttributeHostSuffixLength, 
+                       _kSOKerberosOperationAttributeIsDefaultRealm, _kSOKerberosOperationAttributeLastLoginDate, 
+                       _kSOKerberosOperationAttributeLocalPasswordChangedDate, _kSOKerberosOperationAttributeNetworkAvailable, 
+                       _kSOKerberosOperationAttributePasswordChangedDate, _kSOKerberosOperationAttributePasswordExpiresDate, 
+                       _kSOKerberosOperationAttributeRealm, _kSOKerberosOperationAttributeSiteCode, 
+                       _kSOKerberosOperationAttributeSiteCodeCache, _kSOKerberosOperationAttributeUPN, 
+                       _kSOKerberosOperationAttributeUserCancelledLogin, _kSOKerberosOperationAttributeUserName, 
+                       _kSOKerberosOperationAttributeVerbose, _kSOKerberosOperationChangePassword, 
+                       _kSOKerberosOperationGetCredentialUUID, _kSOKerberosOperationGetDefaultRealm, 
+                       _kSOKerberosOperationGetRealmForHost, _kSOKerberosOperationGetRealmInfo, 
+                       _kSOKerberosOperationGetSiteCode, _kSOKerberosOperationLogin, 
+                       _kSOKerberosOperationLogout, _kSOKerberosOperationResetKeychainChoice, 
+                       _kSOKerberosOperationResetRealm, _kSOKerberosOperationSaveAttributes, 
+                       _kSiteCodeCacheLazyRefreshAge, _kSiteCodeCacheMaxAge ]
+    objc-classes:    [ SOADSiteDiscovery, SOAsynchronousLDAPOperation, SOAsynchronousOperation, 
+                       SOAuthorizationWrapper, SODNSSRVQuery, SODNSSRVResponse, SOKerberosAuthentication, 
+                       SOKerberosContext, SOKerberosCredential, SOKerberosExtensionData, 
+                       SOKerberosExtensionUserData, SOKerberosFileManager, SOKerberosHeimdalPluginSettings, 
+                       SOKerberosHelper, SOKerberosRealmSettings, SOKeychainHelper, 
+                       SOLDAPHelper, SONetLogonParser, SONetworkIdentity, SORealmSettingManager, 
+                       SOSiteCode, SOSmartcard ]
+...

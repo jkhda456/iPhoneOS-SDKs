@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D7B81D9B-A673-3A0D-894E-599141E82499
+  - target:          armv7s-ios
+    value:           2FAFFF59-896F-3B3B-BE65-A96E556F8E8B
+  - target:          arm64-ios
+    value:           E10D62E4-E072-3D10-9C62-3237351A727C
+  - target:          arm64e-ios
+    value:           B43DAD15-E2F5-310A-9464-671D8896BA2E
+install-name:    '/System/Library/PrivateFrameworks/UserFS.framework/UserFS'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ UserFSFile, UserFSFolder, UserFSItem, UserFSStream, UserFSVolume ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ LiveFSUSBLocalStorageClient ]
+...

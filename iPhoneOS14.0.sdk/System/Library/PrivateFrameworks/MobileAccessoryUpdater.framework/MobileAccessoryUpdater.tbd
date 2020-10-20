@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           86E943F8-6D3E-30E2-8A29-968BD132CE4E
+  - target:          armv7s-ios
+    value:           9879396F-EE5D-3FED-9F93-EB73F0501648
+  - target:          arm64-ios
+    value:           A25F6555-FCD7-38F4-AEDB-4922E8C5A029
+  - target:          arm64e-ios
+    value:           DD7C8294-85F6-365E-8878-AF1AB760AFE3
+install-name:    '/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/MobileAccessoryUpdater'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FUDError, _FudLog, _FudLogCopyMessages, _FudLogInit, _FudLogSetMode, 
+                       _FudLogger, _FudLogv, _MAUError, _addObjectToXpcDictionary, 
+                       _archivedKeyedData, _copyEntitlementsForPid, _dumpXPCObject, 
+                       _getOperationNameFromCode, _getProgressWeightsFromPluginInfo, 
+                       _kMAU_STEP_APPLY, _kMAU_STEP_BOOTSTRAP, _kMAU_STEP_COMPLETE_INFO_KEY_NEXT_STEP, 
+                       _kMAU_STEP_CONTINUE, _kMAU_STEP_DONE, _kMAU_STEP_DOWNLOAD, 
+                       _kMAU_STEP_END, _kMAU_STEP_FIND, _kMAU_STEP_FINISH, _kMAU_STEP_PREPARE, 
+                       _metadataTLVGetNext, _objectFinalizer, _objectFromXpcDictionary, 
+                       _parseSuperBinaryAndPayloadHeaders, _parseSuperBinaryHeader, 
+                       _printSuperBinaryHeader, _sendMessageToExternalClient, _sendMessageToInternalClient, 
+                       _sendReplyMessageToClient, _sendReplyMessageToExternalClient, 
+                       _sendReplyMessageToInternalClient, _unarchivedKeyedObject, 
+                       _updateSuperBinaryPayload ]
+    objc-classes:    [ AUDAccessory, AUServiceAdapter, AUServiceManager, FudInternalConnection, 
+                       FudPersonalizationObjectInfo, FudPersonalizationRequest, FudProgressWeights, 
+                       FudXPCConnection, MobileAccessoryUpdater, ServiceDelegate ]
+    objc-ivars:      [ FudInternalConnection.clientIdentifier, FudInternalConnection.didStop, 
+                       FudInternalConnection.handlerQueue, FudInternalConnection.messageHandler, 
+                       FudInternalConnection.pendingRequests, FudProgressWeights.applyWeight, 
+                       FudProgressWeights.finishWeight, FudProgressWeights.prepareWeight, 
+                       FudXPCConnection.clientIdentifier, FudXPCConnection.connection, 
+                       FudXPCConnection.connectionQueue, FudXPCConnection.didStop, 
+                       FudXPCConnection.messageHandler, FudXPCConnection.notifyToken, 
+                       FudXPCConnection.replyQueue, FudXPCConnection.sessionQueue ]
+...

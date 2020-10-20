@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           705D07D6-5284-38C7-AC16-1A82BBBCCDE3
+  - target:          armv7s-ios
+    value:           79472EC8-0455-3EFD-8B99-12257E63E6CB
+  - target:          arm64-ios
+    value:           AC522169-0D9C-3CC8-A744-2728F872D71D
+  - target:          arm64e-ios
+    value:           E473E0CD-3285-39E1-8E39-DB217BCC9C86
+install-name:    '/System/Library/PrivateFrameworks/iOSScreenSharing.framework/iOSScreenSharing'
+current-version: 1.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SS_SendStatusBarTapToScreenSharingServer ]
+    objc-classes:    [ ViewServiceHelper ]
+...

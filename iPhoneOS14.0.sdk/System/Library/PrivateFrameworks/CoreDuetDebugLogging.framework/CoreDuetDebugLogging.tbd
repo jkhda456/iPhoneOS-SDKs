@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           11B00977-40A7-3691-A334-B44C54111987
+  - target:          armv7s-ios
+    value:           30FAF3A6-660F-39D7-8983-65D3DD371DAC
+  - target:          arm64-ios
+    value:           6E6F179A-AD41-3072-82F6-68E877577ADA
+  - target:          arm64e-ios
+    value:           EC7D4897-9490-3565-8FA0-ECCC454C84CC
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetDebugLogging.framework/CoreDuetDebugLogging'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CDDSetError, _CDDebugErrorStrings ]
+    objc-classes:    [ CDDebug ]
+...

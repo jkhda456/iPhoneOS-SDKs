@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           30A55624-E61B-3AF7-A03F-DF1676EC2416
+  - target:          arm64e-ios
+    value:           E061DD4E-0679-3158-9ED9-83A2E383D8EC
+install-name:    '/System/Library/PrivateFrameworks/PowerUI.framework/PowerUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PowerUIAudioAccessorySmartChargeDeadlineHasChangedNote, _PowerUIAudioAccessorySmartChargeStatusHasChangedNote, 
+                       _PowerUIErrorDomain, _PowerUISmartChargeClientCallisto, _PowerUISmartChargeClientPTOTool, 
+                       _PowerUISmartChargeClientSettings, _PowerUISmartChargeStatusHasChangedNote, 
+                       _PowerUIVersionNumber, _PowerUIVersionString, _btConnectionUpdateCallback, 
+                       _decodeAccessoryMessage, _incomingCustomMessageCallback, _kAnalyticsEligibleForIdleBatteryLevelKey, 
+                       _kAnalyticsEstimatedUsableEligibleDuration, _kAnalyticsFullChargeDurationKey, 
+                       _kAnalyticsIdleBatteryLevelKey, _kAnalyticsIdleDurationKey, 
+                       _kAnalyticsPluginDurationKey, _kAnalyticsTotalEligibleDuration, 
+                       _kAnalyticsUnderChargeAvoidable, _kAnalyticsUnderChargeTLC, 
+                       _kAnalyticsUnderChargeUnavoidable, _kDefaultsDomainAudioAccessories, 
+                       _prepare9ByteMessage, _sessionEventCallback ]
+    objc-classes:    [ PowerUIAccessoryStatus, PowerUIAlarmSignalMonitor, PowerUIAudioAccessorySmartChargeManager, 
+                       PowerUIBatteryMitigationManager, PowerUIBluetoothHandler, 
+                       PowerUIBluetoothHandlerFake, PowerUICalendarSignalMonitor, 
+                       PowerUIDefines, PowerUIDesktopModePredictor, PowerUILPMNotifier, 
+                       PowerUILocationSignalMonitor, PowerUIMLAudioAccessoryModelPredictor, 
+                       PowerUIMLTwoStageModelPredictor, PowerUIModelPredictionContainer, 
+                       PowerUIPredictorHelper, PowerUISleepWakeMonitor, PowerUISmartChargeClient, 
+                       PowerUISmartChargeClientAudioAccessories, PowerUISmartChargeManager, 
+                       PowerUISmartChargeManagerUnsupported, PowerUISmartChargeUtilities, 
+                       PowerUITrialManager, PowerUIUPOManager, PowerUIWakeRequestSignalMonitor, 
+                       PowerUIWalletSignalMonitor ]
+...

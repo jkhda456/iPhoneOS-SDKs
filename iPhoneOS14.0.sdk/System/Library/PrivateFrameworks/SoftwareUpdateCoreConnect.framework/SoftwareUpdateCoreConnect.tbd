@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FC8E05BE-1DAF-38C1-9A43-E175DD765D73
+  - target:          arm64e-ios
+    value:           8A1AB1C0-5DEE-306F-B8E6-53F8E811ACE3
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateCoreConnect.framework/SoftwareUpdateCoreConnect'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kSUCoreConnectClientIDTypeAny, _kSUCoreConnectMonitorReplyErrorKey, 
+                       _kSUCoreConnectMonitorReplyMessageKey ]
+    objc-classes:    [ SUCoreConnectClient, SUCoreConnectClientPolicy, SUCoreConnectClientProxy, 
+                       SUCoreConnectConstants, SUCoreConnectMessage, SUCoreConnectServer, 
+                       SUCoreConnectServerPolicy, SUCoreConnectVersion ]
+...

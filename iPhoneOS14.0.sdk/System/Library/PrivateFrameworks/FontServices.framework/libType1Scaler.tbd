@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           075C1C63-FDC4-3E94-ABC6-A648497E314B
+  - target:          armv7s-ios
+    value:           7A637D11-54C7-34F7-AAAA-C269F291920C
+  - target:          arm64-ios
+    value:           969D1847-1866-31DD-A667-AC530C35D8B9
+  - target:          arm64e-ios
+    value:           B9CA99DB-CD2D-3E11-BB75-0DF0D71B0575
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libType1Scaler.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _T1GetPSFontEncoding, _T1GetSynthesisData, _T1ReleaseSynthesisData, 
+                       _Type1ScalerOpen ]
+...

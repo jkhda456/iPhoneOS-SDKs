@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AB4F2105-D168-33C0-9669-AD65B8387D8E
+  - target:          arm64e-ios
+    value:           DF9984FA-50F6-389C-91D6-FAE83EB7CC33
+install-name:    '/System/Library/PrivateFrameworks/FeedbackLogger.framework/FeedbackLogger'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FLErrorDomain, _FLGetBootSessionUUID, _FLSignpostLoggingInit, 
+                       _FL_LOG_SIGNPOSTS, _FeedbackLoggerVersionNumber, _FeedbackLoggerVersionString, 
+                       _flLogForObject ]
+    objc-classes:    [ BatchMetadata, FLLogger, FLLoggingContext, FLSQLitePersistence ]
+...

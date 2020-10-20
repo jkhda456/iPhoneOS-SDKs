@@ -1,0 +1,76 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           841A386E-F894-3369-B969-DAB9752DA9F8
+  - target:          armv7s-ios
+    value:           FBCCCE68-4112-3D48-8CF6-BEC38D2B13BA
+  - target:          arm64-ios
+    value:           17067558-1F74-3097-8650-D55646ED6F27
+  - target:          arm64e-ios
+    value:           DBDB35A4-CE83-34EA-AFCC-F6D9235DD7A3
+install-name:    '/System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _EARRecognitionStatisticAcousticProfileGenerationTime, _EARRecognitionStatisticAcousticProfileLoadingTime, 
+                       _EARRecognitionStatisticFirstPassCpuTime, _EARRecognitionStatisticLmeLoadingTime, 
+                       _EARRecognitionStatisticProcessEmittingCpuTime, _EARRecognitionStatisticProcessEmittingWallTime, 
+                       _EARRecognitionStatisticProcessNonemittingCpuTime, _EARRecognitionStatisticProcessNonemittingWallTime, 
+                       _EARRecognitionStatisticPruneActiveTokensCpuTime, _EARRecognitionStatisticPruneActiveTokensWallTime, 
+                       _EARRecognitionStatisticSecondPassCpuTime ]
+    objc-classes:    [ _EARLMLanguageModel ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EARCCCommandTaggingResultGetCommandTaggings, _EARCCommandTaggerCreate, 
+                       _EARCCommandTaggerCreateCommandTaggingResults, _EARCCommandTaggerGetCommandPhraseForIndex, 
+                       _EARCCommandTaggerGetParameterTagForIndex, _EARCCommandTaggerIsCommandPhraseTag, 
+                       _EARCCommandTaggerIsParameterTag, _EARCCommandTaggingGetCommandId, 
+                       _EARCCommandTaggingGetTagSequence, _EARCCommandTaggingTokensForTag, 
+                       _EARCSpeechRecognitionAudioBufferAddAudioSampleData, _EARCSpeechRecognitionAudioBufferAddAudioSamples, 
+                       _EARCSpeechRecognitionAudioBufferCancelRecognition, _EARCSpeechRecognitionAudioBufferEndAudio, 
+                       _EARCSpeechRecognitionGetTokens, _EARCSpeechRecognitionTokenGetConfidence, 
+                       _EARCSpeechRecognitionTokenGetEnd, _EARCSpeechRecognitionTokenGetSilenceStart, 
+                       _EARCSpeechRecognitionTokenGetStart, _EARCSpeechRecognitionTokenGetTokenName, 
+                       _EARCSpeechRecognitionTokenHasSpaceAfter, _EARCSpeechRecognizerCreate, 
+                       _EARCSpeechRecognizerCreateRecognitionBuffer, _EARCSpeechRecognizerSetBluetoothDeviceId, 
+                       _EARCSpeechRecognizerSetConcatenateUtterances, _EARCSpeechRecognizerSetDetectUtterances, 
+                       _EARCSpeechRecognizerSetDeviceId, _EARCSpeechRecognizerSetEndpointStart, 
+                       _EARCSpeechRecognizerSetFarField, _EARCSpeechRecognizerSetHighPriority, 
+                       _EARCSpeechRecognizerSetInputOrigin, _EARCSpeechRecognizerSetJitProfileData, 
+                       _EARCSpeechRecognizerSetLeftContext, _EARCSpeechRecognizerSetLeftContextText, 
+                       _EARCSpeechRecognizerSetMaximumRecognitionDuration, _EARCSpeechRecognizerSetRecognitionConfidenceSubtraction, 
+                       _EARCSpeechRecognizerSetRecognitionReplacements, _EARCSpeechRecognizerSetRecognizeEagerCandidates, 
+                       _EARCSpeechRecognizerSetRefTranscriptForErrorBlaming, _EARCSpeechRecognizerSetSessionId, 
+                       _EARCSpeechRecognizerSetUserId, _EARCSpeechRecognizerSetUserProfileData, 
+                       _EARCSpeechRecognizerUpdateJitProfileData, _EARCSpeechRecognizerUpdateUserProfileData, 
+                       _EARCUserProfileAddWord, _EARCUserProfileCopyDataProfile, 
+                       _EARCUserProfileCopyPronunciationsForOrthography, _EARCUserProfileCopySanitizedString, 
+                       _EARCUserProfileCreate, _EARCUserProfileReadDataProfile, _EARCUserProfileRemoveAllWords, 
+                       _EARCUserProfileSignalEndOfUserData, _EARCWordPartCreate, 
+                       _EARCWordPartGetFrequency, _EARCWordPartGetOrthography, _EARCWordPartGetPronunciations, 
+                       _EARCWordPartGetTagName, _EARErrorDomain, _EARLanguageDetectorRequestContextFromJson, 
+                       _EARLanguageDetectorRequestContextFromJsonStr, _EARRecognitionStatisticAverageActiveTokensPerFrame, 
+                       _EARRecognitionStatisticRecogCpuTime, _QuasarCPDecTranslator_delete, 
+                       _QuasarCPDecTranslator_new, _QuasarCPDecTranslator_translate, 
+                       _QuasarCSystemConfig_delete, _QuasarCSystemConfig_new, _QuasarCSystemConfig_readJsonFile, 
+                       _QuasarC_setLogLevel ]
+    objc-classes:    [ EARAudioReader, EARAudioResult, EARAudioResultsGenerator, 
+                       EARCaesuraSilencePosteriorGenerator, EARClientSilenceFeatures, 
+                       EARKeywordFinder, EARKeywordFinderResult, EARPSRAudioProcessor, 
+                       EARSyncPSRAudioProcessor, EARTokenPronounciations, EMTResult, 
+                       EMTToken, EMTTokenizer, EMTTranslator, _EARAcousticFeature, 
+                       _EARAppLmData, _EARAudioAnalytics, _EARCombinedResult, _EARCommandTagger, 
+                       _EARCommandTagging, _EARCommandTaggingResult, _EARCustomLMBuilder, 
+                       _EARDefaultServerEndpointFeatures, _EAREndpointFeatures, _EAREndpointer, 
+                       _EARFormatter, _EARLanguageDetector, _EARLanguageDetectorAudioBuffer, 
+                       _EARLanguageDetectorLoggingInfo, _EARLanguageDetectorRequestContext, 
+                       _EARLanguageDetectorResult, _EARLanguageModel, _EARLatticeMitigatorResult, 
+                       _EARLmData, _EARLmEvaluator, _EARLmHandle, _EARLmLoader, _EARLmModel, 
+                       _EARNnetUtil, _EAROovToken, _EARPlsParser, _EARResultCombiner, 
+                       _EARSpeechModelInfo, _EARSpeechRecognition, _EARSpeechRecognitionAudioBuffer, 
+                       _EARSpeechRecognitionResult, _EARSpeechRecognitionResultPackage, 
+                       _EARSpeechRecognitionToken, _EARSpeechRecognizer, _EARSyncResultStreamHelper, 
+                       _EARSyncSpeechRecognizer, _EARSystemResult, _EARTextNormalization, 
+                       _EARTokenizer, _EARTransformUtil, _EARUserProfile, _EARUserProfileBuilder, 
+                       _EARWordPart ]
+...

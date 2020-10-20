@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           9D010F64-ADDD-3FA4-9A42-3813E8250708
+  - target:          armv7s-ios
+    value:           C3AB7182-3F92-3EFA-A036-61C8F1118CA9
+  - target:          arm64-ios
+    value:           C4B76AE2-A578-3857-B19B-17E7A82E7309
+  - target:          arm64e-ios
+    value:           C5A80AB0-5A0F-30E8-BEE1-7F099B268854
+install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib'
+allowable-clients:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    clients:         [ vecLib ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _quadrature_integrate ]
+...

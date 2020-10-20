@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C7CE7A42-6947-3B8C-9A6B-FBF254C0D114
+  - target:          arm64e-ios
+    value:           BDED47A6-A74A-35EA-81C0-CE097B24BAD0
+install-name:    '/System/Library/PrivateFrameworks/AdID.framework/AdID'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ADSimulatedCrashKillCode_InternalInconsistency, _AdIDVersionNumber, 
+                       _AdIDVersionString, _kVectorSignature, _kVectorsFileSignature ]
+    objc-classes:    [ ADAMSBagManager, ADAdTrackingSchedulingManager, ADAppUsageVectorManager, 
+                       ADAppVector, ADAppVectorsFile, ADClientDPIDManager, ADDeviceKnowledgeManager, 
+                       ADIDManagerService, ADJingleOptOutRequest, ADJingleRequest, 
+                       ADJingleRequestManager, ADJingleSegmentRequest, ADMobileAssets, 
+                       ADPersonalizedAdsService, ADPersonalizedAdsStatusManager, 
+                       ADSegmentDataManager ]
+...

@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           42F869F4-A791-369C-B1BA-3DCFA6BAA502
+  - target:          armv7s-ios
+    value:           DD9F2201-9032-35CC-9383-2820BBBC900C
+  - target:          arm64-ios
+    value:           C60810E1-41E5-3253-BCB2-C6AB0D2B8126
+  - target:          arm64e-ios
+    value:           2044807C-65BD-3E78-81D3-8CFF4B96DC8C
+install-name:    '/System/Library/PrivateFrameworks/FlightUtilities.framework/FlightUtilities'
+current-version: 140
+reexported-libraries:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    libraries:       [ '/System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore' ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _FUFactoryProvider_Default, _FUFactoryProvider_FlightStats, 
+                       _FUFactoryProvider_FlyteComm ]
+    objc-classes:    [ FUAirline, FUAirport, FUFlight, FUFlightFactory, FUFlightFactory_FlightStats, 
+                       FUFlightFactory_FlyteComm, FUFlightLeg, FUFlightStateMonitor, 
+                       FUFlightStep, FUFlightUpdateInformation, FUStepTime, FUUtils ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ FUFlightPreviewController, FUFlightView, FUFlightViewController ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           093C905E-A970-3596-AA4E-15CFC4FB179E
+  - target:          arm64e-ios
+    value:           233C2B80-819A-3A7D-B6C5-9832C115AC5C
+install-name:    '/System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore'
+current-version: 140
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FUFactoryProvider_Default, _FUFactoryProvider_Parsec ]
+    objc-classes:    [ FUAirline, FUAirport, FUFlight, FUFlightFactory, FUFlightLeg, 
+                       FUFlightStep, FUStepTime, FUUtils ]
+    objc-ivars:      [ FUFlightStep._delayFromSchedule ]
+...

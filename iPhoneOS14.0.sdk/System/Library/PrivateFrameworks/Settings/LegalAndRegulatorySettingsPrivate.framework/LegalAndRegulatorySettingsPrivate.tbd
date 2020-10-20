@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BA106374-4A50-3D72-BDBC-B81F9602332E
+  - target:          arm64e-ios
+    value:           3394C186-76A2-3646-8B2C-3CECD52CFBB4
+install-name:    '/System/Library/PrivateFrameworks/Settings/LegalAndRegulatorySettingsPrivate.framework/LegalAndRegulatorySettingsPrivate'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryC012topLevelViewG0So06UIViewG0CyFZ', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryC012topLevelViewG0So06UIViewG0CyFZTq', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCACycfC', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCACycfc', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCMa', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCMn', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCN', 
+                       '_$s33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactoryCfD' ]
+    objc-classes:    [ _TtC33LegalAndRegulatorySettingsPrivate25LRSPViewControllerFactory ]
+...

@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1DDC12CD-1A16-3689-955B-616B40CF7E34
+  - target:          armv7s-ios
+    value:           046AC941-DAC6-3321-B280-56489B37971C
+  - target:          arm64-ios
+    value:           776D121A-9ECA-33B5-9C3C-6AA7382589EA
+  - target:          arm64e-ios
+    value:           5EAE44A1-94F6-3454-9ADB-8CE817EEBB00
+install-name:    '/System/Library/PrivateFrameworks/FMCoreUI.framework/FMCoreUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ FMDynamicTypeButton, FMDynamicTypeLabel, FMDynamicTypeTextField, 
+                       FMDynamicTypeTextView ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FMShortcutItemIdentifierKey ]
+    objc-classes:    [ FMAccuracyOverlay, FMAnnotationView, FMAppShortcutManager, 
+                       FMAttributedStringRenderer, FMAttributedStringRendererOptions, 
+                       FMBlurView, FMBorderedButton, FMBorderedField, FMBorderedView, 
+                       FMBottomPaneSegue, FMDistanceBadge, FMFixedSizeView, FMHairlineConstraint, 
+                       FMHorizontalRule, FMLeftPaneSegue, FMMapGestureRecognizer, 
+                       FMMapView, FMObservingCell, FMPaneSegue, FMRightPaneSegue, 
+                       FMRule, FMSlidingPaneViewController, FMTitleView, FMTitleViewCenteringNavigationBar, 
+                       FMTopPaneSegue, FMVerticalRule, FMViewController, FM_Workaround_30408319_Button ]
+...

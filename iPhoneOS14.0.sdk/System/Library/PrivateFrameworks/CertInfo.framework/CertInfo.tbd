@@ -1,0 +1,62 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EE732E2E-5499-3550-8441-F1308D4B74BA
+  - target:          armv7s-ios
+    value:           915AF2EC-228E-300B-B4D6-1EA0F648FB25
+  - target:          arm64-ios
+    value:           7A33973C-DD69-364D-9A79-90C03D024899
+  - target:          arm64e-ios
+    value:           F4F5E14E-1240-3474-A3D5-4F364932F76F
+install-name:    '/System/Library/PrivateFrameworks/CertInfo.framework/CertInfo'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kCertInfoSheetViewControllerDismissedNotification, _kCertificateViewControllerDismissedNotification ]
+    objc-classes:    [ CertInfoBasicTrustDescription, CertInfoCertificateDetailsController, 
+                       CertInfoCertificateDetailsView, CertInfoCertificateHeaderCell, 
+                       CertInfoCertificateListCellContentView, CertInfoCertificateListController, 
+                       CertInfoCertificateListTableViewCell, CertInfoCertificateSummaryDescriptionCell, 
+                       CertInfoCertificateSummaryView, CertInfoDescriptionCellContentView, 
+                       CertInfoGradientLabel, CertInfoSheetViewController, CertInfoTrustDetailsView, 
+                       CertInfoTrustDetailsViewController, CertInfoTrustSummaryController, 
+                       CertUICertificatePropertiesInfo, CertUIItemDetail, CertUIItemDetailsSummaryCell, 
+                       CertUIItemSummaryCell, CertUIKeyDataCell, CertUIKeyValueCell, 
+                       CertUIKeyValueView, CertificateDetailsSummaryCell, CertificateDetailsViewController, 
+                       CertificateSummaryTableViewCell, CertificateViewController, 
+                       TrustCertificateViewController, _CertInfoActionButton, _CertInfoGradientLabel, 
+                       _CertInfoTrustSummaryHeaderCell ]
+    objc-ivars:      [ CertInfoCertificateDetailsController._delegate, CertInfoCertificateDetailsController._doneButton, 
+                       CertInfoCertificateDetailsController._sectionDictionaries, 
+                       CertInfoCertificateDetailsController._showsDoneButton, CertInfoCertificateDetailsView._tableSections, 
+                       CertInfoCertificateDetailsView._tableView, CertInfoCertificateHeaderCell._certificateImage, 
+                       CertInfoCertificateHeaderCell._notTrustedGradient, CertInfoCertificateHeaderCell._subtitleLabel, 
+                       CertInfoCertificateHeaderCell._titleLabel, CertInfoCertificateHeaderCell._trustedLabel, 
+                       CertInfoCertificateListCellContentView._expirationLabel, CertInfoCertificateListCellContentView._subtitleLabel, 
+                       CertInfoCertificateListCellContentView._titleLabel, CertInfoCertificateListController._description, 
+                       CertInfoCertificateListTableViewCell._certificateContentView, 
+                       CertInfoCertificateSummaryDescriptionCell._customContentView, 
+                       CertInfoCertificateSummaryView._descriptionCell, CertInfoCertificateSummaryView._expirationDate, 
+                       CertInfoCertificateSummaryView._headerCell, CertInfoCertificateSummaryView._moreDetailsSelectedBlock, 
+                       CertInfoCertificateSummaryView._purpose, CertInfoCertificateSummaryView._tableView, 
+                       CertInfoCertificateSummaryView._trustSubtitle, CertInfoCertificateSummaryView._trustTitle, 
+                       CertInfoDescriptionCellContentView._idealHeight, CertInfoDescriptionCellContentView._labelsAndValues, 
+                       CertInfoDescriptionCellContentView._sizes, CertInfoDescriptionCellContentView._sizesCount, 
+                       CertInfoGradientLabel._font, CertInfoGradientLabel._gradient, 
+                       CertInfoGradientLabel._patternColor, CertInfoGradientLabel._text, 
+                       CertInfoSheetViewController._delegate, CertInfoSheetViewController._serviceName, 
+                       CertInfoSheetViewController._trustExpiration, CertInfoSheetViewController._trustProperties, 
+                       CertInfoSheetViewController._trustPurpose, CertInfoSheetViewController._trustSubtitle, 
+                       CertInfoSheetViewController._trustTitle, CertInfoTrustDetailsView._certificateViews, 
+                       CertInfoTrustDetailsView._currentCertView, CertInfoTrustDetailsViewController._trustProperties, 
+                       CertInfoTrustSummaryController._delegate, CertInfoTrustSummaryController._description, 
+                       CertInfoTrustSummaryController._descriptionCell, CertInfoTrustSummaryController._doneButton, 
+                       CertInfoTrustSummaryController._headerCell, CertInfoTrustSummaryController._showsDoneButton, 
+                       _CertInfoGradientLabel._checkImage, _CertInfoGradientLabel._font, 
+                       _CertInfoGradientLabel._patternColor, _CertInfoGradientLabel._text, 
+                       _CertInfoTrustSummaryHeaderCell._actionButton, _CertInfoTrustSummaryHeaderCell._certificateImage, 
+                       _CertInfoTrustSummaryHeaderCell._notTrustedGradient, _CertInfoTrustSummaryHeaderCell._subtitleLabel, 
+                       _CertInfoTrustSummaryHeaderCell._titleLabel, _CertInfoTrustSummaryHeaderCell._trusted, 
+                       _CertInfoTrustSummaryHeaderCell._trustedLabel ]
+...

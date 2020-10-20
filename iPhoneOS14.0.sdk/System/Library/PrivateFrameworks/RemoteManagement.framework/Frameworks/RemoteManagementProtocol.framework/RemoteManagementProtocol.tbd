@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C40B8EE5-46CB-3D48-9369-138884F41086
+  - target:          arm64e-ios
+    value:           D5696FC7-C297-3878-907D-772E7AE967A1
+install-name:    '/System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementProtocol.framework/RemoteManagementProtocol'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RMProtocolChannelDevice, _RMProtocolChannelUser, _RMProtocolCommandRequest_Status_busy, 
+                       _RMProtocolCommandRequest_Status_completed, _RMProtocolCommandRequest_Status_failed, 
+                       _RMProtocolCommandRequest_Status_ready, _RMProtocolEndpointCommand, 
+                       _RMProtocolEndpointDeclarationActivation, _RMProtocolEndpointDeclarationAsset, 
+                       _RMProtocolEndpointDeclarationConfiguration, _RMProtocolEndpointDeclarationItems, 
+                       _RMProtocolEndpointEnroll, _RMProtocolEndpointEnrollment, 
+                       _RMProtocolEndpointOrganizationDetails, _RMProtocolEndpointServerCapabilities, 
+                       _RMProtocolEndpointStatus, _RMProtocolEndpointTokens, _RMProtocolEndpointWellknown, 
+                       _RMProtocolEnrollResponse_PushEnvironment_development, _RMProtocolEnrollResponse_PushEnvironment_production, 
+                       _RMProtocolErrorResponse_Code_clientVersionInvalid, _RMProtocolErrorResponse_Code_deviceAuthInvalid, 
+                       _RMProtocolErrorResponse_Code_deviceAuthMissing, _RMProtocolErrorResponse_Code_enrollmentNotAllowed, 
+                       _RMProtocolErrorResponse_Code_enrollmentTokenInvalid, _RMProtocolErrorResponse_Code_internalError, 
+                       _RMProtocolErrorResponse_Code_jsonInvalid, _RMProtocolErrorResponse_Code_jsonObjectInvalid, 
+                       _RMProtocolErrorResponse_Code_missingRequestBody, _RMProtocolErrorResponse_Code_userAuthInvalid, 
+                       _RMProtocolErrorResponse_Code_userAuthMissing ]
+    objc-classes:    [ RMProtocolCommandRequest, RMProtocolCommandRequest_StatusReason, 
+                       RMProtocolCommandResponse, RMProtocolCommandResponse_Command, 
+                       RMProtocolDeclarationItemsResponse, RMProtocolDeclarationItemsResponse_DeclarationItem, 
+                       RMProtocolDeclarationItemsResponse_Declarations, RMProtocolDeclarationResponse, 
+                       RMProtocolEnrollReferralResponse, RMProtocolEnrollRequest, 
+                       RMProtocolEnrollResponse, RMProtocolErrorResponse, RMProtocolOrganizationDetails, 
+                       RMProtocolOrganizationDetailsResponse, RMProtocolOrganizationDetails_Proof, 
+                       RMProtocolPushMessage, RMProtocolServerCapabilities, RMProtocolServerCapabilitiesResponse, 
+                       RMProtocolStatusReport, RMProtocolStatusReport_Errors, RMProtocolStatusReport_StatusReason, 
+                       RMProtocolSupportedFeatures, RMProtocolSynchronizationTokens, 
+                       RMProtocolTokensResponse, RMProtocolWellKnownResponse, RMProtocolWellKnownResponse_WellKnownResponseServer ]
+...

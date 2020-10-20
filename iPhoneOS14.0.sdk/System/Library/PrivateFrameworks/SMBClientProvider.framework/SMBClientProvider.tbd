@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BC184381-5565-3D54-A8B5-C927DBF3F549
+  - target:          arm64e-ios
+    value:           B649ACE7-CA15-3F03-9CD6-C5BA956B5181
+install-name:    '/System/Library/PrivateFrameworks/SMBClientProvider.framework/SMBClientProvider'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SMBClientProviderVersionNumber, _SMBClientProviderVersionString ]
+    objc-classes:    [ SMBClientManager ]
+...

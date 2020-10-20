@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C4F38B67-16E6-376D-A311-D300C82D2816
+  - target:          arm64e-ios
+    value:           87ECE44D-1938-3A43-9D33-20B18B4D80A4
+install-name:    '/System/Library/PrivateFrameworks/ZhuGeSupport.framework/ZhuGeSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ZhuGeCopyValueWithError ]
+...

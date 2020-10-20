@@ -1,0 +1,79 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           FDB979EB-4FFB-35AE-9D99-39C70EF13C7E
+  - target:          armv7s-ios
+    value:           24DB669E-7D1B-3D20-8FCE-9816BBE40A87
+  - target:          arm64-ios
+    value:           1CC17BC6-5368-3517-9F99-ACC5E5ECB423
+  - target:          arm64e-ios
+    value:           8C0185C3-09DA-3090-9B08-B2531F8F2528
+install-name:    '/System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _XBCachesPathForSandboxPath, _XBLaunchImageProviderMessageKeySnapshotFrame, 
+                       _XBLaunchImageProviderMessageKeyWrapperContextID, _XBRecentLocalePreferenceKey, 
+                       __IOSurfacePropertyDictionaryForSize ]
+    objc-classes:    [ XBDisplaySnapshot, XBDisplaySnapshotLayer ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromXBApplicationSnapshotOnDiskFormat, _SplashBoardSubsystem, 
+                       _SplashBoardVersionNumber, _SplashBoardVersionString, _XBApplicationLaunchCompatibilityInfoPersistenceKey, 
+                       _XBApplicationLaunchImageCaarCaptureEntitlement, _XBApplicationLaunchImageServiceName, 
+                       _XBApplicationSnapshotContentTypeDescription, _XBApplicationSnapshotContentTypeMaskDescription, 
+                       _XBApplicationSnapshotContentTypeMaskForContentType, _XBCachedNSHomeDirectory, 
+                       _XBCachesPathForApplicationInfo, _XBDefaultLaunchConfigurationKey, 
+                       _XBDefaultLaunchStoryboardKey, _XBDeleteLegacyCachesSnapshotPathForNonSandboxedApplicationIfNeeded, 
+                       _XBDeleteLegacyCachesSnapshotPathForNonSandboxedApplicationsIfNeeded, 
+                       _XBDeleteLegacyCachesSnapshotPathForSandboxedApplicationIfNeeded, 
+                       _XBEnsureDirectoryExistsAtPath, _XBEnumerateStatusBarStates, 
+                       _XBEnumerateStatusBarStatesMatchingMask, _XBImageOrientationDescription, 
+                       _XBImageOrientationForInterfaceOrientation, _XBImageOrientationForInterfaceOrientationRotation, 
+                       _XBImageOrientationForRotationDegrees, _XBInterfaceOrientationForAffineTransform, 
+                       _XBInterfaceOrientationForString, _XBInterfaceOrientationMaskForInterfaceOrientation, 
+                       _XBInterfaceOrientationMaskForInterfaceOrientationPair, _XBInterfaceOrientationStringLandscape, 
+                       _XBInterfaceOrientationStringLandscapeLeft, _XBInterfaceOrientationStringLandscapeRight, 
+                       _XBInterfaceOrientationStringPortrait, _XBInterfaceOrientationStringPortraitUpsideDown, 
+                       _XBInterfaceOrientationsAreOrthogonal, _XBInvalidContextId, 
+                       _XBIsInternalInstall, _XBIsSymbolicLinkAtPath, _XBLaunchConfigurationColorNameKey, 
+                       _XBLaunchConfigurationDefinitionsKey, _XBLaunchConfigurationIdentifierKey, 
+                       _XBLaunchConfigurationImageNameKey, _XBLaunchConfigurationImageRespectsSafeAreaInsetsKey, 
+                       _XBLaunchConfigurationNameKey, _XBLaunchConfigurationNavigationBarKey, 
+                       _XBLaunchConfigurationTabBarKey, _XBLaunchConfigurationToolbarKey, 
+                       _XBLaunchConfigurationsKey, _XBLaunchImageProviderMessageKeyCaptureInfo, 
+                       _XBLaunchImageProviderMessageKeyCompatibilityInfo, _XBLaunchImageProviderMessageKeyContextID, 
+                       _XBLaunchImageProviderMessageKeyCreateCaptureInfo, _XBLaunchImageProviderMessageKeyError, 
+                       _XBLaunchImageProviderMessageKeyLaunchRequest, _XBLaunchImageProviderMessageKeyMessageType, 
+                       _XBLaunchInterfaceTypeName, _XBLaunchStoryboardClientBundleIdentifierKey, 
+                       _XBLaunchStoryboardDefinitionsKey, _XBLaunchStoryboardErrorDomain, 
+                       _XBLaunchStoryboardFileKey, _XBLaunchStoryboardIdentifierKey, 
+                       _XBLaunchStoryboardNameKey, _XBLaunchStoryboardsKey, _XBLegacyCachesSnapshotPathForNonSandboxedSystemApplicationsExists, 
+                       _XBLogCapture, _XBLogCommon, _XBLogDaemonLifecycle, _XBLogFetchRequests, 
+                       _XBLogFileManifest, _XBLogMemory, _XBLogSnapshot, _XBLogSnapshotReaper, 
+                       _XBModificationDateForPath, _XBNextClockwiseInterfaceOrientation, 
+                       _XBOppositeInterfaceOrientation, _XBRecentScreenSizePreferenceKey, 
+                       _XBRotationDegreesForImageOrientation, _XBRotationDegreesForInterfaceOrientationRotation, 
+                       _XBSnapshotPathForBundleIdentifierWithSandboxPath, _XBSnapshotPathForNonSandboxedSystemApplications, 
+                       _XBStatusBarStateDescription, _XBStatusBarStateMaskDescription, 
+                       _XBStatusBarStateMaskForStatusBarState, _XBStatusBarStateMaskMatchesSettings, 
+                       _XBStatusBarStateMatchesSettings, _XBStringForInterfaceOrientation, 
+                       _XBStringForUserInterfaceStyle, _XBURLToLaunchConfigurationAssociationsKey, 
+                       _XBURLToLaunchStoryboardAssociationsKey, _XBUserInterfaceStyleStringDark, 
+                       _XBUserInterfaceStyleStringLight, _XBUserInterfaceStyleStringUnspecified, 
+                       __XBDebugCaptureIsEnabled, __XBPreparedLaunchInterfaceForCapture ]
+    objc-classes:    [ XBApplicationCaptureInformation, XBApplicationController, 
+                       XBApplicationDataStore, XBApplicationLaunchCompatibilityInfo, 
+                       XBApplicationSnapshot, XBApplicationSnapshotFetchRequest, 
+                       XBApplicationSnapshotGenerationContext, XBApplicationSnapshotGenerationScheduler, 
+                       XBApplicationSnapshotGroup, XBApplicationSnapshotImage, XBApplicationSnapshotImageGenerator, 
+                       XBApplicationSnapshotManifest, XBApplicationSnapshotManifestImpl, 
+                       XBApplicationSnapshotPredicate, XBApplicationSnapshotSortDescriptor, 
+                       XBDefaultApplicationProvider, XBDisplayEdgeInsetsWrapper, 
+                       XBLaunchCaptureInformation, XBLaunchImage, XBLaunchImageDataProvider, 
+                       XBLaunchImageError, XBLaunchImageProvider, XBLaunchImageProviderClient, 
+                       XBLaunchInterface, XBLaunchInterfaceConfiguration, XBLaunchStateRequest, 
+                       XBMutableStatusBarSettings, XBSnapshotContainerIdentity, XBSnapshotDataProviderContext, 
+                       XBSnapshotManifestIdentity, XBStatusBarSettings ]
+    objc-ivars:      [ XBStatusBarSettings._settings ]
+...

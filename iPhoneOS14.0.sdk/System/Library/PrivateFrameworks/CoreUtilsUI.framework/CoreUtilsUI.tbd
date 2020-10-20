@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2DC78161-C4B2-3021-B081-0D68BF09C8FE
+  - target:          arm64e-ios
+    value:           E495817E-7535-3D1E-9148-7F9477128065
+install-name:    '/System/Library/PrivateFrameworks/CoreUtilsUI.framework/CoreUtilsUI'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CUNavigationController, CUPresentationController, CUProxCardController, 
+                       CUUIEnvironment ]
+...

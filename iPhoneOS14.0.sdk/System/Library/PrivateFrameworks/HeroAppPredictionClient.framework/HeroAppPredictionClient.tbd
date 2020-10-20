@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F0B2EA9A-D37F-3C28-A54A-B882643E9ADE
+  - target:          arm64e-ios
+    value:           3BA512EB-31C7-3111-AC82-44314F4FFDE0
+install-name:    '/System/Library/PrivateFrameworks/HeroAppPredictionClient.framework/HeroAppPredictionClient'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXHeroAppPredictionXPCInterface, _ATXPBHeroAppPredictionReadFrom, 
+                       _HeroAppPredictionClientVersionNumber, _HeroAppPredictionClientVersionString, 
+                       _kATXHeroAppDecodeErrorCode, _kATXHeroAppDecodeErrorDomain, 
+                       _kATXHeroAppDefaultIsTouristApp, _kATXHeroAppDefaultLatitudeAndLongitude, 
+                       _kATXHeroAppDefaultRadius, _kATXHeroAppDefaultRank, _kATXHeroAppPredictionXPCInterfaceMachServiceName, 
+                       _kATXHeroAppScoreNotSet, _kATXHeroAppUninstalledOrUnknownAdamId, 
+                       _kATXHeroAppUninstalledOrUnknownBundleId ]
+    objc-classes:    [ ATXHeroAppPrediction, ATXHeroAppPredictionClient, ATXPBHeroAppPrediction ]
+    objc-ivars:      [ ATXPBHeroAppPrediction._adamId, ATXPBHeroAppPrediction._bundleId, 
+                       ATXPBHeroAppPrediction._clipMetadata, ATXPBHeroAppPrediction._has, 
+                       ATXPBHeroAppPrediction._isTouristApp, ATXPBHeroAppPrediction._latitude, 
+                       ATXPBHeroAppPrediction._latitudeAtPredictionTime, ATXPBHeroAppPrediction._longitude, 
+                       ATXPBHeroAppPrediction._longitudeAtPredictionTime, ATXPBHeroAppPrediction._radius, 
+                       ATXPBHeroAppPrediction._rank, ATXPBHeroAppPrediction._score, 
+                       ATXPBHeroAppPrediction._urlHash ]
+...

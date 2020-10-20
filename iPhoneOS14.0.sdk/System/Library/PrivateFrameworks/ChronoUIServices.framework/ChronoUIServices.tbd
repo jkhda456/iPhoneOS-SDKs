@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B13B515F-023B-3160-9FF1-0C66A443DFE2
+  - target:          arm64e-ios
+    value:           628E2832-604F-3267-9247-A4047EFB9826
+install-name:    '/System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CHSAppearanceColorSchemeFromUserInterfaceStyle, _CHUISAvocadoWorkspaceIdentifier, 
+                       _CHUISLogViewController, _CHUISURLOpeningEntitlement, _CHWindowSceneSessionRoleAvocado, 
+                       _ChronoLoggingSubsystem, _ChronoUIServicesVersionNumber, _ChronoUIServicesVersionString ]
+    objc-classes:    [ CHUISAvocadoHostCancelTouchesAssertion, CHUISAvocadoHostViewController, 
+                       CHUISAvocadoSceneClientSettings, CHUISAvocadoSceneSettings, 
+                       CHUISAvocadoSceneSettingsDiffInspector, CHUISAvocadoSceneSpecification, 
+                       CHUISAvocadoWindowScene, CHUISMutableAvocadoSceneClientSettings, 
+                       CHUISMutableAvocadoSceneSettings ]
+...

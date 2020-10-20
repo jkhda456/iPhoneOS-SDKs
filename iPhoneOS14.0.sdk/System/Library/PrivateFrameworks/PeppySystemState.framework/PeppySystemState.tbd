@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           645044A5-65E7-31CB-90E9-6AE7EDD81B8C
+  - target:          armv7s-ios
+    value:           8F45703A-2CAD-3B8C-A641-5296605EC2A2
+  - target:          arm64-ios
+    value:           151FFDE7-3D4A-3DE7-8AFD-93A922DA3783
+  - target:          arm64e-ios
+    value:           22B4ADEB-C266-3706-B84C-E521DE4943F5
+install-name:    '/System/Library/PrivateFrameworks/PeppySystemState.framework/PeppySystemState'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kPSSLEDBrightnessMax, _kPSSLEDBrightnessMin ]
+    objc-classes:    [ PSSInterface, PSSInterfacePSOC, PeppySystemState ]
+...

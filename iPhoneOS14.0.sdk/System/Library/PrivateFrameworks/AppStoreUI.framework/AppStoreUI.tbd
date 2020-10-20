@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4F60AA17-DA44-3E06-8ED8-931FA6019A4F
+  - target:          armv7s-ios
+    value:           140B4BE4-DB3C-34BE-943F-8EF0BF49E49D
+  - target:          arm64-ios
+    value:           DD7D9BF5-70A6-32C9-9CCE-7CE72D2D587F
+  - target:          arm64e-ios
+    value:           1FA08F9C-F921-37D8-AD21-B5B5E9182122
+install-name:    '/System/Library/PrivateFrameworks/AppStoreUI.framework/AppStoreUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ASAppStoreUIBundle ]
+    objc-classes:    [ ASClientController, ASPurchaseBatch, ASViewControllerFactory ]
+...

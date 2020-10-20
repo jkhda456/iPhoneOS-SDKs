@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           66DD5774-5A33-39A4-B2F2-068263871A45
+  - target:          armv7s-ios
+    value:           69D4EC7E-8E34-363C-B5A7-1C05166B7368
+  - target:          arm64-ios
+    value:           6732F672-4FE1-3969-B337-99E0B342837A
+  - target:          arm64e-ios
+    value:           8F0F16FC-3393-392C-9A7B-CC387329B70F
+install-name:    '/System/Library/PrivateFrameworks/StoreBookkeeper.framework/StoreBookkeeper'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SBKKeyValuePayloadPairWithPreferredClass, _SBKLogFilter, 
+                       _SBKLogProductionKeyBag, _SBKLogRuntimeOverride, _SBKLogRuntimeOverridePattern, 
+                       _SBKPreferencesDidChangeNotification, _SBKStoreAccount, _SBKStoreAccountLastFailedSyncIdentifier, 
+                       _SBKStoreAccountLastSyncedIdentifier, _SBKSyncAnchorVersionBase, 
+                       _SBKSyncAnchorVersionMaximum, _SBKTimeStamp, _SBKUniversalPlaybackPositionMediaItemPropertyAlbumTitle, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyBookmarkTime, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyEntityType, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyHasBeenPlayed, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyItemArtist, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyMetadataTimestamp, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyPlayCount, _SBKUniversalPlaybackPositionMediaItemPropertyPodcastGUID, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyPodcastURL, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyStoreID, _SBKUniversalPlaybackPositionMediaItemPropertySubscriptionStoreID, 
+                       _SBKUniversalPlaybackPositionMediaItemPropertyTitle, _SBKUniversalPlaybackPositionStoreDidSynchronizeNotification ]
+    objc-classes:    [ SBKLoadDomainVersionRequestHandler, SBKLogger, SBKMutableStoreURLBagContext, 
+                       SBKPreferences, SBKPullValueTransaction, SBKPushValueTransaction, 
+                       SBKRequestHandler, SBKResponse, SBKStoreAuthenticationController, 
+                       SBKStoreURLBagContext, SBKSyncRequestHandler, SBKSyncTransaction, 
+                       SBKTransaction, SBKTransactionController, SBKUniversalPlaybackPositionMetadata, 
+                       SBKUniversalPlaybackPositionStore ]
+    objc-ivars:      [ SBKLogger._auxPath, SBKLogger._fileHandle, SBKLogger._filter, 
+                       SBKLogger._pid, SBKLogger._procName, SBKLogger._runtimeOverride ]
+...

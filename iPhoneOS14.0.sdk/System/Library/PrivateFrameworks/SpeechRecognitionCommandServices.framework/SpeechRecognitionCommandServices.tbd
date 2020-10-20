@@ -1,0 +1,46 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B63050AE-3CED-37AC-B6B4-7BD19B79C04D
+  - target:          arm64e-ios
+    value:           0DDD69C7-32F4-3977-97F8-0DE82D2251F3
+install-name:    '/System/Library/PrivateFrameworks/SpeechRecognitionCommandServices.framework/SpeechRecognitionCommandServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CreateMutableDictionaryFromSpokenCommandString, _IsValidCommandParameterIdentifier, 
+                       _SRCSLogGeneral, _SpeechRecognitionCommandServicesVersionNumber, 
+                       _SpeechRecognitionCommandServicesVersionString, _YYLastErrorLineNumber, 
+                       _YYLastErrorSymbolString, _kCMDPClosestMatchedElements, _kCMDPMatchedCommandIdentifier, 
+                       _kCMDPMatchedElementCategoryIdentifier, _kCMDPMatchedElementText, 
+                       _kCMDPMatchedElementTextVariants, _kCMDPMatchedElements, _kSRCSBuiltInLmValueGroup, 
+                       _kSRCSBuiltInLmValueNode, _kSRCSCommandAttributeExcludeAlwaysForLocales, 
+                       _kSRCSCommandAttributeIncludeOnlyForLocales, _kSRCSCommandParameterDeviceName, 
+                       _kSRCSCommandParameterDictation, _kSRCSCommandParameterDictation2, 
+                       _kSRCSCommandParameterElementName, _kSRCSCommandParameterKeyboardKeyName, 
+                       _kSRCSCommandParameterMenuBarItem, _kSRCSCommandParameterMenuItem, 
+                       _kSRCSCommandParameterModifierKeys, _kSRCSCommandParameterNumberTwoThroughNinetyNine, 
+                       _kSRCSCommandParameterNumberTwoThroughNinetyNine2, _kSRCSCommandParameterOverlayLabel, 
+                       _kSRCSCommandParameterOverlayLabel2, _kSRCSCommandParameterPhoneticKeyName, 
+                       _kSRCSCommandParameterRunningApplication, _kSRCSCommandParameterScreenDistanceCardinalNumber, 
+                       _kSRCSCommandParameterSwitchableApplication, _kSRCSCommandParameterText, 
+                       _kSRCSCommandParameterTextSegmentCardinalNumber, _kSRCSCommandParameterTextVariants, 
+                       _kSRCSCommandParameterWindowItem, _kSRCSCommandParameterWindowItem2, 
+                       _kSRCSCommandParseAttributeOptional, _kSRCSCommandParseAttributePath, 
+                       _kSRCSCommandParseDictionaryKeyAttributes, _kSRCSCommandParseDictionaryKeyChildren, 
+                       _kSRCSCommandParseDictionaryKeyIdentifier, _kSRCSCommandParseDictionaryKeyIsBuiltInIdentifier, 
+                       _kSRCSCommandParseDictionaryKeyText, _kSRCSCommandTargetTypeNone, 
+                       _kSRCSCommandTargetTypeOSX, _kSRCSCommandTargetTypeiOS, _kSRCSCommandTargetTypeiPad, 
+                       _kSRCSCommandTargetTypeiPhone, _kSRCSCommandTargetTypewatchOS, 
+                       _yychar, _yyerror, _yylex, _yylval, _yynerrs, _yyparse ]
+    objc-classes:    [ CMDPGrammar, CMDPGrammarData, CMDPResult, SRCSCommandRecognitionSystem, 
+                       SRCSCommandRecognizer, SRCSCommandStringsTable, SRCSLexiconManager, 
+                       SRCSPhraseMatchResult, SRCSSpokenCommand, SRCSSpokenCommandUtilities, 
+                       SRCSTextEditing ]
+    objc-ivars:      [ SRCSSpokenCommandUtilities._commandAttributes, SRCSSpokenCommandUtilities._commandStringsTablesByLocaleIdentifier ]
+...

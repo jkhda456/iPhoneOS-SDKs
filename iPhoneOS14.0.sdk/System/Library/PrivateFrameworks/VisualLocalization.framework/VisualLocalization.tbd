@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5CBB2146-38CC-39C8-8E77-2135BEF9E00B
+  - target:          arm64e-ios
+    value:           3D736D38-0A4D-3656-BE10-7A9A077D8BEC
+install-name:    '/System/Library/PrivateFrameworks/VisualLocalization.framework/VisualLocalization'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VLConfig_AlgorithmVersion, _VLConfig_TraceRecordingEnabled, 
+                       _VLCoordinateFromECEF, _VLECEFFromCoordinate, _VLHeadingForTransform, 
+                       _VLLocalizationDataProviderErrorDomain, _VLLocalizerDebugInfoKey, 
+                       _VLLocalizerErrorDomain ]
+    objc-classes:    [ VLFilesystemDataProvider, VLLocalizationDebugInfo, VLLocalizationResult, 
+                       VLLocalizer, VLTraceRecorder ]
+...

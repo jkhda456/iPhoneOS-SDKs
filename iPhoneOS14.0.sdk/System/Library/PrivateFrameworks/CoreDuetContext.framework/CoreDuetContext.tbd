@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           413EB525-3B26-3BEE-832A-25B4F78C9CC7
+  - target:          armv7s-ios
+    value:           2F188979-5E5F-3FE8-9549-FDA073FA9227
+  - target:          arm64-ios
+    value:           1E09C135-B60A-339E-BE3C-48EE226BDFD0
+  - target:          arm64e-ios
+    value:           7411A709-7F80-39AE-BB96-9DD711BA46EA
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetContext.framework/CoreDuetContext'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreDuetContextVersionNumber, _CoreDuetContextVersionString, 
+                       __CDCircularRegionsDidChangeNotification, __CDClientContextConnectionInterrupted, 
+                       __CDClientContextContextChanged, __CDClientContextContextChangedInfoKey, 
+                       __CDClientContextContextChangedRegistrationIdentifierKey, 
+                       __CDContextDataMetadataKey, __CDContextFirstKPValueAfterRebootKey, 
+                       __CDContextServiceName, __CDContextTransitionDateMetadataKey, 
+                       __CDContextualChangeRegistrationEntityName, __CDContextualKeyPathEntityName, 
+                       __CDInformativeContextualChangeInsertion, __CDInformativeContextualChangeKeyPathKey, 
+                       __CDInformativeContextualChangeKindKey, __CDInformativeContextualChangeNewValueKey, 
+                       __CDInformativeContextualChangeOldValueKey, __CDInformativeContextualChangeRemoval, 
+                       __CDInformativeContextualChangeReplacement, __CDMDCSEventPublisherEventStreamName, 
+                       __CDMDCSProxyTokenUpdated, __CDNotificationEventPublisherEventStreamName, 
+                       __CDRedactedObjectForKeyPath, __CDSystemTimeCallbackDateKey, 
+                       __CDSystemTimeCallbackNotification, _kCDErrorDomain, _kCDFailedToArchiveObjectError, 
+                       _kCDInternalFailureError, _kCDInvalidArgumentError, _kCDInvalidEventError, 
+                       _kCDMissingDelegateError, _kCDMissingPublisherError, _kCDTemporaryError, 
+                       _kCDUnknownClientError, _kCDUnknownProxyError, _kCDXPCSendError ]
+    objc-classes:    [ _CDClientContext, _CDContextMonitorManager, _CDContextPredictionQueries, 
+                       _CDContextQueries, _CDContextValue, _CDContextualChangeRegistration, 
+                       _CDContextualChangeRegistrationMO, _CDContextualKeyPath, _CDContextualKeyPathAndValue, 
+                       _CDContextualKeyPathMO, _CDContextualLocationRegistrationMonitor, 
+                       _CDContextualPredicate, _CDCoreDataContextPersisting, _CDDevice, 
+                       _CDInMemoryContext, _CDInMemoryUserContext, _CDMDCSContextualPredicate, 
+                       _CDModeClassifier, _CDNetworkContext, _CDPolicyBasedPersisting, 
+                       _CDSharedMemoryContextPersisting, _CDSystemTimeCallbackScheduler, 
+                       _CDUserContextQueries, _CDUserContextServerClient, _CDUserContextService, 
+                       _CDXPCCodecs, _CDXPCEventPublisher, _CDXPCEventSubscriber ]
+...

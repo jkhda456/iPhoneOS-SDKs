@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C1CA4735-E663-3EAF-90AD-CDF896D29220
+  - target:          arm64e-ios
+    value:           897D1852-D9B0-3964-A91F-58471B05205F
+install-name:    '/System/Library/PrivateFrameworks/CoreUARP.framework/CoreUARP'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreUARPVersionNumber, _CoreUARPVersionString, _UARPAccessoryPropertyToString, 
+                       _UARPAccessoryTransportToString, _UARPAnalyticsApplyStatusToString, 
+                       _UARPAnalyticsAssetChannelTypeToString, _UARPAnalyticsAssetDownloadStatusToString, 
+                       _UARPAnalyticsStagingStatusToString, _UARPAssetDownloadStatusToString, 
+                       _UARPAssetLocationTypeToString, _UARPFirmwareApplicationStatusToString, 
+                       _UARPFirmwareStagingCompletionStatusToString, _UARPFirmwareUpdateAvailabilityStatusToString, 
+                       _kUARPErrorDomain, _nullableObjectsEqual, _uarpAssetCoreCompare, 
+                       _uarpAssetIsDynamicAsset, _uarpAssetIsSuperBinary, _uarpAssetTagPersonalization, 
+                       _uarpControllerCallbackSendData, _uarpControllerFindAssetByAssetID, 
+                       _uarpControllerInit, _uarpControllerMsgRecvPersonalizationRequired, 
+                       _uarpControllerOfferDynamicAsset, _uarpControllerOfferPersonalizationPayload, 
+                       _uarpControllerOfferSuperBinary, _uarpControllerRecvMessage, 
+                       _uarpControllerRemoteAccessoryAdd, _uarpControllerRemoteAccessoryApplyStagedAssets, 
+                       _uarpControllerRemoteAccessoryDataTransferPause, _uarpControllerRemoteAccessoryDataTransferResume, 
+                       _uarpControllerRemoteAccessoryFind, _uarpControllerRemoteAccessoryQueryAccessoryInformation, 
+                       _uarpControllerRemoteAccessoryRemove, _uarpControllerRequestAssetBuffer, 
+                       _uarpControllerRescindAssetOffer, _uarpControllerSendPersonalizationInfoRequest, 
+                       _uarpControllerTxMsgVendorSpecific, _uarpFree, _uarpHtonl, 
+                       _uarpHtons, _uarpLogDebug, _uarpLogError, _uarpLogFault, _uarpLogInfo, 
+                       _uarpNtohl, _uarpNtohs, _uarpPayloadTagPack, _uarpPayloadTagUnpack, 
+                       _uarpPersonalizationPayloadBuild, _uarpPersonalizationPayloadQueryMetadataLength, 
+                       _uarpVersionCompare, _uarpVersionEndianSwap, _uarpZalloc ]
+    objc-classes:    [ UARPAccessory, UARPAccessoryID, UARPAnalyticsUpdateFirmwareManager, 
+                       UARPAnalyticsUpdateFirmwareState, UARPAsset, UARPAssetID, 
+                       UARPController, UARPControllerExportedObject, UARPControllerXPC, 
+                       UARPManifestProperties, UARPStats, UARPUpdateFirmwareAnalyticsEventFrameworkParams, 
+                       UARPUploader ]
+...

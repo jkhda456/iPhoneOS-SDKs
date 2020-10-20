@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7364332D-6F28-326A-BAEA-6BB406B173D4
+  - target:          armv7s-ios
+    value:           2448DD6F-0CB7-3CCE-833A-96F080A45B29
+  - target:          arm64-ios
+    value:           98468C11-4426-34D6-8BDA-5B2267E29B1B
+  - target:          arm64e-ios
+    value:           A97008F4-9950-3856-BE6B-DC81E0B33B6C
+install-name:    '/System/Library/Frameworks/NewsstandKit.framework/NewsstandKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NKIssueDownloadCompletedNotification ]
+    objc-classes:    [ NKAssetDownload, NKIssue, NKLibrary ]
+...

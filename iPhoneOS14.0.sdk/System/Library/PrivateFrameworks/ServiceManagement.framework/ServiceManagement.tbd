@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           0189A1F4-02B3-30B9-94BA-B6918F07B672
+  - target:          armv7s-ios
+    value:           CCAA4286-2CDC-3750-9548-7BD372AEB1D8
+  - target:          arm64-ios
+    value:           AF111CC3-F778-3987-ACD5-5EFD4EFAC37C
+  - target:          arm64e-ios
+    value:           8E3754DE-31B3-3D4D-B3FD-DAE4AD225D7D
+install-name:    '/System/Library/PrivateFrameworks/ServiceManagement.framework/ServiceManagement'
+current-version: 2038.0.15
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SMCopyAllJobDictionaries, _SMCopyEnabledLoginItems_4BTM, 
+                       _SMJobCopyDictionary, _SMJobIsEnabled, _SMJobRemove, _SMJobSetEnabled, 
+                       _SMJobSubmit, _SMLaunchdPlistSetUserAllowed_4BTM, _SMLoginItemSetUserAllowed_4BTM, 
+                       __SMLoginItemSetEnabledWithURL, __launch_job_routine, __launch_job_routine_async, 
+                       __xpc_service_routine, _kSMDomainLocalLaunchd, _kSMDomainSystemLaunchd, 
+                       _kSMDomainUserLaunchd, _kSMErrorDomainFramework, _kSMErrorDomainIPC, 
+                       _kSMErrorDomainLaunchd, _kSMInfoKeyAuthorizedClients, _kSMInfoKeyPrivilegedExecutables ]
+...

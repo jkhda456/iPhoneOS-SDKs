@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           296996C7-441B-3878-946A-AFB3FA31F5A8
+  - target:          arm64e-ios
+    value:           C9D9B60D-2CB3-3AD8-BE33-729E6AB6658D
+install-name:    '/System/Library/PrivateFrameworks/PhoneNumberResolver.framework/PhoneNumberResolver'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PNRErrorDomain, _PhoneNumberResolverVersionNumber, _PhoneNumberResolverVersionString, 
+                       _kPNRPhoneNumberCountryKey, _kPNRPhoneNumberKey ]
+    objc-classes:    [ PNRPhoneNumberResolutionResult, PNRPhoneNumberResolutionResultSet, 
+                       PNRPhoneNumberResolver, PNRResourceManager, PNRStringsFileReaderResult, 
+                       PNRUtils ]
+...

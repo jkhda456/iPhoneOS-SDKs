@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A970A95F-44FF-3715-8149-F0AC48708031
+  - target:          armv7s-ios
+    value:           1A28C45C-0570-3E61-8ED6-B613CCC71D5B
+  - target:          arm64-ios
+    value:           3E01C886-6069-3DEB-9A26-42C70F4B73DC
+  - target:          arm64e-ios
+    value:           2FE2FB3B-F432-3385-B1F5-60BFA75D96B0
+install-name:    '/System/Library/PrivateFrameworks/IDSHashPersistence.framework/IDSHashPersistence'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ IDSMessageHashStore ]
+...

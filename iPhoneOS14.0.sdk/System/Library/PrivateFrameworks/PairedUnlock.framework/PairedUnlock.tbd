@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           9E3057EE-7924-378F-9C2E-D6ADAAEF6565
+  - target:          armv7s-ios
+    value:           35C72587-0FA2-3E1D-BF6D-84709AF09195
+  - target:          arm64-ios
+    value:           7731355E-3EB1-3582-90E4-87BF873D78F7
+  - target:          arm64e-ios
+    value:           2F851CBA-E7B1-34E5-9912-5E18E3013CD4
+install-name:    '/System/Library/PrivateFrameworks/PairedUnlock.framework/PairedUnlock'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PUDefaultsDomain, _PUDefaultsKeyIsUnlockOnly, _PUDefaultsKeyShouldDisableOnlyRemoteUnlock, 
+                       _PUKeyStoreAccessGroup, _PUKeyStoreServiceName, _PUKeyStoreUnlockOnlyPasscodeLabel, 
+                       _PUPasscodeActionServerMachServiceName, _PUPeerKeyPairIdentifier, 
+                       _PUPeerKeyToken, _PUPeerKeyTokenKey, _PUProtoDidGetPasscodeStateReadFrom, 
+                       _PUProtoDidUnlockReadFrom, _PUProtoGetPasscodeStateReadFrom, 
+                       _PUProtoRemoveLockoutReadFrom, _PUProtoRequestCompletedReadFrom, 
+                       _PUProtoRequestDisableOnlyRemoteUnlockReadFrom, _PUProtoSetShouldNotifyNextUnlockReadFrom, 
+                       _PUProtoStartPasscodeActionReadFrom, _PUUnlockingErrorDomain, 
+                       __copyNamedKeyOrData, _copyNamedKey, _copyNamedKeyData, _createAndStoreKeyWithData, 
+                       _deleteNamedKey, _encryptOrDecryptDataWithKey, _generateAndStoreKeyPairWithName, 
+                       _verifyAccessGroup ]
+    objc-classes:    [ PUKeyStore, PUPasscodeState, PUPeer, PUProtoDidGetPasscodeState, 
+                       PUProtoDidUnlock, PUProtoGetPasscodeState, PUProtoRemoveLockout, 
+                       PUProtoRequestCompleted, PUProtoRequestDisableOnlyRemoteUnlock, 
+                       PUProtoSetShouldNotifyNextUnlock, PUProtoStartPasscodeAction ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PURemoteActionToString, _kPUDidRemoveLockoutNotification, 
+                       _pu_log ]
+    objc-classes:    [ PUConnection, PUError, PURemoteDeviceState, PURemotePasscodePolicy ]
+...

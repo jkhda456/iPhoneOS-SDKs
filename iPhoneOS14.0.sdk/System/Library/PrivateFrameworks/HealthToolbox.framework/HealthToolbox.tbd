@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           019BBC8D-EC1C-3598-86C7-153FD6DBA8DE
+  - target:          arm64e-ios
+    value:           F8CE0279-715B-3CE9-93C3-8D87227BC6A8
+install-name:    '/System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WDAsUserActivityResponder, _WDBadgeForHealthRecordsUpdateUserDefault, 
+                       _WDBundle, _WDCinnamonOnboardingStateOverrideKey, _WDCompletedBuddyUserDefault, 
+                       _WDDemoDataSexUserDefault, _WDFloorRectToViewScale, _WDGetDemoDataResourceName, 
+                       _WDGetProfileNameForHealthStore, _WDIndexForTab, _WDInternalHealthRecordsConsentScreenShownKey, 
+                       _WDInternalHealthRecordsHideConsentScreenKey, _WDIsRunningDemoMode, 
+                       _WDNotificationManagerBadgesDidUpdateNotificationName, _WDPredicateMatchingPredicates, 
+                       _WDProfilePresentationContextApp, _WDProfilePresentationContextSettings, 
+                       _WDProfilePresentationContextSettingsPrivacy, _WDSplashScreenVersion, 
+                       _WDUseDemoDataUserDefault, _WDUserActivityBreadcrumbKey, _WDUserActivityRestorationIdentifier, 
+                       __WDCycleTrackingSummaryFavoritedUserInfoKey, _kWDFavoriteDisplayTypesControllerUpdatedRemote, 
+                       _kWDFavoriteDisplayTypesControllerUserUpdateFavoritesKey ]
+    objc-classes:    [ HBXFitnessManager, HBXTypeSupport, HBXUnitSupport, HBXViewControllerFactory, 
+                       WDAtrialFibrillationDetectionSetupView, WDAtrialFibrillationEventOverviewViewController, 
+                       WDAuthorizationRecord, WDBuddyFlowContinueFooterView, WDBuddyFlowUserInfo, 
+                       WDBuddyFlowUserInfoViewController, WDContactConsolidationController, 
+                       WDDeviceSourcesListTableViewSection, WDDisplayTypeDescriptionTableFooterView, 
+                       WDDisplayTypeDescriptionTableViewCell, WDElectrocardiogramOverviewViewController, 
+                       WDElectrocardiogramSetupView, WDEmptyUserActivityResponder, 
+                       WDFavoriteDisplayTypesController, WDHealthTableViewController, 
+                       WDNotificationManager, WDProfile, WDProfileEditableTableViewCell, 
+                       WDProfileHeaderView, WDProfileTableViewCell, WDSecondaryProfileSourcesViewController, 
+                       WDSourcesListTableViewSection, WDSourcesViewController, WDSpinnerTableViewCell, 
+                       WDTableViewController, WDTableViewSection, WDUserActivityManager, 
+                       WDUserDefaults ]
+...

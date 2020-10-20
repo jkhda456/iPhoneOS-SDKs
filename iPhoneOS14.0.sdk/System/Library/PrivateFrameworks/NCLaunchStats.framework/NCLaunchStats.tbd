@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B49B7000-1965-3C4D-A279-539C1D716F61
+  - target:          armv7s-ios
+    value:           4DC37A7F-5952-3B9B-97C8-53ACE392D5BF
+  - target:          arm64-ios
+    value:           93E82B5A-5D4E-3B0F-B50B-0B7CE7E1D73F
+  - target:          arm64e-ios
+    value:           38A22735-F501-3660-B9A3-DC08B6C374DA
+install-name:    '/System/Library/PrivateFrameworks/NCLaunchStats.framework/NCLaunchStats'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _KeepAppsUpToDateEnabledChangedNotification, _kMGQueryhas ]
+    objc-classes:    [ NCLaunchStats ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           19FC3226-06B4-349D-8F70-EA4F145A8E69
+  - target:          arm64e-ios
+    value:           4D11782A-DF80-3B7D-B3FB-E31DD72DE521
+install-name:    '/System/Library/PrivateFrameworks/OSASyncProxyClient.framework/OSASyncProxyClient'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSASyncProxyClientVersionNumber, _OSASyncProxyClientVersionString ]
+    objc-classes:    [ OSASyncProxyClient ]
+...

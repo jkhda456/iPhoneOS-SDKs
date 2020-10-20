@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F1876922-BADA-3FD2-A38A-AC0DE25BD56C
+  - target:          arm64e-ios
+    value:           F0107E25-9EC2-3249-AF3C-3B66FAD87C9B
+install-name:    '/System/Library/PrivateFrameworks/BluetoothServicesUI.framework/BluetoothServicesUI'
+current-version: 0
+compatibility-version: 0
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ BluetoothUIService, CITests, MediaExperience, MediaRemote, 
+                       NexusInternalSettings, Rapport, Sharing, SharingViewService, 
+                       TVNowPlayingService, TVSystemMenuService, bsutil, btutil, 
+                       cloudpaird, cuutil, mediaserverd, rapportd, rputil, sharingd, 
+                       ssutil ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ BTHighlightButton, BTMediaPlayerView, BTShareAudioViewController, 
+                       BTSharedAudioDeviceInfo ]
+...

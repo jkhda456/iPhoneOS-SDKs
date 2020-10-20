@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0B2DB7B5-EEF4-3CAC-A0CC-4A58F7975489
+  - target:          arm64e-ios
+    value:           35955BA2-0DCB-33EE-A962-7BAB71D17CBA
+install-name:    '/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework/AXTapToSpeakTime'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXStringFromTapToSpeakTimeGesture, _AXStringFromTapToSpeakTimeVoice, 
+                       _AXTapToSpeakTimeVersionNumber, _AXTapToSpeakTimeVersionString ]
+    objc-classes:    [ AXTapToSpeakTimeManager, AXTapticChimeAsset, AXTapticChimesScheduler, 
+                       AXTimeOutputPreferences ]
+...

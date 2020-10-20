@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           79062A0D-6571-3A48-9FFA-DD01F5B06548
+  - target:          armv7s-ios
+    value:           32B870E5-FC25-3540-80C1-3D2E244A0D89
+  - target:          arm64-ios
+    value:           CF2EEF14-D66D-36AA-949E-5BEFDA03088B
+  - target:          arm64e-ios
+    value:           277ECC94-ADE2-3FB0-93A2-22D67E3BE679
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLImage.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _gl_mallocZone ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _glgCompress, _glgConvertPixelHeightToBlocks, _glgConvertPixelWidthToBlocks, 
+                       _glgConvertPixels, _glgConvertType, _glgCreateProcessor, _glgDecompress, 
+                       _glgDestroyProcessor, _glgGetCompressedBlockBytes, _glgGetCompressedBlockHeight, 
+                       _glgGetCompressedBlockWidth, _glgGetCompressedImageBytes, 
+                       _glgGetCompressedMinBlockDimensions, _glgGetPixelSize, _glgInitializeLibrary, 
+                       _glgPixelCenters, _glgProcessPixelsWithProcessor, _glgSaveImageToFile, 
+                       _glgSaveImageToFileGLG, _glgSetTakeLock, _glgTerminateLibrary ]
+...

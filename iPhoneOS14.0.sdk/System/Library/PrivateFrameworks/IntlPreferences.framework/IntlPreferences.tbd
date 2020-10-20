@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           51054E92-3515-38B1-A14A-9235A28FD2E1
+  - target:          armv7s-ios
+    value:           E1EB8EC4-E97D-3F79-9E7B-D4D595218FCA
+  - target:          arm64-ios
+    value:           655065DB-99D5-3D63-8EF5-BF18B4DFC07F
+  - target:          arm64e-ios
+    value:           670F5159-E198-3A3A-9D36-99F373F432EC
+install-name:    '/System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences'
+current-version: 327
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _GetNSFriendlySeparator, _IPLoadUIKitFramework, _IPNameOrderFamilyNameFirstKey, 
+                       _IPNameOrderGivenNameFirstKey, _IPNameOrderKey, _IPNameOrderUnsetKey, 
+                       _IPPreferNicknamesDisabled, _IPPreferNicknamesEnabled, _IPPreferNicknamesKey, 
+                       _IPShortNameEnabledKey, _IPShortNameFormatFamilyNameGivenInitialKey, 
+                       _IPShortNameFormatFamilyOnlyKey, _IPShortNameFormatGivenNameFamilyInitialKey, 
+                       _IPShortNameFormatGivenOnlyKey, _IPShortNameFormatKey, _IPShortNameFormatUnsetKey, 
+                       _IPShortNamesDisabled, _IPShortNamesEnabled, _IPUIKeyboardCanonicalInputModeName, 
+                       _IPUIKeyboardInputModeController, _IPUIKeyboardInputModeGetBaseLanguage, 
+                       _IPUIKeyboardInputModeGetIdentifierWithKeyboardLayouts, _IPUIKeyboardInputModeGetLanguageWithRegion, 
+                       _IPUIKeyboardInputModeGetNormalizedIdentifier, _IPUIKeyboardInputMode_Intl, 
+                       _IPUIKeyboardPreferencesController, _IUIntlPreferencesVersionNumber, 
+                       _IUIntlPreferencesVersionString, _IntlPreferencesValue, _IntlSetPreferencesValue ]
+    objc-classes:    [ IPFoundationNamePreferenceInfoProvider, IPOSXABNamePreferenceInfoProvider, 
+                       IPiOSABNamePreferenceInfoProvider ]
+    objc-ivars:      [ ISMigrator._currentVersion, ISMigrator._platform, ISMigrator._preferencesAfterMigration, 
+                       ISMigrator._preferencesBeforeMigration, ISMigrator._previousVersion, 
+                       IntlUtility.mDisplayLanguageCachePtr, IntlUtility.mDisplayLanguageCacheUsed ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IPAppleLanguagesSchemaVersionCurrent, _IPAppleLanguagesSchemaVersionGoldzulA, 
+                       _IPAppleLanguagesSchemaVersionJazzkonA, _IPAppleLanguagesSchemaVersionJazzkonA_1, 
+                       _IPBackstopLanguage, _IPBackstopLocale, _NSPersonNameDefaultDisplayNameOrderKey, 
+                       _NSPersonNameDefaultNamePreferencesDomain, _NSPersonNameDefaultShortNameEnabledKey, 
+                       _NSPersonNameDefaultShortNameFormatKey, _NSPersonNameDefaultShouldPreferNicknamesKey, 
+                       _NSPersonNamePreferencesDidChangeNotification, _kAppleLanguagesKey, 
+                       _kAppleLocaleKey ]
+    objc-classes:    [ IPInternationalAnalytics, IPLanguage, IPLanguageListGenerator, 
+                       IPWatchLocaleController, IP_HK_MO_yue_Hant_migrator, IP_Zawgyi_migrator, 
+                       IP_pa_Arab_to_pa_Aran_migrator, IP_unsupportedVariantsAddedByKeyboards_migrator, 
+                       ISMigrator, ISRootMigrator, IntlUtility, NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:      [ IntlUtility.mBidiLanguagesArray, IntlUtility.mBidiTestedLanguagesArray ]
+...

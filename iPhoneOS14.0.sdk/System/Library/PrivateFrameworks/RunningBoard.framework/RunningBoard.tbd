@@ -1,0 +1,67 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1D11095E-3130-3926-9FF0-4655EBAD53F9
+  - target:          arm64e-ios
+    value:           202A8E7F-79B3-3B85-99DE-832DC2C577F9
+install-name:    '/System/Library/PrivateFrameworks/RunningBoard.framework/RunningBoard'
+current-version: 505.0.12
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromRBSJetsamBand, _RBAttributePrimitiveEntitlement, 
+                       _RBBackBoardClientEntitlement, _RBBackgroundViewServicesEntitlement, 
+                       _RBDomainAttributeManagerDataProviderErrorDomain, _RBEndowmentOriginatorEntitlement, 
+                       _RBInvalidateAnyAssertionEntitlement, _RBLaunchExtensionsEntitlement, 
+                       _RBLaunchProcessEntitlement, _RBLegacyAppStateMonitorEntitlement, 
+                       _RBLegacyBackBoardDebugEntitlement, _RBLegacyLaunchdAppServer, 
+                       _RBLegacySpringBoardDebugEntitlement, _RBListAllAssertionDescriptorsEntitlement, 
+                       _RBNewsstandProcessAssertionsEntitlement, _RBPerformanceTestEntitlement, 
+                       _RBProcessAssertionSystemShellEntitlement, _RBProcessStateEntitlement, 
+                       _RBSAttributePathIncrement, _RBStateCaptureEntitlement, _RBSystemAppProcessAssertionsEntitlement, 
+                       _RBTargetIdentitiesEntitlement, _RBTerminateManagedProcessesEntitlement, 
+                       _RBTerminateProcessEntitlement, _RBTerminationAssertionEntitlement, 
+                       _RBUnlimitedProcessAssertionsEntitlement, _RBViewServicesEntitlement, 
+                       _RBVoIPProcessAssertionEntitlement ]
+    objc-classes:    [ RBAssertion, RBAssertionAcquisitionContext, RBAssertionBatchContext, 
+                       RBAssertionCollection, RBAssertionDescriptorValidator, RBAssertionDescriptorValidatorContext, 
+                       RBAssertionIntransientState, RBAssertionManager, RBAssertionManagerEventQueue, 
+                       RBAssertionOriginatorPidStore, RBAssertionResolutionContext, 
+                       RBAssertionStateResolver, RBAssertionTransientState, RBAttributeContext, 
+                       RBAttributeFactory, RBAttributeTemplate, RBBundleProperties, 
+                       RBBundlePropertiesBSXPCProvider, RBBundlePropertiesBackgroundRefreshProvider, 
+                       RBBundlePropertiesLSProvider, RBBundlePropertiesManager, RBClientInheritanceManager, 
+                       RBConcreteTarget, RBDaemon, RBDomainAttributeManager, RBDomainAttributeManagerDataProvider, 
+                       RBEntitlementManager, RBEntitlementPredicate, RBEntitlements, 
+                       RBEventQueue, RBEventQueueEvent, RBIgnoreAllEntitlementsManager, 
+                       RBInheritanceCollection, RBJetsamBandProvider, RBLSBundleProperties, 
+                       RBLaunchdInterface, RBLaunchdJobManager, RBLaunchdProperties, 
+                       RBMeteredMessageQueue, RBMutableInheritanceCollection, RBMutableLaunchdProperties, 
+                       RBMutableProcessAppNapState, RBMutableProcessState, RBMutableSystemState, 
+                       RBPowerAssertionManager, RBProcess, RBProcessAppNapState, 
+                       RBProcessCPUMaximumLimits, RBProcessCPUMinimumLimits, RBProcessIndex, 
+                       RBProcessManager, RBProcessMap, RBProcessMonitor, RBProcessMonitorObserver, 
+                       RBProcessMonitorObserverConnection, RBProcessReconnectManager, 
+                       RBProcessState, RBProcessStateChange, RBProcessStateChangeSet, 
+                       RBStateCaptureManager, RBSystemState, RBThrottleBestEffortNetworkingManager, 
+                       RBXPCBundleProperties ]
+    objc-ivars:      [ RBLaunchdProperties._bundleID, RBLaunchdProperties._doesOverrideManagement, 
+                       RBLaunchdProperties._executablePath, RBLaunchdProperties._hostPid, 
+                       RBLaunchdProperties._jobLabel, RBLaunchdProperties._multiInstance, 
+                       RBLaunchdProperties._overrideManageFlags, RBLaunchdProperties._path, 
+                       RBLaunchdProperties._requestedJetsamPriority, RBLaunchdProperties._specifiedIdentity, 
+                       RBLaunchdProperties._systemShell, RBLaunchdProperties._type, 
+                       RBLaunchdProperties._underlyingAssertion, RBLaunchdProperties._variableEUID, 
+                       RBProcessState._flags, RBProcessState._identity, RBProcessState._inheritances, 
+                       RBProcessState._jetsamBand, RBProcessState._jetsamLenientModeByRole, 
+                       RBProcessState._legacyAssertions, RBProcessState._legacyFinishTaskReason, 
+                       RBProcessState._maxCPULimitsByRole, RBProcessState._minCPULimitsByRole, 
+                       RBProcessState._preventIdleSleepIdentifiers, RBProcessState._primitiveAssertions, 
+                       RBProcessState._role, RBProcessState._tags, RBProcessState._terminationResistance, 
+                       RBProcessStateChangeSet._stateChangesByIdentity ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B543063E-F40D-3AAD-BF4D-FA7EE324B27E
+  - target:          arm64e-ios
+    value:           BB14AB2D-8209-3D36-AA7F-EE2EB06AEFF7
+install-name:    '/System/Library/PrivateFrameworks/AppleCV3DModels.framework/AppleCV3DModels'
+current-version: 3.21.1
+compatibility-version: 3.21.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CV3DModelsCreateObjectRegionProposalModelData, _CV3DModelsCreateSceneUnderstandingModelData, 
+                       _CV3DModelsGetVersionInfo ]
+...

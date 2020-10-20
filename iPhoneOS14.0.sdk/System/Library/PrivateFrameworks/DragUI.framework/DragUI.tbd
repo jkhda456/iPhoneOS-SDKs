@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           19371251-FD34-33E2-B729-9E371B5D8DB5
+  - target:          arm64e-ios
+    value:           04A685E2-C8E6-333B-B4AD-C3E6CA208560
+install-name:    '/System/Library/PrivateFrameworks/DragUI.framework/DragUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DRLogTarget, _DRPasteAnnouncementAccessibilityValueKey, _DRPasteAnnouncementEntitlement, 
+                       _DRPasteAnnouncementServiceName ]
+    objc-classes:    [ DRPasteAnnouncement, DRPasteAnnouncementApplicationEndpoint, 
+                       DRPasteAnnouncementContinuityEndpoint, DRPasteAnnouncementEndpoint ]
+    objc-ivars:      [ DRPasteAnnouncementEndpoint._localizedName ]
+...

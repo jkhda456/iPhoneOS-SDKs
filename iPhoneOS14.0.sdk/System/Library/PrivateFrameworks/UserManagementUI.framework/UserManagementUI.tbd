@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D7680607-F1E4-37F5-87D0-9E5BD10DD2C4
+  - target:          armv7s-ios
+    value:           27E08F56-B08B-3AAA-9B38-F4F1183C57FC
+  - target:          arm64-ios
+    value:           3906F503-1FFE-32A0-B1EF-15B7E08CF9A6
+  - target:          arm64e-ios
+    value:           CCFD3FDF-22E5-3EA6-AF42-C4F5E2FE56C5
+install-name:    '/System/Library/PrivateFrameworks/UserManagementUI.framework/UserManagementUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _UserManagementUIVersionNumber, _UserManagementUIVersionString ]
+...

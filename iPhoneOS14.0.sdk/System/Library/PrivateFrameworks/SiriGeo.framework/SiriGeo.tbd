@@ -1,0 +1,85 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0DFF8B02-E431-30A1-8376-612083734393
+  - target:          arm64e-ios
+    value:           4353CE33-ECFB-36AB-B633-5ED4B2907416
+install-name:    '/System/Library/PrivateFrameworks/SiriGeo.framework/SiriGeo'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorO21__derived_enum_equalsySbAE_AEtFZ', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorO4hash4intoys6HasherVz_tF', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorO9hashValueSivg', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorO9hashValueSivpMV', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorOMa', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorOMn', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorON', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorOSHAAMc', 
+                       '_$s7SiriGeo11MapsServiceC26ShareETAConfigurationErrorOSQAAMc', 
+                       '_$s7SiriGeo11MapsServiceC26shareETAConfigurationCheckAC05ShareF5ErrorOSgyFZ', 
+                       '_$s7SiriGeo11MapsServiceC7timeoutSivpfi', '_$s7SiriGeo11MapsServiceC8observerAC25CapabilityFetcherObserverCSgvpfi', 
+                       '_$s7SiriGeo11MapsServiceC9logObjectSo06OS_os_E0Cvpfi', '_$s7SiriGeo11MapsServiceCMa', 
+                       '_$s7SiriGeo11MapsServiceCMm', '_$s7SiriGeo11MapsServiceCMn', 
+                       '_$s7SiriGeo11MapsServiceCN', '_$s7SiriGeo11MapsServiceCfD', 
+                       '_$s7SiriGeo11MapsServiceCfd', '_$s7SiriGeo23INShareETAIntentHandlerC14contactService33_73890AA4F3C712AED7434AA5E49C1938LLAA07ContactG0Cvpfi', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC17resolveRecipients3for4withySo0cD0C_ySaySo0C28ETARecipientResolutionResultCGctF', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC17resolveRecipients3for4withySo0cD0C_ySaySo0C28ETARecipientResolutionResultCGctFTq', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC17sharedTripContact33_73890AA4F3C712AED7434AA5E49C1938LLAA017EnhancedMSPSharedgH0VSgvpfi', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC6handle6intent10completionySo0cD0C_ySo0cD8ResponseCctF', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC6handle6intent10completionySo0cD0C_ySo0cD8ResponseCctFTq', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC7confirm6intent10completionySo0cD0C_ySo0cD8ResponseCctF', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC7confirm6intent10completionySo0cD0C_ySo0cD8ResponseCctFTq', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerC9logObjectSo06OS_os_F0Cvpfi', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerCACycfC', '_$s7SiriGeo23INShareETAIntentHandlerCACycfc', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerCMa', '_$s7SiriGeo23INShareETAIntentHandlerCMn', 
+                       '_$s7SiriGeo23INShareETAIntentHandlerCN', '_$s7SiriGeo23INShareETAIntentHandlerCfD', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC14contactService33_3A0DEC3189633C5DAEB81D22DCD1F847LLAA07ContactH0Cvpfi', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC17resolveRecipients3for4withySo0cdE0C_ySaySo0cD28ETARecipientResolutionResultCGctF', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC17resolveRecipients3for4withySo0cdE0C_ySaySo0cD28ETARecipientResolutionResultCGctFTq', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC17sharedTripContact33_3A0DEC3189633C5DAEB81D22DCD1F847LLSo8NSObjectCSgvpfi', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC6handle6intent10completionySo0cdE0C_ySo0cdE8ResponseCctF', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC6handle6intent10completionySo0cdE0C_ySo0cdE8ResponseCctFTq', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC7confirm6intent10completionySo0cdE0C_ySo0cdE8ResponseCctF', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC7confirm6intent10completionySo0cdE0C_ySo0cdE8ResponseCctFTq', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerC9logObjectSo06OS_os_G0Cvpfi', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerCACycfC', '_$s7SiriGeo27INStopShareETAIntentHandlerCACycfc', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerCMa', '_$s7SiriGeo27INStopShareETAIntentHandlerCMn', 
+                       '_$s7SiriGeo27INStopShareETAIntentHandlerCN', '_$s7SiriGeo27INStopShareETAIntentHandlerCfD', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC07resolvedE03for4withySo0cdeF0C_ySo27INPlacemarkResolutionResultCctF', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC07resolvedE03for4withySo0cdeF0C_ySo27INPlacemarkResolutionResultCctFTq', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC10completionySo27INPlacemarkResolutionResultCcSgvpfi', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC18locationControllerAA0eI0CSgvpfi', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctF', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctFTq', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerC9logObjectSo06OS_os_H0Cvpfi', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCACycfC', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCACycfc', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCMa', '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCMn', 
+                       '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCN', '_$s7SiriGeo34INSaveParkingLocationIntentHandlerCfD', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctF', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctFTq', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerC9logObjectSo06OS_os_H0Cvpfi', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCACycfC', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCACycfc', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCMa', '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCMn', 
+                       '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCN', '_$s7SiriGeo36INDeleteParkingLocationIntentHandlerCfD', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctF', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerC6handle6intent10completionySo0cdeF0C_ySo0cdeF8ResponseCctFTq', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerC9logObjectSo06OS_os_H0Cvpfi', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCACycfC', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCACycfc', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCMa', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCMn', 
+                       '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCN', '_$s7SiriGeo38INRetrieveParkingLocationIntentHandlerCfD', 
+                       _SiriGeoVersionNumber, _SiriGeoVersionString ]
+    objc-classes:    [ _TtC7SiriGeo23INShareETAIntentHandler, _TtC7SiriGeo27INStopShareETAIntentHandler, 
+                       _TtC7SiriGeo34INSaveParkingLocationIntentHandler, _TtC7SiriGeo36INDeleteParkingLocationIntentHandler, 
+                       _TtC7SiriGeo38INRetrieveParkingLocationIntentHandler ]
+...

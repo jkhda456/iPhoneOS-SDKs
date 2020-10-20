@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C65F708F-DD6D-3540-B8B9-5C9FAC86807B
+  - target:          armv7s-ios
+    value:           23D35D4C-1C84-3973-9F82-512D9FA5E11E
+  - target:          arm64-ios
+    value:           EE7C6774-A593-3CE5-AD25-6B55B68DC7A0
+  - target:          arm64e-ios
+    value:           DB770254-7D6C-38CE-8D10-2BE858A9FC90
+install-name:    '/System/Library/PrivateFrameworks/IncomingCallFilter.framework/IncomingCallFilter'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ICFCallProviderShouldAllowIncomingCall, _ICFCallProviderShouldAllowIncomingCallWithQueue, 
+                       _ICFRegisterCallFilterBlockWithIdentifier, _ICFRegisterCallFilterResultBlockWithIdentifier, 
+                       _ICFServiceIdentifierFaceTime, _ICFServiceIdentifierFaceTimeAudio, 
+                       _ICFServiceIdentifierTelephony, _ICFServiceIdentifierTelephonyRelay, 
+                       _ICFUnknownID, _ICFUnregisterCallFilterBlockWithIdentifier, 
+                       _ICFUnregisterCallFilterResultBlockWithIdentifier ]
+    objc-classes:    [ ICFCallServer ]
+...

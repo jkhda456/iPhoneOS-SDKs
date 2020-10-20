@@ -1,0 +1,80 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DAE9BF81-BCD6-3781-9BD5-EC2C71066936
+  - target:          armv7s-ios
+    value:           AFF26FA4-166A-3DAA-8E3B-2F292FC87DAB
+  - target:          arm64-ios
+    value:           86F130B9-2BCA-37BD-863F-6B2982B33DF0
+  - target:          arm64e-ios
+    value:           3ED97BDB-4BD2-343D-B04E-BA1C628AC617
+install-name:    '/System/Library/PrivateFrameworks/NLP.framework/NLP'
+current-version: 210
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NLEmojiPredictorCreate, _NLEmojiPredictorCreateCandidatesForString, 
+                       _NLMessageConversationAddConversationTurn, _NLMessageConversationCopyConversationTurns, 
+                       _NLMessageConversationCopyMetadata, _NLMessageConversationCreate, 
+                       _NLMessageConversationTurnCopyContent, _NLMessageConversationTurnCopySenderID, 
+                       _NLMessageConversationTurnCopyTimestamp, _NLMessageConversationTurnCreate, 
+                       _NLMessageConversationUpdateMetadata, _NLMessageIntentCandidateCopyAttributes, 
+                       _NLMessageIntentCandidateCreate, _NLMessageIntentCandidateGetIntentType, 
+                       _NLMessageIntentCandidateGetScore, _NLMessageIntentRecognizerCopyIntentCandidatesForIntentType, 
+                       _NLMessageIntentRecognizerCopyTopIntentCandidate, _NLMessageIntentRecognizerCopyTopNCandidatesForIntentType, 
+                       _NLMessageIntentRecognizerCopyTopNIntentCandidates, _NLMessageIntentRecognizerCopyTopNIntentTypes, 
+                       _NLMessageIntentRecognizerCreate, _NLMorphologicalAnalyzerCreate, 
+                       _NLMorphologicalAnalyzerEnumerateLemmasForToken, _NLMorphologicalAnalyzerEnumerateVariantsForToken, 
+                       _NLParsecDataChangedNotification, _NLSearchAttributeDateComponents, 
+                       _NLSearchAttributeDateDisplayString, _NLSearchAttributeDateModifier, 
+                       _NLSearchAttributeDateType, _NLSearchAttributeEndDateComponents, 
+                       _NLSearchAttributeFrequencyDateComponents, _NLSearchAttributeStartDateComponents, 
+                       _NLSearchParseCandidateCopyAttributedInput, _NLSearchParseCandidateCopyDescription, 
+                       _NLSearchParseCandidateCopyRankCategories, _NLSearchParseCandidateCopyRankTerms, 
+                       _NLSearchParseCandidateCopyRankingTerms, _NLSearchParseCandidateCopyResultModifier, 
+                       _NLSearchParseGetConfidence, _NLSearchParseLanguageIsSupported, 
+                       _NLSearchParserAppendString, _NLSearchParserCopyAvailableLanguages, 
+                       _NLSearchParserCopyParse, _NLSearchParserCopyParseWithOptions, 
+                       _NLSearchParserCreate, _NLSearchParserEnumerateSuggestions, 
+                       _NLSearchParserGetTokenCount, _NLSearchParserOptionContextIdentifierKey, 
+                       _NLSearchParserOptionDateKey, _NLSearchParserOptionEndDateModifierKey, 
+                       _NLSearchParserOptionEndDateQueryKey, _NLSearchParserOptionIncludeFutureDatesKey, 
+                       _NLSearchParserOptionLocaleKey, _NLSearchParserOptionStartDateModifierKey, 
+                       _NLSearchParserOptionStartDateQueryKey, _NLSearchParserSetContext, 
+                       _NLSearchParserSetCustomResourceDirectory, _NLSearchParserSetDate, 
+                       _NLSearchParserSetFutureDates, _NLSearchParserSetIndex, _NLSearchParserSetLocale, 
+                       _NLSearchParserSetString, _NLSentenceCorrectorCreate, _NLSentenceCorrectorEnumerateErrorsForSentenceWithBlock, 
+                       _NLTextSlotGetRange, _NLTextSlotGetResolvedDate, _NLTextSlotGetSlotID, 
+                       _NLTextSlotIsAllDayEvent, _NLTextSlotParserCreate, _NLTextSlotParserCreateStructuredEvent, 
+                       _NLTextSlotRecurrentEventGetEventEndDate, _NLTextSlotRecurrentEventGetEventFrequency, 
+                       _NLTextSlotRecurrentEventGetEventRange, _NLTextSlotRecurrentEventGetEventStartDate, 
+                       _NLTextSlotRecurrentEventIsAllDayEvent, _NLTextStructuredEventGetActionPhraseRange, 
+                       _NLTextStructuredEventGetEventDescriptorRange, _NLTextStructuredEventGetEventFixedDateSlot, 
+                       _NLTextStructuredEventGetLocationRanges, _NLTextStructuredEventGetPeopleRanges, 
+                       _NLTextStructuredEventGetRecurrentEvent, _NLTransliterationCandidateCopyInputString, 
+                       _NLTransliterationCandidateCopyOutputString, _NLTransliterationCandidateCreate, 
+                       _NLTransliterationCandidateIsExtensionCandidate, _NLTransliterationCandidateIsInVocabulary, 
+                       _NLTransliterationCandidateScore, _NLTransliteratorAcceptCandidate, 
+                       _NLTransliteratorCopyCandidates, _NLTransliteratorCreate, 
+                       _NLTransliteratorFlushDynamicLanguageModel, _NLTransliteratorResetDynamicLanguageModel, 
+                       _kNLEmojiPredictionLocaleKey, _kNLEmojiPredictionResourceDirectoryKey, 
+                       _kNLMessageIntentAttributeKeywordsKey, _kNLMessageIntentRecognizerCustomModelPathKey, 
+                       _kNLMessageIntentRecognizerLocaleKey, _kNLMorphologicalAnalyzerLocaleKey, 
+                       _kNLSearchParseAttributedInputDateKey, _kNLSearchParseAttributedInputRecipientKey, 
+                       _kNLSearchParseAttributedInputSenderKey, _kNLSearchParseAttributedInputTitleKey, 
+                       _kNLSearchParseAttributedInputTopicKey, _kNLSearchParserContextIdentifierKey, 
+                       _kNLSearchParserCustomResourceDirectoryKey, _kNLSearchParserDateKey, 
+                       _kNLSearchParserLocaleKey, _kNLSentenceCorrectorLocaleKey, 
+                       _kNLSentenceCorrectorResourceDirectoryLocationKey, _kNLTextSlotParserLocaleKey, 
+                       _kNLTextSlotParserRecurrentFrequencyDayKey, _kNLTextSlotParserRecurrentFrequencyHourKey, 
+                       _kNLTextSlotParserRecurrentFrequencyMinuteKey, _kNLTextSlotParserRecurrentFrequencyMonthKey, 
+                       _kNLTextSlotParserRecurrentFrequencySecondKey, _kNLTextSlotParserRecurrentFrequencyWeekOfMonthKey, 
+                       _kNLTextSlotParserRecurrentFrequencyWeekOfYearKey, _kNLTextSlotParserRecurrentFrequencyWeekdayEndKey, 
+                       _kNLTextSlotParserRecurrentFrequencyWeekdayKey, _kNLTextSlotParserRecurrentFrequencyWeekdayOrdinalKey, 
+                       _kNLTextSlotParserRecurrentFrequencyWeekdayStartKey, _kNLTextSlotParserRecurrentFrequencyYearKey, 
+                       _kNLTextSlotParserReferenceDateKey, _kNLTextSlotParserResourceDirectoryLocationKey, 
+                       _kNLTransliteratorTargetLocaleKey ]
+    objc-classes:    [ NLParsecDataManager, NLSearchParserManager, QuickTypePFLData, 
+                       QuickTypePFLTrainer ]
+...

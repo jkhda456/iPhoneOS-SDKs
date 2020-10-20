@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           0A5766BC-CC05-3512-834D-45D0DEAA2DC2
+  - target:          armv7s-ios
+    value:           D40E363A-16EC-3774-A5BE-C617F938A0C1
+  - target:          arm64-ios
+    value:           B30B7E2E-D450-3867-8791-28CB862C1AFC
+  - target:          arm64e-ios
+    value:           66F8CC45-9FAC-3808-A95C-7476F2D35F6B
+install-name:    '/System/Library/PrivateFrameworks/SymptomReporter.framework/SymptomReporter'
+current-version: 1431.0.17
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ __symptoms_globals_init, __symptoms_is_daemon_fallback_blacklisted, 
+                       _set_symtrans_verbosity, _symptoms_go_multithreaded ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _set_symptom_verbosity, _symptom_create, _symptom_framework_init, 
+                       _symptom_framework_set_version, _symptom_framework_stats, 
+                       _symptom_new, _symptom_send, _symptom_send_immediate, _symptom_set_additional_digest, 
+                       _symptom_set_additional_qualifier, _symptom_set_qualifier ]
+...

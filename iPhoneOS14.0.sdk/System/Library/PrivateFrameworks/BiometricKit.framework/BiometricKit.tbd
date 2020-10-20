@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6DFCF19D-4500-3FDB-BD84-07B54B6E1F7B
+  - target:          arm64e-ios
+    value:           28C610AC-83C0-32FD-8F1D-D4E5D7777B20
+install-name:    '/System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BKErrorDomain, _BKLogCode, _BKLogEvent, _kBiometricKitEnrollProgressDetailExtendedComponentID, 
+                       _kBiometricKitEnrollProgressDetailMergedInComponents, _kBiometricKitEnrollProgressDetailNewComponentID, 
+                       _kBiometricKitEnrollProgressDetailNewNodeCoordinates, _kBiometricKitEnrollProgressDetailNewNodeID, 
+                       _kBiometricKitEnrollProgressDetailReason, _kBiometricKitEnrollProgressDetailRedundantNode, 
+                       _kBiometricKitEnrollProgressDetailRemovedComponentID, _kBiometricKitEnrollProgressDetailRemovedNodeID, 
+                       _kBiometricKitEnrollProgressDetailResultComponentID, _kBiometricKitIdentityAttributeKey, 
+                       _kBiometricKitIdentityCreationTimeKey, _kBiometricKitIdentityEntityKey, 
+                       _kBiometricKitIdentityMatchCountKey, _kBiometricKitIdentityNameKey, 
+                       _kBiometricKitIdentityTypeKey, _kBiometricKitIdentityUUIDKey, 
+                       _kBiometricKitIdentityUpdateCountKey, _kBiometricKitIdentityUserIDKey, 
+                       _kBiometricKitTemplateDetailLargestComponentArea, _kBiometricKitTemplateDetailLargestComponentNodes, 
+                       _kBiometricKitTemplateDetailTotalArea, _kBiometricKitTemplateDetailTotalNodes, 
+                       _kBiometricKitTemplateUpdated ]
+    objc-classes:    [ BKDevice, BKDeviceDescriptor, BKDeviceManager, BKDevicePearl, 
+                       BKDeviceTouchID, BKEnrollOperation, BKEnrollPearlOperation, 
+                       BKEnrollPearlProgressInfo, BKEnrollTouchIDOperation, BKExtendEnrollTouchIDOperation, 
+                       BKFaceDetectOperation, BKFaceDetectStateInfo, BKFingerDetectOperation, 
+                       BKIdentity, BKMatchEvent, BKMatchOperation, BKMatchPearlOperation, 
+                       BKMatchPearlResultInfo, BKMatchResultInfo, BKMatchTouchIDOperation, 
+                       BKOperation, BKPresenceDetectOperation, BKSystemProtectedConfiguration, 
+                       BKUserProtectedConfiguration, BiometricKit, BiometricKitEnrollProgressCoordinates, 
+                       BiometricKitEnrollProgressInfo, BiometricKitEnrollProgressMergedComponent, 
+                       BiometricKitIdentity, BiometricKitMatchInfo, BiometricKitTemplateInfo ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3A3863C7-2842-3925-AF48-609EC0EE1654
+  - target:          arm64e-ios
+    value:           622FEF6E-9575-3F29-BA6D-CCF5A4644E28
+install-name:    '/System/Library/PrivateFrameworks/AlgosScoreFramework.framework/AlgosScoreFramework'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AlgosConnectionScore, AlgosScoreCSVReader, AlgosScoreCombiner, 
+                       AlgosScoreDataCSV, AlgosScoreFaceTimeDataCSV, AlgosScoreStreamDataCSV, 
+                       AlgosStreamScore ]
+    objc-ivars:      [ AlgosScoreDataCSV.csvData ]
+...

@@ -1,0 +1,94 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           AD79628F-822B-3ECA-A13A-B0273BCFC86B
+  - target:          armv7s-ios
+    value:           E0798CBE-279E-3087-9055-E2C3C14CD67C
+  - target:          arm64-ios
+    value:           4EA8E98A-BA0D-3879-B888-5C9662ED1D4A
+  - target:          arm64e-ios
+    value:           5FBDE1D8-7497-3F82-A492-44EE71B0F5C8
+install-name:    '/System/Library/PrivateFrameworks/MPUFoundation.framework/MPUFoundation'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MPUDeviceGetGraphicsQuality, _MPUFrameworkImage, _MPUJinglePlayActivityReportingControllerShouldReportAggregateTimePlayActivityEventsForMatchUsers, 
+                       _MPUScrollViewApplyContentInsetAdditions, _MPUScrollViewApplyScrollIndicatorInsetAdditions, 
+                       _MPUTruncatedComponentsJoinedByString, _SSVMediaContentTasteItemContentTypeFromMPUContentItemType, 
+                       ___activeEffectCoordinator ]
+    objc-classes:    [ MPUAVPlayer, MPUAVPlaylistManager, MPUBlockAnimationDelegate, 
+                       MPUBlurEffectView, MPUEffectCache, MPUEffectCoordinator, MPUEffectView, 
+                       MPUFormattingUtilities, MPUKeyValueObserver, MPUPercentDrivenInteractionTransition, 
+                       MPUReportingController, MPUReportingPlaybackObserver, MPUStringTruncationStrategy, 
+                       MPUVibrantContentEffectView, MPUViewControllerTransitionContext ]
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN3MPU18LayoutInterpolator16EntriesContainer11insertEntryENS0_5EntryE, 
+                       __ZN3MPU18LayoutInterpolator16EntriesContainerC1Ed, __ZN3MPU18LayoutInterpolator16EntriesContainerC2Ed, 
+                       __ZN3MPU18LayoutInterpolator35_EntriesContainerMakeInsertionErrorEPNS0_16EntriesContainerENS0_5Entry14InsertionError4CodeES3_S3_, 
+                       __ZN3MPU7Point3D55resolveEquationOfPlaneDefinedByFirstThreePointsInVectorERNSt3__16vectorIS0_NS1_9allocatorIS0_EEEEPdS7_S7_, 
+                       __ZN3MPU7Point3DC1Eddd, __ZN3MPU7Point3DC2Eddd, __ZNK3MPU18LayoutInterpolator16EntriesContainer12entriesCountEv, 
+                       __ZNK3MPU18LayoutInterpolator16EntriesContainer17copyEntriesVectorEv, 
+                       __ZNK3MPU18LayoutInterpolator16EntriesContainer22primaryReferenceMetricEv, 
+                       __ZNK3MPU18LayoutInterpolator16EntriesContainer32valueForSecondaryReferenceMetricEd, 
+                       __ZNK3MPU7Point3DeqERKS0_, __ZNK3MPU7Point3DneERKS0_ ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MPUAVItemContentItemIdentifierCollectionDidChangeNotification, 
+                       _MPUBalancedEdgeInsets, _MPUBorderDrawingCacheDidInvalidateNotification, 
+                       _MPUContentItemTypeFromMPMediaPlaybackItemContentType, _MPUContentItemTypeIsContainerType, 
+                       _MPUDataSourceDidInvalidateNotification, _MPUDataSourceInvalidationContextUserInfoKey, 
+                       _MPUDataSourceViewControllerRestorationDataSourceKey, _MPUDataSourceWillInvalidateNotification, 
+                       _MPUDeviceIsWidePhone, _MPUEdgeInsetsOutsetRect, _MPUEdgeInsetsRectInsets, 
+                       _MPUFloatCeilForScale, _MPUFloatEqualToFloat, _MPUFloatFloorForScale, 
+                       _MPUFloatGetSafeScaleForValue, _MPUFloatGreaterThanOrEqualToFloat, 
+                       _MPUFloatLessThanOrEqualToFloat, _MPUFloatRoundForScale, _MPUFontDescriptorPreferredContentSizeCategoryDidChangeNotification, 
+                       _MPUFontLeadingAdjustmentGetDescription, _MPUFontTextStyleGetDescription, 
+                       _MPUFontWeightGetDescription, _MPUHTMLEscapedDescriptionML, 
+                       _MPUHTMLEscapedLyricsML, _MPUHTMLParserErrorDomain, _MPUHTMLParserMultipleErrorsKey, 
+                       _MPUHalfTintedTransportButtonReuseIdentifier, _MPUInsetsFromRectToRect, 
+                       _MPUJinglePlayActivityReportingControllerHasProperAccountStatusForAggregateTimePlayActivityEventReporting, 
+                       _MPUJinglePlayActivityReportingControllerHasSBEnabledAccountStatus, 
+                       _MPULayoutInterpolatorScaledValueFromTraitEnvironment, _MPULayoutLinearRelationEvaluate, 
+                       _MPULayoutLinearRelationMake, _MPULayoutSizeNoDimension, _MPULocalizedString, 
+                       _MPUNowPlayingIndicatorPlaybackStateFromMPPlaybackState, _MPUPinningViewPrepareForDefaultImageSnapshotNotification, 
+                       _MPUPinningViewScreenUserInfoKey, _MPUPointEqualToPoint, _MPUQueueFeederContentItemIdentifierCollectionDidChangeNotification, 
+                       _MPURectByApplyingUserInterfaceLayoutDirectionInRect, _MPURectByRemovingUserInterfaceLayoutDirectionInRect, 
+                       _MPURectEqualToRect, _MPUSizeEqualToSize, _MPUTableViewControllerIsValidContentOffset, 
+                       _MPUTransportButtonReuseIdentifier, __MPUFontDescriptorDidInvalidateCachedFontsAndMetricsNotification, 
+                       __MPUProtoBufUserActivityContainerItemReadFrom, __MPUProtoBufUserActivityContextReadFrom ]
+    objc-classes:    [ MPUAbbreviatingLabel, MPUActionCellConfiguration, MPUAnimationFactory, 
+                       MPUBorderConfiguration, MPUBorderDrawingCache, MPUBorderView, 
+                       MPUBorderedImageStackItemView, MPUCellConfiguration, MPUCellInvalidationContext, 
+                       MPUContentItemIdentifierCollection, MPUContentSizeLayoutConstraint, 
+                       MPUDataSource, MPUDataSourceConfiguration, MPUDataSourceController, 
+                       MPUDataSourceInvalidationContext, MPUDataSourceViewController, 
+                       MPUEmphasizedText, MPUFallAnimator, MPUFontDescriptor, MPUFontDescriptorCache, 
+                       MPUHTMLParser, MPUHalfTintedTransportButton, MPUImageStackItemView, 
+                       MPUJinglePlayActivityReportingController, MPULayoutInterpolator, 
+                       MPUMarqueeView, MPUMutableContentItemIdentifierCollection, 
+                       MPUMutableFontDescriptor, MPUMutableUserActivityContainerItem, 
+                       MPUMutableUserActivityContext, MPUNotificationObserver, MPUNowPlayingIndicatorView, 
+                       MPUNumberFormatter, MPUPinningView, MPUQueryDataSource, MPUSearchDataSource, 
+                       MPUSpringAnimationFactory, MPUStackItemView, MPUStackView, 
+                       MPUTableViewController, MPUTextContainerContentSizeUpdater, 
+                       MPUTextDrawingCache, MPUTextDrawingCacheKey, MPUTextDrawingContext, 
+                       MPUTextDrawingView, MPUTransportButton, MPUTransportButtonEventHandler, 
+                       MPUTransportControl, MPUUserActivityContainerItem, MPUUserActivityContext, 
+                       MPUViewControllerConfiguration, MPUViewControllerFactory, 
+                       _MPUFallAnimatorDynamicItem, _MPUFallAnimatorDynamicSystem, 
+                       _MPUHTMLDefaultDelegate, _MPUHTMLParserState, _MPUMarqueeContentView, 
+                       _MPUProtoBufUserActivityContainerItem, _MPUProtoBufUserActivityContext, 
+                       _MPUSearchOperation, _MPUStackItemReuseCache ]
+    objc-ivars:      [ MPUContentItemIdentifierCollection._identifierTypeToIdentifier, 
+                       MPUContentItemIdentifierCollection._itemType, MPUFontDescriptor._customFontPointSizeLayoutInterpolator, 
+                       MPUFontDescriptor._defaultFont, MPUFontDescriptor._defaultFontMetrics, 
+                       MPUFontDescriptor._defaultPointSizeAdjustment, MPUFontDescriptor._leadingAdjustment, 
+                       MPUFontDescriptor._preferredFont, MPUFontDescriptor._preferredFontMetrics, 
+                       MPUFontDescriptor._systemFontSize, MPUFontDescriptor._textStyle, 
+                       MPUFontDescriptor._usesCondensedMetrics, MPUFontDescriptor._usesItalic, 
+                       MPUFontDescriptor._wantsMonospaceNumbers, MPUFontDescriptor._weight, 
+                       MPUQueryDataSource._entities, MPUUserActivityContainerItem._containerItemType, 
+                       MPUUserActivityContainerItem._selectedMediaEntity, MPUUserActivityContainerItem._visualReferenceMediaEntity, 
+                       MPUUserActivityContext._containerItems, MPUUserActivityContext._originatorType, 
+                       MPUUserActivityContext._originatorVersion ]
+...

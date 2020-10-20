@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2C49AF11-6AC1-3219-98DC-93B9A36A9DEE
+  - target:          arm64e-ios
+    value:           00B8EDDE-771E-39F6-A7AF-9499C5FD8845
+install-name:    '/System/Library/PrivateFrameworks/AirPlayReceiverKit.framework/AirPlayReceiverKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AirPlayReceiverKitVersionNumber, _AirPlayReceiverKitVersionString, 
+                       _SBufConsumerCreate, _SBufConsumerRegisterAudioSampleBufferCallbackForRendering, 
+                       _SBufConsumerRegisterCallbackForCopyProperty, _SBufConsumerRegisterCallbackForDisconnect, 
+                       _SBufConsumerRegisterVideoSampleBufferCallbackForRendering, 
+                       _gLogCategory_AirPlayReceiverKit, _kAPRKMediaPlayerCurrentItemKey, 
+                       _kAPRKMediaPlayerNotificationNameStallCountChanged, _kAPRKMediaPlayerPreviousItemKey, 
+                       _kReachabilityChangedNotification ]
+    objc-classes:    [ APRKContentKeyHelper, APRKMediaPlayer, APRKMetadata, APRKPlayerItem, 
+                       APRKResourceLoaderHelper, APRKStreamRecorder, APRKStreamRenderer, 
+                       APRKStreamRenderingManager, APRKUtilities, Reachability ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           132ADBB1-2F42-369E-A811-F5BB5F800298
+  - target:          armv7s-ios
+    value:           144ECE61-F178-3DBA-83AC-CD248C5569DD
+  - target:          arm64-ios
+    value:           6613523A-F3BA-301C-94B2-B91A8CC14761
+  - target:          arm64e-ios
+    value:           6071AEBA-AEF8-3184-9D05-339AB4311B24
+install-name:    '/System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CSCoderArrayCount ]
+    objc-classes:    [ SpotlightReceiverDelegate, SpotlightReceiverSetupInfo ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SpotlightReceiverEntitlement, _SpotlightReceiverRegister, 
+                       _SpotlightReceiverVersionNumber, _SpotlightReceiverVersionString, 
+                       _SpotlightSenderEntitlement ]
+    objc-classes:    [ CSRecieverConnection ]
+...

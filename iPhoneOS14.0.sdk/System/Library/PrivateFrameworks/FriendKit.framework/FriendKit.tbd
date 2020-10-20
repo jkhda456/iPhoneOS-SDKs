@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2376878D-1B77-3A1F-8E02-71A7F1C5A2A9
+  - target:          armv7s-ios
+    value:           B3BF9517-7491-3346-897B-C628FF14CEE1
+  - target:          arm64-ios
+    value:           1AFE48A4-C972-30FB-A9BD-49AE357D82F3
+  - target:          arm64e-ios
+    value:           A8A01B2D-DF6B-3FAC-98BC-52F8E35A7565
+install-name:    '/System/Library/PrivateFrameworks/FriendKit.framework/FriendKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DigitalTouchDomain, _FKDeduplicateFriendListEnabledKey, _FKDidNormalizeFriendListDestinationsKey, 
+                       _FKEmptyTrailingGroupEnabledKey, _FKFriendGroupTitleChangedExternallyNotification, 
+                       _FKFriendGroupTitleChangedExternallyNotificationKey, _FKFriendGroupTitleChangedNotification, 
+                       _FKFriendListKey, _FKFriendsChangedExternallyNotification, 
+                       _FKFriendsChangedExternallyNotificationKey, _FKFriendsManagerChangedNotification, 
+                       _FKFriendsManagerDestinationStatusUpdatedDestinationsKey, 
+                       _FKFriendsManagerDestinationStatusUpdatedNotification, _FKFriendsManagerGroupListChanged, 
+                       _FKFriendsManagerPersonAdded, _FKFriendsManagerPersonDeleted, 
+                       _FKFriendsManagerPersonMoved, _FKFriendsManagerPersonUpdated, 
+                       _FKGroupSizeKey, _FKGroupTitlesKey, _FKMaxGroupCountKey, _FKPersonUnlinkedABGUIDKey, 
+                       _FKPersonUnlinkedFromAddressBookNotification, _FKPersonValuesChangedNotification, 
+                       _FKRefreshAgainstContactsOnInitEnabledKey, _FKRemoveDestinationlessFriendsEnabledKey, 
+                       _FriendKitBundle, _FriendKitVersionNumber, _FriendKitVersionString, 
+                       __FKGetLogSystem ]
+    objc-classes:    [ FKAddressBook, FKDelayedOperation, FKFriendGroup, FKFriendsManager, 
+                       FKPerson, FKUtility ]
+...

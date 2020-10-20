@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D05C6A4B-3BB7-32A8-BDF0-797970DF0B12
+  - target:          armv7s-ios
+    value:           C2D408B7-3512-3CA8-92AB-63CBF562807E
+  - target:          arm64-ios
+    value:           107853D9-2B8C-3AEE-8B04-C968B775F960
+  - target:          arm64e-ios
+    value:           FF0AAE93-69B1-3B17-82E8-3403BB712158
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DASubCal.framework/DASubCal'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kSubCalFilterAlarmsKey, _kSubCalSubscriptionURLKey, _kSubCalTitleKey, 
+                       _kSubCalURLRequestErrorDomain, _subCalSetDigestOnCalendar ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromSubCalRefreshTaskError, _SubCalCopyAuthNeededForHostNotification, 
+                       _SubCalCopyDuplicateAccountNotification, _SubCalCopyInvalidAccountNotification, 
+                       _SubCalCopySSLFailureNotification, _SubCalCopySaveAccountNotification, 
+                       _SubCalCopyWhereToAccountNotification, __subCalLegacyDigestForCalendar, 
+                       __subCalLegacySetDigestOnCalendar, _kSubCalCalDAVURLKey, _kSubCalExternalRepDigestKey, 
+                       _kSubCalExternalRepRefreshFlagsKey, _kSubCalExternalRepresentation, 
+                       _kSubCalFilterAttachmentsKey, _kSubCalFilterTasksKey, _kSubCalIsHolidaySubscribedCalendar, 
+                       _kSubCalIsManagedByServerKey, _kSubCalRefreshIntervalKey, 
+                       _kSubCalShouldRemoveAlarms, _kSubCalSubscribedCalendarType, 
+                       _kSubCalSyncId, _kSubCalURLSanitized, _kSubCalUseFTP, _kSubCalValidationTaskErrorDomain, 
+                       _kSubCaliCalTypeKey, _subCalDigestForCalendar, _subCalExternalRep, 
+                       _subCalRefreshFlagsForCalendar, _subCalSetRefreshFlagsOnCalendar ]
+    objc-classes:    [ SubCalAccount, SubCalDATask, SubCalLocalDBHelper, SubCalURLRequest, 
+                       SubCalValidationTask ]
+...

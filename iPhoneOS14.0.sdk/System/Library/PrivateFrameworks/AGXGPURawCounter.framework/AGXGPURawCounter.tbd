@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FC44322F-E1E2-3EFC-8F85-95C4A78FF7E8
+  - target:          arm64e-ios
+    value:           61930B71-09CE-31DB-937A-68EE320AA5CF
+install-name:    '/System/Library/PrivateFrameworks/AGXGPURawCounter.framework/AGXGPURawCounter'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN16AGXGPURawCounter14createInstanceEj, __ZN16AGXGPURawCounter15destroyInstanceEv, 
+                       __ZN16AGXGPURawCounter8instanceEv, __ZNK16AGXGPURawCounter19sourceBufferMinSizeEv, 
+                       __ZNK16AGXGPURawCounter25sourceBufferSizeAlignmentEv ]
+...

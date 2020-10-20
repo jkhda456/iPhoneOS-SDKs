@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C77DB27F-6E27-3CF9-8A9E-F50C60ABB983
+  - target:          armv7s-ios
+    value:           8648B26F-57C7-3ADA-8FA0-ABB4FA71183A
+  - target:          arm64-ios
+    value:           5F60FCA2-4487-3026-BC74-001B0CEF2640
+  - target:          arm64e-ios
+    value:           27B69A5E-A89F-3E88-9FA9-3BD7124720DE
+install-name:    '/System/Library/PrivateFrameworks/NanoComplicationSettings.framework/NanoComplicationSettings'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NCSMaxActiveComplicationCount ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ApplicationsChanged, _ComplicationSettingsChanged, _NCSActiveKey, 
+                       _NCSAppBundleIdentifierKey, _NCSComplicationBundleIdentifierKey, 
+                       _NCSComplicationDefinitionsKey, _NCSComplicationNameKey, _NCSDomainKey, 
+                       _NCSInstallStateKey, _NCSNanoComplicationSettingsVersionNumber, 
+                       _NCSNanoComplicationSettingsVersionString, _NCSSelectedComplicationIdentifierKey, 
+                       _NCSSettingsChangedNotification, _NCSSockPuppetAppIdentifierKey, 
+                       _NCSSockPuppetBundleIdentifier, _PairedDeviceChanged, _SPApplicationsChanged ]
+    objc-classes:    [ NCSComplication, NCSInternalSettingsManager, NCSSettingsManager ]
+...

@@ -1,0 +1,58 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           82736DC3-F9EC-3CBF-80A0-AB12C06D9E18
+  - target:          arm64e-ios
+    value:           6187E7B8-DDE8-3342-A359-9A7477157352
+install-name:    '/System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CWFApple80211ErrorDomain, _CWFBootArgs, _CWFConvertPropertyListToJSON, 
+                       _CWFCorrectEthernetAddressString, _CWFEthernetAddressDataFromString, 
+                       _CWFEthernetAddressStringFromData, _CWFEventAutoJoinStatusKey, 
+                       _CWFEventJoinStatusKey, _CWFEventLinkChangeStatusKey, _CWFEventLinkQualityMetricKey, 
+                       _CWFEventRoamStatusKey, _CWFHexadecimalStringFromData, _CWFInternalEventAutoJoinResultKey, 
+                       _CWFInternalEventAutoJoinStateKey, _CWFInternalEventAutoJoinTriggerKey, 
+                       _CWFInternalEventErrorKey, _CWFInternalEventIsAutoJoinKey, 
+                       _CWFInternalEventScanResultKey, _CWFKnownNetworksStoreIdentifier, 
+                       _CWFLog, _CWFMachineSerialNumber, _CWFManagerErrorDomain, 
+                       _CWFNetworkConfigurationTimeout, _CWFNetworkProfilePropertyAddReasonKey, 
+                       _CWFNetworkProfilePropertyAddedAtKey, _CWFNetworkProfilePropertyAutoJoinDisabledKey, 
+                       _CWFNetworkProfilePropertyBundleIDKey, _CWFNetworkProfilePropertyCaptiveProfileKey, 
+                       _CWFNetworkProfilePropertyEAPProfileKey, _CWFNetworkProfilePropertyHiddenStateKey, 
+                       _CWFNetworkProfilePropertyLastJoinedBySystemAtKey, _CWFNetworkProfilePropertyLastJoinedByUserAtKey, 
+                       _CWFNetworkProfilePropertyLowDataModeKey, _CWFNetworkProfilePropertyOSSpecificAttributesKey, 
+                       _CWFNetworkProfilePropertyPasspointCellularNetworkInfoKey, 
+                       _CWFNetworkProfilePropertyPasspointDisplayedOperatorNameKey, 
+                       _CWFNetworkProfilePropertyPasspointDomainNameKey, _CWFNetworkProfilePropertyPasspointNAIRealmNameListKey, 
+                       _CWFNetworkProfilePropertyPasspointRoamingConsortiumListKey, 
+                       _CWFNetworkProfilePropertyPasspointServiceProviderRoamingEnabledKey, 
+                       _CWFNetworkProfilePropertyPasswordSharingDisabledKey, _CWFNetworkProfilePropertyPayloadUUIDKey, 
+                       _CWFNetworkProfilePropertyPersonalHotspotKey, _CWFNetworkProfilePropertySSIDKey, 
+                       _CWFNetworkProfilePropertySupportedSecurityTypesKey, _CWFNetworkProfilePropertySystemModeKey, 
+                       _CWFNetworkProfilePropertyUpdatedAtKey, _CWFNetworkProfilePropertyWAPISubtypeKey, 
+                       _CWFNetworkProfilePropertyWEPSubtypeKey, _CWFScanResultPropertyOSSpecificAttributesKey, 
+                       _CWFSecItemQueryPassword, _CWFSecItemSetPassword, _CWFXPCANQPParamsKey, 
+                       _CWFXPCAWDLPeerAssistedDiscoveryParamsKey, _CWFXPCAWDLPeerTrafficRegistrationKey, 
+                       _CWFXPCActivityKey, _CWFXPCAssocParamsKey, _CWFXPCChannelKey, 
+                       _CWFXPCCountryCodeKey, _CWFXPCDisassocReasonKey, _CWFXPCEventIDKey, 
+                       _CWFXPCNetworkProfileKey, _CWFXPCNetworkProfilePropertiesKey, 
+                       _CWFXPCPowerKey, _CWFXPCRangeableKey, _CWFXPCRangingPeerListKey, 
+                       _CWFXPCRangingTimeoutKey, _CWFXPCRemoveKey, _CWFXPCRemoveReasonKey, 
+                       _CWFXPCResultKey, _CWFXPCScanParamsKey, _CWFXPCScanResultKey, 
+                       _CWFXPCThermalIndexKey ]
+    objc-classes:    [ CWFANQPParameters, CWFAWDLPeerAssistedDiscoveryParameters, 
+                       CWFAWDLPeerContext, CWFAWDLPeerTrafficRegistration, CWFActivity, 
+                       CWFAssocParameters, CWFAutoJoinStatus, CWFChannel, CWFEAPCredentials, 
+                       CWFEvent, CWFEventID, CWFInterface, CWFJoinStatus, CWFKeyValueStore, 
+                       CWFLinkChangeStatus, CWFLinkQualityMetric, CWFNetworkProfile, 
+                       CWFRangingMeasurement, CWFRangingPeer, CWFRangingResult, CWFRequestParameters, 
+                       CWFRoamStatus, CWFScanParameters, CWFScanResult, CWFXPCConnection, 
+                       CWFXPCEvent, CWFXPCManager, CWFXPCRequest ]
+...

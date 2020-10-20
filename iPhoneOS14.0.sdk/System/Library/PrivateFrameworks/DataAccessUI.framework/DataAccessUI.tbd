@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7DD0C947-F2CE-3DED-BB07-200F815AD9B3
+  - target:          armv7s-ios
+    value:           2380A937-8A66-35A9-8327-B9F08B6F311E
+  - target:          arm64-ios
+    value:           55818286-134F-3251-B215-57C915501018
+  - target:          arm64e-ios
+    value:           A7D19C3D-DBFB-350B-9924-D302151EF8AB
+install-name:    '/System/Library/PrivateFrameworks/DataAccessUI.framework/DataAccessUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DAAccountDescriptionFromHostname, _DiagnosticsEnabledKey, 
+                       _kDADiagnosticSaveNotesDelegate ]
+    objc-classes:    [ DADiagnosticsNotesController, DADiagnosticsNotesPane, DADiagnosticsPSController, 
+                       DASettingsAccountsUIController, DASettingsDataclassConfigurationViewController ]
+    objc-ivars:      [ DADiagnosticsNotesPane._notesView, DASettingsAccountsUIController._account ]
+...

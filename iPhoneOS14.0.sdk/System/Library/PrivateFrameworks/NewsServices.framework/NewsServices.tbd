@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F76791F0-E1A3-33C8-8B5C-E3CAC96C255E
+  - target:          armv7s-ios
+    value:           18916422-1DCD-346A-886A-4E1031E06A94
+  - target:          arm64-ios
+    value:           DE39A785-14FE-3E81-9130-6E8E36CE1ABC
+  - target:          arm64e-ios
+    value:           6CC9FC3F-1295-3A7E-B700-72CECE101C85
+install-name:    '/System/Library/PrivateFrameworks/NewsServices.framework/NewsServices'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NSSNewsAppBundleID, _NSSNewsTodayWidgetBundleID, _NSSNewsTodayWidgetProductName, 
+                       _NSSNewsWidgetMessageForAppOrOSObsolescence, _NSSNewsWidgetMessageForDeviceObsolescence, 
+                       _NSSNewsWidgetMessageForNetworkNotAvailable, _NSSNewsWidgetMessageForNoContent, 
+                       _NSSNewsWidgetMessageForNonspecificFetchFailureReason, _NSSNewsWidgetMessageForReadingMoreInNews, 
+                       _NSSNewsWidgetMessageForUnsupportedRegion, _NSSNotificationAttachmentPublisherLogoKey, 
+                       _NSSNotificationAttachmentThumbnailKey, _NSSNotificationUserInfoExcerptKey, 
+                       _NSSNotificationUserInfoNewsKey, _NSSNotificationUserInfoPublishDateKey, 
+                       _NSSNotificationUserInfoPublisherNameKey, _NSSNotificationUserInfoThumbnailDataKey, 
+                       _NSSNotificationUserInfoTitleKey, _NSSSpotlightArticleDomainIdentifier, 
+                       _NewsWidgetPolicyDaemonClientType, _NewsWidgetPolicyDaemonClientUUID ]
+    objc-classes:    [ NSSArticleView, NWPNewsWidgetClientTypeLoader ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NNHHeadlineLaunchURLComplicationPathPrefix, _NNHHeadlineLaunchURLHost, 
+                       _NNHHeadlineLaunchURLScheme, _NNHHeadlineLaunchURLUpNextPathPrefix, 
+                       _NNHLaunchedFromComplicationURLString, _NNHLaunchedFromNoStoriesPathString, 
+                       _NNHLaunchedFromUpNextURLString, _NNHNewsTintColorAlpha, _NNHNewsTintColorBlue, 
+                       _NNHNewsTintColorGreen, _NNHNewsTintColorRed, _NewsServicesVersionNumber, 
+                       _NewsServicesVersionString ]
+    objc-classes:    [ NNCComplicationDataSource, NNCLastNewsStoryResult, NSSArticle, 
+                       NSSArticleViewController, NSSComplicationDataSource, NSSNewsArticlePrefetcher, 
+                       NSSNewsRemoteViewController, NSSNewsViewController ]
+...

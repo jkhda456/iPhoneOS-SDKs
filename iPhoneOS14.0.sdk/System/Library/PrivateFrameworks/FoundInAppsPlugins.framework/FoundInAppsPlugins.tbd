@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           872C4F0C-82E4-3138-ACAA-3A89D89B1E4E
+  - target:          arm64e-ios
+    value:           78329EF7-8756-32C9-B333-39436DF79F05
+install-name:    '/System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/FoundInAppsPlugins'
+current-version: 1115
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FoundInAppsPluginsVersionNumber, _FoundInAppsPluginsVersionString ]
+    objc-classes:    [ FIAPHistoricalDataRequest, FIAPResult ]
+...

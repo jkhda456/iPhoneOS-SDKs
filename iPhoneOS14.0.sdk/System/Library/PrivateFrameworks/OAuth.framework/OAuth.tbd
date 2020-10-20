@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D8ED865F-D7CB-3A9B-B85C-B74F60F22D33
+  - target:          armv7s-ios
+    value:           08A9C3CF-29CD-309C-B9C0-A2EF649C5513
+  - target:          arm64-ios
+    value:           1E015C64-F5E4-35F1-9BB3-2A64BA4149D5
+  - target:          arm64e-ios
+    value:           63C278E6-8124-3CBA-BBBE-AB5BBD0478C3
+install-name:    '/System/Library/PrivateFrameworks/OAuth.framework/OAuth'
+current-version: 25
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OAAuthTokenKey, _OAConsumerKeyKey, _OANonceKey, _OASignatureKey, 
+                       _OASignatureMethodKey, _OATimestampKey, _OAVersionKey, _oauth_version ]
+    objc-classes:    [ OACredential, OAHMAC_SHA1Signer, OAPlainTextSigner, OAURLRequestSigner ]
+    objc-ivars:      [ OACredential._consumerKey, OACredential._consumerSecret, OACredential._oauthToken, 
+                       OACredential._oauthTokenSecret, OAURLRequestSigner._credential, 
+                       OAURLRequestSigner._signatureMethod ]
+...

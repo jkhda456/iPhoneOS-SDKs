@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C88CBA23-81B8-3E6C-A86C-4F96D5164034
+  - target:          arm64e-ios
+    value:           64BC055C-37CD-34F9-B2D9-BC894BC343EB
+install-name:    '/System/Library/PrivateFrameworks/CoreChart.framework/CoreChart'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CCBaseConfigApple, _CCBaseConfigVega, _CCChartViewBaseConfig, 
+                       _CCChartViewCATransactionFromBackgroundThread, _CCChartViewDelegate, 
+                       _CCChartViewRendererType, _CCChartViewZoomFactor, _CCRendererTypeCoreAnimation, 
+                       _CCRendererTypeCoreGraphics, _CoreChartVersionNumber, _CoreChartVersionString ]
+    objc-classes:    [ CCAccessibilityElement, CCAsyncQueue, CCAsyncQueueBlockOperation, 
+                       CCChartDataRowBinding, CCChartView, CCChartViewSetupOptions, 
+                       CCTestUtils, CCTextLayer, CCTextLayerLineData, CCTransaction, 
+                       CCVegaAccessibilityGroupStackElement, CCVegaAccessibilityHelper, 
+                       CCVegaArcMarkDef, CCVegaAreaMarkDef, CCVegaCARenderer, CCVegaCARendererWrapper, 
+                       CCVegaCGCanvas, CCVegaCGContext, CCVegaCGFontProperties, CCVegaCGImage, 
+                       CCVegaCGLinearGradient, CCVegaCGTextMetrics, CCVegaCSSStyleDeclaration, 
+                       CCVegaColorOrGradient, CCVegaCurves, CCVegaDataUpdateAsyncOperation, 
+                       CCVegaEventAsyncOperation, CCVegaExpressionFunctions, CCVegaGroupMarkDef, 
+                       CCVegaHTMLElement, CCVegaImageMarkDef, CCVegaJSColor, CCVegaJSColorMap, 
+                       CCVegaJSConsole, CCVegaJSDocument, CCVegaJSFont, CCVegaJSFontCache, 
+                       CCVegaJSMouseEvent, CCVegaLineMarkDef, CCVegaLogProxy, CCVegaLogProxyHandler, 
+                       CCVegaLogger, CCVegaMark, CCVegaMarkDef, CCVegaMarkItem, CCVegaMultiItemShapeMarkDef, 
+                       CCVegaPathMarkDef, CCVegaRectMarkDef, CCVegaRenderer, CCVegaRendererOptions, 
+                       CCVegaRuleMarkDef, CCVegaSVGRenderer, CCVegaScenegraphUtils, 
+                       CCVegaScripts, CCVegaShapeMarkDef, CCVegaSignalListener, CCVegaSignalUpdateAsyncOperation, 
+                       CCVegaSingleItemShapeMarkDef, CCVegaSymbolMarkDef, CCVegaSymbolPath, 
+                       CCVegaTextMarkDef, CCVegaTransaction, CCVegaTransactionCommitter, 
+                       CCVegaTransactionMainThreadOperation, CCVegaWorker, CCVegaWorkerClient, 
+                       CCViewRendererDelegate, CCWeakLayerReference ]
+...

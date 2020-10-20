@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5F00BD20-BD00-33C5-9508-503FDBDDAF11
+  - target:          arm64e-ios
+    value:           396AD06E-B2FF-3983-9AB9-490A3261ACD4
+install-name:    '/System/Library/PrivateFrameworks/ProactiveMagicalMoments.framework/ProactiveMagicalMoments'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PMMInitializeInOwnerProcess, _PMMNowPlayingRecommendationEnded, 
+                       _PMMNowPlayingRecommendationStarted, _PMMPredictionReasonBluetoothDeviceName, 
+                       _PMMPredictionReasonDeviceName, _PMMPredictionReasonLocationOfInterestType, 
+                       _ProactiveMagicalMomentsVersionNumber, _ProactiveMagicalMomentsVersionString ]
+    objc-classes:    [ PMMAudioDisconnectListener, PMMConstants, PMMContextHelper, 
+                       PMMDataProtectionMonitor, PMMMusicContainer, PMMMusicStateProcessor, 
+                       PMMPrediction, PMMPredictionItem, PMMPredictionNotification, 
+                       PMMPredictor, PMMTelephonyConnection, PMMTypes ]
+...

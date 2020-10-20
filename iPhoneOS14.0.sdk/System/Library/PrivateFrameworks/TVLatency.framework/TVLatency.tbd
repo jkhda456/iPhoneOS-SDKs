@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           823C230F-5B94-3210-B67F-CA2C1CEFDE8C
+  - target:          arm64e-ios
+    value:           8676470B-5064-37CE-AC86-920D2C62C153
+install-name:    '/System/Library/PrivateFrameworks/TVLatency.framework/TVLatency'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AllRecordings, _EraseAllRecordings, _TVLAudioLatencyEstimationInternalProgressEventEstimationConfidenceKey, 
+                       _TVLAudioLatencyEstimationInternalProgressEventEstimationLatencyKey, 
+                       _TVLAudioLatencyEstimationProgressEventErrorObjectKey, _TVLAudioLatencyUnknown, 
+                       _TVLToneIdentifierCalibration, _TVLToneIdentifierFailure, 
+                       _TVLToneIdentifierSuccess, _TVLatencyErrorDomain, _TapToRadar ]
+    objc-classes:    [ TVLAudioLatencyEstimator, TVLPersistenceManager, TVLToneProvider ]
+...

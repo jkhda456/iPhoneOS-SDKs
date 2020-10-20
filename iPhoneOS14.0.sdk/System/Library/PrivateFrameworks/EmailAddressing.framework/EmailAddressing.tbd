@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1F96E336-B22E-3E74-B2EC-99E08B4199D7
+  - target:          armv7s-ios
+    value:           A032E5CA-0AB9-349D-ADBE-3D0AB2CC4B6C
+  - target:          arm64-ios
+    value:           28F2FF6C-47B4-3B58-AC49-0167FB074E16
+  - target:          arm64e-ios
+    value:           EDA65E94-2CFC-3B25-B7E8-677628F7710B
+install-name:    '/System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing'
+current-version: 3654.0.3
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EAAddressComment ]
+    objc-classes:    [ EAEmailAddressGenerator, EAEmailAddressLists, EAEmailAddressParser, 
+                       EAEmailAddressSet, _EAEmailAddress, _EAEmailAddressSetEnumerator ]
+...
