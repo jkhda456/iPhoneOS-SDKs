@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E98ADD5C-8CAA-3E91-8406-633B4E6BDD29
+  - target:          arm64e-ios
+    value:           94B4F899-7EC4-3C71-9DD4-7C01CC7414A6
+install-name:    '/System/Library/PrivateFrameworks/NearFieldAccessory.framework/NearFieldAccessory'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NearFieldAccessoryVersionNumber, _NearFieldAccessoryVersionString ]
+    objc-classes:    [ NFACTag, NFAccessoryHardwareManager, NFAccessoryReaderSession, 
+                       NFAccessorySession, NFHardwareManagerAccessoryCallbacks, NFHardwareManagerAccessoryInterface, 
+                       NFReaderSessionAccessoryCallbacks, NFReaderSessionAccessoryInterface ]
+...

@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B472EA96-359C-3854-8F46-0DE84E20DEE1
+  - target:          arm64e-ios
+    value:           DC0D726A-20F8-376B-9C10-F058FC7B9094
+install-name:    '/System/Library/PrivateFrameworks/CoreIDV.framework/CoreIDV'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DIAttributeIdentityDocumentTypeDriverLicense, _DIAttributeIdentityDocumentTypePassport, 
+                       _DIAttributeIdentityDocumentTypeStateID, _DIAttributeIdentityDocumentTypeUnknown, 
+                       _DIAttributeImageEncodingJPEG, _DIAttributeImageEncodingPNG, 
+                       _DIAttributeImageEncodingUnknown, _DIVerificationErrorDomain, 
+                       _kDIAttributeCurrentValue, _kDIAttributeDateRequireDay, _kDIAttributeDateRequireMonth, 
+                       _kDIAttributeDateRequireYear, _kDIAttributeDefaultValue, _kDIAttributeDisplayFormat, 
+                       _kDIAttributeDisplayName, _kDIAttributeDocumentAcceptableDocTypes, 
+                       _kDIAttributeDocumentDocType, _kDIAttributeDocumentIDDocType, 
+                       _kDIAttributeDocumentItems, _kDIAttributeDocumentItemsCount, 
+                       _kDIAttributeDocumentTypeDriverLicense, _kDIAttributeDocumentTypePassport, 
+                       _kDIAttributeDocumentTypeStateID, _kDIAttributeDocumentTypeUnknown, 
+                       _kDIAttributeIdentifier, _kDIAttributeImageFormat, _kDIAttributeImageFormatJPG, 
+                       _kDIAttributeImageFormatPNG, _kDIAttributeImageFormatUnknown, 
+                       _kDIAttributeImageHeight, _kDIAttributeImageWidth, _kDIAttributeIncorrect, 
+                       _kDIAttributeOptional, _kDIAttributePickerItems, _kDIAttributePickerItemsCount, 
+                       _kDIAttributePlaceholder, _kDIAttributeReason, _kDIAttributeSubmissionFormat, 
+                       _kDIAttributeSubmissionKey, _kDIAttributeTextDisplayFormatPlaceHolder, 
+                       _kDIAttributeTextIsNumeric, _kDIAttributeTextIsSecureText, 
+                       _kDIAttributeTextIsSecureVisibleText, _kDIAttributeTextMaxLength, 
+                       _kDIAttributeTextMinLength, _kDIAttributeTextUseLuhnCheck, 
+                       _kDIAttributeType, _kDIHttpHeaderAppleAppInfo, _kDIHttpHeaderAppleGSToken, 
+                       _kDIHttpHeaderAppleIdentityId, _kDIHttpHeaderAppleRefererIdentifier, 
+                       _kDIHttpHeaderAppleWebServiceSession, _kDIHttpHeaderAuthorization, 
+                       _kDIHttpHeaderConversationID, _kDIHttpHeaderDIPGSToken, _kDIHttpHeaderSEID, 
+                       _kDIHttpHeaderXRequestID, _kDIPageAttributes, _kDIPageAttributesCount, 
+                       _kDIPageNumber, _kDIPageSubTitle, _kDIPageTitle, _kDISharingOptionHttpHeader, 
+                       _kDISharingOptionNonce, _kDIVSessionContextHttpHeaders, _kDIVSessionContextServiceName ]
+    objc-classes:    [ DIAttribute, DIAttributeCamera, DIAttributeDate, DIAttributeDocument, 
+                       DIAttributeDocumentScanRequirements, DIAttributeFooter, DIAttributeImage, 
+                       DIAttributeImageCaptureRequirements, DIAttributeLabel, DIAttributePicker, 
+                       DIAttributePickerItem, DIAttributeSMSOTP, DIAttributeSecureImage, 
+                       DIAttributeText, DIPage, DIVerificationSession, DIVerificationSessionContext ]
+...

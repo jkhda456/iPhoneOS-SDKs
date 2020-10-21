@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DE65F70F-2B42-3306-8A59-7F628779E316
+  - target:          armv7s-ios
+    value:           A7AEF296-A339-3C15-96E5-ACAC066AF97D
+  - target:          arm64-ios
+    value:           705B89DE-C600-3896-9ADF-9552EC964C38
+  - target:          arm64e-ios
+    value:           5DD5175A-F760-3956-A348-E533CF6E4678
+install-name:    '/System/Library/PrivateFrameworks/BluetoothManager.framework/BluetoothManager'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AddressForBTDevice, _BluetoothAccessoryInEarStatusNotification, 
+                       _BluetoothAccessorySealValueStatusNotification, _BluetoothAccessorySettingsChanged, 
+                       _BluetoothAdvertisingStateChangedNotification, _BluetoothAvailabilityChangedNotification, 
+                       _BluetoothBlacklistStateChangedNotification, _BluetoothConnectabilityChangedNotification, 
+                       _BluetoothConnectionStatusChangedNotification, _BluetoothDeviceBatteryChangedNotification, 
+                       _BluetoothDeviceChangedNotification, _BluetoothDeviceConnectFailedNotification, 
+                       _BluetoothDeviceConnectSuccessNotification, _BluetoothDeviceDisconnectFailedNotification, 
+                       _BluetoothDeviceDisconnectSuccessNotification, _BluetoothDeviceDiscoveredNotification, 
+                       _BluetoothDeviceRemovedNotification, _BluetoothDeviceSupportsContactSyncNotification, 
+                       _BluetoothDeviceSupportsMAPClientNotification, _BluetoothDeviceUnpairedNotification, 
+                       _BluetoothDeviceUpdatedNotification, _BluetoothDiscoveryStateChangedNotification, 
+                       _BluetoothDiscoveryStoppedNotification, _BluetoothErrorKey, 
+                       _BluetoothFirstDeviceUnlockCompleted, _BluetoothHandsfreeEndedVoiceCommand, 
+                       _BluetoothHandsfreeInitiatedVoiceCommand, _BluetoothHighPowerDisabled, 
+                       _BluetoothHighPowerEnabled, _BluetoothMagicPairedDeviceNameChangedNotification, 
+                       _BluetoothNotificationNameKey, _BluetoothPairedStatusChangedNotification, 
+                       _BluetoothPairingPINRequestNotification, _BluetoothPairingPINResultFailedNotification, 
+                       _BluetoothPairingPINResultSuccessNotification, _BluetoothPairingPassKeyDisplayNotification, 
+                       _BluetoothPairingUserConfirmationNotification, _BluetoothPairingUserNumericComparisionNotification, 
+                       _BluetoothPowerChangedNotification, _BluetoothStateChangedNotification, 
+                       _getFloatFromLittleEndianByteStream, _sharedBluetoothManagerLogComponent ]
+    objc-classes:    [ BluetoothDevice, BluetoothManager, RemoteDeviceManager ]
+    objc-ivars:      [ BluetoothDevice._address, BluetoothDevice._connectingServiceMask, 
+                       BluetoothDevice._device, BluetoothDevice._name, BluetoothDevice._productName, 
+                       BluetoothManager._accessoryManager, BluetoothManager._airplaneMode, 
+                       BluetoothManager._audioConnected, BluetoothManager._available, 
+                       BluetoothManager._btAddrDict, BluetoothManager._btDeviceDict, 
+                       BluetoothManager._discoveryAgent, BluetoothManager._localDevice, 
+                       BluetoothManager._pairingAgent, BluetoothManager._scanningEnabled, 
+                       BluetoothManager._scanningInProgress, BluetoothManager._scanningServiceMask, 
+                       BluetoothManager._session, BluetoothManager._state ]
+...

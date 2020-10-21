@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3DF43CAE-5DA7-39CA-AAFB-AB58996F9B47
+  - target:          armv7s-ios
+    value:           0B732393-82E1-3566-8208-C249F5699CB9
+  - target:          arm64-ios
+    value:           024DB289-9615-3896-8F2D-EBFF105BFED3
+  - target:          arm64e-ios
+    value:           73C61AF5-0EEC-3062-921C-AC600F2EA040
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCoreFSCache.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _fscache_maps_async ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _fscache_close, _fscache_element_get_data, _fscache_find_and_retain, 
+                       _fscache_get_cache_keys, _fscache_insert_and_retain, _fscache_open, 
+                       _fscache_open_with_key, _fscache_print_status, _fscache_release, 
+                       _fscache_remove_all, _fscache_remove_and_release, _fscache_retain, 
+                       _fscache_sync, _fscache_sync_element ]
+...

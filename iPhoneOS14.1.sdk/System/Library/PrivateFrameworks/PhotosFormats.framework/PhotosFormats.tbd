@@ -1,0 +1,113 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EF0B1221-A472-3872-BF64-4270999DA9DF
+  - target:          armv7s-ios
+    value:           1CAA214A-41B1-3976-B71F-D2C9D0F9073B
+  - target:          arm64-ios
+    value:           FC73D456-D04B-3BB3-B4AB-341EC98F8B01
+  - target:          arm64e-ios
+    value:           738C767F-7BFE-3C5F-82B6-37252208F56B
+install-name:    '/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats'
+current-version: 310.1.160
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PFMetadataOriginatingSignature ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CAMUserPreferenceCaptureEncodingBehavior, _CAMUserPreferenceSlomoConfiguration, 
+                       _CAMUserPreferenceVideoConfiguration, _IPAMetadataLivePhotoMinimumClientVersion, 
+                       _IPAMetadataOriginatingSignature, _IPAMetadataRenderOriginatingSignature, 
+                       _IPAMetadataVariationIdentifier, _PFAllPlatformsLivePhotoBundleTypeIdentifiers, 
+                       _PFAssetAdjustmentsBaseVersionKey, _PFAssetAdjustmentsDataBlobKey, 
+                       _PFAssetAdjustmentsEditorBundleIDKey, _PFAssetAdjustmentsFormatIdentifierKey, 
+                       _PFAssetAdjustmentsFormatVersionKey, _PFAssetAdjustmentsRenderTypesKey, 
+                       _PFAssetAdjustmentsTimestampKey, _PFAssetBundleFileExtension, 
+                       _PFAssetBundleMetadataAccessibilityDescriptionKey, _PFAssetBundleMetadataAssetDescriptionKey, 
+                       _PFAssetBundleMetadataAssetTitleKey, _PFAssetBundleMetadataKeywordTitlesKey, 
+                       _PFAssetBundleMetadataLibraryCreationDateKey, _PFAssetBundleMetadataLibraryCreationDateTimeZoneNameKey, 
+                       _PFAssetBundleMetadataLibraryCreationDateTimeZoneOffsetSecondsKey, 
+                       _PFAssetBundleMetadataLibraryLocationAltitudeKey, _PFAssetBundleMetadataLibraryLocationCourseKey, 
+                       _PFAssetBundleMetadataLibraryLocationHorizontalAccuracyKey, 
+                       _PFAssetBundleMetadataLibraryLocationKey, _PFAssetBundleMetadataLibraryLocationLatitudeKey, 
+                       _PFAssetBundleMetadataLibraryLocationLongitudeKey, _PFAssetBundleMetadataLibraryLocationSpeedKey, 
+                       _PFAssetBundleMetadataLibraryLocationTimestampKey, _PFAssetBundleMetadataLibraryLocationVerticalAccuracyKey, 
+                       _PFAssetBundleMetadataMediaSubtypesKey, _PFAssetBundleMetadataMediaTypeKey, 
+                       _PFAssetBundleMetadataPairingIdentifierKey, _PFAssetBundleMetadataPlaybackStyleKey, 
+                       _PFAssetBundleMetadataPlaybackVariationKey, _PFAssetBundleMetadataReframeVariationKey, 
+                       _PFAssetBundleMetadataSpatialOvercaptureResourcesPurgeableKey, 
+                       _PFAssetBundleMetadataTimingInfoKey, _PFAssetBundleMetadataVersionKey, 
+                       _PFAssetBundleMetadataVideoComplementVisibilityStateKey, _PFAssetBundlePathAdjustmentBasePairedVideoKey, 
+                       _PFAssetBundlePathAdjustmentBasePhotoKey, _PFAssetBundlePathAdjustmentBaseVideoKey, 
+                       _PFAssetBundlePathAdjustmentDataKey, _PFAssetBundlePathAlternatePhotoKey, 
+                       _PFAssetBundlePathAudioKey, _PFAssetBundlePathFullSizePairedVideoKey, 
+                       _PFAssetBundlePathFullSizePhotoKey, _PFAssetBundlePathFullSizeVideoKey, 
+                       _PFAssetBundlePathMetadataKey, _PFAssetBundlePathOriginalAdjustmentDataKey, 
+                       _PFAssetBundlePathPairedVideoKey, _PFAssetBundlePathPhotoKey, 
+                       _PFAssetBundlePathSpatialOvercapturePairedVideoKey, _PFAssetBundlePathSpatialOvercapturePhotoKey, 
+                       _PFAssetBundlePathSpatialOvercaptureVideoKey, _PFAssetBundlePathVideoKey, 
+                       _PFCGImageApplyTemporaryAVAssetImageGeneratorColorSpaceWorkaround, 
+                       _PFCameraAdjustmentsCropIsValid, _PFCameraAdjustmentsCropRectKey, 
+                       _PFCameraAdjustmentsCropRectNone, _PFCameraAdjustmentsDepthEnabledKey, 
+                       _PFCameraAdjustmentsEffectFilterNameKey, _PFCameraAdjustmentsPortraitEffectFilterNameKey, 
+                       _PFCameraAdjustmentsPortraitMetadataKey, _PFCameraAdjustmentsSerializationCurrentVersion, 
+                       _PFCameraAdjustmentsSerializationErrorDomain, _PFCameraAdjustmentsSerializationFilterArrayKey, 
+                       _PFCameraAdjustmentsSerializationPortraitMetadataKey, _PFCameraAdjustmentsSerializationVersionKey, 
+                       _PFCreateGIFFromVideoURL, _PFCurrentPlatformLivePhotoBundleTypeIdentifier, 
+                       _PFDeviceLockScreenFocusAreaRectNormalized, _PFDeviceScreenSize, 
+                       _PFExportGIFRequestErrorDomain, _PFFaceFractionIntercept, 
+                       _PFFaceFractionSlope, _PFFigCopyImageDataWithProperties, _PFFigCopyImageFileWithProperties, 
+                       _PFFigCopyImageFileWithPropertiesToData, _PFFigCreateCGImageFromImageData, 
+                       _PFFigCreateCVPixelBufferFromImageData, _PFFigJPEGDataFromImage, 
+                       _PFFigTranscodeImageDataToJPEG, _PFFigTranscodeImageFileToJPEG, 
+                       _PFFloatNan, _PFIsAssetBundleTypeIdentifier, _PFIsLivePhotoBundleTypeIdentifier, 
+                       _PFLargestSalientAspectFilledCropRect, _PFMediaCapabilitiesOptionsSupportsTranscodeChoice, 
+                       _PFMediaUtilitiesDynamicUTIPrefix, _PFMetadataBuilderLog, 
+                       _PFPhotoSharingOperationErrorDomain, _PFPhotosSceneProcessingFromCameraVersion, 
+                       _PFReadImageDisplayTimeFromVideoFileAtPath, _PFReadMetadataFromVideoAVAsset, 
+                       _PFReadMetadataFromVideoAtPath, _PFReadPairingIdentifierFromCGImageProperties, 
+                       _PFReadPairingIdentifierFromImageAtPath, _PFReadPairingIdentifierFromVideoAtPath, 
+                       _PFReadVideoDurationFromVideoFileAtPath, _PFRectByFlippingHorizontallyInRect, 
+                       _PFRectCompareForHorizontalMovementInVerticalLayout, _PFRectCompareForVerticalMovementInVerticalLayoutWithSourceRect, 
+                       _PFRectDiff, _PFRectIntersectWithBasicRemainders, _PFRemovePairingIdentifierFromCGImageProperties, 
+                       _PFSharedFigDecodeSession, _PFSharedFigDecodeSessionDiscardCachedBuffers, 
+                       _PFSharingRemakerErrorDomain, _PFSizeLargerThanSize, _PFSizeNull, 
+                       _PFSizeWithAspectRatioFillingSize, _PFSizeWithAspectRatioFittingSize, 
+                       _PFSupplementalResourceAAEIdentifier, _PFSupplementalResourceExtensionAAE, 
+                       _PFSupplementalResourceExtensionXMP, _PFSupplementalResourceXMPIdentifier, 
+                       _PFVideoComplementFileExtension, _PFVideoComplementImagePathKey, 
+                       _PFVideoComplementMetadataKey, _PFVideoComplementMetadataPairingIdentifierKey, 
+                       _PFVideoComplementMetadataTimingInfoKey, _PFVideoComplementMetadataVersionKey, 
+                       _PFVideoComplementVideoPathKey, _PFVideoExportErrorDomain, 
+                       _PFVideoExportErrorStateKey, _PFVideoSharingOperationErrorDomain, 
+                       _StolenFigCaptureMetadataUtilitiesCreateQuickTimeMovieStillImageTimeSampleBuffer, 
+                       _UTTypeForBundlePathKey, __PFDiffRanges, __PLFigCreateImageFromImageData, 
+                       _b, _copiedStringValueForKeyInDictionary, _createURLForAbsolutePathKeyInDictionary, 
+                       _kUTTypeHEIFStandard, _kUTTypeLivePhotoBundle, _kUTTypeLivePhotoBundleExtension, 
+                       _kUTTypeLivePhotoBundlePrivate, _kUTTypePhotosAssetBundle, 
+                       _kUTTypePhotoshopImage, _m, _pf_estimateFullAnimatedImageMemoryCost ]
+    objc-classes:    [ PFAVReaderWriter, PFAnimatedImage, PFAssetAdjustmentFingerprintData, 
+                       PFAssetAdjustments, PFAssetBundle, PFCameraAdjustments, PFCameraAdjustmentsSerialization, 
+                       PFCameraMetadata, PFCameraMetadataJSONDebugSerialization, 
+                       PFCameraMetadataSerialization, PFColorConverter, PFCropUtilities, 
+                       PFExportGIFRequest, PFFrameCache, PFImageMetadata, PFImageMetadataBuilder, 
+                       PFJSONDebugDumpConverter, PFLivePhotoEditSession, PFLivePhotoExportDestination, 
+                       PFLivePhotoFrameProcessingRequest, PFLivePhotoPlaybackResult, 
+                       PFLivePhotoPlaybackSettings, PFMediaCapabilities, PFMediaCapabilitiesQuery, 
+                       PFMediaUtilities, PFMetadataBuilder, PFMutableCameraAdjustments, 
+                       PFPhotoSharingOperation, PFPhotosFaceUtilities, PFProportionalIntegralController, 
+                       PFRWSampleBufferChannel, PFSemanticEnhancePregateCalculator, 
+                       PFSharingRemaker, PFSharingRemakerOperation, PFSharingRemakerOptions, 
+                       PFSharingUtilities, PFSinglePassVideoExportItem, PFSinglePassVideoExportItemStatistics, 
+                       PFSlowMotionConfiguration, PFSlowMotionRampConfiguration, 
+                       PFSlowMotionTimeRangeMapper, PFSlowMotionTimeRangeMapperScaledRegion, 
+                       PFSlowMotionUtilities, PFTimeZoneLookup, PFVideoAVObjectBuilder, 
+                       PFVideoAdjustments, PFVideoComplement, PFVideoEncoding, PFVideoExport, 
+                       PFVideoExportRangeCoordinator, PFVideoExportRangeWaitingCaller, 
+                       PFVideoMetadata, PFVideoMetadataBuilder, PFVideoSharingOperation, 
+                       PFXMPMetadataBuilder, _PFCameraMetadataAVMetadataObject ]
+    objc-ivars:      [ PFCameraAdjustments._cropRect, PFCameraAdjustments._depthEnabled, 
+                       PFCameraAdjustments._effectFilterName, PFCameraAdjustments._portraitEffectFilterName, 
+                       PFCameraAdjustments._portraitMetadata ]
+...

@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           52058623-6E44-32F3-8356-D9447B9EB074
+  - target:          armv7s-ios
+    value:           D8BB3B32-CAF4-31BF-B6BE-32E014E53D01
+  - target:          arm64-ios
+    value:           3F2057CC-A90E-36F8-B38E-EA0D306883A4
+  - target:          arm64e-ios
+    value:           1CEE134D-AB08-3C09-B5D1-2BFEA74918E2
+install-name:    '/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MOCreateCFTypeFromSerializedBuffer, _MOCreateSerializedData, 
+                       _MOLogClose, _MOLogEnableDiskLogging, _MOLogGetLogLevel, _MOLogOpen, 
+                       _MOLogSetLogLevel, _MOLogWrite, _MOLogWriteV, _MOXPCTransportClose, 
+                       _MOXPCTransportOpen, _MOXPCTransportReceiveMessage, _MOXPCTransportResume, 
+                       _MOXPCTransportRunTransactionalTask, _MOXPCTransportSendMessage, 
+                       _MOXPCTransportSendMessageOnConnection, _MOXPCTransportSetConnectionAuthHandler, 
+                       _MOXPCTransportSetMessageHandler ]
+    objc-classes:    [ MOSplunkLogger ]
+...

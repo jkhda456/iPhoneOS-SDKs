@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8AB0DA4A-D477-38AC-BD5D-28DC5CFB2DAA
+  - target:          armv7s-ios
+    value:           6FF53DD4-CE1A-3F9C-9A35-FF10C98B13BF
+  - target:          arm64-ios
+    value:           0297A0D0-86CA-3039-BB75-15F8D10AA0B5
+  - target:          arm64e-ios
+    value:           3D254720-9059-3143-B2D0-2644C4899E6A
+install-name:    '/System/Library/PrivateFrameworks/UITriggerVC.framework/UITriggerVC'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CSLUIPBNumberReadFrom, _CSLUIPBPropertyReadFrom, _CSLUIPBPropertyValueReadFrom, 
+                       _CSLUIPBSizeReadFrom, _CSLUIPBUIPluginListRequestReadFrom, 
+                       _CSLUIPBUIPluginListResponseReadFrom, _CSLUIPBUIPluginTriggerRequestReadFrom, 
+                       _CSLUIPBUIPluginTriggerResponseReadFrom ]
+    objc-classes:    [ CSLUIPBNumber, CSLUIPBProperty, CSLUIPBPropertyValue, CSLUIPBSize, 
+                       CSLUIPBUIPluginListRequest, CSLUIPBUIPluginListResponse, CSLUIPBUIPluginTriggerRequest, 
+                       CSLUIPBUIPluginTriggerResponse ]
+    objc-ivars:      [ CSLUIPBNumber._boolValue, CSLUIPBNumber._doubleValue, CSLUIPBNumber._floatValue, 
+                       CSLUIPBNumber._has, CSLUIPBNumber._int32Value, CSLUIPBNumber._int64Value, 
+                       CSLUIPBProperty._name, CSLUIPBProperty._value, CSLUIPBPropertyValue._arrayValues, 
+                       CSLUIPBPropertyValue._dataValue, CSLUIPBPropertyValue._dictionaryKey, 
+                       CSLUIPBPropertyValue._numberValue, CSLUIPBPropertyValue._sizeValue, 
+                       CSLUIPBPropertyValue._stringValue, CSLUIPBPropertyValue._uUIDValue, 
+                       CSLUIPBSize._height, CSLUIPBSize._width, CSLUIPBUIPluginListResponse._names, 
+                       CSLUIPBUIPluginListResponse._usages, CSLUIPBUIPluginTriggerRequest._dictionarys, 
+                       CSLUIPBUIPluginTriggerRequest._has, CSLUIPBUIPluginTriggerRequest._name, 
+                       CSLUIPBUIPluginTriggerRequest._reason, CSLUIPBUIPluginTriggerResponse._errorString, 
+                       CSLUIPBUIPluginTriggerResponse._success ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ UITriggerTableViewController ]
+...

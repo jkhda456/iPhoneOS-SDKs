@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           12DA026C-94D7-36DA-92BD-610C580B1936
+  - target:          arm64e-ios
+    value:           5BBD6DDE-8C27-3497-805B-960557DAE110
+install-name:    '/System/Library/PrivateFrameworks/ProximityUI.framework/ProximityUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _calculateBearingAngleHorizontalDistanceAndVerticalDistance, 
+                       _platformSupportsProximity ]
+    objc-classes:    [ PRARKitDataRecorder, PRDataRecorder, PRDataRecorderBase, PRDevicePoseProvider, 
+                       PREstimatorInput, PRItemLocalizer, PRPose, PRProximity, PRTargetEstimate, 
+                       PRVIODevicePoseProvider ]
+...

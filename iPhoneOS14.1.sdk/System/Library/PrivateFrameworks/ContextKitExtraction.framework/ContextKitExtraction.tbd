@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1D862C37-32D5-3254-8411-C005A5D3B62A
+  - target:          arm64e-ios
+    value:           6E019497-4F29-3022-9AF1-FB9DB3802CC9
+install-name:    '/System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ContextKitExtractionVersionNumber, _ContextKitExtractionVersionString ]
+    objc-classes:    [ CKContextContentProvider, CKContextContentProviderManager, 
+                       CKContextContentProviderUIScene, CKContextDonation, CKContextDonationItem, 
+                       CKContextExecutor ]
+...

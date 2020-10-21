@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9B8DF51F-C725-35C1-AC2B-9B2A0D130F17
+  - target:          arm64e-ios
+    value:           FD01472E-D60B-3283-B924-A38920503D2D
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompiler.dylib'
+current-version: 31001.41
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LLVMExtraCreateBinary, _LLVMExtraDisposeBinary, _LLVMExtraDisposeSharedModule, 
+                       _LLVMExtraGetSymbolImplAddress, _LLVMExtraGetSymbolImplSize, 
+                       _LLVMExtraMachOUniversalBinaryCopyIRForArch, _LLVMExtraMakeSharedModule, 
+                       _MTLArchiveAddMember, _MTLArchiveCreate, _MTLArchiveDestroy, 
+                       _MTLArchiveGetAsObject, _MTLArchiveGetMemberNo, _MTLArchiveGetMembersCount, 
+                       _MTLCreateScript, _MTLDestroyScript, _MTLDowngradeAIRModule, 
+                       _MTLFunctionGroupCreate, _MTLFunctionGroupDestroy, _MTLFunctionGroupGetFunctionAtIndex, 
+                       _MTLFunctionGroupGetFunctionsCount, _MTLFunctionGroupGetName, 
+                       _MTLGPUCompilerBuildFromSource, _MTLGPUCompilerBuildFromSourceToBuffer, 
+                       _MTLGPUCompilerCompileFromSource, _MTLGPUCompilerCompileFromSourceToBuffer, 
+                       _MTLGPUCompilerCreate, _MTLGPUCompilerDestroy, _MTLGPUCompilerEnable16BitTextureCoordinateEmulation, 
+                       _MTLGPUCompilerEnableRaytracingEmulation, _MTLGPUCompilerLink, 
+                       _MTLGPUCompilerLinkToBuffer, _MTLGPUCompilerLoadModules, _MTLGPUCompilerLoadModulesToBuffer, 
+                       _MTLGPUCompilerLowerModule, _MTLGPUCompilerLowerModuleToBuffer, 
+                       _MTLGPUCompilerSetFunctionGroups, _MTLGPUCompilerSetLoaderScript, 
+                       _MTLGPUCompilerSetLoweringRuntimes, _MTLGPUCompilerSetStitcherScript, 
+                       _MTLGPUCompilerSpecializeFunction, _MTLGPUCompilerSpecializeFunctionToBuffer, 
+                       _MTLGPUCompilerStitchFunctions, _MTLGPUCompilerStitchFunctionsToBuffer, 
+                       _MTLMetalDynamicLibraryGetInstallName, _MTLMetalFunctionCreate, 
+                       _MTLMetalFunctionDestroy, _MTLMetalFunctionGetAIRVersion, 
+                       _MTLMetalFunctionGetKind, _MTLMetalFunctionGetMetalVersion, 
+                       _MTLMetalFunctionGetModule, _MTLMetalFunctionGetName, _MTLMetalImportedSymbolGetName, 
+                       _MTLMetalLibCreateCoreImage, _MTLMetalLibCreateDynamicLibrary, 
+                       _MTLMetalLibCreateExecutable, _MTLMetalLibDestroy, _MTLMetalLibGetAsObject, 
+                       _MTLMetalLibGetDynamicLibrariesCount, _MTLMetalLibGetDynamicLibraryNo, 
+                       _MTLMetalLibGetFunctionNo, _MTLMetalLibGetFunctionsCount, 
+                       _MTLMetalLibGetImportedSymbolNo, _MTLMetalLibGetImportedSymbolsCount, 
+                       _MTLMetalLibGetInstallName, _MTLMetalLibGetVariableNo, _MTLMetalLibGetVariablesCount, 
+                       _MTLMetalLibInsertFunction, _MTLMetalLibInsertVariable, _MTLMetalVariableCreate, 
+                       _MTLMetalVariableDestroy, _MTLMetalVariableGetAIRVersion, 
+                       _MTLMetalVariableGetMetalVersion, _MTLMetalVariableGetModule, 
+                       _MTLMetalVariableGetName, _MTLModuleGetAsObject, _MTLObjectCreate, 
+                       _MTLObjectDestroy, _MTLObjectGetAsArchive, _MTLObjectGetAsMetalLib, 
+                       _MTLObjectGetAsModule, _MTLUpgradeAIRModule, _MTLVerifyAIRModule, 
+                       _MTLWriteAIRBitcodeToMemoryBuffer, _MTLWriteMetalLibToMemoryBuffer ]
+...

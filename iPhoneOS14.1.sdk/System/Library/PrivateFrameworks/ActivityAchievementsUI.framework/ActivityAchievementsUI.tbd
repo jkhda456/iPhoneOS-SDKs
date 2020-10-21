@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C5A3CB41-C7F8-3924-984F-3843769E69C7
+  - target:          arm64e-ios
+    value:           56FDCB87-2098-3139-A84E-5A1FD6EA8239
+install-name:    '/System/Library/PrivateFrameworks/ActivityAchievementsUI.framework/ActivityAchievementsUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AAUIAchievementsDataProviderDidFinishInitialLoadNotification, 
+                       _AAUIAchievementsDataProviderDidUpdateAchievementNotification, 
+                       _AAUIFormatCount, _AAUIFormatDateWithStyle, _AAUIFormatDistance, 
+                       _AAUIFormatDistanceWithUserUnit, _AAUIFormatEnergyUnit, _AAUIFormatEnergyWithUserUnit, 
+                       _AAUIFormatEnergyWithUserUnitAndFormatterUnit, _AAUIFormatMinutes, 
+                       _AAUIFormatMoveMinutes, _AAUIFormatNumberOfDays, _AAUIFormatOrdinal, 
+                       _AAUIFormatPercent, _AAUISortAchievementsByMostRecentEarnedDate, 
+                       _AAUITrophyCaseShouldShowPerfectWeekAchievement, _ActivityAchievementsUIVersionNumber, 
+                       _ActivityAchievementsUIVersionString ]
+    objc-classes:    [ AAUIAchievementDetailTransitionAnimator, AAUIAchievementFormatter, 
+                       AAUIAchievementLocalizationProvider, AAUIAchievementResourceProvider, 
+                       AAUIAchievementsDataProvider, AAUIBadge, AAUIBadgeImageFactory, 
+                       AAUIBadgeModelConfiguration, AAUIBadgeModelLoader, AAUIBadgeView, 
+                       AAUIMockAchievementsDataProvider ]
+...

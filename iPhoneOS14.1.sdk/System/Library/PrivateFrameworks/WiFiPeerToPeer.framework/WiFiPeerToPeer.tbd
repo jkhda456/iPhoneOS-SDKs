@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           22A9988D-04BF-3E00-BD72-38AD248097F1
+  - target:          arm64e-ios
+    value:           874A9CC6-C0D1-3BCF-AA25-4C3BB75D3F53
+install-name:    '/System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ WiFiAwareDataSession, WiFiAwareDataSessionIssueReport, WiFiAwareDatapathConfiguration, 
+                       WiFiAwareDiscoveryResult, WiFiAwarePublishConfiguration, WiFiAwarePublishDatapathConfiguration, 
+                       WiFiAwarePublishDatapathSecurityConfiguration, WiFiAwarePublishDatapathServiceSpecificInfo, 
+                       WiFiAwarePublishServiceSpecificInfo, WiFiAwarePublisher, WiFiAwarePublisherDataSessionHandle, 
+                       WiFiAwareSubscribeConfiguration, WiFiAwareSubscriber, WiFiMACAddress ]
+...

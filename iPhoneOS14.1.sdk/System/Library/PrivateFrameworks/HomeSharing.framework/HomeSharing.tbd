@@ -1,0 +1,86 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C9FC0FF6-9BA2-3676-9C49-FC107FEC5F86
+  - target:          armv7s-ios
+    value:           09CBDFBC-AB6C-3781-9914-FF8256D19329
+  - target:          arm64-ios
+    value:           B0D26785-C726-3E56-AF27-86303D01FF8E
+  - target:          arm64e-ios
+    value:           9782B2AC-39A3-319C-BDBF-B38C4566CD66
+install-name:    '/System/Library/PrivateFrameworks/HomeSharing.framework/HomeSharing'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _HSCloudUtilitiesIsSettableContainerProperty, _HSCloudUtilitiesIsSettableItemProperty, 
+                       __Z24HSDAAPBaseRequestElementjh, __Z25HSDAAPMakePropertyElementjN4DAAP9ValueTypeEP11objc_object, 
+                       __Z27HSDAAPNSDataWithRootElementNSt3__110shared_ptrIN4DAAP7ElementEEE, 
+                       __ZN18HSDAAPPropertyInfo22SharedItemPropertyInfoEv, __ZN18HSDAAPPropertyInfo24__sharedItemPropertyInfoE, 
+                       __ZN18HSDAAPPropertyInfo27SharedContainerPropertyInfoEv, __ZN18HSDAAPPropertyInfo29__sharedContainerPropertyInfoE, 
+                       __ZN18HSDAAPPropertyInfoC1Ev, __ZN18HSDAAPPropertyInfoC2Ev, 
+                       __ZNK18HSDAAPPropertyInfo18hasInfoForPropertyENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE, 
+                       __ZNK18HSDAAPPropertyInfo20valueTypeForPropertyENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE, 
+                       __ZNK18HSDAAPPropertyInfo22elementCodeForPropertyENSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HSArtworkInfoKeyArtworkDictionary, _HSArtworkInfoKeyArtworkDictionaryCoverArtworkJSON, 
+                       _HSArtworkInfoKeyArtworkDictionaryCoverURL, _HSArtworkInfoKeyArtworkDictionaryFullToken, 
+                       _HSArtworkInfoKeyArtworkDictionaryFullURL, _HSArtworkInfoKeyArtworkDictionaryOvalToken, 
+                       _HSArtworkInfoKeyArtworkDictionaryOvalURL, _HSArtworkInfoKeyArtworkDictionaryTemplateJSON, 
+                       _HSArtworkInfoKeyArtworkDictionaryTemplateSupportsLayeredImage, 
+                       _HSArtworkInfoKeyArtworkDictionaryTemplateURL, _HSArtworkInfoKeyPurchaseHistoryID, 
+                       _HSArtworkInfoKeySagaID, _HSArtworkInfoKeyStatus, _HSCachesClearedNotification, 
+                       _HSCloudAvailabilityControllerCanShowCloudDownloadButtonsDidChangeNotification, 
+                       _HSCloudAvailabilityControllerCanShowCloudTracksDidChangeNotification, 
+                       _HSCloudAvailabilityControllerHasProperNetworkConditionsToShowCloudMediaDidChangeNotification, 
+                       _HSCloudAvailabilityControllerIsCellularDataRestrictedDidChangeNotification, 
+                       _HSCloudAvailabilityControllerNetworkReachabilityDidChangeNotification, 
+                       _HSCloudCacheRootDirectory, _HSCloudClientArtworkDownloadsDidCompleteNotification, 
+                       _HSCloudClientClearJaliscoAccountID, _HSCloudClientClearSagaAccountID, 
+                       _HSCloudClientCloudAddToPlaylistBehaviorDidChangeNotification, 
+                       _HSCloudClientCreateArtworkInfoDictionary, _HSCloudClientEnableCloudLibraryFailureTypeChangedNotification, 
+                       _HSCloudClientGetJaliscoAccountID, _HSCloudClientGetJaliscoLastLibraryUpdateTime, 
+                       _HSCloudClientGetJaliscoOnDiskDatabaseRevision, _HSCloudClientGetPreferredVideoQuality, 
+                       _HSCloudClientGetSagaAccountID, _HSCloudClientGetSagaDatabaseUserVersion, 
+                       _HSCloudClientGetSagaLastLibraryUpdateTime, _HSCloudClientGetSagaLastSubscribedContainersUpdateTime, 
+                       _HSCloudClientGetSagaOnDiskDatabaseRevision, _HSCloudClientGetStorefrontIdentifier, 
+                       _HSCloudClientGetStringForAddToPlaylistBehavior, _HSCloudClientGetStringForRequestReason, 
+                       _HSCloudClientIsAuthenticatedDidChangeNotification, _HSCloudClientIsSagaEnabledInURLBag, 
+                       _HSCloudClientMigrateAllowMatchOnCellularToAllowAutoDownloadOnCellular, 
+                       _HSCloudClientMigrateStoreAllowAutomaticDownloadsOnCellularToMusicAllowDownloadOnCellular, 
+                       _HSCloudClientSetJaliscoAccountID, _HSCloudClientSetJaliscoLastLibraryUpdateTime, 
+                       _HSCloudClientSetJaliscoOnDiskDatabaseRevision, _HSCloudClientSetPreferredVideoQuality, 
+                       _HSCloudClientSetSagaAccountID, _HSCloudClientSetSagaDatabaseUserVersion, 
+                       _HSCloudClientSetSagaLastLibraryUpdateTime, _HSCloudClientSetSagaLastSubscribedContainersUpdateTime, 
+                       _HSCloudClientSetSagaOnDiskDatabaseRevision, _HSCloudClientSetStorefrontIdentifier, 
+                       _HSCloudErrorDomain, _HSCloudLibraryUploadErrorDomain, _HSDAAPUtilitiesCreateData, 
+                       _HSDAAPUtilitiesCreateDataForContainer, _HSDAAPUtilitiesCreateDataForItemKindContainer, 
+                       _HSDAAPUtilitiesWriteContainer, _HSDAAPUtilitiesWriteProperty, 
+                       _HSDefaultsDidChangeNotificationName, _HSGetCloudDAAPClientPrefix, 
+                       _HSGetKeychainValueForAccountWithService, _HSGetLogCategory, 
+                       _HSGroupIDDidChangeNotification, _HSGroupIDKey, _HSHomeSharingErrorDomain, 
+                       _HSHomeSharingLibraryDidBecomeUnavailableNotification, _HSHomeSharingLibraryDidUpdateRevisionNumberNotification, 
+                       _HSHomeSharingLibraryKey, _HSLibraryCacheAllKnownCacheDirectories, 
+                       _HSLibraryCacheDirectoryForApplication, _HSLibraryCacheDirectoryForIdentifier, 
+                       _HSLibraryCacheRootDirectory, _HSResponseDataParserValueCopyValue, 
+                       _HSResponseDataParserValueGetStringValue, _HSSetKeychainValueForAccountWithService, 
+                       _HSWiFiManagerWiFiAssociatedUserInfoKey, _HSWiFiManagerWiFiDidChangeNotification, 
+                       _HSWiFiManagerWiFiEnabledUserInfoKey ]
+    objc-classes:    [ HSAccountStore, HSActivityRequest, HSArtworkRequest, HSAuthorizedDSIDsUpdateRequest, 
+                       HSAuthorizedDSIDsUpdateResponse, HSAuthorizedDSIDsUpdatesRequest, 
+                       HSAuthorizedDSIDsUpdatesResponse, HSBook, HSBrowseRequest, 
+                       HSBrowseResponse, HSBrowser, HSCheckInRentalAssetRequest, 
+                       HSCheckOutRentalAssetRequest, HSCloudAvailabilityController, 
+                       HSCloudClient, HSCloudItemIDList, HSConnection, HSConnectionConfiguration, 
+                       HSContainersRequest, HSContainersResponse, HSDAAPPropertyInfo, 
+                       HSDatabasesRequest, HSDatabasesResponse, HSFairPlayInfo, HSFairPlaySetupRequest, 
+                       HSGetAuthorizedAccountsInfoRequest, HSGetAuthorizedAccountsTokenRequest, 
+                       HSGetAuthorizedAccountsTokenResponse, HSHomeSharingLibrary, 
+                       HSHomeSharingVerifyRequest, HSIncrementRequest, HSItemDataRequest, 
+                       HSItemsRequest, HSItemsResponse, HSLoginRequest, HSLoginResponse, 
+                       HSLogoutRequest, HSNowPlayingArtworkRequest, HSNowPlayingArtworkResponse, 
+                       HSPlayStatusUpdateRequest, HSPlayStatusUpdateResponse, HSPlaybackControlRequest, 
+                       HSRequest, HSResponse, HSResponseDataParser, HSServerInfoRequest, 
+                       HSSetPropertyRequest, HSSetRentalPlaybackStartDateRequest, 
+                       HSUpdateRequest, HSUpdateResponse, HSWiFiManager ]
+...

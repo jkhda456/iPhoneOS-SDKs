@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           AA945A95-D6E4-36EE-A0D2-B40D569571B4
+  - target:          armv7s-ios
+    value:           6F1DAE41-AB11-37BC-B3F9-AA3E3516BFA2
+  - target:          arm64-ios
+    value:           27EFB448-CFC9-35D2-9E66-B53720D928D2
+  - target:          arm64e-ios
+    value:           21B44797-88C5-3812-BBFE-39B53BCF614A
+install-name:    '/System/Library/PrivateFrameworks/InternationalTextSearch.framework/InternationalTextSearch'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ITSCollationContextFreeContextForDatabaseHandle, _ITSCopyFTSTableCreateStatementUsingCurrentLanguage, 
+                       _ITSCopyFTSTableCreateStatementWithLanguageAndCollator, _ITSCopySearchCollatorForLanguage, 
+                       _ITSCopyUserLanguage, _ITSCreateCollator, _ITSCreateCollatorWithPreferredLocale, 
+                       _ITSCreateSortKey, _ITSFTSIsEnabled, _ITSRegisterSQLiteICUTokenizer, 
+                       _ITSSetCollatorOverrideForDatabaseConnectionHandle, _ITSSetLocaleOverrideForDatabaseConnectionHandle, 
+                       _ITSTokenListCopyEscapedTokenAtIndex, _ITSTokenListCreate, 
+                       _ITSTokenListDestroy, _ITSTokenListGetCount, _ITSTokenListGetTokenAtIndex, 
+                       _ITSTokenListGetTokenCollationKeyAtIndex, _ITSTokenListGetTokenCollationKeyLengthAtIndex, 
+                       _ITSTokenListGetTokenEndByteOffsetAtIndex, _ITSTokenListGetTokenRangeAtIndex, 
+                       _ITSTokenListGetTokenStartByteOffsetAtIndex, _ITSTokenListPopulateFromString, 
+                       _ITSTokenListRemoveAllTokens, _InternationalTextSearchVersionNumber, 
+                       _InternationalTextSearchVersionString ]
+...

@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DA60887E-474B-3508-B307-03D07568C643
+  - target:          arm64e-ios
+    value:           B4648ECA-32DB-3BAB-87CC-487251145941
+install-name:    '/System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices'
+current-version: 3987.9
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UIKitServicesVersionNumber, _UIKitServicesVersionString, 
+                       _UISApplicationInitializationContextAlwaysVendEntitlement, 
+                       _UISApplicationPushKeepAliveInterval, _UISApplicationStateServiceErrorDomain, 
+                       _UISApplicationStateServiceIdentifier, _UISApplicationStateServiceMessageKeyBundleIdentifier, 
+                       _UISApplicationSupportServiceIdentifier, _UISDeviceContextDeviceClassKey, 
+                       _UISDeviceContextDeviceCornerRadiusKey, _UISDeviceContextHomeButtonTypeKey, 
+                       _UISOpenApplicationOptionAppBasedViewService, _UISOpenApplicationOptionKeySceneSessionPersistentIdentifier, 
+                       _UISOpenApplicationOptionKeyTargetContentIdentifier, _UISUserInterfaceStyleModeOverrideNone, 
+                       _UISUserInterfaceStyleModeOverridesEqual, _UISUserInterfaceStyleModeScheduleDefault, 
+                       _UISUserInterfaceStyleModeScheduleNone, _UISUserInterfaceStyleModeSchedulesEqual, 
+                       _UISUserInterfaceStyleModeValueIsAutomatic, __UIKitServicesStateFacilityLogger, 
+                       __UISUserInterfaceStyleChangeNotification, __UISVisibilityEnvironmentForSceneIdentityTokenString, 
+                       __UISVisibilityEnvironmentForUIHostedWindowContextID, __UISVisibilityNamespace ]
+    objc-classes:    [ UISApplicationInitializationContext, UISApplicationInitializationContextParameters, 
+                       UISApplicationState, UISApplicationStateClient, UISApplicationStateService, 
+                       UISApplicationSupportClient, UISApplicationSupportDisplayEdgeInfo, 
+                       UISApplicationSupportDisplayEdgeInsetsWrapper, UISApplicationSupportService, 
+                       UISCurrentUserInterfaceStyleValue, UISDeviceContext, UISDisplayContext, 
+                       UISFetchContentInBackgroundAction, UISFetchContentInBackgroundActionResponse, 
+                       UISHandleRemoteNotificationAction, UISIntentForwardingAction, 
+                       UISIntentForwardingActionResponse, UISMutableApplicationInitializationContext, 
+                       UISMutableDeviceContext, UISMutableDisplayContext, UISUserInterfaceStyleMode ]
+    objc-ivars:      [ UISApplicationInitializationContext._defaultSceneToken, UISApplicationInitializationContext._deviceContext, 
+                       UISApplicationInitializationContext._displayContext, UISApplicationInitializationContext._persistedSceneIdentifiers, 
+                       UISDeviceContext._deviceInfoKeysToValues, UISDisplayContext._artworkSubtype, 
+                       UISDisplayContext._displayConfiguration, UISDisplayContext._displayEdgeInfo, 
+                       UISDisplayContext._userInterfaceStyle ]
+...

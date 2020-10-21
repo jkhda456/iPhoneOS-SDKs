@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EB425951-A346-334C-B391-EB32D890F0E5
+  - target:          armv7s-ios
+    value:           FECF1BE6-A5C0-35F0-9E58-9C7FB56CD87E
+  - target:          arm64-ios
+    value:           CF6A455B-7F16-3FDF-838F-3CD0F2FD8B93
+  - target:          arm64e-ios
+    value:           CAA02D45-52C0-3254-91B3-D936045BB1A4
+install-name:    '/System/Library/PrivateFrameworks/CheckerBoardServices.framework/CheckerBoardServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CheckerBoardLogHandleForCategory, _CheckerBoardServicesVersionNumber, 
+                       _CheckerBoardServicesVersionString, _kCellIdentifier, _kCheckerBoardIdentifier, 
+                       _kCheckerBoardRebootEntitlement, _kCheckerBoardRebootReason, 
+                       _kCheckerBoardRemoteAlertsEntitlement, _kCheckerBoardRemoteServerMachName, 
+                       _kCheckerBoardServicesEntitlement, _kCheckerBoardSystemServicesEntitlement, 
+                       _kOneTimeBootCommandCheckerBoard, _kOneTimeBootCommandNVRamVariable ]
+    objc-classes:    [ CBSClient, CBSNVRamUtil, CBSPaneViewController, CBSProxyServer, 
+                       CBSTableViewController, CBSUIAlert, CBSUIAlertAction, CBSUtilities ]
+...

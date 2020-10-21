@@ -1,0 +1,62 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6B1E797A-3B21-352E-93D0-AD5071AEE39B
+  - target:          armv7s-ios
+    value:           FAB64BF2-431F-356A-B22E-C43992576F34
+  - target:          arm64-ios
+    value:           F2429BC9-AB1A-38DF-8869-BA7248640407
+  - target:          arm64e-ios
+    value:           F9E3C429-5FF8-316A-8DC7-9D2F6C2393D1
+install-name:    '/System/Library/PrivateFrameworks/DataDetectorsUI.framework/DataDetectorsUI'
+current-version: 396
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ DDActionNaturalLanguageContext, DDActionSuggestionsContext, 
+                       DDAddToAddressBookAction, DDAddToContactsViewController, DDAddressAction, 
+                       DDCreateEventAction, DDEventComponents ]
+    objc-ivars:      [ DDAction._associatedResults, DDAction._cachedAssociatedResults, 
+                       DDAction._cachedCoalescedResult, DDAction._coalescedResult, 
+                       DDAction._companion, DDAction._context, DDAction._delegate, 
+                       DDAction._isDefaultAction, DDAction._result, DDAction._url, 
+                       DDAddToContactsViewController._action, DDAddToContactsViewController._personViewController, 
+                       DDAddToContactsViewController._proxy, DDDetectionController._actionController, 
+                       DDDetectionController._containerToContextsTable, DDDetectionController._containerToOperationsTable, 
+                       DDDetectionController._containerToResultsTable, DDDetectionController._delegate, 
+                       DDDetectionController._fullScannerQueue, DDDetectionController._protectQueue, 
+                       DDDetectionController._urlScannerQueue ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DDBackupAttributeName, _DDClientActionURLScheme, _DDContextAttributeName, 
+                       _DDDetectionControllerDidDismissActionNotification, _DDDetectionControllerWillPresentActionNotification, 
+                       _DDDirectionsURLForResult, _DDDirectionsURLForString, _DDDirectionsURLForURL, 
+                       _DDExistingLinkAttributeName, _DDExtractMapLocationInformationFromURL, 
+                       _DDLocalizedString, _DDLocalizedStringWithDefaultValue, _DDMapAddressFromURL, 
+                       _DDMapURLForResult, _DDMapURLForString, _DDMapURLForURL, _DDMapsGetBestAddressForResults, 
+                       _DDUIAugmentedContextForEvent, _DDUIEventForResults, _DDUISuggestedEventForResults, 
+                       _DataDetectorsUIVersionNumber, _DataDetectorsUIVersionString, 
+                       __ddui_parsec_xpcInterface, _beginDateOfEventResultsRespectingSpecificEndDates, 
+                       _dd_isDeviceLocked, _dd_requireDeviceUnlockAndPerformBlock, 
+                       _dd_urlLooksSuspicious, _dd_urlUserVisibleString, _dueDateAndTimezoneOfEventResults, 
+                       _kDDMessageActionMoneyAmountKey, _kDDMessageActionMoneyCurrencyKey, 
+                       _kDDMessageActionMoneyType, _kDataDetectorsAllResultsKey, 
+                       _kDataDetectorsContactKey, _kDataDetectorsCoreRecentsMetadataDictionaryKey, 
+                       _kDataDetectorsCoreSpotlightUniqueIdentifier, _kDataDetectorsCustomActionRangesKey, 
+                       _kDataDetectorsEventComponentsKey, _kDataDetectorsEventTitleKey, 
+                       _kDataDetectorsGestureKey, _kDataDetectorsICSKey, _kDataDetectorsIncludeMoney, 
+                       _kDataDetectorsIsAccountManagedKey, _kDataDetectorsLeadingText, 
+                       _kDataDetectorsMiddleText, _kDataDetectorsNotificationStyleKey, 
+                       _kDataDetectorsPresenterKey, _kDataDetectorsReferenceDateKey, 
+                       _kDataDetectorsSelectedTextKey, _kDataDetectorsSourceRectKey, 
+                       _kDataDetectorsSpecialURLKey, _kDataDetectorsTextStorageKey, 
+                       _kDataDetectorsTrailingText ]
+    objc-classes:    [ DDAction, DDCallAction, DDContextMenuAction, DDContextMenuConfiguration, 
+                       DDCopyAction, DDDetectionController, DDMoreActionsAction, 
+                       DDParsecCollectionViewController, DDParsecLoadingViewController, 
+                       DDParsecNoDataViewController, DDPreviewAction, DDRemoteActionViewControllerProvider, 
+                       DDShowItemAction, DDTelephoneNumberAction, DDTrackShipmentAction ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DDResultAttributeName ]
+...

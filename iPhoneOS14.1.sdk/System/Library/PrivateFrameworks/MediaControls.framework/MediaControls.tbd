@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F76BE939-E93D-3456-9556-870B27B3335B
+  - target:          arm64e-ios
+    value:           44DF378A-25CD-3D9B-BA49-3EF0869DD6CB
+install-name:    '/System/Library/PrivateFrameworks/MediaControls.framework/MediaControls'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MRMediaControlsPlatterDeviceIdentifierAppleTV, _MRMediaControlsPlatterDeviceIdentifierGenericSpeaker, 
+                       _MRMediaControlsPlatterDeviceIdentifierHomePod, _MRMediaControlsPlatterDeviceIdentifierHomePodStereoPair, 
+                       _MRMediaControlsPlatterDeviceIdentifierSpeaker ]
+    objc-classes:    [ MRPlatterViewController, MediaControlsBluetoothListeningModeButton, 
+                       MediaControlsCollectionViewController, MediaControlsEndpointsViewController, 
+                       MediaControlsExpandableButton, MediaControlsExpandableButtonOption, 
+                       MediaControlsLanguageOptionsViewController, MediaControlsPanelViewController, 
+                       MediaControlsStyleCoordinator, MediaControlsVolumeBackgroundViewController, 
+                       MediaControlsVolumeController, MediaControlsVolumeSliderView, 
+                       MediaControlsVolumeViewController ]
+...

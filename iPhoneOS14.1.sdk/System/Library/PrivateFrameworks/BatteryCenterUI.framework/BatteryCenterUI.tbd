@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           93122964-ED63-36DA-A09B-8270332944D7
+  - target:          arm64e-ios
+    value:           829B6B63-862B-3FD3-91CF-9E2A8F8EC16F
+install-name:    '/System/Library/PrivateFrameworks/BatteryCenterUI.framework/BatteryCenterUI'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ BatteryCenterUITest, BatteryWidget, SpringBoard, SpringBoard-Tests, 
+                       SpringBoardFramework, SpringBoardHome ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BCUI6x8ColumnWidthForBounds, _BCUI6x8RowHeightForBounds, 
+                       _BatteryCenterUIVersionNumber, _BatteryCenterUIVersionString, 
+                       _NSStringFromBCUIAvocadoSize ]
+    objc-classes:    [ BCUI2x2AvocadoViewController, BCUI2x4AvocadoViewController, 
+                       BCUI4x4AvocadoViewController, BCUIAvocadoViewController, BCUIBatteryAvocadoViewController, 
+                       BCUIBatteryView, BCUIChargeRing, BCUIMappedImageCache, BCUIRingCapShadow, 
+                       BCUIRingItemView, BCUIRingView, BCUIRowView ]
+...

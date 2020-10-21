@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2D41BBBA-DA86-3E26-8937-29D1B98E6ABF
+  - target:          armv7s-ios
+    value:           7092A532-BC05-37ED-98BA-403CCE39455F
+  - target:          arm64-ios
+    value:           E568F912-D611-36F4-80E1-26CC06CF8DEC
+  - target:          arm64e-ios
+    value:           4F6E2BD2-B427-334D-A998-A00C30EA8AF5
+install-name:    '/System/Library/PrivateFrameworks/TelephonyRPC.framework/TelephonyRPC'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DELTA_SYNC_MAX_VOICEMAIL_COUNT, _FULL_SYNC_CHUNK_SIZE, _NPHAudioInterruptionControllerInterruptionStatusWillChangeNotification, 
+                       _NPHAudioInterruptionControllerWillInterruptKey, _NPHSharedUtilitiesRecordDuetAnsweredCallEventFrom, 
+                       _NPHSharedUtilitiesRecordDuetDeclinedCallEventFrom, _NPHSharedUtilitiesRecordDuetRemindMeEventFrom, 
+                       _NPHSharedUtilitiesRecordDuetSmartReplyEventFrom, __NPHLastKnownMobileCountryCodeKey, 
+                       __createCoreDuetSession, _kCarrierInfoCarrierDomain ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CTSUServerConnectionRef, _CTSUServerQueue, _ListOfVoicemailsToSyncWithManager, 
+                       _NANOPHONE_APPLICATION_BUNDLE_ID, _NPHDeriveProgramName, _NPHDeviceHasBaseband, 
+                       _NPHDeviceOSIsInternalInstall, _NPHIsDebugBuild, _NPHIsWalkaboutEnabled, 
+                       _NPHSharedUtilitiesAppendBuildVersion, _NPHSharedUtilitiesLocaleHaptic, 
+                       _NPHSharedUtilitiesLocaleHapticDucked, _NPHWiFiStringKey, 
+                       _NSStringFromTUCallDisconnectedReason, _NanoPhoneVoicemailBodyReadFrom, 
+                       _NanoPhoneVoicemailMetaReadFrom, _NanoPhoneVoicemailTranscriptReadFrom, 
+                       _SYNC_MAX_VOICEMAIL_COUNT, _SYNC_MAX_VOICEMAIL_TOTAL_SIZE_BYTES, 
+                       __NPHNumberOfCannedReplies, __NPHPhoneNumberActiveCountryCodeKey, 
+                       __NPHPhoneNumberHomeCountryCodeKey, __NPHPhoneNumberNetworkCountryCodeKey, 
+                       __TUReplyWithMessageStoreChangedKey, __TUReplyWithMessageStoreReplyArrayKey, 
+                       _isTrashToInboxForVMDNotification, _kCarrierInfoIsVisualVoicemailServiceSubscribedKey, 
+                       _kCarrierInfoVMShouldHideVoicemailUI, _kCarrierInfoVMShouldHideVoicemailUIDidChangeNotification, 
+                       _kNPHIsVisualVoicemailServiceSubscribedDidChangeNotification, 
+                       _mach_time_elapsed_to_seconds, _nph_ensure_on_main_queue, 
+                       _nph_general_log, _syncOperationForVMDNotification ]
+    objc-classes:    [ NPHCarrierInfoCompanionReplication, NPHCountryCodeCompanionReplication, 
+                       NPHNanoRespondWithTextStore, NPHNanoRespondWithTextStoreCompanionReplication, 
+                       NPHSYObjectWrapper, NPHSharedUtilities, NPHVMSyncSessionManager, 
+                       NPHVoicemailManager, NanoPhoneVoicemailBody, NanoPhoneVoicemailMeta, 
+                       NanoPhoneVoicemailTranscript, VoicemailCompanionReplication ]
+    objc-ivars:      [ NanoPhoneVoicemailBody._voicemailNumber, NanoPhoneVoicemailBody._voicemailRecording, 
+                       NanoPhoneVoicemailMeta._callbackNumber, NanoPhoneVoicemailMeta._dataPath, 
+                       NanoPhoneVoicemailMeta._date, NanoPhoneVoicemailMeta._duration, 
+                       NanoPhoneVoicemailMeta._flags, NanoPhoneVoicemailMeta._has, 
+                       NanoPhoneVoicemailMeta._identifier, NanoPhoneVoicemailMeta._receiverDestinationID, 
+                       NanoPhoneVoicemailMeta._remoteUID, NanoPhoneVoicemailMeta._sender, 
+                       NanoPhoneVoicemailMeta._voicemailBody, NanoPhoneVoicemailMeta._voicemailNumber, 
+                       NanoPhoneVoicemailMeta._voicemailTranscript, NanoPhoneVoicemailTranscript._transcriptionString, 
+                       NanoPhoneVoicemailTranscript._voicemailNumber ]
+...

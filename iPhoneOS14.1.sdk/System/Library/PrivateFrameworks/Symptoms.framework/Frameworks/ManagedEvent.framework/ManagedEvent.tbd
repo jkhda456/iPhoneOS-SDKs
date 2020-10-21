@@ -1,0 +1,67 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           597FA882-00CB-39D1-B0F7-1A478240706F
+  - target:          armv7s-ios
+    value:           8FFF4304-6301-3D82-AEDE-295EC076C3F1
+  - target:          arm64-ios
+    value:           B6AA7880-8BE6-3CC2-94AD-6ECAC53640FB
+  - target:          arm64e-ios
+    value:           F6761442-127F-33ED-B551-2808F4DC3493
+install-name:    '/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/ManagedEvent.framework/ManagedEvent'
+current-version: 1431.11.4
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kManagedEventKeyBackgroundCombinedFlowProperties, _kManagedEventKeyBackgroundSpecificFlowClassifications, 
+                       _kManagedEventKeyForegroundApps, _kManagedEventKeyForegroundCombinedFlowProperties, 
+                       _kManagedEventKeyForegroundSpecificFlowClassifications, _kManagedEventKeyHumanReadableBackgroundDurationValues, 
+                       _kManagedEventKeyHumanReadableBackgroundJitterValues, _kManagedEventKeyHumanReadableBackgroundLatencyValues, 
+                       _kManagedEventKeyHumanReadableBackgroundLossToleranceValues, 
+                       _kManagedEventKeyHumanReadableBackgroundPrefBandwidthValues, 
+                       _kManagedEventKeyHumanReadableBackgroundReqdBandwidthValues, 
+                       _kManagedEventKeyHumanReadableBackgroundSpecificFlowClassifications, 
+                       _kManagedEventKeyHumanReadableForegroundDurationValues, _kManagedEventKeyHumanReadableForegroundJitterValues, 
+                       _kManagedEventKeyHumanReadableForegroundLatencyValues, _kManagedEventKeyHumanReadableForegroundLossToleranceValues, 
+                       _kManagedEventKeyHumanReadableForegroundPrefBandwidthValues, 
+                       _kManagedEventKeyHumanReadableForegroundReqdBandwidthValues, 
+                       _kManagedEventKeyHumanReadableForegroundSpecificFlowClassifications, 
+                       _kManagedEventKeyRelevantState, _kSymptomConfigKeyAnnotation, 
+                       _kSymptomConfigKeyChangeTarget, _kSymptomConfigKeyConditionDNS, 
+                       _kSymptomConfigKeyConditionPresenceTime, _kSymptomConfigKeyConditionSymptom1Counts, 
+                       _kSymptomConfigKeyConditionSymptom2Counts, _kSymptomConfigKeyConditionThreshold, 
+                       _kSymptomConfigKeyDNSPresenceTime, _kSymptomConfigKeyDNSThreshold, 
+                       _kSymptomConfigKeyNotificationDampening, _kSymptomConfigKeyTriggerDampening, 
+                       _kSymptomConfigKeyTriggerRefuterMode, _kSymptomConfigValNotificationARP, 
+                       _kSymptomConfigValNotificationCombinationDemo, _kSymptomConfigValNotificationConnectionFailures, 
+                       _kSymptomConfigValNotificationDNS, _kSymptomConfigValNotificationDisconnectTrigger, 
+                       _kSymptomConfigValNotificationPassthroughDemo, _kSymptomConfigValNotificationThroughputDrop, 
+                       _kSymptomManagedEventARPAliveNotification, _kSymptomManagedEventARPFailureNotification, 
+                       _kSymptomManagedEventBrokenBackhaulNotification, _kSymptomManagedEventCaptivityNotification, 
+                       _kSymptomManagedEventCellWhileWiFiNotification, _kSymptomManagedEventDNSAliveNotification, 
+                       _kSymptomManagedEventDNSFailureNotification, _kSymptomManagedEventKeyAWDARPFailureCount, 
+                       _kSymptomManagedEventKeyAWDDataStallsScore, _kSymptomManagedEventKeyAWDGateOpenDuration, 
+                       _kSymptomManagedEventKeyAWDND6FailureCount, _kSymptomManagedEventKeyAWDRNFDenialsScore, 
+                       _kSymptomManagedEventKeyAWDTrafficWatchDuration, _kSymptomManagedEventKeyAWDTrafficWatchRxCount, 
+                       _kSymptomManagedEventKeyAWDTrafficWatchTimeSince, _kSymptomManagedEventKeyAWDValidState, 
+                       _kSymptomManagedEventKeyAWDWiFiDNSImpactedServers, _kSymptomManagedEventKeyAWDWiFiDNSTotalServers, 
+                       _kSymptomManagedEventKeyBundleDetails, _kSymptomManagedEventKeyDefRouteRTTVals, 
+                       _kSymptomManagedEventKeyFlowScoreDetails, _kSymptomManagedEventKeyFlowUsageDetails, 
+                       _kSymptomManagedEventKeyNumReportingProcesses, _kSymptomManagedEventKeyTriggerARPState, 
+                       _kSymptomManagedEventKeyTriggerAWDInfo, _kSymptomManagedEventKeyTriggerBundleInput, 
+                       _kSymptomManagedEventKeyTriggerDNSState, _kSymptomManagedEventKeyTriggerDetails, 
+                       _kSymptomManagedEventKeyTriggerElapsedSinceClose, _kSymptomManagedEventKeyTriggerFlowState, 
+                       _kSymptomManagedEventKeyTriggerImpact, _kSymptomManagedEventKeyTriggerImpactFlags, 
+                       _kSymptomManagedEventKeyTriggerImpactReasons, _kSymptomManagedEventKeyTriggerND6State, 
+                       _kSymptomManagedEventKeyTriggerNetScore, _kSymptomManagedEventKeyTriggerNetScoreReasons, 
+                       _kSymptomManagedEventKeyTriggerPollFlowState, _kSymptomManagedEventKeyTriggerRTTState, 
+                       _kSymptomManagedEventKeyTriggerScore, _kSymptomManagedEventKeyTriggerScoreInfo, 
+                       _kSymptomManagedEventKeyTriggerTCP3WHSStuck, _kSymptomManagedEventKeyTriggerTCPExtraState, 
+                       _kSymptomManagedEventKeyTriggerTCPReadStuck, _kSymptomManagedEventKeyTriggerTCPWriteStuck, 
+                       _kSymptomManagedEventWiFiAppAwareNotification, _kSymptomManagedEventWiFiDNSTriggerNotification, 
+                       _kSymptomManagedEventWiFiShortFlowsTriggerNotification, _kSymptomManagedEventWiFiTriggerDisconnectNotification, 
+                       _managed_event_fetch, _managed_event_fetch_series, _managed_event_param_change, 
+                       _managed_event_param_change_multiple, _managed_event_param_read, 
+                       _managed_event_param_read_multiple ]
+...

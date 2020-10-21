@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DCE6714B-551E-375C-8D49-80B2A61C4AF2
+  - target:          armv7s-ios
+    value:           328049F5-9D1B-3BCD-9617-8F4C7280F202
+  - target:          arm64-ios
+    value:           240C89B4-F64E-3F7C-B46B-A64FD1EFE789
+  - target:          arm64e-ios
+    value:           EFA332F4-8DF1-342F-83CA-706FE2E5D9B5
+install-name:    '/System/Library/PrivateFrameworks/CourseKit.framework/CourseKit'
+current-version: 16
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CourseKitVersionNumber, _CourseKitVersionString, _kCKCourseURLTemplate, 
+                       _kCKCourseURLTemplateCourseIDKey, _kCKDatabaseName, _kCKLibraryDocumentsPath, 
+                       _kCKSystemGroupContainerId, _kCKiTunesUBundleID, _kCKiTunesUMinimumRequiredVersion ]
+    objc-classes:    [ CKImageTransformer ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CKCourse, CKCourseLibrary, CKSharedCourse, CKSharedDatabase ]
+...

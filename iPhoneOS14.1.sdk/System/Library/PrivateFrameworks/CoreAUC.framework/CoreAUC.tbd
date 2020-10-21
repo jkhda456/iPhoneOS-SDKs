@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           318B3B59-9A9B-358E-9750-2FFC69C2FFB6
+  - target:          armv7s-ios
+    value:           ABC201CB-F7EA-32F8-9EED-3F2C7DC1867A
+  - target:          arm64-ios
+    value:           95D04B51-378A-3F0B-86CC-6D57EF7C62FF
+  - target:          arm64e-ios
+    value:           D679F8AC-75FE-3B57-8862-46801DE02E42
+install-name:    '/System/Library/PrivateFrameworks/CoreAUC.framework/CoreAUC'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AIp6m6e0e4SJ5Ql, _BRqpmmw1EEB7Tm, _Gnf6vZyAVLNQta0BwC, _Gnf6vZyAVLNQta0BwK, 
+                       _HtERfbh945Re3oy, _MbgwT9G43SsdaVw, _NOiDBX787cZSPdJ, _PsZXJ2EK7ifxrtgc, 
+                       _UeKhmE9GuHm0LgF, _cVtdPOVleEtmSPBdy, _tQN5x9ksL4jeZ, _tpz1bPiDnP0U7Zm, 
+                       _vRThfplNqwR36hfR ]
+...

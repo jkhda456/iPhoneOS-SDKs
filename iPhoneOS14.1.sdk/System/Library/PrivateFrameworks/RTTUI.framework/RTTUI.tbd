@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           899209B6-4260-39D4-8768-8C456C157B0B
+  - target:          arm64e-ios
+    value:           65471E01-E073-3603-BF46-BF185BA05A87
+install-name:    '/System/Library/PrivateFrameworks/RTTUI.framework/RTTUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RTTUIVersionNumber, _RTTUIVersionString, _ttyImageNamed ]
+    objc-classes:    [ RTTAbbreviationTapGestureRecognizer, RTTUIAbbreviationCell, 
+                       RTTUIAbbreviationView, RTTUIAbbreviationViewContainer, RTTUIActivityItemProvider, 
+                       RTTUIConversationControllerCoordinator, RTTUIConversationViewController, 
+                       RTTUIReplyActionCell, RTTUIResponseCell, RTTUIServiceUpdateCell, 
+                       RTTUITextView, RTTUIUtilities, RTTUIUtteranceCell, RTTUtteranceRequest ]
+...

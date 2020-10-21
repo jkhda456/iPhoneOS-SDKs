@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CE9B3310-48F7-3A5A-8439-BB2AC027EE91
+  - target:          arm64e-ios
+    value:           A4019722-D449-31A8-A59B-47A1634A6D15
+install-name:    '/System/Library/PrivateFrameworks/ContextKit.framework/ContextKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CKContextKitNotification_ConfigurationUpdate, _ContextKitErrorDomain, 
+                       _ContextKitVersionNumber, _ContextKitVersionString ]
+    objc-classes:    [ CKContextClient, CKContextCompleter, CKContextCountedItem, 
+                       CKContextGlobals, CKContextRequest, CKContextResponse, CKContextResult, 
+                       CKContextSemaphore, CKContextXPCClient ]
+...

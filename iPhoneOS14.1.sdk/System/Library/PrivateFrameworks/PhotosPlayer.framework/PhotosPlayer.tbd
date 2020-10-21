@@ -1,0 +1,56 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           96FCD02D-4794-3D05-A116-374DA556172C
+  - target:          armv7s-ios
+    value:           C41F1955-BA8B-36FF-9851-9AC6D31C268E
+  - target:          arm64-ios
+    value:           5F3DEA17-1F5A-3DAA-9C1D-8F50D8D8108F
+  - target:          arm64e-ios
+    value:           35928B53-3386-3669-A89A-ED797BEBC2D4
+install-name:    '/System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer'
+current-version: 310.1.160
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _BlurFilterKey, _CMTimeMod, _ISBlurFilterName, _ISBlurKeyPath, 
+                       _ISExifOrientationFromImageOrientation, _ISGestureRecognizerViewObservationContext, 
+                       _ISKDebugIsEnabled, _ISKDebugTrace, _ISLayerBlurRadiusKeyPath, 
+                       _ISLivePhotoPlaybackFilterObservationContext, _ISLivePhotoPlayerObservableContext, 
+                       _ISLivePhotoShouldRenderAtPlaybackTime, _ISMetadataLivePhotoMinimumClientVersion, 
+                       _ISMetadataLivePhotoPlaybackStyleIdentifier, _ISMetadataLivePhotoPlaybackStyleIdentifierAutoloop, 
+                       _ISMetadataLivePhotoPlaybackStyleIdentifierDefault, _ISObservableChangeDepthLimit, 
+                       _ISPlayerItemObservationContext, _ISPlayerObservationContext, 
+                       _ISPointAdd, _ISPointSubtract, _ISRectGetCenter, _ISRectWithAspectRatioFillingRect, 
+                       _ISRectWithAspectRatioFittingRect, _ISSizeWithAspectRatioFittingSize, 
+                       _ISVideoAnalyzerErrorDomain, _PhotosPlayerVersionNumber, _PhotosPlayerVersionString, 
+                       _is_dispatch_on_main_queue ]
+    objc-classes:    [ ISAVAssetReaderImageDataGenerator, ISAVPlayerUIView, ISBehavior, 
+                       ISDefaultBehavior, ISDeferredDealloc, ISDisplayLink, ISDynamicValueFilter, 
+                       ISEditSession, ISExportDestination, ISForcePressLivePhotoPlaybackFilter, 
+                       ISFrameProcessingRequest, ISGeneratedImageData, ISImageDataGenerator, 
+                       ISLayerPlayer, ISLivePhotoAutoplayVitalityFilter, ISLivePhotoHintBehavior, 
+                       ISLivePhotoPlaybackBehavior, ISLivePhotoSettleBehavior, ISLivePhotoVitalityBehavior, 
+                       ISLivePhotoVitalityFilter, ISLongPressForceGestureRecognizer, 
+                       ISPerformanceDiagnosticsSettings, ISPlaybackSettings, ISPlaybackSpec, 
+                       ISPlayerOutputTransitionOptions, ISPlayerSettings, ISPlayerState, 
+                       ISRateCurveRequest, ISReuseQueue, ISTransitionApplier, ISVideoAnalyzer, 
+                       ISVideoAnalyzerFrameTimesOperation, ISVitalityAdaptiveFilter, 
+                       ISVitalityAutoplayFilter, ISVitalityConstantFilter, ISVitalityFilter, 
+                       ISVitalitySimpleFilter, ISVitalitySpecificSettings, _ISPlayerItemChefOperation ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ISCircularEaseOut, _ISCubicEaseOut, _ISQuadraticEaseOut, 
+                       _ISQuarticEaseOut, _ISQuinticEaseOut, _ISSineEaseOut, _ISStringFromPlaybackState, 
+                       _ISStringFromPlayerItemLoadingTarget, _PhotosPlayerErrorDomain ]
+    objc-classes:    [ ISAVPlayer, ISAVPlayerLayer, ISAnimatedImage, ISAnimatedImagePlayer, 
+                       ISAnimatedImageView, ISAsset, ISBasePlayer, ISBasePlayerUIView, 
+                       ISLivePhotoPlaybackFilter, ISLivePhotoPlayer, ISLivePhotoUIView, 
+                       ISLiveWallpaperPlayer, ISLiveWallpaperUIView, ISObservable, 
+                       ISPlayerContent, ISPlayerItem, ISPlayerItemChef, ISPlayerOutputContent, 
+                       ISPlayerView, ISRootSettings, ISScrollViewVitalityController, 
+                       ISSettings, ISTouchLivePhotoPlaybackFilter, ISTouchingGestureRecognizer, 
+                       ISUIScrollViewVitalityController, ISUIVisibilityOffsetHelper, 
+                       ISVideoPlayerUIView, ISVisibilityOffsetHelper, ISVitalitySettings, 
+                       ISWrappedAVAudioSession, ISWrappedAVPlayer ]
+...

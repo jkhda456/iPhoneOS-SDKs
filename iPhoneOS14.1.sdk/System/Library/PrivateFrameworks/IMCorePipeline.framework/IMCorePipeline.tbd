@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7B4D557C-D506-3525-9908-9B50DE98FBE6
+  - target:          arm64e-ios
+    value:           36183174-BF53-3BB6-86F3-B0518949BAA9
+install-name:    '/System/Library/PrivateFrameworks/IMCorePipeline.framework/IMCorePipeline'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IMCoreBlastdoorErrorDomain, _IMCorePipelineVersionNumber, 
+                       _IMCorePipelineVersionString, _IMCoreReceivePipelineErrorDomain ]
+    objc-classes:    [ IMPipelineComponent, IMPromise, IMResult ]
+    objc-ivars:      [ IMPromise._completionBlocks, IMPromise._result, IMResult._inError, 
+                       IMResult._inValue, IMResult._state ]
+...

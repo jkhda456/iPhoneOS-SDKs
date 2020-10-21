@@ -1,0 +1,58 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A459C67D-6932-3B76-A945-4D0BA6E11461
+  - target:          arm64e-ios
+    value:           1D5161B3-C217-3F40-BC19-C6E66986570C
+install-name:    '/System/Library/PrivateFrameworks/ContactsAutocompleteUI.framework/ContactsAutocompleteUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CNAUILocalizedAddressSeparator, _CNAutocompleteContactKeyForRecentsKind, 
+                       _CNAutocompleteCopyClosestMatchingExistingContactUsingAddressesAndDisplayName, 
+                       _CNAutocompleteCopyClosestMatchingExistingContactUsingAddressesAndDisplayNameUnified, 
+                       _CNAutocompleteDescriptorForRequiredKeysForCompositeName, 
+                       _CNAutocompleteFetchNonUnifiedContactsForPredicate, _CNAutocompletePreferredAbbreviatedNameForAddressAndDisplayName, 
+                       _CNAutocompletePreferredCompositeNameForAddressAndDisplayName, 
+                       _CNAutocompletePreferredCompositeNameForContact, _CNAutocompleteRecentsKindForContactKey, 
+                       _CNAutocompleteSharedContactStore, _CNAutocompleteSharedLocalOnlyContactStore, 
+                       _CNComposeApplicationPreferredContentSizeIsLargerThanLarge, 
+                       _CNComposeFirstIndexInRangePassingTest, _CNComposeFontMetricCacheInvalidationNotification, 
+                       _CNComposeLastIndexInRangePassingTest, _CNComposeLastIndexPassingTest, 
+                       _CNComposeRecipientCollectionDragType, _CNComposeRecipientDragType, 
+                       _CNComposeRecipientStringMatchAddress, _CNComposeRecipientStringMatchFirstName, 
+                       _CNComposeRecipientStringMatchLastName, _CNComposeRecipientStringMatchMiddleName, 
+                       _CNComposeRecipientStringMatchType, _CNComposeRecipientTextViewIsCollectingPreviousKeyResponder, 
+                       _CNComposeRecipientViewDidChangeNotification, _CNIconImageForDownwardChevron, 
+                       _CNIconImageForPresentationOption, _CNMFCompositionServiceDomain, 
+                       _ContactsAutocompleteUIVersionNumber, _ContactsAutocompleteUIVersionString, 
+                       _getSimulateAutocompleteResultsInternalSetting, _kCNPasteboardTypeComposeRecipient ]
+    objc-classes:    [ CNAtomCenteredTextAttachment, CNAtomIcon, CNAtomTextView, 
+                       CNAtomView, CNAutocompleteContactsSearchTaskContext, CNAutocompleteDisambiguatingTableViewCell, 
+                       CNAutocompleteFontMetricCache, CNAutocompleteGroupDetailViewController, 
+                       CNAutocompleteResultsTableView, CNAutocompleteResultsTableViewController, 
+                       CNAutocompleteSearchManager, CNAutocompleteSearchOperation, 
+                       CNAutocompleteSupplementalGroup, CNAutocompleteSupplementalGroupMember, 
+                       CNAutocompleteUIPreferences, CNChevronButton, CNComposeAddressConcatenator, 
+                       CNComposeDragSource, CNComposeDropTarget, CNComposeHeaderLabelView, 
+                       CNComposeHeaderView, CNComposeRecipient, CNComposeRecipientActionButton, 
+                       CNComposeRecipientAtom, CNComposeRecipientGroup, CNComposeRecipientOriginContext, 
+                       CNComposeRecipientTableViewCell, CNComposeRecipientTextView, 
+                       CNComposeRecipients, CNComposeTableViewCell, CNContactsAutocompleteSearchOperation, 
+                       CNModernAtomBackgroundView, CNModernAtomIconView, CNRecentComposeRecipient, 
+                       CNRecentComposeRecipientGroup, CNUnifiedComposeRecipient, 
+                       _CNAUICRRecentContactCNContext, _CNAtomAttachment, _CNAtomFieldEditor, 
+                       _CNAtomLayoutView, _CNAtomTextAttachment, _CNAtomTextSelectionRect, 
+                       _CNAtomTextView, _CNAtomTextViewBaselineLayoutStrut, _CNAtomViewTextSelectionRect, 
+                       _CNAutocompleteResultsTableViewModel, _CNAutocompleteTableViewModelDiff, 
+                       _CNCountableMatchesContext ]
+    objc-ivars:      [ CNModernAtomBackgroundView._scalingFactor, CNModernAtomBackgroundView._selected, 
+                       CNModernAtomBackgroundView._selectedView, CNModernAtomBackgroundView._selectionStyle, 
+                       CNModernAtomBackgroundView._separatorStyle, CNModernAtomBackgroundView._separatorView, 
+                       _CNCountableMatchesContext._contactsCount ]
+...

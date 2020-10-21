@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8364C155-4E53-338E-A9E2-C6D1BBDC8496
+  - target:          arm64e-ios
+    value:           06BB649A-7068-3935-BF93-D9D6D6459B5B
+install-name:    '/System/Library/PrivateFrameworks/HardwareDiagnostics.framework/HardwareDiagnostics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HDBaseDomain, _HDCapturePlugInErrorDomain, _HDCreateError, 
+                       _HDDefaultLogHandle, _HDDiagnosticAnalysisDataKey, _HDDiagnosticAnalysisParametersKey, 
+                       _HDDiagnosticExperimentDataKey, _HDDiagnosticExperimentParametersKey, 
+                       _HDErrorDomain, _HDIOReportDomain, _HDIOReportErrorDomain, 
+                       _HDLunaImageExperimentErrorDomain, _HardwareDiagnosticsVersionNumber, 
+                       _HardwareDiagnosticsVersionString ]
+    objc-classes:    [ HDAnalysisResult, HDBound, HDDescription, HDDimensionlessUnit, 
+                       HDExperimentResult, HDKeyedObjectParameter, HDLab, HDLimit, 
+                       HDMeasuredResult, HDNumberParameter, HDReport, HDSimpleDiagnostic, 
+                       HDStringParameter ]
+...

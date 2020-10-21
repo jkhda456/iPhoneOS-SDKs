@@ -1,0 +1,83 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           313623B9-8D32-3817-855E-A91EB73CBC1E
+  - target:          arm64e-ios
+    value:           276F021D-61E7-3BA4-AE90-E271805CC92A
+install-name:    '/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/DoNotDisturbServer'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ Carousel, CarouselTests, DoNotDisturbServerTests, SoundBoard, 
+                       SpringBoard, SpringBoardCore ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DNDSGetLifetimePhase, _DNDSIsSysdiagnoseBeingCaptured, _DNDSLogAssertionManager, 
+                       _DNDSLogAssertionStore, _DNDSLogCalendarEventLifetimeMonitor, 
+                       _DNDSLogDataMigrator, _DNDSLogDateIntervalLifetimeMonitor, 
+                       _DNDSLogDefaultLifetimeMonitor, _DNDSLogGeneral, _DNDSLogIDSTransport, 
+                       _DNDSLogLegacyAssertionSync, _DNDSLogLegacySettingsSync, _DNDSLogLocationLifetimeMonitor, 
+                       _DNDSLogModernAssertionSync, _DNDSLogPairedDeviceState, _DNDSLogResolver, 
+                       _DNDSLogSchedule, _DNDSLogScheduleLifetimeMonitor, _DNDSLogServiceProvider, 
+                       _DNDSLogSettings, _DNDSLogStateProvider, _DNDSLogSysdiagnose, 
+                       _DNDSLogSystemState, _DNDSMigrateLegacySettings, _DNDSRegisterLogging, 
+                       _DNDSRegisterSysdiagnose, _DNDSRegisterSysdiagnoseDataProvider, 
+                       _DNDSResolutionOutcomeToString, _DNDSResolutionReasonToString, 
+                       _DNDSRunServer, _DNDSScheduleManagerClientIdentifier, _DNDSSetUILockState, 
+                       _DNDSStringFromLostModeState, _DNDSStringFromPairedDeviceClass, 
+                       _DNDSStringFromUILockState, _DNDSUnregisterSysdiagnoseDataProvider, 
+                       _DoNotDisturbServerVersionNumber, _DoNotDisturbServerVersionString, 
+                       __DNDSRequestRadar, _kDNDModeAssertionScheduleLifetimeBehaviorRecordExpireWhenNextScheduleEndsValue, 
+                       _kDNDModeAssertionScheduleLifetimeBehaviorRecordMatchScheduleValue, 
+                       _kIDSMaxMessageTimeout, _kIDSMessageVersion, _kLeaveLocationRadius, 
+                       _kLegacyOverrideLastCalculatedTimeKey, _kLegacyOverrideStatusKey, 
+                       _kNanoPreferencesLegacySyncDomainKey, _kRepeatEventThreshold, 
+                       _kResolutionRecordDesiredCount, _kScheduleEnabledModes ]
+    objc-classes:    [ DNDSAnyModeAssertionInvalidationPredicate, DNDSBaseLifetimeMonitor, 
+                       DNDSBehaviorSettingsRecord, DNDSBypassSettingsRecord, DNDSCalendarEventLifetimeMonitor, 
+                       DNDSClientConnectionDetails, DNDSClientDetails, DNDSClientDetailsProvider, 
+                       DNDSDateIntervalLifetimeMonitor, DNDSDefaultLifetimeMonitor, 
+                       DNDSEventBehaviorResolution, DNDSEventBehaviorResolver, DNDSIDSSyncService, 
+                       DNDSJSONBackingStore, DNDSLegacyAssertionSyncManager, DNDSLegacyBehaviorOverride, 
+                       DNDSLegacyBehaviorOverrideEffectiveInterval, DNDSLegacySettingsSyncManager, 
+                       DNDSLifetimeMonitorResult, DNDSLocationLifetimeMonitor, DNDSMemoryCachedBackingStore, 
+                       DNDSModeAssertionClientIdentifierInvalidationPredicate, DNDSModeAssertionDateInvalidationPredicate, 
+                       DNDSModeAssertionDetailsRecord, DNDSModeAssertionInvalidationDetailsRecord, 
+                       DNDSModeAssertionInvalidationPredicate, DNDSModeAssertionInvalidationPredicateRecord, 
+                       DNDSModeAssertionInvalidationRecord, DNDSModeAssertionInvalidationRequest, 
+                       DNDSModeAssertionInvalidationRequestRecord, DNDSModeAssertionLifetimeRecord, 
+                       DNDSModeAssertionManager, DNDSModeAssertionManagerUpdateContext, 
+                       DNDSModeAssertionRecord, DNDSModeAssertionSourceRecord, DNDSModeAssertionStore, 
+                       DNDSModeAssertionStoreRecord, DNDSModeAssertionUUIDInvalidationPredicate, 
+                       DNDSModeAssertionUpdateResult, DNDSModeDetails, DNDSModeRepository, 
+                       DNDSModernAssertionSyncManager, DNDSMutableBehaviorSettingsRecord, 
+                       DNDSMutableBypassSettingsRecord, DNDSMutableClientConnectionDetails, 
+                       DNDSMutableModeAssertionStore, DNDSMutableScheduleSettingsRecord, 
+                       DNDSMutableSettingsRecord, DNDSMutableStateProviderSystemSnapshot, 
+                       DNDSPairedDevice, DNDSPairedDeviceStateMonitor, DNDSRemoteServiceProvider, 
+                       DNDSScheduleLifetimeMonitor, DNDSScheduleManager, DNDSScheduleSettings, 
+                       DNDSScheduleSettingsRecord, DNDSServer, DNDSSettingsManager, 
+                       DNDSSettingsRecord, DNDSStateProvider, DNDSStateProviderSystemSnapshot, 
+                       DNDSSyncSettings, DNDSSyncSettingsProvider ]
+    objc-ivars:      [ DNDSBehaviorSettingsRecord._interruptionBehaviorSetting, DNDSBypassSettingsRecord._immediateBypassCNGroupIdentifier, 
+                       DNDSBypassSettingsRecord._immediateBypassEventSourceType, 
+                       DNDSBypassSettingsRecord._repeatEventSourceBehaviorEnabledSetting, 
+                       DNDSClientConnectionDetails._assertionUpdateClientIdentifiers, 
+                       DNDSClientConnectionDetails._interruptionInvalidationAssertionUUID, 
+                       DNDSClientConnectionDetails._wantsSettingsUpdates, DNDSClientConnectionDetails._wantsStateUpdates, 
+                       DNDSModeAssertionStore._assertions, DNDSModeAssertionStore._invalidationRequests, 
+                       DNDSModeAssertionStore._invalidations, DNDSScheduleSettingsRecord._bedtimeBehaviorEnabledSetting, 
+                       DNDSScheduleSettingsRecord._lastUpdatedTimestamp, DNDSScheduleSettingsRecord._scheduleEnabledSetting, 
+                       DNDSScheduleSettingsRecord._timePeriodEndTimeHour, DNDSScheduleSettingsRecord._timePeriodEndTimeMinute, 
+                       DNDSScheduleSettingsRecord._timePeriodStartTimeHour, DNDSScheduleSettingsRecord._timePeriodStartTimeMinute, 
+                       DNDSSettingsRecord._behaviorSettings, DNDSSettingsRecord._phoneCallBypassSettings, 
+                       DNDSSettingsRecord._scheduleSettings, DNDSStateProviderSystemSnapshot._activeAssertionUUIDs, 
+                       DNDSStateProviderSystemSnapshot._activeDateIntervalByAssertionUUID, 
+                       DNDSStateProviderSystemSnapshot._assertions, DNDSStateProviderSystemSnapshot._interruptionBehaviorSetting, 
+                       DNDSStateProviderSystemSnapshot._lostModeState ]
+...

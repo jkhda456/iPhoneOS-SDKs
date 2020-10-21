@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3DA1CAC6-00DF-3761-BF98-E2DB989C914B
+  - target:          armv7s-ios
+    value:           3E453DF7-805C-38E2-A289-A21DA67DDDED
+  - target:          arm64-ios
+    value:           6864DBC1-79DB-39E1-8542-1EE02BC7F7B1
+  - target:          arm64e-ios
+    value:           800543E4-892C-3F56-82EC-765420A11E7B
+install-name:    '/System/Library/PrivateFrameworks/WiFiLogCapture.framework/WiFiLogCapture'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _WiFiLogCaptureVersionNumber, _WiFiLogCaptureVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ WiFiLogDumpTaker ]
+...

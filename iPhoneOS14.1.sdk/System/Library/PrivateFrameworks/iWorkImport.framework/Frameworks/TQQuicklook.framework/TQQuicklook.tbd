@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           367267ED-0178-37D3-BF7B-1D62E87AD3A4
+  - target:          arm64e-ios
+    value:           1D76F9F4-E525-3632-B9F6-88FD41922C4F
+install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TQQuicklook.framework/TQQuicklook'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ TQQuicklook ]
+    objc-ivars:      [ TQQuicklook.mBaseAppDelegate, TQQuicklook.mDocument, TQQuicklook.mExporter, 
+                       TQQuicklook.mPassphrase, TQQuicklook.mPath, TQQuicklook.mTemporaryDirectory ]
+...

@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           54150C49-FA4C-3D34-807B-56F89EDEE59A
+  - target:          arm64e-ios
+    value:           48C1B92D-B352-3ACB-A3A9-7A7926C96560
+install-name:    '/System/Library/PrivateFrameworks/TinCanShared.framework/TinCanShared'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AWDTinCanAvailabilityStateReadFrom, _AWDTinCanCallEndedReadFrom, 
+                       _AWDTinCanInCallEventReadFrom, _NSStringFromTCSessionState, 
+                       _NSStringFromTUCallDisconnectedReason, _NSStringFromTUCallStatus, 
+                       _NSStringFromTinCanIDSIDStatus, _TCSAvailabilityDidChangeNotification, 
+                       _TCSContactsDidChangeNotification, _TCSDefaultsFirstSuggestionGenerationTimestampKey, 
+                       _TCSDefaultsPhotoCacheImageHashDictionaryKey, _TCSDefaultsPreviousSuggestionGenerationTimestampKey, 
+                       _TCSDefaultsSawTalkButtonTutorialKey, _TCSDefaultsStoreDemoWhitelistKey, 
+                       _TCSDefaultsSuggestionsKey, _TCSDefaultsUnavailableBySchoolModeKey, 
+                       _TCSDefaultsUnavailableByTheaterModeKey, _TCSDefaultsUnavailableKey, 
+                       _TCSDefaultsWhitelistKey, _TCSFirstUnlockNotification, _TCSLogDefault, 
+                       _TCSLogSafeDescription, _TCSStatusIndicatorStateDidChangeNotification, 
+                       _TCSTinCanAppBundleIdentifier, _TCSTinCanAppInstallationStateChangedNotification, 
+                       _TCSTinCanAppIsInstalledOnWatchKey, _TCSTinCanBBActionAcceptIdentifier, 
+                       _TCSTinCanBBActionCallbackDeclineIdentifier, _TCSTinCanBBActionCallbackIdentifier, 
+                       _TCSTinCanBBActionDeclineIdentifier, _TCSTinCanBBActionOpenAppIdentifier, 
+                       _TCSTinCanIDSServiceName, _TCSTinCanInvalidUserNotification, 
+                       _TCSTinCanInviteAcceptanceNotification, _TCSTinCanInviteAcceptedNotification, 
+                       _TCSTinCanInviteDeclinedNotification, _TCSTinCanInviteNotification, 
+                       _TCSTinCanInviteNotificationContactIdentifierKey, _TCSTinCanInviteNotificationFullNameKey, 
+                       _TCSTinCanInviteNotificationHandleKey, _TCSTinCanInviteNotificationShortNameKey, 
+                       _TCSTinCanInviteTimeoutNotification, _TCSTinCanMissedCallbackNotification, 
+                       _TCSTinCanMissedNotification, _TCSTinCanPTTTransmissionDurationKey, 
+                       _TCSTinCanPTTTransmissionKey, _TCSTinCanSharedBundleIdentifier, 
+                       _TCSTinCanSwitchRemoteUserKey, _TCSTinCanUITriggerInviteName, 
+                       _TCSTinCanUITriggerMissedName, _TCSTinCanURLScheme, _TCSTinCanUserActivityStartSessionType, 
+                       _TCSTinCanUserActivityStartSessionURLKey, _TCSTinCanUserDefaultsDomain, 
+                       _TCSTinCanWakeUpNotification, _TCSessionStateFromString, _TinCanSharedVersionNumber, 
+                       _TinCanSharedVersionString, __TCSInitializeLogging, _kTCSessionStateConnecting, 
+                       _kTCSessionStateDisconnected, _kTCSessionStateIdle, _kTCSessionStateReceiving, 
+                       _kTCSessionStateTransmitting, _kTCSessionStateUndefined ]
+    objc-classes:    [ AWDTinCanAvailabilityState, AWDTinCanCallEnded, AWDTinCanInCallEvent, 
+                       TCDialRequest, TCSAvailability, TCSBehavior, TCSCall, TCSCallCenter, 
+                       TCSCallLog, TCSContacts, TCSContactsDataSource, TCSIDSIDStatusController, 
+                       TCSServer, TCSSuggestions, TCSSuggestionsDataSource, TCSTinCanUserDefaults, 
+                       TCSignposts ]
+    objc-ivars:      [ AWDTinCanAvailabilityState._has, AWDTinCanAvailabilityState._timestamp, 
+                       AWDTinCanAvailabilityState._tinCanAvailabilityState, AWDTinCanCallEnded._contactHash, 
+                       AWDTinCanCallEnded._csdCallUUID, AWDTinCanCallEnded._disconnectedReason, 
+                       AWDTinCanCallEnded._events, AWDTinCanCallEnded._has, AWDTinCanCallEnded._timestamp, 
+                       AWDTinCanInCallEvent._eventType, AWDTinCanInCallEvent._has, 
+                       AWDTinCanInCallEvent._offsetTimeMs ]
+...

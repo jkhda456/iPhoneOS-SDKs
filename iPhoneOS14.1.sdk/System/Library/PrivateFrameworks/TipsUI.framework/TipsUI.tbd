@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9B1EFCD0-D582-310E-B98B-23379B083216
+  - target:          arm64e-ios
+    value:           5E1690C5-EFFB-3A26-B269-60847EC0252D
+install-name:    '/System/Library/PrivateFrameworks/TipsUI.framework/TipsUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TPSConstellationContentParserErrorDomain, _TipsUIVersionNumber, 
+                       _TipsUIVersionString, _kTPSAppControllerDefaultPadMinSideValue, 
+                       _kTPSAppControllerDefaultPadStandardMinMultiplier, _kTPSAppearanceDefaultPadMinSideValue, 
+                       _kTPSHyphenationFactorAccessibility, _kTPSHyphenationFactorDefault, 
+                       _kTPSImageAssetDefaultCornerRadius, _kTPSVideoAssetViewDefaultStartTime ]
+    objc-classes:    [ TPSAppController, TPSAppearance, TPSConstellationContentParser, 
+                       TPSImageAssetController, TPSImageAssetView, TPSLoadingView, 
+                       TPSMultilineButton, TPSVideoAssetView ]
+...

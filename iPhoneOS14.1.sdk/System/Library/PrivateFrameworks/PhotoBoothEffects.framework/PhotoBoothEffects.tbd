@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           CC0CB4FE-88DB-3988-B3E1-0EE037855753
+  - target:          armv7s-ios
+    value:           910601FA-248B-3084-BA42-32055F688604
+  - target:          arm64-ios
+    value:           0C0ED396-C78E-3C9C-B398-6752B9993938
+  - target:          arm64e-ios
+    value:           664B7FB6-AAB1-3274-9A2E-0994B6164EF2
+install-name:    '/System/Library/PrivateFrameworks/PhotoBoothEffects.framework/PhotoBoothEffects'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _bump_fragment_shader_source, _clamp, _default_vertex_shader_source, 
+                       _image_queue_release_callback, _interpolate, _luma_lookup_fragment_shader_source ]
+    objc-classes:    [ PBContext, PBCoreImageContext, PBFilter, PBFilterClassDescription, 
+                       PBKaleidoscopeFilter, PBLightTunnelFilter, PBMirrorFilter, 
+                       PBNormalFilter, PBSqueezeFilter, PBStretchFilter, PBThermalFilter, 
+                       PBTwirlFilter, PBXRayFilter ]
+    objc-ivars:      [ PBFilter._ciFilter, PBFilter._wrapMirrorFilter, PBFilterClassDescription._attributes, 
+                       PBFilterClassDescription._inputKeys, PBKaleidoscopeFilter._inputAmount, 
+                       PBKaleidoscopeFilter.firstTime, PBKaleidoscopeFilter.lastInputDecay, 
+                       PBKaleidoscopeFilter.lastInputRotation, PBKaleidoscopeFilter.lastInputSize, 
+                       PBKaleidoscopeFilter.lastInputX, PBKaleidoscopeFilter.lastInputY, 
+                       PBLightTunnelFilter._inputAmount, PBLightTunnelFilter.firstTime, 
+                       PBLightTunnelFilter.lastInputRadius, PBLightTunnelFilter.lastInputRotation, 
+                       PBLightTunnelFilter.lastInputX, PBLightTunnelFilter.lastInputY, 
+                       PBMirrorFilter.firstTime, PBMirrorFilter.lastInputAngle, PBMirrorFilter.lastInputX, 
+                       PBMirrorFilter.lastInputY, PBSqueezeFilter._inputAmount, PBSqueezeFilter.firstTime, 
+                       PBSqueezeFilter.lastInputRadius, PBSqueezeFilter.lastInputScale, 
+                       PBSqueezeFilter.lastInputX, PBSqueezeFilter.lastInputY, PBStretchFilter.firstTime, 
+                       PBStretchFilter.lastInputX, PBStretchFilter.lastInputY, PBTwirlFilter._inputAmount, 
+                       PBTwirlFilter.firstTime, PBTwirlFilter.lastInputAngle, PBTwirlFilter.lastInputRadius, 
+                       PBTwirlFilter.lastInputX, PBTwirlFilter.lastInputY ]
+...

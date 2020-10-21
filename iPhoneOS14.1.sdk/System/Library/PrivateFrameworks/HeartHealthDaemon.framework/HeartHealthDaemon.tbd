@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           67C504AC-DD7B-367F-9C65-DAF24BD4C978
+  - target:          arm64e-ios
+    value:           C7EF1A0B-6567-3A0A-87B7-D6BF7A45EE48
+install-name:    '/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kHLPowerLogActionConnected, _kHLPowerLogActionDisconnected, 
+                       _kHLPowerLogActionKey, _kHLPowerLogActionStartActive, _kHLPowerLogActionStartPassive, 
+                       _kHLPowerLogActionStopUpdates, _kHLPowerLogBundleIdentifierKey, 
+                       _kHLPowerLogEvent, _kHLPowerLogPIDKey ]
+    objc-classes:    [ HDHRDailyHeartRateManager, HDHRHealthLiteDataCollector, HDHRNotificationManager, 
+                       HDHeartRateProfileExtension ]
+...

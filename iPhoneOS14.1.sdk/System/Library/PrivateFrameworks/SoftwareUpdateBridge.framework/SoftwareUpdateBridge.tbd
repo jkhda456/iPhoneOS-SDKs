@@ -1,0 +1,63 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00202963-3E74-32B3-AE75-62768DFA701B
+  - target:          armv7s-ios
+    value:           A252D9FC-8E70-38FF-9F6C-A768C2D0B9BF
+  - target:          arm64-ios
+    value:           EDDD71BC-603C-3548-A944-35C90BF3604F
+  - target:          arm64e-ios
+    value:           320EB55E-7046-37FC-9CF0-620B46A01C14
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateBridge.framework/SoftwareUpdateBridge'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _SUBArchive, _SUBIPCClientIsEntitled, _SUBIPCDecodeObjectForKey, 
+                       _SUBIPCDictionaryToXPC, _SUBIPCEncodeObject, _SUBIPCXPCToDictionary, 
+                       _SUBMachServiceName, _SUBMessageTypeShowDownloadandPrepareError, 
+                       _SUBUnarchive, ___SoftwareUpdateBridgeVersionNumber, ___SoftwareUpdateBridgeVersionString ]
+    objc-classes:    [ SUBLogger, SUBMessageEndpoint ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SUBActiveNRDevice, _SUBCompatibilityVersion, _SUBDocumentationAssetKeyDevice, 
+                       _SUBDocumentationAssetKeyDeviceName, _SUBDocumentationAssetKeyID, 
+                       _SUBDuetDenialDomain, _SUBError, _SUBErrorDomain, _SUBErrorUserInfo, 
+                       _SUBErrorUserInfoChargerConnected, _SUBErrorUserInfoDenialReasons, 
+                       _SUBEventDescPowerConstraintsUnmet, _SUBIsChargerConnected, 
+                       _SUBIsRunningInStoreDemoMode, _SUBLoggingInit, _SUBMaxCompanionCompatibilityVersion, 
+                       _SUBMessageCanProceedWithInstallationKey, _SUBMessageCompanionLockState, 
+                       _SUBMessageCreateStashBagResponseKey, _SUBMessageCreatedStashBagResponse, 
+                       _SUBMessageDescriptorArrayKey, _SUBMessageDescriptorKey, _SUBMessageDocumentationAssetServerURLKey, 
+                       _SUBMessageDocumentationKey, _SUBMessageDownloadKey, _SUBMessageErrorKey, 
+                       _SUBMessageManagerStateKey, _SUBMessagePairedUnlockNotSupported, 
+                       _SUBMessagePairedUnlockPending, _SUBMessagePasscodeKey, _SUBMessageRequiredDiskSpaceKey, 
+                       _SUBMessageSsoTokenKey, _SUBMessageSupportsInstallTonightKey, 
+                       _SUBMessageTypeAddClient, _SUBMessageTypeBadgeBridgeApp, _SUBMessageTypeCreateStashBag, 
+                       _SUBMessageTypeDisplayTerms, _SUBMessageTypeDisplayTermsCloud, 
+                       _SUBMessageTypeDownloadProgress, _SUBMessageTypeFetchDocumentation, 
+                       _SUBMessageTypeGetCloudDescriptors, _SUBMessageTypeGetCompanionLockState, 
+                       _SUBMessageTypeGetSupportsInstallTonight, _SUBMessageTypeGizmoOSVersionDidChange, 
+                       _SUBMessageTypeInstallResult, _SUBMessageTypeInstallUpdate, 
+                       _SUBMessageTypeInstallationCanProceed, _SUBMessageTypeInstallationWillProceed, 
+                       _SUBMessageTypeKey, _SUBMessageTypePerformMigration, _SUBMessageTypePresentingAlertOnGizmo, 
+                       _SUBMessageTypePurgeUpdate, _SUBMessageTypeQueryManagerState, 
+                       _SUBMessageTypeRemoveCloudDescriptor, _SUBMessageTypeRetrieveSsoToken, 
+                       _SUBMessageTypeScanForUpdates, _SUBMessageTypeScanResult, 
+                       _SUBMessageTypeSendTermsRequest, _SUBMessageTypeSetUserInstallRequestType, 
+                       _SUBMessageTypeShowDownloadAndPrepareError, _SUBMessageTypeShowDuetConditions, 
+                       _SUBMessageTypeShowInstallError, _SUBMessageTypeShowUpdateAvailable, 
+                       _SUBMessageTypeStartDownload, _SUBMessageTypeUnlockCompanion, 
+                       _SUBMessageTypeUserDidAcceptTermsAndConditions, _SUBMessageTypeUserDidAcceptTermsAndConditionsChanged, 
+                       _SUBMessageTypeUserDidAcceptTermsAndConditionsWithReply, _SUBMessageTypeUserInstallRequestTypeChanged, 
+                       _SUBMessageUserDidAcceptTermsAndConditionsKey, _SUBMessageUserInstallRequestTypeKey, 
+                       _SUBMinCompanionCompatibilityVersion, _SUBNSURLSessionProxyDenialDomain, 
+                       _SUBPhaseDownloading, _SUBPhasePreparingUpdate, _SUBPhaseStalled, 
+                       _SUBPhaseWaitingForAdmissionControl, _SUBResultTypeForMessageType, 
+                       _SUBSoftwareUpdateAssetType, _SUBStringForManagerState, _SUBStringForUserInstallRequestType, 
+                       _SUBTCPConnectionDenialDomain, _SUBWatchUpdateBrainAssetType, 
+                       __SUBTransactionCounter, _disableNotification, _enableNotification, 
+                       _softwareupdatebridge_log, _stringForMAAssetCancelResult, 
+                       _stringForMAAssetPurgeResult ]
+    objc-classes:    [ SUBDescriptor, SUBDocumentation, SUBDownload, SUBManager, 
+                       SUBProgress ]
+...

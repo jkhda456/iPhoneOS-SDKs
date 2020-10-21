@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           43E3C155-70B0-3A3A-9587-7B00DDAEF95A
+  - target:          armv7s-ios
+    value:           AC3B121F-9582-3CE8-B744-8E8ABE193A33
+  - target:          arm64-ios
+    value:           7C27D217-EDD6-3F17-8C97-0DF2701CC953
+  - target:          arm64e-ios
+    value:           3FC3EBA1-AA4E-3C29-B848-523CE9BCF01A
+install-name:    '/System/Library/PrivateFrameworks/BioKitAggD.framework/BioKitAggD'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BioKitAggDVersionNumber, _BioKitAggDVersionString ]
+...

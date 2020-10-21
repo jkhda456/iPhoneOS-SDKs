@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2BB540E5-F002-3288-BD32-E38FEA398504
+  - target:          arm64e-ios
+    value:           13DF97B1-C090-3FF9-BF2B-B7AFE765524F
+install-name:    '/System/Library/PrivateFrameworks/BehaviorMiner.framework/BehaviorMiner'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BMAutomationSuggestionsConfig, _BMCreateShortcutFilter, _BMErrorDomain, 
+                       _BMEventInterval, _BMHourSlotForHourOfDay, _BMIsNotAppExtension, 
+                       _BMItemNormalizedValueFromValue, _BMItemValueFromNormalizedValue, 
+                       _BMLog, _BMMaxPhotoPeople, _BMMaxPhotoScenes, _BMStorageURLForDomain, 
+                       _BMTemporalItemsForDate, _BehaviorMinerVersionNumber, _BehaviorMinerVersionString, 
+                       _hourOfDaySlotDuration, _projectId, _trialNamespaceId, _trialNamespaceName ]
+    objc-classes:    [ BMAprioriPatternMiner, BMBasketExtractor, BMBehaviorDatabaseMetadata, 
+                       BMBehaviorRetriever, BMBehaviorStorage, BMCoreRoutineProvider, 
+                       BMDatedBasket, BMEvent, BMEventExtractor, BMInteractionProvider, 
+                       BMItem, BMItemMO, BMItemType, BMManagedObjectConverter, BMMiningTask, 
+                       BMMiningTaskConfig, BMRetrievalFilter, BMRule, BMRuleExtractor, 
+                       BMRuleMO ]
+...

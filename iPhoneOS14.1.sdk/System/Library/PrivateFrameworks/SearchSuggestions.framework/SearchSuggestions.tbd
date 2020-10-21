@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8EC19FC7-007D-3523-8D7B-264ED8F9AF57
+  - target:          arm64e-ios
+    value:           B91CC8D6-4D0C-352E-B816-4503D3ED5974
+install-name:    '/System/Library/PrivateFrameworks/SearchSuggestions.framework/SearchSuggestions'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SGTLocalizedSuggestion, _SGTNormalizedQueryString, _SGTNormalizedQueryStringIgnoreDiacritics, 
+                       _SGTSearchSuggestionsErrorDomain, _SGTSearchSuggestionsSupportedScopes, 
+                       _SearchSuggestionsVersionNumber, _SearchSuggestionsVersionString ]
+    objc-classes:    [ SGTSearchSuggestions ]
+...

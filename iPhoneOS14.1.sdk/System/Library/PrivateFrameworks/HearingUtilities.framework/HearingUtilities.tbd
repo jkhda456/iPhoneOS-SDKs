@@ -1,0 +1,70 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B22FBA6D-1376-3775-BDB7-43466C87C264
+  - target:          arm64e-ios
+    value:           14BBCE3B-B449-3E3F-B84E-C9D5C5CBE0A7
+install-name:    '/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AHXASoundDetectionSnoozeNotificationsFor, _AXHACHearingAidCapabilities, 
+                       _AXHACHearingAidComplianceEnabled, _AXHACHearingAidComplianceSetEnabled, 
+                       _AXHASoundDetectionGenerateUserNotificationForDetectionType, 
+                       _AXHASoundDetectionRequestNotificationAuthorization, _AXHASoundDetectionTypeApplianceBeeps, 
+                       _AXHASoundDetectionTypeApplianceBellDings, _AXHASoundDetectionTypeApplianceBuzzes, 
+                       _AXHASoundDetectionTypeCarHorns, _AXHASoundDetectionTypeCatMeows, 
+                       _AXHASoundDetectionTypeDistressedBaby, _AXHASoundDetectionTypeDogBarks, 
+                       _AXHASoundDetectionTypeDoorKnocks, _AXHASoundDetectionTypeDoorbells, 
+                       _AXHASoundDetectionTypeFireAlarms, _AXHASoundDetectionTypePersonShouting, 
+                       _AXHASoundDetectionTypeSirenAlarms, _AXHASoundDetectionTypeSmokeAlarms, 
+                       _AXHASoundDetectionTypeWaterRunning, _AXHATrustChainReady, 
+                       _AXHearingAidAudioRoutesChangedNotification, _AXHearingAidControlCenterBundleID, 
+                       _AXHearingAidControlCenterPath, _AXLEHIAuthServiceUUIDString, 
+                       _AXLEHIAuthVersionCharacteristicUUIDString, _AXLEHIDISFirmwareVersionCharacteristicUUIDString, 
+                       _AXLEHIDISHardwareVersionCharacteristicUUIDString, _AXLEHIDISManufacturerCharacteristicUUIDString, 
+                       _AXLEHIDISModelNumberCharacteristicUUIDString, _AXLEHIDISServiceUUIDString, 
+                       _AXLEHIServiceUUIDString, _HUAudioTransferAvailabilityDidChangeNotification, 
+                       _HUEDEnabledIdentifier, _HUEDFastLeqIdentifier, _HUEDOnboardingNotificationID, 
+                       _HUEDSlowLeqIdentifier, _HUEDThresholdCrossedIdentifier, _HUEDThresholdNotificationID, 
+                       _HUHearingUIAvailabilityDidChangeNotification, _HUNearbyDevicesDidChangeNotification, 
+                       _HUNoiseLocString, _HUPSAPServiceUUIDString, _HUUserLevelSetupAvailableNotification, 
+                       _HUUserRequestedAudioTransferCompleteNotification, _HUUserRequestedAudioTransferNotification, 
+                       _HearingUtilitiesVersionNumber, _HearingUtilitiesVersionString, 
+                       __SoundDetectionLocStringForType, __accessibilityHWModel, 
+                       __accessibilitySDSupportBundle, _accessibilityHearingAidSupportBundle, 
+                       _cloudHearingAidDescriptionForDescription, _compoundAttributeByAddingAttribute, 
+                       _compoundAttributeByRemovingAttribute, _compoundAttributeContainsAttribute, 
+                       _hearingAidReceivingAudio, _hearingAidStreamAvailable, _hearingAidStreamSelected, 
+                       _hearingConnectionStatusDescription, _hearingDeamonShouldBeRunning, 
+                       _hearingEarFromInputOption, _hearingInputRouteStringForOption, 
+                       _hearingLocString, _hearingPropertyDescription, _hearingUIShouldBeAvailable, 
+                       _inputOptionFromHearingEar, _kAXSEnabledSoundDetectionStatePreference, 
+                       _kAXSEnabledSoundDetectionTypesPreference, _kAXSNoisePreferenceDomain, 
+                       _kAXSSoundDetectionSnoozeDictionary, _kAXSSoundDetectionSupportedTypes, 
+                       _kAXSUltronEnabledPreference, _kAXSUltronRunningStatus, _liveListenStreamSelected, 
+                       _nameForComplicationPreferredDisplayMode, _nameOfHearingDeviceReachableForAudioHandoff, 
+                       _propertyContainsProperty, _propertyIsDependentOnProperty, 
+                       _subPropertiesOfProperty, _supportsBinauralStreamingForHearingAid ]
+    objc-classes:    [ AXFakeHearingAidDevice, AXFakePSAPDevice, AXHAController, 
+                       AXHADetectionResult, AXHADetectorManager, AXHAListenEngine, 
+                       AXHAListenerHelper, AXHALiveListenController, AXHAMessageHandlerContext, 
+                       AXHAResultsCollector, AXHARingBuffer, AXHAServer, AXHASettings, 
+                       AXHASettingsListenerHelper, AXHASoundDetectionController, 
+                       AXHATimeStamp, AXHATimedAudioBuffer, AXHAUltronController, 
+                       AXHeardController, AXHearingAidDevice, AXHearingAidDeviceController, 
+                       AXHearingAidMode, AXPSAPDevice, AXRemoteHearingAidDevice, 
+                       AXUltronModelAssetManager, HANanoSettings, HUDeviceController, 
+                       HUFakeXPCClient, HUHeadphoneLevelController, HUNearbyController, 
+                       HUNearbyDevice, HUNoiseController, HUNoiseSample, HUNoiseSettings, 
+                       HUNoiseSettingsListenerHelper, HUUtilities ]
+    objc-ivars:      [ AXFakeHearingAidDevice._leftFakePrograms, AXFakeHearingAidDevice._rightFakePrograms, 
+                       AXFakePSAPDevice._leftFakePrograms, AXFakePSAPDevice._rightFakePrograms, 
+                       AXHALiveListenController._debugAudioFile, AXHALiveListenController._exportsLiveListenToFile, 
+                       AXHALiveListenController._mixerUnit, AXHALiveListenController._rioUnit ]
+...

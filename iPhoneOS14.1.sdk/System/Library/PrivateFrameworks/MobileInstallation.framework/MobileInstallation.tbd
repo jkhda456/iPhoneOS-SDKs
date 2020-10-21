@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B9AECE64-582D-3F27-B192-773BA735FAEC
+  - target:          armv7s-ios
+    value:           BAF1933E-FEB8-3469-9124-B579E85E1AB8
+  - target:          arm64-ios
+    value:           E4A92C88-9949-3434-B4AE-40D5733D7375
+  - target:          arm64e-ios
+    value:           EF399C50-19DE-386D-9973-AAAB90008055
+install-name:    '/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MobileInstallationCopyInstalledAppsForLaunchServices, _MobileInstallationUpdateContainerDataProtectionForMigratorOnly, 
+                       _MobileInstallationWatchKitInstallerShouldSkipInstall, _kMIUpdateSystemAppDataContainerDataProtection ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MIFunctionNameErrorKey, _MIInstallerErrorDomain, _MILibMISErrorNumberKey, 
+                       _MIPathArgumentErrorKey, _MIRemoveSinf, _MIReplicateRootSinf, 
+                       _MISourceFileLineErrorKey, _MIUpdateSinfWithData, _MobileInstallationAppLaunchEnabled, 
+                       _MobileInstallationCheckCapabilitiesMatch, _MobileInstallationClearUninstalled, 
+                       _MobileInstallationCopyAppMetadata, _MobileInstallationCopyContainerizedAppInfoForLaunchServices, 
+                       _MobileInstallationCopyDiskUsageForLaunchServices, _MobileInstallationCopyFrameworkInfoForLaunchServices, 
+                       _MobileInstallationCopyInstalledDeveloperAppsForLaunchServices, 
+                       _MobileInstallationCopySafeHarbors, _MobileInstallationCopySafeHarborsForContainerType, 
+                       _MobileInstallationEndTestMode, _MobileInstallationEnumerateAllInstalledItemDictionaries, 
+                       _MobileInstallationGetHelperServicePid, _MobileInstallationGetInstalldPid, 
+                       _MobileInstallationGetSystemAppMigrationStatus, _MobileInstallationGetTestModeEnabled, 
+                       _MobileInstallationInstallForLaunchServices, _MobileInstallationInstallForLaunchServicesWithError, 
+                       _MobileInstallationKillHelperService, _MobileInstallationKillInstalld, 
+                       _MobileInstallationLookupSystemAppState, _MobileInstallationLookupUninstalled, 
+                       _MobileInstallationProcessRestoredContainer, _MobileInstallationProcessRestoredContainerWithIdentifierOfType, 
+                       _MobileInstallationRegisterSafeHarbor, _MobileInstallationRegisterSafeHarborForContainerType, 
+                       _MobileInstallationRemoveSafeHarbor, _MobileInstallationRemoveSafeHarborForContainerType, 
+                       _MobileInstallationSetAppLaunchState, _MobileInstallationSetSystemAppMigrationComplete, 
+                       _MobileInstallationSetTestMode, _MobileInstallationUninstallForLaunchServices, 
+                       _MobileInstallationUninstallForLaunchServicesWithError, _MobileInstallationUpdatePlaceholderMetadata, 
+                       _MobileInstallationUpdateSinfForLaunchServices, _MobileInstallationUpdateSystemAppState, 
+                       _MobileInstallationUpdateiTunesMetadataForLaunchServices, 
+                       _MobileInstallationWaitForSystemAppMigrationToComplete, _MobileInstallationWaitForSystemAppMigrationWithCompletion, 
+                       _MobileInstallationWatchKitInstallerSnapshotWKApp, __MILogTransactionStep, 
+                       _kMICallbackPercentCompleteKey, _kMIDemotionCompleteErrorOccurredKey, 
+                       _kMIDemotionCompleteNotificationName, _kMIInstallResultInstalledAppInfoArrayKey, 
+                       _kMIUninstallParallelPlaceholderKey, _kMIUninstallResultRemovedAppInfoArrayKey, 
+                       _kMIWatchKitSnapshotInfoDiskUsageBytes, _kMIWatchKitSnapshotOptionCreatePlaceholder, 
+                       _kMIWatchKitSnapshotOptionMaxWKAppVersion ]
+    objc-classes:    [ AITransactionLog, MIBundleMetadata, MIFileManager, MIGlobalConfiguration, 
+                       MIInstallOptions, MIStoreMetadata, MIStoreMetadataSubGenre ]
+...

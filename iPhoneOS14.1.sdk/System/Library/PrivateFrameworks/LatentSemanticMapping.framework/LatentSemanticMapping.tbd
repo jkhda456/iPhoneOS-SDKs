@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           779E0965-134F-3544-80F6-802489DE74FE
+  - target:          armv7s-ios
+    value:           2F87E54D-0540-3212-9D9C-53595CF4C828
+  - target:          arm64-ios
+    value:           E0ED0CA0-8AEC-34C7-B57B-91B3660CCA71
+  - target:          arm64e-ios
+    value:           88DB44F1-E08A-3A31-8873-8ABE31EF3DF1
+install-name:    '/System/Library/PrivateFrameworks/LatentSemanticMapping.framework/LatentSemanticMapping'
+current-version: 2.12.5
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LSMMapAddCategory, _LSMMapAddText, _LSMMapAddTextWithWeight, 
+                       _LSMMapApplyClusters, _LSMMapCompile, _LSMMapCompileWithBlock, 
+                       _LSMMapCopyToken, _LSMMapCopyWord, _LSMMapCreate, _LSMMapCreateClusters, 
+                       _LSMMapCreateFromURL, _LSMMapCreateSRLanguageModel, _LSMMapCreateTextLanguageModel, 
+                       _LSMMapCreateWordArray, _LSMMapFindToken, _LSMMapFindWord, 
+                       _LSMMapGetCategoryCount, _LSMMapGetIndexingPower, _LSMMapGetProperties, 
+                       _LSMMapGetTokenCount, _LSMMapGetTypeID, _LSMMapSetProperties, 
+                       _LSMMapSetStopWords, _LSMMapStartTraining, _LSMMapWriteToStream, 
+                       _LSMMapWriteToURL, _LSMResultCopyToken, _LSMResultCopyTokenCluster, 
+                       _LSMResultCopyWord, _LSMResultCopyWordCluster, _LSMResultCreate, 
+                       _LSMResultGetCategory, _LSMResultGetCount, _LSMResultGetScore, 
+                       _LSMResultGetTypeID, _LSMTextAddToken, _LSMTextAddWord, _LSMTextAddWords, 
+                       _LSMTextCreate, _LSMTextGetTypeID ]
+...

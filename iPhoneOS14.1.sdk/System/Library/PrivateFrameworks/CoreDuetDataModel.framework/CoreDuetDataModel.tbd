@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           ACF5C9D5-3A23-3341-8820-5F2CC0194E4D
+  - target:          armv7s-ios
+    value:           4E22F989-9DBE-3E76-AFF3-1199E30A7E23
+  - target:          arm64-ios
+    value:           480F483C-2A2D-3FEC-A979-D308A5FFD72F
+  - target:          arm64e-ios
+    value:           FC85C3F8-4136-38F5-98E5-53129D27F1E6
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetDataModel.framework/CoreDuetDataModel'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CDDMAirplaneModeEvent, CDDMAppNameMapper, CDDMAppStateChangeEvent, 
+                       CDDMAttributeNameMapper, CDDMBacklightEvent, CDDMBatteryEvent, 
+                       CDDMBookkeeping, CDDMBootOrShutdownEvent, CDDMDeviceEvent, 
+                       CDDMDeviceMapper, CDDMForecast, CDDMForecastInteger, CDDMForecastReal, 
+                       CDDMForecastScore, CDDMForecastString, CDDMIntegerAttribute, 
+                       CDDMPluginEvent, CDDMPool, CDDMPoolNameMapper, CDDMRealAttribute, 
+                       CDDMScreenLockEvent, CDDMSleepOrWakeEvent, CDDMStatisticInteger, 
+                       CDDMStatisticReal, CDDMStatisticString, CDDMStringAttribute, 
+                       CDDMThermalEvent, CDDMWakednessEvent ]
+...

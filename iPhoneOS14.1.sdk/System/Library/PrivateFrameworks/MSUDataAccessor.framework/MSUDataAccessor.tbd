@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7A93FA93-205B-3E48-A0B8-D8C23B2E13FB
+  - target:          arm64e-ios
+    value:           DFAB7E80-9E94-304C-9199-02614A1F512F
+install-name:    '/System/Library/PrivateFrameworks/MSUDataAccessor.framework/MSUDataAccessor'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kMSUDAErrorDomain, _lookupPathForPersistentData, _lookupPathForPersonalizedData ]
+    objc-classes:    [ MSUDataAccessor ]
+...

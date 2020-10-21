@@ -1,0 +1,221 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3EAD6B80-0A82-37F5-BEDB-A0557547BDB5
+  - target:          armv7s-ios
+    value:           B6CAF197-2DE8-33C5-A080-CD43335EAFA8
+  - target:          arm64-ios
+    value:           7AE7246A-0AB9-302C-A370-922E61B37041
+  - target:          arm64e-ios
+    value:           31A66684-AABA-373B-9450-A0FA625647BE
+install-name:    '/System/Library/PrivateFrameworks/CrashReporterSupport.framework/CrashReporterSupport'
+reexported-libraries:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    libraries:       [ '/System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics' ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _AppleSupportContainerLocation, _BundleName, _CRDisableCrashReporting, 
+                       _CREnableCrashReporting, _CrashReporterSupportVersionNumber, 
+                       _CrashReporterSupportVersionString, _LogCounter, _LogSyncherContainerLocation, 
+                       _OSAWriteLogForSubmissionInternal, _PreferencesContainerLocation, 
+                       _SimulateCrash, _SubmittedLogs, _SubmittedLogsContainerLocation, 
+                       _UnSubmittedLogs, _UnSubmittedLogsContainerLocation, _WriteJetsamMemoryReport, 
+                       _WriteStackshotReport, _WriteStackshotReportWithOptions, _WriteStackshotReportWithOptions_async, 
+                       _WriteStackshotReportWithPID, _WriteStackshotReportWithPID_async, 
+                       _WriteStackshotReport_async, _WriteStackshotReport_stdc, _WriteSystemMemoryResetReport, 
+                       _WriteSystemMemoryResetReportWithPids, __CRASLClient, __CRASLDestructor, 
+                       __CRCreatASLPthreadKey, __CRSetCrashExceptionPort, __CRStashCrashExceptionPortInfo, 
+                       __countKey, __fileName, __logLocation, _kOTALogSubmissionCommandKey, 
+                       _kOTALogSubmissionIdentifierKey, _kOTALogSubmissionLogPathsKey, 
+                       _kOTALogSubmissionLogRoutingKey, _safeLog ]
+    objc-classes:    [ AppleErrorReport, LogCounterObject ]
+    objc-ivars:      [ AppleErrorReport._capture_time, AppleErrorReport._incidentID, 
+                       AppleErrorReport._logType, AppleErrorReport._logWritingOptions, 
+                       AppleErrorReport._notes ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppAnalyticsEnabled, _CRCreateDirectoryStructure, _CRDateString, 
+                       _CRDumpAllOldStructuredDataLogs, _CRGetReporterKey, _CRIsAppleInternal, 
+                       _CRLogStructuredData, _CRParseStackShotDictionary, _ConfigureCarrierDebugging, 
+                       _ConfigureCarrierDebuggingWithPower, _ConfigureInternalDebugging, 
+                       _ConfigureInternalDebuggingWithPower, _DiagnosticLogSubmissionEnabled, 
+                       _DiagnosticLogSubmissionPreferenceExists, _GetDeviceConfig, 
+                       _GetHardwareModel, _GetIncidentID, _GetNameForLogType, _GetSysIDWithDescription, 
+                       _GetSystemVersion, _GetThermalState, _IsCarryDeviceWithHangtracerEnabled, 
+                       _LogsContainerLocation, _OSAContainerOTALoggingLibraryLocation, 
+                       _OSACreateRelPathInContainer, _OSACreateTempSubmittableLog, 
+                       _OSAGetDATaskingValue, _OSAGetSubmittableLogs, _OSAGetSyncableLogs, 
+                       _OSAInMultiUserMode, _OSAIterateSubmittableLogsWithBlock, 
+                       _OSAIterateSyncableLogsWithBlock, _OSAMoveFileForSubmissions, 
+                       _OSAMoveFileForSyncing, _OSAOSVersion, _OSAPreferencesGetBoolValue, 
+                       _OSAPreferencesGetIntegerValue, _OSAPreferencesGetValue, _OSAPreferencesSetValue, 
+                       _OSAPreferencesSynchronize, _OSAProductName, _OSASetDATaskingValue, 
+                       _OSASubmittableLogs, _OSAWriteLogForSubmission, _SubmitDiagnosticLogPathsWithIdentifier, 
+                       _SubmitDiagnosticLogs, _SubmitDiagnosticLogsIfFavorable, ___crashreporter_binary_image_hints__, 
+                       __createDirectoryIfNeeded, __performOnFileBackingDomain, __preferencesForDomain, 
+                       __savePreferencesForDomain, _cr_stashUpdate, _dlaggd_addScalarForKey, 
+                       _dlaggd_pushDistrubtionForKey, _dlca_sendEvent, _dlca_sendEventLazyHighPriority, 
+                       _generateFrameString, _initializeConversionDictionary, _kActive, 
+                       _kBasePriority, _kBinaryImages, _kBuild, _kBusyBufferCount, 
+                       _kCFProblemTypeBaseband, _kCFProblemTypeBasebandStats, _kCFProblemTypeFaceTime, 
+                       _kCFProblemTypeGasGauge, _kCFProblemTypeJetsam, _kCFProblemTypeMACorrelation, 
+                       _kCFProblemTypeMessages, _kCFProblemTypeResetCounter, _kCFProblemTypeStackshot, 
+                       _kCFProblemTypeSyslog, _kCFProblemTypeWiFiStats, _kCRBinaryInfoArchitectureKey, 
+                       _kCRBinaryInfoDisplayNameKey, _kCRBinaryInfoDwarfUUIDKey, 
+                       _kCRBinaryInfoExecutablePathKey, _kCRBinaryInfoIdentifierKey, 
+                       _kCRBinaryInfoShortVersionStringKey, _kCRBinaryInfoVersionKey, 
+                       _kCRProblemReportAppNameKey, _kCRProblemReportAppVersionKey, 
+                       _kCRProblemReportAppleInternalKey, _kCRProblemReportAutoSubmittedKey, 
+                       _kCRProblemReportBundleIDKey, _kCRProblemReportCommentsKey, 
+                       _kCRProblemReportCrashReporterKey, _kCRProblemReportDescriptionKey, 
+                       _kCRProblemReportDisplayNameKey, _kCRProblemReportOSVersionKey, 
+                       _kCRProblemReportPathKey, _kCRProblemReportProblemTypeKey, 
+                       _kCRProblemReportSystemIDKey, _kCRProblemReportURLKey, _kCRProblemTypeConnectionFailure, 
+                       _kCRProblemTypeCrash, _kCRProblemTypeExcResource, _kCRProblemTypeHang, 
+                       _kCRProblemTypeHeartbeat, _kCRProblemTypePanic, _kCRProblemTypeSpin, 
+                       _kCRProblemTypeStackshot, _kCompressions, _kCompressorSize, 
+                       _kContinuation, _kCopyOnWriteFaults, _kCrashReporterKey, _kDate, 
+                       _kDecompressions, _kDonatingPids, _kException, _kFileBacked, 
+                       _kFree, _kFrontmost, _kFrontmostPids, _kFrozen, _kID, _kInactive, 
+                       _kIncident, _kJetsamLevel, _kKernel, _kKernelFrames, _kMemoryPages, 
+                       _kMemoryPressure, _kMemoryStatus, _kName, _kNotes, _kOSAIPSHeaderAppNameKey, 
+                       _kOSAIPSHeaderIncidentIDKey, _kOSAIPSHeaderTimestampKey, _kOSAProblemTypeAWDAnonymous, 
+                       _kOSAProblemTypeAWDPrimary, _kOSAProblemTypeBtnReset, _kOSAProblemTypeCoreAnalytics, 
+                       _kOSAProblemTypeDifferentialPrivacy, _kOSAProblemTypeExcResource, 
+                       _kOSAProblemTypeGPUEvent, _kOSAProblemTypeJetsam, _kOSAProblemTypeLowBattery, 
+                       _kOSAProblemTypeMotionState, _kOSAProblemTypeNetworkUsage, 
+                       _kOSAProblemTypeNewMicroSS, _kOSAProblemTypePanic, _kOSAProblemTypePowerLog, 
+                       _kOSAProblemTypeSandbox, _kOSAProblemTypeSession, _kOSAProblemTypeSystemMemoryReset, 
+                       _kOSAProblemTypeUndefined, _kOSASaveLogOptionAnonymousSubroutingKey, 
+                       _kOSASaveLogOptionNonSubmittableKey, _kOSASaveLogOptionOverrideCountLimitKey, 
+                       _kOSASaveLogOptionOverrideFileExtensionKey, _kOSASaveLogOptionOverrideLogLocationKey, 
+                       _kOSATaskingDADomain, _kPageFaults, _kPageIns, _kPagesReclaimed, 
+                       _kPagesWanted, _kPid, _kProcessByPid, _kProduct, _kPurgeable, 
+                       _kQOSEffective, _kQOSOverride, _kQOSRequested, _kReason, _kResidentMemoryBytes, 
+                       _kSchedFlags, _kSchedPriority, _kSensors, _kSpeculative, _kState, 
+                       _kSuspendCount, _kSyslog, _kSystemTimeInTask, _kSystemTimeInThread, 
+                       _kThermalData, _kThermalLevel, _kThreadById, _kThrottled, 
+                       _kTimesDidThrottle, _kTimesThrottled, _kUserFrames, _kUserTimeInTask, 
+                       _kUserTimeInThread, _kWaitEvent, _kWired, _logEventForAppleCare, 
+                       _logForAppleCare, _logLineForAppleCare, _parseGlobalBinaryImages, 
+                       _parseMemoryData, _parseMemoryPages, _parseMemoryPressure, 
+                       _parseProcess, _parseProcessData, _parseThermalData, _parseThread, 
+                       _rollAppleCareLogs, _setDiagnosticLogSubmission, _sortNumerically ]
+    objc-classes:    [ CrashReport, OTATaskingAgentClient, StructuredDataReport ]
+    objc-ivars:      [ CrashReport._abort_cause, CrashReport._adam_id, CrashReport._appVariant, 
+                       CrashReport._applicationSpecificInfo, CrashReport._backtraces, 
+                       CrashReport._binaryImageHints, CrashReport._binaryImagePostProcessingComplete, 
+                       CrashReport._binaryImages, CrashReport._bundle_vers, CrashReport._caller_name, 
+                       CrashReport._coalition_id, CrashReport._coalition_name, CrashReport._cohort_id, 
+                       CrashReport._cpuType, CrashReport._crashedThreadNumber, CrashReport._cs_status, 
+                       CrashReport._diagToolExtras, CrashReport._dtbuild, CrashReport._dyldMessages, 
+                       CrashReport._exceptionCode, CrashReport._exceptionCodeCount, 
+                       CrashReport._exceptionState, CrashReport._exceptionStateCount, 
+                       CrashReport._execFailureError, CrashReport._exit_payload, 
+                       CrashReport._exit_payload_length, CrashReport._exit_snapshot, 
+                       CrashReport._exit_snapshot_length, CrashReport._extraInfo, 
+                       CrashReport._highlightedThreadNumber, CrashReport._is64Bit, 
+                       CrashReport._is_corpse, CrashReport._is_first_party, CrashReport._lastExceptionBacktrace, 
+                       CrashReport._maxBinaryIdentifierLength, CrashReport._memgraph_filename, 
+                       CrashReport._pageinState, CrashReport._pageinStateCount, CrashReport._parentProcessName, 
+                       CrashReport._platform, CrashReport._ppid, CrashReport._procPath, 
+                       CrashReport._proc_starttime, CrashReport._queue_serial_no, 
+                       CrashReport._responsible_pid, CrashReport._sig_frames, CrashReport._signal, 
+                       CrashReport._slice_uuid, CrashReport._spewage_diag, CrashReport._spewage_diag_total_length, 
+                       CrashReport._task, CrashReport._task_role, CrashReport._terminator_pid, 
+                       CrashReport._terminator_proc, CrashReport._terminator_reason, 
+                       CrashReport._threadId, CrashReport._threadNames, CrashReport._threadPort, 
+                       CrashReport._threadState, CrashReport._threadStateCount, CrashReport._threadStateFlavor, 
+                       CrashReport._uid, CrashReport._uniqId, CrashReport._vendor_id, 
+                       CrashReport._vmregion_info, CrashReport._workloop_id, StructuredDataReport._log_type, 
+                       StructuredDataReport._raw_logfile ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           06DCAE5F-5F7B-36E6-B6C5-CB9FC402E67B
+  - target:          arm64e-ios
+    value:           7C972195-D684-3A1B-915E-537295D68932
+install-name:    '/System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSADateFormat, _OSANSDateFormat, _OSASanitizeOptionHomeDirectory, 
+                       _OSASanitizeOptionKeepFilename, _OSASanitizeOptionMountedVolume, 
+                       _OSASanitizeOptionNetworkVolume, _OSASanitizePath, _OSAnalyticsVersionNumber, 
+                       _OSAnalyticsVersionString, _SimulateCrash, _WriteJetsamMemoryReport, 
+                       _WriteJetsamMemoryReportWithIDAndPids, _WriteStackshotReport, 
+                       _WriteStackshotReportWithOptions, _WriteStackshotReportWithOptionsAndPayload, 
+                       _WriteStackshotReportWithOptions_async, _WriteStackshotReportWithPID, 
+                       _WriteStackshotReportWithPID_async, _WriteStackshotReportWithPayload, 
+                       _WriteStackshotReport_async, _WriteStackshotReport_stdc, _WriteSystemMemoryResetReport, 
+                       _WriteSystemMemoryResetReportWithPids, _adsc_addScalarForKey, 
+                       _adsc_batchKeys, _adsc_pushDistrubtionForKey, _adsc_setScalarForKey, 
+                       _casc_sendEvent, _kOSALogMetadataAppBuild, _kOSALogMetadataAppName, 
+                       _kOSALogMetadataAppVersion, _kOSALogMetadataBugType, _kOSALogMetadataBundleID, 
+                       _kOSALogMetadataIncidentID, _kOSALogOptionAlternateMetadata, 
+                       _kOSALogOptionAppDescription, _kOSALogOptionCaptureTime, _kOSALogOptionCountKey, 
+                       _kOSALogOptionCreateTmpFile, _kOSALogOptionDialogDisplayed, 
+                       _kOSALogOptionFileOwner, _kOSALogOptionMoveSourceFile, _kOSALogOptionOverrideCountLimit, 
+                       _kOSALogOptionOverrideFileExtension, _kOSALogOptionOverrideFileName, 
+                       _kOSALogOptionOverrideFilePrefix, _kOSALogOptionOverridePath, 
+                       _kOSALogOptionSignature, _kOSALogOptionSignatureHash, _kOSALogOptionSubmissionPolicy, 
+                       _kOSALogScanOptionExcludeRetired, _kOSALogScanOptionIncludeOnlyRetired, 
+                       _kOSALogScanOptionIncludeProxiesKey, _kOSASubmissionDomain, 
+                       _kOSASubmissionPolicyAlternate, _kPathOptionUntrusted, _logEventForAppleCare, 
+                       _logForAppleCare, _logLineForAppleCare, _ns2xpc, _rollAppleCareLogs, 
+                       _runCrashMoverService, _xpc2ns ]
+    objc-classes:    [ AWDClientHelpers, MTClientHelpers, OSABinaryImageCatalog, 
+                       OSABinaryImageSegment, OSACrashReport, OSAJetsamReport, OSALegacyXform, 
+                       OSALog, OSAProxyConfiguration, OSAReport, OSAStackShotReport, 
+                       OSASymbolInfo, OSASystemConfiguration, OSATasking ]
+    objc-ivars:      [ OSABinaryImageCatalog._absolute_segment, OSABinaryImageCatalog._kernel_cache_segment, 
+                       OSABinaryImageCatalog._kernel_segments, OSABinaryImageCatalog._kernel_text_exec_segments, 
+                       OSABinaryImageCatalog._notes, OSABinaryImageCatalog._rootedCacheLibs, 
+                       OSABinaryImageCatalog._shared_segments, OSABinaryImageCatalog._targeted_cache, 
+                       OSABinaryImageCatalog._targeted_slide, OSABinaryImageCatalog._used_segments, 
+                       OSACrashReport._abort_cause, OSACrashReport._applicationSpecificInfo, 
+                       OSACrashReport._caller_name, OSACrashReport._coalition_id, 
+                       OSACrashReport._coalition_name, OSACrashReport._cpuType, OSACrashReport._crashedThreadNumber, 
+                       OSACrashReport._cs_status, OSACrashReport._diagToolExtras, 
+                       OSACrashReport._dyldMessages, OSACrashReport._exceptionCode, 
+                       OSACrashReport._exceptionCodeCount, OSACrashReport._exceptionState, 
+                       OSACrashReport._exceptionStateCount, OSACrashReport._exit_payload, 
+                       OSACrashReport._exit_payload_length, OSACrashReport._exit_snapshot, 
+                       OSACrashReport._exit_snapshot_length, OSACrashReport._extraInfo, 
+                       OSACrashReport._highlightedThreadNumber, OSACrashReport._is64Bit, 
+                       OSACrashReport._is_first_party, OSACrashReport._lastExceptionBacktrace, 
+                       OSACrashReport._maxBinaryIdentifierLength, OSACrashReport._memgraph_filename, 
+                       OSACrashReport._pageinState, OSACrashReport._pageinStateCount, 
+                       OSACrashReport._parentProcessName, OSACrashReport._ppid, OSACrashReport._procPath, 
+                       OSACrashReport._proc_starttime, OSACrashReport._queue_serial_no, 
+                       OSACrashReport._sig_frames, OSACrashReport._signal, OSACrashReport._slice_uuid, 
+                       OSACrashReport._spewage_diag, OSACrashReport._spewage_diag_total_length, 
+                       OSACrashReport._task, OSACrashReport._taskImages, OSACrashReport._task_role, 
+                       OSACrashReport._terminator_pid, OSACrashReport._terminator_proc, 
+                       OSACrashReport._terminator_reason, OSACrashReport._threadId, 
+                       OSACrashReport._threadInfos, OSACrashReport._threadPort, OSACrashReport._threadState, 
+                       OSACrashReport._threadStateCount, OSACrashReport._threadStateFlavor, 
+                       OSACrashReport._uid, OSACrashReport._uniqId, OSACrashReport._usedImages, 
+                       OSACrashReport._vmregion_info, OSACrashReport._workloop_id, 
+                       OSAJetsamReport._aleFlag, OSAJetsamReport._audioAssertionState, 
+                       OSAJetsamReport._event_code, OSAJetsamReport._event_reason, 
+                       OSAJetsamReport._isSuspendedOnlyJetsam, OSAJetsamReport._killedActiveApps, 
+                       OSAJetsamReport._killed_or_suspended_count, OSAJetsamReport._largestActiveApp, 
+                       OSAJetsamReport._largestProcess, OSAJetsamReport._snapshot, 
+                       OSAJetsamReport._visibilityEndowmentState, OSAJetsamReport._wiredBytes, 
+                       OSALog._filepath, OSALog._metaData, OSALog._stream, OSAReport._capture_time, 
+                       OSAReport._incidentID, OSAReport._logType, OSAReport._logWritingOptions, 
+                       OSAReport._notes, OSAStackShotReport._additionalPayload, OSAStackShotReport._appName, 
+                       OSAStackShotReport._exceptionCodeCount, OSAStackShotReport._exceptionCodes, 
+                       OSAStackShotReport._extras, OSAStackShotReport._frontmostPids, 
+                       OSAStackShotReport._pid, OSAStackShotReport._reason, OSAStackShotReport._ss_trace_buffer, 
+                       OSAStackShotReport._ss_trace_length, OSAStackShotReport._stackshot_config, 
+                       OSAStackShotReport._thermalNotificationCurrentLevel, OSAStackShotReport._thermalSensorValues, 
+                       OSASymbolInfo._uuid ]
+...

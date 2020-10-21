@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           197D98FC-D1A8-3D38-A13E-5855F1BE59B3
+  - target:          armv7s-ios
+    value:           DA8C82FC-CFA9-336F-872E-F4360C112CC7
+  - target:          arm64-ios
+    value:           178C4A8C-C873-3415-B44E-51B28C38E95A
+  - target:          arm64e-ios
+    value:           8527B36D-CC7B-3F60-930B-D6813DBAB15F
+install-name:    '/System/Library/PrivateFrameworks/AppleFSCompression.framework/AppleFSCompression'
+current-version: 125
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AFSCLockFileFd, _AFSCLockFilePath, _AFSCUnlockFile, _CloseStreamCompressor, 
+                       _CompressFile, _CreateCompressionQueue, _CreateStreamCompressor, 
+                       _CreateStreamCompressorQueue, _CreateStreamCompressorQueueWithOptions, 
+                       _DrainStreamCompressorQueue, _FinishCompressionAndCleanUp, 
+                       _FinishStreamCompressorQueue, _VolumeSupportsCompression, 
+                       _WriteToStreamCompressor, _catFile, _decompressFile, _decompressWithCallback, 
+                       _kAFSCAllowLargeResourceForks, _kAFSCAllowStoringDataInXattr, 
+                       _kAFSCCompressionLevel, _kAFSCCompressionRulesKey, _kAFSCCompressionSystemRulesKey, 
+                       _kAFSCCompressionTypes, _kAFSCDispatchQueuePriority, _kAFSCFlagsKey, 
+                       _kAFSCIgnoreXattrErrors, _kAFSCInverseFlags, _kAFSCPathBeginsWithStringKey, 
+                       _kAFSCPathContainsStringKey, _kAFSCPathEndsWithStringKey, 
+                       _kAFSCPathExactlyEqualsStringKey, _kAFSCRuleTypeExclude, _kAFSCRuleTypeInclude, 
+                       _kAFSCRuleTypeKey, _kAFSCSkipMachOFileTypes, _kAFSCSkipMachOOverridePaths, 
+                       _kAFSCSynchronous, _kAFSCThrottledIO, _queryCompressionInfo, 
+                       _type5_handler_function ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           665939EA-653E-38A1-89FC-E7611189AE33
+  - target:          arm64e-ios
+    value:           250AC022-481F-3F4D-B205-5522B7234FAA
+install-name:    '/System/Library/PrivateFrameworks/LiveFSFPHelper.framework/LiveFSFPHelper'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LiveFSFPHelperVersionNumber, _LiveFSFPHelperVersionString ]
+    objc-classes:    [ LiveFSClientServiceSource, LiveFSFPClusterEnumeratorHelper, 
+                       LiveFSFPEnumeratorHelper, LiveFSFPExtensionHelper, LiveFSFPItemHelper, 
+                       LiveFSFPMountClient, LiveFSFPSearchEnumeratorHelper, LiveFSFPTrashObserver, 
+                       LiveFSThumbnailsServiceSource, LiveFSValidationServiceSource ]
+    objc-ivars:      [ LiveFSClientServiceSource.ex, LiveFSClientServiceSource.ident, 
+                       LiveFSFPClusterEnumeratorHelper.ext, LiveFSFPEnumeratorHelper._sortedByDate, 
+                       LiveFSFPEnumeratorHelper.deletedItems, LiveFSFPEnumeratorHelper.ext, 
+                       LiveFSFPEnumeratorHelper.historyReset, LiveFSFPEnumeratorHelper.isActive, 
+                       LiveFSFPEnumeratorHelper.postedSelfDelete, LiveFSFPEnumeratorHelper.postedSelfUpdate, 
+                       LiveFSFPEnumeratorHelper.updatedItems, LiveFSFPExtensionHelper.EnumeratorClass, 
+                       LiveFSFPExtensionHelper.ItemClass, LiveFSFPExtensionHelper.connectionURL, 
+                       LiveFSFPExtensionHelper.enumerators, LiveFSFPExtensionHelper.itemCache, 
+                       LiveFSFPExtensionHelper.itemHandleMap, LiveFSFPExtensionHelper.itemIDMap, 
+                       LiveFSFPExtensionHelper.providerName, LiveFSFPExtensionHelper.renameUpdateQueue, 
+                       LiveFSFPExtensionHelper.thumbnailsServiceSource, LiveFSFPItemHelper._fullPath, 
+                       LiveFSFPItemHelper.attributes, LiveFSFPItemHelper.numChildren, 
+                       LiveFSThumbnailsServiceSource.ex, LiveFSThumbnailsServiceSource.thumbnailCache ]
+...

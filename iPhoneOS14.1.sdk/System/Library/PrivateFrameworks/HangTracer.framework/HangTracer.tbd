@@ -1,0 +1,93 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           89DCED8E-CAE8-3012-8A8F-7E67709F8ECB
+  - target:          armv7s-ios
+    value:           E322CF59-2FAE-3D3C-B46F-98247E7FCB2A
+  - target:          arm64-ios
+    value:           985AD20E-9378-32F6-AE8B-2538613C4928
+  - target:          arm64e-ios
+    value:           3F209CCC-E1E3-3BF7-A8C4-202D9C014254
+install-name:    '/System/Library/PrivateFrameworks/HangTracer.framework/HangTracer'
+current-version: 168
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EPL_STATE_CHANGED_NOTIFICATION, _HANGTRACER_DOMAIN, _HANGTRACER_OTA_TASKING_DOMAIN, 
+                       _HANGTRACER_PREF_CHANGED_NOTIFICATION, _HANGTRACER_PROFILE_LIST_CHANGED_NOTIFICATION, 
+                       _HANGTRACER_SENTRY_ENABLEMENT_SETTING_CHANGED_NOTIFICATION_TMP, 
+                       _HANGTRACER_TASKING_CHANGED_NOTIFICATION, _HTAllowAnyThread, 
+                       _HTAppActivationEvent, _HTAppActivationGenerateAppIdentifier, 
+                       _HTBeginNonResponsiveTaskWithNameAndExpiration, _HTDaemonStateChangedNotification, 
+                       _HTEnabledStateChangedNotification, _HTEnabledUserInfoKey, 
+                       _HTEndNonResponsiveTask, _HTHangEventCreate, _HTHangEventCreateWithBundleID, 
+                       _HTResumeHangTracing, _HTSE_ADDAILY_DATE_CHANGED_NOTIFICATION, 
+                       _HTSE_SELF_ENABLE_STATE_CHANGED_NOTIFICATION, _HTStartHangTracing, 
+                       _HTSuspendHangTracing, _HTUpdateHangTracing, _HT_MOBILE_DIAGNOSTIC_LOGS_DIRECTORY, 
+                       _HT_ROOT_DIAGNOSTIC_LOGS_DIRECTORY, _HT_TMP_MOBILE_TAILSPIN_DIRECTORY, 
+                       _HangTracerVersionNumber, _HangTracerVersionString, _MATU_TO_MS, 
+                       _MATU_TO_SEC, _MS_TO_MATU, _RMEPrefExpirationDateKey, _RMEPrefFullDiagLimitKey, 
+                       _RMEPrefLiteDiagLimitKey, _RMEPrefPerProcessLimitKey, _SEC_TO_MATU, 
+                       _STYErrorWithCode, _TEST_RESET_LOG_LIMITS_NOTIFICATION, _alwaysOnSignpost, 
+                       _applyTailspinConfig, _arrayOfCFPrefsWithPrefix, _assertionSignpost, 
+                       _bundleIDFromPath, _checkForAssertionOverlap, _cleanupDiagnosticLogsDirectory, 
+                       _configureTailspinForEPL, _configureTailspinForSelfEnableConfig, 
+                       _getPrefWithOverrideProfile, _getStringForSubtype, _getTimeBetweenAbsoluteAndContinuousTime, 
+                       _ht_fence_start, _ht_fence_timeout, _isAppBeingDebugged, _kAppActLogCoreAnalyticsEvent, 
+                       _kCATailspinEnabled, _kEPLEnabled, _kEPLEnabledProfile, _kEPLTimeoutTimestampSec, 
+                       _kHTAppActivationFailureReasonWatchdog, _kHTAppActivationKeyBundleID, 
+                       _kHTAppActivationKeyEventToken, _kHTAppActivationKeyFailureReason, 
+                       _kHTAppActivationKeyPID, _kHTAppActivationKeyState, _kHTAppExitHang, 
+                       _kHTAssertionOverlapHang, _kHTBlownCAFenceHang, _kHTBlownFenceHang, 
+                       _kHTCoreAnalyticsAlwaysOn, _kHTCoreAnalyticsAppExitHang, _kHTCoreAnalyticsDaemonEnabled, 
+                       _kHTCoreAnalyticsDebuggerHang, _kHTCoreAnalyticsHangBundleID, 
+                       _kHTCoreAnalyticsHangDuration, _kHTCoreAnalyticsHangType, 
+                       _kHTCoreAnalyticsLaunchOverlap, _kHTCoreAnalyticsMode, _kHTDebuggerAttachedHang, 
+                       _kHTEventTypeFence, _kHTEventTypeRunLoop, _kHTEventTypeSentry, 
+                       _kHTEventTypeSlowActLaunch, _kHTEventTypeSlowActResume, _kHTExtendedLaunchHang, 
+                       _kHTFenceAppTBD, _kHTKeepTailspinFormatCompressed, _kHTKeepTailspinFormatNone, 
+                       _kHTKeepTailspinFormatUncompressed, _kHTNormalRunloopHang, 
+                       _kHTOverlapTypeNestedStr, _kHTOverlapTypeNoOverlapStr, _kHTOverlapTypeOutOfOrderStr, 
+                       _kHTOverlapTypePartialOverlapStr, _kHTOverlapTypeUnknownStr, 
+                       _kHTPrefsAppActivationLoggingCPUUtilizationThresholdMSec, 
+                       _kHTPrefsAppActivationLoggingEnabled, _kHTPrefsAppActivationLoggingMaxActivationLimit, 
+                       _kHTPrefsAppActivationLoggingTaskOff, _kHTPrefsCollectOSSignposts, 
+                       _kHTPrefsCollectOSSignpostsDeferred, _kHTPrefsCustomerModeEnabled, 
+                       _kHTPrefsFenceHangDailyLogLimit, _kHTPrefsFenceTrackingEnabled, 
+                       _kHTPrefsHUDEnabled, _kHTPrefsHUDThresholdMSec, _kHTPrefsHangTracerEnabled, 
+                       _kHTPrefsIncludeDiskInfo, _kHTPrefsIncludeDisplayData, _kHTPrefsIncludeNetworkState, 
+                       _kHTPrefsInternalSettingsCreated, _kHTPrefsInternalSettingsVersion, 
+                       _kHTPrefsMemoryLoggingEnabled, _kHTPrefsMemoryLoggingIntervalSec, 
+                       _kHTPrefsPercentFullSpinReports, _kHTPrefsPrefixCATailspinEnablement, 
+                       _kHTPrefsPrefixEPL, _kHTPrefsPrefixHTRateOnlyEnablement, _kHTPrefsPrefixHTThirdPartyEnablement, 
+                       _kHTPrefsPrefixHangTracerEnablement, _kHTPrefsPrefixPowerLog, 
+                       _kHTPrefsPrefixProfile, _kHTPrefsPrefixSentryEnablement, _kHTPrefsRefreshedNotification, 
+                       _kHTPrefsReportPeriodSec, _kHTPrefsRunLoopHangDailyLogLimit, 
+                       _kHTPrefsRunLoopHangDurationThresholdMSec, _kHTPrefsRunLoopHangPerPeriodLogLimit, 
+                       _kHTPrefsRunLoopHangThirdPartyDailyLogLimit, _kHTPrefsRunLoopHangTimeoutDurationMSec, 
+                       _kHTPrefsRunLoopLongHangDailyLogLimit, _kHTPrefsRunLoopLongHangDurationThresholdMSec, 
+                       _kHTPrefsRunLoopMicroHangDailyLogLimit, _kHTPrefsRunLoopThirdPartyHangDurationThresholdMSec, 
+                       _kHTPrefsSamplingPercentForMicroHangs, _kHTPrefsSavedTailspinMaxMB, 
+                       _kHTPrefsSignpostMonitoringDailyLimit, _kHTPrefsSignpostMonitoringEnabled, 
+                       _kHTPrefsSignpostMonitoringPerPeriodLogLimit, _kHTPrefsSlowActivationsDailyLogLimit, 
+                       _kHTPrefsSlowActivationsPerAppMax, _kHTPrefsSlowActivationsTailspinThresholdMSec, 
+                       _kHTPrefsSlowActivationsTailspinsEnabled, _kHTPrefsTailspinEnabled, 
+                       _kHTPrefsTailspinSaveFormat, _kHTPrefsThirdPartyRunLoopLogsEnabled, 
+                       _kHTPrefsUserMobile, _kHTPrefsUserMobileGroup, _kHTPrefs_DEPRECATED_KeepTailspins, 
+                       _kHTRunloopFenceHang, _kHTRunloopTimeoutHang, _kHTTailspinFileExtension, 
+                       _kHTTailspinProcessingFileExtension, _kHTUnknownHang, _kHangTracerCoreAnalyticsEvent, 
+                       _kPDSEAllowEnableTailspin, _kPDSECATailspinKillSwitch, _kPDSECATailspinPeriodDays, 
+                       _kPDSECATailspinTimeoutTimestampSec, _kPDSEHTPeriodDays, _kPDSEHTRateOnlyKillSwitch, 
+                       _kPDSEHTRateOnlyPeriodDays, _kPDSEHTRateOnlyTimeoutTimestampSec, 
+                       _kPDSEHTThirdPartyKillSwitch, _kPDSEHTThirdPartyPeriodDays, 
+                       _kPDSEHTThirdPartyTimeoutTimestampSec, _kPDSEHTTimeoutTimestampSec, 
+                       _kPDSEHangTracerKillSwitch, _kPDSESentryKillSwitch, _kPDSESentryPeriodDays, 
+                       _kPDSESentryTimeoutTimestampSec, _kSTYEndTimeKey, _kSTYErrorKey, 
+                       _kSTYFileNameKey, _kSTYFilePathKey, _kSTYPerfProblemDetectedNotification, 
+                       _kSTYScenarioReportRefKey, _kSTYStartTimeKey, _kSTYTailspinSaveOperationCompletedNotification, 
+                       _kTailspinTaskedEnabledKey, _keyWithPrefix, _legacySignpost, 
+                       _pathForPid, _persistAndUnredactLogs, _shared_ht_log_handle, 
+                       _signpostHangInterval, _timebaseConversionFactor ]
+    objc-classes:    [ HTFenceAssertion, HTPrefs ]
+...

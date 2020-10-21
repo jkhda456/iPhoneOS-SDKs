@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1F27A5F1-BF8C-3C4C-A14B-51FA5620FC88
+  - target:          armv7s-ios
+    value:           44362EF5-9919-39CC-B7D7-F361BC273422
+  - target:          arm64-ios
+    value:           E6AA5220-57EB-3350-8BD3-60A243CF7601
+  - target:          arm64e-ios
+    value:           5F7A3AFB-D757-314F-93C0-33B91D97868F
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-ivars:      [ DACoreDAVTaskManager._applicationsShowingActivity ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _coreDAVValidationErrorFromRawError ]
+    objc-classes:    [ DACoreDAVLogger, DACoreDAVTaskManager ]
+...

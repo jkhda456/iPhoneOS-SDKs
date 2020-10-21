@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1B15DF9A-0DC9-338B-99C7-F79D5322FB2A
+  - target:          arm64e-ios
+    value:           EBA65263-8021-32B7-B40C-6B25572C4921
+install-name:    '/System/Library/PrivateFrameworks/ShazamKit.framework/ShazamKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SHErrorDiscardedAudioLengthKey, _SHErrorDomain, _SHMaximumSignatureLength, 
+                       _SHMediaItemAppleMusicID, _SHMediaItemAppleMusicURL, _SHMediaItemArtist, 
+                       _SHMediaItemArtworkURL, _SHMediaItemExplicitContent, _SHMediaItemFrequencySkew, 
+                       _SHMediaItemGenre, _SHMediaItemID, _SHMediaItemLyricsSnippet, 
+                       _SHMediaItemMatchScore, _SHMediaItemOffset, _SHMediaItemStaticLyrics, 
+                       _SHMediaItemSubtitle, _SHMediaItemSyncedLyricsSnippet, _SHMediaItemTimeSkew, 
+                       _SHMediaItemTitle, _SHMediaItemVideoURL, _SHMediaItemWebURL, 
+                       _SHMediaKeyAdamID, _SHMediaKeyAppleMusicURL, _SHMediaKeyArtist, 
+                       _SHMediaKeyArtworkURL, _SHMediaKeyExplicitContent, _SHMediaKeyFrequencySkew, 
+                       _SHMediaKeyGenre, _SHMediaKeyID, _SHMediaKeyLyricsSnippet, 
+                       _SHMediaKeyMatchScore, _SHMediaKeyOffset, _SHMediaKeyStaticLyrics, 
+                       _SHMediaKeySubtitle, _SHMediaKeySyncedLyricsSnippet, _SHMediaKeyTimeSkew, 
+                       _SHMediaKeyTitle, _SHMediaKeyVideoURL, _SHMediaKeyWebURL ]
+    objc-classes:    [ SHAudioMatchingRemoteStore, SHAudioUtilities, SHEntitlements, 
+                       SHError, SHLocalSignatureStore, SHLocalStore, SHLocalization, 
+                       SHLyricLine, SHMatch, SHMatchedMediaItem, SHMatcherRequest, 
+                       SHMatcherResponse, SHMediaItem, SHMutableSignature, SHPartnerConfiguration, 
+                       SHRecognitionSession, SHRemoteStore, SHSession, SHSignature, 
+                       SHStore, SHSyncedLyrics ]
+...

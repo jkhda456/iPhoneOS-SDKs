@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BA9D2221-AF33-3ECB-B640-A6B0F64C0CBD
+  - target:          arm64e-ios
+    value:           2AB63C4F-DFF8-34C9-9DB0-F09A3EAB04E7
+install-name:    '/System/Library/PrivateFrameworks/WPDaemon.framework/WPDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WPErrorDomain, _WPLogInitOnce, _WPLoggingInit, _WiProxLog, 
+                       _advertisingHeader, _kAppleManufacturerTypeBottom, _kAppleManufacturerTypeTop, 
+                       _kCBAdditionalAppleMfgAdvertisements, _kCBAdvAppleMfgTypeKey, 
+                       _kCBAdvOptionUseFGInterval, _kGapManufacturerDataType, _kSPAdvertisementData, 
+                       _kSPDeviceAddress, _kSPOptional, _kSPScanDate, _kSPStatus, 
+                       _kSPrssi, _kWPDFrameworkMessageQueue ]
+    objc-classes:    [ Endpoint, PipeDataTransfer, PipeInfo, WPAdvertisingRequest, 
+                       WPAdvertisingRequestsQueue, WPCharacteristic, WPDAdvertisingData, 
+                       WPDAdvertisingManager, WPDClient, WPDConnection, WPDManager, 
+                       WPDObjectDiscoveryClient, WPDObjectDiscoveryData, WPDObjectDiscoveryManager, 
+                       WPDPendingCompletions, WPDPersistence, WPDPipeManager, WPDScanManager, 
+                       WPDSearchPartyAgent, WPDStat, WPDState, WPDStatsManager, WPDXPCInterfaces, 
+                       WPDZoneManager, WPDaemonServer, WPPeerTrackingRequest, WPScanRequest, 
+                       WPZoneTrackingRequest ]
+...

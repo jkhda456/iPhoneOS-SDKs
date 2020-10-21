@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           35381B05-0571-3163-B22F-619AE7062004
+  - target:          armv7s-ios
+    value:           06A87C16-84F2-3BBF-AFCA-FBE813F490E7
+  - target:          arm64-ios
+    value:           F47009F3-037E-3FC7-A036-1BD95977A3A0
+  - target:          arm64e-ios
+    value:           D23951F2-771B-307F-A0FC-711656707F02
+install-name:    '/System/Library/PrivateFrameworks/iCloudQuotaUI.framework/iCloudQuotaUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kFractFontSizeAdjustment, _kFractMarginAdjustment, _kSquishedThreshold ]
+    objc-classes:    [ ICQImageButton, ICQServiceView, ICQUpgradeCompleteView, ICQUpgradeCompleteViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ICQCreateError, _ICQCreateErrorWithMessage, _ICQErrorDomain, 
+                       _ICQPhotosOptimizeEnable, __ICPLCloudPhotoLibraryTransferProgressDidChangeNotification, 
+                       _iCloudQuotaUIVersionNumber, _iCloudQuotaUIVersionString, 
+                       _kSSPurchaseRequestSucceededNotification ]
+    objc-classes:    [ ICQAlertController, ICQBannerView, ICQBundlesHook, ICQFamilySharingHook, 
+                       ICQPageView, ICQRemoteContainerViewController, ICQRemoteContainerViewControllerAnimator, 
+                       ICQRemoteContaineriPadViewController, ICQRemoteContaineriPhoneViewController, 
+                       ICQRemoteUpgradeFlowManager, ICQUpgradeButton, ICQUpgradeCloudStorageFlowManager, 
+                       ICQUpgradeFlowManager, ICQUpgradeFlowOptions, ICQUpgradeFlowPresenter, 
+                       ICQUpgradeOfferView, ICQUpgradeOfferViewController, ICQUpgradePhotosCloudEnableFlowManager, 
+                       ICQUpgradePhotosCloudEnableHook, ICQUpgradePhotosCloudUpgradeEnableFlowManager, 
+                       ICQUpgradePhotosOptimizeEnableFlowManager, ICQUpgradePhotosOptimizeEnableHook, 
+                       ICQUpgradeStorageHook, ICQViewController, _ICQDeviceInfo, 
+                       _ICQHelperFunctions, _ICQPhotosInfo, _ICQTextView, icqImageAdditionsDummyClass ]
+...

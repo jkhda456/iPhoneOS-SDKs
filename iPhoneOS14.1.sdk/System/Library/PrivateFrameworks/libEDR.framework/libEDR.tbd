@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D50E23E1-A344-322A-BE37-57143A35E492
+  - target:          armv7s-ios
+    value:           09F341E5-CA1A-3AC7-BB63-8E78D0A71350
+  - target:          arm64-ios
+    value:           1749E693-DEA4-34D3-A217-E97B185A6945
+  - target:          arm64e-ios
+    value:           E440248E-5793-329D-B074-4E7657018954
+install-name:    '/System/Library/PrivateFrameworks/libEDR.framework/libEDR'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _EDRServerEnable, _EDRServerGetCurrentDisplayProperties, _EDRServerGetDisplayBrightness, 
+                       _EDRServerIsEnabled, _EDRServerSetDisplayBrightness, _EDRServerSetInitialBrightness, 
+                       _EDRServerStart, _EDRServerStop ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EDRCreateClientForDisplay, _EDRCreateClientForDisplayWithTimeoutAndCallback, 
+                       _EDRCreateClientWithTimeoutAndCallback, _EDREnable, _EDRGetAmbientIlluminance, 
+                       _EDRGetBrightnessScaler, _EDRGetDisplayBacklightBrightness, 
+                       _EDRGetDisplayBrightness, _EDRGetDisplayHeadroom, _EDRGetDisplayMaxLuminance, 
+                       _EDRGetDisplayScalingFactor, _EDRHasAccessibilityLimit, _EDRIsEnabled, 
+                       _EDRRegisterCallbackBlock, _EDRRegisterCallbackBlockOnQueue, 
+                       _EDRReleaseClient, _EDRRequestAccessibilityLimit, _EDRRequestBrightnessAnimationTimeStepFactor, 
+                       _EDRRequestDisplayHeadroomLimit, _EDRRequestRampingSpeedFactor, 
+                       _EDRRequestTransitionAnimationTimeStepFactor, _EDRServerAddDisplay, 
+                       _EDRServerAddMainDisplay, _EDRServerEnableForDisplay, _EDRServerGetCurrentDisplayPropertiesForDisplay, 
+                       _EDRServerGetDisplayBrightnessForDisplay, _EDRServerIsEnabledForDisplay, 
+                       _EDRServerRegisterCallbackBlock, _EDRServerRegisterCallbackBlockOnQueue, 
+                       _EDRServerRemoveDisplay, _EDRServerSetDisplayBrightnessForDisplay, 
+                       _EDRServerStartService, _EDRServerStopService, _EDRServerUnregisterCallbackBlock, 
+                       _EDRUnregisterCallbackBlock ]
+...

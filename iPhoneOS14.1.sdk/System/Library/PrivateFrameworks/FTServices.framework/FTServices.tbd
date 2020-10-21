@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           E205F123-C2B1-32CF-B746-9F33A0B78C49
+  - target:          armv7s-ios
+    value:           4A919B4D-C5B1-350F-87A4-2013D758437F
+  - target:          arm64-ios
+    value:           90284C16-A588-32C7-8725-836D7BD054BF
+  - target:          arm64e-ios
+    value:           D3C3D9FC-1C97-3265-BBF6-8CD7F17018A2
+install-name:    '/System/Library/PrivateFrameworks/FTServices.framework/FTServices'
+current-version: 800
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _FaceTimeDeviceIDChangedNotification, _FaceTimeDeviceTechnologyChangedNotification, 
+                       __GenerateNonceAndSignature ]
+    objc-classes:    [ IDSAcceptMessage, IDSCancelMessage, IDSFaceTimeMessage, IDSInitiateMessage, 
+                       IDSRejectMessage, IDSRelayCancelMessage, IDSRelayInitiateMessage, 
+                       IDSRelayUpdateMessage, IDSSendMessage ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FTCTRegistrationStatusCanRegisterKey, _FTCTRegistrationStatusChangedNotification, 
+                       _FTCTRegistrationStatusIMSIKey, _FTCTRegistrationStatusPLMNKey, 
+                       _FTCTRegistrationStatusPhoneNumberKey, _FTEntitlementStatusChangedNotification, 
+                       _FTErrorDomain, _FTRegionListFinishedLoadingNotification, 
+                       _FTServerBagFinishedLoadingNotification, _FTServiceStatusDidChangeNotification, 
+                       _FTServiceStatusNotifyRegister, _FTServicesSuppressServiceErrorDialogsPropertyKey, 
+                       _FTUserConfigurationSelectedSubscriptionLabelDidChange, _FaceTimeDeviceCapabilityChangedNotification, 
+                       _FaceTimeDeviceRegistrationCapabilityChangedNotification, 
+                       _FaceTimeDeviceRegistrationStateChangedNotification, _FaceTimeDeviceRestictionsChangedNotification, 
+                       _FaceTimeDeviceSIMInsertedNotification, _FaceTimeDeviceSIMRemovedNotification, 
+                       _MessageLogEvent, _MessageLogStatistic, __AuthenticationDictionaryFromParameters, 
+                       __BindingsArrayFromURIs, __DeviceCapabilitiesFromParameters, 
+                       __FTAreIDsEquivalent, __FTGenerateDigestForSigningFromComponents, 
+                       __FTGenerateDigestForSigningFromPayload, __FTGenerateNonceAndSignatureFromComponents, 
+                       __FTGenerateNonceAndSignatureFromPayload, __FTIDSFlagsNumber, 
+                       __FTProfileVersionNumber, __FZErrorTypeFromNSError, __FZErrorTypeFromResponseCodeAndError, 
+                       _kDualModeDeliveryTypeHeader ]
+    objc-classes:    [ FTDeviceSupport, FTEntitlementSupport, FTIDSMessage, FTMessageDelivery, 
+                       FTMessageDelivery_APS, FTMessageDelivery_DualMode, FTMessageDelivery_HTTP, 
+                       FTMessageQueue, FTNetworkSupport, FTPasswordManager, FTRegion, 
+                       FTRegionSupport, FTSelectedPNRSubscription, FTServerBag, FTServiceStatus, 
+                       FTURLRequestMessage, FTUserConfiguration, FTiMessageStatus, 
+                       IDSWebTunnelRequestMessage ]
+    objc-ivars:      [ FTMessageDelivery._retries, FTMessageDelivery_DualMode._apsDelivery, 
+                       FTMessageDelivery_DualMode._dualModeQueue, FTMessageDelivery_DualMode._httpDelivery, 
+                       FTMessageDelivery_DualMode._userAgentString, FTPasswordManager._accountStore, 
+                       FTPasswordManager._runningQueries, FTPasswordManager._userNotificationCenter, 
+                       IDSWebTunnelRequestMessage._disableIDSTranslation, IDSWebTunnelRequestMessage._maximumResponseSize, 
+                       IDSWebTunnelRequestMessage._messageHeaders, IDSWebTunnelRequestMessage._messageRequestBodyData, 
+                       IDSWebTunnelRequestMessage._messageRequestBodyDictionary, 
+                       IDSWebTunnelRequestMessage._messageRequestUUID, IDSWebTunnelRequestMessage._messageURL, 
+                       IDSWebTunnelRequestMessage._responseBodyData, IDSWebTunnelRequestMessage._responseBodyDictionary, 
+                       IDSWebTunnelRequestMessage._responseCode, IDSWebTunnelRequestMessage._responseHeaders, 
+                       IDSWebTunnelRequestMessage._responseStatus, IDSWebTunnelRequestMessage._userAgentOverride ]
+...

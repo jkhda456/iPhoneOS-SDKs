@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CF8084ED-3E50-3F76-9838-7B6DF4354075
+  - target:          arm64e-ios
+    value:           4118B82A-84A8-3B2F-8ADD-1E60EE8F7461
+install-name:    '/System/Library/PrivateFrameworks/ActionPredictionHeuristics.framework/ActionPredictionHeuristics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXHeuristicsBundlePath, _ActionPredictionHeuristicsVersionNumber, 
+                       _ActionPredictionHeuristicsVersionString, _kATXInformationHeuristicsSubIDBatteryHeuristic, 
+                       _kATXInformationHeuristicsSubIDFallbackInfoHeuristic, _kATXInformationHeuristicsSubIDUpNextEvent, 
+                       _kATXInformationHeuristicsSubIDViewWeatherAfterWakeup ]
+    objc-classes:    [ ATXActionPredictionHeuristics, ATXInformationHeuristics ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8656A013-F2B1-39B1-BB48-12583F19468E
+  - target:          arm64e-ios
+    value:           2F4380AA-EBD6-3056-842F-02AB5F2453CE
+install-name:    '/System/Library/PrivateFrameworks/SearchUICardKitProviderSupport.framework/SearchUICardKitProviderSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRKAudioPlaybackCardSectionIgnoresMuteSwitch, _CRKMapCardSectionParameterSuffix, 
+                       _CRKMapCardSectionPlacemarkData, _SUICKPProviderIdentifier, 
+                       _SearchUICardKitProviderSupportVersionNumber, _SearchUICardKitProviderSupportVersionString ]
+    objc-classes:    [ SUICKPActivityIndicatorCardSectionViewController, SUICKPAudioPlaybackCardSectionViewController, 
+                       SUICKPCardSectionViewProvider, SUICKPCardViewControllerProvider, 
+                       SUICKPEntryPoint, SUICKPFeedbackAdapter, SUICKPFeedbackDelegateDemultiplexer, 
+                       SUICKPInteractiveCardSectionViewController, SUICKPMapCardSectionViewController, 
+                       SUICKPMediaInfoCardSectionViewController, SUICKPMediaPunchoutCardSectionViewController, 
+                       SUICKPWatchListCardSectionViewController ]
+...

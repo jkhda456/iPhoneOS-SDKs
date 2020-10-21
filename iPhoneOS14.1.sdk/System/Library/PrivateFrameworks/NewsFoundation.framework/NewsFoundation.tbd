@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E245142D-191F-39E0-AB26-DC4BB97003B8
+  - target:          arm64e-ios
+    value:           ABFB27D6-DF8E-3B6C-A524-6B6E39FF1473
+install-name:    '/System/Library/PrivateFrameworks/NewsFoundation.framework/NewsFoundation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NFCallbackScopeAny, _NFCallbackScopeName, _NFCallbackScopeNames, 
+                       _NFDeviceHasExtendedColorDisplay, _NFDeviceIsA7, _NFDeviceIsA8, 
+                       _NFDeviceModelString, _NFDeviceOSVersion, _NFDevicePlatform, 
+                       _NFGeneralDeviceString, _NFInternalBuild, _NFLockSync, _NFPoolMakeWeakObjectsPool, 
+                       _NFPromiseInvokeOnQueue, _NFSeedBuild, _NFStateMachineErrorDomain, 
+                       _NFStoreDemoMode, _NFWaiterErrorDomain, _NewsFoundationVersionNumber, 
+                       _NewsFoundationVersionString, __UIValueCGRectValue, _kNFPromiseSealingErrorCode, 
+                       _kNFPromiseSealingErrorName, _kNFReachabilityChangedNotification, 
+                       _zalgo, _zalgoIfMain ]
+    objc-classes:    [ NFArchiver, NFCallbackDefinition, NFCallbackRegistration, 
+                       NFCallbackScope, NFCallbackStore, NFContainer, NFContainerCircularDependencyDetectedException, 
+                       NFContainerContextMismatchException, NFContainerDefinitionMismatchException, 
+                       NFContainerDefinitionNilFactoryException, NFContainerDefinitionNotOverridableException, 
+                       NFContainerEnsuringNullableDefinitionException, NFContainerException, 
+                       NFContainerMissingDefinitionException, NFContainerPool, NFContainerPoolObject, 
+                       NFContainerRegistry, NFContext, NFDefinition, NFEventManager, 
+                       NFEventTrigger, NFKey, NFLazy, NFMultiDelegate, NFMutexLock, 
+                       NFObjectReuseManager, NFPendingPromise, NFPromise, NFPromiseSeal, 
+                       NFProxyContainer, NFProxyResolver, NFReachability, NFRouter, 
+                       NFRouterException, NFRouterRouteToNonRoutable, NFStateMachine, 
+                       NFStateMachineEvent, NFStateMachineState, NFStateMachineTransition, 
+                       NFUnfairLock, NFVoid, NFWaiter ]
+    objc-eh-types:   [ NFContainerCircularDependencyDetectedException, NFContainerContextMismatchException, 
+                       NFContainerDefinitionMismatchException, NFContainerDefinitionNilFactoryException, 
+                       NFContainerDefinitionNotOverridableException, NFContainerEnsuringNullableDefinitionException, 
+                       NFContainerException, NFContainerMissingDefinitionException, 
+                       NFRouterException, NFRouterRouteToNonRoutable ]
+...

@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           15E7C250-0C5B-388C-87D5-35BCD3DE6911
+  - target:          armv7s-ios
+    value:           5B658591-2769-3BCD-B996-32A1BF9DABD7
+  - target:          arm64-ios
+    value:           ECF34FF3-0219-3599-9D78-B06DC33B9BB6
+  - target:          arm64e-ios
+    value:           AFDBB9C4-65AD-3789-9D23-15C671CC0992
+install-name:    '/System/Library/PrivateFrameworks/FMF.framework/FMF'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FMFDaysOfWeekCount, _FMFDaysOfWeekFromDayOfWeek, _FMFDevicesChangedNotification, 
+                       _FMFErrorDomain, _FMFFenceAcceptanceStatusAccepted, _FMFFenceAcceptanceStatusPending, 
+                       _FMFFenceAcceptanceStatusPendingHidden, _FMFFenceErrorDomain, 
+                       _FMFFenceTimerAlarmDateKey, _FMFFenceTimerAlarmStream, _FMFFenceTimerAlarmUserVisible, 
+                       _FMFFenceTriggerArriving, _FMFFenceTriggerImmediate, _FMFFenceTriggerLeaving, 
+                       _FMFFenceTriggerScheduled, _FMFFenceTriggerStatusEnter, _FMFFenceTriggerStatusExit, 
+                       _FMFFenceTriggerStatusIn, _FMFFenceTriggerStatusOut, _FMFFenceTriggerStatusUndetermined, 
+                       _FMFFenceTypeNotifyMe, _FMFFenceTypeNotifyOther, _FMFFollowersChangedNotification, 
+                       _FMFGroupIdDefault, _FMFGroupIdGroup, _FMFGroupIdOneToOne, 
+                       _FMFHomeKitAutomationDeviceChangedNotification, _FMFMeDeviceChangedNotification, 
+                       _FMFScheduleTimerIdentifier, _kFMFSyncXPCTimeout, _kMapImageKey ]
+    objc-classes:    [ FMFAppAccountInfo, FMFContactUtility, FMFDevice, FMFFence, 
+                       FMFFriendshipRequest, FMFHandle, FMFLocation, FMFMapImageRequest, 
+                       FMFMapSession, FMFNotNowRequest, FMFPlacemark, FMFSchedule, 
+                       FMFScheduler, FMFSession, FMFSynchronizer ]
+...

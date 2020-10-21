@@ -1,0 +1,82 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F2F47732-DCBF-35E4-9703-AF9A1A8B18AC
+  - target:          armv7s-ios
+    value:           77C9F8E3-4ADA-3B0C-BE98-42838632269E
+  - target:          arm64-ios
+    value:           E7166E65-CC4E-3BDB-932A-6A29F7421124
+  - target:          arm64e-ios
+    value:           38A9AF28-66AF-36CA-8FE5-F9A2CDFB853A
+install-name:    '/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI'
+current-version: 676.1
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CUIEqualRenditionKeysIgnoringAttribute, _gArtworkDraftTypes, 
+                       _gThemeLooks, _gZeroCodeArtworkInfo ]
+    objc-classes:    [ CUISingleNamedAssetCreator ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CSIEqualMetrics, _CSIIllegalMetrics, _CUIBlendModeDescriptionFromCGBlendMode, 
+                       _CUIBlendModeLSRDescriptionFromCGBlendMode, _CUICGBlendModeFromLSRDescription, 
+                       _CUICGImageGetAlphaInfo, _CUICalcNonAlphaAreaOfImage, _CUICalculateExtrusionMaskOfImage, 
+                       _CUIColorHistogramARGBIntersection, _CUIColorHistogramARGBIsMonochrome, 
+                       _CUICompareRenditionKey, _CUIComputeImageColorHistogramARGB, 
+                       _CUIConvertCGImageFormat, _CUIConvertCompressionTypeToString, 
+                       _CUIConvertDeepImageTo8, _CUIConvertImageToPixelFormat, _CUIConvertPixelFormatToString, 
+                       _CUICurrentPlatform, _CUIDeallocateRGBAImageBuffer, _CUIDefaultThemeRenditionKeyFormat, 
+                       _CUIDrawExtrudedImageInContext, _CUIEdgeInsetsEqualToEdgeInsets, 
+                       _CUIEdgeInsetsFromCGRect, _CUIEdgeInsetsInsetRect, _CUIEdgeInsetsInvalid, 
+                       _CUIEdgeInsetsMake, _CUIEdgeInsetsOutsetRect, _CUIEdgeInsetsToCGRect, 
+                       _CUIEdgeInsetsValid, _CUIEdgeInsetsZero, _CUIEffectBevelStyleDescription, 
+                       _CUIEffectBlendModeDescription, _CUIEqualRenditionKeys, _CUIFillCARKeyArrayForRenditionKey, 
+                       _CUIFillCARKeyArrayForRenditionKey2, _CUIGetDeviceArtworkDisplayGamut, 
+                       _CUIGetFormatForFeatureSetAndPixelFormat, _CUIGetRGBAImageBuffer, 
+                       _CUIImageCompressedWithColorQuantization, _CUIImageIsMonochrome, 
+                       _CUIImageIsWideGamut, _CUIKeyFormatToArrayString, _CUILogLogToStderr, 
+                       _CUIMaxDimensionForVectorGlyph, _CUIMaxScaleForTargetPlatform, 
+                       _CUIMinDimensionForVectorGlyph, _CUIMinScaleForTargetPlatform, 
+                       _CUIParseDeploymentTarget, _CUIPlatformNameForPlatform, _CUIPointSizeForDimensionForVectorGlyph, 
+                       _CUIRenditionKeyCopy, _CUIRenditionKeyFormatRemoveAttribute, 
+                       _CUIRenditionKeyHasIdentifier, _CUIRenditionKeySetValueForAttribute, 
+                       _CUIRenditionKeyStandardize, _CUIRenditionKeyTokenCount, _CUIRenditionKeyValueForAttribute, 
+                       _CUISystemThemeRenditionKeyFormat, _CUIThemeInfoVersion, _CUIUncompressQuantizedImageData, 
+                       _CoreUIVersionNumber, __CUILog, _gColorStatuses, _gColors, 
+                       _gEffectBevelStyles, _gEffectBlendModes, _gEffectParameterTypes, 
+                       _gEffectTypes, _gMetafontSelectors, _gMetafontSizes, _gRenditionSubtypes, 
+                       _gRenditionTypes, _gThemeCompressionTypes, _gThemeDeploymentTargets, 
+                       _gThemeDirections, _gThemeDisplayGamuts, _gThemeDrawingLayers, 
+                       _gThemeDynamicDisplayModes, _gThemeElements, _gThemeGraphicsFeatureSetClasses, 
+                       _gThemeGraphicsFeatureSetClasses_Legacy, _gThemeIdioms, _gThemeMemoryPerformanceClasses, 
+                       _gThemeParts, _gThemePresentationStates, _gThemeSizes, _gThemeStates, 
+                       _gThemeTemplateRenderingModes, _gThemeTextureFaces, _gThemeTextureInterpretations, 
+                       _gThemeTexturePixelFormats, _gThemeUISizeClasses, _gThemeValues, 
+                       _gThemeVectorSizes, _gThemeVectorWeights ]
+    objc-classes:    [ CSIBitmapWrapper, CSIGenerator, CUIBackgroundStyleEffectConfiguration, 
+                       CUICatalog, CUIColor, CUICommonAssetStorage, CUIImage, CUIMutableCatalog, 
+                       CUIMutableCommonAssetStorage, CUIMutablePSDImageRef, CUINamedColor, 
+                       CUINamedData, CUINamedExternalLink, CUINamedImage, CUINamedImageAtlas, 
+                       CUINamedImageDescription, CUINamedLayerImage, CUINamedLayerStack, 
+                       CUINamedLookup, CUINamedModel, CUINamedMultisizeImage, CUINamedMultisizeImageSet, 
+                       CUINamedRecognitionGroup, CUINamedRecognitionImage, CUINamedRecognitionObject, 
+                       CUINamedTexture, CUINamedVectorGlyph, CUINamedVectorImage, 
+                       CUINamedVectorPDFImage, CUINamedVectorSVGImage, CUIPSDGradient, 
+                       CUIPSDGradientColorStop, CUIPSDGradientDoubleColorStop, CUIPSDGradientDoubleOpacityStop, 
+                       CUIPSDGradientEvaluator, CUIPSDGradientLayer, CUIPSDGradientOpacityStop, 
+                       CUIPSDGradientStop, CUIPSDImageLayer, CUIPSDImageRef, CUIPSDLayer, 
+                       CUIPSDLayerBaseRef, CUIPSDLayerEffectBevelEmboss, CUIPSDLayerEffectColorOverlay, 
+                       CUIPSDLayerEffectComponent, CUIPSDLayerEffectDropShadow, CUIPSDLayerEffectGradientOverlay, 
+                       CUIPSDLayerEffectInnerGlow, CUIPSDLayerEffectInnerShadow, 
+                       CUIPSDLayerEffectOuterGlow, CUIPSDLayerEffects, CUIPSDLayerEnumerator, 
+                       CUIPSDLayerGroupEnd, CUIPSDLayerGroupRef, CUIPSDLayerGroupStart, 
+                       CUIPSDLayerMaskRef, CUIPSDLayerRef, CUIPSDLayoutMetricsChannel, 
+                       CUIPSLayerEffectsPreset, CUIRenditionKey, CUIRenditionLayerReference, 
+                       CUIRenditionMetrics, CUIRenditionSliceInformation, CUIRuntimeStatistics, 
+                       CUIShapeEffectPreset, CUIShapeEffectStack, CUIStructuredThemeStore, 
+                       CUIStyleEffectConfiguration, CUITextStyle, CUIThemeDataEffectPreset, 
+                       CUIThemeFacet, CUIThemeGradient, CUIThemeRendition, CUIThemeSchema, 
+                       CUIThemeSchemaEffectRendition, CUIThemeSchemaLayer, CUIThemeSchemaPSDLayer, 
+                       CUIThemeSchemaPSDLayerGroup, CUIThemeSchemaPSDRenditionLayer, 
+                       CUIThemeSchemaRendition, CUIThemeSchemaRenditionGroup, CoreUI ]
+...

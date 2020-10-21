@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           43E67BAB-6A5E-35DF-B02A-056643740875
+  - target:          armv7s-ios
+    value:           6074220D-C6FC-3A6C-9A1E-15CCAC141A72
+  - target:          arm64-ios
+    value:           CA513917-E4AB-301B-B1CF-B0E3B5750CD2
+  - target:          arm64e-ios
+    value:           39D57FC0-8733-3D49-9805-E9893C9ADFFA
+install-name:    '/System/Library/PrivateFrameworks/ClockKitUI.framework/ClockKitUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CLKUIAssetCatalogImageNamed, _CLKUIImageNamedFromBundle, 
+                       _CLKUITimeLabelOptionHideSubstringFromSeparator, _CLKUITimeLabelOptionHideSubstringToSeparator ]
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __Z28_convertToRGBfFromSRGB8_fast10CLKUIRGBA8, __Z28_convertToRGBfFromSRGBf_fastDv4_f ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CLKUIComputeColorAPL, _CLKUIComputeDimmingRequiredToObtainAPLGivenAPL, 
+                       _CLKUIComputeDimmingRequiredToObtainColorAPL, _CLKUIComputeDimmingRequiredToObtainColorAPLClamped, 
+                       _CLKUIComputeDimmingRequiredToObtainImageAPL, _CLKUIComputeDimmingRequiredToObtainImageAPLClamped, 
+                       _CLKUIComputeDimmingRequiredToObtainQuadAPL, _CLKUIComputeDimmingRequiredToObtainQuadAPLClamped, 
+                       _CLKUIComputeImageAPL, _CLKUIComputePow2SubRect, _CLKUIComputeQuadAPL, 
+                       _CLKUIComputeTextureAPL, _CLKUIConvertTextureFromXRSRGBtoP3, 
+                       _CLKUIConvertToRGBFromSRGB_fast, _CLKUIConvertToRGBfFromSRGB8_fast, 
+                       _CLKUIConvertToRGBfFromSRGBf_fast, _CLKUIConvertToRGBfFromUIColor, 
+                       _CLKUIConvertToRGBfFromUIColor_fast, _CLKUIConvertToRGBfFromXRSRGBf, 
+                       _CLKUIConvertToSRGB8FromRGBf_fast, _CLKUIConvertToSRGBFromRGB_fast, 
+                       _CLKUIConvertToSRGBfFromRGBf_fast, _CLKUIConvertToUIColorFromRGBf, 
+                       _CLKUIConvertToUIColorFromRGBf_fast, _CLKUIConvertToXRSRGBfFromRGBf, 
+                       _CLKUIGetAPLFromSumBuffer, _CLKUIImageNamed, _CLKUIImageNamedForDevice, 
+                       _CLKUIImageNamedFromAssetBundleForDevice, _CLKUIImageNamedFromBundleForDevice, 
+                       _CLKUIInterpolateBetweenColors, _CLKUILocalizedString, _CLKUIMetalAtlasPrewarmStateDescription, 
+                       _CLKUIOrderedSuffixesForDevice, _CLKUITextureMaxDimension, 
+                       _ClockKitUIVersionNumber, _ClockKitUIVersionString, _CreateDrawImageToBitmap, 
+                       _NTKMinBlinkerAlphaSecondFraction, __CLKUIComputeTextureAPL, 
+                       __CLKUIImageNamedFromBundleForDeviceWithSuffixes, __CLKUIOrderedImageSizeSuffixesForSizeClass, 
+                       __CLKUIRawImageGenerateMipmapsSRGB8, __CLKUIRawImageWriteToFileSRGB8, 
+                       __CLKVersionedImageNameIfPreGlory, __ImageNamedInBundle, __PreGloryVersionedImageNames, 
+                       __angleForPositionInWidth, __centerInBounds, __computeAPL, 
+                       __drawColorToBitmap, _frameBufferReleaseCallback, _isDateBetweenDates, 
+                       _startAndEndOfDayForDateInTimeZone ]
+    objc-classes:    [ CLKUIAlmanacCache, CLKUIAlmanacCacheKey, CLKUIAlmanacTransitInfo, 
+                       CLKUIAtlas, CLKUIAtlasBacking, CLKUIChronoButton, CLKUICurvedLabel, 
+                       CLKUIMetalAtlas, CLKUIMetalQuadView, CLKUIMetalResourceManager, 
+                       CLKUIMmapFile, CLKUIQuad, CLKUIQuadView, CLKUIQuadViewDisplayLink, 
+                       CLKUIResourceManager, CLKUIResourceProvider, CLKUIResourceProviderKey, 
+                       CLKUITexture, CLKUITimeLabel, CLKUITimeLabelStyle, CLKUIWheelsOfTimeButton, 
+                       _CLKUIBasicTimeLabelManager, _CLKUIBlinkingTimeLabelManager ]
+...

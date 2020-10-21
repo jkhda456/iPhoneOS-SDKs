@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A050022E-4924-3316-9FC2-476271AD4767
+  - target:          armv7s-ios
+    value:           496CF952-E1FB-31DC-8F20-E53FE48B7123
+  - target:          arm64-ios
+    value:           22266167-E6E4-3E8D-A91C-A103D1825829
+  - target:          arm64e-ios
+    value:           C56774BB-45CE-304F-97A1-ADE2DE38B8F6
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RegisterExternalAudioCodecs ]
+...

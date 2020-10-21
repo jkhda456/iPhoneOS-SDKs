@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           005D7BEB-6AD5-30B3-AA96-EFA7923A7999
+  - target:          arm64e-ios
+    value:           96A3BEDE-9CAB-3364-ACD2-07E14039590E
+install-name:    '/System/Library/PrivateFrameworks/ContactsDonationFeedback.framework/ContactsDonationFeedback'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ContactsDonationFeedbackVersionNumber, _ContactsDonationFeedbackVersionString, 
+                       _kCDFErrorDomain, _kCDFInsufficientValuesToHashError, _kCDFMissingIdentifierError, 
+                       _kCDFUnhandledValueTypeError ]
+    objc-classes:    [ CDFDonationFeedbackStore, CNDFDonationStringCollector ]
+...

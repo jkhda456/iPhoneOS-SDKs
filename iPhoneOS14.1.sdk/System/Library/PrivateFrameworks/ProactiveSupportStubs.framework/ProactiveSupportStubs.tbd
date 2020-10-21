@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DA5FCDF1-FFB4-3B43-8019-23672E3E362F
+  - target:          armv7s-ios
+    value:           4C235DB5-C82B-36BF-A29E-080A7CCC2FB1
+  - target:          arm64-ios
+    value:           707CF450-A3EE-35B0-944C-DFE577A7FD2F
+  - target:          arm64e-ios
+    value:           F035D2A3-FDA7-3ECD-A815-2FAEA286D827
+install-name:    '/System/Library/PrivateFrameworks/ProactiveSupportStubs.framework/ProactiveSupportStubs'
+current-version: 294.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ProactiveSupportStubsVersionNumber, _ProactiveSupportStubsVersionString ]
+    objc-classes:    [ _PASDeviceStateStub ]
+...

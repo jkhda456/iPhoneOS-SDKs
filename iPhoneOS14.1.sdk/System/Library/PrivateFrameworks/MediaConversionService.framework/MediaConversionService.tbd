@@ -1,0 +1,90 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9E65047C-785A-3C1A-9447-508D1D383685
+  - target:          arm64e-ios
+    value:           65963AB5-1D6F-3D2B-8433-3A7AF0381091
+install-name:    '/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService'
+current-version: 310.1.160
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MediaConversionServiceVersionNumber, _MediaConversionServiceVersionString, 
+                       _PAMediaConversionNameForErrorCode, _PAMediaConversionNameForJobPriority, 
+                       _PAMediaConversionNameForJobStatus, _PAMediaConversionNameForValueType, 
+                       _PAMediaConversionOptionNameToValueTypeMapping, _PAMediaConversionResourceRoleMainResource, 
+                       _PAMediaConversionResourceRoleMainResourceSpatialOverCapture, 
+                       _PAMediaConversionResourceRoleVideoComplement, _PAMediaConversionResourceRoleVideoComplementSpatialOverCapture, 
+                       _PAMediaConversionServiceAdjustmentDataKey, _PAMediaConversionServiceAdjustmentFinalizationDispositionKey, 
+                       _PAMediaConversionServiceAdjustmentFormatIdentifierKey, _PAMediaConversionServiceAdjustmentFormatVersionKey, 
+                       _PAMediaConversionServiceBookmarkKey, _PAMediaConversionServiceConversionDequeAndStartProcessingDateKey, 
+                       _PAMediaConversionServiceConversionEndDateKey, _PAMediaConversionServiceConversionPerfCheckDataKey, 
+                       _PAMediaConversionServiceConversionStartDateKey, _PAMediaConversionServiceDeduplicatedAgainstOriginalRequestIdentifierKey, 
+                       _PAMediaConversionServiceDestinationBookmarkCollectionKey, 
+                       _PAMediaConversionServiceErrorDomain, _PAMediaConversionServiceErrorOffendingItemNameKey, 
+                       _PAMediaConversionServiceErrorSourceResourceSummaryKey, _PAMediaConversionServiceErrorUnderlyingErrorDescriptionKey, 
+                       _PAMediaConversionServiceFileSizeKey, _PAMediaConversionServiceFinalizedAdjustmentInformationKey, 
+                       _PAMediaConversionServiceInputFileTypeKey, _PAMediaConversionServiceJobGroupIdentifierKey, 
+                       _PAMediaConversionServiceJobIdentifierKey, _PAMediaConversionServiceJobStatusKey, 
+                       _PAMediaConversionServiceOptionAVIncludeMetadataKey, _PAMediaConversionServiceOptionAVMetadataAccessibilityDescriptionKey, 
+                       _PAMediaConversionServiceOptionAVMetadataContentCreationDateKey, 
+                       _PAMediaConversionServiceOptionAVMetadataContentCreationDateTimeZoneOffsetKey, 
+                       _PAMediaConversionServiceOptionAVMetadataDescriptionKey, _PAMediaConversionServiceOptionAVMetadataIncludeAccessibilityDescriptionKey, 
+                       _PAMediaConversionServiceOptionAVMetadataIncludeDescriptionKey, 
+                       _PAMediaConversionServiceOptionAVMetadataIncludeLocationKey, 
+                       _PAMediaConversionServiceOptionAVMetadataKeywordsKey, _PAMediaConversionServiceOptionAVMetadataLocationKey, 
+                       _PAMediaConversionServiceOptionAVMetadataOriginatingSignatureKey, 
+                       _PAMediaConversionServiceOptionAVMetadataRenderOriginatingSignatureKey, 
+                       _PAMediaConversionServiceOptionAVMetadataTitleKey, _PAMediaConversionServiceOptionAdjustmentFinalizationBehaviorKey, 
+                       _PAMediaConversionServiceOptionAdjustmentFinalizationCandidacyKey, 
+                       _PAMediaConversionServiceOptionAdjustmentInformationKey, _PAMediaConversionServiceOptionApplyOrientationTransformKey, 
+                       _PAMediaConversionServiceOptionBoundingBoxKey, _PAMediaConversionServiceOptionColorSpaceKey, 
+                       _PAMediaConversionServiceOptionExportPresetNameKey, _PAMediaConversionServiceOptionFormatConversionOnlyKey, 
+                       _PAMediaConversionServiceOptionIsGIFExportConversionKey, _PAMediaConversionServiceOptionIsPassthroughConversionKey, 
+                       _PAMediaConversionServiceOptionIsVideoMetadataTrackExtractionKey, 
+                       _PAMediaConversionServiceOptionJobPriorityKey, _PAMediaConversionServiceOptionLivePhotoPairingIdentifierKey, 
+                       _PAMediaConversionServiceOptionMaximumLongSideLengthKey, _PAMediaConversionServiceOptionMaximumPixelCountKey, 
+                       _PAMediaConversionServiceOptionMetadataPolicyKey, _PAMediaConversionServiceOptionOrientationKey, 
+                       _PAMediaConversionServiceOptionOutputFileTypeKey, _PAMediaConversionServiceOptionPowerEfficiencyKey, 
+                       _PAMediaConversionServiceOptionPowerEfficiencyMinimumDurationKey, 
+                       _PAMediaConversionServiceOptionProgressUpdateTimeIntervalKey, 
+                       _PAMediaConversionServiceOptionRasterizationDPIKey, _PAMediaConversionServiceOptionRequestReasonKey, 
+                       _PAMediaConversionServiceOptionRotationAngleDegreesKey, _PAMediaConversionServiceOptionScaleFactorKey, 
+                       _PAMediaConversionServiceOptionTargetFileSizeKey, _PAMediaConversionServiceOptionTimeScaleMultiplierKey, 
+                       _PAMediaConversionServiceOptionTimeScaleRangeKey, _PAMediaConversionServiceOptionTrimRangeKey, 
+                       _PAMediaConversionServiceOptionUnitTestSupportExtraEnvironmentVariablesKey, 
+                       _PAMediaConversionServiceOptionUnitTestSupportServiceShouldExitAfterRequestKey, 
+                       _PAMediaConversionServiceOptionUnitTestSupportServiceShouldExitDuringRequestKey, 
+                       _PAMediaConversionServiceOptionVideoAdjustmentsPropertyListKey, 
+                       _PAMediaConversionServiceOptionWantsProgressKey, _PAMediaConversionServiceOptionWantsResultAsDataKey, 
+                       _PAMediaConversionServiceOrientedPixelHeightKey, _PAMediaConversionServiceOrientedPixelWidthKey, 
+                       _PAMediaConversionServicePixelHeightKey, _PAMediaConversionServicePixelWidthKey, 
+                       _PAMediaConversionServiceProgressKey, _PAMediaConversionServiceRequiresModernizationKey, 
+                       _PAMediaConversionServiceResultDataKey, _PAMediaConversionServiceSourceBookmarkCollectionKey, 
+                       _PAMediaConversionServiceUnitTestSupportCoreImageGraphDumpPathsKey, 
+                       _PHMediaFormatConversionErrorDomain, _PHMediaFormatConversionUnknownFutureIdentifierPlaceholder ]
+    objc-classes:    [ PAImageConversionServiceClient, PAMediaConversionServiceAddPFMediaMetadataPolicy, 
+                       PAMediaConversionServiceCompositeImageMetadataPolicy, PAMediaConversionServiceDefaultImageMetadataPolicy, 
+                       PAMediaConversionServiceImageMetadataPolicy, PAMediaConversionServiceImagingUtilities, 
+                       PAMediaConversionServiceResourceURLCollection, PAMediaConversionServiceResourceURLReference, 
+                       PAMediaConversionServiceSetAccessibilityDescriptionImageMetadataPolicy, 
+                       PAMediaConversionServiceSetCaptionImageMetadataPolicy, PAMediaConversionServiceSetCreationDateImageMetadataPolicy, 
+                       PAMediaConversionServiceSetLocationImageMetadataPolicy, PAMediaConversionServiceSharedPhotoStreamImageMetadataPolicy, 
+                       PAMediaConversionServiceiCloudPhotoLibraryImageMetadataPolicy, 
+                       PAVideoConversionServiceClient, PHMediaFormatAssetBundleConversionRequest, 
+                       PHMediaFormatChainedConversionRequest, PHMediaFormatConversionAssetBundleSource, 
+                       PHMediaFormatConversionCompositeRequest, PHMediaFormatConversionContent, 
+                       PHMediaFormatConversionDestination, PHMediaFormatConversionImplementation_MediaConversionService, 
+                       PHMediaFormatConversionJob, PHMediaFormatConversionLivePhotoBundleSource, 
+                       PHMediaFormatConversionManager, PHMediaFormatConversionPlaceholderSource, 
+                       PHMediaFormatConversionRequest, PHMediaFormatConversionSinglePassVideoProgressObserver, 
+                       PHMediaFormatConversionSource, PHMediaFormatLivePhotoBundleConversionRequest, 
+                       PHMediaFormatLivePhotoConversionRequest ]
+    objc-ivars:      [ PHMediaFormatConversionContent._fileSignature, PHMediaFormatConversionContent._fileURL, 
+                       PHMediaFormatConversionContent._length ]
+...

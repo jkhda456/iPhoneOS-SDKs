@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BD92D3BB-5848-3969-A522-B4BE5748BA4B
+  - target:          arm64e-ios
+    value:           1B7F995A-A02A-3803-9E3B-BF362E9385E6
+install-name:    '/System/Library/PrivateFrameworks/DocumentManagerUICore.framework/DocumentManagerUICore'
+current-version: 200.1.255
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DOCBackgroundColorForTagColor, _DOCConstraintWithPriority, 
+                       _DOCConstraintsToCenterWithSuperview, _DOCConstraintsToResizeViewsWithSuperview, 
+                       _DOCConstraintsToResizeWithReferenceView, _DOCConstraintsToResizeWithSuperview, 
+                       _DOCConstraintsToResizeWithSuperviewMargins, _DOCConstraintsToResizeWithSuperviewSafeAreaInsets, 
+                       _DOCDocumentPickerExtensionUpdateWithConfiguration, _DOCDotViewColorForTagColor, 
+                       _DOCIsKindOfContextMenuInteraction_SPI, _DOCNewThumbnailFittingImageView, 
+                       _DOCNoMaxWidth, _DOCPrimaryColorForTagColor, _DOCShareInfoThumbnailForFPItem, 
+                       _DOCShareInfoThumbnailSizeForSizeClass, _DOCSkipConstraint, 
+                       _DOCTagEditorTagsDidChangeNotification, _DOCTagViewCornerRadius, 
+                       _DOCTagViewHorizontalInset, _DOCTagViewVerticalInset, _DocumentManagerUICoreVersionNumber, 
+                       _DocumentManagerUICoreVersionString, _createICQBannerView, 
+                       _doc_UTTypeCreateSuggestedFilename, _shouldShowICQBannerViewForOffer ]
+    objc-classes:    [ DOCAddTagView, DOCBorderedFittingImageView, DOCByteCountFormatter, 
+                       DOCChainedTagsView, DOCDateFormatter, DOCDateParser, DOCDeterminateProgressRingView, 
+                       DOCFileProviderDomainMonitor, DOCFittingImageView, DOCGhostRingView, 
+                       DOCIconPromise, DOCIconThumbnailRequest, DOCIndeterminateProgressRingView, 
+                       DOCItemActionResolver, DOCItemDecorationImageLoader, DOCItemThumbnail, 
+                       DOCItemThumbnailBatchEntry, DOCLabel, DOCLargeTagView, DOCPlainFolderThumbnailRequest, 
+                       DOCProgressView, DOCRegularItemThumbnailRequest, DOCSeparatorView, 
+                       DOCStackedThumbnailView, DOCStaticBadgedFolderThumbnailRequest, 
+                       DOCTagCheckableDotView, DOCTagCheckmarkView, DOCTagColorPicker, 
+                       DOCTagDotView, DOCTagEditorColorPickerCell, DOCTagEditorTagCell, 
+                       DOCTagEditorTextFieldCell, DOCTagEditorViewController, DOCTagView, 
+                       DOCThumbnailBatchingToken, DOCThumbnailCache, DOCThumbnailDescriptor, 
+                       DOCThumbnailFittingImageView, DOCThumbnailFolderIcon, DOCThumbnailGenerator, 
+                       DOCThumbnailKey, DOCThumbnailRequest, DOCVisualEffectLabel ]
+...

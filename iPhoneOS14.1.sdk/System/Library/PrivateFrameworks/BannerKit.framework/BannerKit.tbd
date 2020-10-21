@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8AD1662B-8747-39DE-9438-CF8FB60EA68C
+  - target:          arm64e-ios
+    value:           307B129A-B275-3A78-A21F-C21F80FEC374
+install-name:    '/System/Library/PrivateFrameworks/BannerKit.framework/BannerKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BNBannerKitHostMonitorEntitlement, _BNBannerKitPostEntitlement, 
+                       _BNBannerKitWorkspaceIdentifier, _BNBannerRevocationReasonDragDismissal, 
+                       _BNBannerRevocationReasonReplaceExisting, _BNBannerRevocationReasonTouchOutsideDismissal, 
+                       _BNBannerSourceErrorDomain, _BNBundleIdentifier, _BNEffectivePresentableDescription, 
+                       _BNLogConsidering, _BNLogHostingHost, _BNLogHostingService, 
+                       _BNLogPending, _BNLogPosting, _BNLogPresenting, _BNLogSubsystem, 
+                       _BNLogSuspending, _BNPresentableDescription, _BNPresentationOptionsPrivateSuspend, 
+                       _BNRegisterBannerKitLogging, _BNSceneIdentifierForRequest, 
+                       _BNStringFromBNPresentableType, _BNStringFromUIInterfaceOrientation, 
+                       _BNUniqueIdentifierForSceneIdentifier, _BNWindowSceneSessionRoleBannerSource, 
+                       _BannerKitVersionNumber, _BannerKitVersionString, _kBNBannerPresentationOptionsSuspendReasonKey, 
+                       _kBNBannerSceneTransitionContextSettingBannerAnimationSettings, 
+                       _kBNBannerTransitionAnimationStyleKey, _kBNPresentableQueueUserInfoUniquePendingIdentifierKey ]
+    objc-classes:    [ BNBannerAnimator, BNBannerClientContainerViewController, BNBannerController, 
+                       BNBannerHostMonitor, BNBannerHostMonitorListener, BNBannerHostMonitorSessionSpecification, 
+                       BNBannerHostSceneViewController, BNBannerHostSceneViewControllerView, 
+                       BNBannerLayoutManager, BNBannerReplacementTransitionAnimator, 
+                       BNBannerSceneComponentProvider, BNBannerSceneTransitionContext, 
+                       BNBannerSource, BNBannerSourceApplicationSceneSpecification, 
+                       BNBannerSourceApplicationStarkSceneSpecification, BNBannerSourceLayoutDescription, 
+                       BNBannerSourceListener, BNBannerSourcePresentableSpecification, 
+                       BNBannerSourceSessionSpecification, BNBannerTransitionAnimator, 
+                       BNContentViewController, BNContentViewControllerView, BNDefaultBannerTransitioningDelegate, 
+                       BNLocalPanGestureProxy, BNMutableSceneClientSettings, BNMutableSceneSettings, 
+                       BNPenderQueue, BNPendingDequeuePromise, BNPostingContext, 
+                       BNPresentableQueue, BNSceneClientSettings, BNSceneSettings, 
+                       BNSizeTransitionAction, BNSuspensionController, BNTieredArray, 
+                       BNTransitionContext, _BNBannerSceneComponentProviderSecureWindow, 
+                       _BNPenderQueueEntry ]
+...

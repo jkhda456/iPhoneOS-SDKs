@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           10735AF7-0B9E-3B28-A0DF-EABDE6A7918B
+  - target:          arm64e-ios
+    value:           098700C5-FA6D-3B64-80B6-DA309DBF9E27
+install-name:    '/System/Library/PrivateFrameworks/SiriUICardKitProviderSupport.framework/SiriUICardKitProviderSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SCKPProviderIdentifier, _SiriUICardKitProviderSupportVersionNumber, 
+                       _SiriUICardKitProviderSupportVersionString ]
+    objc-classes:    [ SCKPCardSectionViewProvider, SCKPInteractiveCardSectionViewController, 
+                       SCKPMediaControlCardSectionView, SCKPMediaControlCardSectionViewController, 
+                       SCKPProvider ]
+...

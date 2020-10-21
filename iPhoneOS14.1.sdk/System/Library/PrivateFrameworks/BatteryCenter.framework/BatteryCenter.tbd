@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           1B32FBEF-48BC-35A2-83AE-50DF225A542B
+  - target:          armv7s-ios
+    value:           8091DAF2-EE1A-3659-9214-BF0751C46323
+  - target:          arm64-ios
+    value:           8418E605-1CEC-3F43-B2AA-A4E0480DFDCE
+  - target:          arm64e-ios
+    value:           806A5F79-270F-32AA-9227-8DDF0B2A2E4C
+install-name:    '/System/Library/PrivateFrameworks/BatteryCenter.framework/BatteryCenter'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _BCPartKeyForPart, _kBCBatteryDeviceCompositeDeviceGlyphPartKey ]
+    objc-classes:    [ BCBatteryView ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BCLogDeviceController, _BCLogPowerSourceController, _BCLogSubsystem, 
+                       _BCLogWidget, _BCRegisterUserNotificationsLogging, _BCStringFromParts, 
+                       _BatteryCenterVersionNumber, _BatteryCenterVersionString, 
+                       _kBCBatteryDeviceA111ProductIdentifier, _kBCBatteryDeviceA125ProductIdentifier, 
+                       _kBCBatteryDeviceA211ProductIdentifier, _kBCBatteryDeviceB188ProductIdentifier, 
+                       _kBCBatteryDeviceB222ProductIdentifier, _kBCBatteryDeviceB244ProductIdentifier, 
+                       _kBCBatteryDeviceB282ProductIdentifier, _kBCBatteryDeviceB288ProductIdentifier, 
+                       _kBCBatteryDeviceB298ProductIdentifier, _kBCBatteryDeviceB312ProductIdentifier, 
+                       _kBCBatteryDeviceB352ProductIdentifier, _kBCBatteryDeviceB364ProductIdentifier, 
+                       _kBCBatteryDeviceB372ProductIdentifier, _kBCBatteryDeviceB419ProductIdentifier, 
+                       _kBCBatteryDeviceB443ProductIdentifier, _kBCBatteryDeviceB444ProductIdentifier, 
+                       _kBCBatteryDeviceK39ProductIdentifier, _kBCBatteryDeviceR5xProductIdentifier, 
+                       _orderedDeviceAccessoryCategories ]
+    objc-classes:    [ BCBatteryCenterPrototypingDomain, BCBatteryDevice, BCBatteryDeviceController, 
+                       _BCPowerSourceController ]
+...

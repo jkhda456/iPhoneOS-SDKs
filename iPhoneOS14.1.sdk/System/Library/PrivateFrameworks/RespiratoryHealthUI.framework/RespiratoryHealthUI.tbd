@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           84A077EA-BD8B-3D87-915C-8F77C560C999
+  - target:          arm64e-ios
+    value:           CBBB0B9C-3E40-3209-8612-C338521076EF
+install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealthUI.framework/RespiratoryHealthUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ HKRPOnboardingPairViewController, HKRPOnboardingSettingsViewController, 
+                       HKRPOnboardingViewControllerFactory, HKRPWatchAppInstaller, 
+                       RespiratoryHealthHeroView ]
+...

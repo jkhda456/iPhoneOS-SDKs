@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2DF2B550-71B8-3ED6-91A5-E7D64BB8876B
+  - target:          arm64e-ios
+    value:           98EF3C3A-CDB8-35F7-855A-7C610013E23D
+install-name:    '/System/Library/PrivateFrameworks/RemoteHID.framework/RemoteHID'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RemoteHIDLog, _RemoteHIDLogPackets, _RemoteHIDVersionNumber, 
+                       _RemoteHIDVersionString ]
+    objc-classes:    [ HIDRemoteDevice, HIDRemoteDeviceAACPServer, HIDRemoteDeviceServer ]
+...

@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           723180DF-F885-3D68-8E01-E218CA82EC17
+install-name:    '/System/Library/PrivateFrameworks/BrightnessControl.framework/BrightnessControl'
+exports:
+  - targets:         [ arm64-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BCAppleBacklightBrtControlGetRegistryID, _BCBrtControlCopyAvailableDisplays, 
+                       _BCBrtControlCopyProperty, _BCBrtControlGetCallbackQueue, 
+                       _BCBrtControlGetCapabilities, _BCBrtControlGetContainerID, 
+                       _BCBrtControlGetHash, _BCBrtControlGetID, _BCBrtControlGetIsValid, 
+                       _BCBrtControlGetMaxNits, _BCBrtControlGetMinNits, _BCBrtControlGetMultipleControlEnabled, 
+                       _BCBrtControlGetNits, _BCBrtControlIsEqual, _BCBrtControlNewMonitorForAllDisplaysWithHandler, 
+                       _BCBrtControlSetCallbackQueue, _BCBrtControlSetDisplayInvalidHandler, 
+                       _BCBrtControlSetMultipleControlEnabled, _BCBrtControlSetNits, 
+                       _BCBrtControlSetNitsAsync, _BCBrtControlSetProperty, _BCBrtControlSetPropertyAync, 
+                       _BCBrtMonitorCancel, _BrightnessControlVersionNumber, _BrightnessControlVersionString, 
+                       _DEFAULT_POTENTIAL_HEADROOM, _DEFAULT_REFERENCE_HEADROOM, 
+                       __COREBRIGHTNESS_LOG_DEFAULT, __freeBlockWrapper, __iokitCallback, 
+                       __newBlockWrapper, _copyNitsToUserMapping, _displays, _getUserForNits, 
+                       _init_default_corebrightness_log, _main, _scaleForExponent, 
+                       _setBrightnessOnAllDisplays ]
+    objc-classes:    [ BCAppleBacklightBrtControl, BCBrtControl, BCBrtMonitor, BCHIDBrtControl, 
+                       BCVirtualBrtControl ]
+    objc-ivars:      [ BCBrtControl._capabilities, BCBrtControl._cfContainerID, BCBrtControl._containerID, 
+                       BCBrtControl._id, BCBrtControl._isValid, BCBrtControl._logHandle, 
+                       BCBrtControl._maxNits, BCBrtControl._minNits, BCBrtControl._queue ]
+...

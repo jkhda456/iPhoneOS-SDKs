@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AB01F880-0BDD-3931-AACB-0D7E6FCEE0D0
+  - target:          arm64e-ios
+    value:           E2C9D7BE-D31C-37C0-888D-C96C79359C88
+install-name:    '/System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ITIdleTimerServicesConfigurationErrorDomain, _ITIdleTimerServicesErrorConfigurationDescriptionKey, 
+                       _ITIdleTimerServicesErrorReasonKey, _ITIdleTimerStateServiceDomain, 
+                       _ITIdleTimerStateServiceMachName, _ITIdleTimerStateServiceName, 
+                       _ITLogIdleTimer, _ITLoggingSubsystem, _IdleTimerServicesVersionNumber, 
+                       _IdleTimerServicesVersionString ]
+    objc-classes:    [ ITIdleTimerAssertion, ITIdleTimerConfiguration, ITIdleTimerServiceProvider, 
+                       ITIdleTimerState, ITIdleTimerStateClient, ITIdleTimerStateModel, 
+                       ITIdleTimerStateServer, ITIdleTimerStateService ]
+...

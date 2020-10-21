@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CE75F83D-281E-35A7-8C44-FD1B563E451D
+  - target:          arm64e-ios
+    value:           67CCE0B1-FA1D-3372-AFF5-C7401042F48F
+install-name:    '/System/Library/PrivateFrameworks/BrailleTranslation.framework/BrailleTranslation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BRLTFlagsForMode, _BRLTLog, _BRLTModeDescription, _BRLTModeForFlags, 
+                       _BRLTSConnectionHasEntitlement, _BRLTTranslationServiceClientInterface, 
+                       _BRLTTranslationServiceInterface, _BRLTTranslatorClassIsValid, 
+                       _kBRLTTranslationServiceIdentifier, _kBTDuxburyServiceIdentifier, 
+                       _kBTLiblouisServiceIdentifier ]
+    objc-classes:    [ BRLTBrailleBuffer, BRLTBrailleChar, BRLTBrailleStateManager, 
+                       BRLTBrailleString, BRLTSLoopbackTranslationService, BRLTSTranslationService, 
+                       BRLTSTranslator, BRLTScriptString, BRLTTable, BRLTTableEnumerator, 
+                       BRLTTokenRange, BRLTTranslationParameters, BRLTTranslationService ]
+...

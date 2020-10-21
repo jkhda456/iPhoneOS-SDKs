@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2FE70E07-6329-39D6-83B2-8776AB38BE2D
+  - target:          armv7s-ios
+    value:           A0B686C4-6227-3BB7-AAE0-4E62E938B602
+  - target:          arm64-ios
+    value:           3C84D0FC-BFC7-3B17-8B31-F90D443E371E
+  - target:          arm64e-ios
+    value:           EF3AC4CD-2DDF-3B4F-B50A-09B0F4283E41
+install-name:    '/System/Library/PrivateFrameworks/WebContentAnalysis.framework/WebContentAnalysis'
+current-version: 12.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WFUserWhiteListAllowedSitesAddress, _WFUserWhiteListAllowedSitesBookmarkPath, 
+                       _WFUserWhiteListAllowedSitesPageTitle ]
+    objc-classes:    [ WFUserSettings, WebFilterEvaluator ]
+    objc-ivars:      [ WebFilterEvaluator._buffer, WebFilterEvaluator._filterState, 
+                       WebFilterEvaluator._pageTitle, WebFilterEvaluator._url ]
+...

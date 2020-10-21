@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3F13F68B-0A65-3815-BE7D-99490DC14152
+  - target:          armv7s-ios
+    value:           51F5676D-F665-3B7C-8F32-BEF2728ADC8F
+  - target:          arm64-ios
+    value:           84490A3E-6A7E-323A-B13D-3F54FE170ED4
+  - target:          arm64e-ios
+    value:           9573975A-CC48-3AEA-B355-4A5FC011321D
+install-name:    '/System/Library/PrivateFrameworks/SpotlightUI.framework/SpotlightUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _SPUITableViewSectionCornerRadius, _SpotlightScrollSearchResults, 
+                       _SpotlightShowAndScrollCards, ___PPTAppPredictionsDidUpdateResult, 
+                       ___PPTQueryPredictionsDidUpdateResult, ___PPTSearchTableDidUpdateResult, 
+                       _zkwExpandedPreference ]
+    objc-classes:    [ DECConsumerHelper, SPUICloudDocumentImage, SPUIFeedbackManager, 
+                       SPUIHeaderBlurView, SPUILockScreenFooterView, SPUIMediaArtworkImage, 
+                       SPUINavigationBar, SPUIPeekDelegate, SPUIPeekViewController, 
+                       SPUIReplicatorView, SPUISearchFirstTimeViewController, SPUISearchHeader, 
+                       SPUISearchModel, SPUISearchResultHandler, SPUISearchTableHeaderView, 
+                       SPUISearchViewController, SPUITableViewController, SPUITextField, 
+                       SPZKWSearchQuery ]
+    objc-ivars:      [ SPUISearchModel._cacheResultLock, SPUISearchModel._cachedConsumer, 
+                       SPUISearchModel._cachedResultImages, SPUISearchModel._deferredResults, 
+                       SPUISearchModel._isDeferredQUeryComplete, SPUISearchModel._loadOperationQueue, 
+                       SPUISearchModel._prefetchOperationQueue, SPUISearchModel._waitOperation ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SPBuildApplications, _SPCopyVisibleApps, _SPFastApplicationsGet, 
+                       _SPFastApplicationsGetNoBuild, _SPFastApplicationsSet, _SPFastHiddenAppsGetNoBuild, 
+                       _SPSetAppUpdateBlock, _SPSpotlightAppBundleId, _SPSpotlightFocusConstant, 
+                       _SPSpotlightHeightOfBarConstant, _SPTransactionCreate, _SPTransactionDone, 
+                       _SPUIBackgroundTransitionContext, _SPUIClientSceneDistanceSetting, 
+                       _SPUIClientSceneHeaderContextIDSetting, _SPUIClientSceneHeaderRenderIDSetting, 
+                       _SPUIDismissalTransitionContext, _SPUIInitLogging, _SPUILegibilitySettingsSetting, 
+                       _SPUILogSubsystem, _SPUIPresentationIntentSetting, _SPUIPresentationSourceSetting, 
+                       _SPUIRemoteSearchIgnoreOcclusionsReason, _SPUIRemoteViewPresentationIntentDescription, 
+                       _SPUIRemoteViewPresentationSourceDescription, _SPUIRevealProgressSetting, 
+                       _SPUISearchBarAnimatedConstant, _SPUISearchBarScrollProgressConstant, 
+                       _SPUIWindowLookPref, _SPUTIAppType, _SpotlightBundleID, _SpotlightUIVersionNumber, 
+                       _SpotlightUIVersionString, _searchScreenSceneIdentifier, _spuiLogHandles, 
+                       _suiteName ]
+    objc-classes:    [ SPApplication, SPUIAppService, SPUIDefaults, SPUILegibilitySceneSettings, 
+                       SPUIMutableLegibilitySceneSettings, SPUIMutableSearchBarSceneSettings, 
+                       SPUIMutableSearchViewSceneSettings, SPUIRemoteSearchViewController, 
+                       SPUISearchBarClientSceneSettings, SPUISearchBarController, 
+                       SPUISearchBarMutableClientSceneSettings, SPUISearchBarSceneSettings, 
+                       SPUISearchBarSceneSpecification, SPUISearchBarTransitionContext, 
+                       SPUISearchViewClientSceneSettings, SPUISearchViewMutableClientSceneSettings, 
+                       SPUISearchViewSceneSettings, SPUISearchViewSceneSpecification, 
+                       SPUISearchViewSceneTransitionContext, SPUISpotlightRemoteViewController, 
+                       SPUISpotlightSceneManager, SPXPCConnection, SPXPCMessage, 
+                       SPXPCServer ]
+...

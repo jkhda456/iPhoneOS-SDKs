@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           74F5484B-0AED-347A-8357-447B6E809604
+  - target:          armv7s-ios
+    value:           6214C456-5F45-39B2-8D8F-8CD3269D961B
+  - target:          arm64-ios
+    value:           42E47468-F2F9-3902-960F-AF8300AD887C
+  - target:          arm64e-ios
+    value:           1CBE1410-D426-330A-80E1-CAAB03BDD65C
+install-name:    '/System/Library/PrivateFrameworks/FindMyDeviceUI.framework/FindMyDeviceUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ FMDUIFMIPiCloudSettingsViewController ]
+...

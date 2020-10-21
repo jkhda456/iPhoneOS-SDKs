@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           26333645-A172-3E7F-A0EE-EC2BA3331ACF
+  - target:          armv7s-ios
+    value:           2D8A30C9-96D1-3E37-8940-1897666C71A9
+  - target:          arm64-ios
+    value:           6D0D068B-A7E4-3345-9304-5F949D2F3664
+  - target:          arm64e-ios
+    value:           33684E36-82C1-3AF0-AFF2-A7A4FB7CABB0
+install-name:    '/System/Library/PrivateFrameworks/NanoAudioControl.framework/NanoAudioControl'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ NACAudioRoute, NACDaemonServer, NACProxyVolumeControlTarget, 
+                       NACRoutingController, NACVolumeController, NACXPCServer ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           ED26EBA2-9CA9-3F63-B594-8AEF414F27D1
+  - target:          arm64e-ios
+    value:           3A948102-810F-3DD1-ABF3-EDEC8077DDCB
+install-name:    '/System/Library/PrivateFrameworks/AccessoryAssistiveTouch.framework/AccessoryAssistiveTouch'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AccessoryAssistiveTouchVersionNumber, _AccessoryAssistiveTouchVersionString ]
+    objc-classes:    [ ACCAssistiveTouchAccessory, ACCAssistiveTouchProvider ]
+...

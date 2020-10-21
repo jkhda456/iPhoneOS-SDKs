@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FA47D836-4A5C-3557-9E6C-BE6679725E5E
+  - target:          arm64e-ios
+    value:           CF1CD47A-57F9-3A4D-82F2-82FA0698B79A
+install-name:    '/System/Library/PrivateFrameworks/IconServices.framework/IconServices'
+current-version: 440.23
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __ISIconDataForResourceProxy, __ISInvalidateCacheEntriesForBundleIdentifier, 
+                       __ISPrimaryIconDataForApplicationProxy, _kISIconDecorationAliasType, 
+                       _kISIconDecorationBadgeType, _kISIconDecorationCautionAlertType, 
+                       _kISIconDecorationDropFolderBadgeType, _kISIconDecorationEmbossType, 
+                       _kISIconDecorationLockedBadgeType, _kISIconDecorationNewFolderType, 
+                       _kISIconDecorationPositionType, _kISIconDecorationPositionTypeCenter, 
+                       _kISIconDecorationPositionTypeLeadingBottom, _kISIconDecorationPositionTypeTrailingBottom, 
+                       _kISIconDecorationPrivateFolderBadgeType, _kISIconDecorationReadOnlyFolderBadgeType, 
+                       _kISIconDecorationSystemType, _kISIconDecorationType, _kISIconDecorationUnsupportedBadgeType, 
+                       _kISImageDescriptorActivity, _kISImageDescriptorBadgedDocumentScalableSize, 
+                       _kISImageDescriptorBadgedDocumentSize, _kISImageDescriptorCarLauncher, 
+                       _kISImageDescriptorCarNotification, _kISImageDescriptorCustomDocumentCompact, 
+                       _kISImageDescriptorCustomDocumentRegular, _kISImageDescriptorCustomDocumentScalableSize, 
+                       _kISImageDescriptorCustomDocumentSize, _kISImageDescriptorCustomDocumentTable, 
+                       _kISImageDescriptorHomeScreen, _kISImageDescriptorMessagesExtensionBadge, 
+                       _kISImageDescriptorMessagesExtensionLauncher, _kISImageDescriptorMessagesExtensionStatus, 
+                       _kISImageDescriptorNotification, _kISImageDescriptorSpotlight, 
+                       _kISImageDescriptorTableUIName, _kISPrimaryResourceKey ]
+    objc-classes:    [ ISAssetCatalogResource, ISCompositor, ISGenericRecipe, ISHintedRect, 
+                       ISIcon, ISIconCacheIOS, ISIconDecoration, ISIconLayer, ISIconObserver, 
+                       ISIconResourceLocator, ISIconSpecification, ISIconTypeResourceLocator, 
+                       ISImage, ISImageCache, ISImageDescriptor, ISSymbolImageDescriptor ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6E4B8485-C0FB-3BF9-8C9B-364B1A4D6E1D
+  - target:          arm64e-ios
+    value:           25892EF2-8431-3A3F-8956-826BD2B2283C
+install-name:    '/System/Library/PrivateFrameworks/AdAnalytics.framework/AdAnalytics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AdAnalyticsErrorDomain, _AdAnalyticsVersionNumber, _AdAnalyticsVersionString ]
+    objc-classes:    [ AdAnalyticsCommon, AdAnalyticsEventInfo, AdAnalyzer ]
+...

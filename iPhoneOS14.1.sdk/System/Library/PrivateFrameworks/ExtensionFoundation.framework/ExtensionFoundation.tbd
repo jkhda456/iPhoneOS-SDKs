@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FA588EFB-C22E-369D-A185-454D6C830FE4
+  - target:          arm64e-ios
+    value:           263A7DC3-7C24-364A-99E5-110924D22D10
+install-name:    '/System/Library/PrivateFrameworks/ExtensionFoundation.framework/ExtensionFoundation'
+current-version: 17.3
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __EXDefaultLog, __kEXCatalystSDKVariantKey, __kEXConcreteExtensionKey ]
+    objc-classes:    [ EXCacheBuilder, EXDefaults, EXEnumerator ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A933C757-DC1C-3A91-B76E-13B9E95C8530
+  - target:          arm64e-ios
+    value:           9A4FD26F-E57D-3C6F-82F9-18A2DD6E840C
+install-name:    '/System/Library/PrivateFrameworks/PersonalAudio.framework/PersonalAudio'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PAAudioRouteBluetoothProductIdentifierAirPods, _PAAudioRouteBluetoothProductIdentifierAirPods2, 
+                       _PAAudioRouteBluetoothProductIdentifierAirPodsPro, _PAAudioRouteBluetoothProductIdentifierBeatsSolo, 
+                       _PAAudioRouteBluetoothProductIdentifierBeatsSoloPro, _PAAudioRouteBluetoothProductIdentifierBeatsStudio, 
+                       _PAAudioRouteBluetoothProductIdentifierBeatsStudio2, _PAAudioRouteBluetoothProductIdentifierBeatsX, 
+                       _PAAudioRouteBluetoothProductIdentifierPowerbeats, _PAAudioRouteBluetoothProductIdentifierPowerbeats2, 
+                       _PAAudioRouteBluetoothProductIdentifierPowerbeats4, _PAAudioRouteBluetoothProductIdentifierPowerbeatsPro, 
+                       _PAPresetAdjustmentSpeechModeKey, _PersonalAudioVersionNumber, 
+                       _PersonalAudioVersionString, _kAdjust0DB, _paAnyRouteSupportsAudioAccommodations, 
+                       _paAvailableBluetoothDevicesSupportingTransparencyAccommodations, 
+                       _paBundle, _paCurrentBluetoothDeviceSupportingANCAndHeadphoneAccommodations, 
+                       _paCurrentBluetoothDeviceSupportingTransparencyAccommodations, 
+                       _paCurrentRouteSupportingAudioAccommodations, _paCurrentRouteSupportingTransparencyAccommodations, 
+                       _paCurrentRouteSupportsAudioAccommodations, _paCurrentRouteSupportsTransparencyAccommodations, 
+                       _paDescriptionForLevel, _paDescriptionForShape, _paHeadphoneRouteAvailable, 
+                       _paKeyFromNodeParameters, _paLocString, _paPairedDeviceSupportsTransparencyAccommodations, 
+                       _paPairedDevicesSupportingTransparencyAccommodations, _paProductsIdentifiersSupportingAudioAccommodations, 
+                       _paProductsIdentifiersSupportingTransparencyAccommodations, 
+                       _paRouteOfSubtypeOrProduct, _paRouteSubtypesSupportingAudioAccommodations, 
+                       _paRoutesOfSubtypeOrProduct ]
+    objc-classes:    [ PAAccessoryManager, PAAudiogramUtilities, PAConfiguration, 
+                       PADatabaseManager, PAEnrollment, PAEnrollmentNode, PASettings, 
+                       PAStimulus, PersonalAudioSettings ]
+...

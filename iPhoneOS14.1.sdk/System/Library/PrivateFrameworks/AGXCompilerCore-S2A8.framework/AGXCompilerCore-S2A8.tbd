@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           422911AA-B5F7-3FD1-84D6-3F30FBD79378
+  - target:          arm64e-ios
+    value:           40690E3C-201B-378C-A2C8-87EF049728B6
+install-name:    '/System/Library/PrivateFrameworks/AGXCompilerCore-S2A8.framework/AGXCompilerCore-S2A8'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GLCompilerBuildRequest, _GLCompilerCreate, _GLCompilerDelete, 
+                       _GLCompilerLogBuildRequest, _GLCompilerReleaseReply, _MTLCompilerBuildRequest, 
+                       _MTLCompilerBuildRequestWithOptions, _MTLCompilerCreate, _MTLCompilerDelete, 
+                       _MTLCompilerReleaseReply ]
+...

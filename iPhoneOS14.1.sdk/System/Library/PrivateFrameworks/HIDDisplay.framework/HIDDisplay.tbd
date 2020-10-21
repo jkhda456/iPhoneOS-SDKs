@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           345E195B-E1A9-3841-A3FE-3823A00C2D2B
+  - target:          arm64e-ios
+    value:           C095E36B-A42F-35A8-83AB-0AD1EA6FDA0F
+install-name:    '/System/Library/PrivateFrameworks/HIDDisplay.framework/HIDDisplay'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HIDDisplayCopyPreset, _HIDDisplayCopyPresetUniqueID, _HIDDisplayCreateDeviceManagementInterfaceWithContainerID, 
+                       _HIDDisplayCreateDeviceManagementInterfaceWithService, _HIDDisplayCreateDeviceWithContainerID, 
+                       _HIDDisplayCreateIOReportingInterfaceWithContainerID, _HIDDisplayCreatePresetInterfaceWithContainerID, 
+                       _HIDDisplayCreatePresetInterfaceWithService, _HIDDisplayCreateUserAdjustmentInterfaceWithContainerID, 
+                       _HIDDisplayCreateUserAdjustmentInterfaceWithService, _HIDDisplayDeviceManagementFactoryReset, 
+                       _HIDDisplayDeviceManagementGetSecurityToken, _HIDDisplayDeviceManagementSetFactoryResetData, 
+                       _HIDDisplayGetActivePresetIndex, _HIDDisplayGetContainerID, 
+                       _HIDDisplayGetFactoryDefaultPresetIndex, _HIDDisplayGetPresetCapabilities, 
+                       _HIDDisplayGetPresetCount, _HIDDisplayIOReportingActivate, 
+                       _HIDDisplayIOReportingCancel, _HIDDisplayIOReportingSetCancelHandler, 
+                       _HIDDisplayIOReportingSetDispatchQueue, _HIDDisplayIOReportingSetInputDataHandler, 
+                       _HIDDisplayIOReportingSetOutputData, _HIDDisplayIsPresetValid, 
+                       _HIDDisplayIsPresetWritable, _HIDDisplayLog, _HIDDisplaySetActivePresetIndex, 
+                       _HIDDisplaySetPreset, _HIDDisplayUserAdjustmentCopyData, _HIDDisplayUserAdjustmentInvalidate, 
+                       _HIDDisplayUserAdjustmentIsValid, _HIDDisplayUserAdjustmentSetData, 
+                       _HIDDisplayVersionNumber, _HIDDisplayVersionString, _getUnicharStringFromData, 
+                       _kHIDDisplayPresetFieldDataBlockOneKey, _kHIDDisplayPresetFieldDataBlockOneLengthKey, 
+                       _kHIDDisplayPresetFieldDataBlockTwoKey, _kHIDDisplayPresetFieldDataBlockTwoLengthKey, 
+                       _kHIDDisplayPresetFieldDescriptionKey, _kHIDDisplayPresetFieldNameKey, 
+                       _kHIDDisplayPresetFieldValidKey, _kHIDDisplayPresetFieldWritableKey, 
+                       _kHIDDisplayPresetUniqueIDKey, _kHIDDisplayUserAdjustmentDescriptionKey, 
+                       _kHIDDisplayUserAdjustmentInformationKey ]
+    objc-classes:    [ HIDDisplayDeviceManagementInterface, HIDDisplayIOReportingInterface, 
+                       HIDDisplayInterface, HIDDisplayPresetData, HIDDisplayPresetInterface, 
+                       HIDDisplayUserAdjustmentInterface ]
+...

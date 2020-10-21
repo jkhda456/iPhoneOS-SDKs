@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           93D7CF38-A978-3B2F-B5DC-99A655F7FB45
+  - target:          arm64e-ios
+    value:           740A00DC-6828-3809-B4AA-EBD32DD24148
+install-name:    '/System/Library/PrivateFrameworks/WorkflowUIServices.framework/WorkflowUIServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WFCGColorIsPerceivedLight, _WFCGColorPerceivedLightness, 
+                       _WFCreateShortcutsSmallWidgetConfigurationIntent, _WFCreateShortcutsWidgetConfigurationIntent, 
+                       _WFLogCategoryWidgetConfiguration, _WFWidgetColorsFromBundle, 
+                       _WFWidgetConfigurationHostXPCInterface, _WFWidgetConfigurationServiceXPCInterface, 
+                       _WFWidgetGetDefaultColors, _WFWidgetSizeClassGetDescription ]
+    objc-classes:    [ WFWidgetConfigurationCardView, WFWidgetConfigurationContainerView, 
+                       WFWidgetConfigurationOptions, WFWidgetConfigurationRequest, 
+                       WFWidgetConfigurationResponse, WFWidgetConfigurationView, 
+                       WFWidgetConfigurationViewController, WFWidgetOptions, WFWidgetViewController, 
+                       WFWorkflowProgressView ]
+...

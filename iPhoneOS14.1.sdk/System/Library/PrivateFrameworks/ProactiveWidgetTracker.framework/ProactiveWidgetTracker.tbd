@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C681FB84-693C-3A00-AB68-3915F1A62515
+  - target:          armv7s-ios
+    value:           6DE401E9-C86F-3884-AAB0-D99BC42F1D7B
+  - target:          arm64-ios
+    value:           A9CBF5A4-A64E-3784-A4ED-C78F80071472
+  - target:          arm64e-ios
+    value:           4D3C45FA-8F5D-34D1-B9F9-E3C658B555D2
+install-name:    '/System/Library/PrivateFrameworks/ProactiveWidgetTracker.framework/ProactiveWidgetTracker'
+current-version: 294.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ProactiveWidgetTrackerVersionNumber, _ProactiveWidgetTrackerVersionString ]
+    objc-classes:    [ _PWTWidgetEventTracker ]
+...

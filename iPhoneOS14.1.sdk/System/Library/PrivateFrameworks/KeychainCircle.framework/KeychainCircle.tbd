@@ -1,0 +1,55 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6850E032-87EC-3C18-B4E6-63B15FB04917
+  - target:          armv7s-ios
+    value:           376892FB-6FE9-3563-B6B7-E9676FE48872
+  - target:          arm64-ios
+    value:           E32525B8-6CA0-39F5-A68C-5E981578D8EC
+  - target:          arm64e-ios
+    value:           21C1CF15-440E-3E5A-9EAD-0B95931D7898
+install-name:    '/System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ApplyScopeDictionaryForID, _ApplyScopeListForID, _ApplyScopeListForIDC, 
+                       _CFDataCreateWithInitializer, _CFDataCreateWithRandomBytes, 
+                       _CFDictionaryCopyCompactDescription, _CFDictionaryCopySuperCompactDescription, 
+                       _CFStringArrayPerformWithDelimiterWithDescription, _CFStringArrayPerformWithDescription, 
+                       _CFStringCompareSafe, _CFStringPerformWithCString, _CFStringPerformWithCStringAndLength, 
+                       _CFStringPerformWithUTF8CFData, _CFStringSetPerformWithDescription, 
+                       _CopyCurrentScopePlist, _CoreCryptoError, _GetShortDateFormatter, 
+                       _GetShortDateFormatterQueue, _IsScopeActive, _IsScopeActiveC, 
+                       _KCInitialMessageDataReadFrom, _KCJoiningErrorCreate, _KCJoiningOctagonPiggybackingEnabled, 
+                       _KCPairingIntent_Type_None, _KCPairingIntent_Type_SilentRepair, 
+                       _KCPairingIntent_Type_UserDriven, _KCSetJoiningOctagonPiggybackingEnabled, 
+                       _KeychainCircleVersionNumber, _KeychainCircleVersionString, 
+                       _OSStatusError, _PerformWithBuffer, _PerformWithBufferAndClear, 
+                       _RequirementError, _SecCFCalendarDoWithZuluCalendar, _SecCopyHomeURL, 
+                       _SecCopyURLForFileInKeychainDirectory, _SecCopyURLForFileInManagedPreferencesDirectory, 
+                       _SecCopyURLForFileInPreferencesDirectory, _SecCopyURLForFileInRevocationInfoDirectory, 
+                       _SecCopyURLForFileInSystemKeychainDirectory, _SecCopyURLForFileInUserCacheDirectory, 
+                       _SecGetDebugDescriptionFormatOptions, _SecLogAPICreate, _SetCustomHomePath, 
+                       _SetCustomHomeURL, _SetCustomHomeURLString, _WithPathInKeychainDirectory, 
+                       _WithPathInRevocationInfoDirectory, _WithPathInUserCacheDirectory, 
+                       ___security_debug_init, _api_trace, _decode_initialmessage, 
+                       _decode_seq_data_data, _decode_seq_string_data, _decode_version1, 
+                       _decode_version2, _encode_initialmessage, _encode_initialmessage_version1, 
+                       _encode_initialmessage_version2, _encode_seq_data_data, _encode_seq_string_data, 
+                       _extractStartFromInitialMessage, _kAPIScope, _kKCPairingChannelErrorDomain, 
+                       _kSecDebugFormatOption, _kStringAll, _kStringNegate, _kcder_decode_data, 
+                       _kcder_decode_data_nocopy, _kcder_decode_string, _kcder_encode_data, 
+                       _kcder_encode_data_optional, _kcder_encode_raw_octet_space, 
+                       _kcder_encode_string, _kcder_sizeof_data, _kcder_sizeof_string, 
+                       _pairingCompression, _pairingScope, _secLogDisable, _secLogEnable, 
+                       _secLogEnabled, _secLogObjForCFScope, _secLogObjForScope, 
+                       _sizeof_initialmessage, _sizeof_initialmessage_version1, _sizeof_initialmessage_version2, 
+                       _sizeof_seq_data_data, _sizeof_seq_string_data, _withStringOfAbsoluteTime ]
+    objc-classes:    [ KCAESGCMDuplexSession, KCInitialMessageData, KCJoiningAcceptAccountCircleDelegate, 
+                       KCJoiningAcceptSession, KCJoiningMessage, KCJoiningRequestAccountCircleDelegate, 
+                       KCJoiningRequestCircleSession, KCJoiningRequestSecretSession, 
+                       KCPairingChannel, KCPairingChannelContext, KCSRPClientContext, 
+                       KCSRPContext, KCSRPServerContext ]
+    objc-ivars:      [ KCInitialMessageData._prepareMessage ]
+...

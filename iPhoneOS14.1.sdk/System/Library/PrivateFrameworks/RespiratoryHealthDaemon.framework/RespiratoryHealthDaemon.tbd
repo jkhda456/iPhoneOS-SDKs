@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2F4ED382-FBD7-32A4-BA57-BEBF38B91DFA
+  - target:          arm64e-ios
+    value:           3B7C391C-8688-3296-8434-4B0D92D5A7FC
+install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealthDaemon.framework/RespiratoryHealthDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ HDRPOxygenSaturationSessionServer, HDRPRespiratoryDailyAnalytics, 
+                       HDRespiratoryDaemonPlugin, HDRespiratoryProfileExtension ]
+...

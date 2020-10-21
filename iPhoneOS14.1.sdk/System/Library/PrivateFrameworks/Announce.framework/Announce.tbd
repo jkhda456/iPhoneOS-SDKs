@@ -1,0 +1,93 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D1B0A956-47A4-3B71-B3BA-13345F47CB49
+  - target:          arm64e-ios
+    value:           5B02CA16-911C-34AD-B010-D3EE0D949164
+install-name:    '/System/Library/PrivateFrameworks/Announce.framework/Announce'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ANAnnounceIDSServiceName, _ANAnnounceRapportServiceType, 
+                       _ANAnnouncementIDKey, _ANAnnouncementInfoAnnouncementIDKey, 
+                       _ANAnnouncementInfoPlaybackFinishedDateKey, _ANAnnouncementInfoPlaybackFinishedMachTimeKey, 
+                       _ANAnnouncementInfoPlaybackIsActiveKey, _ANAnnouncementInfoPlaybackStartDateKey, 
+                       _ANAnnouncementInfoPlaybackStartMachTimeKey, _ANAnnouncementPlayedAnnouncementID, 
+                       _ANAnnouncementPlayedEventID, _ANAnnouncementPlayedSenderType, 
+                       _ANAnnouncerIDKey, _ANAnnouncerIsAccessoryKey, _ANAnnouncerNameKey, 
+                       _ANAnnouncerUserIDKey, _ANAudioFileDurationKey, _ANAudioFilePathKey, 
+                       _ANAudioFileURLKey, _ANBasePathComponent, _ANCategoryAnnounce, 
+                       _ANDefaultAllowAnnouncementToAccessoryPhysicallyInAnnouncementTargetHome, 
+                       _ANDefaultAnalyticsDailyBackgroundActivity, _ANDefaultAnalyticsDailyBackgroundActivityTimestamp, 
+                       _ANDefaultAnnouncementDeadline, _ANDefaultAnnouncementEntryAgeLimit, 
+                       _ANDefaultAnnouncementPlaybackMinimumDelay, _ANDefaultAnnouncementPreviousGoesToPreviousMS, 
+                       _ANDefaultAnnouncementReceiptExpiration, _ANDefaultAnnouncementSilenceBetweenTracksMS, 
+                       _ANDefaultAnnouncementStartToneTrim, _ANDefaultAnnouncementStorageAgeLimit, 
+                       _ANDefaultAnnouncementTransitionToneTrim, _ANDefaultAnnouncementUserNotificationExpiration, 
+                       _ANDefaultAudioAccessoryDBBoost, _ANDefaultAudioSessionDeactivationTimeout, 
+                       _ANDefaultAudioSessionResumeAfterInterruptionDelay, _ANDefaultDailyHomeAnnouncementsCount, 
+                       _ANDefaultForceAllowAnnounceForAllHomePods, _ANDefaultForceAllowAnnounceForAllUsers, 
+                       _ANDefaultForceAnnounceNotificationsForAllUsers, _ANDefaultForceDeliveryFailure, 
+                       _ANDefaultForceSendFailure, _ANDefaultIDSServerMessageTimeout, 
+                       _ANDefaultKeepReceivedAudioFiles, _ANDefaultKeepSentAudioFiles, 
+                       _ANDefaultNormalizeAudio, _ANDefaultPlaySoundOnCriticalFailure, 
+                       _ANDefaultPlaybackStatusReturnsImmediately, _ANDefaultRapportScanDuration, 
+                       _ANDefaultRapportScanInterval, _ANDefaultRapportScanTimeout, 
+                       _ANDefaultRapportSendMessageTimeout, _ANDefaultRelayAnnouncementsThroughResident, 
+                       _ANDefaultResumePlaybackAfterInterruptionTimeout, _ANDefaultSendAnalytics, 
+                       _ANDefaultSendTransactionActiveMemoryTimeout, _ANDefaultSiriInterruptionStopsPlayback, 
+                       _ANDefaultUseCoordinatedAlerts, _ANDefaultUseOriginalAudioFileOnProcessFailure, 
+                       _ANDefaultUseRapport, _ANDefaultsDomain, _ANDeviceClassKey, 
+                       _ANErrorDomainAudioPlayer, _ANErrorDomainAudioProcessing, 
+                       _ANErrorDomainIDSConnection, _ANErrorDomainPlaybackSession, 
+                       _ANErrorDomainRapportConnection, _ANErrorDomainServer, _ANErrorDomainService, 
+                       _ANGroupIDKey, _ANHomeIDKey, _ANHomeNameKey, _ANIndexKey, 
+                       _ANNotificationCenterBundleIdentifier, _ANPlayedKey, _ANProductTypeKey, 
+                       _ANReceivedPathComponent, _ANRoomsKey, _ANSensitiveLocalizedString, 
+                       _ANSensitiveLocalizedStringWithDefaultValue, _ANSensitiveLocalizedStringWithFormat, 
+                       _ANSentPathComponent, _ANSettingKeyPathAnnounceEnabled, _ANSettingKeyPathAnnounceGroup, 
+                       _ANSubtitleKey, _ANTranscriptionTextKey, _ANUserInfoFailedDeliveryAnnouncementKey, 
+                       _ANUserInfoLatestAnnouncementIDKey, _ANUserInfoNotificationTypeKey, 
+                       _ANUserInfoOldestAnnouncementKey, _ANUserInfoOldestUnreadAnnouncementKey, 
+                       _ANVolumeControllerUndeterminedVolume, _ANXPCTransactionPendingAnnouncements, 
+                       _ANXPCTransactionSendingAnnouncements, _ANZonesKey, _AnnounceVersionNumber, 
+                       _AnnounceVersionString, _AnnouncementDailyAnalyticsIdentifier, 
+                       _AnnouncementMessageIdentifier, _IDSLargeFilesTemporaryDirectoryName, 
+                       _MessageVersion, _NSURLUndeterminedAudioDuration, _OutgoingMessageCount, 
+                       _ProcessedAnnouncementsTemporaryDirectoryName, _RapportClient, 
+                       _kANAction, _kANAnnounceMachServiceName, _kANAnnounceStateNotificationKey, 
+                       _kANAnnouncementDataItems, _kANAnnouncementExpiredNotification, 
+                       _kANAnnouncementFile, _kANAnnouncementReceivedNotification, 
+                       _kANAnnouncer, _kANAudioTranscription, _kANCreationTimestamp, 
+                       _kANData, _kANDataFlags, _kANDataType, _kANDeviceClass, _kANGroupID, 
+                       _kANHomeContextHome, _kANHomeContextRooms, _kANHomeContextZones, 
+                       _kANHomeKitID, _kANHomeName, _kANIDSID, _kANIdentifier, _kANIsAccessory, 
+                       _kANListeners, _kANLocalPlaybackSessionMachServiceName, _kANLocation, 
+                       _kANLocationDevices, _kANLocationFlags, _kANLocationHome, 
+                       _kANLocationRooms, _kANLocationUsers, _kANLocationZones, _kANMessageVersion, 
+                       _kANName, _kANPlaybackDeadline, _kANProductType, _kANRapportID, 
+                       _kANRemotePlaybackSessionMachServiceName, _kANSender, _kANSenderID, 
+                       _kANSenderIDType, _kANSource, _kANStatusFlags, _kANType, _kANUserID, 
+                       _kAnnounceClientIdEntitlement, _kAnnounceCoreAnalyticsPrefix, 
+                       _kAnnounceEntitlement, _kAnnounceSiriIntentBundleId, _kHomeBundleId, 
+                       _kNanoHomeBundleId, _kSiriAssistantBundleId, _kSoundBoardBundleId ]
+    objc-classes:    [ ANAnalytics, ANAnalyticsAssistant, ANAnalyticsDaily, ANAnalyticsDailyAnnouncements, 
+                       ANAnalyticsGroup, ANAnchorTrackPlayer, ANAnnounce, ANAnnounceFeatureStatus, 
+                       ANAnnounceServer, ANAnnounceService, ANAnnounceServiceDestination, 
+                       ANAnnounceServiceListener, ANAnnouncement, ANAnnouncementContext, 
+                       ANAnnouncementCoordinationService, ANAnnouncementDataItem, 
+                       ANAnnouncementManager, ANAnnouncementStatePublisher, ANAudioSessionManager, 
+                       ANCoreAnalytics, ANDefaults, ANDefaultsItem, ANDevice, ANError, 
+                       ANFiles, ANHomeContext, ANHomeManager, ANIDSConnection, ANLocalPlaybackSession, 
+                       ANLocation, ANParticipant, ANPlaybackSessionClient, ANPlaybackSessionServiceListener, 
+                       ANProcessAudio, ANRapportConnection, ANRapportEventStreamHandler, 
+                       ANRemotePlaybackSession, ANSender, ANSenderContext, ANSimpleTrackPlayer, 
+                       ANSpeechUtil, ANTrackPlayer, ANTrackPlayerInfo, ANTransactionInfo, 
+                       ANUserNotificationController, ANVolumeController, ANVolumeUtils, 
+                       ANXPCTransactionManager, _ANBundleHelper ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2576535F-9953-318A-976D-3F6DD0826318
+  - target:          armv7s-ios
+    value:           5ADBF93C-0A33-37DB-A004-17BE43403D45
+  - target:          arm64-ios
+    value:           FEB086E9-A163-3FFE-8F0C-120698657C8D
+  - target:          arm64e-ios
+    value:           37687DCC-8251-3C2B-9D53-1D49A0C1812D
+install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/iWorkImport'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ ___crashreporter_info__ ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CopyHTMLForIWorkDataWithUTI, _CopyHTMLForIWorkDataWithUTIAndPassword, 
+                       _CopyHTMLForIWorkFileAtURL, _CopyHTMLForIWorkFileAtURLWithPassword, 
+                       _IWorkPreviewProcessWithURLAndOptions ]
+...

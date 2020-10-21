@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E22240F3-57B8-3FFB-8BB9-D9E6D60058D6
+  - target:          arm64e-ios
+    value:           78D6FEA2-0318-3D73-821E-58DDD8ABFCB9
+install-name:    '/System/Library/PrivateFrameworks/ReminderMigration.framework/ReminderMigration'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kCalAccountIdentifierDictionaryKey, _kCalAccountTypeDictionaryKey, 
+                       _kCalBackupFileName, _kCalDefaultListName, _kCalLastReminderMigrationCleanupSystemVersionDefaultsKey, 
+                       _kCalLocalAccountName, _kCalMaximumCalendarDirectorySizeAllowedForBackupInBytes, 
+                       _kCalReminderMigrationErrorDomain, _kCalShouldBackupBeforeReminderMigrationDefaultsKey, 
+                       _kCalendarDatabaseCalendarDirectoryRelativeToHome ]
+    objc-classes:    [ CalCalendarDatabaseReminderMigrator, CalDefaultReminderKitDatabaseMigrationContext, 
+                       CalDefaultReminderKitProvider, CalDefaultReminderMigrationDefaultsProvider, 
+                       CalInProcessReminderMigrator, CalReminderMigrationFailure, 
+                       CalReminderMigrationLog ]
+...

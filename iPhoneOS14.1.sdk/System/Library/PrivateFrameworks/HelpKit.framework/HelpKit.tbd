@@ -1,0 +1,52 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8C3B0B09-A233-3E53-8D0A-5DBE7A973C2D
+  - target:          armv7s-ios
+    value:           9A518DC8-9959-3598-8B37-81C70ACB1500
+  - target:          arm64-ios
+    value:           2EA493F1-0A3B-3394-AE23-F2968338C0E3
+  - target:          arm64e-ios
+    value:           E9487F3F-FAF3-3CB4-A535-DE012C2B4D79
+install-name:    '/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ HLPHelpUsageController, HLPURLDataCache, HLPURLDataCacheController, 
+                       HLPURLImageCacheController, HLPURLSession, HLPURLSessionTaskHandlers ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HLPAnalyticsKeyBookID, _HLPAnalyticsKeyBookVersion, _HLPAnalyticsKeyExternalURL, 
+                       _HLPAnalyticsKeyFromTopic, _HLPAnalyticsKeyMode, _HLPAnalyticsKeyProduct, 
+                       _HLPAnalyticsKeyProductVersion, _HLPAnalyticsKeySession, _HLPAnalyticsKeySource, 
+                       _HLPAnalyticsKeyTopic, _HLPAnalyticsNullValue, _HLPAnalyticsSessionCounterContentViewed, 
+                       _HLPAnalyticsViewModeDark, _HLPAnalyticsViewModeLight, _HLPAnalyticsViewModeUnspecified, 
+                       _HLPAnalyticsViewSourceTypeDeepLink, _HLPAnalyticsViewSourceTypeHistoryBack, 
+                       _HLPAnalyticsViewSourceTypeHistoryForward, _HLPAnalyticsViewSourceTypeLanding, 
+                       _HLPAnalyticsViewSourceTypeReload, _HLPAnalyticsViewSourceTypeSearch, 
+                       _HLPAnalyticsViewSourceTypeTOC, _HLPAnalyticsViewSourceTypeTopicLink, 
+                       _HLPAnalyticsViewSourceTypeUndefined, _HLPHelpKitAnalyticsPrefix, 
+                       _HLPLogForCategory, _HelpKitVersionNumber, _HelpKitVersionString, 
+                       _TPSURLSessionAuthInteractivityInteractive, _TPSURLSessionAuthInteractivitySilentOnly, 
+                       _TPSURLSessionAuthInteractivitySilentPreferred, __allowedClassesForIndexArchive, 
+                       _analyticsViewModeFromInterfaceStyle, _gHLPHelpTopicViewSpacerWidth, 
+                       _kHLPHelpBookLocaleListName, _kHLPHelpBookPreferredLanguageOverride, 
+                       _kHLPHelpTableOfContentCellPadding, _kHLPHelpTableOfContentCellSectionImageSize, 
+                       _kHLPHelpTopicViewControllerLastTopicHistoryItem, _kHLPHyphenationFactorAccessibility, 
+                       _kHLPHyphenationFactorDefault, _kHLPReachabilityChangedNotification, 
+                       _kTPSReachabilityChangedNotification ]
+    objc-classes:    [ HLPAnalyticsEvent, HLPAnalyticsEventContentViewed, HLPAnalyticsEventController, 
+                       HLPAnalyticsEventSearchUsed, HLPAnalyticsEventTOCUsed, HLPCommonDefines, 
+                       HLPHelpBookController, HLPHelpItem, HLPHelpLoadingView, HLPHelpLocale, 
+                       HLPHelpLocaleController, HLPHelpSearchIndexController, HLPHelpSearchResult, 
+                       HLPHelpSearchResultTableViewController, HLPHelpSectionItem, 
+                       HLPHelpTableOfContentCell, HLPHelpTableOfContentViewController, 
+                       HLPHelpTopicHistoryItem, HLPHelpTopicItem, HLPHelpTopicViewController, 
+                       HLPHelpViewController, HLPLoadInfo, HLPReachability, HLPReachabilityManager, 
+                       HLPRemoteDataController, TPSCommonDefines, TPSDataCache, TPSDataCacheController, 
+                       TPSFileCacheController, TPSImageCacheController, TPSJSONCacheController, 
+                       TPSReachability, TPSReachabilityManager, TPSStringCacheController, 
+                       TPSURLSessionACAuthContext, TPSURLSessionACAuthHandler, TPSURLSessionHandler, 
+                       TPSURLSessionItem, TPSURLSessionManager, TPSURLSessionTask, 
+                       TPSVideoCacheController ]
+...

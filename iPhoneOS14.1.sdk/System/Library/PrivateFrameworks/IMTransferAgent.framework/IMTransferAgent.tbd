@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           58BC7A85-306F-342D-B01B-A418EA354CDE
+  - target:          armv7s-ios
+    value:           8A154A7C-1528-36A7-BB9C-23636E78B744
+  - target:          arm64-ios
+    value:           DC9A5782-1236-33F7-8B0B-1A51D7D048DD
+  - target:          arm64e-ios
+    value:           B73351F4-7B03-3ECC-9666-9E6DD4B0F9E2
+install-name:    '/System/Library/PrivateFrameworks/IMTransferAgent.framework/IMTransferAgent'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CKNicknameRecordType, _IMOptOutOfOptimizedMadridAttachmentDownloadPath, 
+                       _IMOptOutOfOptimizedMadridAttachmentUploadPath, _IMSetOptOutOfOptimizedMadridAttachmentDownloadPath, 
+                       _IMSetOptOutOfOptimizedMadridAttachmentUploadPath ]
+    objc-classes:    [ FTiMessageRequestMMCSDownloadToken, FTiMessageRequestMMCSUploadToken, 
+                       IMTransferAgentController, IMTransferAgentDeliveryController, 
+                       IMTransferAgentIDSInterface, IMTransferAgentNicknameController, 
+                       IMTransferEncryptionController, IMTransferEncryptionHelpers ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D40DE660-DB35-3415-8854-7F3E060BBAF8
+  - target:          armv7s-ios
+    value:           9CEEDE97-2A52-3BF5-9BED-2764B209CFC9
+  - target:          arm64-ios
+    value:           7575C08F-E282-3561-84A7-49D6493436E1
+  - target:          arm64e-ios
+    value:           2571B492-27DF-3E7F-85AB-1B9A219B4C67
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLVMPlugin.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _cvmsPluginElementBuild, _cvmsPluginServiceInitialize, _cvmsPluginServiceTerminate, 
+                       _glpLLVMCGTopLevel, _oglCodeGenServiceGenerateIR, _oglCodeGenServiceInitialize, 
+                       _oglCodeGenServiceTerminate ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4629F854-F534-3036-9862-6999020D93C9
+  - target:          arm64e-ios
+    value:           BB98D3A3-9E07-31CA-844E-BFB2E779E6B2
+install-name:    '/System/Library/PrivateFrameworks/CardServices.framework/CardServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CardServicesVersionNumber, _CardServicesVersionString ]
+    objc-classes:    [ CRSCardRequest, CRSCardResponse, CRSIdentifiedServiceRegistry, 
+                       CRSRequest, CRSResponse, _CRSCardServiceBundle, _CRSCardServiceBundleManager, 
+                       _CRSPassthroughService, _CRSServiceBundle, _CRSServiceBundleManager ]
+...

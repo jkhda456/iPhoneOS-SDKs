@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F659767F-C9FA-3BB6-8DEA-220E450F3181
+  - target:          arm64e-ios
+    value:           389FB7FD-1D40-3496-9E3F-DF9B87F6EE3E
+install-name:    '/System/Library/PrivateFrameworks/FusionPluginServices.framework/FusionPluginServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FusionPluginServicesVersionNumber, _FusionPluginServicesVersionString, 
+                       _getLogHandle ]
+    objc-classes:    [ FusionPluginServer, HSMessage, HSMessageRequest, HSMessageResponse ]
+...

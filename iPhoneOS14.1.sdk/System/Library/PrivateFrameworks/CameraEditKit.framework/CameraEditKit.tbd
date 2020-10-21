@@ -1,0 +1,48 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           37AA53EA-5240-396D-BDDA-58EF50FFF6FB
+  - target:          arm64e-ios
+    value:           F8ED3F71-AEEA-3011-A4EC-AA7F5462E5CA
+install-name:    '/System/Library/PrivateFrameworks/CameraEditKit.framework/CameraEditKit'
+current-version: 3712.0.190
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CEKClamp, _CEKDiscreteSliderContentTopInset, _CEKFontOfSizeAndStyle, 
+                       _CEKFontOfSizeWeightStyle, _CEKFrameworkBundle, _CEKHapticsAllowed, 
+                       _CEKInterpolate, _CEKInterpolateClamped, _CEKIsCustomKerningSupportedForLocale, 
+                       _CEKIsPadLayout, _CEKIsSFCameraSupportedForLocale, _CEKIsSmallPhone, 
+                       _CEKLocalizedFrameworkString, _CEKMonospacedStylisticNumeralFontOfSizeAndStyle, 
+                       _CEKProgress, _CEKProgressClamped, _CEKScrollableDistanceInScrollView, 
+                       _CEKSliderHorizontalContentPadding, _CEKSliderIndicatorLength, 
+                       _CEKSliderLabelHeight, _CEKSliderLabelPadding, _CEKSliderValueLabelWidth, 
+                       _CEKSliderVerticalContentPadding, _CameraEditKitVersionNumber, 
+                       _CameraEditKitVersionString, _CubeColorCreateInterpolated, 
+                       _CubeGradientCreateCopyWithAlpha, _CubeGradientCreateInterpolated, 
+                       __CEKSFCameraFontOfSizeAndWeight, __CEKSFCameraFontURLForWeight ]
+    objc-classes:    [ CEKAnimationGenerator, CEKAnimationGeneratorAnimation, CEKApertureButton, 
+                       CEKApertureSlider, CEKBadgeTextView, CEKBadgeView, CEKDiscreteSlider, 
+                       CEKEdgeGradientView, CEKLightingControl, CEKLightingControlItem, 
+                       CEKLightingCube, CEKLightingCubeAppearance, CEKLightingCubeMutableAppearance, 
+                       CEKLightingCubeRenderer, CEKLightingCubeStyleGlowing, CEKLightingDialBackground, 
+                       CEKLightingEffectManager, CEKLightingFrameCache, CEKLightingNameBadge, 
+                       CEKSelectionFeedbackGenerator, CEKSlider, CEKSliderDotView, 
+                       CEKSliderTickMarksView, CEKWheelScrubberCollectionViewLayout, 
+                       CEKWheelScrubberRoundedCornerOverlayView, CEKWheelScrubberRoundedCornerOverlayViewBottom, 
+                       CEKWheelScrubberRoundedCornerOverlayViewLeft, CEKWheelScrubberRoundedCornerOverlayViewRight, 
+                       CEKWheelScrubberRoundedCornerOverlayViewTop, CEKWheelScrubberView, 
+                       CEKWheelScrubberViewCell ]
+    objc-ivars:      [ CEKLightingCubeAppearance._background, CEKLightingCubeAppearance._bottomFill, 
+                       CEKLightingCubeAppearance._bottomInnerGlow, CEKLightingCubeAppearance._bottomMask, 
+                       CEKLightingCubeAppearance._bottomOuterGlow, CEKLightingCubeAppearance._stroke, 
+                       CEKLightingCubeAppearance._topFill, CEKLightingCubeAppearance._topGlow, 
+                       CEKLightingCubeAppearance._topMask, CEKLightingCubeAppearance._topOver, 
+                       CEKLightingCubeAppearance._verticalFillBackIntensity, CEKLightingCubeAppearance._verticalFillColor, 
+                       CEKLightingCubeAppearance._verticalFillFrontIntensity ]
+...

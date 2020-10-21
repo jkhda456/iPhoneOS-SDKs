@@ -1,0 +1,40 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           86A135E1-D305-399E-B60F-3E024740356D
+  - target:          armv7s-ios
+    value:           BDE0CC9F-AB6D-3E82-B6A8-069794B96B60
+  - target:          arm64-ios
+    value:           EC5762BE-80B6-344D-898E-DC0A8122AFDF
+  - target:          arm64e-ios
+    value:           EFDA9842-2462-38C8-9150-145865841B77
+install-name:    '/System/Library/PrivateFrameworks/WelcomeKitCore.framework/WelcomeKitCore'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _WLErrorDomain, ___deviceClientStopNetworkCallback, ___startNetworkCallback ]
+    objc-classes:    [ WLAppWishlistController, WLAuthenticator, WLCameraPhotosMigrator, 
+                       WLCameraVideosMigrator, WLFileMigrationWebService, WLMigrationWebService, 
+                       WLProgressWebService ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WelcomeKitCoreVersionNumber, _WelcomeKitCoreVersionString, 
+                       __WLWiFiDeviceClient_startNetworkCallback, __WLWiFiDeviceClient_stopNetworkCallback ]
+    objc-classes:    [ WLAppMigrator, WLAuthenticationCredentials, WLAuthenticationUtilities, 
+                       WLBookmarksMigrator, WLCalendarMigrator, WLContactsMigrator, 
+                       WLCredentialStore, WLDevice, WLDeviceAuthentication, WLDeviceDiscoveryController, 
+                       WLDeviceDiscoverySocketHandler, WLGroupMessageInfo, WLIntoSafeHarborMigrator, 
+                       WLItemSizeConfirmationCompletionAdapter, WLLocalDataSource, 
+                       WLMFAccountValidator, WLMailAccountMigrator, WLMessage, WLMessageAttachment, 
+                       WLMessageParty, WLMessageSMILContext, WLMessageSMILPart, WLMessagesMigrator, 
+                       WLMigrationContext, WLMigrationDataCoordinator, WLMigrator, 
+                       WLMobileInstallation, WLNETRBClient, WLPhotosMigrator, WLRemoteDeviceDataSource, 
+                       WLSQLController, WLSRPServer, WLSafeHarborDirectory, WLSafeHarborManager, 
+                       WLSocketCommandMessage, WLSocketHandler, WLSocketMessage, 
+                       WLSocketVersionMessage, WLSourceDeviceAccount, WLSourceDeviceHandshakeParser, 
+                       WLSourceDeviceMigrationMetadata, WLSourceDeviceRecordSummary, 
+                       WLStatistics, WLTestWhatsAppBusinessMigrator, WLTestWhatsAppMigrator, 
+                       WLThroughputSample, WLTimeEstimateAccuracyTracker, WLTimeEstimateSample, 
+                       WLURLSessionController, WLVideosMigrator, WLWiFiController, 
+                       WLWiFiDeviceClient, WLWiFiManager, WLWiFiNetwork ]
+...

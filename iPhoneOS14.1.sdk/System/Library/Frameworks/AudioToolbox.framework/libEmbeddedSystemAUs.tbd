@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           27B198AC-2FBA-34EB-A512-35FCE4590320
+  - target:          arm64e-ios
+    value:           6B0A4EB8-0EBD-3991-AF8C-F861508A0C60
+install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AUBandpassFactory, _AUConverterFactory, _AUDeferredRendererFactory, 
+                       _AUDelayFactory, _AUDistortionFactory, _AUDynamicsProcessorFactory, 
+                       _AUGenericOutputFactory, _AUHapticSynthFactory, _AUHighShelfFilterFactory, 
+                       _AUHipassFactory, _AULopassFactory, _AULowShelfFilterFactory, 
+                       _AUMatrixMixerFactory, _AUMatrixReverbLiteFactory, _AUMergerFactory, 
+                       _AUMultiChannelMixerFactory, _AUMultiSplitterFactory, _AUNewPitchFactory, 
+                       _AUNewTimePitchFactory, _AUNotQuiteSoSimpleTimeFactory, _AUParametricEQFactory, 
+                       _AUPeakLimiterFactory, _AUSampleDelayFactory, _AUSimpleTimeFactory, 
+                       _AUSpecialPurposeSweepFilterFactory, _AUSplitterFactory, _AUVarispeedFactory, 
+                       _AudioOutputUnitPublish_Impl, _MIDISynthFactory, _RegisterAudioUnits_Instruments, 
+                       _RegisterAudioUnits_Toolbox, _SamplerFactory ]
+...

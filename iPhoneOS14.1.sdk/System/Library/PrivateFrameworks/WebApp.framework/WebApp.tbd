@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           CA0140DC-D9A1-39A7-80F7-D10C97358E44
+  - target:          armv7s-ios
+    value:           CE678E65-A56E-3EDF-A233-7CEA0B811DC3
+  - target:          arm64-ios
+    value:           C745BB95-B96C-396A-8560-E65642A1E19E
+  - target:          arm64e-ios
+    value:           2C983ACE-0C15-34B3-B69B-C49A35414201
+install-name:    '/System/Library/PrivateFrameworks/WebApp.framework/WebApp'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _WebAppLocalizableStringsBundle ]
+    objc-classes:    [ WebAppController, WebAppViewController, WebApplication ]
+    objc-ivars:      [ WebAppController._alerts, WebAppController._authenticationManager, 
+                       WebAppController._downloadManager, WebAppController._fallbackURLs, 
+                       WebAppController._inputViewScreenBoundsAfterRotation, WebAppController._isSuspended, 
+                       WebAppController._loadingView, WebAppController._orientation, 
+                       WebAppController._rotationEdgePin, WebAppController._rotationRect, 
+                       WebAppController._sheetController, WebAppController._window, 
+                       WebAppController.snapshotHideTimeHasExpired, WebAppController.snapshotHideTimer, 
+                       WebAppController.webClip, WebAppController.webView, WebAppController.webViewDidLayout, 
+                       WebAppController.webViewHasFinishedLoading, WebAppViewController._setupRootViewColor ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WebAppMainEntry ]
+...

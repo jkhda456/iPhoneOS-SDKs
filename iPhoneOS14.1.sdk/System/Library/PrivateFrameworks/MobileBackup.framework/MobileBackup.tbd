@@ -1,0 +1,110 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           9DEF2095-5D8D-32C6-8F6F-3E8955803C47
+  - target:          armv7s-ios
+    value:           538E8DC5-FB57-39D6-806B-684F11F64118
+  - target:          arm64-ios
+    value:           8EABD948-A6CE-3BC2-89E3-356AF30DB9E5
+  - target:          arm64e-ios
+    value:           55646E94-BCB2-3366-AC2D-ABEBCBA1DA52
+install-name:    '/System/Library/PrivateFrameworks/MobileBackup.framework/MobileBackup'
+current-version: 1738
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _BehaviorOptionsAppID, _BehaviorOptionsKey, _CryptoAcceleratorConnect, 
+                       _CryptoAcceleratorDisconnect, _CryptoAcceleratorEncrypt, _CryptoBufferAllocate, 
+                       _CryptoBufferDuplicate, _LoggingSubsystem, _MBAbsolutePathFromSnapshotFilePath, 
+                       _MBAssertErr, _MBAssertErrV, _MBAssertV, _MBAssertionFailure, 
+                       _MBAssertionFailureV, _MBContainerTypeForMCMContainerContentClass, 
+                       _MBContainerTypeForString, _MBGetFileIDData, _MBGetTraceLog, 
+                       _MBIsAbsolutePath, _MBNameWithAction, _MBStripLogFormatString, 
+                       _MobileBackupVersionNumber, _MobileBackupVersionString, __MBGetBooleanPreference, 
+                       __MBIsValidRelativePathComponent, __MBLogV, __MBParentDirContainsSymLink, 
+                       __MBSetIsRunningInDaemon, __MBisSymLink, ___MBLog, _kBehaviorOptionsDidChangeNotification, 
+                       _kMBBehaviorOptionBackupFromLocalSnapshot, _kMBBehaviorOptionBackupUseABC, 
+                       _kMBBehaviorOptionBackupUsePowerLog, _kMBBehaviorOptionCloudKitContainerKey, 
+                       _kMBBehaviorOptionKeepDailyLocalSnapshots, _kMBBehaviorOptionManifestPageSizeKey, 
+                       _kMBBehaviorOptionMaxBatchCountKey, _kMBBehaviorOptionMaxBatchFetchAssetSizeKey, 
+                       _kMBBehaviorOptionMaxBatchSaveAssetSizeKey, _kMBBehaviorOptionMaxBatchSizeKey, 
+                       _kMBBehaviorOptionMaxDomainsToBackupKey, _kMBBehaviorOptionMinimumBuildVersionForFullBackupKey, 
+                       _kMBBehaviorOptionRecordSaveAttempts, _kMBBehaviorOptionSQLBatchCountKey, 
+                       _kMBBehaviorOptionSQLBatchTimeKey, _kMBBehaviorOptionSQLTraceKey, 
+                       _kMBBehaviorOptionUseBackgroundOperationsForBackupKey, _kMBBehaviorOptionWarnForLateiTunesBackups, 
+                       _kMBBehaviorOptionsChangedKeysKey, _kMBBehaviorOptionsChangedKeysNotification, 
+                       _pathIsFromSnapshot, _removeMBTemporaryPathDirectory ]
+    objc-classes:    [ MBAggregateDictionary, MBAppGroup, MBAppPlugin, MBAutoreleaseBlock, 
+                       MBDigestSHA256, MBEngine, MBManagerClient, MBSystemContainer ]
+    objc-ivars:      [ MBAggregateDictionary._scalars, MBAutoreleaseBlock._block, 
+                       MBConnection._conn, MBConnection._eventQueue, MBConnection._handler, 
+                       MBDigestSHA256._context, MBEngine._appManager, MBEngine._debugContext, 
+                       MBEngine._domainManager, MBEngine._properties, MBEngine._settingsContext, 
+                       MBManager._delegate, MBManagerClient._conn, MBManagerClient._eventQueue, 
+                       MBManagerClient._stateToken, MBStateInfo._date, MBStateInfo._error, 
+                       MBStateInfo._errors, MBStateInfo._estimatedTimeRemaining, 
+                       MBStateInfo._isBackground, MBStateInfo._isCloud, MBStateInfo._progress, 
+                       MBStateInfo._state ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MBAbsolutePathFromRootPathWithSnapshot, _MBAbsolutePathFromiCloudSnapshotPath, 
+                       _MBAbsolutePathFromiTunesSnapshotPath, _MBAcquireRestoreLock, 
+                       _MBAssert, _MBBackgroundRestoreSignpostHandle, _MBBackupMetadataFilenames, 
+                       _MBBackupReasonIsManual, _MBBackupReasonIsScheduled, _MBBackupTypeIsFull, 
+                       _MBBuildIsSeed, _MBBuildVersion, _MBBytesWithString, _MBCompareVersionStrings, 
+                       _MBCreateRestoreDirectory, _MBDataWithString, _MBDefaultDebugContext, 
+                       _MBDefaultOptions, _MBDeviceBackingColor, _MBDeviceClass, 
+                       _MBDeviceColor, _MBDeviceCoverGlassColor, _MBDeviceEnclosureColor, 
+                       _MBDeviceHousingColor, _MBDeviceName, _MBDeviceSpecificLocalizedStringFromTable, 
+                       _MBDeviceUDID_Legacy, _MBDeviceUDID_Legacy_client, _MBDeviceUUID, 
+                       _MBEmptyArray, _MBEmptyDictionary, _MBExit, _MBFreeDiskSpace, 
+                       _MBGetBackupDir, _MBGetCacheDir, _MBGetCleanupDir, _MBGetDefaultLog, 
+                       _MBGetFileIDBytes, _MBGetGestaltValueForKey, _MBGetHomeDir, 
+                       _MBGetIncompleteRestoreDir, _MBGetLogDateFormatter, _MBGetLogDir, 
+                       _MBGetRestoreDir, _MBGetSQLLog, _MBGroupWaitForever, _MBHTTPDateFormatter, 
+                       _MBHardwareModel, _MBIsFatalErrorCode, _MBIsInternalInstall, 
+                       _MBIsRestoreCompatible, _MBIsRunningInDaemon, _MBIsTransientErrorCode, 
+                       _MBIsValidRelativePath, _MBIsiCloudSnapshotPath, _MBLocale, 
+                       _MBLocalizations, _MBLocalizedStringFromTable, _MBLogDeviceProperties, 
+                       _MBLogStashLogs, _MBLogStringForNSQualityOfService, _MBMarketingName, 
+                       _MBMobileFileAttributes, _MBMobileUID, _MBNobodyUID, _MBProductType, 
+                       _MBProductVersion, _MBRandomDataWithLength, _MBRandomUUID, 
+                       _MBReleaseRestoreLock, _MBRemoveTemporaryPathDirectory, _MBRunLoopPerformBlockAndWait, 
+                       _MBSQLiteJournalSuffixes, _MBSQLitePathExtensions, _MBSemaphoreWaitForever, 
+                       _MBSerialNumber, _MBSetBackupDir, _MBSetIsRunningInDaemon, 
+                       _MBStandardizePath, _MBStringForBackupReason, _MBStringForBackupType, 
+                       _MBStringForContainerType, _MBStringWithArray, _MBStringWithBytes, 
+                       _MBStringWithData, _MBStringWithDate, _MBStringWithDictionary, 
+                       _MBStringWithLimitedArray, _MBStringWithNibbles, _MBStringWithObject, 
+                       _MBStringWithSet, _MBStringWithSizeInBytes, _MBStringWithXPCObject, 
+                       _MBSupportedProtocolVersions, _MBTemporaryPath, _MBUniqueIntegerFilenameWithDirectory, 
+                       _MBWeakLinkClass, _MBWeakLinkSymbol, _MCMContainerContentClassForMBContainerType, 
+                       __MBLog, __MBLogFlushDeprecated, _kMBDownloadFileExtension, 
+                       _kMBManagerBackupStateChangedNotification, _kMBManagerRestoreCompleteAlertStateChangedNotification, 
+                       _kMBManagerRestoreStateChangedNotification, _kMBMobileUserName, 
+                       _kMBSafeHarborDataDirName, _kMBSafeHarborDir, _kMBSafeHarborInfoDirName, 
+                       _kMBSafeHarborInfoPlistFilename, _kMBUploadFileExtension ]
+    objc-classes:    [ MBApp, MBAppManager, MBBackgroundRestoreInfo, MBBackup, MBBehaviorOptions, 
+                       MBConnection, MBContainer, MBDebugContext, MBDeviceLockInfo, 
+                       MBDeviceTransferConnectionInfo, MBDeviceTransferKeychain, 
+                       MBDeviceTransferPreflight, MBDeviceTransferProgress, MBDeviceTransferSession, 
+                       MBDeviceTransferTask, MBDigest, MBDigestSHA1, MBDomain, MBDomainInfo, 
+                       MBError, MBException, MBFileInfo, MBFileManager, MBFileManagerDelegate, 
+                       MBFileSystemManager, MBManager, MBMessage, MBProperties, MBRestoreFailure, 
+                       MBRestoreInfo, MBSizeInfo, MBSnapshot, MBSourceDeviceTransferTask, 
+                       MBStartBackupOptions, MBStateInfo, MBTargetDeviceTransferTask ]
+    objc-eh-types:   [ MBException ]
+    objc-ivars:      [ MBAppManager._containersByID, MBAppManager._settingsContext, 
+                       MBAppManager._systemDataContainersByID, MBAppManager._systemSharedContainersByID, 
+                       MBBackgroundRestoreInfo.bytesRemaining, MBBackgroundRestoreInfo.dataClassesRemaining, 
+                       MBBackgroundRestoreInfo.failedDomains, MBBackup._backupUDID, 
+                       MBBackup._deviceClass, MBBackup._hardwareModel, MBBackup._isMBSBackup, 
+                       MBBackup._marketingName, MBBackup._productType, MBBackup._restoreSystemFiles, 
+                       MBBackup._snapshots, MBContainer._plist, MBDebugContext._dictionary, 
+                       MBDigestSHA1._context, MBProperties._protect, MBRestoreInfo._backupBuildVersion, 
+                       MBRestoreInfo._date, MBRestoreInfo._deviceBuildVersion, MBRestoreInfo._wasCloudRestore, 
+                       MBSnapshot._buildVersion, MBSnapshot._created, MBSnapshot._date, 
+                       MBSnapshot._deviceName, MBSnapshot._isCompatible, MBSnapshot._modified, 
+                       MBSnapshot._quotaReserved, MBSnapshot._snapshotID, MBSnapshot._snapshotUUID, 
+                       MBSnapshot._state, MBSnapshot._systemVersion ]
+...

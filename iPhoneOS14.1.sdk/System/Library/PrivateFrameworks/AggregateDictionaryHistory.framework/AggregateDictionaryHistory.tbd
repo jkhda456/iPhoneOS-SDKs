@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           571B4729-BB8E-3A64-B818-729B539C6FC1
+  - target:          armv7s-ios
+    value:           897B6BF1-3584-33D3-9C73-6A2275FACCC9
+  - target:          arm64-ios
+    value:           D5520EFB-2CA0-374A-9E65-1238BF1F8ADA
+  - target:          arm64e-ios
+    value:           2ABCB2E1-45B6-3EFD-A07E-0DE1E9EF2663
+install-name:    '/System/Library/PrivateFrameworks/AggregateDictionaryHistory.framework/AggregateDictionaryHistory'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN2AD8Database15cautiously_stepEP12sqlite3_stmt, __ZN2AD8Database9isCorruptEv ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ADContainerPath, _ADDatabaseUtilitiesCleanUpCorruption, _ADGetDBSize, 
+                       _ADHistoryCalculateSummaryStatistics, _ADHistoryGetLinearHistogram, 
+                       _ADHistoryGetLogHistogram, _ADIsInternalDevice, _ADMachAbsoluteTimeIntervalToCFTimeInterval, 
+                       _ADReapDatabaseCorruption, _ADRecordDatabaseCorruption, _ADTimeBlock, 
+                       __ZN2AD8Database11newDatabaseEPKcb, __ZN2AD8Database12deleteScalarEPKci, 
+                       __ZN2AD8Database12insertScalarEPKcix, __ZN2AD8Database12lookupScalarEPKciRx, 
+                       __ZN2AD8Database12updateScalarEix, __ZN2AD8Database13RowIDNotFoundE, 
+                       __ZN2AD8Database13schemaVersionEv, __ZN2AD8Database16beginTransactionEv, 
+                       __ZN2AD8Database16executeStatementEPKc, __ZN2AD8Database16prepareStatementEPKc, 
+                       __ZN2AD8Database17commitTransactionEv, __ZN2AD8Database17scalarsWithPrefixEPKciiU13block_pointerFvS2_ixPbE, 
+                       __ZN2AD8Database18appendDistributionEPKciid, __ZN2AD8Database18deleteDistributionEPKci, 
+                       __ZN2AD8Database18lookupDistributionEPKci, __ZN2AD8Database20DistributionIterator12getNextValueEPiPd, 
+                       __ZN2AD8Database20DistributionIteratorC1EPS0_i, __ZN2AD8Database20DistributionIteratorC2EPS0_i, 
+                       __ZN2AD8Database20DistributionIteratorD1Ev, __ZN2AD8Database20DistributionIteratorD2Ev, 
+                       __ZN2AD8Database20createTablesVersion1Ev, __ZN2AD8Database20initializeConnectionEv, 
+                       __ZN2AD8Database23distributionsWithPrefixEPKciiU13block_pointerFvS2_iRNS0_20DistributionIteratorEPbE, 
+                       __ZN2AD8Database24prepareAndCacheStatementEPKc, __ZN2AD8Database24upgradeSchemaVersion1to2Ev, 
+                       __ZN2AD8Database27performMigrationIfNecessaryEv, __ZN2AD8Database29deleteAllValuesOnOrBeforeDateEi, 
+                       __ZN2AD8Database4initEPKcb, __ZN2AD8DatabaseC1Ev, __ZN2AD8DatabaseC2Ev, 
+                       __ZN2AD8DatabaseD1Ev, __ZN2AD8DatabaseD2Ev ]
+    objc-classes:    [ ADHistory, ADHistoryDistributionEnumerator ]
+...

@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           2B2AF2BB-8521-3C72-98EE-FC4E4B251A8D
+  - target:          armv7s-ios
+    value:           A513DC31-46F9-358A-ACD1-C35D56209F02
+  - target:          arm64-ios
+    value:           F98CB1B8-EC09-3709-BD30-F2F4A657D73F
+  - target:          arm64e-ios
+    value:           F29B0E4C-DBDD-3EE8-B649-B4BD9C60A2B2
+install-name:    '/System/Library/PrivateFrameworks/SOS.framework/SOS'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SOSAutomaticCallCountdownEnabledKey, _SOSClientInterface, 
+                       _SOSContactsChangedNotification, _SOSD_CONNECTION_REQUEST_NOTIFICATION_NAME, 
+                       _SOSDismissSOSNotification, _SOSFriendsChangedNotification, 
+                       _SOSInteractiveStateChangedNotification, _SOSLegacyContactsChangedNotification, 
+                       _SOSMachService, _SOSManagerErrorDomain, _SOSMostRecentLocationSentChangedNotification, 
+                       _SOSNewtonStateChangedNotification, _SOSPlayAudioDuringCountdownKey, 
+                       _SOSSendingLocationUpdateChangedNotification, _SOSSendingLocationUpdateValueKey, 
+                       _SOSServerInterface, _SOSTriggerMechanismChangedNotification, 
+                       _SOSTriggerMechanismKey ]
+    objc-classes:    [ SOSContact, SOSContactsManager, SOSEngine, SOSLegacyContactsManager, 
+                       SOSManager, SOSNewtonManager, SOSPersistentTimerLocationManager, 
+                       SOSUtilities ]
+...

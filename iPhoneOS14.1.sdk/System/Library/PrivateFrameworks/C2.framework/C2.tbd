@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           87782B22-6898-33C1-9353-E6C9B89E235E
+  - target:          arm64e-ios
+    value:           7CD4D8DD-1A07-33E6-91A8-7E6C8D17145F
+install-name:    '/System/Library/PrivateFrameworks/C2.framework/C2'
+current-version: 569
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ C2MetricOperationGroupOptions, C2MetricOperationOptions, C2MetricOptions, 
+                       C2MetricRequestOptions, C2NetworkingDelegateURLSession, C2NetworkingDelegateURLSessionDataTask, 
+                       C2ReportMetrics, C2RequestManager, C2RequestOptions, C2Session, 
+                       C2SessionCallbackMetrics, C2SessionGroup, C2SessionPool, C2SessionTask ]
+...

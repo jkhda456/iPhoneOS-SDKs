@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           131E5BF7-605A-3484-BF01-29F9ABEAF052
+  - target:          armv7s-ios
+    value:           1A7D7AC8-AB0F-31C0-A94A-0DD5688CD70C
+  - target:          arm64-ios
+    value:           82BDF518-DABB-3EEB-842C-C87F1BB18F7B
+  - target:          arm64e-ios
+    value:           7C5814F9-27F2-3C47-B433-3DCE7092B857
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticsSupport.framework/DiagnosticsSupport'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DSHexErrorDomain, _DiagnosticsSupportVersionNumber, _DiagnosticsSupportVersionString, 
+                       __buttonHIDEventFilterCallback ]
+    objc-classes:    [ DSRemoteViewController, DSResponder ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DALogFileName, _DAMobileLogPath, _DARootLogPath, _DSArchiveClose, 
+                       _DSArchiveOpen, _DSArchiveWrite, _DiagnosticLogHandleForCategory, 
+                       _buttonHIDEventFilterCallback, _kDADefaultBufferSize, _kDADefaultStringEncoding, 
+                       _kDALineBreak, _kDSAnalyticsIDSDurationKey, _kDSArchiveErrorDomain, 
+                       _kDSCallStatsEntitlement, _kDSCapabilitiesResultKey, _kDSConnectionIDResultkey, 
+                       _kDSDockTypeResultKey, _kDSFirmwareRevisionResultKey, _kDSHardwareButtonEntitlement, 
+                       _kDSHardwareRevisionResultKey, _kDSIODeviceApplePencil, _kDSIODeviceSmartBatteryCase, 
+                       _kDSIODeviceSmartBatteryCase_2018, _kDSIODeviceSmartKeyboard10_5inch, 
+                       _kDSIODeviceSmartKeyboard11inch_2018, _kDSIODeviceSmartKeyboard11inch_2019, 
+                       _kDSIODeviceSmartKeyboard12_9inch, _kDSIODeviceSmartKeyboard12_9inch_2018, 
+                       _kDSIODeviceSmartKeyboard12_9inch_2019, _kDSIODeviceSmartKeyboard9_7inch, 
+                       _kDSMACAddressResultKey, _kDSModelNumberResultKey, _kDSNameResultKey, 
+                       _kDSSerialNumberResultKey ]
+    objc-classes:    [ DSAnalytics, DSArchivePath, DSCallStatisticsAggregator, DSDateFormatter, 
+                       DSEADevice, DSEntitlementUtilities, DSGeneralLogCollector, 
+                       DSGeneralLogFile, DSHardwareButtonEventHandler, DSHardwareButtonEventMonitor, 
+                       DSIOHIDDevice, DSIOPSDevice, DSLogLine, DSMutableArchive, 
+                       DSShapeView, DSTestAutomation, DSTextFile, DSThermalLogLine, 
+                       DSUsageLogLine ]
+...

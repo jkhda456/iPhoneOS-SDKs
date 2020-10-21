@@ -1,0 +1,55 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F0E3FF28-B48B-32FF-B142-F70410E72F0A
+  - target:          arm64e-ios
+    value:           77232C69-16C9-3EEA-AE5E-4A18E43CD3FC
+install-name:    '/System/Library/PrivateFrameworks/CoreAutoLayout.framework/CoreAutoLayout'
+current-version: 11
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreAutoLayoutVersionNumber, _CoreAutoLayoutVersionString, 
+                       _NSISEpsilon, _NSISLinExpAddVar, _NSISLinExpDescription, _NSISLinExpDescriptionInEngine, 
+                       _NSISMaxUlps, _NSLayoutAnchorConstraintSpace, _NSLayoutConstraintEnumeratePiercedItems, 
+                       _NSLayoutConstraintIsDanglyInContainer, _NSLayoutConstraintIsPotentiallyDanglyInContainer, 
+                       _NSLayoutConstraintParserSpace, _NSLayoutConstraintPiercedItemsInContainer, 
+                       _NSLayoutErrorDomain, __NSDictionaryOfVariableBindings, __NSLayoutConstraintApplyDiffWithCounterparts, 
+                       __NSLayoutConstraintApplyDiffWithCounterpartsNSArrays, __NSLayoutConstraintComparableHash, 
+                       __NSLayoutConstraintDiffConstraints, __NSLayoutConstraintDiffConstraintsReturnNSArrays, 
+                       __NSLayoutRuleDiffAndUpdateInParent, __NSLayoutRuleRemoveNodeHierarchyFromParent, 
+                       __NSRuleNodeAppendDebugDescription ]
+    objc-classes:    [ NSAlignmentLayoutRule, NSAutoresizingMaskLayoutConstraint, 
+                       NSContentSizeLayoutConstraint, NSIBPrototypingLayoutConstraint, 
+                       NSISEngine, NSISLinearExpression, NSISObjectiveLinearExpression, 
+                       NSISVariable, NSLayoutAnchor, NSLayoutAnchorRule, NSLayoutConstraint, 
+                       NSLayoutConstraintExplainer, NSLayoutDimension, NSLayoutPoint, 
+                       NSLayoutPointRule, NSLayoutRect, NSLayoutRectRule, NSLayoutRectangle, 
+                       NSLayoutXAxisAnchor, NSLayoutYAxisAnchor, NSStackInContainerRule, 
+                       NSStackLayoutRule, NSVisualFormatLayoutRule, _NSArithmeticLayoutDimension, 
+                       _NSAutoresizingMaskXAxisAnchor, _NSAutoresizingMaskYAxisAnchor, 
+                       _NSCompositeLayoutDimension, _NSCompositeLayoutRuleNode, _NSCompositeLayoutXAxisAnchor, 
+                       _NSCompositeLayoutYAxisAnchor, _NSConstraintDescriptionLayoutRuleNode, 
+                       _NSDistanceLayoutDimension, _NSLayoutRuleNode ]
+    objc-ivars:      [ NSISEngine._accessedFromMainThread, NSISEngine._accumulatingRemovals, 
+                       NSISEngine._allowUnoptimizedReads, NSISEngine._allowedBGThread, 
+                       NSISEngine._automaticOptimizationDisabledCount, NSISEngine._brokenConstraintNegativeErrors, 
+                       NSISEngine._brokenConstraintPositiveErrors, NSISEngine._changeCountAtLastOptimization, 
+                       NSISEngine._changeNotificationsDirty, NSISEngine._delegate, 
+                       NSISEngine._dirtyObservables, NSISEngine._engineDelegateCallsDisabledCount, 
+                       NSISEngine._engineNeedsOptimization, NSISEngine._engineNeedsRebuildFromConstraints, 
+                       NSISEngine._engineScalingCoefficients, NSISEngine._optimizationInProgress, 
+                       NSISEngine._pendingMarkerDelegates, NSISEngine._pendingRemovals, 
+                       NSISEngine._pivotCount, NSISEngine._recordedOperations, NSISEngine._revertsAfterUnsatisfiabilityHandler, 
+                       NSISEngine._totalChangeCount, NSISEngine._unsatisfiabilityHandler, 
+                       NSISEngine._variableChangeCount, NSISEngine._variableChangeTransactionSignal, 
+                       NSISEngine._variableDelegateCallsDisabledCount, NSISEngine._variableObservables, 
+                       NSISEngine._variablesWithValueRestrictionViolations, NSISLinearExpression.engine, 
+                       NSISLinearExpression.linExp, NSISVariable._delegate, NSISVariable._engineVarIndexes, 
+                       NSISVariable._engines, NSISVariable._ident, NSISVariable._overflowEngines ]
+...

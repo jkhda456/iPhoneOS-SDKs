@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4222488D-D1E8-336E-9BB6-7D9F97539863
+  - target:          arm64e-ios
+    value:           8BC602F4-21DA-39B5-B9E3-CAE119E0A3A5
+install-name:    '/System/Library/PrivateFrameworks/AutomationSuggestions.framework/AutomationSuggestions'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATSAnalysisPETATSAnalysisEventReadFrom, _ATSTelemetryAnalyticsEventName, 
+                       _AutomationSuggestionsVersionNumber, _AutomationSuggestionsVersionString, 
+                       _TimeIntervalOneHour, _feedbackATSChannel, _generalATSChannel, 
+                       _projectId, _trialATSChannel, _trialNamespaceId, _trialNamespaceName ]
+    objc-classes:    [ ATSAnalysisPETATSAnalysisEvent, ATSConfig, ATSFeedback, ATSSuggester, 
+                       ATSSuggestion, ActionRetriever ]
+    objc-ivars:      [ ATSAnalysisPETATSAnalysisEvent._absoluteAntecedentSupport, 
+                       ATSAnalysisPETATSAnalysisEvent._absoluteConsequentSupport, 
+                       ATSAnalysisPETATSAnalysisEvent._absoluteSupport, ATSAnalysisPETATSAnalysisEvent._activityType, 
+                       ATSAnalysisPETATSAnalysisEvent._bundleID, ATSAnalysisPETATSAnalysisEvent._confidence, 
+                       ATSAnalysisPETATSAnalysisEvent._conviction, ATSAnalysisPETATSAnalysisEvent._feedbackAction, 
+                       ATSAnalysisPETATSAnalysisEvent._intentClass, ATSAnalysisPETATSAnalysisEvent._lift, 
+                       ATSAnalysisPETATSAnalysisEvent._rulePowerFactor, ATSAnalysisPETATSAnalysisEvent._sessionId, 
+                       ATSAnalysisPETATSAnalysisEvent._support, ATSAnalysisPETATSAnalysisEvent._trialID, 
+                       ATSAnalysisPETATSAnalysisEvent._trigger, ATSAnalysisPETATSAnalysisEvent._uniqueDaysLastWeek, 
+                       ATSAnalysisPETATSAnalysisEvent._uniqueDaysTotal ]
+...

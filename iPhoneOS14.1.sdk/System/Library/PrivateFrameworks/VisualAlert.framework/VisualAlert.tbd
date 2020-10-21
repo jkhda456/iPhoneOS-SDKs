@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3FDB5DE0-C46B-3831-8CEE-37DA8FEA692C
+  - target:          armv7s-ios
+    value:           C3B2313F-32E5-3B84-A72C-3E37B5F9555F
+  - target:          arm64-ios
+    value:           F8D494BA-A086-32B6-9756-44B4D46889BB
+  - target:          arm64e-ios
+    value:           81131DE9-71A6-347D-AE4B-5E8E7D9F0978
+install-name:    '/System/Library/PrivateFrameworks/VisualAlert.framework/VisualAlert'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ AXNotificationHandler, AXVisualAlertCCUIFlashlightSetting, 
+                       __AXVisualAlertCCUIFlashlightSetting_super ]
+    objc-ivars:      [ AXNotificationHandler._dispatcher, AXNotificationHandler._notificationName, 
+                       AXNotificationHandler._observerIdentifier, AXNotificationHandler._target, 
+                       AXNotificationHandler._valid ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kAXDeviceSpringBoardRingerState ]
+    objc-classes:    [ AXAutoForwardingLocalNotificationHandler, AXCameraTorchManagerBackgroundAdapter, 
+                       AXDistributedNotificationHandler, AXLocalNotificationHandler, 
+                       AXTelephonyNotificationHandler, AXVisualAlertManager, AXVisualAlertSBNCScreenController, 
+                       AXVisualAlertSBNCSoundController, AXVisualAlertSBUIFlashlightController, 
+                       VISAXNotificationHandler, __AXVisualAlertSBNCScreenController_super, 
+                       __AXVisualAlertSBNCSoundController_super, __AXVisualAlertSBUIFlashlightController_super ]
+    objc-ivars:      [ AXAutoForwardingLocalNotificationHandler._possibleHandlers, 
+                       AXAutoForwardingLocalNotificationHandler._possibleHandlersCount, 
+                       AXCameraTorchManagerBackgroundAdapter._q, AXLocalNotificationHandler._opaqueObserver, 
+                       VISAXNotificationHandler._dispatcher, VISAXNotificationHandler._notificationName, 
+                       VISAXNotificationHandler._observerIdentifier, VISAXNotificationHandler._target, 
+                       VISAXNotificationHandler._valid ]
+...

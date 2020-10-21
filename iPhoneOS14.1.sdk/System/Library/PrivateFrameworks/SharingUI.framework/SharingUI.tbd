@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4E6CD44E-D937-3A36-8B04-753B70904428
+  - target:          arm64e-ios
+    value:           DD847F33-D5DC-3C60-BB90-BA38C77A9383
+install-name:    '/System/Library/PrivateFrameworks/SharingUI.framework/SharingUI'
+current-version: 1566.6
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SFAdjustmentFiltersForAssetTypeAndURL, _SFAirDropActivityMaxPreviewsKey, 
+                       _SFFontForTextStyleWithAdditionalSymbolicTraits, _SFFontForTextStyleWithAdditionalSymbolicTraitsOfSize, 
+                       _SFImageStackFromImages, _SFMathAddToValueWithRubberbanding, 
+                       _SFMathClamp, _SFMathClampedMap, _SFMathClampedProgress, _SFMathMap, 
+                       _SFMathProgress, _SFMathRubberband, _SFMathTransition, _SFMathUnrubberband, 
+                       _SFPlaybackTimeRangesFromFeaturesTimeURL, _SFRoundToScreen, 
+                       _SFScaleAndRotateImage, _SFSpringConvertDampingRatioResponseToStiffnessDamping, 
+                       _SFSpringConvertMassStiffnessDampingToDampingRatioResponse, 
+                       _SFSpringConvertMassStiffnessDampingToStiffnessDamping, _SFSpringConvertStiffnessDampingToDampingRatioResponse, 
+                       _SFVisualEffectViewWrapperForView, _activityImageForCurrentTraitCollectionWithName ]
+    objc-classes:    [ SFAdjustedImageView, SFAirDropActivityViewController, SFAirDropDiscoveryController, 
+                       SFAirDropMagicHeadViewController, SFAirDropPayload, SFAirDropViewController, 
+                       SFAppContent, SFB332SetupObserver, SFCAPackageView, SFCircleProgressView, 
+                       SFHighlightButton, SFMediaPlayerItem, SFMediaPlayerView, SFPersonCollectionViewCell, 
+                       SFPersonImageView, SFShareAudioViewController, SFSharedAudioDeviceInfo ]
+...

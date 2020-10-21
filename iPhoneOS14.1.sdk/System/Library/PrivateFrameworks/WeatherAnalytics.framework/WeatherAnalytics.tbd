@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           ADA880AA-F226-3D35-BD88-7B79F5330521
+  - target:          arm64e-ios
+    value:           D4B3EC7A-9462-3E60-A6C1-35F063E5037A
+install-name:    '/System/Library/PrivateFrameworks/WeatherAnalytics.framework/WeatherAnalytics'
+current-version: 1674
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WeatherAnalyticsVersionNumber, _WeatherAnalyticsVersionString ]
+    objc-classes:    [ WAAQIAvailabilityData, WAAQIData, WAAppData, WAAppSessionEndEvent, 
+                       WAAppSessionStartEvent, WACellularRadioAccessTechnology, WACoarseLocationData, 
+                       WACoarseLocationStatus, WADataTableExposureEvent, WADebugData, 
+                       WADeviceData, WADeviceOrientation, WADevicePlatform, WAEndReason, 
+                       WAFollowingLocationListData, WAFollowingLocationListEvent, 
+                       WAInterfaceOrientation, WALinkTapEvent, WAListViewEvent, WALocationAccessData, 
+                       WALocationCondition, WALocationConditionData, WALocationData, 
+                       WALocationExposureEvent, WALocationListPositionData, WALocationViewEvent, 
+                       WAMobileData, WANetworkEventData, WANetworkEventType, WAOrientationData, 
+                       WAOsInstallVariant, WAPrivateUserData, WAProviderDataOrigination, 
+                       WAReferralData, WASessionData, WASessionEndData, WAStartMethod, 
+                       WATelemetryEvent, WATemperatureScale, WATemperatureScaleChangeEvent, 
+                       WATemperatureScaleData, WAURLData, WAUserData, WAViewAction, 
+                       WAViewData, WAViewEvent, WAViewType ]
+...

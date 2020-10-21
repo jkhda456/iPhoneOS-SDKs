@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D651E80E-7C35-3DD5-9F94-40400215CB60
+  - target:          arm64e-ios
+    value:           32850CD8-4BD7-35B9-AA5B-B0DB869AE821
+install-name:    '/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/SpeechRecognitionCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RXAdLibCreate, _RXEngineTypeForLocaleIdentifier, _RXGlobalSetDownloadProgressCallback, 
+                       _RXLanguageModelCreate, _RXLanguageModelCreateWithURL, _RXLanguageModelWriteToURL, 
+                       _RXLanguageObjectAddObject, _RXLanguageObjectAddPhrase, _RXLanguageObjectApplyBlock, 
+                       _RXLanguageObjectGetCount, _RXLanguageObjectGetObjectAtIndex, 
+                       _RXLanguageObjectGetType, _RXLanguageObjectGetTypeID, _RXLanguageObjectRemoveObjectAtIndex, 
+                       _RXLanguageObjectSetObjectAtIndex, _RXObjectCopyProperty, 
+                       _RXObjectSetProperty, _RXPathCreate, _RXRecognitionSystemAddLeadingContext, 
+                       _RXRecognitionSystemAddOtherContext, _RXRecognitionSystemAddTraining, 
+                       _RXRecognitionSystemCreate, _RXRecognitionSystemGetTypeID, 
+                       _RXRecognitionSystemReset, _RXRecognitionSystemSetResetMode, 
+                       _RXRecognizerCreate, _RXRecognizerGetTypeID, _RXSignpostLog, 
+                       _RXVocabularyCreateWithLocale, _RXVocabularyCreateWithURL, 
+                       _RXVocabularyGetTypeID, _RXWordCreate, _kRXRecognitionSystemTrainingCategory_Contact, 
+                       _kRXRecognitionSystemTrainingCategory_Default ]
+...

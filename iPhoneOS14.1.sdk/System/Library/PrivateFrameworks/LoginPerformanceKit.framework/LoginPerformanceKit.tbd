@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FF2DF218-2176-3DAD-9726-0E0B6F702288
+  - target:          arm64e-ios
+    value:           E0CD35FA-8E8C-37C3-BAC9-5EA28EA5DAE8
+install-name:    '/System/Library/PrivateFrameworks/LoginPerformanceKit.framework/LoginPerformanceKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LPKIsRestrictionlessLoginEnabled, _LoginPerformanceKitVersionNumber, 
+                       _LoginPerformanceKitVersionString, _kLocalUserSwitchDestination, 
+                       _kLocalUserSwitchTestCycleCountKey, _kLocalUserSwitchTestHasFinishedSuccessfullyKey, 
+                       _kLocalUserSwitchTestOngoingKey, _kLocalUserSwitchTestPasswordKey, 
+                       _kLocalUserSwitchTestTypeKey, _kLocalUserSwitchTestUsernameKey ]
+    objc-classes:    [ LPKLoginEvent, LPKLogoutEvent, LPKPerfResultAnalyzer, LPKPerfResultEntry, 
+                       LPKPerformanceTestIntermediary, LPKSignpostEvent, LPKUserSwitchCycleController, 
+                       LPKUserSwitchEvent ]
+...

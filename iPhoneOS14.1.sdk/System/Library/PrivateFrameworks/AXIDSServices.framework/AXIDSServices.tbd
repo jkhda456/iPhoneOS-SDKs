@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8D2725EE-B69A-3442-B84B-DA130966A022
+  - target:          arm64e-ios
+    value:           F116CC72-C43B-3E5B-9FEF-959218894D09
+install-name:    '/System/Library/PrivateFrameworks/AXIDSServices.framework/AXIDSServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXIDSServiceDataKey, _AXIDSServiceDeviceIDSIdentifierKey, 
+                       _AXIDSServiceDeviceNRIdentifierKey, _AXIDSServiceDevicesKey, 
+                       _AXIDSServiceExpectsResponseKey, _AXIDSServiceFromIDKey, _AXIDSServiceIncomingIdentifierKey, 
+                       _AXIDSServiceMessageKey, _AXIDSServiceOutgoingIdentifierKey, 
+                       _AXIDSServicePriorityKey, _AXIDSServiceRegisterKey, _AXIDSServiceRequestingResponseKey, 
+                       _AXIDSServiceResourceURLKey, _AXIDSServiceResultKey, _AXIDSServiceSendErrorKey, 
+                       _AXIDSServiceSendIdentifierKey, _AXIDSServicesVersionNumber, 
+                       _AXIDSServicesVersionString ]
+    objc-classes:    [ AXIDSServices ]
+...

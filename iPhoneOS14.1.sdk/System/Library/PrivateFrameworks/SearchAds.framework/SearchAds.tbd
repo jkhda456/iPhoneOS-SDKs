@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           29C08251-4104-32BA-9C9B-0A5AC69C07A9
+  - target:          arm64e-ios
+    value:           998FD998-A489-35F8-BA86-CE29F5417A7E
+install-name:    '/System/Library/PrivateFrameworks/SearchAds.framework/SearchAds'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SearchAdsVersionNumber, _SearchAdsVersionString ]
+    objc-classes:    [ ADDataObject, ADInstallAttributionData, ADLocationManager, 
+                       ADResponseData, ADSearchAdsSettings, ADSearchObject, ADSearchSession ]
+...

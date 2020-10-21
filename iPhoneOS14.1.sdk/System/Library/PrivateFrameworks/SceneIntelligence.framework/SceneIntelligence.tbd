@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           27007DBF-2FAE-3F6F-859B-984D38798806
+  - target:          arm64e-ios
+    value:           E15043E1-08F1-3EBC-82A1-940067B6889D
+install-name:    '/System/Library/PrivateFrameworks/SceneIntelligence.framework/SceneIntelligence'
+current-version: 2
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SIBytesPerElement, _SICheckPixelBuffer, _SICheckSurface, 
+                       _SICheckTexture, _SICopyTexture, _SIImageFormatFromPixelBuffer, 
+                       _SIImageFormatFromSurface, _SIImageFormatFromTexture, _SIImageFormatMake, 
+                       _SIImageFormatMatch, _SIModelAddANEVersion, _SIModelFolder, 
+                       _SIPeekTexture, _SIPixelBufferPoolCreate, _SISaveTexture, 
+                       _SISetCheckerboardTexture, _SISetNullTexture, _SIUnpackDepth, 
+                       _SceneIntelligenceErrorDomain, _SceneIntelligenceVersionNumber, 
+                       _SceneIntelligenceVersionString, ___SceneIntelligenceLogSharedInstance, 
+                       _hh, _kSIActiveDepthDataFormat, _kSICameraDataFormat, _kSICoefficientsDataFormat, 
+                       _kSIDepthDataFormat, _kSIInterimDepthDataFormat, _kSILowResCoefficientsDataFormat, 
+                       _kSILowResSceneDataFormat, _kSILowResSize, _kSILowResStencilDataFormat, 
+                       _kSIMPeopleSegmentationInputTensorName, _kSIMPeopleSegmentationNetworkName, 
+                       _kSIMPeopleSegmentationOutputTensorName, _kSIMSceneSegmentationInputTensorName, 
+                       _kSIMSceneSegmentationLegacyInputTensorName, _kSIMSceneSegmentationLegacyNetworkName, 
+                       _kSIMSceneSegmentationLegacyOutputLabelsTensorName, _kSIMSceneSegmentationLegacyOutputNormalsTensorName, 
+                       _kSIMSceneSegmentationLegacyOutputProbabilitiesTensorName, 
+                       _kSIMSceneSegmentationNetworkName, _kSIMSceneSegmentationOutputLabelsTensorName, 
+                       _kSIMSceneSegmentationOutputNormalsTensorName, _kSIMSceneSegmentationOutputProbabilitiesTensorName, 
+                       _kSIPeopleDataFormat, _kSIPeopleSegmentationNetworkMode, _kSISceneDataFormat, 
+                       _kSISegmentationDataFormat, _kSISegmentationResultFormat, 
+                       _kSIStandardSize, _kSIStencilDataFormat, _ww ]
+    objc-classes:    [ SIBoxBlurFilter, SIDownsampler, SIMPersonSegmentation, SIMSceneSegmentation, 
+                       SIMSceneSegmentationLegacy, SIPeopleSegmentation, SIPeopleSegmentationAlgorithm, 
+                       SIResourceFactory, SIScaler, SISceneSegmentation, SISceneSegmentationLegacy, 
+                       SIUpsampler ]
+...

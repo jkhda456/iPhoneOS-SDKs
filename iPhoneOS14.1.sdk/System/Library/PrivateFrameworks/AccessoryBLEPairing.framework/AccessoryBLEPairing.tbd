@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AAEF6D40-9FE8-38CF-A74F-54D146F25EEF
+  - target:          arm64e-ios
+    value:           BC4382C4-79F5-3DD1-8F95-9B67426CA746
+install-name:    '/System/Library/PrivateFrameworks/AccessoryBLEPairing.framework/AccessoryBLEPairing'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ACCBLEPairingAccDeviceUIDKey, _ACCBLEPairingAccFwPendingVer, 
+                       _ACCBLEPairingAccFwVer, _ACCBLEPairingAccHwVer, _ACCBLEPairingAccManufacturer, 
+                       _ACCBLEPairingAccModel, _ACCBLEPairingAccName, _ACCBLEPairingAccSerialNum, 
+                       _ACCBLEPairingConnectionIDKey, _ACCBLEPairingDidConnectKey, 
+                       _ACCBLEPairingDidDisconnectKey, _ACCBLEPairingDidSendPairDataKey, 
+                       _ACCBLEPairingDidSendPairInfoKey, _ACCBLEPairingDidUpdateStateKey, 
+                       _ACCBLEPairingIsSupported, _ACCBLEPairingLaunchNotification, 
+                       _ACCBLEPairingPairDataKey, _ACCBLEPairingPairInfoArrayKey, 
+                       _ACCBLEPairingPairModeKey, _ACCBLEPairingPairStateKey, _ACCBLEPairingRadioStateKey, 
+                       _ACCBLEPairingSupports2WayKey, _ACCBLEPairingTypesSupportedKey, 
+                       _ACCBLEPairingUUIDKey, _AccessoryBLEPairingVersionNumber, 
+                       _AccessoryBLEPairingVersionString, _oobPairing_bleToOobPairingType, 
+                       _oobPairing_oobToBlePairingType ]
+    objc-classes:    [ ACCBLEPairingAccessory, ACCBLEPairingProvider ]
+...

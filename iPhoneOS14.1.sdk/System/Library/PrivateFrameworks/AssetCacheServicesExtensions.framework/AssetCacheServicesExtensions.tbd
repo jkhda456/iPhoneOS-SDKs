@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           10922B8C-15FC-3A0D-9805-A74029C9EE2C
+  - target:          armv7s-ios
+    value:           97697C53-1320-34E3-A46E-58DC53E48327
+  - target:          arm64-ios
+    value:           5CF27365-BAA8-3DA3-B9F9-074190694981
+  - target:          arm64e-ios
+    value:           29C57BCB-2ECD-3EE7-9C50-A087C4195834
+install-name:    '/System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/AssetCacheServicesExtensions'
+current-version: 115
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AssetCacheServicesExtensionsVersionNumber, _AssetCacheServicesExtensionsVersionString, 
+                       _kACSEAllServersKey, _kACSEFavoredServerRangesKey, _kACSEMightHaveKey, 
+                       _kACSEPersonalCachingAndImportKey, _kACSEPersonalCachingKey, 
+                       _kACSEPublicIPAddressKey, _kACSEPublicIPAddressRangesKey, 
+                       _kACSEReachabilityKey, _kACSERefreshedFavoredServerRangesKey, 
+                       _kACSERefreshedPublicIPAddressRangesKey, _kACSERefreshedServersKey, 
+                       _kACSESavedFavoredServerRangesKey, _kACSESavedPublicIPAddressRangesKey, 
+                       _kACSESavedServersKey, _kACSESharedCachingKey ]
+    objc-classes:    [ AssetCacheServicesReporter ]
+...

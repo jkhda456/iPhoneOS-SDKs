@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3ECB0DA1-7ABF-3C61-8987-9D1605409A61
+  - target:          arm64e-ios
+    value:           49FFB725-7D6F-30C4-A693-AF6989DA1E34
+install-name:    '/System/Library/PrivateFrameworks/SettingsCellularUI.framework/SettingsCellularUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PSCDMARoamingSpecifiers, _PSDataRoamingSpecifierForService, 
+                       _PSDataRoamingSpecifiers, _PSEUInternetSpecifiers, _PSIsCDMARoamingEnabled, 
+                       _PSIsCDMARoamingOptionAvailable, _PSIsDataRoamingEnabled, 
+                       _PSIsDataRoamingEnabledForService, _PSIsDataRoamingOptionAvailable, 
+                       _PSIsEUInternetEnabled, _PSIsVoiceRoamingEnabled, _PSIsVoiceRoamingOptionAvailable, 
+                       _PSMaxDataRateChangedNotification, _PSRoamingSubMenuSpecifiers, 
+                       _PSSetCDMARoamingEnabled, _PSSetDataRoamingEnabled, _PSSetDataRoamingEnabledForService, 
+                       _PSSetEUInternetEnabled, _PSSetVoiceRoamingEnabled, _PSShouldIncludeMMSFooterNote, 
+                       _PSUICellularPlanChanged, _PSUIFormatDataUsage, _PSUIFormatPlanStatusForPlan, 
+                       _PSUIGetPlanSubscriptionStatus, _PSUIPRLVersionChanged ]
+    objc-classes:    [ CTUIWirelessUsageAndAppPolicyController, PSUIAppDataUsageGroup, 
+                       PSUICellularController, PSUICellularPlanManagerCache, PSUICellularPlanUniversalReference, 
+                       PSUICellularRoamingController, PSUICoreTelephonyCarrierBundleCache, 
+                       PSUICoreTelephonyRegistrationCache, PSUICoreTelephonySubscriberCache ]
+    objc-ivars:      [ PSUICellularRoamingController._cdmaRoamingSpecifier, PSUICellularRoamingController._dataRoamingSpecifier, 
+                       PSUICellularRoamingController._voiceRoamingSpecifier ]
+...

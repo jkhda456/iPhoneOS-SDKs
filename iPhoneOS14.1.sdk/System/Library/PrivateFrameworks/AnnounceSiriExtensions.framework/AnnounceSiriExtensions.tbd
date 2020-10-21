@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B348FE58-857E-32B5-87EA-24B045A648AF
+  - target:          arm64e-ios
+    value:           E2D119CC-F8E4-3B4E-B6AD-84965D23A4AE
+install-name:    '/System/Library/PrivateFrameworks/AnnounceSiriExtensions.framework/AnnounceSiriExtensions'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AnnounceSiriExtensionsVersionNumber, _AnnounceSiriExtensionsVersionString ]
+...

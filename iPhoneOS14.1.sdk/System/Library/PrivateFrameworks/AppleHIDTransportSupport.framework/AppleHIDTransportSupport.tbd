@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6DF03949-3E41-3536-BBCD-7872F4A9377D
+  - target:          armv7s-ios
+    value:           594B49E1-4521-3B19-AA93-E870B9CC346A
+  - target:          arm64-ios
+    value:           5AF41DAA-1C6D-3847-979C-7115C07B1453
+  - target:          arm64e-ios
+    value:           EFD891D1-7782-3EFD-8E40-E21FD0741656
+install-name:    '/System/Library/PrivateFrameworks/AppleHIDTransportSupport.framework/AppleHIDTransportSupport'
+current-version: 4101.1
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _AppleHIDTransportSupportVersionNumber, _AppleHIDTransportSupportVersionString ]
+    objc-classes:    [ AHTImageLoader ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AHTBootLoader, AHTDevice, AHTInterface, AHTLoader ]
+...

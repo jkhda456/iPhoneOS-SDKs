@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           09E64D4D-62E7-35EC-89DD-58CDA339EE6C
+  - target:          arm64e-ios
+    value:           7F98D722-96AE-3AE7-96B6-A23E3A3294F4
+install-name:    '/System/Library/PrivateFrameworks/LoginUILogViewer.framework/LoginUILogViewer'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LoginUILogViewerVersionNumber, _LoginUILogViewerVersionString, 
+                       _kAnimationDuration, _kClearButtonSize, _kDefaultLogFontSize, 
+                       _kLUICurrentPredicateCellContentMargin, _kLogViewDefaultHeight, 
+                       _kResultLabelDefaultText, _kScreenshotDateLabelHeight, _kStreamRefreshInterval, 
+                       _kTouchButtonSize, _secondStringWithDate ]
+    objc-classes:    [ LUILogContentViewController, LUILogFilterCurrentPredicateTableViewCell, 
+                       LUILogFilterPredicateCandidateCollectionViewCell, LUILogFilterView, 
+                       LUILogFilterViewController, LUILogLocatorView, LUILogOptionsView, 
+                       LUILogScreenshotCollectionViewCell, LUILogScreenshotItem, 
+                       LUILogViewerAssistiveTouch, LUILogViewerController, LUILogViewerPageViewController, 
+                       LUILogViewerView ]
+...

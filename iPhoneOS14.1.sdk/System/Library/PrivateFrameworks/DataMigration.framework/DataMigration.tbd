@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A9C9423D-CBBE-3A6D-AE8B-2AE6A1694BCF
+  - target:          armv7s-ios
+    value:           C4175C1D-7B8B-32BD-A2BA-0B479B37A164
+  - target:          arm64-ios
+    value:           D4B7D6DD-5B8E-3618-9B41-F3854C30F951
+  - target:          arm64e-ios
+    value:           3BA247A5-7E22-3221-BAA8-84AF7BDBC61B
+install-name:    '/System/Library/PrivateFrameworks/DataMigration.framework/DataMigration'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DMClearContext ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DMCancelDeferredExit, _DMChangeGraphicalProgressVisibility, 
+                       _DMCopyContext, _DMCopyCurrentBuildVersion, _DMCopyMigrationPhaseDescription, 
+                       _DMCopyOrderedPluginIndentifiers, _DMDeferExit, _DMForceMigrationOnNextReboot, 
+                       _DMForceMigrationOnNextRebootWithUserDataDisposition, _DMGetMigrationPluginResults, 
+                       _DMGetPreviousBuildVersion, _DMGetUserDataDisposition, _DMIsMigrationNeeded, 
+                       _DMPerformMigration, _DMPerformMigrationIfNeeded, _DMPerformMigrationReturningAfterPlugin, 
+                       _DMReportMigrationFailure, _DMSetContext, _DMTestMigrationUI, 
+                       _DMTestPerformMigrationInfrastructure, __DMCoreLog, __DMLog, 
+                       __DMLogFunc, __DMPerformMigration, __DMPluginSignpostLog, 
+                       _kDMMigrationDeferredExitEntitlement ]
+    objc-classes:    [ DMClientAPIController, DMConnection, DMEnvironment, DMMigrationDeferredExitManager, 
+                       DMMigrationPluginWrapperConnection, DMMigrationPluginWrapperWatchdog, 
+                       DMPluginFaulter, DMPluginFileSystemRep, DMPluginParameters, 
+                       DMTimer, DMUserDataDispositionManager, DMXPCConnection, DataClassMigrator ]
+    objc-ivars:      [ DMXPCConnection._connection, DMXPCConnection._queue, DMXPCConnection._replyQueue, 
+                       DataClassMigrator._context ]
+...

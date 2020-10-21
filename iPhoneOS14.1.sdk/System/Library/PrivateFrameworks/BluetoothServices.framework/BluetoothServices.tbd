@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2572D54A-A827-3091-890E-7B651F0A43B6
+  - target:          arm64e-ios
+    value:           AD67E025-676A-3326-AE81-C9C4ED736411
+install-name:    '/System/Library/PrivateFrameworks/BluetoothServices.framework/BluetoothServices'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BTErrorDomain, _BTErrorF, _BTNestedErrorF, _BTXPCGetNextClientID ]
+    objc-classes:    [ BTAudioRoutingRequest, BTAudioRoutingResponse, BTAudioSession, 
+                       BTBannerUISession, BTBluetoothPairingSession, BTCloudAccountInfo, 
+                       BTCloudDevice, BTCloudDeviceSupportInformation, BTCloudServicesClient, 
+                       BTMagicPairingSettings, BTServicesClient, BTShareAudioSessionClient ]
+...

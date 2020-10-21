@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C9CFB91C-989A-3CC2-BEC0-F47237D945CB
+  - target:          arm64e-ios
+    value:           B9A8FCF1-BAAF-35EC-BCC8-7F3B26E2C63E
+install-name:    '/System/Library/PrivateFrameworks/JITAppKit.framework/JITAppKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TKAdaptiveImageFullCrop ]
+    objc-classes:    [ TKAdaptiveImageAPI, TKApplication, TKApplicationViewController, 
+                       TKMessagesExtensionViewController, TKNetwork ]
+...

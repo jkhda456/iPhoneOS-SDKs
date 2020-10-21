@@ -1,0 +1,55 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           965003FC-F21E-3474-B60A-A93272294218
+  - target:          arm64e-ios
+    value:           A05E7816-2BE5-3575-896F-F84B18C110E2
+install-name:    '/System/Library/PrivateFrameworks/OctagonTrust.framework/OctagonTrust'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OTCDPRecoveryInformationReadFrom, _OTCKContainerName, _OTEscrowAuthenticationInformationReadFrom, 
+                       _OTEscrowRecordMetadataClientMetadataReadFrom, _OTEscrowRecordMetadataReadFrom, 
+                       _OTEscrowRecordReadFrom, _OTICDPRecordContextReadFrom, _OTICDPRecordSilentContextReadFrom, 
+                       _OctagonTrustVersionNumber, _OctagonTrustVersionString ]
+    objc-classes:    [ OTCDPRecoveryInformation, OTEscrowAuthenticationInformation, 
+                       OTEscrowRecord, OTEscrowRecordMetadata, OTEscrowRecordMetadataClientMetadata, 
+                       OTEscrowTranslation, OTICDPRecordContext, OTICDPRecordSilentContext ]
+    objc-ivars:      [ OTCDPRecoveryInformation._containsIcdpData, OTCDPRecoveryInformation._has, 
+                       OTCDPRecoveryInformation._recoveryKey, OTCDPRecoveryInformation._recoverySecret, 
+                       OTCDPRecoveryInformation._silentRecoveryAttempt, OTCDPRecoveryInformation._useCachedSecret, 
+                       OTCDPRecoveryInformation._usePreviouslyCachedRecoveryKey, 
+                       OTCDPRecoveryInformation._usesMultipleIcsc, OTEscrowAuthenticationInformation._authenticationAppleid, 
+                       OTEscrowAuthenticationInformation._authenticationAuthToken, 
+                       OTEscrowAuthenticationInformation._authenticationDsid, OTEscrowAuthenticationInformation._authenticationEscrowproxyUrl, 
+                       OTEscrowAuthenticationInformation._authenticationIcloudEnvironment, 
+                       OTEscrowAuthenticationInformation._authenticationPassword, 
+                       OTEscrowAuthenticationInformation._fmipRecovery, OTEscrowAuthenticationInformation._fmipUuid, 
+                       OTEscrowAuthenticationInformation._has, OTEscrowAuthenticationInformation._idmsRecovery, 
+                       OTEscrowRecord._coolOffEnd, OTEscrowRecord._creationDate, 
+                       OTEscrowRecord._escrowInformationMetadata, OTEscrowRecord._has, 
+                       OTEscrowRecord._label, OTEscrowRecord._recordId, OTEscrowRecord._recordStatus, 
+                       OTEscrowRecord._recordViability, OTEscrowRecord._recoveryStatus, 
+                       OTEscrowRecord._remainingAttempts, OTEscrowRecord._serialNumber, 
+                       OTEscrowRecord._silentAttemptAllowed, OTEscrowRecord._viabilityStatus, 
+                       OTEscrowRecordMetadata._backupKeybagDigest, OTEscrowRecordMetadata._bottleId, 
+                       OTEscrowRecordMetadata._bottleValidity, OTEscrowRecordMetadata._clientMetadata, 
+                       OTEscrowRecordMetadata._escrowedSpki, OTEscrowRecordMetadata._has, 
+                       OTEscrowRecordMetadata._peerInfo, OTEscrowRecordMetadata._secureBackupTimestamp, 
+                       OTEscrowRecordMetadata._secureBackupUsesMultipleIcscs, OTEscrowRecordMetadata._serial, 
+                       OTEscrowRecordMetadataClientMetadata._deviceColor, OTEscrowRecordMetadataClientMetadata._deviceEnclosureColor, 
+                       OTEscrowRecordMetadataClientMetadata._deviceMid, OTEscrowRecordMetadataClientMetadata._deviceModel, 
+                       OTEscrowRecordMetadataClientMetadata._deviceModelClass, OTEscrowRecordMetadataClientMetadata._deviceModelVersion, 
+                       OTEscrowRecordMetadataClientMetadata._deviceName, OTEscrowRecordMetadataClientMetadata._devicePlatform, 
+                       OTEscrowRecordMetadataClientMetadata._has, OTEscrowRecordMetadataClientMetadata._secureBackupMetadataTimestamp, 
+                       OTEscrowRecordMetadataClientMetadata._secureBackupNumericPassphraseLength, 
+                       OTEscrowRecordMetadataClientMetadata._secureBackupUsesComplexPassphrase, 
+                       OTEscrowRecordMetadataClientMetadata._secureBackupUsesNumericPassphrase, 
+                       OTICDPRecordContext._authInfo, OTICDPRecordContext._cdpInfo, 
+                       OTICDPRecordSilentContext._authInfo, OTICDPRecordSilentContext._cdpInfo ]
+...

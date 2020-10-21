@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           012FEC4D-00AC-3E90-B7DD-CC660950B753
+  - target:          arm64e-ios
+    value:           37B291D0-82D1-324A-B6B3-5882F223C035
+install-name:    '/System/Library/PrivateFrameworks/Phoenix.framework/Phoenix'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PhoenixVersionNumber, _PhoenixVersionString ]
+    objc-classes:    [ AXPhoenixAnalytics, AXPhoenixAnalyticsEvent, AXPhoenixAssetMonitor, 
+                       AXPhoenixAssetPolicy, AXPhoenixClassifier, AXPhoenixClassifierConfiguration, 
+                       AXPhoenixConfiguration, AXPhoenixDeviceLockMonitor, AXPhoenixDisplayStatusMonitor, 
+                       AXPhoenixEventMonitor, AXPhoenixGestureDetector, AXPhoenixMitigator, 
+                       AXPhoenixMitigatorConfiguration, AXPhoenixWakeGestureMonitor, 
+                       AccelerometerBuffer, AccelerometerData, Prediction, PredictionsBuffer ]
+...

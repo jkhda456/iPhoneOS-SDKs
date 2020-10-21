@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B1A87329-2DE2-33ED-A7CC-A7713AE5BE0E
+  - target:          arm64e-ios
+    value:           441C344A-8FA4-3CB2-B15D-9CBC746FA68B
+install-name:    '/System/Library/PrivateFrameworks/Stocks/Snappy.framework/Snappy'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ NewsArticles, NewsArticlesTests, NewsFeed, NewsFeedTests, 
+                       NewsSubscription, SnappyTests, Stocks, StocksAnalytics, StocksAnalyticsTests, 
+                       StocksCore, StocksCoreTests, StocksDetailIntents, StocksTests, 
+                       StocksToday, StocksUI, StocksUITests, StocksWidget, StocksWidgetUI ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SnappyVersionNumber, _SnappyVersionString ]
+    objc-classes:    [ SNAssembly, SNTestAssembly, SNTestChain, SNTestContext, SNTestCoordinator, 
+                       SNTestFailure, SNTestRun, SNTestRunner, SNTestStore, SNTestSuite ]
+...

@@ -1,0 +1,64 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C27BE595-8A87-3A28-8E6A-732F6EAF9BD0
+  - target:          armv7s-ios
+    value:           02D9F05F-89A5-3FF7-8ED7-2DC20E192922
+  - target:          arm64-ios
+    value:           365EBD59-1434-3EE5-B213-1540728D2BD3
+  - target:          arm64e-ios
+    value:           4A5B7002-5F6C-3472-A2E7-E0B8F8D20065
+install-name:    '/System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport'
+current-version: 98
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppleIDAuthSupportAuthenticate, _AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute, 
+                       _AppleIDAuthSupportCopyAppToken, _AppleIDAuthSupportCopyAppTokens, 
+                       _AppleIDAuthSupportCopyAppTokensOptions, _AppleIDAuthSupportCopyContextAppTokens, 
+                       _AppleIDAuthSupportCopyProvidedData, _AppleIDAuthSupportCopySessionKey, 
+                       _AppleIDAuthSupportCopyString, _AppleIDAuthSupportCopyToken, 
+                       _AppleIDAuthSupportCreate, _AppleIDAuthSupportCreateVerifier, 
+                       _AppleIDAuthSupportDeterministicRandomCreate, _AppleIDAuthSupportGSCopyAppTokens, 
+                       _AppleIDAuthSupportGSCopyNewIdentityToken, _AppleIDAuthSupportGSCreateContext, 
+                       _AppleIDAuthSupportGSGetID, _AppleIDAuthSupportGSOperation, 
+                       _AppleIDAuthSupportGSRPC, _AppleIDAuthSupportGSRequestCopyResponse, 
+                       _AppleIDAuthSupportGetOption, _AppleIDAuthSupportGetStatus, 
+                       _AppleIDAuthSupportGetTypeID, _AppleIDAuthSupportIsDone, _AppleIDAuthSupportServerSetCallback, 
+                       _AppleIDAuthSupportServerSetServerDataCallback, _AppleIDAuthSupportSetOption, 
+                       _AppleIDAuthSupportStep, _AppleIDAuthSupportSuccess, _AppleIDAuthSupportTokenCopyExternalizedVersion, 
+                       _AppleIDAuthSupportTokenCreateWithExternalizedVersion, _AppleIDAuthSupportTokenGetTypeID, 
+                       _AppleIDAuthSupportTokenUpdate, __AppleIDAuthSupportCreateDecryptedData, 
+                       __AppleIDAuthSupportCreateEncryptedData, __AppleIDAuthSupportCreateToken, 
+                       __AppleIDAuthSupportGSSetRPC, _kAppleIDAuthSupportA2k, _kAppleIDAuthSupportActionData, 
+                       _kAppleIDAuthSupportAdditionalHeaders, _kAppleIDAuthSupportAlternateDSID, 
+                       _kAppleIDAuthSupportAppleIClientID, _kAppleIDAuthSupportAppleITeamID, 
+                       _kAppleIDAuthSupportApplication, _kAppleIDAuthSupportAuthAttribute, 
+                       _kAppleIDAuthSupportB, _kAppleIDAuthSupportBuddyML, _kAppleIDAuthSupportChecksum, 
+                       _kAppleIDAuthSupportClearData, _kAppleIDAuthSupportClientInfo, 
+                       _kAppleIDAuthSupportClientProvidedData, _kAppleIDAuthSupportCompanionClientInfo, 
+                       _kAppleIDAuthSupportCookie, _kAppleIDAuthSupportData, _kAppleIDAuthSupportDisregardChannelBindings, 
+                       _kAppleIDAuthSupportDuration, _kAppleIDAuthSupportEncryptedToken, 
+                       _kAppleIDAuthSupportErrorActionDelayInSeconds, _kAppleIDAuthSupportErrorActionRestartInSeconds, 
+                       _kAppleIDAuthSupportErrorOverrideAction, _kAppleIDAuthSupportErrorOverrideValue, 
+                       _kAppleIDAuthSupportErrorResponseCode, _kAppleIDAuthSupportGsIdmsSessionKey, 
+                       _kAppleIDAuthSupportGsIdmsToken, _kAppleIDAuthSupportM1, _kAppleIDAuthSupportM2, 
+                       _kAppleIDAuthSupportMaybeSkipEncrypt, _kAppleIDAuthSupportNegotationProtection, 
+                       _kAppleIDAuthSupportNewAppTokens, _kAppleIDAuthSupportNewToken, 
+                       _kAppleIDAuthSupportOperation, _kAppleIDAuthSupportOperation2SV, 
+                       _kAppleIDAuthSupportOperationINIT, _kAppleIDAuthSupportOperationSRPCOMPLETE, 
+                       _kAppleIDAuthSupportOptionTimeoutIntervalForRequest, _kAppleIDAuthSupportOptionTimeoutIntervalForResource, 
+                       _kAppleIDAuthSupportPBKDFIterations, _kAppleIDAuthSupportPBKDFSalt, 
+                       _kAppleIDAuthSupportPassword, _kAppleIDAuthSupportProtocol, 
+                       _kAppleIDAuthSupportProtocolSRPGROUP2048SHA256PBKDF, _kAppleIDAuthSupportProtocolSRPGROUP2048SHA256PBKDFLegacy, 
+                       _kAppleIDAuthSupportProtocolSRPGROUP4096SHA256PBKDF, _kAppleIDAuthSupportProtocols, 
+                       _kAppleIDAuthSupportProxiedClientInfo, _kAppleIDAuthSupportSASLPrep, 
+                       _kAppleIDAuthSupportSRP2KVerifier, _kAppleIDAuthSupportSRP4KVerifier, 
+                       _kAppleIDAuthSupportSRPRandomSource, _kAppleIDAuthSupportSelectedProtocol, 
+                       _kAppleIDAuthSupportServerCertificate, _kAppleIDAuthSupportServerProvidedData, 
+                       _kAppleIDAuthSupportServerState, _kAppleIDAuthSupportSourceApplicationAuditTokenData, 
+                       _kAppleIDAuthSupportStatus, _kAppleIDAuthSupportStatusContinue, 
+                       _kAppleIDAuthSupportStatusDone, _kAppleIDAuthSupportToken, 
+                       _kAppleIDAuthSupportUsername ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AC094587-05D3-3250-9065-E45678FD6F57
+  - target:          arm64e-ios
+    value:           1DEFA96D-B0C2-3845-9573-E8E01ECC743A
+install-name:    '/System/Library/PrivateFrameworks/AppSSOCore.framework/AppSSOCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SOAuthorizationOptionCoreNoUserInterface, _SOErrorDomain, 
+                       _SOErrorSubcodeKey, _appSSO_handleResponse, _appSSO_handleResponseCredential, 
+                       _appSSO_init, _appSSO_performResponse, _appSSO_performResponseCredential, 
+                       _appSSO_willHandle, _appSSO_willPerform ]
+    objc-classes:    [ SOAuthorizationCore, SOAuthorizationCredentialCore, SOAuthorizationHintsCore, 
+                       SOAuthorizationParametersCore, SOAuthorizationRequestParametersCore, 
+                       SOConfiguration, SOConfigurationClient, SOConfigurationVersion, 
+                       SOErrorHelper, SOFullProfile, SOInternalProtocols, SOServiceConnection, 
+                       SOUtils ]
+...

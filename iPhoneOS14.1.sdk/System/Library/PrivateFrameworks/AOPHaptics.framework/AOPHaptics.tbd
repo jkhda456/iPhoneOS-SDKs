@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DC044C33-460B-3298-93A1-FF87EBBC1BA7
+  - target:          arm64e-ios
+    value:           F4907151-A0CA-3102-BDA2-7BD72ACAC940
+install-name:    '/System/Library/PrivateFrameworks/AOPHaptics.framework/AOPHaptics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AOPHapticsActionKey, _AOPHapticsGainKey, _AOPHapticsOutputTypeKey, 
+                       _AOPHapticsPreSilenceDurationKey, _AOPHapticsPriorityKey, 
+                       _AOPHapticsRequestTimestampKey, _AOPHapticsSlotIndexKey ]
+    objc-classes:    [ AOPHapticsController ]
+...

@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AC84440D-198D-3266-9C2D-42D3E362C731
+  - target:          arm64e-ios
+    value:           24E13543-CDA9-3F5A-97B3-E49C6FB579CC
+install-name:    '/System/Library/PrivateFrameworks/ProxCardKit.framework/ProxCardKit'
+current-version: 1566.6
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PRXActivityIndicatorBottomMargin, _PRXActivityIndicatorToStatusMargin, 
+                       _PRXButtonToButtonMargin, _PRXCardCompactLayoutMargins, _PRXCardCompactSize, 
+                       _PRXCardContainerDefaultLayoutMargins, _PRXCardContainerTopLayoutMarginPortraitPhone, 
+                       _PRXCardContainerTopLayoutMarginiPadKeyboard, _PRXCardDefaultCornerRadius, 
+                       _PRXCardDefaultLayoutMargins, _PRXCardDefaultSize, _PRXCardPreferredSize, 
+                       _PRXCardPreferredSizeClassForContainerBounds, _PRXCardShortSize, 
+                       _PRXDisclaimerToMoreInfoBaselineMargin, _PRXDismissButtonDefaultMargin, 
+                       _PRXDismissButtonEdgeToEdgeMargin, _PRXExpectedCardWidthForStyle, 
+                       _PRXExpectedCardWidthForStyleInContainerOfSize, _PRXFeatureTourContentViewCompactLayoutMargins, 
+                       _PRXFeatureTourContentViewDefaultLayoutMargins, _PRXIconToIconMargin, 
+                       _PRXIsEdgeToEdgePhone, _PRXIsPad, _PRXLastButtonOfMultipleToBottomMargin, 
+                       _PRXMainContentMargin, _PRXMinimumInterItemMargin, _PRXPickerViewMargin, 
+                       _PRXPreferredPickerRowHeight, _PRXProminentButtonCornerRadius, 
+                       _PRXScrolledTitleMargin, _PRXSupportedInterfaceOrientations, 
+                       _PRXTitleToSubtitleMargin ]
+    objc-classes:    [ PRXAction, PRXActivityStatusView, PRXButton, PRXCardBackgroundView, 
+                       PRXCardContainerView, PRXCardContainerViewController, PRXCardContentContainerView, 
+                       PRXCardContentView, PRXCardContentViewController, PRXCardSlideUpPresentationController, 
+                       PRXDisclaimerContentView, PRXDisclaimerContentViewController, 
+                       PRXFeature, PRXFeatureListViewController, PRXFeatureTableViewCell, 
+                       PRXFeatureTourContentView, PRXFeatureTourContentViewController, 
+                       PRXFlowConfiguration, PRXIconContentView, PRXIconContentViewController, 
+                       PRXImageView, PRXLabel, PRXOptionCollectionViewCell, PRXOptionListViewController, 
+                       PRXPasscodeEntryView, PRXPasscodeEntryViewController, PRXPickerContentView, 
+                       PRXPickerContentViewController, PRXPullDismissalScrollView, 
+                       PRXScrollableContentView, PRXSelectionIndicatorView, PRXTextField, 
+                       PRXTextStyleDefinition, PRXTextView ]
+...

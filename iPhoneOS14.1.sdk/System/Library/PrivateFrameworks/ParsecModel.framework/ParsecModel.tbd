@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AFF4003D-33E6-3649-8CF6-F443C9C6ABA7
+  - target:          arm64e-ios
+    value:           83269C73-D9D5-37A0-A3AE-8BB5B96E1F33
+install-name:    '/System/Library/PrivateFrameworks/ParsecModel.framework/ParsecModel'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ParsecModelVersionNumber, _ParsecModelVersionString ]
+    objc-classes:    [ PARCategory, PARCollectionStartEvent, PAREvent, PARFlushEvent, 
+                       PARImagesPropensity, PARSafariPropensity, PARSessionEngagementsByTrigger, 
+                       PARSpotlightPropensity, PARUsageEvent ]
+...

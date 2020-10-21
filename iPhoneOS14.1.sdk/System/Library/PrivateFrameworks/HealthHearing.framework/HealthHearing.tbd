@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8D8236F3-EF09-329C-8B3E-368066C02156
+  - target:          arm64e-ios
+    value:           7B998E85-E973-31DF-B8F9-57F2FF7DC4F1
+install-name:    '/System/Library/PrivateFrameworks/HealthHearing.framework/HealthHearing'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HHHearingLogCategoryAction, _HHHearingLogCategoryAnalytics, 
+                       _HHHearingLogCategoryClient, _HHHearingLogCategoryDaemon, 
+                       _HHHearingLogCategoryDefault, _HHHearingLogCategoryForCategory, 
+                       _HHHearingLogCategoryNotification, _HHHearingLogCategoryPersist, 
+                       _HHHearingLogCategoryPlugin, _HHHearingLogCategoryQuery, _HHHearingLogCategoryServer, 
+                       _HHHearingLogCategorySync, _HHHearingLogCategoryTest, _HHHearingLogCategoryView, 
+                       _HHHearingLogCategoryXPC, _HHHearingLogForCategory, _HHHearingLogSubsystem, 
+                       _HKHeadphoneAudioExposureControlClientInterface, _HKHeadphoneAudioExposureControlServerInterface, 
+                       _HKHeadphoneAudioExposureEventType, _HKHeadphoneAudioExposureType, 
+                       _HKHearingFeatureHeadphoneExposureNotificationsEnabledDidChange, 
+                       _HKHearingPluginIdentifier ]
+    objc-classes:    [ HKHeadphoneAudioExposureControl, HKHearingFeatures ]
+...

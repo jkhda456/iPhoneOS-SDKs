@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           9B34B450-6335-3B92-9D6D-4A67FBA45354
+  - target:          armv7s-ios
+    value:           5A92B0BC-0442-313E-9714-FD40DE5DCEBD
+  - target:          arm64-ios
+    value:           198917EE-E4DF-3257-BAFC-627527DF4082
+  - target:          arm64e-ios
+    value:           60BFCF86-45BA-311C-833E-2E2AB27F3C35
+install-name:    '/System/Library/PrivateFrameworks/MobileSync.framework/MobileSync'
+current-version: 932
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _ModernNotesDataSourceCreator, _NotesDataSourceCreator, _kDisallowTwitterKey, 
+                       _kMobileSyncNoTwitterConstraintsFileName ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BookmarksDataSourceCreator, _CalendarsDataSourceCreator, 
+                       _ContactsDataSourceCreator, _CreateCleanUuid, _CreateDataSourceForDataClassName, 
+                       _DataSourceCanSyncWithVersion, _DataSourceClearAllRecords, 
+                       _DataSourceClearSyncAnchors, _DataSourceCommit, _DataSourceDeleteDataSource, 
+                       _DataSourceGetAllRecords, _DataSourceGetChanges, _DataSourceGetCountOfRecords, 
+                       _DataSourceGetEntityTypeProcessOrder, _DataSourceGetSyncTypeAndExchangeSyncAnchors, 
+                       _DataSourceGetVersion, _DataSourceLockFilePath, _DataSourceMigrateRecords, 
+                       _DataSourceProcessChanges, _DataSourceRemoveStore, _DataSourceRollback, 
+                       _DataSourceShouldLockData, _MailAccountsDataSourceCreator, 
+                       _SyncPlaybackEnabled, __copySetOfEmailAddressesFromMessageFramework, 
+                       __reallyCopySetOfEmailAddressesFromMessageFramework, __resetDataSourceState, 
+                       _dataClassNameForDataType, _dataTypeForDataClassName, _kConflictSound, 
+                       _kDataClassBookmarks, _kDataClassCalendars, _kDataClassContacts, 
+                       _kDataClassMailAccounts, _kDataClassNotes, _kDataSourceClearDefaultStoreKey, 
+                       _kDataSourceUpdateAnchorsOnPullKey, _kDataStoreDisplayNameKey, 
+                       _kDataStoreSetAsDefaultKey, _kDataStoreSetAsDefaultOnlyIfNotSetKey, 
+                       _kDataStoreTypeKey, _kDataTypeBookmarks, _kDataTypeCalendars, 
+                       _kDataTypeContacts, _kDataTypeMailAccounts, _kDataTypeNotes, 
+                       _kDefaultCalendarsDataSourceVersion, _kDefaultDataSourceVersion, 
+                       _kDefaultMaxCompressedImageSize, _kImageChangedKey, _kIsEventsOnlySource, 
+                       _kIsRemindersOnlySource, _kIsTetheredSync, _kMaxCompressedImageSizeKey, 
+                       _kNullSound, _kOrganizerAddressSet, _kShouldClearHiddenBookmarksKey, 
+                       _kShouldSendAllCalendarsOnFastSyncKey, _kShouldSyncAttendeesAndOrganizers, 
+                       _kShouldSyncCalendarColors, _kSyncAgentClientIdentifier, _kSyncServicesIPhoneTypeString, 
+                       _kUseImageChangedPlaceholder, _recordIdentifierIsLocal, _setPlaybackEnabled ]
+...

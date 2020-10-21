@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4321B129-CCD0-3418-9540-81274B655B44
+  - target:          armv7s-ios
+    value:           2698D588-D907-3644-B118-359B373030AA
+  - target:          arm64-ios
+    value:           18F2BA29-301C-3314-8AEE-6A4EE35ED626
+  - target:          arm64e-ios
+    value:           3F416602-9107-33FA-B53A-C289CC7846F5
+install-name:    '/System/Library/PrivateFrameworks/CoreNameParser.framework/CoreNameParser'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __NPCollapseWhitespaceAndStrip, __NPRemoveAppSignature, __NPRemoveEmojis, 
+                       __NPRemoveParenthesisBracketsAndInside, __NPStripDiatritics, 
+                       __NPStripQuotationMarks, __NPTokenizeName, __NPTrimNonLetters, 
+                       _charSetWithEndpoints ]
+    objc-classes:    [ NPComponentSequence, NPHMMClassifier, NPNameComponentsData, 
+                       NPNameParser ]
+...

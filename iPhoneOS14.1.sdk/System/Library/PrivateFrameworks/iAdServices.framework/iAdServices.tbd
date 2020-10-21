@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           934F7B18-D6DD-382E-87F8-10AFDD479CF9
+  - target:          armv7s-ios
+    value:           654BD86B-DDB9-342F-8924-875519ED63D7
+  - target:          arm64-ios
+    value:           B7E064D1-D936-32BB-A845-8C506C939B73
+  - target:          arm64e-ios
+    value:           E4A888D1-544A-3CA8-AAEF-6328FB2F59FE
+install-name:    '/System/Library/PrivateFrameworks/iAdServices.framework/iAdServices'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _ADAdSheetAvailableNotification, _ADAdSheetClassicUnavailableNotification, 
+                       _ADAdSheetClientAvailableNotification, _AdSheetCacheCapacity, 
+                       _AdSheetIdentifier, _AdSheetRemoteWindowContextKey, __QWAPIHostPattern, 
+                       __appleHostPattern ]
+    objc-classes:    [ ADAdSheetConnection, ADAdSheetProxy, ADAnalytics ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ADBKSApplicationStateDescription, _ADClientGlobalStateChangedNotification, 
+                       _ADClientSegmentDataErrorDomain, _ADDefaultsBundleID, _ADErrorDomain, 
+                       _ADInternalErrorCode, _ADInternalErrorDomain, _ADInternalServerFailureCode, 
+                       _ADLocationPermissionCacheURL, _ADLogBarrier, _ADMakeCacheSubdirectory, 
+                       _ADPlaceholderAccountID, _ADSerialWorkQueueName, _ADSessionUnexpectedCloseError, 
+                       _ADShouldProxyRequestToHost, _ADWebViewProxyURLSchemeHTTP, 
+                       _ADWebViewProxyURLSchemeHTTPS, _AdServicesDaemonIdentifier, 
+                       _AdServingDaemonCacheCapacity, __ADLog, _isInternalInstall, 
+                       _kADVideoAdvertisingIdentifier, _kADVideoURLSchemeHTTP, _kADVideoURLSchemeHTTPS, 
+                       _kADViewDefaultHeight, _kADViewDefaultWidth ]
+    objc-classes:    [ ADAdActionPublicAttributes, ADAdImpressionPublicAttributes, 
+                       ADAdServingDaemonConnection, ADAdSpaceConfiguration, ADAdSpaceEventInfo, 
+                       ADDefaults, ADDeviceInfo, ADMRAIDAction, ADSInternalPoint, 
+                       ADSInternalRect, ADSInternalSize, ADSerialWorkQueue, ADServiceUtilities ]
+...

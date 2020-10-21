@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F88DA86C-47F6-3917-9699-9B4D4E1FA3E2
+  - target:          arm64e-ios
+    value:           51E8AE8D-5232-3318-86A3-E2F42BCD3BA5
+install-name:    '/System/Library/PrivateFrameworks/WallpaperKit.framework/WallpaperKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WKAllowCroppingForWallpaperAtLockScreen, _WKBundleForWallpaperKitFramework, 
+                       _WKDefaultWallpapersCollectionIdentifier, _WKDefaultWallpapersDefault, 
+                       _WKDefaultWallpapersWallpaperIdentifier, _WKDynamicWallpaperCollectionIdentifierString, 
+                       _WKIgnoreLogicalScreenClassForWallpaperBundleKey, _WKIgnoreProductTypesForWallpaperBundleKey, 
+                       _WKLogForCategory, _WKLogicalScreenClassString, _WKRectApplyScale, 
+                       _WKSizeApplyScale, _WKSolidColorWallpaperCollectionIdentifierString, 
+                       _WKStandardDisplayModeScreenSize, _WKStringFromWallpaperBackingType, 
+                       _WKStringFromWallpaperContentSource, _WKStringFromWallpaperType, 
+                       _WKSupportsLiveWallpapers, _WKSupportsProceduralWallpapers, 
+                       _WKWallpaperAppearanceDark, _WKWallpaperAppearanceDefault, 
+                       _WKWallpaperCollectionContentDidChangeNotification, _WKWallpaperCollectionOptionIdentifier, 
+                       _WKWallpaperCollectionOptionIsLegacyContent, _WKWallpaperCollectionOptionName, 
+                       _WKWallpaperCollectionOptionOrder, _WKWallpaperCollectionOptionSource, 
+                       _WKWallpaperContentSourceFromString, _WKWallpaperKitErrorDomain, 
+                       _WKWallpaperLocationCoverSheet, _WKWallpaperLocationHomeScreen, 
+                       _WKWallpaperMetadataOptionAppearanceAwareKey, _WKWallpaperMetadataOptionAssetFullSizeImageFileNameKey, 
+                       _WKWallpaperMetadataOptionAssetFullSizeImageFileURLKey, _WKWallpaperMetadataOptionAssetIdentifierKey, 
+                       _WKWallpaperMetadataOptionAssetNameKey, _WKWallpaperMetadataOptionAssetStillTimeInVideoKey, 
+                       _WKWallpaperMetadataOptionAssetThumbnailImageFileNameKey, 
+                       _WKWallpaperMetadataOptionAssetThumbnailImageFileURLKey, _WKWallpaperMetadataOptionAssetVideoFileNameKey, 
+                       _WKWallpaperMetadataOptionAssetWallpaperTypeKey, _WKWallpaperMetadataOptionAssetsHomeKey, 
+                       _WKWallpaperMetadataOptionAssetsKey, _WKWallpaperMetadataOptionAssetsLockAndHomeKey, 
+                       _WKWallpaperMetadataOptionAssetsLockKey, _WKWallpaperMetadataOptionFamilyKey, 
+                       _WKWallpaperMetadataOptionIdentifierKey, _WKWallpaperMetadataOptionLogicalSceenClassKey, 
+                       _WKWallpaperMetadataOptionNameKey, _WKWallpaperMetadataOptionProductTypesKey, 
+                       _WKWallpaperMetadataOptionThumbnailImageFileNameKey, _WKWallpaperMetadataOptionVersionNumberKey, 
+                       _WKWallpaperTypeFromString, _WKWallpapersBaseURL, _WK_LocalizedString ]
+    objc-classes:    [ WKAbstractWallpaper, WKDefaultWallpaperManager, WKDynamicWallpaper, 
+                       WKIndicatorView, WKLegacyWallpaperBundleLoader, WKLiveWallpaper, 
+                       WKStillWallpaper, WKWallpaperBundle, WKWallpaperBundleCollection, 
+                       WKWallpaperBundleImporter, WKWallpaperCollection, WKWallpaperCollectionsManager ]
+...

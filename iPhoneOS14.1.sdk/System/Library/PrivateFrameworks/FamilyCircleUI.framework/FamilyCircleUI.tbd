@@ -1,0 +1,59 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C17C7EA4-CBBC-325A-901A-863B53A94F9B
+  - target:          arm64e-ios
+    value:           CADF49FD-9DFA-39BD-AF07-D58215101404
+install-name:    '/System/Library/PrivateFrameworks/FamilyCircleUI.framework/FamilyCircleUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FAActivityTypeInviteInPerson, _FACircleClientNameScreenTime, 
+                       _FACircleEventTypeAcceptInvitation, _FACircleEventTypeAddChildAccount, 
+                       _FACircleEventTypeAddFamilyMember, _FACircleEventTypeAddFamilyMemberV3, 
+                       _FACircleEventTypeAddMemberInline, _FACircleEventTypeApproveWithRestrictionsPIN, 
+                       _FACircleEventTypeFamilyRepair, _FACircleEventTypeFamilySettings, 
+                       _FACircleEventTypeGetFamilyInvitationsUI, _FACircleEventTypeInitiate, 
+                       _FACircleEventTypeInviteViaMessages, _FACircleEventTypeManageCircle, 
+                       _FACircleEventTypeMercuryJourney, _FACircleEventTypeSharedService, 
+                       _FACircleEventTypeURLEndpoint, _FAFamilyActionAttribute, _FAFamilyDetailsCacheDidChangeNotification, 
+                       _FAFamilyMessageGroupIdentifier, _FAHookContinuationParamsKey, 
+                       _FALogStringForQualityOfService, _FAMercuryJourneyParamKey, 
+                       _FAMercuryServerPayloadKey, _FAProfilePictureStoreDefaultDiameter, 
+                       _FAProfilePictureStoreDidReloadImagesNotification, _FARemoteAlertServiceUserInfoContextData, 
+                       _FASharedServicesAdditionalParamsKey, _FASharedServicesSpecifierId, 
+                       _FASharedServicesSpecifierIdentifierKey, _FASharedServicesSpecifiersActionURLKey, 
+                       _FamilyCircleUIVersionNumber, _FamilyCircleUIVersionString, 
+                       __FALogSystem, __FASignpostCreate, __FASignpostGetNanoseconds, 
+                       __FASignpostLogSystem ]
+    objc-classes:    [ FAAcceptChildTransferRequest, FAAcceptFamilyInviteRequest, 
+                       FAActivityViewController, FAAddPhotoView, FABuyStorageHook, 
+                       FAChildTransferInviteView, FACircleContext, FACirclePresenter, 
+                       FACircleRemoteUIDelegate, FACircleStateController, FAConfirmIdentityViewController, 
+                       FACreateChildAccountHook, FACreateChildController, FADeclineChildTransferRequest, 
+                       FADeclineFamilyInviteRequest, FAExplainAppleIDViewController, 
+                       FAFamilyCreditCard, FAFamilyDetailsCache, FAFamilyEligibilityRequester, 
+                       FAFamilyHeaderView, FAFamilyInvitationAcceptanceViewController, 
+                       FAFamilyMemberDetailsPageSurrogate, FAFamilyMemberDetailsUIRequest, 
+                       FAFamilyMessageGroup, FAFamilyNotificationObserver, FAFamilyPaymentCardUIRequest, 
+                       FAFamilyPaymentInfoRequest, FAFamilyPaymentInfoResponse, FAFamilyRequest, 
+                       FAFamilySettingsViewController, FAFamilySetupBuddyMLRequest, 
+                       FAFamilySetupGetStartedViewController, FAFamilySetupOrganizerViewController, 
+                       FAFamilySetupPrompter, FAFamilySetupViewController, FAFamilySharingFeaturesView, 
+                       FAInviteFamilyMemberRequest, FAInviteInPersonActivity, FAInviteLinkMetadata, 
+                       FAInviteLinkMetadataProvider, FAInvokeMessageHook, FALaunchScreenTimeSetupHook, 
+                       FALaunchServicesHook, FALocationSharingHook, FAMessagesInviteConfigurationController, 
+                       FAMugshotMarqueeView, FANavigationController, FAPeerPaymentHook, 
+                       FAProfilePictureStore, FAProfilePictureTableViewDecorator, 
+                       FAProfileViewTableViewDecorator, FARemoteAlertServiceViewController, 
+                       FARemoteServiceViewController, FARemoteViewController, FASettingsSpecifierProvider, 
+                       FAShareSheetInviteConfigurationController, FASharedServicesRequest, 
+                       FASharedServicesResponse, FASharedServicesSpecifierCell, FASharedSubscriptionSpecifierProvider, 
+                       FAShowFamilyScreenTimeHook, FAStandardInviteView, FATableViewDecorator, 
+                       _FASharedServiceImage ]
+...

@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0DE12022-14D5-3C61-8918-0F3AFF2064E0
+  - target:          arm64e-ios
+    value:           492EF87A-792C-3AF1-8653-91806B8397D8
+install-name:    '/System/Library/PrivateFrameworks/HearingUI.framework/HearingUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXHAHearingDevicesIconImage, _AXHARoundToPixel, _HACCItemEdgeSize, 
+                       _HearingUIVersionNumber, _HearingUIVersionString, _accessibilityHearingAidImageNamed, 
+                       _accessibilityHearingUIBundle, _attributedStringWithFeatureSettings, 
+                       _attributedStringWithImage, _colorForThreshold, _haccEdgeSize, 
+                       _kSafeSymbolName, _kWarningSymbolName ]
+    objc-classes:    [ HACCBatteryGroupView, HACCBatteryView, HACCConstants, HACCContentViewController, 
+                       HACCLiveListenButton, HACCLiveListenLevelGroup, HACCMenuModuleViewController, 
+                       HACCPMEToggle, HACCPSESettings, HACCProgramsButton, HACCShortcutViewBackgroundController, 
+                       HACCShortcutViewController, HACCSlider, HACCStatusView, HACCUltronControl, 
+                       HUIHeadphoneLevelGroup, HUIHeadphoneLevelView, HUIStepSlider, 
+                       HUITitleValueSlider, _HUIUtilitiesPlaceholder ]
+    objc-ivars:      [ HACCBatteryView._batteryView, HACCBatteryView._numberFormatter, 
+                       HACCBatteryView._sideLabel, HACCBatteryView._valueLabel ]
+...

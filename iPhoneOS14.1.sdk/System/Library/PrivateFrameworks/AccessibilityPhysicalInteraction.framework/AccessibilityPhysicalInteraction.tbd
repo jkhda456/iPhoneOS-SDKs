@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0D79BC95-CFD3-3D66-86D6-86D91FC119BA
+  - target:          arm64e-ios
+    value:           48880ED0-FF26-316E-8E8C-F13EF3854270
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityPhysicalInteraction.framework/AccessibilityPhysicalInteraction'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXPIDefaultAppearanceForDevice, _AXPIDistanceBetweenPoints, 
+                       _AXPILocalizedString, _AXPISystemActionHelperClientBackTap, 
+                       _AXPISystemPointerSize, _AccessibilityPhysicalInteractionVersionNumber, 
+                       _AccessibilityPhysicalInteractionVersionString ]
+    objc-classes:    [ AXPIEventSender, AXPIFingerContainerView, AXPIFingerController, 
+                       AXPIFingerEventSender, AXPIFingerEventTouchInfo, AXPIFingerLargeAppearance, 
+                       AXPIFingerLayer, AXPIFingerModel, AXPIFingerSmallAppearance, 
+                       AXPIFingerUtilities, AXPIFingerView, AXPIPinchChainView, AXPISystemActionHelper, 
+                       AXPISystemPointerAppearance ]
+...

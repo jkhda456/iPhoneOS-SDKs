@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7A82C97D-2BF4-380C-BA7C-DD12EEF4CF7D
+  - target:          arm64e-ios
+    value:           633A3F97-1BB2-34AB-B90D-36A1F8ABB214
+install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealth.framework/RespiratoryHealth'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HKRPBloodOxygenAppBundleIdentifier, _HKRPLocalizedString, 
+                       _HKRPShouldInstallOxygenSaturationWatchAppOnPairedWatch, _HKRPShouldSkipHardwareCheck, 
+                       _HKRPStringFromHKRPOxygenSaturationSessionEndReason, _HKRPUserDefaultsHasCompletedOnboardingKey, 
+                       _HKRespiratoryPluginIdentifier, __HDRPOxygenSaturationSessionServerIdentifier ]
+    objc-classes:    [ HKRPOxygenSaturationAvailability, HKRPOxygenSaturationOnboardingCache, 
+                       HKRPOxygenSaturationOnboardingCacher, HKRPOxygenSaturationOnboardingManager, 
+                       HKRPOxygenSaturationSession, HKRPOxygenSaturationSettings, 
+                       HKRPUserDefaultsSyncProvider, HKRPWatchAppInstallability ]
+...

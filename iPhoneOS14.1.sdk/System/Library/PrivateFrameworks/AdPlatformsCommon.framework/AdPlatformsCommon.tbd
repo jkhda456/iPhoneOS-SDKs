@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BCC4DB6F-3C7E-3DB7-8573-2980C38CB301
+  - target:          arm64e-ios
+    value:           162A138D-8783-3209-9B05-E7F3B63F53DF
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsCommon.framework/AdPlatformsCommon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _APDefaultsBundleID, _APDiagnosticsSubmissionAllowed, _APLogForCategory, 
+                       _APSimulateCrash, _AdPlatformsCommonVersionNumber, _AdPlatformsCommonVersionString, 
+                       _kAPAutomationLoggingEnabled, _kAPMetricAreNetworkDatesKey, 
+                       _kAPMetricClientBundleIdentifierKey, _kAPMetricClientInfoKey, 
+                       _kAPMetricContentIdentifierKey, _kAPMetricContextIdentifierKey, 
+                       _kAPMetricDeviceIdentifierKey, _kAPMetricDeviceModel, _kAPMetricIdentifierKey, 
+                       _kAPMetricInternalMessageRateKey, _kAPMetricInternalPropertiesKey, 
+                       _kAPMetricMetricKey, _kAPMetricOS, _kAPMetricOSBuild, _kAPMetricOSVersion, 
+                       _kAPMetricOptionsKey, _kAPMetricPropertiesKey, _kAPMetricRouteKey, 
+                       _kAPMetricTimestampKey, _kAPMetricUserIdentifierKey, _kAPServerEnvironmentKey, 
+                       _kAPServerEnvironmentProduction, _kAPServerEnvironmentProductionBaseURL, 
+                       _kAPServerEnvironmentQE1, _kAPServerEnvironmentQE1BaseURL, 
+                       _kAPServerEnvironmentQE2, _kAPServerEnvironmentQE2BaseURL, 
+                       _kAPServerEnvironmentQE3, _kAPServerEnvironmentQE3BaseURL, 
+                       _kAPServerEnvironmentQE4, _kAPServerEnvironmentQE4BaseURL ]
+    objc-classes:    [ APClientInfo, APContentData, APContentDepiction, APContext, 
+                       APControllerRequesterCoordinator, APLocationInfo, APLocationManager, 
+                       APMescalSigning, APMescalSigningRequestor, APMetric, APMetricDaemonDelivery, 
+                       APMetricNotificationRegistrar, APOrderedMutableDictionary, 
+                       APPCControllerRequester, APRepresentationData, APSupportedSecureEncodedClass, 
+                       APTapAction, APUnfairLock, APUnfairRecursiveLock, APXPCActionRequester, 
+                       APXPCConnection, APXPCListenerManager, APXPCRemoteConnection, 
+                       MetricsModuleCommon ]
+...

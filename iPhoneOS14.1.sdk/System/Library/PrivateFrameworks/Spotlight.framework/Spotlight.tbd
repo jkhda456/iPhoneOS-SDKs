@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           AA348BDB-D47C-3079-B982-93CF2C0EA8B3
+  - target:          armv7s-ios
+    value:           D5A476EE-062C-3860-AE65-63CB4101ECEE
+  - target:          arm64-ios
+    value:           E612450E-A405-35D6-9C0D-35955509F7B0
+  - target:          arm64e-ios
+    value:           6B97822F-D576-363D-BBA9-AA9D257E5EFF
+install-name:    '/System/Library/PrivateFrameworks/Spotlight.framework/Spotlight'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kSPContentAuxiliarySubtitleKey, _kSPContentAuxiliaryTitleKey, 
+                       _kSPContentCategoryKey, _kSPContentContentKey, _kSPContentExternalIDKey, 
+                       _kSPContentSubtitleKey, _kSPContentSummaryKey, _kSPContentTitleKey ]
+    objc-classes:    [ SPSpotlightManager ]
+    objc-ivars:      [ SPSpotlightManager._displayID ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SPAppStoreSearchURLFromQuery, _SPWebSearchURLFromQuery, _createDedupeDicts ]
+    objc-classes:    [ SPClientSession, SPGeneralQueryTask, SPQueryResponse, SPQueryTask, 
+                       SPSafariObserver, SPSuggestionsQueryTask, SPZKWSearchQueryTask, 
+                       SPZKWSession ]
+    objc-ivars:      [ SPGeneralQueryTask._didReceiveCompleteCallback, SPGeneralQueryTask._mutableSections, 
+                       SPGeneralQueryTask._mutableSessionEntityString, SPGeneralQueryTask._newQuery, 
+                       SPGeneralQueryTask._query, SPGeneralQueryTask._session, SPGeneralQueryTask._started, 
+                       SPGeneralQueryTask._token, SPQueryTask._delayedResponse, SPQueryTask._dispatchQueue, 
+                       SPQueryTask._queryProcessor, SPQueryTask._showMoreInAppInfo, 
+                       SPQueryTask._supportedAppScopes, SPQueryTask._unsafeState ]
+...

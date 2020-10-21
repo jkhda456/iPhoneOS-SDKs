@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8A05C545-E67A-37F9-96CE-FB36EFEA7E53
+  - target:          arm64e-ios
+    value:           CEDF1106-91C5-316F-B8D0-12C5FDA9566F
+install-name:    '/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DBSAnimationPackageURLForDeviceAppIconSizeAndUserInterfaceStyle, 
+                       _DBSAnimationPackageURLForDisplayZoomOptionAndUserInterfaceStyle, 
+                       _DBSLockScreenTimeString, _DBSLogForCategory, _DBSMagnifyModeDidChangeNotification, 
+                       _DBSPurgeKeyboardCache, _DBSStillPreviewImageForDisplayZoomOption, 
+                       _DBSStringForDisplayZoomOption, _DBS_BundleForDisplayAndBrightnessSettingsFramework, 
+                       _DBS_LocalizedStringForColorSchedule, _DBS_LocalizedStringForColorTemperature, 
+                       _DBS_LocalizedStringForConnectedDisplays, _DBS_LocalizedStringForDeviceAppearance, 
+                       _DBS_LocalizedStringForDisplays, _DBS_LocalizedStringForHomeScreen, 
+                       _DBS_LocalizedStringForLargeFontSettings, _DBS_LocalizedStringForMagnify, 
+                       _DBS_LocalizedStringForPictureInPicture, _kPSLargeTextUsesExtendedRangeKey ]
+    objc-classes:    [ DBSDeviceDisplayZoomAnimationView, DBSDisplayZoomConfigurationController, 
+                       DBSDisplayZoomMode, DBSHomeScreenListController, DBSHomeScreenPhoneListController, 
+                       DBSLargeTextController, DBSSettingsController ]
+...

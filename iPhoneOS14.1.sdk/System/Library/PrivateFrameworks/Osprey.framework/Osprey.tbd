@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           60D5440D-8C68-3F77-9217-EBBDBB8FA4F0
+  - target:          arm64e-ios
+    value:           23EC407C-1B18-38AC-A5D3-75FED2A14D9A
+install-name:    '/System/Library/PrivateFrameworks/Osprey.framework/Osprey'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ OspreyChannel, OspreyConnectionMetrics, OspreyConnectionPreferences, 
+                       OspreyGRPCStreamingContext, OspreyKeychain, OspreyMessageProducer, 
+                       OspreyMethodCall, OspreyMutableRequest, OspreyPreferences, 
+                       OspreyRequest, OspreyService, OspreyUnaryMethodCall ]
+...

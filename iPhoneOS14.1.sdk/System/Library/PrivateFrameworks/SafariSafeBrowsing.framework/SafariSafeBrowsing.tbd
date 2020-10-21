@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7A9A70A6-5012-3593-ACEF-D7531F890712
+  - target:          armv7s-ios
+    value:           DC17D672-5EB8-3DE7-B5E0-0EC8539112CD
+  - target:          arm64-ios
+    value:           22370B29-4971-347B-97A4-07E9B06C2C18
+  - target:          arm64e-ios
+    value:           AE1D7700-83B0-3276-BEA1-15E06C382CE6
+install-name:    '/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ _SSBSafeHashCache ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SSBLookupContextDatabasesDidUpdateNotification, _SSBLookupContextDatabasesDidUpdateNotificationUserInfoProviderKey, 
+                       _SSBProviderGoogle, _SSBProviderTencent, _SSBSafeBrowsingEnabledDefaultsKey, 
+                       _SSBSafeBrowsingEnabledStateDidChangeNotification, _SSBSafeBrowsingEnabledStateDidChangeNotificationUserInfoEnabledStateKey, 
+                       __ZN12SafeBrowsing7Service4mainEv ]
+    objc-classes:    [ SSBAvailability, SSBDatabaseUpdaterStatus, SSBLookupContext, 
+                       SSBLookupResult, SSBServiceLookupResult, _SSBDatabaseStatus, 
+                       _SSBServiceStatus ]
+...

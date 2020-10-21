@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           475DCD80-09A7-3B54-9FF8-4E1073D45704
+  - target:          armv7s-ios
+    value:           15E96D30-AA5C-3D34-BC67-284ED2F7C245
+  - target:          arm64-ios
+    value:           5C7B3D4B-7BEC-3BA9-9745-5DC125D57926
+  - target:          arm64e-ios
+    value:           1B213C09-EE47-3085-A2F6-FFF4353EC5A4
+install-name:    '/System/Library/PrivateFrameworks/CoreFollowUpUI.framework/CoreFollowUpUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ FLExtensionHostContext, FLExtensionWrapper, FLGroupViewModelImpl, 
+                       FLTopLevelViewModel ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreFollowUpUIVersionNumber, _CoreFollowUpUIVersionString, 
+                       _SPYGLASS_START_USING_ICLOUD_UID, _SPYGLASS_VERIFY_PRIMARY_EMAIL_UID, 
+                       _SPYGLASS_VERIFY_TERMS_UID, _createFollowUpSubtitle, _createFollowUpTitle ]
+    objc-classes:    [ FLExtensionContext, FLExtensionViewController, FLFollowUpActionHandler, 
+                       FLHeaderCell, FLHostViewController, FLNetworkObserver, FLNetworkStatePrompter, 
+                       FLPreferencesController, FLPreferencesFollowUpItemListViewController, 
+                       FLSpecifierTapHandler, FLViewExtensionLoader, _FLNetworkObserverBlock ]
+...

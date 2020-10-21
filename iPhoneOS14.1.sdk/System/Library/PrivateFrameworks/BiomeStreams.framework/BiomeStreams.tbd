@@ -1,0 +1,42 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           16815947-DB35-3F5A-A2CD-1B738BDD059D
+  - target:          arm64e-ios
+    value:           03E635DF-6320-33EA-97A4-95E328C6C5F6
+install-name:    '/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BMMachServiceNameFileAccessService, _BMPBAppLaunchEventReadFrom, 
+                       _BMPBIntentEventReadFrom, _BiomeStreamsVersionNumber, _BiomeStreamsVersionString ]
+    objc-classes:    [ BMAppClipLaunchEvent, BMAppClipLaunchSource, BMAppClipLaunchStream, 
+                       BMAppLaunchEvent, BMAppLaunchStream, BMBookmarkNode, BMBookmarkWrapper, 
+                       BMCoreDuetDiscoverabilitySignalsSource, BMCoreDuetMediaUsageSource, 
+                       BMCoreDuetMediaUsageStore, BMCoreDuetStream, BMDiscoverabilitySignalEvent, 
+                       BMDiscoverabilitySignalStream, BMEventAppAssociatingImplementor, 
+                       BMEventBase, BMEventBinarySteppingImplementor, BMEventContext, 
+                       BMEventTimeElapsingImplementor, BMIntentEvent, BMIntentStream, 
+                       BMKnowledgeContextMapping, BMKnowledgeContextPublisher, BMMediaUsageEvent, 
+                       BMMediaUsageStream, BMPBAppLaunchEvent, BMPBIntentEvent, BMPublicStreamsPruner, 
+                       BMSource, BMStoreSource, BMStoreStream, BMStoreStreamPublisher, 
+                       BMStoreTypedEvent, BMStoreValidator, BMStream, BMStreamQuery, 
+                       BMStreams, BMStreamsAccessClient, BMStreamsAccessRequest, 
+                       BMStreamsAccessService, BMTestEvent, BMTestStream, BPSBiomeStorePublisher, 
+                       BPSKnowledgeStorePublisher, _BPSBookmarkedInner, _BPSInnerBiomeSubscription, 
+                       _BPSInnerKnowledgeSubscription ]
+    objc-ivars:      [ BMPBAppLaunchEvent._absoluteTimestamp, BMPBAppLaunchEvent._bundleID, 
+                       BMPBAppLaunchEvent._duration, BMPBAppLaunchEvent._has, BMPBAppLaunchEvent._launchReason, 
+                       BMPBAppLaunchEvent._launchType, BMPBAppLaunchEvent._string, 
+                       BMPBIntentEvent._absoluteTimestamp, BMPBIntentEvent._bundleID, 
+                       BMPBIntentEvent._has, BMPBIntentEvent._intentClass, BMPBIntentEvent._intentHandlingStatus, 
+                       BMPBIntentEvent._intentType, BMPBIntentEvent._intentVerb, 
+                       BMPBIntentEvent._interaction, BMPBIntentEvent._sourceId, BMStoreSource._writer, 
+                       _BPSBookmarkedInner._lock, _BPSInnerBiomeSubscription._enumerator, 
+                       _BPSInnerKnowledgeSubscription._lock ]
+...

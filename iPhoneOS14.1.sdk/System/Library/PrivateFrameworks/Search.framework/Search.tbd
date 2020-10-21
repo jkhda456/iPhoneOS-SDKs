@@ -1,0 +1,87 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F9584900-20A0-38E8-AF70-AFF10D392FDF
+  - target:          armv7s-ios
+    value:           7EE7D8FF-EB28-348D-A11E-3612BFAD35F2
+  - target:          arm64-ios
+    value:           B7B52078-6B78-3C09-9FB3-205D45ABFCF8
+  - target:          arm64e-ios
+    value:           FF2B8394-E453-3B24-BF7D-59AD22D9B2BB
+install-name:    '/System/Library/PrivateFrameworks/Search.framework/Search'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _EnablePeopleSuggester, _OldRankingEnabledKey, _RankingDebugModeEnabledKey, 
+                       _SPAllDomainKeys, _SPAllDomainsVector, _SPCanEnableInternetDomains, 
+                       _SPDomainOrderingIsTransient, _SPGetExtendedDomains, _SPGetInternetDomainsAvailable, 
+                       _SPGetInternetDomainsEnabled, _SPSearchDomains, _SPZKWSearchDomains, 
+                       _SPZKWSuggestedQueriesBundleID, _SearchIncrementalTableViewUpdatingKey, 
+                       _SearchParsecLedBellyEnabledKey, _SearchParsecLoggingEnabledKey, 
+                       _SearchParsecServerURLKey, _SearchResultDomainCount ]
+    objc-classes:    [ SPSearchAgent ]
+    objc-ivars:      [ SPSearchAgent._currentToken, SPSearchAgent._currentZKWLevel, 
+                       SPSearchAgent._delegate, SPSearchAgent._mutableSections, SPSearchAgent._observersAdded, 
+                       SPSearchAgent._options, SPSearchAgent._prefixWithNoResults, 
+                       SPSearchAgent._queryComplete, SPSearchAgent._queryProcessor, 
+                       SPSearchAgent._resultCount, SPSearchAgent._searchDomains, 
+                       SPSearchAgent._searchThroughAllowed, SPSearchAgent._sections, 
+                       SPSearchAgent._topHitResultSection, SPSearchQuery._cancelled ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DisableCategoryPromotion, _DisableCoreDuet, _DisableParsec, 
+                       _DisableParsecInfluence, _DisableShortcut, _DisableTextMatch, 
+                       _MaxNumberProactiveSiriActions, _SPApplicationBundleIdGeneralAppClips, 
+                       _SPApplicationBundleIdGeneralApplication, _SPApplicationBundleIdGeneralApplicationCStr, 
+                       _SPApplicationBundleIdSpringBoard, _SPBlueButtonBehavior, 
+                       _SPBuildApplications, _SPBullseyeSuggestionsEnabled, _SPCategoryForDomain, 
+                       _SPCommittedScreenMatchingBehavior, _SPCopyVisibleApps, _SPDayStringForDate, 
+                       _SPDisableBullseyeBackend, _SPDisableBullseyeUI, _SPDisplayIdentifierForDomain, 
+                       _SPDisplayNameForDomain, _SPDisplayNameForExtendedDomain, 
+                       _SPDomains, _SPEnableBullseyeUI, _SPEnableSafariTopHitsLogic, 
+                       _SPFastApplicationsGet, _SPFastApplicationsGetNoBuild, _SPFastApplicationsSet, 
+                       _SPFastHiddenAppsGetNoBuild, _SPFilterLocalSuggestions, _SPGenreGroupingEnabled, 
+                       _SPGetDisabledAppSet, _SPGetDisabledBundleSet, _SPGetDisabledDomainSet, 
+                       _SPGetDisabledDomains, _SPGetDomainOrdering, _SPHideSearchThroughSuggestions, 
+                       _SPIsiPad, _SPKeyForSearchDomain, _SPL1Threshold, _SPL2Threshold, 
+                       _SPLogDirectory, _SPLogForSPLogCategoryDefault, _SPLogForSPLogCategoryFeedback, 
+                       _SPLogForSPLogCategoryIndex, _SPLogForSPLogCategoryQuery, 
+                       _SPLogForSPLogCategoryRanking, _SPLogForSPLogCategoryTelemetry, 
+                       _SPLogInit, _SPLogLevelKey, _SPLogPersistedTypesKey, _SPLogSetLevel, 
+                       _SPLogSetOutputLevel, _SPLogV, _SPMaxCountTopHits, _SPMaxSectionsBeforeShowMore, 
+                       _SPMaxSectionsBeforeShowMoreWithScopedSearch, _SPMaxVisibleResultsCountPerSection, 
+                       _SPMinSectionCountThresholdForShowMore, _SPMinTopHitThresholdForBigResult, 
+                       _SPOutputLevelKey, _SPResetBullseyeSuggestionsEnabled, _SPResultBundleIdSuggestionContact, 
+                       _SPResultBundleIdSuggestionLocal, _SPResultBundleIdSuggestionParsec, 
+                       _SPResultBundleIdSuggestionSearchThrough, _SPResultBundleIdSuggestionSiri, 
+                       _SPResultBundleIdSuggestionUserTypedString, _SPResultBundleIdWebSuggestionParsec, 
+                       _SPResultBundleIdWebSuggestionUserTypedString, _SPSUGGESTIONS_BUNDLE_ID, 
+                       _SPSearchDomainForDisplayIdentifierAndCategory, _SPSearchDomainForKey, 
+                       _SPSearchEnableBullseyeRanking, _SPSearchFrameworkPath, _SPSearchResultIdentifierShowMore, 
+                       _SPSearchResultIdentifierTapToRadar, _SPSearchThroughBundleID, 
+                       _SPSectionIdentifierSearchThroughSuggestions, _SPSectionIdentifierSuggestions, 
+                       _SPSectionIdentifierWebSuggestions, _SPSetAppUpdateBlock, 
+                       _SPSetBullseyeSuggestionsEnabled, _SPSetExtendedDomains, _SPSetInternetDomainsAvailable, 
+                       _SPSetInternetDomainsEnabled, _SPSetNumberForPref, _SPShowDebugLocalSuggestions, 
+                       _SPShowTopHitSectionHeaderInAsYouTypeScreen, _SPSpotlightAppBundleId, 
+                       _SPSpotlightSupportDirectoryPath, _SPStringForDuration, _SPSuggestionDetailTextBehavior, 
+                       _SPSuggestionIdentifierActualSearch, _SPSuggestionIdentifierSearchWeb, 
+                       _SPTOPHIT_BUNDLE_ID, _SPTimeStringForDate, _SPTransactionCreate, 
+                       _SPTransactionDone, _SPUTIAppType, _SPZKWSectionBundleID, 
+                       _SPZKWSiriActionsBundleID, _SearchDisableTapToRadar, _SearchParsecEnabledKey, 
+                       _SearchRankingDisableModelUpdate, _SearchRankingDisablePolicy, 
+                       _SearchRankingUseCreationDateL2, _SiriSuggestionPrefChangeNotification, 
+                       _SpotlightUIPrefsDomain, __SPLog, _gSPLogDebugAsDefault, _gSPLogInfoAsDefault, 
+                       _gSPLogLevel, _kSPSearchInternetDomainsChangedNotification ]
+    objc-classes:    [ SFSearchResult_Compatibility, SPApplication, SPCoreSpotlightResult, 
+                       SPDaemonConnection, SPDaemonQueryToken, SPDomainManager, SPFeedbackManager, 
+                       SPMLLogging, SPMatcher, SPResultSet, SPSearchQuery, SPXPCConnection, 
+                       SPXPCMessage, SPXPCServer ]
+    objc-ivars:      [ SPDaemonQueryToken._delegate, SPDaemonQueryToken._query, SPDaemonQueryToken._queryID, 
+                       SPSearchQuery._cancellationTime, SPSearchQuery._creationTime, 
+                       SPSearchQuery._finished, SPSearchQuery._queryID, SPSearchQuery._searchString ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SFMutableResultSection, SFSearchResult_SpotlightExtras, SPSearchEntity, 
+                       SPSearchQueryContext ]
+...

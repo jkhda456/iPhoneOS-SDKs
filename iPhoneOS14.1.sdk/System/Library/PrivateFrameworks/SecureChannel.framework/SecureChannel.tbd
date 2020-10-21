@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           66B9C1B4-B5B8-3A55-A9F1-0FA25627FD07
+  - target:          arm64e-ios
+    value:           814221FD-3586-3C74-8324-FD0C39899CDE
+install-name:    '/System/Library/PrivateFrameworks/SecureChannel.framework/SecureChannel'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SecureChannelAction, SecureChannelController ]
+...

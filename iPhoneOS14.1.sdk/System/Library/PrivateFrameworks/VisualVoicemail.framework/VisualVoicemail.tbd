@@ -1,0 +1,103 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B36BFA5A-CF6D-3367-9326-9D859B7AE52A
+  - target:          armv7s-ios
+    value:           64D98511-7A74-3BE8-9422-0745E186A48B
+  - target:          arm64-ios
+    value:           85E047BA-A29C-3CF0-BA07-94F1E02B6A07
+  - target:          arm64e-ios
+    value:           C21941D0-0F26-3243-BEF6-2FE03C1E5EE0
+install-name:    '/System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _AWDVisualVoicemailDownloadedReadFrom, _AWDVisualVoicemailTranscriptionRatedReadFrom, 
+                       _VMApplicationResumedNotification, _VMApplicationSuspendedNotification, 
+                       _VMServiceClientConnected, _VMServiceClientDisconnected, _VMServiceClientObjectTypeAccount, 
+                       _VMServiceClientObjectTypeVoicemail, _VMXPCConnectionEstablished, 
+                       _VMXPCConnectionInterrupted, _VMXPCConnectionInvalidated, 
+                       _VMXPCIsAvailable, _VVMessageWaitingFallbackNotification, 
+                       _VVServiceContextActivationErrorNotification, _VVServiceDataAvailableNotification, 
+                       _VVServiceDataReceiveBeganNotification, _VVServiceDataReceiveContinuedNotification, 
+                       _VVServiceFinishedAddingRecordsNotification, _VVServiceMailboxParametersChangedNotification, 
+                       _VVServiceMailboxUsageChangedNotification, _VVServiceMessageWaitingFallbackNotification, 
+                       _VVServiceMessageWaitingStateChangedNotification, _VVServiceNewServiceNotification, 
+                       _VVServiceOnlineStateChangedNotification, _VVServicePasswordChangedNotification, 
+                       _VVServicePasswordNeededNotification, _VVServicePasswordRequestCancelledNotification, 
+                       _VVServiceRecordsAddedNotification, _VVServiceSetupRequirementChangedNotification, 
+                       _VVServiceSubscriptionStatusChangedNotification, _VVServiceSyncStatusChangedNotification, 
+                       _VVServiceTaskCancelledNotification, _VVServiceTaskEndedNotification, 
+                       _VVServiceTaskStartedNotification, _VVServiceTrashedCountChangedNotification, 
+                       _VVServiceUnreadCountChangedNotification, _VVSharedServiceSubscriptionStateChangedNotification, 
+                       __VVSharedServiceIsSubscribed, ___VVSharedVerifier, _kVVServiceAddedRecordsKey, 
+                       _kVVServiceCurrentDataLengthKey, _kVVServiceErrorKey, _kVVServiceExpectedDataLengthKey, 
+                       _kVVServiceMailboxUsageKey, _kVVServiceRecordKey, _kVVServiceSuppressErrorKey, 
+                       _kVVServiceTaskTypeKey, _kVVServiceTaskWillBeRetriedKey, _kVVServiceTrashedCountKey, 
+                       _kVVServiceUnreadCountKey, _kVVVerifierBeaconResponseReceivedCheckpointKey, 
+                       _kVVVerifierBeaconSentCheckpointKey, _kVVVerifierConfigurationDictionaryKeyAccountSettings, 
+                       _kVVVerifierConfigurationDictionaryKeyAccountSettingsName, 
+                       _kVVVerifierConfigurationDictionaryKeyAccountSettingsPort, 
+                       _kVVVerifierConfigurationDictionaryKeyAccountSettingsServer, 
+                       _kVVVerifierConfigurationDictionaryKeyAccountState, _kVVVerifierConfigurationDictionaryKeyBeaconCount, 
+                       _kVVVerifierConfigurationDictionaryKeyGreetingType, _kVVVerifierKeyDescriptionsDescription, 
+                       _kVVVerifierKeyDescriptionsKeyName, _kVVVerifierKeyDescriptionsLatestFailure, 
+                       _kVVVerifierSMSCAvailableCheckpointKey, _kVVVerifierServerLoginCheckpointKey, 
+                       _kVVVerifierTelephonyRegisteredCheckpointKey, _kVVVerifierValidCarrierBundleCheckpointKey, 
+                       _vm_vmstore_log ]
+    objc-classes:    [ AWDVisualVoicemailDownloaded, AWDVisualVoicemailTranscriptionRated, 
+                       VMAWDReporter, VMVoicemailPowerController, VMVoicemailSanitizeTranscriptionDatabaseOperation, 
+                       VMVoicemailTranscriptionController, VMVoicemailTranscriptionOperation, 
+                       VMVoicemailTranscriptionTask, VVCarrierParameters, VVNotificationInterpreter, 
+                       VVService, VVVerifier ]
+    objc-ivars:      [ AWDVisualVoicemailDownloaded._has, AWDVisualVoicemailDownloaded._lengthInSeconds, 
+                       AWDVisualVoicemailDownloaded._timestamp, AWDVisualVoicemailTranscriptionRated._accurate, 
+                       AWDVisualVoicemailTranscriptionRated._has, AWDVisualVoicemailTranscriptionRated._timestamp, 
+                       VMVoicemailTranscriptionOperation._executing, VMVoicemailTranscriptionOperation._finished, 
+                       VVCarrierParameters._parameterValues, VVService._activationError, 
+                       VVService._capabilities, VVService._carrierParameters, VVService._lock, 
+                       VVService._mailboxUsage, VVService._notificationInterpreter, 
+                       VVService._password, VVService._passwordError, VVService._passwordMailboxName, 
+                       VVService._retryIntervalIndex, VVService._retryIntervals, 
+                       VVService._serviceFlags, VVService._trashCompactionAge, VVService._trashedCount, 
+                       VVService._unreadCount ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VMAudioMessageReadFrom, _VMBundleIdentifierVoicemailDaemon, 
+                       _VMBundleIdentifierVoicemailFramework, _VMServiceDataAvailableNotification, 
+                       _VMServiceMessageWaitingStateChangedNotification, _VMServicePasswordNeededNotification, 
+                       _VMServiceRecordsAddedNotification, _VMServiceSubscriptionStatusChangedNotification, 
+                       _VMServiceUnreadCountChangedNotification, _VMStoreChangedNotification, 
+                       _VMStoreRemovedAllVoicemailsNotification, _VMStoreRemovedVoicemailsNotification, 
+                       _VMStoreVoicemailChangedFlagsKey, _VMStoreVoicemailFlagsChangedNotification, 
+                       _VMStoreVoicemailNewFlagsKey, _VMStoreVoicemailOldFlagsKey, 
+                       _VMTranscriptMessageReadFrom, _VMVoicemailCapabilitiesChangedNotification, 
+                       _VMVoicemailCountry_en_CA, _VMVoicemailCountry_en_US, _VMVoicemailManagerAccountsDidChangeNotification, 
+                       _VMVoicemailManagerStorageUsageChangedNotification, _VMVoicemailMessageReadFrom, 
+                       _VMVoicemailOnlineStatusChangedNotification, _VMVoicemailSubscriptionStateStatusChangedNotification, 
+                       _VMVoicemailSyncInProgressChangedNotification, _VMVoicemailTranscribingStatusChangedNotification, 
+                       _VMVoicemailVoicemailFlagsChangedKey, _VMVoicemailVoicemailsAddedKey, 
+                       _VMVoicemailVoicemailsChangedNotification, _VMVoicemailVoicemailsDeletedKey, 
+                       _VMXPCConnectionAvailable, _VMXPCMachServiceName, _VVVerifierChangedNotification, 
+                       _kVMConfidenceControllerTypeBetaHeaderPreferencesKey, _kVMConfidenceControllerTypeOverallPreferencesKey, 
+                       _kVMConfidenceControllerTypeSegmentPreferencesKey, _kVMServiceAddedRecordsKey, 
+                       _kVMServiceRecordKey, _kVMServiceUnreadCountKey, _kVMSettingsDomain, 
+                       _kVVDefaultsDomain, _kVVErrorDomain, _kVVLastWarnedUsageDefault, 
+                       _kVVPDPActivationErrorDomain, _kVVReloadServiceNotification, 
+                       _vm_default_log, _vm_imap_log, _vm_ui_log, _vm_vmd_log, _vm_vmtool_log ]
+    objc-classes:    [ VMAccount, VMAudioMessage, VMClientWrapper, VMConfiguration, 
+                       VMHandle, VMLegacyAccount, VMMutableAccount, VMMutableVoicemail, 
+                       VMOperation, VMPreferences, VMServiceClient, VMTranscriptMessage, 
+                       VMVoicemail, VMVoicemailCapabilities, VMVoicemailGreeting, 
+                       VMVoicemailManager, VMVoicemailMessage, VMVoicemailTranscript, 
+                       VMVoicemailTranscriptSegment ]
+    objc-ivars:      [ VMAudioMessage._audioData, VMAudioMessage._has, VMAudioMessage._protocolVersion, 
+                       VMTranscriptMessage._has, VMTranscriptMessage._protocolVersion, 
+                       VMTranscriptMessage._transcriptionData, VMVoicemailMessage._audio, 
+                       VMVoicemailMessage._callbackDestinationID, VMVoicemailMessage._dataURL, 
+                       VMVoicemailMessage._date, VMVoicemailMessage._duration, VMVoicemailMessage._flags, 
+                       VMVoicemailMessage._has, VMVoicemailMessage._identifier, VMVoicemailMessage._protocolVersion, 
+                       VMVoicemailMessage._receiverDestinationID, VMVoicemailMessage._receiverLabelID, 
+                       VMVoicemailMessage._remoteUID, VMVoicemailMessage._senderDestinationID, 
+                       VMVoicemailMessage._transcript, VMVoicemailMessage._transcriptionURL ]
+...

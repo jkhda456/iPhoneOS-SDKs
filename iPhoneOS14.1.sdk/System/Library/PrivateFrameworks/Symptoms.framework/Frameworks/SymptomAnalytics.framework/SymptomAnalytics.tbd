@@ -1,0 +1,83 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           05E3CE6E-FF60-3B67-801F-6AB6D1E9B9FC
+  - target:          armv7s-ios
+    value:           46C63735-C953-34F4-8B8D-8415D88F920A
+  - target:          arm64-ios
+    value:           14E5C0BA-0BAC-3797-BE84-D2D6C4681981
+  - target:          arm64e-ios
+    value:           D35D5AA5-E20A-3A29-BAB4-C06E71C12EEB
+install-name:    '/System/Library/PrivateFrameworks/Symptoms.framework/Frameworks/SymptomAnalytics.framework/SymptomAnalytics'
+current-version: 1431.11.4
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _analyticsHandle, _analyticsVerbose, _init_symptom_analytics_logging, 
+                       _kSymptomAnalyticsModelTrainServiceEndpoint, _kSymptomAnalyticsServiceCurrentCellAttachment, 
+                       _kSymptomAnalyticsServiceCurrentOtherAttachment, _kSymptomAnalyticsServiceCurrentWiFiAttachment, 
+                       _kSymptomAnalyticsServiceCurrentWiredAttachment, _kSymptomAnalyticsServiceNOIFetchThroughputPredictions, 
+                       _prefs_add_logger ]
+    objc-classes:    [ App, AppCalendarUsage, AppRun, AppTypicalUsage, CheckUpEvent, 
+                       DemoLiveUsage, DiagnosticCaseStorage, DiagnosticCaseStorageAnalytics, 
+                       Event, EventScene, Flow, LiveFlowPerf, LiveRoutePerf, NetworkAttachment, 
+                       Peer, ProvisioningData, TshootingData, WiFiData ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SymptomAnalyticsFrameworkDidSaveNotification, _kProcessKeyTypeBundleName, 
+                       _kProcessKeyTypeProcName, _kStateMachineStatusKeyAdminState, 
+                       _kStateMachineStatusKeyInternalVariables, _kStateMachineStatusKeyState, 
+                       _kSymptomActivityBitmapCellularInterface, _kSymptomActivityBitmapCurrentMachAbsTime, 
+                       _kSymptomActivityBitmapEndTime, _kSymptomActivityBitmapEthernetInterface, 
+                       _kSymptomActivityBitmapIPSecInterface, _kSymptomActivityBitmapStartTime, 
+                       _kSymptomActivityBitmapWiFiInterface, _kSymptomActivityBitmapsActualStartTimeKey, 
+                       _kSymptomActivityBitmapsBitmapKey, _kSymptomActivityBitmapsValidBitsCountKey, 
+                       _kSymptomAnalyticsFrameworkModelName, _kSymptomAnalyticsHelperServiceEndpoint, 
+                       _kSymptomAnalyticsNetworkAdvisoryDefiniteImprovement, _kSymptomAnalyticsNetworkAdvisoryDefiniteNotUse, 
+                       _kSymptomAnalyticsNetworkAdvisoryDefiniteUse, _kSymptomAnalyticsNetworkAdvisoryError, 
+                       _kSymptomAnalyticsNetworkAdvisoryInconclusive, _kSymptomAnalyticsNetworkAdvisoryInterfaceNotReady, 
+                       _kSymptomAnalyticsNetworkAdvisoryKey, _kSymptomAnalyticsNetworkAdvisoryNoImprovement, 
+                       _kSymptomAnalyticsNetworkAdvisoryNotSupported, _kSymptomAnalyticsNetworkAdvisoryWeakImprovement, 
+                       _kSymptomAnalyticsNetworkAdvisoryWeakNotUse, _kSymptomAnalyticsNetworkAdvisoryWeakUse, 
+                       _kSymptomAnalyticsRootDefaultDirectory, _kSymptomAnalyticsServiceCalendarUsageToggle, 
+                       _kSymptomAnalyticsServiceCopyRelationship, _kSymptomAnalyticsServiceEndpoint, 
+                       _kSymptomAnalyticsServiceFlowCurrent, _kSymptomAnalyticsServiceFlowHistorical, 
+                       _kSymptomAnalyticsServiceFlowInstant, _kSymptomAnalyticsServiceFlowTag, 
+                       _kSymptomAnalyticsServiceFlowTagAll, _kSymptomAnalyticsServiceFlowTagIKE, 
+                       _kSymptomAnalyticsServiceNOIArg1, _kSymptomAnalyticsServiceNOICanUseOnAlternate, 
+                       _kSymptomAnalyticsServiceNOICanUseOnAlternateCodes, _kSymptomAnalyticsServiceNOICanUseOnAlternateReasons, 
+                       _kSymptomAnalyticsServiceNOICanUseOnAlternateStates, _kSymptomAnalyticsServiceNOIEstTransferTimeConfidence, 
+                       _kSymptomAnalyticsServiceNOIEstTransferTimeDLSecs, _kSymptomAnalyticsServiceNOIEstTransferTimeULSecs, 
+                       _kSymptomAnalyticsServiceNOIFetchAuditableLinkQuality, _kSymptomAnalyticsServiceNOIFetchAuditableLinkQualityLoadedLQM, 
+                       _kSymptomAnalyticsServiceNOIFetchAuditableLinkQualityValue, 
+                       _kSymptomAnalyticsServiceNOIFetchDayOfWeekGrouping, _kSymptomAnalyticsServiceNOIFetchEstTransferTime, 
+                       _kSymptomAnalyticsServiceNOIFetchForegroundActivity, _kSymptomAnalyticsServiceNOIFetchInstantQuality, 
+                       _kSymptomAnalyticsServiceNOIFetchInterfaceTimeline, _kSymptomAnalyticsServiceNOIFetchL2ThroughputMetrics, 
+                       _kSymptomAnalyticsServiceNOIFetchNetworkAttachmentInfo, _kSymptomAnalyticsServiceNOIFetchPredictions, 
+                       _kSymptomAnalyticsServiceNOIFetchPredictionsError, _kSymptomAnalyticsServiceNOIFetchPredictionsGenerationDate, 
+                       _kSymptomAnalyticsServiceNOIFetchTrafficInvitesHourlyDistribution, 
+                       _kSymptomAnalyticsServiceNOIFetchTrainingProgress, _kSymptomAnalyticsServiceNOIPayloadInfoDLKB, 
+                       _kSymptomAnalyticsServiceNOIPayloadInfoULKB, _kSymptomAnalyticsServiceNOIPredictions24hrs, 
+                       _kSymptomAnalyticsServiceNOIRRCIdleDLThroughputKbps, _kSymptomAnalyticsServiceNOIRRCIdleULThroughputKbps, 
+                       _kSymptomAnalyticsServiceNWInterfaceTypeCellular, _kSymptomAnalyticsServiceNWInterfaceTypeOther, 
+                       _kSymptomAnalyticsServiceNWInterfaceTypeWiFi, _kSymptomAnalyticsServiceNWInterfaceTypeWiredEthernet, 
+                       _kSymptomAnalyticsServiceNameChain, _kSymptomAnalyticsServiceNetworkAttachmentCurrent, 
+                       _kSymptomAnalyticsServiceNetworkAttachmentHistorical, _kSymptomAnalyticsServiceNetworkAttachmentInstant, 
+                       _kSymptomAnalyticsServiceNetworkAttachmentPerformance, _kSymptomAnalyticsServicePostProcess, 
+                       _kSymptomAnalyticsServicePostProcessComposeAdvisory, _kSymptomAnalyticsServiceProcessWithGeneration, 
+                       _kSymptomAnalyticsServiceRNFForcedAdviceLevel, _kSymptomAnalyticsServiceRNFTestResult, 
+                       _kSymptomAnalyticsServiceReason, _kSymptomAnalyticsServiceRefreshUsage, 
+                       _kSymptomAnalyticsServiceSubscriberTag, _kSymptomAnalyticsServiceSuccess, 
+                       _kSymptomAnalyticsServiceSweepUsage, _kSymptomAnalyticsServiceTypicalUsageToggle, 
+                       _kSymptomAnalyticsServiceUsage, _kSymptomAnalyticsServiceWatchpointKey, 
+                       _kSymptomAnalyticsServiceWatchpointTarget, _kSymptomAnalyticsServiceWatchpointValue, 
+                       _kSymptomAnalyticsTypeBundleIdentifier, _kSymptomAnalyticsTypeProcessName, 
+                       _kSymptomAnalyticsWorkspacePersistenceOptionPersistentKey ]
+    objc-classes:    [ AnalyticsWorkspace, AnalyticsWorkspaceRetrievalCallback, AppAnalytics, 
+                       DiagnosticCaseUsage, DiagnosticCaseUsageAnalytics, LiveUsage, 
+                       NWActivityFragment, NWActivityMetricData, NetworkAttachmentAnalytics, 
+                       ObjectAnalytics, Process, ProcessAnalytics, SFApp, SFAppCalendarUsage, 
+                       SFAppDomainUsage, SFAppExperience, SFAppRun, SFAppTypicalUsage, 
+                       SFFlow, SFLiveFlowPerf, SFLiveRoutePerf, SFNetworkAttachment, 
+                       SFProvisioningData, SFTrackerDomain, UsageAnalytics ]
+...

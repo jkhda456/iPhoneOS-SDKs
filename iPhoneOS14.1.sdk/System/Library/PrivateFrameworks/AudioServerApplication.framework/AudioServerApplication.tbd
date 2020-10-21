@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DEB33D2F-F6F6-3614-A990-B147DD5F7E24
+  - target:          armv7s-ios
+    value:           BDEE60FF-4BB8-3A55-9E4F-91E422FB4193
+  - target:          arm64-ios
+    value:           09F00B77-59FF-3583-98BC-A6AAB558C31B
+  - target:          arm64e-ios
+    value:           5E1A66E2-605F-3AFB-9150-9F02C75D6246
+install-name:    '/System/Library/PrivateFrameworks/AudioServerApplication.framework/AudioServerApplication'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ASAAudioDevice, ASAAudioFormat, ASABooleanControl, ASABox, 
+                       ASAClockDevice, ASAControl, ASACoreAudio, ASALevelControl, 
+                       ASAObject, ASAPlaythrough, ASAPlugin, ASASelectorControl, 
+                       ASAStream ]
+...

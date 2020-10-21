@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3D065BAD-48F9-3BBC-94C8-3CAB0B1B989C
+  - target:          armv7s-ios
+    value:           CE119E1B-C2A1-38CC-92F7-C2FC59DADDE0
+  - target:          arm64-ios
+    value:           5E7A60F6-EAAB-3709-A828-769181008C1B
+  - target:          arm64e-ios
+    value:           DE33A1DB-AFA9-33E6-8794-B0A52591DF0A
+install-name:    '/System/Library/PrivateFrameworks/CoreCaptureControl.framework/CoreCaptureControl'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreCaptureControlGetTypeID ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreCaptureControlCapture, _CoreCaptureControlCaptureWithComponentDirectory, 
+                       _CoreCaptureControlConfigurePipe, _CoreCaptureControlConfigureProfile, 
+                       _CoreCaptureControlConfigureStream, _CoreCaptureControlCreate, 
+                       _CoreCaptureControlStart, _CoreCaptureControlStop ]
+...

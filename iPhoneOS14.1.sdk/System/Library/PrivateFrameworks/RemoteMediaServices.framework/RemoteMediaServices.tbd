@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           FD8E0D3C-EC9F-3DDE-9290-B138177720A6
+  - target:          armv7s-ios
+    value:           567A69ED-7119-35CF-8CB5-778E1D5F26AC
+  - target:          arm64-ios
+    value:           87BEAFFE-BD3F-36E8-B9C0-EE849C25614D
+  - target:          arm64e-ios
+    value:           6CD7F4CF-8EAE-335D-833E-6611C1ED386B
+install-name:    '/System/Library/PrivateFrameworks/RemoteMediaServices.framework/RemoteMediaServices'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromRMSMessageType, _RMSDAAPControlSessionTimeout ]
+    objc-classes:    [ RMSDAAPControlSession ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromRMSResponseCode, _RMSControlSessionTimeout, _RMSDiscoverySessionTimeout, 
+                       _RMSPairingSessionTimeout, _generateRandomPasscode ]
+    objc-classes:    [ RMSAudioRoute, RMSControlInterface, RMSControlSession, RMSDiscoverySession, 
+                       RMSIDSServer, RMSNowPlayingInfo, RMSPairingCredentials, RMSPairingRecordStore, 
+                       RMSPairingSession, RMSService ]
+...

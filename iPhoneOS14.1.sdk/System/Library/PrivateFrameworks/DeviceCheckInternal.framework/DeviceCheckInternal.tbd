@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           37F1822A-F13A-3A68-91AC-8676F387B12A
+  - target:          arm64e-ios
+    value:           14616D22-5ECF-368D-86F7-3D6A187F3C10
+install-name:    '/System/Library/PrivateFrameworks/DeviceCheckInternal.framework/DeviceCheckInternal'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ DCCryptoProxyImpl, DCDDeviceMetadata, DCXPCActivityController ]
+...

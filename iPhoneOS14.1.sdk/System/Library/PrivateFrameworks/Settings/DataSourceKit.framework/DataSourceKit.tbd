@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1FFE3D76-0D54-3DE7-A97B-C697B47B024B
+  - target:          arm64e-ios
+    value:           3B8DD740-C676-3213-90D4-D244D9AA7BCD
+install-name:    '/System/Library/PrivateFrameworks/Settings/DataSourceKit.framework/DataSourceKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ DSKDataSource ]
+...

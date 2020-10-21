@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           750A6597-3304-3D7C-8E2D-E7C3C3373DFB
+  - target:          arm64e-ios
+    value:           76474DF5-BAF6-3108-A5F3-9D106254C002
+install-name:    '/System/Library/PrivateFrameworks/CameraImagingFramework.framework/CameraImagingFramework'
+current-version: 110.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CameraImagingVersionNumber, _CameraImagingVersionString ]
+...

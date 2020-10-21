@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F9C9B781-C5DF-3B92-A25D-1F2B91E4D682
+  - target:          arm64e-ios
+    value:           521FE9AB-8865-3BBB-9764-25197D18DF2C
+install-name:    '/System/Library/PrivateFrameworks/SampleAnalysis.framework/SampleAnalysis'
+current-version: 271
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EventTypeString, _SABinarySearchArray, _SACFAbsoluteTimeFromTimespec, 
+                       _SAFormattedBytes, _SAFormattedBytesDouble, _SAFormattedSignedBytes, 
+                       _SAMachAbsTimeSecondsGetCurrent, _SAMachContTimeSecondsGetCurrent, 
+                       _SAMachTimeFromNanosecondsUsingLiveTimebase, _SAMachTimeFromNanosecondsUsingTimebase, 
+                       _SAMachTimeFromSecondsUsingLiveTimebase, _SAMachTimeFromSecondsUsingTimebase, 
+                       _SANanosecondsFromMachTimeUsingLiveTimebase, _SANanosecondsFromMachTimeUsingTimebase, 
+                       _SAResampleThreads, _SASecondsFromMachTimeUsingLiveTimebase, 
+                       _SASecondsFromMachTimeUsingTimebase, _SASpawnPlatformBinary, 
+                       _TracePointString ]
+    objc-classes:    [ SAAuxiliaryData, SABinary, SABinaryLoadInfo, SABinaryLocator, 
+                       SACallTree, SACallTreeFrame, SACallTreeNode, SADispatchQueue, 
+                       SADispatchQueueState, SAExecutableCallTree, SAFanSpeed, SAFrame, 
+                       SAHIDEvent, SAHIDStep, SAInstruction, SAKernelCache, SASamplePrintOptions, 
+                       SASamplePrinter, SASampleStore, SASegment, SASharedCache, 
+                       SASourceInfo, SASymbol, SATask, SATaskCallTree, SATaskState, 
+                       SATaskThreadCallTrees, SAThread, SAThreadCallTree, SAThreadState, 
+                       SATimeRange, SATimestamp, SATurnstileInfo, SAWaitInfo ]
+...

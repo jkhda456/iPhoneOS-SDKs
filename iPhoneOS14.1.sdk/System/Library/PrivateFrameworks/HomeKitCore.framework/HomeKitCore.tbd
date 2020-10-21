@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6DF517CB-1EA5-36B0-8F7A-87281E8C75B3
+  - target:          arm64e-ios
+    value:           4D67C8A3-AF4B-3CDE-9D0A-347A705D06D8
+install-name:    '/System/Library/PrivateFrameworks/HomeKitCore.framework/HomeKitCore'
+current-version: 714.1.3
+reexported-libraries:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    libraries:       [ '/System/Library/Frameworks/HomeKit.framework/HomeKit' ]
+...

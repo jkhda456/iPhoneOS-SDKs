@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           091932C8-ABCB-34EF-B503-6A6DB1478CC5
+  - target:          arm64e-ios
+    value:           E57B738F-43F5-3314-8269-DAB88FB43FC3
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUIViewServices.framework/AccessibilityUIViewServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AXCACCorrectionsService, AXCACCustomCommandEditorService, 
+                       AXVSBaseService, AXVSVoiceOverItemChooserService ]
+...

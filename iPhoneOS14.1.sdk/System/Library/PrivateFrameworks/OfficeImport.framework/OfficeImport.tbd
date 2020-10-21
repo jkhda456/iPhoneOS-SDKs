@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D2572DE0-46E0-3B00-BFCB-79E3CD823520
+  - target:          armv7s-ios
+    value:           AA82AEB4-0435-3261-AEAF-662ABC85FA8F
+  - target:          arm64-ios
+    value:           63B84ACA-5AAF-33E3-BD61-9B616D1E0823
+  - target:          arm64e-ios
+    value:           6744929E-F7FF-3EBE-938F-FCCFF1FE4F4C
+install-name:    '/System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport'
+current-version: 282
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _HUPropNmBkgndColor, _HUPropNmFontStyle, _HUPropNmFontWeight, 
+                       _HUPropValFixed, __Z25setNSStringValueForEDCellP12EDCellHeaderP8NSStringP11EDResources, 
+                       __Z36EMNumberFormatterSetLocaleForTestingPK10__CFLocale ]
+    objc-classes:    [ CMArchiveManager, CMDictArchiveManager, CMDrawableStyle, CMFileManager, 
+                       CMLengthProperty, CMOutlineState, CMState, CMStringProperty, 
+                       CMStyle, CMToggleProperty, EDContentFormat, EDFont, EDHyperlink, 
+                       EDReference, EDResources, EDString, EDStyle, EDWorkbook, EDWorksheet, 
+                       EMCellNumberMapper, EMNumberFormatter, EMState, EMWorksheetMapper, 
+                       OADCharacterProperties, OADDrawable, OADDrawableProperties, 
+                       OADHyperlink, OADImageFill, OADRegularTextRun, OITSUColor, 
+                       OIXMLElement, PMTextRunMapper, WDCharacterRun, WDDocument, 
+                       WDListDefinition, WDTable, WDText, WMDocumentMapper, WMParagraphMapper, 
+                       WMSectionMapper, WMState, WMTableMapper ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HTMLError, _HTMLHeight, _HTMLMainContent, _HTMLPageCount, 
+                       _HTMLResources, _HTMLWidth, _OICopyHTMLForOfficeData, _OICopyHTMLFromFileAtURL, 
+                       _OICopyHTMLThumbnailForOfficeData, _OICopyHTMLThumbnailFromFileAtURL, 
+                       _OICopyPrecomputedThumbnailDataFromFileAtURLIfPresent, _OIErrorDomain, 
+                       _OIPreviewProcessWithData, _OIPreviewProcessWithDataAndOptions, 
+                       _OIPreviewProcessWithURL, _OIPreviewProcessWithURLAndOptions, 
+                       _kOIPreviewOptionsNoDecorations, _kOIPreviewOptionsPassphrase ]
+...

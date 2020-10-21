@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           4D82F253-28BD-390B-BA9E-4AF658BD6710
+  - target:          armv7s-ios
+    value:           6D988284-5905-3EAD-AA39-8FB7628072AF
+  - target:          arm64-ios
+    value:           905FF9BE-BAA3-3069-BED6-D9B06A3CD0AE
+  - target:          arm64e-ios
+    value:           5E6CFE85-B4A9-3D82-BBE0-5F9BD6595D6A
+install-name:    '/System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/VideoSubscriberAccountUI'
+current-version: 364.0.3
+allowable-clients:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    clients:         [ VideoSubscriberAccountDeveloperSettings, VideoSubscriberAccountSettings, 
+                       VideoSubscriberAccountSetup, VideoSubscriberAccountTVApp, 
+                       VideoSubscriberAccountTests, VideoSubscriberAccountViewService ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ VSDeveloperSettingsViewController_iOS, VSSettingsViewController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VSAlertForError, _VSAppSettingsFacadeAppsDidChangeNotification, 
+                       _VSIconForBundleWithIdentifier ]
+    objc-classes:    [ VSAppDescriptionFetchOperation, VSAppSettingsFacade, VSAppSettingsViewModel, 
+                       VSBindableSwitch, VSErrorViewController, VSFontCenter, VSIdentityProviderFetchAllOperation, 
+                       VSIdentityProviderFetchOperation, VSIdentityProviderFilter, 
+                       VSIdentityProviderRequest, VSIdentityProviderRequestManager, 
+                       VSIdentityProviderViewController, VSImageLoadOperation, VSMaximumWidthMultilineButton, 
+                       VSMaximumWidthTintedBackgroundButton, VSMultilineButton, VSOnboardingInfoCenter, 
+                       VSSetupFlowController, VSSetupView, VSSupportedAppsViewController, 
+                       VSTintedBackgroundButton, VSTopShelfPurgingAccountStore, VSViewControllerFactory ]
+...

@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8C88F5C6-C054-32E8-86A6-B5F8C26F39A5
+  - target:          arm64e-ios
+    value:           2627C616-0C78-3D7D-A32C-7BBDA92EDB37
+install-name:    '/System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ARUIRingPercentageValueNoRing, _ActivityRingsUIFrameworkBundle, 
+                       _ActivityRingsUIVersionNumber, _ActivityRingsUIVersionString ]
+    objc-classes:    [ ARUIAnimatableObject, ARUIAnimatableObjectPropertyAnimation, 
+                       ARUIAnimatableProperty, ARUICGPointPropertyAnimation, ARUICountdownAnimator, 
+                       ARUICountdownDefaultTimeline, ARUICountdownTimeline, ARUICountdownView, 
+                       ARUIFloatPropertyAnimation, ARUIManualAnimationSequencer, 
+                       ARUIMetricColors, ARUIRenderContext, ARUIRenderer, ARUIRing, 
+                       ARUIRingGroup, ARUIRingGroupAnimationState, ARUIRingGroupController, 
+                       ARUIRingGroupGlobalAnimationSequencer, ARUIRingsImageFactory, 
+                       ARUIRingsView, ARUIRingsViewRenderer, ARUISprite, ARUISpriteSheet, 
+                       ARUISpriteSheetFactory, ARUISpriteTexture, ARUISpritesParticleRenderer ]
+...

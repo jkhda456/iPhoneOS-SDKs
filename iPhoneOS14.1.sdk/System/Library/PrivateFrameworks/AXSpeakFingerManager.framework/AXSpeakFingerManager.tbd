@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7B9E378A-703F-36D3-BD83-DAC84E89B672
+  - target:          arm64e-ios
+    value:           894A1882-9DC1-3880-ACEF-BB60FE0AE530
+install-name:    '/System/Library/PrivateFrameworks/AXSpeakFingerManager.framework/AXSpeakFingerManager'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXSpeakFingerBundle, _AXSpeakFingerLocString, _AXSpeakFingerManagerVersionNumber, 
+                       _AXSpeakFingerManagerVersionString ]
+    objc-classes:    [ AXSpeakFingerManager ]
+...

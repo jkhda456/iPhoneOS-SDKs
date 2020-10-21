@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           07396696-5E73-369C-B878-B689188A0A65
+  - target:          arm64e-ios
+    value:           8B63FF0F-C4A3-3D9A-9828-A8065B8D6D47
+install-name:    '/System/Library/PrivateFrameworks/AccessoryMediaLibrary.framework/AccessoryMediaLibrary'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ACCMediaLibraryFullUpdateKey, _ACCMediaLibraryNameKey, _ACCMediaLibraryPlaylistItemAlbumArtist, 
+                       _ACCMediaLibraryPlaylistItemAlbumTitle, _ACCMediaLibraryPlaylistItemArtist, 
+                       _ACCMediaLibraryPlaylistItemComposer, _ACCMediaLibraryPlaylistItemGenre, 
+                       _ACCMediaLibraryPlaylistItemPersistentID, _ACCMediaLibraryPlaylistItemTitle, 
+                       _ACCMediaLibraryTypeKey, _ACCMediaLibraryUIDKey, _ACCMediaLibraryUpdateEntryKey, 
+                       _ACCMediaLibraryUpdateHidingRemoteItems, _ACCMediaLibraryUpdateItemAlbumArtist, 
+                       _ACCMediaLibraryUpdateItemAlbumArtistPersistentID, _ACCMediaLibraryUpdateItemAlbumDiscCount, 
+                       _ACCMediaLibraryUpdateItemAlbumDiscNumber, _ACCMediaLibraryUpdateItemAlbumPersistentID, 
+                       _ACCMediaLibraryUpdateItemAlbumTitle, _ACCMediaLibraryUpdateItemAlbumTrackCount, 
+                       _ACCMediaLibraryUpdateItemAlbumTrackNumber, _ACCMediaLibraryUpdateItemArtist, 
+                       _ACCMediaLibraryUpdateItemArtistPersistentID, _ACCMediaLibraryUpdateItemChapterCount, 
+                       _ACCMediaLibraryUpdateItemComposer, _ACCMediaLibraryUpdateItemComposerPersistentID, 
+                       _ACCMediaLibraryUpdateItemDeletePersistentID, _ACCMediaLibraryUpdateItemDictionary, 
+                       _ACCMediaLibraryUpdateItemGenre, _ACCMediaLibraryUpdateItemGenrePersistentID, 
+                       _ACCMediaLibraryUpdateItemIsLocal, _ACCMediaLibraryUpdateItemIsPartOfCompilation, 
+                       _ACCMediaLibraryUpdateItemPersistentID, _ACCMediaLibraryUpdateItemPlaybackDurationInMilliseconds, 
+                       _ACCMediaLibraryUpdateItemRating, _ACCMediaLibraryUpdateItemTitle, 
+                       _ACCMediaLibraryUpdateItemType, _ACCMediaLibraryUpdatePlayAllSongsCapable, 
+                       _ACCMediaLibraryUpdatePlaylistContentStyle, _ACCMediaLibraryUpdatePlaylistDeletePersistentID, 
+                       _ACCMediaLibraryUpdatePlaylistDictionary, _ACCMediaLibraryUpdatePlaylistIsFolder, 
+                       _ACCMediaLibraryUpdatePlaylistIsGeniusMix, _ACCMediaLibraryUpdatePlaylistIsRadioStation, 
+                       _ACCMediaLibraryUpdatePlaylistIsSmartPlaylist, _ACCMediaLibraryUpdatePlaylistItemDictionary, 
+                       _ACCMediaLibraryUpdatePlaylistItemList, _ACCMediaLibraryUpdatePlaylistName, 
+                       _ACCMediaLibraryUpdatePlaylistParentPersistentID, _ACCMediaLibraryUpdatePlaylistPersistentID, 
+                       _ACCMediaLibraryUpdatePlaylistRadioStationOrdering, _ACCMediaLibraryUpdateProgressKey, 
+                       _ACCMediaLibraryUpdateRevisionKey, _ACCMediaLibraryUpdateTypeKey, 
+                       _AccessoryMediaLibraryVersionNumber, _AccessoryMediaLibraryVersionString ]
+    objc-classes:    [ ACCMediaLibraryAccessory, ACCMediaLibraryInfo, ACCMediaLibraryProvider, 
+                       ACCMediaLibraryUpdateItem, ACCMediaLibraryUpdateLibraryInfo, 
+                       ACCMediaLibraryUpdatePlaylist, ACCMediaLibraryUpdatePlaylistContent, 
+                       ACCMediaLibraryUpdatePlaylistContentItem, _ACCMediaLibraryAccessoryPendingUpdateItem ]
+...

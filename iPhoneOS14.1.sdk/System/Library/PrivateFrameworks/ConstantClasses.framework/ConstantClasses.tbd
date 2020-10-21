@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F6D57E29-5222-3621-AFE8-7964E2EE945F
+  - target:          armv7s-ios
+    value:           189C68F5-0A20-32E0-AE20-B248CD7DE2A1
+  - target:          arm64-ios
+    value:           0F7227F2-C3AC-3FAA-B8B7-D54E72D9467A
+  - target:          arm64e-ios
+    value:           04966403-FE98-3EF0-9687-2DD32563D5B2
+install-name:    '/System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _GetDataName, _TypeNameForClassOfObject, _codeString, _gArrayDictionary, 
+                       _gDataDictionary, _gDateDictionary, _gDictDictionary, _gNumberDictionary, 
+                       _gStringDictionary, _main, _normalizedStringForString, _objectCount, 
+                       _parseElement, _referenceElement, _usage ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CFStringHashNSString, __NSConstantDictionaryKeyHash ]
+    objc-classes:    [ _NSConstantArray, _NSConstantArrayEnumerator, _NSConstantData, 
+                       _NSConstantDate, _NSConstantDictionary, _NSConstantDictionaryEnumerator, 
+                       _NSConstantNumber, _NSConstantNumberBool, _NSConstantNumberFloat, 
+                       _NSConstantNumberInt ]
+    objc-ivars:      [ _NSConstantArrayEnumerator.capacity, _NSConstantArrayEnumerator.index, 
+                       _NSConstantArrayEnumerator.objects, _NSConstantDictionaryEnumerator.capacity, 
+                       _NSConstantDictionaryEnumerator.currentKey, _NSConstantDictionaryEnumerator.keyIndex ]
+...

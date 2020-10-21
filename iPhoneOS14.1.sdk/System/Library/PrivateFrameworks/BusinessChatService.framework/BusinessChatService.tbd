@@ -1,0 +1,53 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BC5B555C-751C-34EB-8E09-F8E86016AA27
+  - target:          arm64e-ios
+    value:           3FA2424B-21EF-3FF6-90A9-AC9AC585B6A0
+install-name:    '/System/Library/PrivateFrameworks/BusinessChatService.framework/BusinessChatService'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ABSLogCommon, _ABSLoggingSubsystem, _BCSCacheEntitlement, 
+                       _BCSPrefetchEntitlement, _NSStringFromBCSType, _kBCBusinessChatMachServiceName, 
+                       _kBCBusinessChatServiceName, _kBCBusinessChatViewServiceName, 
+                       _kBCChatSuggestRemoteViewController, _kBCSBusinessItemKey, 
+                       _kBCSDefaultsChatSuggestCustomApiKey, _kBCSDefaultsChatSuggestCustomContainerId, 
+                       _kBCSDefaultsChatSuggestCustomEnvironment, _kBCSDefaultsChatSuggestCustomMessagesIdentifier, 
+                       _kBCSDefaultsChatSuggestICloudStagingMode, _kBCSDefaultsChatSuggestSkipDiskCaching, 
+                       _kBCSDefaultsChatSuggestSkipEdgeCaching, _kBCSDefaultsChatSuggestSkipInMemoryCaching, 
+                       _kBCSDefaultsLinkCustomApiKey, _kBCSDefaultsLinkCustomContainerId, 
+                       _kBCSDefaultsLinkCustomEnvironment, _kBCSDefaultsLinkICloudStagingMode, 
+                       _kBCSDefaultsLinkSkipDiskCaching, _kBCSDefaultsLinkSkipEdgeCaching, 
+                       _kBCSHashServiceSHA256DigestLength, _kBCSOpenHoursDayOfWeekKey, 
+                       _kBCSOpenHoursFromKey, _kBCSOpenHoursHoursRangesKey, _kBCSOpenHoursSecondsInDay, 
+                       _kBCSOpenHoursTimeRangeKey, _kBCSOpenHoursToKey ]
+    objc-classes:    [ BCSBloomFilterAndConfigPrefetcher, BCSBloomFilterExtractor, 
+                       BCSBusinessItem, BCSBusinessItemIdentifier, BCSBusinessItemMemoryCache, 
+                       BCSBusinessItemPersistentStore, BCSBusinessLinkContentItem, 
+                       BCSBusinessLinkFetchMetric, BCSBusinessLinkHashFetchMetric, 
+                       BCSBusinessLinkRegisteredMetric, BCSBusinessQueryController, 
+                       BCSBusinessQueryService, BCSCacheManager, BCSCallToActionItem, 
+                       BCSChatSuggestController, BCSChatSuggestFetchMetric, BCSChatSuggestRegisteredMetric, 
+                       BCSCloudKitQueryProvider, BCSCoalesceHelper, BCSCoalesceObjectBloomFilterAndConfig, 
+                       BCSCoalesceObjectConfig, BCSCoalesceObjectItems, BCSCoalesceObjectShard, 
+                       BCSConfigItem, BCSConfigPrefetchMetric, BCSConfigPrefetcher, 
+                       BCSConfigRemoteFetch, BCSConfigResolutionMetric, BCSConfigResolver, 
+                       BCSFeatureFlagArbiter, BCSFlagMeasurement, BCSHashService, 
+                       BCSICloudServerEnvironment, BCSIconController, BCSItem, BCSItemCache, 
+                       BCSItemResolutionMetric, BCSItemResolver, BCSLinkItem, BCSLinkItemIdentifier, 
+                       BCSLinkItemPersistentStore, BCSLocaleHelper, BCSMeasurement, 
+                       BCSMeasurementFactory, BCSMegashardPrefetchMetric, BCSMetric, 
+                       BCSMetricFactory, BCSOpenHours, BCSOperationGroupFactory, 
+                       BCSPersistentBusinessItemObject, BCSPersistentStore, BCSPhoneNumberFormatter, 
+                       BCSPhoneNumberNormalizer, BCSQueryChopper, BCSQueryOperationFactory, 
+                       BCSRemoteFetch, BCSRemoteFetchCloudKit, BCSShardIdentifier, 
+                       BCSShardItem, BCSShardItemPersistentStore, BCSShardResolutionMetric, 
+                       BCSShardResolver, BCSTimingMeasurement, BCSURLNormalizer, 
+                       BCSUserDefaults, BCSVisibilityItem ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           582ACC8A-74F0-3BE3-AC66-2589E831283A
+  - target:          armv7s-ios
+    value:           84109CA0-74C3-3DD6-8D24-92AAA20FFADB
+  - target:          arm64-ios
+    value:           B56CB77F-4AF6-3907-AB25-4D4F62615F9C
+  - target:          arm64e-ios
+    value:           59F63F40-5475-3D52-B2B3-2AD86D2C9CBF
+install-name:    '/System/Library/PrivateFrameworks/IOAccelMemoryInfo.framework/IOAccelMemoryInfo'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IOAccelMemoryInfoErrorDomain, _IOAccelMemoryInfoIOKitDriverKey, 
+                       _IOAccelMemoryInfoProcessIDKey ]
+    objc-classes:    [ IOAccelMemoryInfo, IOAccelMemoryMapInfo, IOAccelMemoryOpenCLInfo, 
+                       IOAccelMemoryOpenGLInfo, IOAccelMemoryPoolTotals ]
+...

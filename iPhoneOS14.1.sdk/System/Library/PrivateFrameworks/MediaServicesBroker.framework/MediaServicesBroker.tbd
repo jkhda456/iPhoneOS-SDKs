@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E6D99EC2-C2E8-3826-9E71-CD538C7E05DA
+  - target:          arm64e-ios
+    value:           C719455C-7FC2-3068-9BFF-EF910F29B76D
+install-name:    '/System/Library/PrivateFrameworks/MediaServicesBroker.framework/MediaServicesBroker'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MediaServicesBrokerVersionNumber, _MediaServicesBrokerVersionString ]
+...

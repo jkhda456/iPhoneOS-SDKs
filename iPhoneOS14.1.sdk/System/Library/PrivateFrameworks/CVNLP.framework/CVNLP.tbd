@@ -1,0 +1,56 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           81108882-299D-3FB4-9E11-28D9DC2CE4D7
+  - target:          arm64e-ios
+    value:           9163E708-FE52-3443-8DCD-4A0CDC715AD6
+install-name:    '/System/Library/PrivateFrameworks/CVNLP.framework/CVNLP'
+current-version: 119
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CVNLPBeamEndToken, _CVNLPBeamScore, _CVNLPBeamSearchBeamID, 
+                       _CVNLPBeamSearchBlacklistRules, _CVNLPBeamSearchCopyTopBeams, 
+                       _CVNLPBeamSearchCreate, _CVNLPBeamSearchIncludeLanguageModel, 
+                       _CVNLPBeamSearchLengthNormalizationFactor, _CVNLPBeamSearchNextTokenID, 
+                       _CVNLPBeamSearchNextTokenMetaData, _CVNLPBeamSearchNextTokenSoftmaxValues, 
+                       _CVNLPBeamSearchOneStep, _CVNLPBeamSearchOutputVocabFilterList, 
+                       _CVNLPBeamSearchOutputVocabMap, _CVNLPBeamSearchOutputVocabPath, 
+                       _CVNLPBeamSearchOutputVocabSize, _CVNLPBeamSearchReset, _CVNLPBeamSearchSize, 
+                       _CVNLPBeamTokens, _CVNLPCaptionCopyClassificationResults, 
+                       _CVNLPCaptionCopyForCVPixelBuffer, _CVNLPCaptionCopyForImage, 
+                       _CVNLPCaptionCopyPerformanceMetrics, _CVNLPCaptionCreateForCVPixelBuffer, 
+                       _CVNLPCaptionCreateForImage, _CVNLPCaptionEnableGenderedCaptions, 
+                       _CVNLPCaptionFilterTokens, _CVNLPCaptionHandlerCreate, _CVNLPCaptionLanguage, 
+                       _CVNLPCaptionModelLSTM, _CVNLPCaptionModelPath, _CVNLPCaptionModelTransformer, 
+                       _CVNLPCaptionModelType, _CVNLPCaptionScaleMethod, _CVNLPCaptionScaleMethodCGInterpolationHigh, 
+                       _CVNLPCaptionScaleMethodCGInterpolationLow, _CVNLPCaptionScaleMethodCGInterpolationMedium, 
+                       _CVNLPCaptionScaleMethodCGInterpolationNone, _CVNLPCaptionScaleMethodvImage, 
+                       _CVNLPCaptionTrackPerformance, _CVNLPCaptions, _CVNLPCationErrorDomain, 
+                       _CVNLPErrorDomain, _CVNLPGeneratedCaption, _CVNLPGeneratedCaptionConfidenceLow, 
+                       _CVNLPGeneratedCaptionScore, _CVNLPImageClassificationIdentifiers, 
+                       _CVNLPLanguageModelConditionalProbability, _CVNLPLanguageModelConditionalProbabilityForTokenID, 
+                       _CVNLPLanguageModelCopyConditionalProbabilities, _CVNLPLanguageModelCopyConditionalProbabilitiesForTokenIDs, 
+                       _CVNLPLanguageModelCopyIDTokenMap, _CVNLPLanguageModelCopyNextTokenConditionalProbabilitiesOverVocabulary, 
+                       _CVNLPLanguageModelCopyNextTokenIDConditionalProbabilitiesOverVocabulary, 
+                       _CVNLPLanguageModelCopyTokenIDMap, _CVNLPLanguageModelCreate, 
+                       _CVNLPLanguageModelLogConditionalProbability, _CVNLPLanguageModelLogConditionalProbabilityForTokenID, 
+                       _CVNLPLanguageModelLogJointProbability, _CVNLPLanguageModelWithStateConditionalProbability, 
+                       _CVNLPLanguageModelWithStateConditionalProbabilityForTokenID, 
+                       _CVNLPLanguageModelWithStateCopyConditionalProbabilitiesOverVocabulary, 
+                       _CVNLPLanguageModelWithStateCreate, _CVNLPLanguageModelWithStateCreateCopy, 
+                       _CVNLPLanguageModelWithStateReset, _CVNLPLanguageModelWithStateUpdateWithContext, 
+                       _CVNLPLanguageModelWithStateUpdateWithContextIDs, _kCVNLPLanguageModelLocaleKey, 
+                       _kCVNLPLanguageModelTokenTypeKey, _kCVNLPLanguageModelURLKey ]
+    objc-classes:    [ CVNLPActivationMatrix, CVNLPCTCTextDecoder, CVNLPDecodingLanguageModel, 
+                       CVNLPDecodingLexicon, CVNLPDecodingLexicons, CVNLPInformationStream, 
+                       CVNLPLanguageResourceBundle, CVNLPTextDecoder, CVNLPTextDecodingBeamSearchConfiguration, 
+                       CVNLPTextDecodingConfiguration, CVNLPTextDecodingContext, 
+                       CVNLPTextDecodingPath, CVNLPTextDecodingResult, CVNLPTextDecodingResultCandidate, 
+                       CVNLPTextDecodingToken, CVNLPTokenIDConverter ]
+...

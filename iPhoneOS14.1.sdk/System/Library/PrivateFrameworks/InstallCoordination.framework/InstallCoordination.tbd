@@ -1,0 +1,51 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           65613E16-7F38-3738-B238-EEA9D400D752
+  - target:          arm64e-ios
+    value:           8432CBF8-269D-3391-AE25-46B945873699
+install-name:    '/System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IXAlertUserErrorKey, _IXAppMayUninstallNotificationName, 
+                       _IXAppRemovabilityChangedNotificationName, _IXArrayContainsOnlyClass, 
+                       _IXArrayifyThing, _IXBooleanValue, _IXCopyAppRemovabilityDictionary, 
+                       _IXCopyClientNameForConnection, _IXCopyProcessNameForPid, 
+                       _IXCopyRemovabilityStorageURL, _IXCreateUserPresentableError, 
+                       _IXDictionaryContainsOnlyClasses, _IXDictionaryContainsOnlyClassesCheckingValueTypes, 
+                       _IXDisplayUserPresentableErrorForApp, _IXDisplayUserPresentableErrorForAppWithLocalizedName, 
+                       _IXDisplayUserPresentableErrorForApps, _IXErrorDomain, _IXFunctionNameErrorKey, 
+                       _IXGetLoggingHandle, _IXGetRemovabilityForApp, _IXGetUncachedRemovabilityForApp, 
+                       _IXHasMobileInstallationSPIEntitlement, _IXHasTrueValueForEntitlement, 
+                       _IXOncePerBootWorkNeeded, _IXPathArgumentErrorKey, _IXRunOncePerBootWork, 
+                       _IXSetContainsOnlyClass, _IXSetOncePerBootWorkCompleted, _IXSetRemovabilityStorageURLOverride, 
+                       _IXSourceFileLineErrorKey, _IXStringForAppRemovability, _IXStringForClientID, 
+                       _IXStringForCoordinatorImportance, _IXStringForIXError, _IXStringifyObject, 
+                       _IXUserPresentableErrorCodeIsHardError, _IXUserPresentableErrorDomain, 
+                       _IXUserPresentableErrorForInsufficientSpaceError, _IXValidateMobileInstallationSPIEntitlement, 
+                       _InstallCoordinationVersionNumber, _InstallCoordinationVersionString, 
+                       _LoadInfoPlistFromBundle, _LoadInfoPlistFromBundleAtURL, __CreateError, 
+                       __CreateErrorV, _kIXLoggingSubsystem ]
+    objc-classes:    [ IXAppInstallCoordinator, IXAppInstallCoordinatorSeed, IXAppInstallObserver, 
+                       IXAppInstallObserverProtocolInterface, IXClientDelegateProtocolInterface, 
+                       IXClientProtocolInterface, IXDataPromise, IXDataPromiseSeed, 
+                       IXDemotingAppInstallCoordinator, IXFileManager, IXGizmoInstallingAppInstallCoordinator, 
+                       IXGlobalConfiguration, IXInitiatingAppInstallCoordinator, 
+                       IXOpaqueDataPromise, IXOpaqueDataPromiseSeed, IXOwnedDataPromise, 
+                       IXOwnedDataPromiseSeed, IXPlaceholder, IXPlaceholderAttributes, 
+                       IXPlaceholderSeed, IXPromisedInMemoryData, IXPromisedInMemoryDataSeed, 
+                       IXPromisedInMemoryDictionary, IXPromisedInMemoryDictionarySeed, 
+                       IXPromisedOutOfBandStreamingZipTransfer, IXPromisedOutOfBandStreamingZipTransferSeed, 
+                       IXPromisedOutOfBandTransfer, IXPromisedOutOfBandTransferSeed, 
+                       IXPromisedStreamingZipTransfer, IXPromisedStreamingZipTransferSeed, 
+                       IXPromisedTransferToPath, IXPromisedTransferToPathSeed, IXPromotingAppInstallCoordinator, 
+                       IXRestoringAppInstallCoordinator, IXRestoringDemotedAppInstallCoordinator, 
+                       IXServerConnection, IXUninstallOptions, IXUpdatingAppInstallCoordinator, 
+                       _IXDemoteToPlaceholderDelegate, _IXSimpleInstallerDelegate ]
+...

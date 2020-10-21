@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F5B1A94E-F93D-3D49-A072-E4D3EDC47B20
+  - target:          arm64e-ios
+    value:           89D2F26F-48C2-33DE-8070-2913D88ED57F
+install-name:    '/System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CHSAppearanceColorSchemeDescription, _CHSAvocadoSizeClassFromString, 
+                       _CHSDescriptionForAvocadoSizeClass, _CHSDescriptionForAvocadoSizeClassMask, 
+                       _CHSErrorDomain, _CHSExpireLocationGracePeriods, _CHSFlushPowerlog, 
+                       _CHSIsWidgetExtensionPoint, _CHSLogChronoServices, _CHSNSURLSessiondServiceInfoKeyIsHighPriority, 
+                       _CHSNSURLSessiondServiceInfoKeySessionIdentifier, _CHSSetMetricsSpecification, 
+                       _CHSWidgetEnvironmentDataForBundleIdentifier, _CHSWidgetFamilyDescription, 
+                       _CHSWidgetFamilyFromString, _CHSWidgetFamilyMaskContainsFamily, 
+                       _CHSWidgetFamilyMaskDescription, _CHSWidgetFamilyMaskEnumerateFamilies, 
+                       _CHSWidgetFamilyMaskFromWidgetFamily, _CHSWidgetLocationDescription, 
+                       _CHSWidgetTextSizeAdjustmentDescription, _ChronoLoggingSubsystem, 
+                       _ChronoServicesVersionNumber, _ChronoServicesVersionString, 
+                       _NSStringForAvocadoSizeClass, _NSStringFromWidgetFamily, _NSStringFromWidgetLocation, 
+                       _chs_debugDescriptionForErrorCode ]
+    objc-classes:    [ CHSApplicationProcessStateChangeConsumer, CHSAvocadoDescriptor, 
+                       CHSAvocadoDescriptorProvider, CHSAvocadoDescriptorsBox, CHSChronoServicesConnection, 
+                       CHSChronoServicesToolConnection, CHSChronoToolServiceSpecification, 
+                       CHSChronoWidgetServiceSpecification, CHSConfiguredWidgetContainerConsumer, 
+                       CHSConfiguredWidgetContainerDescriptor, CHSConfiguredWidgetContainerDescriptorsBox, 
+                       CHSConfiguredWidgetDescriptor, CHSLocalizableString, CHSMutableWidgetMetricsSpecification, 
+                       CHSNSURLSessiondService, CHSPlaceholderRequest, CHSProactiveService, 
+                       CHSScreenshotManager, CHSSizeConfiguration, CHSTimelineController, 
+                       CHSToolSupportService, CHSURLSessionToken, CHSWidget, CHSWidgetKey, 
+                       CHSWidgetKeysBox, CHSWidgetMetrics, CHSWidgetMetricsSpecification ]
+...

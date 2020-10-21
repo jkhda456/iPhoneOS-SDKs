@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D2BE6F61-9B27-372B-BA56-ECAFC8F3EE73
+  - target:          armv7s-ios
+    value:           E4CA68B7-1A4E-3693-AB5D-8E491EFEDC5D
+  - target:          arm64-ios
+    value:           F2C3391B-DD2B-3A45-88C2-0D6987349B96
+  - target:          arm64e-ios
+    value:           F052D3C9-454F-32A0-B10B-322A34F50EEC
+install-name:    '/System/Library/PrivateFrameworks/CertUI.framework/CertUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CertUILoggingWithCategory, _CertUI_CPLog_os_trace, __CertUINewLog ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CertUILoggingInitialize, __CertUILogObjects, _kCertUIMessagingCenterActualName, 
+                       _kCertUIMessagingCenterRelayName, _kCertUIPresentTrustInfoMessage, 
+                       _kCertUIServiceTypeHTTPS, _kCertUIServiceTypeIMAP, _kCertUIServiceTypeLDAP, 
+                       _kCertUIServiceTypeLDAPS, _kCertUIServiceTypePOP3, _kCertUIServiceTypeSMTP, 
+                       _kCertUIServiceTypeSSH, _kCertUITrustAllowCertificateTrustKey, 
+                       _kCertUITrustDigestKey, _kCertUITrustExpirationKey, _kCertUITrustHostnameKey, 
+                       _kCertUITrustIsRootCertificateKey, _kCertUITrustIssuerKey, 
+                       _kCertUITrustPromptOptionsAllowCertificateTrustKey, _kCertUITrustPromptOptionsShowCertificateDetailsKey, 
+                       _kCertUITrustPromptOptionsShowContinueKey, _kCertUITrustPropertiesKey, 
+                       _kCertUITrustPurposeKey, _kCertUITrustResponseKey, _kCertUITrustShowCertificateDetailsKey, 
+                       _kCertUITrustShowContinueKey, _kCertUITrustSubtitleKey, _kCertUITrustTitleKey ]
+    objc-classes:    [ CertUIConnectionDelegate, CertUIPrompt, CertUITrustManager, 
+                       CertUIUtilities ]
+    objc-ivars:      [ CertUIConnectionDelegate._connectionDisplayName, CertUIConnectionDelegate._delegateRespondsTo, 
+                       CertUIConnectionDelegate._forwardingDelegate, CertUIConnectionDelegate._trustManager, 
+                       CertUIPrompt._connectionDisplayName, CertUIPrompt._host, CertUIPrompt._responseBlock, 
+                       CertUIPrompt._service, CertUIPrompt._trust, CertUITrustManager._access ]
+...

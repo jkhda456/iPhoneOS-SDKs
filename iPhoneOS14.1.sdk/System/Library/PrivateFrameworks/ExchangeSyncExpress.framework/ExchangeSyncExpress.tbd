@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E99D13BB-C44D-3305-82D3-CFFB1E0AF46F
+  - target:          arm64e-ios
+    value:           EFC67EDB-AD66-360A-A5E6-E7B3B1B2C611
+install-name:    '/System/Library/PrivateFrameworks/ExchangeSyncExpress.framework/ExchangeSyncExpress'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DADCalendarDirectorySearchRecordType_Groups, _DADCalendarDirectorySearchRecordType_Locations, 
+                       _DADCalendarDirectorySearchRecordType_Resources, _DADCalendarDirectorySearchRecordType_Users, 
+                       _DataAccessMonitoredFolderUpdated, _DataAccessMonitoringConnectionFailed, 
+                       _ExchangeSyncDaemonShutdownRequestNoteName, _kESDPortName, 
+                       _kESExchangeAccountWipeOnly, _kESExchangeDeviceID, _kESExchangeUserEnrollmentMode, 
+                       _kESMailChangeNotification ]
+    objc-classes:    [ ESDAMContainerIDCacheKey, ESDConnection, ESDownloadContext, 
+                       ESECalendarAvailabilityContext, ESECalendarDirectorySearchContext, 
+                       ESSharedCalendarContext ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3C274276-4381-394E-9C4B-67CE7E0F501D
+  - target:          armv7s-ios
+    value:           45F63DB4-4849-3C8A-9BA6-038AD3C590BE
+  - target:          arm64-ios
+    value:           7FF71FA8-837B-3560-9A85-DC2D1B10AE6D
+  - target:          arm64e-ios
+    value:           66219A2E-D0C0-3253-BD35-86BB251FABF0
+install-name:    '/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CommunicationsFilter'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CMFAgentName, _CMFBlockListAddItemForAllServices, _CMFBlockListCopyItemsForAllServicesService, 
+                       _CMFBlockListIsItemBlocked, _CMFBlockListRemoveItemFromAllServices, 
+                       _CMFBlockListUpdatedNotification, _CMFDictionaryResultKey, 
+                       _CMFItemCopyBusinessID, _CMFItemCopyEmailAddress, _CMFItemCopyPhoneNumber, 
+                       _CMFItemCreateWithBusinessID, _CMFItemCreateWithEmailAddress, 
+                       _CMFItemCreateWithPhoneNumber, _CMFItemGetType, _CMFSyncAgentBlockListUpdated, 
+                       _CMFXPCEventCode, _CMFXPCParameterKeyItem, _CMFXPCResponseKey, 
+                       _CreateCMFItemFromString ]
+    objc-classes:    [ CommunicationFilterItem ]
+...

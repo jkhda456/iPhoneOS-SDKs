@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B5EBDD65-4E96-32EE-B742-B0331523B793
+  - target:          arm64e-ios
+    value:           7C3DA99D-2339-3683-86A3-EA3E1375AEB4
+install-name:    '/System/Library/PrivateFrameworks/BackBoardHIDEventFoundation.framework/BackBoardHIDEventFoundation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BKEventPortForIdentifier, _BKEventPortForSystemApp, _BKGetEventTapCallback, 
+                       _BKGetHIDEventTapCallback, _BKHIDCreatePrimaryEventProcessor, 
+                       _BKHIDCreatePrimaryEventProcessorWithDictionary, _BKHIDEventRoutingGetClientConnectionManager, 
+                       _BKHIDEventRoutingInit, _BKLogAccelerometer, _BKLogBootUI, 
+                       _BKLogButton, _BKLogDisplayAnnotations, _BKLogGenericGesture, 
+                       _BKLogHID, _BKLogIdleTimer, _BKLogKeyPresses, _BKLogKeyboard, 
+                       _BKLogMotionEvents, _BKLogRenderOverlay, _BKLogSendHIDEvent, 
+                       _BKLogSystemAppSentinel, _BKLogTouchDeliveryPolicy, _BKLogTouchEvents, 
+                       _BKSendGSEvent, _BKSendHIDEventToClientWithDestination, _BKSendHIDEventToClientWithDestinationAsRedirect, 
+                       _BKSendHIDEventToClientWithTaskPort, _BKSetEventTapCallback, 
+                       _BKSetHIDEventTapCallback, _BackBoardHIDEventFoundationVersionNumber, 
+                       _BackBoardHIDEventFoundationVersionString, __BKHIDNoteUserEventOccurredOnDisplay, 
+                       __BKHIDSetUserEventNotifier, __BKHandleIOHIDEventFromSender, 
+                       __BKSendHIDEventToClientWithDestination ]
+    objc-classes:    [ BKHIDAccessibilitySender, BKHIDClientConnection, BKHIDClientConnectionManager, 
+                       BKHIDDefaultEventProcessor, BKHIDEventClient, BKHIDEventDeliveryClient, 
+                       BKHIDEventDeliveryManager, BKHIDEventDeliveryObserverService, 
+                       BKHIDEventDeliveryObserverServiceListener, BKHIDEventProcessorCreationContext, 
+                       BKHIDEventProcessorRegistry, BKHIDEventRecognizerEngine, BKHIDEventSenderCache, 
+                       BKHIDEventSequenceRecognizer, BKHIDNullEventProcessor, BKHIDPrimaryEventProcessor, 
+                       BKHIDSystem, BKHIDUnknownSender, BKIOHIDService, BKIOHIDServiceMatcher, 
+                       _BKHIDEventDeliveryRoot, _BKHIDKeyCommandDeliveryRoot, _BKIOHIDServiceDisappearanceObserverInfo ]
+    objc-ivars:      [ BKHIDEventClient._queue ]
+...

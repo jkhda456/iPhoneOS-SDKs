@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           03B8D036-E6C2-3ACE-86B6-B33FCEDE6C97
+  - target:          armv7s-ios
+    value:           7CB97991-8693-32A1-A917-91C06BFB2701
+  - target:          arm64-ios
+    value:           0A103EDE-A36D-3975-AE74-ECA09D1148FF
+  - target:          arm64e-ios
+    value:           18965D27-C77B-3A2D-896A-541CB545A992
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticLogCollection.framework/DiagnosticLogCollection'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DLCAlertTitleKey, _DLCCollectLogs, _DLCCollectLogsWithCompletionHandler, 
+                       _DLCDefaultRadarComponentKey, _DLCDefaultRadarComponentVersionKey, 
+                       _DLCGatheringDisplayFlagsKey, _DLCLogBacktraceWithLevel, _DLCLogBacktraceWithLevelV, 
+                       _DLCLogEventWithLevel, _DLCLogEventWithLevelV, _DLCLogGatheringFlagsKey, 
+                       _DLCLogPathKey, _DLCLogWithLevel, _DLCLogWithLevelV, _DLCLoggingStringForMessageData, 
+                       _DLCSessionAction, _DLCSessionAddLogFile, _DLCSessionBeginSession, 
+                       _DLCSessionConnect, _DLCSessionDiconnect, _DLCSessionEndSession, 
+                       _DLCSessionEvent, _DLCSessionLogCallInfo, _DLCSessionLogWithLevel, 
+                       _DLCSessionLogWithLevelV, _DLCSessionNoteCheckpoint, _DLCSessionPerformSnapshot, 
+                       _DLCSessionPulse, _DLCSessionSetFailureReason, _DLCSessionSetInitiator, 
+                       _DLCSessionSetRecipient, _DLCSessionShouldLogCheckpoints, 
+                       _DLCSessionShouldLogLevel, _DLCSessionSyncLoggingsPreferences, 
+                       _DLCShouldLogLevel, _DLCShouldLogMessageBodies, _DLCWarn, 
+                       _DLCWarnV, __DLCLogEventWithLevelV, __DLCLogWithLevelFileAndLine, 
+                       __DLCLogWithLevelV, __DLCWarnV ]
+...

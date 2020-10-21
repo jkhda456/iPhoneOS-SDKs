@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D5A39D1E-6AB1-3D71-BAF1-06BD1052E0D1
+  - target:          arm64e-ios
+    value:           18167B0A-9676-3DBE-8980-37E61EA8FF99
+install-name:    '/System/Library/PrivateFrameworks/PromotedContentProxy.framework/PromotedContentProxy'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PromotedContentProxyVersionNumber, _PromotedContentProxyVersionString ]
+    objc-classes:    [ APProxyProtocol, APProxyURLUtilities, APWebViewConfiguration ]
+...

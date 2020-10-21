@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           776F7736-A6C4-35D6-9AA2-A5627F7DEFCB
+  - target:          armv7s-ios
+    value:           7E7AE76E-7CBE-3D69-87AE-9D8A973F362B
+  - target:          arm64-ios
+    value:           68DCA4E4-D00D-3775-A397-AFEE0E62A41F
+  - target:          arm64e-ios
+    value:           820DECFF-CCEC-3D38-9964-D049B76DD433
+install-name:    '/System/Library/PrivateFrameworks/DiskSpaceDiagnostics.framework/DiskSpaceDiagnostics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DiskSpaceDiagnosticsVersionNumber, _DiskSpaceDiagnosticsVersionString ]
+...

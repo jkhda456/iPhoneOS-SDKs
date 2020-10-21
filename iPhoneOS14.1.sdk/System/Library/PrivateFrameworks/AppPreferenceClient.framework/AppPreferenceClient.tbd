@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           BD3C0A31-1D8E-3C6E-AFD8-3C784B47EE11
+  - target:          armv7s-ios
+    value:           65639EEA-0B00-3C17-AAF8-9EA631DCAE36
+  - target:          arm64-ios
+    value:           0B5E16E2-CA73-3D99-80AA-A3D920160819
+  - target:          arm64e-ios
+    value:           9F2B557D-339A-38B4-84C5-202E43B03645
+install-name:    '/System/Library/PrivateFrameworks/AppPreferenceClient.framework/AppPreferenceClient'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kAppPreferenceInterfaceMachServiceName ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _APRAppPreferenceInterface, _APRIntentStreamUpdateInterface, 
+                       _AppPreferenceClientVersionNumber, _AppPreferenceClientVersionString, 
+                       _kAPRAppPreferenceInterfaceMachServiceName, _kAPRIntentStreamUpdateInterfaceMachServiceName ]
+    objc-classes:    [ APRAppPreferenceClient, APRAppPreferenceResponse, APRAppPreferenceTypes, 
+                       APRIntentStreamUpdateClient ]
+...

@@ -1,0 +1,148 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6F8B4B9A-9695-3C00-A75F-00043BEE0D9E
+  - target:          armv7s-ios
+    value:           9374B07B-CE73-3680-A1A7-9288D04F6A1E
+  - target:          arm64-ios
+    value:           93A75463-3F34-3D71-B0C7-D4B187979EBD
+  - target:          arm64e-ios
+    value:           D7ABD727-1ADA-39EF-A3E4-1FCBDD1D50EB
+install-name:    '/System/Library/PrivateFrameworks/SearchUI.framework/SearchUI'
+reexported-libraries:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    libraries:       [ '/System/Library/PrivateFrameworks/SearchUIFoundation.framework/SearchUIFoundation' ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _SearchUIAlignmentCenter, _SearchUIAlignmentLeft, _SearchUIAlignmentRight, 
+                       _SearchUICFBundleIdentifierKey, _SearchUICardSectionTypeDescription, 
+                       _SearchUICardSectionTypeKeyValueData, _SearchUICardSectionTypeMovie, 
+                       _SearchUICardSectionTypeNowPlaying, _SearchUICardSectionTypeRichTitle, 
+                       _SearchUICardSectionTypeRow, _SearchUICardSectionTypeScoreSummary, 
+                       _SearchUICardSectionTypeSpacer, _SearchUICardSectionTypeTableRow, 
+                       _SearchUICardSectionTypeTitle, _SearchUICardSectionTypeTrailers, 
+                       _SearchUICardSectionTypeTwitter, _SearchUIStyleIsDark, _SearchUIStyleIsVibrant, 
+                       _SpacingBetweenLabels ]
+    objc-classes:    [ SearchUIAppIconButton, SearchUIAppIconImageCache, SearchUIAppIconPeekController, 
+                       SearchUICalendarPeekViewController, SearchUICardSectionFormatter, 
+                       SearchUIChevronViewController, SearchUIContactActionsViewController, 
+                       SearchUIContentAdvisoryView, SearchUIDirectionsButton, SearchUIDirectionsButtonViewController, 
+                       SearchUIFeedbackEvent, SearchUIForceTouchGestureRecognizer, 
+                       SearchUIFormatter, SearchUIIconView, SearchUIIconViewContainer, 
+                       SearchUIInlineCardSectionsTableViewCell, SearchUILayoutFreeCell, 
+                       SearchUILayoutFreeSectionView, SearchUILocalMediaController, 
+                       SearchUIMovieInfoCardStackView, SearchUIPeekViewController, 
+                       SearchUIPlayButton, SearchUIRichTextField, SearchUIRowFormatter, 
+                       SearchUISimpleMultiResultTableViewCell, SearchUISingleResultTableViewCell, 
+                       SearchUIStackView, SearchUIStarView, SearchUITextAreaView, 
+                       SearchUIThumbnailView, SearchUITitleContainerView, SearchUIVibrantLabel, 
+                       SearchUIVibrantView, SearchUIVibrantWidthLimitedLabel, SearchUIWidthLimitedImageView, 
+                       SearchUIWidthLimitedLabel ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SearchUIAppIconImageDidChangeNotification, _SearchUIAppIconImageWillChangeNotification, 
+                       _SearchUIBullseyeSuggestionsEnabled, _SearchUICompactHorizontalMargin, 
+                       _SearchUIEdgeInsetsZero, _SearchUIGeneralLog, _SearchUIInitLogging, 
+                       _SearchUILogSubsystem, _SearchUIPeekLog, _SearchUIScreenTimeChangeNotification, 
+                       _SearchUIShorterFloatingHeightOffset, _SearchUIShowMoreButtonResultIdentifier, 
+                       _SearchUITableViewSectionCornerRadius, _SearchUITapLog, _SearchUITelemetryLog, 
+                       _SearchUIVersionNumber, _SearchUIVersionString, _SearchUIWatchListKitCallerIdentifier, 
+                       _SearchUIWillInitiateDragNotification, _idealButtonWidth, 
+                       _kPreviewCornerRadius, _kSmallPreviewCornerRadius, _searchUILogHandles, 
+                       _severalTrailingColumns ]
+    objc-classes:    [ SearchUI, SearchUIAccessoryViewController, SearchUIActionDomainIndicatorViewController, 
+                       SearchUIActivityIndicatorCardSectionView, SearchUIAppClipAccessoryViewController, 
+                       SearchUIAppClipImage, SearchUIAppIcon, SearchUIAppIconImage, 
+                       SearchUIAppIconsRowView, SearchUIAppStoreButtonViewController, 
+                       SearchUIAppStorePeekCommand, SearchUIAppStoreSheetCommand, 
+                       SearchUIAttributionFooterCardSectionView, SearchUIAudioPlaybackCardSectionView, 
+                       SearchUIAutoLayout, SearchUIAuxiliaryTextViewController, SearchUIAvatarImage, 
+                       SearchUIBackgroundView, SearchUIButton, SearchUIButtonCardSectionView, 
+                       SearchUIButtonViewController, SearchUIButtonsView, SearchUICalculatorPeekCommand, 
+                       SearchUICalendarIconImage, SearchUICalendarPeekCommand, SearchUICalendarStore, 
+                       SearchUICardCommand, SearchUICardPeekCommand, SearchUICardSectionCreator, 
+                       SearchUICardSectionRowModel, SearchUICardSectionTableCell, 
+                       SearchUICardSectionView, SearchUICardTableViewController, 
+                       SearchUICardViewController, SearchUICellCache, SearchUICenteredResultRowModel, 
+                       SearchUICenteredResultTableViewCell, SearchUICheckView, SearchUICombinedCardSectionRowModel, 
+                       SearchUICombinedCardSectionTableCell, SearchUICombinedCardSectionViewSeparator, 
+                       SearchUICombinedCardSectionsView, SearchUICommand, SearchUICommandEnvironment, 
+                       SearchUICompactCardSectionView, SearchUIConfirmationHUDTransitionController, 
+                       SearchUIConfirmationHUDView, SearchUIConfirmationHUDViewController, 
+                       SearchUIContactCardCommand, SearchUIContactStore, SearchUIContactViewController, 
+                       SearchUIContactsThumbnailView, SearchUIContainerButton, SearchUICustomCardPresentationCommand, 
+                       SearchUIDashedLineView, SearchUIDefaultBrowserAppIconImage, 
+                       SearchUIDescriptionCardSectionView, SearchUIDetailedRowCardSectionView, 
+                       SearchUIDetailedRowModel, SearchUIDetailedView, SearchUIDomainIndicatorImageView, 
+                       SearchUIDragSource, SearchUIFallbackPeekViewController, SearchUIFallbackPreviewPeekCommand, 
+                       SearchUIFilesAppCommand, SearchUIFilesPeekCommand, SearchUIFirstTimeExperienceViewController, 
+                       SearchUIFlightCardSectionView, SearchUIGenericViewControllerTapCommand, 
+                       SearchUIGradingFeedbackViewController, SearchUIGridLayoutManager, 
+                       SearchUIGridRowModel, SearchUIHomeScreenAppIconView, SearchUIHorizontallyScrollableCardSectionView, 
+                       SearchUIHorizontallyScrollingButtonController, SearchUIHorizontallyScrollingCardSectionRowModel, 
+                       SearchUIHorizontallyScrollingCardSectionTableCell, SearchUIHorizontallyScrollingContainerButtonController, 
+                       SearchUIHorizontallyScrollingContainerSeparatorView, SearchUIHorizontallyScrollingContainerView, 
+                       SearchUIHorizontallyScrollingDetailedRowButtonController, 
+                       SearchUIHorizontallyScrollingMoreResultsButtonController, 
+                       SearchUIHorizontallyScrollingTextButtonController, SearchUIHorizontallyScrollingVerticalLayoutButtonController, 
+                       SearchUIIconImageCache, SearchUIImage, SearchUIImageButton, 
+                       SearchUIImageCache, SearchUIImageView, SearchUIImagesCardSectionView, 
+                       SearchUIInlineActionsView, SearchUIInlineActionsViewController, 
+                       SearchUIInternalDragObject, SearchUIKeyValueDataCardSectionView, 
+                       SearchUIKeyboardableTableViewController, SearchUILabel, SearchUILeadingContactViewController, 
+                       SearchUILeadingHomeScreenViewController, SearchUILeadingViewController, 
+                       SearchUILoadingAppIcon, SearchUILocalAppCommand, SearchUIMapCardSectionView, 
+                       SearchUIMapPlaceCardSectionView, SearchUIMapsViewController, 
+                       SearchUIMediaArtworkImage, SearchUIMediaPlayerUtilities, SearchUIMediaPlayerViewController, 
+                       SearchUIMessageCardSectionView, SearchUIMoreResultsCommand, 
+                       SearchUIMovieCardSectionBuyButtonView, SearchUIMovieCardSectionUpNextButtonView, 
+                       SearchUIMovieCardSectionView, SearchUIMultiResultRowModel, 
+                       SearchUIMultiResultTableViewCell, SearchUINewsPeekCommand, 
+                       SearchUINowPlayingCardSectionView, SearchUINowPlayingLabelContainer, 
+                       SearchUINowPlayingSingleMovieCard, SearchUIOfferButtonView, 
+                       SearchUIPeekCommand, SearchUIPeekDelegate, SearchUIPlayButtonViewController, 
+                       SearchUIPrivacyDetailsViewController, SearchUIPunchoutAlertCommand, 
+                       SearchUIPunchoutCommand, SearchUIQuickLookThumbnailImage, 
+                       SearchUIQuicklookPreviewCommand, SearchUIRemoteAppIcon, SearchUIReplicatorView, 
+                       SearchUIResultsTableViewController, SearchUIResultsViewController, 
+                       SearchUIRichTitleCardSectionView, SearchUIRowCardSectionView, 
+                       SearchUIRowModel, SearchUISafariPreviewPeekCommand, SearchUIScoreSummaryCardSectionView, 
+                       SearchUIScreenTimeBlockedCommand, SearchUIScreenTimeManager, 
+                       SearchUIScreenTimeResultsRowModel, SearchUIScreenTimeTableCell, 
+                       SearchUISectionHeaderCardSectionView, SearchUISelectableGridCardSectionView, 
+                       SearchUISelectableGridCommand, SearchUISelectableTextView, 
+                       SearchUISeparatorView, SearchUIShortcutExecutableCommand, 
+                       SearchUIShortcutExecutablePeekCommand, SearchUIShowMoreSectionsCommand, 
+                       SearchUISpacingHelper, SearchUIStockGraphSectionRowModel, 
+                       SearchUIStocksCardSectionView, SearchUIStocksPeekCommand, 
+                       SearchUIStoreViewController, SearchUISuggestionImageUtilities, 
+                       SearchUISymbolImage, SearchUITLKConverters, SearchUITLKImage, 
+                       SearchUITLKImageConverter, SearchUITLKMultilineTextConverter, 
+                       SearchUITableHeaderView, SearchUITableModel, SearchUITableRowCardView, 
+                       SearchUITableView, SearchUITableViewCell, SearchUITableViewController, 
+                       SearchUITapCommand, SearchUIThumbnailViewController, SearchUITitleCardSectionView, 
+                       SearchUITrackLayoutManager, SearchUITrackRowModel, SearchUITrailerView, 
+                       SearchUITrailersCardSectionView, SearchUITwitterCardSectionView, 
+                       SearchUIUserActivityCommand, SearchUIUserReportCommand, SearchUIUserReportRequestViewController, 
+                       SearchUIUtilities, SearchUIWatchListCardRowModel, SearchUIWatchListCardSectionView, 
+                       SearchUIWatchListCardsManager, SearchUIWatchListPunchoutCommand, 
+                       SearchUIWatchListUtilities, SearchUIWeatherPeekCommand, SearchUIWebCardSectionView, 
+                       SearchUIWebClipIconImage ]
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           96E70F41-E5EC-36C2-8DAD-14C416E78EC2
+  - target:          armv7s-ios
+    value:           0FE7A55E-B138-3E8B-A02E-D47C8312B478
+  - target:          arm64-ios
+    value:           BBA7AA2B-3B1F-3B53-A4E4-E0E8AE3AC8A8
+install-name:    '/System/Library/PrivateFrameworks/SearchUIFoundation.framework/SearchUIFoundation'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios ]
+    symbols:         [ _SearchUIFoundationVersionNumber, _SearchUIFoundationVersionString ]
+    objc-classes:    [ SearchUIAppIconImage, SearchUICalendarIconImage, SearchUISFImage, 
+                       SearchUIURLImage ]
+...

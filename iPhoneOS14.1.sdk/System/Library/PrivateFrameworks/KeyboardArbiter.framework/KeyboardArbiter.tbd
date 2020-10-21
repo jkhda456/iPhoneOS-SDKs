@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           8C8468CF-24F7-36E5-A33E-18D6ECE58933
+  - target:          armv7s-ios
+    value:           C8EDCD26-B63C-3273-848E-202D122C6269
+  - target:          arm64-ios
+    value:           456C5676-F4B8-3F69-9485-4803C469B023
+  - target:          arm64e-ios
+    value:           C58A96C9-30DE-358E-A7D4-4EAE5C166E72
+install-name:    '/System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter'
+current-version: 3987.9
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ __UIKeyboardArbiter_ForSpringBoard_WorkspaceIdentifier ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __UIArbiterLog, __UIKeyboardArbiter_SceneIdentifier ]
+    objc-classes:    [ _UIKeyboardArbiter, _UIKeyboardArbiter_ForSpringBoard ]
+...

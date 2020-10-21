@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C54B16CC-E2AE-3ECF-A875-BCB21BADEFD4
+  - target:          arm64e-ios
+    value:           E27E93E1-C030-345B-A7C9-8126A896C791
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompilerImplLazy.dylib'
+current-version: 31001.41
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ ___clang_metalfe_GPUCompiler_compileFromSourceToBufferWrapper, 
+                       ___clang_metalfe_GPUCompiler_compileFromSourceWrapper, ___clang_metalfe_GPUCompiler_linkToBufferWrapper, 
+                       ___clang_metalfe_GPUCompiler_linkWrapper ]
+...

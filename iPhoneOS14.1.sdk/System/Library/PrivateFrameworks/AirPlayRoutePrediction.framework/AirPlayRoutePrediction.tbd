@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CCD07F34-6217-36F9-A4C7-CAE97003D9D5
+  - target:          arm64e-ios
+    value:           74380D49-4FF1-3DEE-B18F-EDAE18BD33D1
+install-name:    '/System/Library/PrivateFrameworks/AirPlayRoutePrediction.framework/AirPlayRoutePrediction'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ARPCollectAndSendAnalyticsEvents, _ARPDonateFeedback, _ARPDonateFeedbackForPredictionPresented, 
+                       _ARPDonateFeedbackForPredictionSuppressed, _ARPDonateFeedbackForRouteSelection, 
+                       _ARPDonateFeedbackForRoutingFailure, _ARPDonateFeedbackToKnowledgeStore, 
+                       _ARPFeedbackLog, _ARPFeedbackTypeDescription, _ARPHomeControlLog, 
+                       _ARPLog, _ARPMicroLocationSimilarity, _ARPPredictionSuppressedReasonExistingRoute, 
+                       _ARPPredictionSuppressedReasonNotFound, _ARPPredictionSuppressedReasonNotSupported, 
+                       _ARPPresentationMediumAutoroute, _ARPPresentationMediumPromptBeforePlay, 
+                       _ARPPresentationMediumShortcut, _ARPRoutePredictorKnownOutputDeviceIDsDidChange, 
+                       _ARPRoutePredictorPredictionsForCurrentContextUpdated, _ARPRouteSelectionControlBlueBanner, 
+                       _ARPRouteSelectionControlBluePill, _ARPRouteSelectionControlControlCenter, 
+                       _ARPRouteSelectionControlInVideo, _ARPRoutingFailureReasonNotFound, 
+                       _AirPlayRoutePredictionVersionNumber, _AirPlayRoutePredictionVersionString ]
+    objc-classes:    [ ARPAnalyticsEvent, ARPCorrelationTask, ARPCorrelationTaskScheduler, 
+                       ARPHomeControlMicrolocationCorrelationArchive, ARPHomeControlMicrolocationCorrelationTask, 
+                       ARPHomeControlSuggester, ARPHomeControlSuggestion, ARPPredictionContext, 
+                       ARPRoutePrediction, ARPRoutePredictor, ARPRoutingEvent, ARPRoutingSession, 
+                       ARPRoutingSessionArchive ]
+...

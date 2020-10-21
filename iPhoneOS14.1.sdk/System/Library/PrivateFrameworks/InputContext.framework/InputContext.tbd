@@ -1,0 +1,41 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           0AC4AA5E-DE75-3A5D-AC31-80D13C14CC08
+  - target:          armv7s-ios
+    value:           DBBC8ADA-AE59-35CB-B09C-1ACE968E9A8A
+  - target:          arm64-ios
+    value:           DF7B8CA8-C295-37FD-B192-15379C452945
+  - target:          arm64e-ios
+    value:           26A1D7D8-A38C-343D-AF8A-EC680AB7DA21
+install-name:    '/System/Library/PrivateFrameworks/InputContext.framework/InputContext'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _ICTextContentTypeAddressCity, _ICTextContentTypeAddressCityAndState, 
+                       _ICTextContentTypeAddressState, _ICTextContentTypeCountryName, 
+                       _ICTextContentTypeEmailAddress, _ICTextContentTypeFamilyName, 
+                       _ICTextContentTypeFullStreetAddress, _ICTextContentTypeGivenName, 
+                       _ICTextContentTypeJobTitle, _ICTextContentTypeLocation, _ICTextContentTypeMiddleName, 
+                       _ICTextContentTypeName, _ICTextContentTypeNamePrefix, _ICTextContentTypeNameSuffix, 
+                       _ICTextContentTypeNickname, _ICTextContentTypeOrganizationName, 
+                       _ICTextContentTypePostalCode, _ICTextContentTypeStreetAddressLine1, 
+                       _ICTextContentTypeStreetAddressLine2, _ICTextContentTypeSublocality, 
+                       _ICTextContentTypeTelephoneNumber, _ICTextContentTypeURL, 
+                       _isEquivalentDictionary ]
+    objc-classes:    [ _ICEventItem, _ICLocationItem, _ICPEXPredictionSource, _ICPersonItem, 
+                       _ICProactiveTriggerUtilities, _ICSimulatorPredictionSource ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _InputContextVersionNumber, _InputContextVersionString, __ICMachTimeToNanoseconds, 
+                       __ICPersContactOSLogFacility, __ICPersNamedEntityOSLogFacility, 
+                       __ICProactiveQuickTypeOSLogFacility, _isPqt1ForContactAutofillEnabled, 
+                       _isPqt2Enabled ]
+    objc-classes:    [ _ICContact, _ICContactRecord, _ICInputContextFactory, _ICInputContextManager, 
+                       _ICInputSuggesterPredictionSource, _ICInternalSource, _ICLexiconManager, 
+                       _ICLexiconUtilities, _ICLexiconView, _ICNamedEntityRecord, 
+                       _ICNamedEntityStore, _ICNullLexiconManager, _ICPortraitLexiconSource, 
+                       _ICPortraitPredictionSource, _ICPortraitUtilities, _ICPredictedItem, 
+                       _ICPredictionManager, _ICProactiveTrigger, _ICResultCache, 
+                       _ICSearchContext, _ICTransientLexicon ]
+...

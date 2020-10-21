@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B177AD38-E991-3C9C-ABFB-D63FA7854625
+  - target:          arm64e-ios
+    value:           0328A3AE-BE28-3ED9-99FB-B64156A0C5DF
+install-name:    '/System/Library/PrivateFrameworks/IOImageLoader.framework/IOImageLoader'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __ZN28IOImageLoaderImageDictionary12getAttributeEP14__CFDictionaryPK10__CFString, 
+                       __ZN28IOImageLoaderImageDictionary12getAttributeEP14__CFDictionaryPKc, 
+                       __ZN28IOImageLoaderImageDictionary13getAttributesEP14__CFDictionaryPK10__CFString, 
+                       __ZN28IOImageLoaderImageDictionary13getAttributesEP14__CFDictionaryPKc, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithNumberEP14__CFDictionaryPK10__CFStringPK10__CFNumber, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithNumberEP14__CFDictionaryPK10__CFStringy, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithNumberEP14__CFDictionaryPKcPK10__CFNumber, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithNumberEP14__CFDictionaryPKcy, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithObjectEP14__CFDictionaryPK10__CFStringPv, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithObjectEP14__CFDictionaryPKcPv, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithStringEP14__CFDictionaryPK10__CFStringS4_, 
+                       __ZN28IOImageLoaderImageDictionary22setAttributeWithStringEP14__CFDictionaryPKcS3_ ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           238A32C5-1C82-3867-A10D-B6B77D75D928
+  - target:          arm64e-ios
+    value:           A2948886-76AC-373A-A53A-BF6675E11ACE
+install-name:    '/System/Library/PrivateFrameworks/XGBoostFramework.framework/XGBoostFramework'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _XGBoosterCreate, _XGBoosterFree, _XGBoosterLoadModel, _XGBoosterPredict, 
+                       _XGBoosterSaveModel, _XGBoosterSetParam, _XGBoosterUpdateOneIter, 
+                       _XGDMatrixCreateFromMat, _XGDMatrixFree, _XGDMatrixSetFloatInfo ]
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           73A53EF2-1610-3E61-8811-505317E1B76F
+  - target:          armv7s-ios
+    value:           8F96EC12-2C87-3B7E-B07E-5CEEFC170E6B
+  - target:          arm64-ios
+    value:           D66FF170-CA38-3A7F-86F9-28F6BB9E7B8F
+  - target:          arm64e-ios
+    value:           1BDF46BB-1C84-3DB2-8597-3F9B7A5B16C4
+install-name:    '/System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _XPC_ERROR_DOMAIN, _kFMDUAXPCServiceName, _kFMDXPCServiceName, 
+                       _kFMDXPCServiceNameUAServices ]
+    objc-classes:    [ FMDGenericAccessory, FMDLocation ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FMDFMIPManagerUnregisterErrorDomain, _fmdFMIPLastOperationResult, 
+                       _kAccessoriesChangedNotification, _kActivationLockAllowedMayHaveChangedNotification, 
+                       _kActivationLockStateDidChangeNotification, _kFMDAccessoryPlaySoundErrorDomain, 
+                       _kFMDActivationLockStateChangedNotification, _kFMDErrorDomain, 
+                       _kFMDFMIPAccountNameKey, _kFMDFMIPAccountPersonIDKey, _kFMDLogPrefsChangedDarwinNotification, 
+                       _kFMDNotBackedUpPrefDomain, _kFMDPlaySoundStartedDarwinNotification, 
+                       _kFMDPlaySoundStoppedDarwinNotification, _kFMDPostWipePrefDomain, 
+                       _kFMDPrefDomain, _kFMDPublicNotBackedUpPrefDomain, _kFMDWatchNotBackedUpPrefDomain, 
+                       _kFMDWatchPrefDomain, _kFMIPAppBundleIdentifier, _kFMIPLowBatteryLocateStateDidChangeNotification, 
+                       _kFMIPStateDidChangeNotification, _kFMWEnabledNotification, 
+                       _kFindMyDeviceEmergencyCallInfoPublisherXPCInterfaceErrorDomain, 
+                       _kFindMyDeviceIdentityXPCInterfaceErrorDomain, _kLostModeChangedNotification, 
+                       _kStopLostModeAlarmNotification ]
+    objc-classes:    [ FMDAccessoryIdentifier, FMDBAAAttestation, FMDDeviceIdentityFactory, 
+                       FMDEmergencyCallInfoPublisher, FMDEmergencyCallInfoPublisherConfiguration, 
+                       FMDEraseOptions, FMDEraseProxy, FMDFMIPAccountInfo, FMDFMIPManager, 
+                       FMDFMIPSharedStateManager, FMDGenericAudioAccessory, FMDGenericMessage, 
+                       FMDIdentitySigningRequest, FMDLostModeInfo, FMDVolatileMetaDataRecord, 
+                       FMNSXPCConnection, FMNSXPCConnectionCache, FMNSXPCConnectionConfiguration ]
+...

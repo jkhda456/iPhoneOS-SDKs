@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D32BD1D7-6198-3F5D-B0B5-980F27033075
+  - target:          armv7s-ios
+    value:           2C4C013C-590B-3C78-8673-BD04547975CE
+  - target:          arm64-ios
+    value:           342DAE6B-E84F-394F-A0C9-A9B5297509E2
+  - target:          arm64e-ios
+    value:           72450E00-79D1-3B69-8601-7722EF95624A
+install-name:    '/System/Library/PrivateFrameworks/NanoAppRegistry.framework/NanoAppRegistry'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NARApplicationsChangedNotification, _NARItemNameKey, _NARSyncedInfoPlistKeys, 
+                       _NARSyncedLocalizedInfoPlistKeys, _NARSyncediTunesPlistKeys, 
+                       _NARVendorNameKey, _NARWorkspaceServiceInterface, _nar_sync_log, 
+                       _nar_workspace_log ]
+    objc-classes:    [ NARApplication, NARApplicationState, NARApplicationWorkspace, 
+                       NARGlance, NARWorkspaceInfo ]
+...

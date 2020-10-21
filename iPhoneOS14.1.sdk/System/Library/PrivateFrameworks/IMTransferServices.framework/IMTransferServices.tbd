@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D6B50C3D-08FC-3596-B687-3E932EB8BA3A
+  - target:          armv7s-ios
+    value:           9D5FAB46-8FCA-3167-BDF4-2D6E1BFE34EB
+  - target:          arm64-ios
+    value:           00C81D9F-5281-344F-A686-2B6D92A2D8CB
+  - target:          arm64e-ios
+    value:           4EC60009-4D2C-34F5-A4C3-54322A386EFE
+install-name:    '/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferServices'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IMTransferServicesErrorDomain ]
+    objc-classes:    [ IMTransferServicesCompressionController, IMTransferServicesController ]
+    objc-ivars:      [ IMTransferServicesCompressionController._blockMap ]
+...

@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           E3EC52A3-CB44-32C8-A52B-B3C92FE0AF43
+  - target:          armv7s-ios
+    value:           664F82CE-BAB9-375D-B637-270CEF8747F1
+  - target:          arm64-ios
+    value:           CA3AC6EB-84A9-3317-8F14-CDFAC25BCDDA
+  - target:          arm64e-ios
+    value:           3D3DA7B3-9714-3027-8CC6-854B19DC41BE
+install-name:    '/System/Library/PrivateFrameworks/FoundationODR.framework/FoundationODR'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _FoundationODRVersionNumber, _FoundationODRVersionString ]
+...

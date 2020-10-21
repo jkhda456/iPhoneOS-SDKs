@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C3364A51-E537-3DA9-B883-AF92A79D757B
+  - target:          armv7s-ios
+    value:           4BD30F4E-AFBA-3D11-A892-6C5E7FA278A9
+  - target:          arm64-ios
+    value:           5E5279EF-18D1-34E4-82F2-9C48C30D53E6
+  - target:          arm64e-ios
+    value:           A13F2F75-DDDD-39CD-965E-A2E16765E7CA
+install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCVMSPluginSupport.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _cvmBuildModularFunctionSync, _cvmCreateCVMObject, _cvmCreateHashMachine, 
+                       _cvmDestroyHashMachine, _cvmHashMachineAddObject, _cvmHashMachineFindObject, 
+                       _cvmHashMachineRemoveObject, _cvmHashObjectCreate, _cvmHashObjectGetKey, 
+                       _cvmHashObjectGetObject, _cvmHashObjectRelease, _cvmPostTerm, 
+                       _cvmPreInit, _cvmReleaseCVMObject, _cvm_hash_set_add, _cvm_hash_set_find, 
+                       _cvm_hash_set_free, _cvm_hash_set_iterator_first, _cvm_hash_set_iterator_next, 
+                       _cvm_hash_set_new ]
+...

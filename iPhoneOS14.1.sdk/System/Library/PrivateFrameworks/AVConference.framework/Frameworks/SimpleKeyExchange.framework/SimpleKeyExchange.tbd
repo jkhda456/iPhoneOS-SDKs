@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           01215C72-2F38-3405-B3BF-7F91F190C6B9
+  - target:          arm64e-ios
+    value:           91AC4082-4B0D-3C2B-8126-DCCE506F9643
+install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/SimpleKeyExchange.framework/SimpleKeyExchange'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SKEState_CopyBlob, _SKEState_CopyBlobSync, _SKEState_CopySecretKey, 
+                       _SKEState_CopySecretKeySync, _SKEState_Create, _SKEState_Destroy, 
+                       _SKEState_Release, _SKEState_SetBlob, _SecKeyExchangeAbortSession, 
+                       _SecKeyExchangeCopyPeerCert, _SecKeyExchangeCopyPeerName, 
+                       _SecKeyExchangeCopySharedSecret, _SecKeyExchangeGetPeerAbortReason, 
+                       _SecKeyExchangeGetPeerCertStatus, _SecKeyExchangeGetPeerSecTrust, 
+                       _SecKeyExchangeNegotiationStatus, _SecKeyExchangeNodeCreateAsInitiator, 
+                       _SecKeyExchangeNodeCreateAsResponder, _SecKeyExchangeNodeRelease, 
+                       _SecKeyExchangeUpdate ]
+...

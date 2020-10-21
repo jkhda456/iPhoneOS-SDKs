@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9E66381D-884B-36B9-8223-ACE3B766319F
+  - target:          arm64e-ios
+    value:           61397107-DD1D-39F9-9BF7-EDACD2872F0A
+install-name:    '/System/Library/PrivateFrameworks/UserNotificationsSettings.framework/UserNotificationsSettings'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ AppPredictionInternal, AssistantSettingsSupport, CarPlay, 
+                       ClipServices, ClipViewServices, NanoSettingsGlance, SUIAKit, 
+                       SUIATPTests, SUICITests, SUISimulatorTests, SharingViewService, 
+                       UserNotificationsServer, assistantd, examplenotificationd, 
+                       untool ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UNUserNotificationSettingsServiceName, _UserNotificationsSettingsVersionNumber, 
+                       _UserNotificationsSettingsVersionString ]
+    objc-classes:    [ UNMutableNotificationSystemSettings, UNNotificationSettingsCenter, 
+                       UNNotificationSource, UNNotificationSourceSettings, UNNotificationSystemSettings, 
+                       UNNotificationTopicSettings, UNUserNotificationSettingsService, 
+                       UNUserNotificationSettingsServiceConnection ]
+    objc-ivars:      [ UNNotificationSystemSettings._announcementSetting, UNNotificationSystemSettings._showPreviewsSetting ]
+...

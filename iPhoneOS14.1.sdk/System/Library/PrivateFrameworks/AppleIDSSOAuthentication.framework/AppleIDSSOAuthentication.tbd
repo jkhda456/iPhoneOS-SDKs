@@ -1,0 +1,34 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A3974FBF-2368-3A76-BE98-0CFA14CC8D0F
+  - target:          armv7s-ios
+    value:           0C6854A3-DF99-3C08-8CFA-806537CC450B
+  - target:          arm64-ios
+    value:           4004EA47-49DB-3DFD-BF30-B469396A494B
+  - target:          arm64e-ios
+    value:           466C21F5-F8FB-3062-9FFE-2699D810F6E2
+install-name:    '/System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID, _AIDACoderErrorKey, 
+                       _AIDACoderSuccessKey, _AIDACoderTypeKey, _AIDAErrorDomain, 
+                       _AIDAServiceTypeCloud, _AIDAServiceTypeFaceTime, _AIDAServiceTypeGameCenter, 
+                       _AIDAServiceTypeMessages, _AIDAServiceTypeStore, _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, 
+                       _AppleIDAuthenticationPBTokenIdentifier, _AppleIDAuthenticationServicesKey, 
+                       _AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier, 
+                       _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem, 
+                       __AIDASignpostCreate, __AIDASignpostGetNanoseconds, __AIDASignpostLogSystem, 
+                       _kAIDADirectoryForServiceOwners, _kAuthenticationAlternateDSIDKey, 
+                       _kDeviceProvisioningMIDKey, _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, 
+                       _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
+    objc-classes:    [ AIDAAccountManager, AIDAMutableServiceContext, AIDAServiceContext, 
+                       AIDAServiceOperationResult, AIDAServiceOwnersManager ]
+    objc-ivars:      [ AIDAServiceContext._aaSignInFlowControllerDelegate, AIDAServiceContext._aaSignOutFlowControllerDelegate, 
+                       AIDAServiceContext._authenticationResults, AIDAServiceContext._cdpUiProvider, 
+                       AIDAServiceContext._operationUIPermissions, AIDAServiceContext._shouldForceOperation, 
+                       AIDAServiceContext._signInContexts, AIDAServiceContext._signOutContexts, 
+                       AIDAServiceContext._viewController ]
+...

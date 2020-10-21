@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4AD9B156-0132-39DC-9016-40CF2ECD1BEB
+  - target:          arm64e-ios
+    value:           2294C657-181D-3B9D-84DB-6A115D63BF6F
+install-name:    '/System/Library/PrivateFrameworks/BiometricSupport.framework/BiometricSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppendCommentToPGM, _BKLogCode, _BKLogEvent, _DEFAULT_SNAPSHOT_TIME, 
+                       _LoadRawImageAsPGM, _MCDMExtractMessageData, _RIESAdd, _RIESClear, 
+                       _RIESDelete, _RIESInit, _RIESLoad, _RIESSave, _RIESUpdate, 
+                       _SaveRawImageAsPGM, ___osLog, ___osLogTrace, _absoluteToMiliseconds, 
+                       _absoluteToNanoseconds, _dictionaryGetBool, _dictionaryGetData, 
+                       _dictionaryGetDouble, _dictionaryGetInteger, _getBootArgs, 
+                       _getSensorPatchVersion, _isEphemeralMultiUser, _isFaceIDPlatform, 
+                       _isInternalBuild, _isTouchIDPlatform, _kBiometricAbcDomain, 
+                       _kBiometricAbcProcess, _kBiometricKitIdentityAttributeKey, 
+                       _kBiometricKitIdentityCreationTimeKey, _kBiometricKitIdentityEntityKey, 
+                       _kBiometricKitIdentityMatchCountKey, _kBiometricKitIdentityNameKey, 
+                       _kBiometricKitIdentityTypeKey, _kBiometricKitIdentityUUIDKey, 
+                       _kBiometricKitIdentityUpdateCountKey, _kBiometricKitIdentityUserIDKey, 
+                       _localizeAbsolute, _nanosecondsToAbsolute, _rotateBitmap90Data16, 
+                       _rotateBitmap90Data8, _roundMostSignificant ]
+    objc-classes:    [ ActivityTracker, BKCatacomb, BKLocalization, BiometricAutoBugCapture, 
+                       BiometricEnrollOperation, BiometricKitIdentity, BiometricKitXPCExportedClientObject, 
+                       BiometricKitXPCExportedObject, BiometricKitXPCServer, BiometricMatchOperation, 
+                       BiometricOperation, BiometricPreferences, BiometricPresenceDetectOperation, 
+                       BiometricSupportTools, BiometricSupportUserNotification, CatacombComponent, 
+                       CatacombStateCache, SystemProtectedConfig, UserProtectedConfig ]
+...

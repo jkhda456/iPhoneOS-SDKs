@@ -1,0 +1,57 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F9039658-9840-3E87-8EBF-707B2A12E162
+  - target:          armv7s-ios
+    value:           3A378D53-2F4C-3C44-B86D-087DFD9C9ED0
+  - target:          arm64-ios
+    value:           CE6FFECA-F2CF-3E98-AF7B-8133E431DCB2
+  - target:          arm64e-ios
+    value:           749C09CA-2844-37FB-AC98-13210B39FEE2
+install-name:    '/System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal'
+current-version: 474.1
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ CoreFoundation ]
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ __FSVolumeIdentifierGetVolumeRefNum, __FileCacheGetBinding, 
+                       __FileCacheSetBinding, __FileCacheSetFlags ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __CFURLBookmarkDataCopyDescription, __CFURLBookmarkToAliasHandle, 
+                       __CFURLCompareBookmarkData, __CFURLCreateBookmarkData, __CFURLCreateBookmarkDataFromAliasRecord, 
+                       __CFURLCreateBookmarkDataFromFile, __CFURLCreateByResolvingBookmarkData, 
+                       __CFURLCreateResourcePropertiesForKeysFromBookmarkData, __CFURLCreateResourcePropertyForKeyFromBookmarkData, 
+                       __CFURLCreateWithVolumeURLAndResourceID, __CFURLStartAccessingSecurityScopedResource, 
+                       __CFURLStopAccessingSecurityScopedResource, __CFURLWriteBookmarkDataToFile, 
+                       __FSCreateFileReferenceURLFromIDs, __FSCreatePathForFileID, 
+                       __FSGetFileSystemRepresentationForFileID, __FSURLBeginResourcePropertyCacheAccess, 
+                       __FSURLCacheResourcePropertiesForKeys, __FSURLCacheResourcePropertyForKey, 
+                       __FSURLClearResourcePropertyCacheForKey, __FSURLCopyResourcePropertiesForKeys, 
+                       __FSURLCopyResourcePropertiesForKeysFromCache, __FSURLCopyResourcePropertyForKey, 
+                       __FSURLCopyResourcePropertyForKeyFromCache, __FSURLCopyResourcePropertyValuesAndFlags, 
+                       __FSURLCreateFileReferenceURLFromFSRef, __FSURLCreateStandardError, 
+                       __FSURLEndResourcePropertyCacheAccess, __FSURLGetCatalogInfo, 
+                       __FSURLGetFSRef, __FSURLGetObjectInformationNoIO, __FSURLGetResourcePropertyFlags, 
+                       __FSURLGetVolumePropertyFlags, __FSURLResourceIsReachable, 
+                       __FSURLSetPermanentResourcePropertyForKey, __FSURLSetResourcePropertiesForKeys, 
+                       __FSURLSetResourcePropertyForKey, __FSURLStartAccessingSecurityScopedResource, 
+                       __FSURLStopAccessingSecurityScopedResource, __FileCacheClearPropertyValueForKey, 
+                       __FileCacheCreateShallowCopy, __FileCacheGetFinderInfo, __FileCacheGetFlags, 
+                       __FileCacheGetName, __FileCacheGetPropertyValueForKey, __FileCacheGetTypeID, 
+                       __FileCacheSetPropertyValueForKey, __FileURLCreateDisplayPathComponentsArray, 
+                       __RegisterFilePropertyProvider, __RegisterFilePropertyWithOptions, 
+                       __URLAttachSecurityScopeToFileURL, __URLCopySecurityScopeFromFileURL, 
+                       __URLCreateByResolvingAliasFile, __URLEnumeratorCreateForDirectoryURL, 
+                       __URLEnumeratorCreateForMountedVolumes, __URLEnumeratorGetDescendentLevel, 
+                       __URLEnumeratorGetNextURL, __URLEnumeratorGetSourceDidChange, 
+                       __URLEnumeratorGetTypeID, __URLEnumeratorGetURLsBulk, __URLEnumeratorSkipDescendents, 
+                       __URLReplaceObject ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kCFURLBookmarkOriginalPathKey, _kCFURLBookmarkOriginalRelativePathComponentsArrayKey, 
+                       _kCFURLBookmarkOriginalRelativePathKey, _kCFURLBookmarkOriginalVolumeCreationDateKey, 
+                       _kCFURLBookmarkOriginalVolumeNameKey ]
+...

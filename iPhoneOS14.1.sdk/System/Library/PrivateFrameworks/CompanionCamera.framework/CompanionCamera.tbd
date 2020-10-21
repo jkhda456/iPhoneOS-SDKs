@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           26181802-2101-3C28-B132-F42423D19014
+  - target:          armv7s-ios
+    value:           CC218D86-D715-39F8-9D31-F1185A9A0BAA
+  - target:          arm64-ios
+    value:           56A99ECD-B3EC-3993-957E-D9160FC245A1
+  - target:          arm64e-ios
+    value:           1DC978EC-AE83-31F4-A6D8-5D2EEC469DD3
+install-name:    '/System/Library/PrivateFrameworks/CompanionCamera.framework/CompanionCamera'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __ccCaptureDeviceFromNCCaptureDevice, __ccCaptureModeFromNCCaptureMode, 
+                       __ccFlashModeFromNCFlashMode, __ccHDRModeFromNCHDRMode, __ccIrisModeFromNCIrisMode, 
+                       __ncCaptureDeviceFromCCCaptureDevice, __ncCaptureModeFromCCCaptureMode, 
+                       __ncFlashModeFromCCFlashMode, __ncFlashSupportFromCCFlashSupport, 
+                       __ncHDRModeFromCCHDRMode, __ncHDRSupportFromCCHDRSupport, 
+                       __ncIrisModeFromCCIrisMode, __ncIrisSupportFromCCIrisSupport, 
+                       __ncOrientationFromDeviceOrientation, __ncShallowDepthOfFieldStatusFromCCShallowDepthOfFieldStatus, 
+                       _nanocamera_log_app, _nanocamera_log_control, _nanocamera_log_preview ]
+    objc-classes:    [ CCCameraConnection, CCCameraConnectionInternal ]
+...

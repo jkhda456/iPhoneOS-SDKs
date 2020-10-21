@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BE0A5080-56A5-3662-8E66-A5F3332208C0
+  - target:          arm64e-ios
+    value:           29D0258E-7023-3305-9584-7A62264A265E
+install-name:    '/System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags'
+current-version: 28.0.1
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s12FeatureFlags02isA7EnabledySbAA0aB3Key_pF', '_$s12FeatureFlags0aB3KeyMp', 
+                       '_$s12FeatureFlags0aB3KeyTL' ]
+...

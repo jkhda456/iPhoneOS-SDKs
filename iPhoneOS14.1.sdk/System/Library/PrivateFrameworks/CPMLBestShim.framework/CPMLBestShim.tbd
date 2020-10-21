@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F51E030C-0C41-368D-ADED-C86B4DCAA3F7
+  - target:          armv7s-ios
+    value:           7A2D4367-D050-3213-A8D3-B667D5C08707
+  - target:          arm64-ios
+    value:           11F533B0-C0ED-33A8-8A98-8C410C4E6384
+  - target:          arm64e-ios
+    value:           9C957040-DE45-3629-B2AC-0A775C719E6A
+install-name:    '/System/Library/PrivateFrameworks/CPMLBestShim.framework/CPMLBestShim'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kCPMLCondfidence ]
+    objc-classes:    [ CPMLBestBadgeShim ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _kCPMLAppTitle, _kCPMLAppType, _kCPMLAppUsageTime, _kCPMLBTCondition, 
+                       _kCPMLBundleID, _kCPMLChangeCount, _kCPMLConfidence, _kCPMLConnectStatus, 
+                       _kCPMLDeviceType, _kCPMLEmergenceHalfLife, _kCPMLEmergenceTime, 
+                       _kCPMLEventSunrise, _kCPMLEventSunset, _kCPMLEventTime, _kCPMLExpertProposal, 
+                       _kCPMLExpertProposalMoot, _kCPMLExpertProposalNoDetail, _kCPMLExpertType, 
+                       _kCPMLExpertTypeByEmergence, _kCPMLExpertTypeByEventTime, 
+                       _kCPMLExpertTypeByPrediction, _kCPMLExpertUniqueX1, _kCPMLExpertUniqueX2, 
+                       _kCPMLExpertUniqueX3, _kCPMLLastModifiedDate, _kCPMLRadioCondition, 
+                       _kCPMLTimeSinceLastUsed, _kCPMLUUID, _kCPMLWifiCondition ]
+    objc-classes:    [ CPMLBestAppShim, CPMLBestShim, CPMLBestShimContext ]
+...

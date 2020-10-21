@@ -1,0 +1,76 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C588C149-8145-3ABB-9169-426A399E21A9
+  - target:          armv7s-ios
+    value:           525D08B3-7245-36CD-AB41-8B8345C912B1
+  - target:          arm64-ios
+    value:           9D6E2CB8-BCA8-3CD0-8015-4705F9C18B7D
+  - target:          arm64e-ios
+    value:           E4932725-3A48-3870-A7CC-02C81999A33F
+install-name:    '/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/MobileSoftwareUpdate'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSUApplyUpdate, _MSUAssetCalculateApplySize, _MSUAssetCalculateInstallationSize, 
+                       _MSUAssetCalculatePrepareSize, _MSUBrainIsLoadable, _MSUCheckInstallationSize, 
+                       _MSUCheckPreparationSize, _MSUCloseUpdateHandle, _MSUCommitStash, 
+                       _MSUCopyConnectivityData, _MSUCopyEnvInfoForNeRD, _MSUCopyInstalledRecoveryOSVersion, 
+                       _MSUCopyPreviousUpdateAllToleratedFailures, _MSUCopyToleratedStatusForStep, 
+                       _MSUDidLastUpdateBasebandTolerateFailure, _MSUGetUpdateInfo, 
+                       _MSUIsFirstBootAfterUpdate, _MSUParsedToleratedFailureForStep, 
+                       _MSUPreflightUpdate, _MSUPrepareUpdate, _MSUPrepareUpdateWithAsset, 
+                       _MSUPrepareUpdateWithMAAsset, _MSUPurgeSuspendedUpdate, _MSUReportAndCleanupPreviousUpdateState, 
+                       _MSUResumeUpdate, _MSUResumeUpdateWithOptions, _MSURetrievePreviousRestoreDate, 
+                       _MSURetrievePreviousUpdateDate, _MSURetrievePreviousUpdateFirstToleratedFailure, 
+                       _MSURetrievePreviousUpdateResults, _MSURetrievePreviousUpdateState, 
+                       _MSUSuspendUpdate, _kCFErrorDomainMobileSoftwareUpdate, _kCFErrorDomainPersonalization, 
+                       _kMSUOptionsAdditionalBootTimeInstalls, _kMSUOptionsBrainLocationKey, 
+                       _kMSUOptionsDoNotFailBack, _kMSUOptionsKeyAllowSpecialCaseDeletions, 
+                       _kMSUOptionsKeyAlternateBlessTargetUUID, _kMSUOptionsKeyAppleConnectCredentials, 
+                       _kMSUOptionsKeyAppleConnectCredentialsSubkeyAccountName, _kMSUOptionsKeyAppleConnectCredentialsSubkeyPassword, 
+                       _kMSUOptionsKeyAppleConnectSsoToken, _kMSUOptionsKeyBootedOSUUID, 
+                       _kMSUOptionsKeyBootedOSVersion, _kMSUOptionsKeyBridgeOSDownloadDirectory, 
+                       _kMSUOptionsKeyBridgeOSIgnoreMinimumVersionCheck, _kMSUOptionsKeyBuild, 
+                       _kMSUOptionsKeyClientProvidedTargetUUID, _kMSUOptionsKeyCoreDeviceDeviceBoardID, 
+                       _kMSUOptionsKeyCoreDeviceDeviceClass, _kMSUOptionsKeyCoreDeviceHWModelString, 
+                       _kMSUOptionsKeyCoreDeviceInformation, _kMSUOptionsKeyCoreDeviceProductType, 
+                       _kMSUOptionsKeyCoreDeviceReleaseType, _kMSUOptionsKeyDoNotPatch, 
+                       _kMSUOptionsKeyDoNotPersonalize, _kMSUOptionsKeyEnableBridgeOSInstall, 
+                       _kMSUOptionsKeyEnableEmbeddedOSInstall, _kMSUOptionsKeyEnableManagedRequest, 
+                       _kMSUOptionsKeyEnableOSPersonalization, _kMSUOptionsKeyEventStats, 
+                       _kMSUOptionsKeyFirstPreflightPhase, _kMSUOptionsKeyGenericUpdaterInfoOverrides, 
+                       _kMSUOptionsKeyIcefallSEUpdaterInfoOverride, _kMSUOptionsKeyLocalAuthenticationContextKey, 
+                       _kMSUOptionsKeyLocalAuthenticationUserIDKey, _kMSUOptionsKeyMediumSecurityDowngrade, 
+                       _kMSUOptionsKeyPatchdCRCFailOnce, _kMSUOptionsKeyPatchdFailAt, 
+                       _kMSUOptionsKeyPatchdFailureType, _kMSUOptionsKeyPersonalizationServerURL, 
+                       _kMSUOptionsKeyPersonalizationVariant, _kMSUOptionsKeyPersonalizedManifestRootsPath, 
+                       _kMSUOptionsKeyPreparePath, _kMSUOptionsKeyPrepareSnapshot, 
+                       _kMSUOptionsKeyReadWriteSystemPartition, _kMSUOptionsKeyRecordPreflightEvents, 
+                       _kMSUOptionsKeyReleaseType, _kMSUOptionsKeyRestoreVersion, 
+                       _kMSUOptionsKeySFRUpdateProvided, _kMSUOptionsKeySavageUpdaterInfoOverride, 
+                       _kMSUOptionsKeySeedingProgram, _kMSUOptionsKeyShouldMigrate, 
+                       _kMSUOptionsKeySkipVolumeSealing, _kMSUOptionsKeySocksProxy, 
+                       _kMSUOptionsKeySourcePath, _kMSUOptionsKeySystemPartitionReserveMiB, 
+                       _kMSUOptionsKeyTargetUUID, _kMSUOptionsKeyTargetUpdate, _kMSUOptionsKeyUpdateOSBackgroundImagePath, 
+                       _kMSUOptionsKeyUpdateOSDisplayHeight, _kMSUOptionsKeyUpdateOSDisplayRefreshRate, 
+                       _kMSUOptionsKeyUpdateOSDisplayWidth, _kMSUOptionsKeyUpdateUUID, 
+                       _kMSUOptionsKeyUsePreflightUpdate, _kMSUOptionsKeyUserAgentString, 
+                       _kMSUOptionsKeyUserInitiated, _kMSUPersonalizationVariantDevelopment, 
+                       _kMSUPersonalizationVariantRelease, _kMSUPreflightAlternateInstallerRecommended, 
+                       _kMSUSFRUpdateAttributesDictionaryKey, _kMSUStatusKeyActionText, 
+                       _kMSUStatusKeyAverageBytesReadPerMs, _kMSUStatusKeyAverageBytesWrittenPerMs, 
+                       _kMSUStatusKeyElapsedTime, _kMSUStatusKeyMessageType, _kMSUStatusKeyPercentBytesComplete, 
+                       _kMSUStatusKeyPercentComplete, _kMSUStatusKeyTotalBytesRead, 
+                       _kMSUStatusKeyTotalBytesWritten, _kMSUStatusKeyTotalMsRead, 
+                       _kMSUStatusKeyTotalMsWritten, _kMSUStatusKeyUpdateAttributes, 
+                       _kMSUStatusValueMessageTypeFoundUpdate, _kMSUUpdateAttributesDictionaryKey, 
+                       _kMSUUpdatePrerequisiteShouldCheckEncrypted, _kMSUUpdatePrerequisiteShouldCheckSnapshotBooted, 
+                       _kMSUUpdateToleratedStepKeyError, _kMSUUpdateToleratedStepKeyEventUnique, 
+                       _kMSUUpdateToleratedStepKeyFailureNumber, _kMSUUpdateToleratedStepKeyRebootRetry, 
+                       _kMSUUpdateToleratedStepKeyResult, _kMSUUpdateToleratedStepKeySkipped, 
+                       _kMSUUpdateToleratedStepKeyStepIdentifier, _kMSUUpdateToleratedStepKeyStepName, 
+                       _kMSUUpdateToleratedStepValueUnrecognizedStep, _kMSUUpdateToleratedStepValueUpdateBaseband ]
+    objc-classes:    [ MSUPreflightError, MSUUpdateBrainAssetLoader, MSUUpdateBrainLoader ]
+...

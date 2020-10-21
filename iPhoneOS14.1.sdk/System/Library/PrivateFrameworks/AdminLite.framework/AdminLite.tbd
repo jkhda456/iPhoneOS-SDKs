@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B91DEC60-E91C-3CD0-931D-FA79163C9BB9
+  - target:          armv7s-ios
+    value:           C48B1DC4-A4E5-398A-9B56-3F3C06935C0C
+  - target:          arm64-ios
+    value:           185CD3E4-0819-30F0-8890-DCF8B968F8D5
+  - target:          arm64e-ios
+    value:           5FAC99D2-0332-3754-B231-9B8C855DA8AD
+install-name:    '/System/Library/PrivateFrameworks/AdminLite.framework/AdminLite'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AdminLiteNVRAMSet, _nvram_set ]
+...

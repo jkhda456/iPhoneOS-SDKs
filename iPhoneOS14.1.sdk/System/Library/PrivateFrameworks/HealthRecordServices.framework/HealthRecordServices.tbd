@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EDE15EA7-3A5D-3BB2-AA35-FBE6AEDE882F
+  - target:          arm64e-ios
+    value:           08AD4866-B74B-3D34-BC06-CC477C4C94ED
+install-name:    '/System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HDCIErrorDomain, _HDHRSClinicalItemPropertyKeyExtractionFailureInfo, 
+                       _HDHealthRecordsXPCServiceInterface, _HRSAccumulatedIngestionErrorDomain, 
+                       _HRSAccumulatedIngestionErrorUserInfoKeyAuthorizationFailures, 
+                       _HRSAccumulatedIngestionErrorUserInfoKeyOtherErrors, _HRSAccumulatedIngestionErrorUserInfoKeyResourceFetchFailures, 
+                       _HRSAccumulatedIngestionErrorUserInfoKeyUnsatisfiedConditions, 
+                       _HRSPrivateErrorDomain, _HealthRecordServicesVersionNumber, 
+                       _HealthRecordServicesVersionString, _NSStringFromHDClinicalAnalyticsExtractionFailureCode ]
+    objc-classes:    [ HDClinicalDataCollectionExtractionResult, HDExtractionRequest, 
+                       HDExtractionResult, HDExtractionResultItem, HDFHIRJSONObject, 
+                       HDFHIRResourceData, HDFHIRResourceLastSeenObject, HDFHIRResourceObject, 
+                       HDHRSExtractionFailureInfo, HDHRSExtractionFailureRecord, 
+                       HDHRSOriginInformation, HDHealthRecordsXPCServiceClient, HDOriginalFHIRResourceObject, 
+                       HDRedactedFHIRResourceObject, HDReferenceExtractionRequest, 
+                       HDReferenceExtractionResult, HDUnresolvedReferenceSet, HRSSupportedFHIRConfiguration, 
+                       HRSSupportedFHIRRelease ]
+...

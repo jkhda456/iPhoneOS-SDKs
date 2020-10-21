@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C118D3DC-03FE-3D37-9F8C-45E7CF61CCC6
+  - target:          arm64e-ios
+    value:           31A96776-EFA8-3B16-BD1C-6F41221BF199
+install-name:    '/System/Library/PrivateFrameworks/HealthMenstrualCyclesUI.framework/HealthMenstrualCyclesUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HKMCLocalizedStringForDateComponents ]
+    objc-classes:    [ HKMCCycleTimelineFlowLayout, HKMCCycleTimelineFlowLayoutAttributes, 
+                       HKMCCycleTimelinePillConfiguration ]
+...

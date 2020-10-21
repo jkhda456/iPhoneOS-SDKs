@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9FF2A318-F6A0-382B-8F66-C6585ED9A3D1
+  - target:          arm64e-ios
+    value:           C9BCF567-9105-38DA-8B85-9A91017D8D1B
+install-name:    '/System/Library/PrivateFrameworks/AMPCoreUI.framework/AMPCoreUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AMPAppleCardArtwork, AMPCardMetadataRegistration, AMPOnboardingFeature, 
+                       AMPOnboardingViewController, AMPUserNotificationViewController ]
+...

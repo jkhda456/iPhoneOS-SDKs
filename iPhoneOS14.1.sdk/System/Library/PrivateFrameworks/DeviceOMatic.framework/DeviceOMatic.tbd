@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C7CD91C1-9C76-3C94-8423-5886938BAA64
+  - target:          armv7s-ios
+    value:           0844D60A-CC6C-39F0-952D-BE7EE20CC88E
+  - target:          arm64-ios
+    value:           8F9A3041-2D0B-3239-8F0A-9440E4E91F54
+  - target:          arm64e-ios
+    value:           5DBE4E75-AD3C-3079-AF0A-F49EA131DCEE
+install-name:    '/System/Library/PrivateFrameworks/DeviceOMatic.framework/DeviceOMatic'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DOMRegisterForMatching, _DOMServiceIsAttachedToRemovableDevice ]
+...

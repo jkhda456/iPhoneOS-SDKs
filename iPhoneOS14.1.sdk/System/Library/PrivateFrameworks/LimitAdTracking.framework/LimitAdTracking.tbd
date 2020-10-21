@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           35C37981-CEBD-3BD4-B886-1D9A92F4E8DF
+  - target:          arm64e-ios
+    value:           990D8568-99F7-37B4-AB56-7617E9A8FACA
+install-name:    '/System/Library/PrivateFrameworks/LimitAdTracking.framework/LimitAdTracking'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LimitAdTrackingVersionNumber, _LimitAdTrackingVersionString ]
+    objc-classes:    [ ADTrackingTransparency ]
+...

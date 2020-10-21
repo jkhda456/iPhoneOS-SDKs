@@ -1,0 +1,55 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6957CB1E-21A2-3AF1-9963-553E3A2A3195
+  - target:          armv7s-ios
+    value:           5945F8B4-6815-37D3-8F26-C60FCB650D42
+  - target:          arm64-ios
+    value:           5DE54145-A501-3B19-A2C2-D7B65A19D755
+  - target:          arm64e-ios
+    value:           743D593F-B59C-3EFA-8139-E4393CED46D7
+install-name:    '/System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PBPlistableClasses ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PBAllowedMetadataClasses, _PBBestMatchConformingToType, _PBBestMatchConformingToTypes, 
+                       _PBBestMatchToConformingType, _PBBestMatchToConformingTypes, 
+                       _PBCannotCoerceObjectOfClassToObjectOfClassError, _PBCannotConnectToServerError, 
+                       _PBCannotCopyFileError, _PBCannotCreateRepresentationError, 
+                       _PBCannotCreateTemporaryFile, _PBCannotDeleteURLError, _PBCannotInstantiateObjectOfClassError, 
+                       _PBCannotLoadRemotePasteboardError, _PBCannotLoadRepresentationError, 
+                       _PBCannotOpenInPlaceError, _PBCannotSerializePasteboardError, 
+                       _PBCannotUnarchiveItemCollectionError, _PBCannotUnserializePasteboardError, 
+                       _PBCannotUnserializePasteboardNameError, _PBCloneFileToTemporaryDir, 
+                       _PBCloneToTemporaryDir, _PBCloneURLToTemporaryFolder, _PBCoordinatedDelete, 
+                       _PBCoordinatedMetadataRead, _PBCoordinatedRead, _PBCoordinatedReadForUploading, 
+                       _PBDataTransferCancelledError, _PBDeviceLockedGeneralPasteboardName, 
+                       _PBDispatchAsyncCallback, _PBErrorDomain, _PBErrorMake, _PBFilenameWithProperExtension, 
+                       _PBGeneralPasteboardName, _PBIndexOutOfRangeError, _PBIsBundleIDAllowedToPromiseFileProviderFolders, 
+                       _PBIsPasteboardNameAllowed, _PBIsPasteboardNameGeneralPasteboard, 
+                       _PBItemMetadataKey, _PBItemQueue, _PBLatestSchemaVersion, 
+                       _PBMetadataChangeCountKey, _PBMetadataEstimatedDisplayedSizeKey, 
+                       _PBMetadataExpirationDateKey, _PBMetadataLocalOnlyKey, _PBMetadataNameKey, 
+                       _PBMetadataPersistentKey, _PBMetadataPreferredPresentationStyleKey, 
+                       _PBMetadataSuggestedNameKey, _PBMetadataTeamDataKey, _PBNSIPTopLevelMetadataKeys, 
+                       _PBNSPreferredRepresentationFromPB, _PBNewClientToServerXPCInterface, 
+                       _PBNewDataProviderXPCInterface, _PBNoLoaderAvailableError, 
+                       _PBNotAuthorizedError, _PBNotFileURLError, _PBOldPasteboardStorageRootURL, 
+                       _PBPasteNotAllowedError, _PBPasteboardChangedNotification, 
+                       _PBPasteboardChangedNotificationStateKey, _PBPasteboardChangedNotifyNotification, 
+                       _PBPasteboardNameInvalidError, _PBPasteboardNameNotAvailableError, 
+                       _PBPasteboardNotAvailableError, _PBPasteboardPersistenceName, 
+                       _PBPasteboardPreferencesDomain, _PBPreferencesBoolValue, _PBPreferencesDoubleValue, 
+                       _PBPreferredRepresentationFromNS, _PBSHA1HashOfString, _PBSchemaFileContentsWithVersion, 
+                       _PBSchemaFilename, _PBSchemaVersionKey, _PBStorageRootURL, 
+                       _PBTempFilePrefix, _PBTemporaryFileName, _PBTypeNotFoundError, 
+                       _PBURLFromURLArchive, __PBDefaultMaxGeneralPasteboardAge, 
+                       __PBLog, __PBStatLogPasteAge ]
+    objc-classes:    [ PBCallbackSerialization, PBCoercionRegistry, PBDataTransferMonitor, 
+                       PBDataTransferRequest, PBItem, PBItemCollection, PBItemDetection, 
+                       PBItemRepresentation, PBKeyedUnarchiver, PBSecurityScopedURLWrapper, 
+                       PBServerConnection ]
+...

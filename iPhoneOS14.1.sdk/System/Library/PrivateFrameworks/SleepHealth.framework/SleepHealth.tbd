@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           305415E4-906B-3586-849F-8C316727B047
+  - target:          arm64e-ios
+    value:           3A6F0C3A-1B0E-3580-9737-DA79A610FA35
+install-name:    '/System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HDSleepHealthDaemonPluginServerInterface, _HKSHHealthDaemonPluginIdentifier, 
+                       _HKSHSleepDaySummarySampleTypes, _HKSHSleepDurationGoalLeeway, 
+                       _HKSHTestAsleepSample, _HKSHTestAwakeSample, _HKSHTestDate, 
+                       _HKSHTestDateInterval, _HKSHTestDaySummary, _HKSHTestEmptySchedule, 
+                       _HKSHTestGoalSample, _HKSHTestInBedSample, _HKSHTestMorningIndex, 
+                       _HKSHTestOverrideSchedule, _HKSHTestPeriod, _HKSHTestSchedule, 
+                       _HKSHTestSegment, _HKSleepHealthStoreInterface, _NSStringFromHKCategoryValueSleepAnalysis ]
+    objc-classes:    [ HKSHGoalProgress, HKSHGoalProgressEngine, HKSHSleepDaySummary, 
+                       HKSHSleepDaySummaryQuery, HKSHSleepDaySummaryQueryConfiguration, 
+                       HKSHSleepPeriod, HKSHSleepPeriodSegment, HKSleepHealthStore ]
+...

@@ -1,0 +1,43 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3A82A037-13A2-3B98-9DCF-86C3512256F0
+  - target:          arm64e-ios
+    value:           83164110-C660-33DD-9FF4-B14A7118FFCD
+install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ENAEMCrypt, _ENAEMKDerive, _ENCompareDiagnosisReportTypes, 
+                       _ENDaemonBundle, _ENDataVaultPath, _ENDataVaultURL, _ENDefaultExpirationDate, 
+                       _ENDiagnosisMetadataKeyDiagnosisReportType, _ENDiagnosisMetadataKeyHasSymptoms, 
+                       _ENDiagnosisMetadataKeyIncludeTravelerStatus, _ENDiagnosisMetadataKeySymptomOnsetDate, 
+                       _ENDiagnosisMetadataKeyUserDidTravel, _ENErrorDomain, _ENErrorF, 
+                       _ENErrorMetricTypeToString, _ENErrorUserInfoKeyAppBundleIdentifier, 
+                       _ENLocalizedString, _ENNestedErrorF, _ENRPIDerive, _ENRPIDeriveBatch, 
+                       _ENRPIKDerive, _ENRPIMetadataDeserialize, _ENRPIMetadataSerialize, 
+                       _ENTEKGenerate, _ENTestResultErrorDomain, _ENUICreateRemotePresentationController, 
+                       _ENUIHostViewControllerInterface, _ENUIRemoteViewControllerInterface, 
+                       _ENWriteTemporaryExposureKeysCSV, _ENXPCDecodeSecureObject, 
+                       _ENXPCDecodeSecureObjectIfPresent, _ENXPCEncodeSecureObject, 
+                       _ENXPCGetNextClientID ]
+    objc-classes:    [ ENArchive, ENEntity, ENExposureClassification, ENExposureConfiguration, 
+                       ENExposureDaySummary, ENExposureDetectionClientSession, ENExposureDetectionHistoryCheck, 
+                       ENExposureDetectionHistoryFile, ENExposureDetectionHistorySession, 
+                       ENExposureDetectionSession, ENExposureDetectionSummary, ENExposureInfo, 
+                       ENExposureNotification, ENExposureSummaryItem, ENExposureWindow, 
+                       ENFile, ENManager, ENProtobufCoder, ENRegion, ENRegionConfiguration, 
+                       ENRegionServerAgencyConfiguration, ENRegionServerAgencyExposureNotificationConfiguration, 
+                       ENRegionServerAgencyLocalizedConfiguration, ENRegionServerConfiguration, 
+                       ENRegionServerExposureClassificationCriteria, ENRegionServerExposureConfiguration, 
+                       ENRegionServerNKDConfiguration, ENRegionUserConsent, ENRegionVisit, 
+                       ENRemotePresentationRequest, ENScanInstance, ENSignature, 
+                       ENSignatureFile, ENTemporaryExposureKey, ENUserAlert ]
+...

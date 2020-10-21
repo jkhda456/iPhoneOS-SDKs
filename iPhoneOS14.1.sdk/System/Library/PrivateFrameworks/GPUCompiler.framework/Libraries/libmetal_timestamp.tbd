@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           596D0DE1-7B5C-356D-B79A-D74F408AC184
+  - target:          arm64e-ios
+    value:           D5DA9A93-B732-31EF-9B60-84A6448E4A90
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libmetal_timestamp.dylib'
+current-version: 31001.41
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _getMetalTimeStamp ]
+...

@@ -1,0 +1,54 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DEA955AE-546E-3B18-AF74-2D276BB06016
+  - target:          armv7s-ios
+    value:           698B68F0-92B1-331E-AC61-3623C2F09563
+  - target:          arm64-ios
+    value:           8C34DC2D-6D99-33DB-9386-7440FA8835CB
+  - target:          arm64e-ios
+    value:           4D349523-FBAA-32C3-9587-3E0D4E7DE28E
+install-name:    '/System/Library/PrivateFrameworks/VoiceTriggerUI.framework/VoiceTriggerUI'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _VTUI_AVAudioSessionPortBorealisInput, _kVTUIAspectRatioDeviceDoneN61Cable, 
+                       _kVTUIAspectRatioDeviceDoneN61NoCable, _kVTUIAspectRatioDeviceIntroN61, 
+                       _kVTUIFontSize_Button, _kVTUIFontSize_ButtonSmall, _kVTUIFontSize_Footer, 
+                       _kVTUIFontSize_Main, _kVTUIFontSize_Progress, _kVTUIFontSize_Title, 
+                       _kVTUIPath_ImageDeviceDoneN61Cable, _kVTUIPath_ImageDeviceDoneN61NoCable, 
+                       _kVTUIPath_ImageDeviceIntroN61, _kVTUIPath_ImageStaticWave, 
+                       _kVTUIPath_ImageTick, _kVTUIPath_ImageTickMask, _kVTUIPath_ImageXMask, 
+                       _kVTUIStandardScreenHeight, _kVTUIStandardScreenWidth ]
+    objc-classes:    [ VTUIASRGrammars, VTUIArtworksManager, VTUIAudioSessionAVVC, 
+                       VTUIEnrollmentStateView, VTUIRegularExpressionMatcher, VTUISigmoid, 
+                       VTUITickMarkView, VTUITrainingManager, VTUITrainingSession, 
+                       VTUITrainingSessionWithPayload ]
+    objc-ivars:      [ VTUITrainingSession._ASRErrorOccured, VTUITrainingSession._audioSession, 
+                       VTUITrainingSession._locale, VTUITrainingSession._masterTimer, 
+                       VTUITrainingSession._pcmBufArray, VTUITrainingSession._phraseSpotter, 
+                       VTUITrainingSession._queue, VTUITrainingSession._resultReported, 
+                       VTUITrainingSession._sessionDelegate, VTUITrainingSession._sessionNumber, 
+                       VTUITrainingSession._sessionProcess, VTUITrainingSession._sessionSuspended, 
+                       VTUITrainingSession._speechRecognitionRequest, VTUITrainingSession._speechRecognitionTask, 
+                       VTUITrainingSession._speechRecognizer, VTUITrainingSession._status, 
+                       VTUITrainingSession._trainingCompletion, VTUITrainingSession._utteranceId ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VTUIEnrollmentlanguageOptionsViewDefaultLanguageCode, _VTUILogContextFacility, 
+                       _VTUILogInitIfNeeded, _VTUILoggingSubsystem, _VoiceTriggerUIVersionNumber, 
+                       _VoiceTriggerUIVersionString, _kVTUILoggingContextFramework ]
+    objc-classes:    [ MGWrapper, VTUIAudioHintPlayer, VTUIButton, VTUICheckMarkView, 
+                       VTUIColorLayer, VTUIDictationDataSharingOptInAlertViewModel, 
+                       VTUIDictationDataSharingOptInPresenter, VTUIDictationDataSharingReminderAlertViewModel, 
+                       VTUIEnrollTrainingView, VTUIEnrollTrainingViewController, 
+                       VTUIEnrollmentBaseView, VTUIEnrollmentLanguageOptionsView, 
+                       VTUIEnrollmentSetupIntroView, VTUIEnrollmentSuccessView, VTUIPagedLabel, 
+                       VTUIProximityContainerView, VTUIProximityDataSharingOptInView, 
+                       VTUIProximityEnrollTrainingView, VTUIProximityEnrollTrainingViewController, 
+                       VTUIProximityEnrollmentLanguageOptionsView, VTUIProximityEnrollmentSetupIntroView, 
+                       VTUIProximityEnrollmentSuccessView, VTUIProximityTryAgainView, 
+                       VTUIProximityView, VTUISiriDataSharingOptInPresenter, VTUISiriDataSharingOptInViewController, 
+                       VTUISiriEducationViewController, VTUISpeechSynthesizer, VTUIStringsHelper, 
+                       VTUIStyle, VTUITurnOnSiriView ]
+...

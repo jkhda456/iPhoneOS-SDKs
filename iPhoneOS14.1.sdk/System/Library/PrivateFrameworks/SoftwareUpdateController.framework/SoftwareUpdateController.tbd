@@ -1,0 +1,62 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           7AB025D5-EA26-38C1-993D-0AB75A1184B6
+  - target:          armv7s-ios
+    value:           AA2E142F-A72F-38EE-BDD1-DBA51964242D
+  - target:          arm64-ios
+    value:           BB1F2DD9-99AA-3F06-84B9-75FE51E3008A
+  - target:          arm64e-ios
+    value:           EFA7439A-4502-356B-ABCD-6548026CAD8E
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateController.framework/SoftwareUpdateController'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SUControllerArchive, _SUControllerCompatibilityVersion, _SUControllerConfigTestReleaseTypeAsCustomer, 
+                       _SUControllerConfigTestUMContextNone, _SUControllerDuetDenialDomain, 
+                       _SUControllerError, _SUControllerErrorDomain, _SUControllerErrorUserInfo, 
+                       _SUControllerErrorUserInfoChargerConnected, _SUControllerErrorUserInfoDenialReasons, 
+                       _SUControllerIPCClientIsEntitled, _SUControllerIPCDecodeBooleanForKey, 
+                       _SUControllerIPCDecodeObjectForKey, _SUControllerIPCDecodeOptionalObjectForKey, 
+                       _SUControllerIPCDecodeStringForKey, _SUControllerIPCDictionaryToXPC, 
+                       _SUControllerIPCEncodeObject, _SUControllerIPCXPCToDictionary, 
+                       _SUControllerMachServiceName, _SUControllerMessageAccountNameKey, 
+                       _SUControllerMessageCanProceedWithInstallationKey, _SUControllerMessageClientNameKey, 
+                       _SUControllerMessageCommunalUponDisconnectKey, _SUControllerMessageCompanionLockState, 
+                       _SUControllerMessageCreateStashBagResponseKey, _SUControllerMessageCreatedStashBagResponse, 
+                       _SUControllerMessageDescriptorKey, _SUControllerMessageDocumentationAssetServerURLKey, 
+                       _SUControllerMessageDocumentationKey, _SUControllerMessageDownloadKey, 
+                       _SUControllerMessageErrorKey, _SUControllerMessageExclusiveControlKey, 
+                       _SUControllerMessageManagerConfigChangeMaskKey, _SUControllerMessageManagerConfigKey, 
+                       _SUControllerMessageManagerStateKey, _SUControllerMessagePairedUnlockNotSupported, 
+                       _SUControllerMessagePasswordKey, _SUControllerMessageRequiredDiskSpaceKey, 
+                       _SUControllerMessageSSOTokenKey, _SUControllerMessageStatusKey, 
+                       _SUControllerMessageTypeAddClient, _SUControllerMessageTypeClientHasBeenAdded, 
+                       _SUControllerMessageTypeCreateStashBag, _SUControllerMessageTypeDownloadProgress, 
+                       _SUControllerMessageTypeGetCompanionLockState, _SUControllerMessageTypeInstallResult, 
+                       _SUControllerMessageTypeInstallUpdate, _SUControllerMessageTypeInstallationCanProceed, 
+                       _SUControllerMessageTypeInstallationWillProceed, _SUControllerMessageTypeKey, 
+                       _SUControllerMessageTypeModifyManagerConfig, _SUControllerMessageTypePerformMigration, 
+                       _SUControllerMessageTypePurgeUpdate, _SUControllerMessageTypeQueryManagerConfig, 
+                       _SUControllerMessageTypeQueryManagerState, _SUControllerMessageTypeQueryManagerStatus, 
+                       _SUControllerMessageTypeScanForUpdates, _SUControllerMessageTypeScanPostponed, 
+                       _SUControllerMessageTypeScanResult, _SUControllerMessageTypeShowInstallError, 
+                       _SUControllerMessageTypeStartDownload, _SUControllerMessageTypeUnlockCompanion, 
+                       _SUControllerMessageTypeUpdateAcceptingTermsAndConditions, 
+                       _SUControllerMessageTypeUseCredentialsToPersonalize, _SUControllerMessageTypeUseSSOTokenToPersonalize, 
+                       _SUControllerMessageTypeUserDidAcceptTermsAndConditions, _SUControllerNSURLSessionProxyDenialDomain, 
+                       _SUControllerPhaseDownloadedAndPrepared, _SUControllerPhaseDownloading, 
+                       _SUControllerPhaseFailed, _SUControllerPhaseFallingBack, _SUControllerPhaseNone, 
+                       _SUControllerPhasePreparingUpdate, _SUControllerPhaseStalled, 
+                       _SUControllerPhaseVerifyingBeforeApplying, _SUControllerPhaseWaitingForAdmissionControl, 
+                       _SUControllerScanForUpdateHasCompletedNotification, _SUControllerStateChangeNotification, 
+                       _SUControllerStringForManagerState, _SUControllerTCPConnectionDenialDomain, 
+                       _SUControllerUnarchive, _SUControllerVersion, __SUControllerIPCDecodeObjectForKey, 
+                       ___SoftwareUpdateControllerVersionNumber, ___SoftwareUpdateControllerVersionString, 
+                       _chargerConnected, _doStringsMatch ]
+    objc-classes:    [ SUControllerConfig, SUControllerDescriptor, SUControllerDocumentation, 
+                       SUControllerDownload, SUControllerLogger, SUControllerManager, 
+                       SUControllerMessageEndpoint, SUControllerProgress, SUControllerResourceTracker, 
+                       SUControllerStatus ]
+...

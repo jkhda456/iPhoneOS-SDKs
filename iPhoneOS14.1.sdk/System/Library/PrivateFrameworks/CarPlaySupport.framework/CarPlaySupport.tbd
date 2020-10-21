@@ -1,0 +1,76 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DE492D88-CB54-3E4E-9A0C-1DF98697D69F
+  - target:          arm64e-ios
+    value:           461CD56A-0612-305C-832B-9C79C1C828D1
+install-name:    '/System/Library/PrivateFrameworks/CarPlaySupport.framework/CarPlaySupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CPSAudioManagerDidThrottleUpdateNotification, _CPSAvatarSize, 
+                       _CPSCoordinateRegionContainsAnnotations, _CPSCoordinateRegionForAnnotations, 
+                       _CPSFormattedDistanceSepartedShortUnit, _CPSFormattedDistanceWithMediumUnit, 
+                       _CPSFrameworkBundle, _CPSImageNamedWithTraitCollection, _CPSIsInternalInstall, 
+                       _CPSLocalizedStringForKey, _CPSManeuverChangeAnimationDuration, 
+                       _CPSNavigationAlertImageSize, _CPSNavigationAlertViewWidth, 
+                       _CPSNavigationETAViewSize, _CPSNumberFormatterForDistance, 
+                       _CPSPresentationRoundedDistance, _CPSRectByApplyingUserInterfaceLayoutDirectionInRect, 
+                       _CPSRequesterIdentifierForBundleIdentifier, _CPSSizeForAttributedText, 
+                       _CPSSizeForText, _CPSTraitCollectionSupportsFocus, _CarPlayFrameworkGeneralLogging, 
+                       _CarPlaySupportGeneralLogging, _CarPlaySupportVersionNumber, 
+                       _CarPlaySupportVersionString, __CPPanDirectionForPressType, 
+                       __CPSUIPressesContainsPressTypes, __pressesContainsPressType, 
+                       __touchesContainDirectTouch, __touchesContainIndirectTouch, 
+                       _kCPSLongMinumumPressDuration, _kCPSPanButtonEdgeSpacing, 
+                       _kGridButtonHeight, _kGridButtonImageHeight, _kGridButtonImageWidth, 
+                       _kGridMaxDistanceBetweenButtons ]
+    objc-classes:    [ CPSAbridgableLabel, CPSActionButton, CPSActionsViewController, 
+                       CPSAlertButton, CPSAlternateRoutesView, CPSAnalytics, CPSApplicationStateMonitor, 
+                       CPSAspectFitImageView, CPSAudioPlaybackManager, CPSAvatarViewController, 
+                       CPSBannerItem, CPSBannerSource, CPSBannerView, CPSBannerViewController, 
+                       CPSBarBackButtonItem, CPSBarButton, CPSBarButtonItem, CPSBaseEntityContentViewController, 
+                       CPSBaseTemplateViewController, CPSButton, CPSCardPlatterView, 
+                       CPSContactEntityViewController, CPSDashboardEstimatesView, 
+                       CPSDashboardEstimatesViewController, CPSDashboardGuidanceViewController, 
+                       CPSDashboardItemView, CPSDashboardManeuversCardView, CPSDashboardPrimaryManeuverView, 
+                       CPSDashboardSecondaryManeuverView, CPSDataSource, CPSEmptyView, 
+                       CPSEntityButton, CPSEntityMapButton, CPSEntityResourceProvider, 
+                       CPSEntityStyles, CPSEntityStylesDropShadow, CPSEntityUtility, 
+                       CPSEntityViewController, CPSFullScreenAlertViewController, 
+                       CPSGridButton, CPSGridTemplateView, CPSGridTemplateViewController, 
+                       CPSGuidanceBannerView, CPSHairlineBorderedView, CPSHairlineView, 
+                       CPSHidingLabel, CPSImageRowCell, CPSInformationEntityViewController, 
+                       CPSInformationScrollView, CPSInformationTemplateButtonsViewController, 
+                       CPSInformationTemplateFocusableView, CPSInvisibleButton, CPSLabeledValueView, 
+                       CPSLayoutHelperView, CPSListTemplateViewController, CPSManeuversCardView, 
+                       CPSMapButton, CPSMapTemplateViewController, CPSMessageCell, 
+                       CPSMultilineLabel, CPSMultilineLabelConfig, CPSNameViewController, 
+                       CPSNavigationAlertButtonView, CPSNavigationAlertFocusButton, 
+                       CPSNavigationAlertProgressView, CPSNavigationAlertQueue, CPSNavigationAlertView, 
+                       CPSNavigationBar, CPSNavigationCardViewController, CPSNavigationETAView, 
+                       CPSNavigator, CPSNowPlayingViewController, CPSOverlayViewController, 
+                       CPSPagingControlButton, CPSPagingControlView, CPSPagingTripPreviewsCardView, 
+                       CPSPanButton, CPSPanView, CPSPanViewController, CPSPausedCardView, 
+                       CPSPointOfInterestAnnotation, CPSPointOfInterestAnnotationView, 
+                       CPSPointOfInterestClusterAnnotation, CPSPointOfInterestClusterView, 
+                       CPSPointsOfInterestEntityViewController, CPSPointsOfInterestMapControlsViewController, 
+                       CPSPointsOfInterestMapViewController, CPSPointsOfInterestPickerCell, 
+                       CPSPointsOfInterestPickerExtendedCell, CPSPointsOfInterestPickerInfoView, 
+                       CPSPointsOfInterestPickerViewController, CPSPointsOfInterestTableView, 
+                       CPSPrimaryManeuverLayoutConfiguration, CPSPrimaryManeuverView, 
+                       CPSRatingView, CPSRouteEstimatesView, CPSRouteOverviewView, 
+                       CPSRoutePreviewsCardView, CPSRouteRowView, CPSSearchTemplateViewController, 
+                       CPSSecondaryManeuverView, CPSSectionedDataSource, CPSStyledTextButton, 
+                       CPSTabBarViewController, CPSTableCell, CPSTableView, CPSTemplateEnvironment, 
+                       CPSTemplateInstance, CPSTravelEstimatesStringFormatter, CPSTravelEstimatesStrings, 
+                       CPSTripPreviewsCardView, CPSUtilities, CPSVoiceTemplateViewController, 
+                       CPSVoiceView, CPSWindow, _CPSFocusHoldingButton, _CPSNudgeLongPressGestureRecognizer, 
+                       _CPSNudgeTapGestureRecognizer, _CPSOverlayTouchBlockingView ]
+    objc-ivars:      [ CPSGridTemplateView._gridButtons ]
+...

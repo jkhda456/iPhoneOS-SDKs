@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           33ADCDA7-7F07-3B0D-BB43-6958146121A4
+  - target:          arm64e-ios
+    value:           BB2FB5B9-884E-330A-8647-C2BF77344582
+install-name:    '/System/Library/PrivateFrameworks/PromotedContentSupport.framework/PromotedContentSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PromotedContentSupportVersionNumber, _PromotedContentSupportVersionString ]
+    objc-classes:    [ APStatusConditions, PCNewsManifesto, PCNewsSegmentation, PCRuntimeParameters, 
+                       PCStatusConditionRateLimitedObject, PCStatusConditions, PCStatusConditionsImpl, 
+                       PCSupportRequester ]
+...

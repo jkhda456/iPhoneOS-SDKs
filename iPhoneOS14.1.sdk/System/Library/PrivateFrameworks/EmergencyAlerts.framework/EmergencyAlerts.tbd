@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DEC1681E-837A-31AD-851A-0E5EE9154886
+  - target:          arm64e-ios
+    value:           F802C97A-373B-3672-BC11-5EB93D8D3BDF
+install-name:    '/System/Library/PrivateFrameworks/EmergencyAlerts.framework/EmergencyAlerts'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EACategoryIdentifierAlert, _EACategoryIdentifierConfigurableAlert, 
+                       _EALogDefault, _EALogSubsystem, _EANotificationCarrierBundleIdentifierKey, 
+                       _EANotificationExternalToneFilePathKey, _EANotificationExternalVibrationPatternFilePathKey, 
+                       _EANotificationFromPhoneKey, _EANotificationSoundIsMutableInRelayModeKey, 
+                       _EARegisterUserNotificationsLogging, _EmergencyAlertsVersionNumber, 
+                       _EmergencyAlertsVersionString, _kEADefaultMaxDuration ]
+    objc-classes:    [ EACellBroadcastMessageListener, EAEmergencyAlertCenter ]
+...

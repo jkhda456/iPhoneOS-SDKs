@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           DADDEE2B-2DEB-35FE-8115-9D82A0BE7FFE
+  - target:          armv7s-ios
+    value:           6BD41530-218D-3F8B-B5AB-06A920D8D99B
+  - target:          arm64-ios
+    value:           CDC996FD-E941-35A5-AA7F-37529A3389A2
+  - target:          arm64e-ios
+    value:           8519622E-55E6-3BD3-BED9-E8FBFA4E5565
+install-name:    '/System/Library/PrivateFrameworks/PowerlogDatabaseReader.framework/PowerlogDatabaseReader'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _PowerlogDatabaseReaderVersionNumber, _PowerlogDatabaseReaderVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ PLDatabaseReader ]
+...

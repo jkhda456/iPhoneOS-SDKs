@@ -1,0 +1,56 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           895E6B11-BD02-397E-AC7A-C4477B0BEF43
+  - target:          armv7s-ios
+    value:           AE630EE2-8BE0-3E69-80C7-0ED3D261B91B
+  - target:          arm64-ios
+    value:           06FE0EF9-1321-32AC-8EF7-7E89D2017B70
+  - target:          arm64e-ios
+    value:           90E10B88-028A-3F4F-9369-2CCC94D11970
+install-name:    '/System/Library/PrivateFrameworks/MobileStorage.framework/MobileStorage'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DOMDialogIsDisplayed, _DOMDisplayAutoDismissDialog, _check_disk_image, 
+                       _create_dict, _create_map_entry, _determine_filesystem_type, 
+                       _get_attached_entries, _get_attached_media_entries, _get_attached_ptp_entries, 
+                       _get_mounted_media_entries, _lookup_disk_image_entries, _lookup_map_entries, 
+                       _lookup_mass_storage_entry, _lookup_mount_entry, _makePathWithSignature, 
+                       _mkdir_recursive, _path_contains_links, _path_is_bad, _remove_item_at_path, 
+                       _serviceIsAttachedToRemovableDevice, _signatureFromPath, _stringForXPCType, 
+                       _traverse_path ]
+    objc-classes:    [ PlistProcessor ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MobileStorageCopyAndFixPlist, _MobileStorageCopyCryptexNonceWithError, 
+                       _MobileStorageCopyDevices, _MobileStorageCopyDevicesWithError, 
+                       _MobileStorageCopyPersonalizationNonceWithError, _MobileStorageMount, 
+                       _MobileStorageMountPersonalizedBundleWithError, _MobileStorageMountWithError, 
+                       _MobileStorageRemoteCopyCryptexNonceWithError, _MobileStorageRemoteCopyDevicesWithError, 
+                       _MobileStorageRemoteCopyMountedImageSignaturesWithError, _MobileStorageRemoteCopyPersonalizationNonceWithError, 
+                       _MobileStorageRemoteMountPersonalizedBundleWithError, _MobileStorageRemoteMountWithError, 
+                       _MobileStorageRemoteRollCryptexNonceWithError, _MobileStorageRemoteRollPersonalizationNonceWithError, 
+                       _MobileStorageRemoteUnmountWithError, _MobileStorageRollCryptexNonceWithError, 
+                       _MobileStorageRollPersonalizationNonceWithError, _MobileStorageSync, 
+                       _MobileStorageSyncWithError, _MobileStorageUnmount, _MobileStorageUnmountWithError, 
+                       _kDiskImageMountPathKey, _kDiskImageMountedNotification, _kMSMBackingImage, 
+                       _kMSMDiskImagePersonalizedImageType, _kMSMDiskImageTypeCryptex, 
+                       _kMSMDiskImageTypeDeveloper, _kMSMDiskImageTypeKey, _kMSMDiskImageTypePersonalized, 
+                       _kMSMDiskImageTypePersonalizedAutomation, _kMSMDiskImageTypePersonalizedDebug, 
+                       _kMSMDiskImageTypePersonalizedDemo, _kMSMDiskImageTypePersonalizedDeveloper, 
+                       _kMSMDiskImageTypePersonalizedFactory, _kMSMDiskImageTypePersonalizedFieldService, 
+                       _kMSMDiskImageTypePersonalizedFieldServiceDiagnostic, _kMSMDiskImageTypePersonalizedFieldServiceRepair, 
+                       _kMSMDiskImageTypePersonalizedProdAutomation, _kMSMDiskImageTypeSystemDeveloper, 
+                       _kMSMImageInfoPlistKey, _kMSMImageTrustCacheKey, _kMSMPerformLosslessQuery, 
+                       _kMSMPersonalizationImageURL, _kMSMPersonalizationMountedBundleURL, 
+                       _kMSMPersonalizationSigningServerURL, _kMSMPersonalizationUseCredentials, 
+                       _kMSMSignatureKey, _kMassStorageMountedNotification, _kMassStorageUnmountedNotification, 
+                       _kMobileStorageDeviceNodeKey, _kMobileStorageDeviceTypeDiskImage, 
+                       _kMobileStorageDeviceTypeKey, _kMobileStorageDeviceTypeMassStorage, 
+                       _kMobileStorageDeviceTypePTPCamera, _kMobileStorageFilesystemTypeKey, 
+                       _kMobileStorageIsMountedKey, _kMobileStorageIsReadOnlyKey, 
+                       _kMobileStorageMountPathKey, _kMobileStorageSignatureKey, 
+                       _kMobileStorageSupportsContentProtection, _kPTPCameraAttachedNotification, 
+                       _kStorageMounterName ]
+...

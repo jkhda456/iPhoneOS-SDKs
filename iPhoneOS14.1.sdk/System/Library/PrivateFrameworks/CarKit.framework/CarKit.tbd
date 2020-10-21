@@ -1,0 +1,99 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           573382C0-3B5E-31B3-8A36-B1F1BAC00051
+  - target:          armv7s-ios
+    value:           A6DDCC2E-9076-31E3-8C8D-60F31E205A49
+  - target:          arm64-ios
+    value:           6DC60516-CAD7-36A0-9885-900076245B04
+  - target:          arm64e-ios
+    value:           EC9138B2-3DE9-3165-BD2F-9C9DA7EBA714
+install-name:    '/System/Library/PrivateFrameworks/CarKit.framework/CarKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CARLimitedUIValueUserInterfaceJapanMaps, _CARLimitedUIValueUserInterfaceMusicLists, 
+                       _CARLimitedUIValueUserInterfaceNonMusicLists, _CARLimitedUIValueUserInterfaceSoftKeyboard, 
+                       _CARLimitedUIValueUserInterfaceSoftPhoneKeypad, _CARSessionAuthenticationSucceededNotification, 
+                       _CARSessionServerConnectionDiedNotification, _CARSesssionStatusChangedCallback, 
+                       _CRAggregateAddValueForScalarKey, _CRAggregateReconnectionEnableWiFiAcceptedKey, 
+                       _CRAggregateReconnectionEnableWiFiDeclinedKey, _CRAggregateReconnectionFailureCountKey, 
+                       _CRAggregateReconnectionSuccessCountKey, _CRAggregateSetValueForScalarKey, 
+                       _CRAggregateVehicleCountKey, _CRAggregateWiredAcceptedKey, 
+                       _CRAggregateWiredDeclinedKey, _CRAggregateWiredToWirelessAcceptedKey, 
+                       _CRAggregateWiredToWirelessDeclinedKey, _CRAggregateWirelessAcceptedKey, 
+                       _CRAggregateWirelessDeclinedKey, _CRCollectCarPlayDiagnosticsWithScreenshots, 
+                       _CRCreateRadarURLWithAttachments, _CRGenerateCarPlayDiagnosticsFolder, 
+                       _CRMapsLightLevelChangeNotification, _CRPreferencesEnableWirelessDomain, 
+                       _CRPreferencesEnableWirelessKey, _CRPreferencesLoggingChangedNotification, 
+                       _CRPreferencesLoggingKey, _CRPreferencesSettingsDebugUIKey, 
+                       _CRSaveAirPlayDiagnosticsToDestinationFolder, _CRSaveScreenshotsToDestinationFolder, 
+                       _CRSessionStatusInCarNotificationCallback, _CRVehicleInformationInteractionRestrictionsChangedNotification, 
+                       _CRVehicleInformationVehicleAmbientBrightnessChangedNotification, 
+                       _CarKitVersionNumber, _CarKitVersionString ]
+    objc-classes:    [ CARSessionScreenBorrowToken, CARSessionTurnByTurnToken, CRCarKitServiceClient ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CARAutomaticDNDAutoReplyAudienceChangedNotification, _CARAutomaticDNDCarPlayActivationChangedNotification, 
+                       _CARAutomaticDNDEnabledPreference, _CARAutomaticDNDExitConfirmationDisabledNotification, 
+                       _CARAutomaticDNDExitConfirmationEnabledNotification, _CARAutomaticDNDStatusChangedNotification, 
+                       _CARAutomaticDNDTriggeringPreferenceChangedNotification, _CARDNDActivateWithCarPlay, 
+                       _CARDNDAutoReplyAudience, _CARDNDAutoReplyMessage, _CARDNDAutomaticTriggeringMethod, 
+                       _CARDNDDisableTimerTimestamp, _CARDNDFirstBuddyDateFirstMoment, 
+                       _CARDNDInternalDNDBuddyDisplay, _CARDNDMiniHasCompletedFirstRide, 
+                       _CARDNDMiniHasStartedFirstRide, _CARDNDMiniInternalEnabled, 
+                       _CARDNDMiniInternalExitConfirmationOverride, _CARDNDMiniInternalForceOverride, 
+                       _CARDNDMiniInternalShowGeofencingAlerts, _CARDNDMiniInternalShowInternalAlerts, 
+                       _CARDNDMiniIsFirstBuddyPresentation, _CARDNDMiniRecentRideHistory, 
+                       _CARDNDMiniUserOptedOutInBuddy, _CARDNDTriggerPreferenceChangedTimestamp, 
+                       _CARDNDUserHasAdjustedTriggerMethod, _CARGetMinimumScaleForProposedScaleOnDisplay, 
+                       _CARInputDeviceFeedbackTypeKey, _CARInputDeviceSupportedFeedbackTypes, 
+                       _CARInputDeviceUUID, _CARInputPerformFeedbackCommand, _CARMaximumRidesForReminder, 
+                       _CARNavigationOwnerRequestedNotificationName, _CARSessionAccessoryUpdatedNotification, 
+                       _CARSessionCarCapabilitiesUpdatedNotification, _CARSessionCarHasMainAudioNotification, 
+                       _CARSessionElectronicTollCollectionStateChangedNotification, 
+                       _CARSessionLimitUserInterfacesChangedNotification, _CARSessionNightModeChangedNotification, 
+                       _CARSessionOwnsTurnByTurnNavigationChangedNotification, _CARSessionPerformanceReportPostedNotification, 
+                       _CARSessionScreenBecameAvailableNotification, _CARSessionScreenBecameUnavailableNotification, 
+                       _CARSessioniOSHasMainAudioNotification, _CRAllowsConnectionsForCertificateSerialNumber, 
+                       _CRAllowsConnectionsForWiFiUUID, _CRAutomaticDNDLocationBundle, 
+                       _CRAutomaticDNDLocationServicesEnabled, _CRAutomaticDNDLocationServicesStatus, 
+                       _CRBluetoothIndicatesInCar, _CRBuildNumberForDevice, _CRCapabilitiesDefaultVersion, 
+                       _CRCarPlayAppBlacklistPreferenceKey, _CRCarPlayAppPolicyChangedNotification, 
+                       _CRCarPlayCapabilitiesIdentifierKey, _CRCollectCarPlayDiagnostics, 
+                       _CRCollectCarPlayDiagnosticsWithAttachments, _CRDeviceHardwareIdentifierForDevice, 
+                       _CRDeviceSupportsAutomaticDNDMotionTrigger, _CRDeviceSupportsDNDWhileDriving, 
+                       _CREdgeInsetsFromRect, _CREnhancedIntegrationConsentDidChangeNotification, 
+                       _CREnhancedIntegrationConsentDidChangeNotificationVehicleCertificateSerialKey, 
+                       _CRFetchInstrumentClusterURLs, _CRFetchSessionInstrumentClusterURLs, 
+                       _CRFormattedBuildAndDeviceIdentifier, _CRFrameworkBundle, 
+                       _CRHandleCarPlayConnectionRequest, _CRHandleCarPlayRestrictionChanged, 
+                       _CRHandleConnectionForBluetoothAddress, _CRHandleDisconnectionForBluetoothAddress, 
+                       _CRIsAnyPairedVehicleAttached, _CRIsCarPlayAllowed, _CRIsEnhancedIntegrationEnabledWithCertificateSerialNumber, 
+                       _CRIsInternalInstall, _CRIsPairedWithCertificateSerialNumber, 
+                       _CRIsTestContext, _CRLocalizedStringForKey, _CRLocalizedWiFiVariantKeyForKey, 
+                       _CRPairedVehiclesDidChangeNotification, _CRPreferencesAutomaticDNDDomain, 
+                       _CRPreferencesNotMigratedDomain, _CRRectFromEdgeInsets, _CRRectRHDFlip, 
+                       _CRSaveScreenshotToTemporaryFile, _CRSaveStringToTemporaryTextFile, 
+                       _CRSaveWiFiCredentialsForAccessoryConnectionIdentifier, _CRSettingsDebugUIEnabled, 
+                       _CRStringForDate, _CRURLEncodedString, _CRVehicleIdentifierForCertificateSerial, 
+                       _CarAppearanceLogging, _CarDNDWDLogging, _CarDiagnosticsLogging, 
+                       _CarGeneralLogging, __CARGetMinimumScaleForProposedScaleForScreenInfo, 
+                       __adjacentViewAreaForPayload, __transitionControlTypeForViewAreaChange, 
+                       _kCRCarPlayEntitlementAudio, _kCRCarPlayEntitlementCalling, 
+                       _kCRCarPlayEntitlementCharging, _kCRCarPlayEntitlementCommunication, 
+                       _kCRCarPlayEntitlementMaps, _kCRCarPlayEntitlementMessaging, 
+                       _kCRCarPlayEntitlementParking, _kCRCarPlayEntitlementPlayableContent, 
+                       _kCRCarPlayEntitlementPublicSafety, _kCRCarPlayEntitlementQuickOrdering ]
+    objc-classes:    [ CARActiveNavigationIdentifiersObserver, CARAutomaticDNDStatus, 
+                       CARButtonInfo, CARDNDUtility, CARInputDevice, CARInputDeviceManager, 
+                       CARInputDeviceTouchpad, CARManufacturerIcon, CARNavigationOwnershipManager, 
+                       CARObserverHashTable, CARPrototypeBoolPref, CARPrototypePref, 
+                       CARRouteGuidanceiAPSession, CARScreenInfo, CARScreenViewArea, 
+                       CARSession, CARSessionConfiguration, CARSessionRequestAgent, 
+                       CARSessionRequestClient, CARSessionRequestHost, CARSessionStatus, 
+                       CRCarPlayAppBlacklist, CRCarPlayAppDeclaration, CRCarPlayAppPolicy, 
+                       CRCarPlayAppPolicyEvaluator, CRCarPlayCapabilities, CRCarPlayPreferences, 
+                       CRPairedVehicleManager, CRUsageInformation, CRVehicle, CRVehicleAccessory, 
+                       CRVehicleAccessoryManager, CRVehicleInformation, CRVehiclePolicyMonitor ]
+...

@@ -1,0 +1,49 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9EF2CC95-920F-383F-B88F-BCE8454FF40A
+  - target:          arm64e-ios
+    value:           FFD73631-6060-346F-9718-E8866242A1B3
+install-name:    '/System/Library/PrivateFrameworks/IOUSBHost.framework/IOUSBHost'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _IOUSBGetBillboardDescriptor, _IOUSBGetConfigurationMaxPowerMilliAmps, 
+                       _IOUSBGetContainerIDDescriptor, _IOUSBGetEndpointAddress, 
+                       _IOUSBGetEndpointBurstSize, _IOUSBGetEndpointDirection, _IOUSBGetEndpointIntervalEncodedMicroframes, 
+                       _IOUSBGetEndpointIntervalFrames, _IOUSBGetEndpointIntervalMicroframes, 
+                       _IOUSBGetEndpointMaxPacketSize, _IOUSBGetEndpointMaxStreams, 
+                       _IOUSBGetEndpointMaxStreamsEncoded, _IOUSBGetEndpointMult, 
+                       _IOUSBGetEndpointNumber, _IOUSBGetEndpointType, _IOUSBGetNextAssociatedDescriptor, 
+                       _IOUSBGetNextAssociatedDescriptorWithType, _IOUSBGetNextCapabilityDescriptor, 
+                       _IOUSBGetNextCapabilityDescriptorWithType, _IOUSBGetNextDescriptor, 
+                       _IOUSBGetNextDescriptorWithType, _IOUSBGetNextEndpointDescriptor, 
+                       _IOUSBGetNextInterfaceAssociationDescriptor, _IOUSBGetNextInterfaceDescriptor, 
+                       _IOUSBGetPlatformCapabilityDescriptor, _IOUSBGetSuperSpeedDeviceCapabilityDescriptor, 
+                       _IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor, _IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor, 
+                       _IOUSBHostCILinkStateEnabled, _IOUSBHostCIMessageStatusFromIOReturn, 
+                       _IOUSBHostCIMessageStatusToIOReturn, _IOUSBHostDefaultControlCompletionTimeout, 
+                       _IOUSBHostDevicePropertyKeyContainerID, _IOUSBHostDevicePropertyKeyCurrentConfiguration, 
+                       _IOUSBHostDevicePropertyKeySerialNumberString, _IOUSBHostDevicePropertyKeyVendorString, 
+                       _IOUSBHostErrorDomain, _IOUSBHostInterfacePropertyKeyAlternateSetting, 
+                       _IOUSBHostMatchingPropertyKeyConfigurationValue, _IOUSBHostMatchingPropertyKeyDeviceClass, 
+                       _IOUSBHostMatchingPropertyKeyDeviceProtocol, _IOUSBHostMatchingPropertyKeyDeviceReleaseNumber, 
+                       _IOUSBHostMatchingPropertyKeyDeviceSubClass, _IOUSBHostMatchingPropertyKeyInterfaceClass, 
+                       _IOUSBHostMatchingPropertyKeyInterfaceNumber, _IOUSBHostMatchingPropertyKeyInterfaceProtocol, 
+                       _IOUSBHostMatchingPropertyKeyInterfaceSubClass, _IOUSBHostMatchingPropertyKeyProductID, 
+                       _IOUSBHostMatchingPropertyKeyProductIDArray, _IOUSBHostMatchingPropertyKeyProductIDMask, 
+                       _IOUSBHostMatchingPropertyKeySpeed, _IOUSBHostMatchingPropertyKeyVendorID, 
+                       _IOUSBHostPropertyKeyLocationID, _IOUSBHostVersionNumber, 
+                       _IOUSBHostVersionString ]
+    objc-classes:    [ IOBufferMutableData, IOUSBHostCIControllerStateMachine, IOUSBHostCIDeviceStateMachine, 
+                       IOUSBHostCIEndpointStateMachine, IOUSBHostCIPortStateMachine, 
+                       IOUSBHostControllerInterface, IOUSBHostDevice, IOUSBHostIOSource, 
+                       IOUSBHostInterestNotificationReference, IOUSBHostInterestNotifier, 
+                       IOUSBHostInterface, IOUSBHostObject, IOUSBHostPipe, IOUSBHostStream ]
+    objc-ivars:      [ IOBufferMutableData._bytes, IOBufferMutableData._length ]
+...

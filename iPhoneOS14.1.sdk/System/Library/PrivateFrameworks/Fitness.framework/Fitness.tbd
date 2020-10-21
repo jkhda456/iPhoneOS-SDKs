@@ -1,0 +1,82 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4232620D-5019-30F1-BE08-1F8074E94E88
+  - target:          arm64e-ios
+    value:           D286C086-C9A4-3D7D-9D81-AE1153C8778B
+install-name:    '/System/Library/PrivateFrameworks/Fitness.framework/Fitness'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CURRENT_INTERVAL_WORKOUT_DEFINITION_VERSION, _FI24HourWindow, 
+                       _FIActivityMoveModeAnalyticsSendActivityMoveModeSwitchedInSettings, 
+                       _FIActivityMoveModeAnalyticsSendExperienceType, _FIActivityMoveModeAnalyticsSubmission, 
+                       _FIActivityMoveModeChangeSampleForDateComponents, _FIActivityMoveModeUserDefault, 
+                       _FIActivityMoveModeWithHealthStore, _FIActivitySummaryHasNonZeroMoveGoal, 
+                       _FIAgeInYearsForDateOfBirth, _FIAgeInYearsForDateOfBirthComponents, 
+                       _FIAgeInYearsForDateOfBirthComponentsWithCurrentDateAndCalendar, 
+                       _FIAgeInYearsForDateOfBirthWithCurrentDateAndCalendar, _FIAreFitnessAppsRestricted, 
+                       _FICMotionConditionForWheelchairUse, _FICanonicalQuantityUnitForIntervalType, 
+                       _FIDailyGoalTypeFromString, _FIDefaultActivityMoveModeWithAge, 
+                       _FIDefaultDayLength, _FIDefaultExerciseGoalQuantityForActivityMoveMode, 
+                       _FIDefaultLocalizationTableName, _FIDefaultStandGoalQuantityForActivityMoveMode, 
+                       _FIDefaultTinkerLocalizationTableName, _FIDeviceMeetsMinimumOSVersionDaytona, 
+                       _FIDeviceMeetsMinimumOSVersionGlory, _FIDistanceQuantityTypeIdentifierForActivityType, 
+                       _FIExperienceTypeForBirthDateComponents, _FIExperienceTypeForBirthDateComponentsWithCurrentDateAndCalendar, 
+                       _FIExperienceTypeWithHealthStore, _FIExperienceTypeWithHealthStoreAndDefaultExperienceType, 
+                       _FIFilterPauseResumeEvents, _FIFilterSamplesByType, _FIGetActivePairedDevice, 
+                       _FIIntervalErrorDomain, _FIIntervalErrorWithDescription, _FIIsActivePairedDeviceSatellitePaired, 
+                       _FIIsDeviceSatellitePaired, _FIIsEndRemindersEnabled, _FIIsFitnessTrackingEnabled, 
+                       _FIIsStartRemindersEnabled, _FILocalizationTableForExperienceType, 
+                       _FILocalizeCount, _FILocalizePercentComplete, _FILocalizedDayName, 
+                       _FILocalizedMonthName, _FIMoveGoalQuantityForActivitySummary, 
+                       _FIMoveQuantityForActivitySummary, _FINanoLifestylePreferencesChangedNotificationKey, 
+                       _FIQuantityTypeForActivityType, _FIRandomKeyForPrefixWithTableName, 
+                       _FIRandomStringForPrefixWithTableName, _FIRandomStringWithKeyAndPossibleSuffixesWithTableName, 
+                       _FIRequiredDaysOfActivityHistoryForStreaks, _FISampleQuantityInsideDateInterval, 
+                       _FISaveGoalsForNewActivityMoveMode, _FISetFitnessTrackingEnabled, 
+                       _FISetOutErrorIfNotNull, _FISortEventsByDate, _FISortSamplesByDate, 
+                       _FIStandardDistanceQuantity, _FIStringByReplacingDynamicPlaceholder, 
+                       _FIStringFromDailyGoalType, _FIThresholdDateInsideSample, 
+                       _FITypicalDayActivityModelDaysOfActivityHistory, _FITypicalDayActivityModelTodayActivityDidChangeNotification, 
+                       _HPRFSessionTrackerAppSettingsIntervalWorkoutDefinitions, 
+                       _HPRFSessionTrackerAppSettingsIntervalWorkoutDefinitionsVersion, 
+                       _HPRFSessionTrackerAppSettingsIntervalWorkoutsDomain, _MINIMUM_INTERVAL_WORKOUT_DEFINITION_VERSION, 
+                       _MoveGoalValueForActivitySummary, _MovePercentageForActivitySummary, 
+                       _MoveStatisticsForActivitySummary, _MoveValueForActivitySummary, 
+                       _NLHKActivityMoveModeString, _UnitForExerciseGoal, _UnitForMoveGoal, 
+                       _UnitForStandGoal, __FIBoolForPerGizmoDomainAndKey, __FIBoolForPerGizmoDomainAndKeyWithDefaultValue, 
+                       __FIBoolForStandardDomainAndKey, __FIBoolForStandardDomainAndKeyWithDefaultValue, 
+                       __FINumberForPerGizmoDomainAndKey, __FINumberForStandardDomainAndKey, 
+                       __FIStringForKeyInDefaultLocalizableTable, __FIStringWithExactKeyWithTableName, 
+                       __FIWriteBoolToPerGizmoDomain, __FIWriteBoolToStandardDomain, 
+                       __FIWriteIntegerToPerGizmoDomain, __FIWriteIntegerToStandardDomain, 
+                       _kActivityMonitorBundleIdentifier, _kActivityMoveModeMoveTimeMaximumAge, 
+                       _kFIModifiedExperienceLocalizationTable, _kFIModifiedExperienceMaximumAge, 
+                       _kFISimplifiedExperienceLocalizationTable, _kFISimplifiedExperienceMaximumAge, 
+                       _kFIStandardExperienceLocalizationTable, _kFIWeeklySummaryInfoDailyTotalsKey, 
+                       _kFIWeeklySummaryInfoFlightsClimbedKey, _kFIWeeklySummaryInfoGoalAchievedCountKey, 
+                       _kFIWeeklySummaryInfoMostRecentGoalKey, _kFIWeeklySummaryInfoTotalBriskMinutesKey, 
+                       _kFIWeeklySummaryInfoTotalDeepBreathingSessionCountKey, _kFIWeeklySummaryInfoTotalDistanceKey, 
+                       _kFIWeeklySummaryInfoTotalMoveKey, _kFIWeeklySummaryInfoTotalPushCountKey, 
+                       _kFIWeeklySummaryInfoTotalStepsKey, _kFIWeeklySummaryInfoWheelchairUseKey, 
+                       _kFitnessBundleIdentifier, _kNLPredictedActivityClassifiedNotification, 
+                       _kNLPredictedActivityStartedMonitoringNotification, _kNLPredictedActivityStoppedMonitoringNotification, 
+                       _kNLSessionTrackerAppKeyEnableEndReminders, _kNLSessionTrackerAppKeyEnableStartReminders, 
+                       _kNLSessionTrackerAppPreferencesChangedNotification, _kNLSessionTrackerAppPreferencesDomain, 
+                       _kSessionTrackerBundleIdentifier ]
+    objc-classes:    [ FIActivitySettingsController, FIFitnessAppsStateObserver, 
+                       FIIntervalDefinition, FIIntervalQuantityTrigger, FIIntervalSetDefinition, 
+                       FIIntervalWorkoutDefinition, FIIntervalWorkoutDefinitionsManager, 
+                       FIMutableTimeSliceGroup, FIQuantityInterval, FIQuantityIntervalController, 
+                       FIQuantityTimeSlice, FIReduction, FISimpleHistogram, FISleepDataProvider, 
+                       FISleepUserDay, FITrailingIntervalController, FITrailingQuantityTimeSlice, 
+                       FITypicalDayActivityModel, FIValidation ]
+...

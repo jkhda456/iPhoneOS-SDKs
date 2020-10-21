@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6F015AAB-44AE-3BB9-B26B-A754DA0D1B9E
+  - target:          arm64e-ios
+    value:           8627FF5A-5A88-33A4-9E0C-D2D997E60569
+install-name:    '/System/Library/PrivateFrameworks/CTCarrierSpaceUI.framework/CTCarrierSpaceUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ CTCarrierSpaceUIPlanPurchaseWebViewController ]
+...

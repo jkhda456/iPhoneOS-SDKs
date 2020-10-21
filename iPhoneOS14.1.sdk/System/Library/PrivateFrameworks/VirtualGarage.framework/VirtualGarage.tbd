@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AF65CAC8-43DE-344F-B381-749A6B2B111B
+  - target:          arm64e-ios
+    value:           357CEC76-37B3-358F-A5D8-FEDBDC0FC069
+install-name:    '/System/Library/PrivateFrameworks/VirtualGarage.framework/VirtualGarage'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GEOEvChargingConnectorTypeFromVGConnectorType, _IsVirtualGarageEnabled, 
+                       _NSStringFromVGChargingConnectorTypeOptions, _VGChargingConnectorTypeOptionsList, 
+                       _VGChargingConnectorTypeOptionsPacked, _VGChargingConnectorTypeOptionsUnpacked, 
+                       _VGGetAssertLog, _VGGetDataCoordinatorLog, _VGGetExternalAccessoryLog, 
+                       _VGGetOEMApplicationLog, _VGGetPersistingLog, _VGGetUIHelperLog, 
+                       _VGGetVirtualGarageLog, _VGHexRepresentationFromCGColor, _VGVehicleStateStorageReadFrom, 
+                       _VGVehiclesHaveMatchingVehicleStateProviders, _VirtualGarageConfig_VoltronDisabledApplications, 
+                       _VirtualGarageConfig_VoltronEnableAutomaticVehicleDeselection, 
+                       _VirtualGarageConfig_VoltronEnableIAP2Onboarding, _VirtualGarageConfig_VoltronEnableWhiteListing, 
+                       _VirtualGarageConfig_VoltronForceShowLastSyncDate, _VirtualGarageConfig_VoltronIntentsRequestTimeout, 
+                       _VirtualGarageConfig_VoltronKeyNameForModelID, _VirtualGarageConfig_VoltronKeyNameInManifestForWhitelistedModelIDs, 
+                       _VirtualGarageConfig_VoltronNameForBundleIDKey, _VirtualGarageConfig_VoltronNameForWhitelistKey, 
+                       _VirtualGarageConfig_VoltronOEMAppPullInterval, _VirtualGarageConfig_VoltronResourceNameForWhitelistedModels, 
+                       _VirtualGarageConfig_VoltronStreamUpdatesDuringNav, _VirtualGarageConfig_VoltronSynchronousVehicleStateUpdate, 
+                       _VirtualGarageConfig_VoltronUseCarDisplaySimIdentifier, _VirtualGarageConfig_VoltronUseMapsSyncLiveUpdates, 
+                       _startHostingVirtualGarageServiceWithPersister, _stopHostingVirtualGarageService ]
+    objc-classes:    [ VGDataCoordinator, VGOEMApplication, VGOEMApplicationFinder, 
+                       VGVehicle, VGVehicleDeduper, VGVehicleState, VGVehicleStateStorage, 
+                       VGVirtualGarage, VGVirtualGarageService ]
+...

@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2BF18FD4-21FD-3932-A6A4-FD146C5F36C2
+  - target:          arm64e-ios
+    value:           75CDBA68-F9AC-35DE-92D4-72B105183D8E
+install-name:    '/System/Library/PrivateFrameworks/CDDataAccess.framework/Frameworks/DADaemonSupport.framework/DADaemonSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ ___RootDomainConnect, __devicePowerChanged, _gDADHighAvailabilityQueue, 
+                       _gDADMainRunloopStopped, _gDADOperationQueue, _handleSignal ]
+    objc-classes:    [ DAAgent, DAChangeHistoryClerk, DACoreDAVAgent, DADAgentManager, 
+                       DADBuddyStateObserver, DADMain, DADREMLocalDBWatcher, DADREMShareResponseDelegate, 
+                       DADREMXPCPerformerDelegate, DADSystemAvailabilityChecker, 
+                       DADaemonPowerAssertionManager, DAFolderSyncRequest, DARefreshManager, 
+                       DARefreshWrapper, DATokenRegistrationRequest, REMDAAccountInfo, 
+                       _DAChangeHistoryABLegacyClerk, _DAChangeHistoryContactsClerk ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           84278A25-E3FF-3C2C-9ADA-C7EC24854146
+  - target:          armv7s-ios
+    value:           9B202519-8254-35EC-B28D-9A526A5FB6F0
+  - target:          arm64-ios
+    value:           8C7E21C9-45D9-36F8-9017-35A946A2D180
+  - target:          arm64e-ios
+    value:           2B5AEF04-EDB0-3DFE-8FF9-989ABBC02E60
+install-name:    '/System/Library/PrivateFrameworks/WirelessCoexManager.framework/WirelessCoexManager'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WCMEnabled, _WirelessRadioManagerDumpLog, _WirelessRadioManagerSetLogToFile ]
+    objc-classes:    [ WCMClientProxy, WCMSetting, WRMClientInterface, WRM_UCMInterface, 
+                       WRM_iRATInterface, WRM_iRATProximityRecommendation, WRM_iRATProximityRecommendationLogging ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           732C5D8A-8899-3BE3-B294-70F7A3F25645
+  - target:          arm64e-ios
+    value:           99F6A31A-2E22-3596-8DA0-5B72B888724B
+install-name:    '/System/Library/PrivateFrameworks/SpeakThisServices.framework/SpeakThisServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STSErrorDomain, _STSMessageKeyAppPointX, _STSMessageKeyAppPointY, 
+                       _STSMessageKeyKBFrame, _STSMessageKeyOptions, _STSMessageReplyKeyErrorCode ]
+    objc-classes:    [ SpeakThisServices ]
+...

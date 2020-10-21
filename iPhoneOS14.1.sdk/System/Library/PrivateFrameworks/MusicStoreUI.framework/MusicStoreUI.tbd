@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           87426A9C-827F-31C6-A244-1659CA2ECC01
+  - target:          armv7s-ios
+    value:           BA9F6146-1C67-340B-8F8B-C917C0778B7C
+  - target:          arm64-ios
+    value:           B30F9C4D-5200-376C-A1E1-CA822ADF693F
+  - target:          arm64e-ios
+    value:           9B4E80E2-F53F-39D2-AF59-9670D98EE455
+install-name:    '/System/Library/PrivateFrameworks/MusicStoreUI.framework/MusicStoreUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSGetTrackListBorderColor, _MSGetTrackListEvenRowColor, _MSGetTrackListOddRowColor, 
+                       _kMSCurrentOnboardingVersion, _kMSFallbackPrivacyAcknowledgementUrl, 
+                       _kMSOnboardingDomainKey, _kMSOnboardingVersionKey, _kMSPrivacyAcknowledgementUrlBagKey ]
+    objc-classes:    [ MSAudioProgressView, MSOnboardingUtil, MSPieImageView, MSPurchaseBatch, 
+                       MSPurchasesViewController, MSStructuredPageTableDataSource, 
+                       MSStructuredPageViewController, MSTableCell, MSTonePurchaseContinuation, 
+                       MSTrackListCellConfiguration, MSTrackListCellContext, MSTrackListCopyrightFooterView, 
+                       MSTrackListDataSource, MSTrackListHeaderView, MSTrackListLinkCellConfiguration, 
+                       MSTrackListLoadMoreCellConfiguration, MSTrackListTableHeaderView, 
+                       MSTrackListViewController, MSViewControllerFactory, MSVolumeViewController ]
+    objc-ivars:      [ MSPurchasesViewController._activeViewControllerIndex, MSPurchasesViewController._containerView, 
+                       MSPurchasesViewController._segmentedControl, MSPurchasesViewController._viewControllers, 
+                       MSTonePurchaseContinuation._actionSheet, MSTonePurchaseContinuation._alertView, 
+                       MSTonePurchaseContinuation._contactPicker, MSTrackListCellConfiguration._position, 
+                       MSTrackListCellContext._shouldHideContentRating, MSTrackListCellContext._showSubtitle, 
+                       MSTrackListCopyrightFooterView._text, MSTrackListCopyrightFooterView._textSize, 
+                       MSTrackListHeaderView._albumLabel, MSTrackListHeaderView._artistLabel, 
+                       MSTrackListHeaderView._artworkImage, MSTrackListHeaderView._artworkView, 
+                       MSTrackListHeaderView._delegate, MSTrackListHeaderView._disclaimerLabel, 
+                       MSTrackListHeaderView._item, MSTrackListHeaderView._itemCountLabel, 
+                       MSTrackListHeaderView._offerButton, MSTrackListHeaderView._releaseDateLabel, 
+                       MSTrackListHeaderView._touchCaptureView, MSTrackListTableHeaderView._title, 
+                       MSTrackListTableHeaderView._titleSize, MSTrackListViewController._headerView ]
+...

@@ -1,0 +1,76 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           A89FD792-CE1F-3B95-B25B-FA3F2E9D2C7F
+  - target:          armv7s-ios
+    value:           3E750961-8789-3180-99E9-4F4C501E5036
+  - target:          arm64-ios
+    value:           FECF3C0D-DC35-33D7-B632-B58037A5B87F
+  - target:          arm64e-ios
+    value:           A0D7B03E-AE0F-35E3-89FB-97527ABA2F5A
+install-name:    '/System/Library/PrivateFrameworks/MediaServices.framework/MediaServices'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _MSVArrayEqualsArray, _MSVDataEqualsData, _MSVDevicePPTTestsAreInProgress, 
+                       _MSVLoggingConfigurationDidChangeNotifyName, _MSVLoggingRegisterConfiguration, 
+                       _MSVLoggingShouldLog, _MSVSetEqualsSet, _MSVStringEqualsString, 
+                       __MSVLogInternal ]
+    objc-classes:    [ MSVCPLoggingController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSVArchivedDataWithRootObject, _MSVArtworkServiceErrorDomain, 
+                       _MSVBundleIDForAuditToken, _MSVBundleIDForPID, _MSVCLIPrint, 
+                       _MSVCLIPrintErr, _MSVCLIPrompt, _MSVCLIStartMainRunLoop, _MSVCLIStopMainRunLoop, 
+                       _MSVCopyDeviceName, _MSVCopyDeviceUniqueIdentifier, _MSVCopyLocalizedModelName, 
+                       _MSVCopySystemBuildVersion, _MSVCreateTemporaryFileHandle, 
+                       _MSVCryptoDigestForContentsOfFile, _MSVCryptoDigestForContentsOfInputStream, 
+                       _MSVCryptoDigestForData, _MSVCryptoDigestForString, _MSVCryptoUtilitiesHexStringFromDigest, 
+                       _MSVDeviceHasCellularBaseband, _MSVDeviceIsAppleTV, _MSVDeviceIsAudioAccessory, 
+                       _MSVDeviceIsWatch, _MSVDeviceIsiPad, _MSVDeviceOSHasInternalDiagnostics, 
+                       _MSVDeviceOSIsInternalInstall, _MSVDeviceSupportsDelegatedIdentities, 
+                       _MSVDeviceSupportsExtendedColorDisplay, _MSVDeviceSupportsMultipleLibraries, 
+                       _MSVDeviceSupportsSideLoadedMediaContent, _MSVDiagnoseSecureCodingClassesWithPrefix, 
+                       _MSVErrorDomain, _MSVFrameworkExists, _MSVGetKernelBootTime, 
+                       _MSVGetMaximumScreenScale, _MSVGetMaximumScreenSize, _MSVGzipCompressData, 
+                       _MSVGzipCompressFile, _MSVGzipDecompressData, _MSVGzipDecompressFile, 
+                       _MSVHasherCreate, _MSVHasherCreateSeeded, _MSVImageUtilitiesAddImageToDestination, 
+                       _MSVImageUtilitiesAddJPEGToDestination, _MSVImageUtilitiesAddSourceImageToDestination, 
+                       _MSVImageUtilitiesAddSourceImageToJPEGDestination, _MSVImageUtilitiesCopyUTTypeForImage, 
+                       _MSVImageUtilitiesCopyUTTypeForImageFormat, _MSVImageUtilitiesCreateDataImageDestination, 
+                       _MSVImageUtilitiesCreateFileImageDestination, _MSVImageUtilitiesCreateImageFromSource, 
+                       _MSVImageUtilitiesCreateImageSource, _MSVImageUtilitiesDefaultImageCompressionQuality, 
+                       _MSVImageUtilitiesImageFormatSupportsTransparency, _MSVImageUtilitiesMakeBoundingBoxSize, 
+                       _MSVImageUtilitiesResizeSourceImageToDestination, _MSVImageUtilitiesResizeSourceImageToJPEGDestination, 
+                       _MSVKeychainCopyKeychainValue, _MSVKeychainSetKeychainValue, 
+                       _MSVLaunchApplication, _MSVLaunchApplicationWithOptions, _MSVLyricsTTMLParserErrorDomain, 
+                       _MSVMediaLoggingDirectory, _MSVMobileHomeDirectory, _MSVOPACKDecoderErrorDomain, 
+                       _MSVProcessIDForApplication, _MSVProcessIsRunning, _MSVProcessNameForPID, 
+                       _MSVPropertyListDataClasses, _MSVReplacementRangeForRanges, 
+                       _MSVSegmentCodingPackageInfoKeyPackageTypeIdentifier, _MSVSignedIntersectionRange, 
+                       _MSVSignedRangeFromString, _MSVSignedRangeNotFound, _MSVSignedRangeZero, 
+                       _MSVSignedSubtractedRange, _MSVSignedUnionRange, _MSVStreamReaderErrorDomain, 
+                       _MSVStreamWriterErrorDomain, _MSVSystemRootDirectory, _MSVUnarchivedObjectOfClass, 
+                       _MSVUnarchivedObjectOfClasses, _MSVWeakLinkClass, _MSVWeakLinkProtocol, 
+                       _MSVWeakLinkStringConstant, _MSVWeakLinkSymbol, _NSStringFromMSVSignedRange, 
+                       _msv_dispatch_async_on_queue, _msv_dispatch_on_main_queue, 
+                       _msv_dispatch_sync_on_queue ]
+    objc-classes:    [ MSVARC4RandomSource, MSVArtworkService, MSVArtworkServiceConversionRequest, 
+                       MSVArtworkServiceOperation, MSVArtworkServiceRequest, MSVArtworkServiceResizeRequest, 
+                       MSVArtworkServiceResizeRequestDestination, MSVAsyncOperation, 
+                       MSVBidirectionalDictionary, MSVBlockGuard, MSVBloomFilter, 
+                       MSVCLICommand, MSVCLICommandInterpreter, MSVCallback, MSVDistributedNotificationObserver, 
+                       MSVEntitlementUtilities, MSVFileBufferedPipe, MSVFinally, 
+                       MSVLRUDictionary, MSVLyricsAgent, MSVLyricsElement, MSVLyricsLine, 
+                       MSVLyricsSection, MSVLyricsSongInfo, MSVLyricsSongWriter, 
+                       MSVLyricsTTMLParser, MSVLyricsTextElement, MSVLyricsTranslation, 
+                       MSVLyricsTranslationText, MSVLyricsWord, MSVLyricsXMLElement, 
+                       MSVMessageParser, MSVMultiCallback, MSVMutableBidirectionalDictionary, 
+                       MSVOPACKDecoder, MSVOPACKEncoder, MSVPair, MSVPersistentTimer, 
+                       MSVPropertyListEncoder, MSVRandomDistribution, MSVSQLDatabase, 
+                       MSVSQLDatabaseTransaction, MSVSQLRowEnumerator, MSVSQLStatement, 
+                       MSVSegmentedCodingPackage, MSVSegmentedDecoder, MSVSegmentedEncoder, 
+                       MSVStreamReader, MSVStreamWriter, MSVSystemDialog, MSVSystemDialogOptions, 
+                       MSVSystemDialogResponse, MSVSystemDialogTextField, MSVTaskAssertion, 
+                       MSVTimer, MSVWatchdog, MSVWeakProxy, MSVXPCTransaction, MSVZipArchive ]
+...

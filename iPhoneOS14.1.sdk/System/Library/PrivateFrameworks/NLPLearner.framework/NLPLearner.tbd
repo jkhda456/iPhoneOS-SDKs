@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           94F86129-C357-3418-A2BE-4023911C88CC
+  - target:          arm64e-ios
+    value:           12020142-E524-371A-A925-BB67BF3783E5
+install-name:    '/System/Library/PrivateFrameworks/NLPLearner.framework/NLPLearner'
+current-version: 34
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _trainMLPModelForDES ]
+    objc-classes:    [ PFLBackgroundRunner ]
+...

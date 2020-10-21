@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           646C7442-F71F-3CA4-870A-E8503B497DBC
+  - target:          armv7s-ios
+    value:           902A9C99-52A0-31B5-90F0-6F9AB336754F
+  - target:          arm64-ios
+    value:           94944523-7562-3379-8F7B-100262AFFDCA
+  - target:          arm64e-ios
+    value:           4D18E3BE-6F11-381E-BEAB-AB3B25815789
+install-name:    '/System/Library/PrivateFrameworks/WelcomeKit.framework/WelcomeKit'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _WLDeviceAuthenticationDelegateInterface, _WLDeviceAuthenticatorInterface, 
+                       _WLLog ]
+    objc-classes:    [ WLDeviceAuthentication, WLDeviceAuthenticationController ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WLDaemonExportedInterface, _WLDataMigrationDelegateInterface, 
+                       _WLDataMigratorInterface, _WLDefaultsApplicationID, _WLDefaultsChangedNotification, 
+                       _WLDefaultsStartedNetworkSSIDKey, _WLDefaultsUseInfrastructureWiFiKey, 
+                       _WLErrorContentTypeKey, _WLErrorDomain, _WLErrorOfferRetryKey, 
+                       _WLLocalizedString, _WLLoggingEnabled, _WLSourceDevicesChangedNotification, 
+                       _WLWifiAndDeviceDiscoveryDidGetInterrupted, _WelcomeKitVersionNumber, 
+                       _WelcomeKitVersionString, __WLLog ]
+    objc-classes:    [ WLDaemonConnection, WLDaemonController, WLDataMigrationController, 
+                       WLDataMigrationControllerSurrogate, WLLogController, WLSafeHarborMigrationSpecifier, 
+                       WLSourceDevice, WLSourceDevicesController, WLSourceDevicesControllerSurrogate, 
+                       WLTelemetry, WLUtilities ]
+...
