@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           38F6C0F9-7E3E-340F-89FA-5C8FB1B6DB14
+  - target:          arm64e-ios
+    value:           B265A1BB-7FF8-3EE3-A114-A494468E0D6D
+install-name:    '/System/Library/Frameworks/Accessibility.framework/Accessibility'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXNameFromColor ]
+    objc-classes:    [ AXCustomContent ]
+...

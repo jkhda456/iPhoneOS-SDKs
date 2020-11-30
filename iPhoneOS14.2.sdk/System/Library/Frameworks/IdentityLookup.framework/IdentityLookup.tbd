@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           29C3C024-7CEB-36F6-856F-09FF852DEF70
+  - target:          arm64e-ios
+    value:           B07D9104-AE95-3A50-842D-75F12F0F444F
+install-name:    '/System/Library/Frameworks/IdentityLookup.framework/IdentityLookup'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ILClassificationUIExtensionPointIdentifier, _ILDefaultLog, 
+                       _ILMessageFilterErrorDomain, _ILMessageFilterExtensionPointIdentifier, 
+                       _ILMessageFilterPrivateErrorDomain ]
+    objc-classes:    [ ILCallClassificationRequest, ILCallCommunication, ILClassification, 
+                       ILClassificationController, ILClassificationReportRequest, 
+                       ILClassificationRequest, ILClassificationResponse, ILCommunication, 
+                       ILMessageClassificationRequest, ILMessageCommunication, ILMessageFilter, 
+                       ILMessageFilterExtension, ILMessageFilterExtensionContext, 
+                       ILMessageFilterExtensionHostContext, ILMessageFilterQueryRequest, 
+                       ILMessageFilterQueryResponse, ILMessageFilterReportRequest, 
+                       ILNetworkResponse ]
+...

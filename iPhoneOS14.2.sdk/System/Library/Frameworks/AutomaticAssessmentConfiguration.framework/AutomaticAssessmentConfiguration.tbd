@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0C5DEE9B-5F25-3628-A850-F24DB41AA1BA
+  - target:          arm64e-ios
+    value:           06E80A4C-ED36-31D3-8938-B42496EB6EF5
+install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AEAssessmentErrorDomain ]
+    objc-classes:    [ AEAssessmentConfiguration, AEAssessmentSession ]
+...
