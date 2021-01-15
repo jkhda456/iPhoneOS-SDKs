@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           67EC3C50-0B51-347E-9E8A-C0DCC8010254
+  - target:          arm64e-ios
+    value:           A92C78BD-B1A5-38F0-B45E-218F08E34E77
+install-name:    '/System/Library/Frameworks/ScreenTime.framework/ScreenTime'
+current-version: 495
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STMachServiceNameScreenTime ]
+    objc-classes:    [ STScreenTimeAgentConnection, STScreenTimeConfiguration, STScreenTimeConfigurationObserver, 
+                       STWebHistory, STWebRemoteViewController, STWebService, STWebpageController ]
+...

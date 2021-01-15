@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           69F2700E-6EFB-3F1C-B707-999213FD234B
+  - target:          arm64e-ios
+    value:           14844542-D149-308D-BCCF-B9C412854A95
+install-name:    '/usr/lib/libAppletTranslationLibrary.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AppletTranslator ]
+...

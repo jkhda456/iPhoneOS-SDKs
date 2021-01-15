@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4D1961DA-5EDC-393C-B817-AADAD3D61167
+  - target:          arm64e-ios
+    value:           7EB14F9B-0A97-37A7-81B7-147401770771
+install-name:    '/usr/lib/libSLAMDynamic.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SLAMObjC ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A6112E6A-16E4-347B-A362-A4C301B40E10
+  - target:          arm64e-ios
+    value:           BD722F46-E167-33CB-9549-6D6469D415D9
+install-name:    '/System/Library/Frameworks/IdentityLookupUI.framework/IdentityLookupUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ILClassificationUIExtensionContext, ILClassificationUIExtensionHostContext, 
+                       ILClassificationUIExtensionHostViewController, ILClassificationUIExtensionViewController ]
+...

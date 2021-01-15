@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3F0A2AE3-FB6B-33AD-82A2-28A925EF0B29
+  - target:          arm64e-ios
+    value:           1898C9E0-8885-39F1-9D1D-0EAB4F6A3416
+install-name:    '/System/Library/Frameworks/_StoreKit_SwiftUI.framework/_StoreKit_SwiftUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s7SwiftUI4ViewP010_StoreKit_aB0E03appD7Overlay11isPresented13configurationQrAA7BindingVySbG_So22SKOverlayConfigurationCyctF', 
+                       '_$s7SwiftUI4ViewP010_StoreKit_aB0E03appD7Overlay11isPresented13configurationQrAA7BindingVySbG_So22SKOverlayConfigurationCyctFQOMQ' ]
+...

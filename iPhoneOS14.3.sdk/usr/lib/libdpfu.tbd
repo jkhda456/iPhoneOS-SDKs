@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F01BD602-8B70-3D1F-B059-0FDDB4A3A223
+  - target:          armv7s-ios
+    value:           46791CE1-6FFA-3095-8293-ABE26AA88BFE
+  - target:          arm64-ios
+    value:           0A76E3DA-41A1-38A2-A7EC-7857D09D0E7B
+  - target:          arm64e-ios
+    value:           F6A1ABDF-4901-3369-A3DA-34B3813AB8AA
+install-name:    '/usr/lib/libdpfu.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DPFUGetDeviceModeString, _DPFUGetDeviceStatusString, _DPFUSessionCreate, 
+                       _DPFUSessionEnterUpdateMode, _DPFUSessionGetDeviceInfo, _DPFUSessionGetTypeID, 
+                       _DPFUSessionInstallFilePayload, _DPFUSessionInstallMemoryPayload, 
+                       _DPFUSessionLeaveUpdateMode, _DPFUSessionSetExpectDeviceTerminationUponRestart, 
+                       _DPFUSessionSetLogLevel, _DPFUSessionSetProgressCallback, 
+                       _DPFUSessionSetRestartAfterUpdate, _dpfuUpdateDeviceWithContentsOfFile ]
+...
